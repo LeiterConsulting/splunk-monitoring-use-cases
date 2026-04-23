@@ -70,6 +70,21 @@ body {
   line-height: 1.5;
   min-height: 100vh;
 }
+.dsa-skip {
+  position: absolute;
+  left: 16px;
+  top: -48px;
+  z-index: 200;
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: 10px 14px;
+}
+.dsa-skip:focus {
+  top: 16px;
+}
 a { color: var(--text-link); text-decoration: none; }
 a:hover { text-decoration: underline; }
 button { font-family: var(--font); cursor: pointer; }
@@ -422,6 +437,33 @@ button { font-family: var(--font); cursor: pointer; }
     border-bottom: 1px solid var(--border-default);
   }
   .config-panel { max-height: none; }
+}
+
+@media (max-width: 720px) {
+  .app-header {
+    height: auto;
+  }
+
+  .header-inner {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 12px;
+  }
+
+  .header-brand {
+    width: 100%;
+  }
+
+  .header-actions {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .app-main {
+    min-height: 0;
+  }
 }
 
 /* ─── SCROLLBAR ─── */

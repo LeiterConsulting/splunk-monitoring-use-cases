@@ -2057,7 +2057,11 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     # Summary (counts include externally-owned files already on disk so
     # the reported total reflects the full api/v1/ tree after regen)
     file_count = sum(1 for _ in args.out.rglob("*") if _.is_file())
-    print(f"Wrote {file_count} files under {args.out.relative_to(REPO_ROOT)}")
+    try:
+        out_label = args.out.relative_to(REPO_ROOT)
+    except ValueError:
+        out_label = args.out
+    print(f"Wrote {file_count} files under {out_label}")
     return 0
 
 

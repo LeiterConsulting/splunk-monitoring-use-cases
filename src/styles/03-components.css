@@ -505,8 +505,11 @@ button.uc-chip .chip-wave { font-family: var(--font-sans, inherit); font-size: 9
   font-family: var(--font-mono); font-size: 11px; line-height: 1.5; white-space: pre-wrap; word-break: break-word;
   background: var(--bg-code); border: 1px solid var(--border-default); border-radius: var(--radius-md); padding: 12px; margin: 0;
 }
-.code-wrap { position: relative; }
-.code-wrap .copy-btn { position: absolute; top: 8px; right: 8px; font-size: 11px; padding: 4px 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-default); background: var(--bg-surface); cursor: pointer; }
+.code-wrap { display: flex; flex-direction: column; gap: 8px; }
+.code-wrap .code-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; }
+.code-wrap .copy-btn { font-size: 11px; padding: 4px 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-default); background: var(--bg-surface); cursor: pointer; }
+.code-wrap .copy-btn:hover { background: var(--bg-hover); }
+.code-wrap .search-btn { border-color: var(--cisco-green); color: var(--cisco-green); }
 .c-panel-details { margin-bottom: 16px; border: 1px solid var(--border-default); border-radius: var(--radius-md); padding: 12px; }
 .c-panel-details summary { font-weight: 600; cursor: pointer; }
 .sapp-card { border: 1px solid var(--border-default); border-radius: var(--radius-md); padding: 10px; margin-top: 8px; font-size: 12px; }

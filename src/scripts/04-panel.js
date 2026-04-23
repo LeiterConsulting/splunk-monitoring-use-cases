@@ -1,3 +1,77 @@
+function currentSplunkLocale() {
+  var match = window.location.pathname.match(/^\/([^/]+)\/(?:static|app)\//);
+  return match ? match[1] : '';
+}
+
+function canOpenInSplunkSearch() {
+  return !!currentSplunkLocale();
+}
+
+function looksLikeSplunkSearch(text, language) {
+  var query = String(text || '').trim();
+  var lang = String(language || '').toLowerCase();
+  if (!query) return false;
+  if (lang === 'spl' || lang === 'splunk' || lang === 'search' || lang === 'tstats') return true;
+  if (lang && lang !== 'text' && lang !== 'txt' && lang !== 'plain') return false;
+  return /(^\s*(?:\||search\b|tstats\b|mstats\b|from\b|index=|sourcetype=|source=|host=))/i.test(query);
+}
+
+function codeActionButtonsHtml(includeSearch) {
+  var html = '<div class="code-actions">';
+  if (includeSearch && canOpenInSplunkSearch()) {
+    html += '<button type="button" class="copy-btn search-btn" onclick="openSplunkSearch(this)">Open in Splunk Search</button>';
+  }
+  html += '<button type="button" class="copy-btn" onclick="copyCode(this)">Copy</button>';
+  html += '</div>';
+  return html;
+}
+
+function requestSplunkHostAction(type, payload) {
+  if (!window.parent || window.parent === window) return false;
+  try {
+    var message = payload || {};
+    message.source = 'monitoring_use_cases';
+    message.type = type;
+    window.parent.postMessage(message, window.location.origin);
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+function splunkSearchUrl(query, earliest, latest) {
+  var locale = currentSplunkLocale();
+  if (!locale) return null;
+  return '/' + locale
+    + '/app/search/search?q=' + encodeURIComponent(String(query || ''))
+    + '&earliest=' + encodeURIComponent(String(earliest || '-24h'))
+    + '&latest=' + encodeURIComponent(String(latest || 'now'));
+}
+
+function openSplunkSearchQuery(query, earliest, latest) {
+  var cleanedQuery = String(query || '').trim();
+  var url = splunkSearchUrl(cleanedQuery, earliest, latest);
+  if (!cleanedQuery || !url) return false;
+  if (requestSplunkHostAction('open-search', {
+    query: cleanedQuery,
+    earliest: earliest || '-24h',
+    latest: latest || 'now'
+  })) {
+    return true;
+  }
+  window.top.location.assign(url);
+  return true;
+}
+
+function openSplunkSearch(btn) {
+  var wrap = btn.closest ? btn.closest('.code-wrap') : null;
+  var pre = wrap ? wrap.querySelector('pre') : null;
+  var originalLabel = btn.textContent;
+  if (!pre || !openSplunkSearchQuery(pre.textContent)) return;
+  btn.textContent = 'Opening...';
+  setTimeout(function() { btn.textContent = originalLabel; }, 1500);
+}
+
 function fillPanelBody(e) {
   var uc = e.uc;
   var html = '<div class="c-panel-meta">';
@@ -151,13 +225,15 @@ function fillPanelBody(e) {
   if (uc.reqf) html += '<div class="c-panel-section"><div class="c-panel-section-title">Required fields</div><div class="c-panel-section-body"><code>' + esc(uc.reqf) + '</code></div></div>';
   if (uc.schema) html += '<div class="c-panel-section"><div class="c-panel-section-title">Schema</div><div class="c-panel-section-body"><code>' + esc(uc.schema) + '</code></div></div>';
 
-  function copyBlock(label, text, id) {
+  function copyBlock(label, text, id, includeSearch) {
     if (!text) return '';
-    return '<div class="c-panel-section"><div class="c-panel-section-title">' + label + '</div><div class="code-wrap"><pre class="c-spl-block" id="' + id + '">' + esc(text) + '</pre><button type="button" class="copy-btn" onclick="copyCode(this)">Copy</button></div></div>';
+    return '<div class="c-panel-section"><div class="c-panel-section-title">' + label + '</div><div class="code-wrap">'
+      + codeActionButtonsHtml(includeSearch)
+      + '<pre class="c-spl-block" id="' + id + '">' + esc(text) + '</pre></div></div>';
   }
-  html += copyBlock('SPL query', uc.q, 'copy-q');
-  html += copyBlock('tstats query', uc.qs, 'copy-qs');
-  html += copyBlock('Script example', uc.script, 'copy-script');
+  html += copyBlock('SPL query', uc.q, 'copy-q', looksLikeSplunkSearch(uc.q, 'spl'));
+  html += copyBlock('tstats query', uc.qs, 'copy-qs', looksLikeSplunkSearch(uc.qs, 'tstats'));
+  html += copyBlock('Script example', uc.script, 'copy-script', false);
 
   if (uc.m) html += '<div class="c-panel-section"><div class="c-panel-section-title">Implementation</div><div class="c-panel-section-body">' + esc(stripMd(uc.m)) + '</div></div>';
   if (uc.md) html += '<details class="c-panel-details"><summary>Detailed implementation</summary><div class="c-panel-section-body">' + renderDetailBody(uc.md) + '</div></details>';
@@ -245,7 +321,7 @@ function navPanel(dir) {
 }
 
 function copyCode(btn) {
-  var wrap = btn.parentElement;
+  var wrap = btn.closest ? btn.closest('.code-wrap') : btn.parentElement;
   var pre = wrap.querySelector('pre');
   var t = pre ? pre.textContent : '';
   if (navigator.clipboard && navigator.clipboard.writeText) {

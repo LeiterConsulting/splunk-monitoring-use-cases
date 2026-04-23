@@ -100,6 +100,21 @@ body {
   min-height: 100vh;
   line-height: 1.5;
 }
+.c-skip {
+  position: absolute;
+  left: 16px;
+  top: -48px;
+  z-index: 200;
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: 10px 14px;
+}
+.c-skip:focus {
+  top: 16px;
+}
 a { color: var(--text-link); text-decoration: none; }
 a:hover { text-decoration: underline; }
 button { font-family: var(--font-sans); cursor: pointer; }
@@ -1084,6 +1099,8 @@ html.dark .help-section-title { color: var(--cisco-teal); }
 </head>
 <body>
 
+<a href="#main" class="c-skip">Skip to content</a>
+
 <header class="c-header">
   <button type="button" class="c-hamburger" id="hamburger" aria-label="Menu">☰</button>
   <div class="c-header-logo" id="header-logo" tabindex="0" role="button" aria-label="Go to home page">
@@ -1131,7 +1148,7 @@ html.dark .help-section-title { color: var(--cisco-teal); }
 
 <div class="c-sidebar-backdrop" id="sidebar-backdrop"></div>
 <nav class="c-sidebar" id="sidebar" aria-label="Categories"></nav>
-<main class="c-main" id="main"></main>
+<main class="c-main" id="main" tabindex="-1"></main>
 
 <div class="c-panel-backdrop" id="panel-backdrop">
   <div class="c-panel" id="panel" role="dialog" aria-modal="true" aria-labelledby="panel-title" aria-label="Use case details">

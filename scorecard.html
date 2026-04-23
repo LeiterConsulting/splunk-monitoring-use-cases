@@ -88,6 +88,21 @@ body {
   min-height: 100vh;
   line-height: 1.5;
 }
+.sc-skip {
+  position: absolute;
+  left: 16px;
+  top: -48px;
+  z-index: 100;
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: 10px 14px;
+}
+.sc-skip:focus {
+  top: 16px;
+}
 a { color: var(--text-link); text-decoration: none; }
 a:hover { text-decoration: underline; }
 code { font-family: var(--font-mono); font-size: 0.9em; background: var(--bg-code); padding: 1px 5px; border-radius: 4px; }
@@ -327,6 +342,7 @@ footer a { font-weight: 600; }
 </style>
 </head>
 <body>
+<a href="#sc-main" class="sc-skip">Skip to content</a>
 <header class="sc-header">
   <div class="sc-brand">
     <span class="sc-brand-mark">SC</span>
@@ -350,7 +366,7 @@ footer a { font-weight: 600; }
   </nav>
 </header>
 
-<main>
+<main id="sc-main" tabindex="-1">
   <!-- Hero / global rollup -->
   <section aria-labelledby="sc-hero-h">
     <div class="sc-hero">

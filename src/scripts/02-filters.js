@@ -359,6 +359,16 @@ function cimDocUrl(model) {
   return 'https://docs.splunk.com/Documentation/CIM/latest/User/' + encodeURIComponent(base);
 }
 
+function renderDetailCodeBlock(text, codeLang) {
+  var includeSearch = typeof looksLikeSplunkSearch === 'function'
+    ? looksLikeSplunkSearch(text, codeLang)
+    : false;
+  var actions = typeof codeActionButtonsHtml === 'function'
+    ? codeActionButtonsHtml(includeSearch)
+    : '<div class="code-actions"><button type="button" class="copy-btn" onclick="copyCode(this)">Copy</button></div>';
+  return '<div class="code-wrap">' + actions + '<pre class="c-spl-block">' + esc(text) + '</pre></div>';
+}
+
 function renderDetailBody(md) {
   if (!md) return '';
   var fence = /^```(\w*)$/;
@@ -374,14 +384,14 @@ function renderDetailBody(md) {
       if (!inCode) { inCode = true; codeLang = (m[1] || 'text').toLowerCase(); codeLines = []; }
       else {
         inCode = false;
-        out.push('<pre class="c-spl-block">' + esc(codeLines.join('\n')) + '</pre>');
+        out.push(renderDetailCodeBlock(codeLines.join('\n'), codeLang));
       }
       continue;
     }
     if (inCode) codeLines.push(line);
     else out.push(linkify(line) + '<br>');
   }
-  if (inCode && codeLines.length) out.push('<pre class="c-spl-block">' + esc(codeLines.join('\n')) + '</pre>');
+  if (inCode && codeLines.length) out.push(renderDetailCodeBlock(codeLines.join('\n'), codeLang));
   return out.join('');
 }
 function setSort(val) {
