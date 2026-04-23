@@ -1,0 +1,83 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 3,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "Art.21(2)",
+  "clauseId": "nis2@Directive (EU) 2022/2555#Art.21(2)",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 3,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that NIS2 Art.21(2) is enforced — Splunk UC-22.2.21: NIS2 Risk Analysis Evidence for Essential Entities.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.2.21' running on index=risk sourcetype=\"stash\", tenable:vuln, nis2_entity_classification.csv (entity_tier=essential), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.2.21",
+      "ucTitle": "NIS2 Risk Analysis Evidence for Essential Entities"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that NIS2 Art.21(2) is enforced — Splunk UC-22.2.22: NIS2 Risk Analysis Evidence for Important Entities.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.2.22' running on nis2_entity_classification.csv (entity_tier=important), qualys:hostdetection, authentication CIM, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.2.22",
+      "ucTitle": "NIS2 Risk Analysis Evidence for Important Entities"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that NIS2 Art.21(2) is enforced — Splunk UC-22.2.32: NIS2 Proportional Security Measure Verification by Tier.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.2.32' running on nis2_control_matrix.csv (control_id, required_for_tier), ES correlation search inventory, nis2_entity_classification.csv, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.2.32",
+      "ucTitle": "NIS2 Proportional Security Measure Verification by Tier"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/nis2__Directive%20%28EU%29%202022%2F2555__Art.21%282%29.json",
+  "gapNote": "nis2 clause Art.21(2) has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 3
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "nis2",
+  "regulationName": "nis2",
+  "regulationShortName": "nis2",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/nis2.json",
+    "regulationVersion": "/api/v1/compliance/regulations/nis2@Directive%20%28EU%29%202022%2F2555.json",
+    "story": "/api/v1/compliance/story/nis2.json"
+  },
+  "tier": null,
+  "topAssurance": "contributing",
+  "topic": null,
+  "version": "Directive (EU) 2022/2555"
+}

@@ -1,0 +1,244 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§12.4",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.50.22"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "contributing",
+      "topic": "Information security documentation and policy",
+      "version": "3.7"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§16.1.32",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.50.9"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "User identification, authentication and access management",
+      "version": "3.7"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§16.6.9",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.31.18",
+        "22.31.20"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Event logging requirements",
+      "version": "3.7"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§17.2.17",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.31.19"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Information security incident management and response",
+      "version": "3.7"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "4 of 4 common clauses are covered by the catalogue, with a priority-weighted coverage of 25.0% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 4,
+      "coveredClauseCount": 4,
+      "priorityWeightedCoveragePercent": 25.0,
+      "stateCounts": {
+        "contributing-only": 4,
+        "covered-full": 0,
+        "covered-partial": 0,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "§16.1.32",
+        "killerUcId": "22.50.9",
+        "killerUcTitle": "NZISM §16.1.32 — user authentication strength & MFA coverage",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "User identification, authentication and access management",
+        "version": "3.7",
+        "why": "Clause §16.1.32 (User identification, authentication and access management) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "§16.6.9",
+        "killerUcId": "22.31.18",
+        "killerUcTitle": "NZ ISM control effectiveness monitoring",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Event logging requirements",
+        "version": "3.7",
+        "why": "Clause §16.6.9 (Event logging requirements) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "§17.2.17",
+        "killerUcId": "22.31.19",
+        "killerUcTitle": "CERT NZ incident reporting timeline compliance",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Information security incident management and response",
+        "version": "3.7",
+        "why": "Clause §17.2.17 (Information security incident management and response) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "§12.4",
+        "killerUcId": "22.50.22",
+        "killerUcTitle": "NZISM §12.4 — policy documentation freshness and approval state",
+        "priorityWeight": 0.7,
+        "topAssurance": "contributing",
+        "topic": "Information security documentation and policy",
+        "version": "3.7",
+        "why": "Clause §12.4 (Information security documentation and policy) carries a regulator-assigned priority weight of 0.7, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "§16.1.32",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.50.9",
+            "ucTitle": "NZISM §16.1.32 — user authentication strength & MFA coverage"
+          }
+        ],
+        "topic": "User identification, authentication and access management",
+        "version": "3.7"
+      },
+      {
+        "clause": "§16.6.9",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.31.20",
+            "ucTitle": "Protective security requirements evidence for NZ agencies"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.31.18",
+            "ucTitle": "NZ ISM control effectiveness monitoring"
+          }
+        ],
+        "topic": "Event logging requirements",
+        "version": "3.7"
+      },
+      {
+        "clause": "§17.2.17",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "low",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.31.19",
+            "ucTitle": "CERT NZ incident reporting timeline compliance"
+          }
+        ],
+        "topic": "Information security incident management and response",
+        "version": "3.7"
+      },
+      {
+        "clause": "§12.4",
+        "coverageState": "contributing-only",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.50.22",
+            "ucTitle": "NZISM §12.4 — policy documentation freshness and approval state"
+          }
+        ],
+        "topic": "Information security documentation and policy",
+        "version": "3.7"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "NZ"
+  ],
+  "narrative": null,
+  "narrativeRef": null,
+  "regulationId": "nzism",
+  "regulationName": "New Zealand Information Security Manual",
+  "regulationShortName": "NZISM",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=nzism",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#nzism",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/nzism.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

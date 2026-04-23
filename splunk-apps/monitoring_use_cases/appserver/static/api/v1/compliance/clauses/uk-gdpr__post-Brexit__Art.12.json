@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "Art.12",
+  "clauseId": "uk-gdpr@post-Brexit#Art.12",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "Derived from GDPR@2016/679 Art.12 (parent assurance='full'). UK GDPR preserves parent clause numbering; inherited assurance degraded one step.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that UK GDPR Art.12 is enforced — Splunk UC-22.36.1: DSAR fulfillment SLA tracker with verification evidence trail.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.36.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "derived-from-parent",
+      "smeCaveat": null,
+      "ucId": "22.36.1",
+      "ucTitle": "DSAR fulfillment SLA tracker with verification evidence trail"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/uk-gdpr__post-Brexit__Art.12.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "uk-gdpr",
+  "regulationName": "uk-gdpr",
+  "regulationShortName": "uk-gdpr",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/uk-gdpr.json",
+    "regulationVersion": "/api/v1/compliance/regulations/uk-gdpr@post-Brexit.json",
+    "story": "/api/v1/compliance/story/uk-gdpr.json"
+  },
+  "tier": null,
+  "topAssurance": "partial",
+  "topic": null,
+  "version": "post-Brexit"
+}

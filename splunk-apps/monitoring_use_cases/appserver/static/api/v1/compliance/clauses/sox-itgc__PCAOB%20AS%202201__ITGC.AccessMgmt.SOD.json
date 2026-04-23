@@ -1,0 +1,83 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 1,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201#ITGC.AccessMgmt.SOD",
+  "clause": "ITGC.AccessMgmt.SOD",
+  "clauseId": "sox-itgc@PCAOB AS 2201#ITGC.AccessMgmt.SOD",
+  "coverageState": "covered-full",
+  "coveringUcCount": 3,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "SOX SoD — matching toxic combinations is the canonical SOX-ITGC test.",
+      "category": 22,
+      "clauseUrl": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201#ITGC.AccessMgmt.SOD",
+      "controlObjective": "Evidence that SOX ITGC ITGC.AccessMgmt.SOD (Segregation of duties) is enforced — Splunk UC-22.48.1: Segregation of duties — toxic role combinations in IAM.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.48.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.48.1",
+      "ucTitle": "Segregation of duties — toxic role combinations in IAM"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "Break-glass that crosses SoD boundaries must be compensated; this UC generates the signal at session close.",
+      "category": 22,
+      "clauseUrl": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201#ITGC.AccessMgmt.SOD",
+      "controlObjective": "Evidence that SOX ITGC ITGC.AccessMgmt.SOD (Segregation of duties) is enforced — Splunk UC-22.48.2: SoD violations via break-glass usage — emergency role abuse.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.48.2' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.48.2",
+      "ucTitle": "SoD violations via break-glass usage — emergency role abuse"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'SOX §404' → 'ITGC.AccessMgmt.SOD'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201#ITGC.AccessMgmt.SOD",
+      "controlObjective": "Evidence that SOX ITGC ITGC.AccessMgmt.SOD (Segregation of duties) is enforced — Splunk UC-22.12.3: Segregation of duties conflicts across SAP / Oracle financial roles.",
+      "criticality": "low",
+      "evidenceArtifact": "Saved search 'UC-22.12.3' running on WinEventLog:Security, Active Directory replication/audit, snow:*, SAP/Oracle audit, mssql:audit, PAM, backup jobs, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.12.3",
+      "ucTitle": "Segregation of duties conflicts across SAP / Oracle financial roles"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/sox-itgc__PCAOB%20AS%202201__ITGC.AccessMgmt.SOD.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 3
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "sox-itgc",
+  "regulationName": "SOX — PCAOB AS 2201 ITGCs",
+  "regulationShortName": "SOX ITGC",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/sox-itgc.json",
+    "regulationVersion": "/api/v1/compliance/regulations/sox-itgc@PCAOB%20AS%202201.json",
+    "story": "/api/v1/compliance/story/sox-itgc.json"
+  },
+  "tier": 1,
+  "topAssurance": "full",
+  "topic": "Segregation of duties",
+  "version": "PCAOB AS 2201"
+}

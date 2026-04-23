@@ -1,0 +1,135 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/22.12.38.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/22.12.38.json",
+    "sourcePath": "content/cat-22-regulatory-compliance/UC-22.12.38.json"
+  },
+  "apiVersion": "v1",
+  "app": "Splunk Add-on for ServiceNow",
+  "cimModels": [
+    "Change"
+  ],
+  "compliance": [
+    {
+      "assurance": "full",
+      "assurance_rationale": "SOX-ITGC ChangeMgmt.Testing — test-evidence presence is direct evidence.",
+      "clause": "ITGC.ChangeMgmt.Testing",
+      "clauseUrl": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+      "controlObjective": "Evidence that SOX-ITGC ITGC.ChangeMgmt.Testing (Change tested) is enforced — Splunk UC-22.12.38: SOX-ITGC ChangeMgmt.Testing — Financial-system change test-evidence completeness.",
+      "evidenceArtifact": "Saved search 'UC-22.12.38' running on index=change sourcetype=servicenow:change; test evidence sub-table sourcetype=servicenow:change_task (type=UAT)., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "sox-itgc@PCAOB AS 2201#ITGC.ChangeMgmt.Testing",
+      "regulation": "SOX-ITGC",
+      "requires_sme_review": true,
+      "version": "PCAOB AS 2201"
+    },
+    {
+      "assurance": "full",
+      "assurance_rationale": "SOC 2 CC8.1 Change management — directly evidenced.",
+      "clause": "CC8.1",
+      "clauseUrl": "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services",
+      "controlObjective": "Evidence that SOC-2 CC8.1 (Change management) is enforced — Splunk UC-22.12.38: SOX-ITGC ChangeMgmt.Testing — Financial-system change test-evidence completeness.",
+      "evidenceArtifact": "Saved search 'UC-22.12.38' running on index=change sourcetype=servicenow:change; test evidence sub-table sourcetype=servicenow:change_task (type=UAT)., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "soc-2@2017 TSC#CC8.1",
+      "regulation": "SOC-2",
+      "requires_sme_review": true,
+      "version": "2017 TSC"
+    },
+    {
+      "assurance": "full",
+      "assurance_rationale": "ISO/IEC 27001:2022 A.8.32 Change management — directly evidenced.",
+      "clause": "A.8.32",
+      "clauseUrl": "https://www.iso.org/standard/27001",
+      "controlObjective": "Evidence that ISO/IEC 27001 A.8.32 is enforced — Splunk UC-22.12.38: SOX-ITGC ChangeMgmt.Testing — Financial-system change test-evidence completeness.",
+      "evidenceArtifact": "Saved search 'UC-22.12.38' running on index=change sourcetype=servicenow:change; test evidence sub-table sourcetype=servicenow:change_task (type=UAT)., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "iso-27001@2022#A.8.32",
+      "regulation": "ISO/IEC 27001",
+      "requires_sme_review": true,
+      "version": "2022"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "PCI-DSS 6.4.6 Impact of changes — contributing.",
+      "clause": "6.4.6",
+      "clauseUrl": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf",
+      "controlObjective": "Evidence that PCI-DSS 6.4.6 is enforced — Splunk UC-22.12.38: SOX-ITGC ChangeMgmt.Testing — Financial-system change test-evidence completeness.",
+      "evidenceArtifact": "Saved search 'UC-22.12.38' running on index=change sourcetype=servicenow:change; test evidence sub-table sourcetype=servicenow:change_task (type=UAT)., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "pci-dss@v4.0#6.4.6",
+      "regulation": "PCI-DSS",
+      "requires_sme_review": true,
+      "version": "v4.0"
+    }
+  ],
+  "controlFamily": "policy-to-control-traceability",
+  "controlTest": {
+    "fixtureRef": "sample-data/uc-22.12.38-fixture.json",
+    "negativeScenario": "A change with a closed-complete UAT subtask is absent.",
+    "positiveScenario": "Implementing a financial-system change with no UAT subtask returns test_evidence_present=0."
+  },
+  "criticality": "high",
+  "dataSources": "`index=change` sourcetype=servicenow:change; test evidence sub-table sourcetype=servicenow:change_task (type=UAT).",
+  "description": "For every change to a financial system, assert a closed-complete UAT task exists. SOX-ITGC ChangeMgmt.Testing requires documented test evidence.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Splunk Add-on for ServiceNow.\n• Ensure the following data sources are available: `index=change` sourcetype=servicenow:change; test evidence sub-table sourcetype=servicenow:change_task (type=UAT)..\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\n(1) Maintain financial_systems_apps.csv; (2) configure ServiceNow to require a UAT subtask; (3) schedule UC hourly; (4) test_evidence_present=0 triggers a deficiency record.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=change sourcetype=servicenow:change state=implemented earliest=-7d\n| lookup financial_systems_apps.csv system OUTPUT in_scope\n| where in_scope=\"yes\"\n| stats latest(_time) AS deployed_at latest(change_id) AS change_id BY change_id system\n| join type=outer change_id\n  [search index=change sourcetype=servicenow:change_task task_type=uat state=closed_complete earliest=-60d\n   | stats latest(assigned_to) AS tester count AS uat_tasks BY change_id]\n| eval test_evidence_present=if(uat_tasks>=1,1,0)\n| where test_evidence_present=0\n| table change_id system tester deployed_at test_evidence_present\n```\n\nUnderstanding this SPL\n\n**SOX-ITGC ChangeMgmt.Testing — Financial-system change test-evidence completeness** — Converts a common sampling control into full-coverage evidence, reducing audit sampling and cost.\n\nDocumented **Data sources**: `index=change` sourcetype=servicenow:change; test evidence sub-table sourcetype=servicenow:change_task (type=UAT). **App/TA** (typical add-on context): Splunk Add-on for ServiceNow. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: change; **sourcetype**: servicenow:change. That sourcetype matches what this use case lists under Data sources.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=change, sourcetype=servicenow:change, time bounds. Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• Enriches events using `lookup` (lookup definition + optional OUTPUT fields).\n• Filters the current rows with `where in_scope=\"yes\"` — typically the threshold or rule expression for this monitoring goal.\n• `stats` rolls up events into metrics; results are split **by change_id system** so each row reflects one combination of those dimensions (useful for per-host, per-user, or per-entity comparisons for this use case).\n• Joins to a subsearch with `join` — set `max=` to match cardinality and avoid silent truncation.\n• `eval` defines or adjusts **test_evidence_present** — often to normalize units, derive a ratio, or prepare for thresholds.\n• Filters the current rows with `where test_evidence_present=0` — typically the threshold or rule expression for this monitoring goal.\n• Pipeline stage (see **SOX-ITGC ChangeMgmt.Testing — Financial-system change test-evidence completeness**): table change_id system tester deployed_at test_evidence_present\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Table of missing-test changes, bar chart by system, single value 'missing test evidence'.",
+  "detectionType": "Baseline",
+  "difficulty": "intermediate",
+  "equipment": [
+    "servicenow"
+  ],
+  "evidence": "Saved search 'sox_itgc_change_testing' (hourly) emits per change: change_id, system, test_evidence_present, tester, deployed_at, to compliance_summary.",
+  "exclusions": "Does NOT judge test quality; attests each financial-system change has test evidence (UAT artefact, attachment or ticket) linked to it before deploy.",
+  "grandmaExplanation": "Converts a common sampling control into full-coverage evidence, reducing audit sampling and cost — so you can show exactly what is being watched and when something went wrong.",
+  "id": "22.12.38",
+  "implementation": "(1) Maintain financial_systems_apps.csv; (2) configure ServiceNow to require a UAT subtask; (3) schedule UC hourly; (4) test_evidence_present=0 triggers a deficiency record.",
+  "knownFalsePositives": "Automated changes (configuration as code) may use automated test jobs rather than UAT tasks — accept sourcetype=cicd:tests result=pass as equivalent evidence.",
+  "lastReviewed": "2026-04-16",
+  "monitoringType": [
+    "Compliance"
+  ],
+  "owner": "CFO",
+  "references": [
+    {
+      "retrieved": "2026-04-16",
+      "title": "SOX-ITGC PCAOB AS 2201",
+      "url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "SOC-2 2017 TSC",
+      "url": "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "ISO/IEC 27001 2022",
+      "url": "https://www.iso.org/standard/27001"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "PCI-DSS v4.0",
+      "url": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf"
+    }
+  ],
+  "requiredFields": [
+    "change_id",
+    "system",
+    "state",
+    "_time"
+  ],
+  "reviewer": "N/A",
+  "securityDomain": "audit",
+  "spl": "index=change sourcetype=servicenow:change state=implemented earliest=-7d\n| lookup financial_systems_apps.csv system OUTPUT in_scope\n| where in_scope=\"yes\"\n| stats latest(_time) AS deployed_at latest(change_id) AS change_id BY change_id system\n| join type=outer change_id\n  [search index=change sourcetype=servicenow:change_task task_type=uat state=closed_complete earliest=-60d\n   | stats latest(assigned_to) AS tester count AS uat_tasks BY change_id]\n| eval test_evidence_present=if(uat_tasks>=1,1,0)\n| where test_evidence_present=0\n| table change_id system tester deployed_at test_evidence_present",
+  "splunkPillar": "Security",
+  "splunkVersions": [
+    "9.2+",
+    "Cloud"
+  ],
+  "status": "verified",
+  "subcategory": "22.12#1",
+  "title": "SOX-ITGC ChangeMgmt.Testing — Financial-system change test-evidence completeness",
+  "value": "Converts a common sampling control into full-coverage evidence, reducing audit sampling and cost.",
+  "visualization": "Table of missing-test changes, bar chart by system, single value 'missing test evidence'."
+}

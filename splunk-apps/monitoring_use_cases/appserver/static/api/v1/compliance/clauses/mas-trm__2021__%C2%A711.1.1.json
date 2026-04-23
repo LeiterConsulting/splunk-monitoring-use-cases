@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.mas.gov.sg/-/media/mas/regulations-and-financial-stability/regulatory-and-supervisory-framework/risk-management/trm-guidelines-18-january-2021.pdf",
+  "clause": "§11.1.1",
+  "clauseId": "mas-trm@2021#§11.1.1",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Phase-C authored UC targeting MAS TRM §11.1.1 (System resilience). Uses continuous, production-grade Splunk telemetry to provide auditor-facing evidence; assurance level set to 'contributing' pending SME review per Phase E of the regulation-coverage plan.",
+      "category": 22,
+      "clauseUrl": "https://www.mas.gov.sg/-/media/mas/regulations-and-financial-stability/regulatory-and-supervisory-framework/risk-management/trm-guidelines-18-january-2021.pdf",
+      "controlObjective": "Evidence that MAS TRM §11.1.1 (System resilience) is enforced — Splunk UC-22.50.5: MAS TRM §11.1.1 system resilience — RTO/RPO burn-rate evidence.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.50.5' running on ITSI KPI service health, infrastructure uptime, DR test records., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": "Phase-C draft: SME review required before uplifting assurance from 'contributing' to 'partial' or 'full'. Confirm that the SPL captures the specific regulator expectation and that the telemetry exists in the deployment.",
+      "ucId": "22.50.5",
+      "ucTitle": "MAS TRM §11.1.1 system resilience — RTO/RPO burn-rate evidence"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/mas-trm__2021__%C2%A711.1.1.json",
+  "gapNote": "MAS TRM clause §11.1.1 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "mas-trm",
+  "regulationName": "MAS Technology Risk Management Guidelines",
+  "regulationShortName": "MAS TRM",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/mas-trm.json",
+    "regulationVersion": "/api/v1/compliance/regulations/mas-trm@2021.json",
+    "story": "/api/v1/compliance/story/mas-trm.json"
+  },
+  "tier": 2,
+  "topAssurance": "contributing",
+  "topic": "System resilience",
+  "version": "2021"
+}

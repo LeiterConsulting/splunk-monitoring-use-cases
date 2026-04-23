@@ -1,0 +1,68 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.tsa.gov/sd02c",
+  "clause": "III.D",
+  "clauseId": "tsa-sd@SD02C#III.D",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 2,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "TSA SD02C III.D Cybersecurity assessment — compliance check dashboards serve as the recurring cybersecurity assessment evidence.",
+      "category": 14,
+      "clauseUrl": "https://www.tsa.gov/sd02c",
+      "controlObjective": "Evidence that TSA SD III.D (Cybersecurity assessment) is enforced — Splunk UC-14.2.11: NERC CIP Compliance Checks.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-14.2.11' running on Firewall, VPN, AD, asset logs tagged nerc_cip, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "14.2.11",
+      "ucTitle": "NERC CIP Compliance Checks"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "TSA SD02C III.D Cybersecurity assessment — continuous zone-and-conduit monitoring supports the recurring pipeline-cybersecurity assessment.",
+      "category": 14,
+      "clauseUrl": "https://www.tsa.gov/sd02c",
+      "controlObjective": "Evidence that TSA SD III.D (Cybersecurity assessment) is enforced — Splunk UC-14.9.22: IEC 62443 Zone and Conduit Compliance Monitoring.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-14.9.22' running on sourcetype cisco:cybervision:flow and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "14.9.22",
+      "ucTitle": "IEC 62443 Zone and Conduit Compliance Monitoring"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/tsa-sd__SD02C__III.D.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 2
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "tsa-sd",
+  "regulationName": "TSA Pipeline Security Directive",
+  "regulationShortName": "TSA SD",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/tsa-sd.json",
+    "regulationVersion": "/api/v1/compliance/regulations/tsa-sd@SD02C.json",
+    "story": "/api/v1/compliance/story/tsa-sd.json"
+  },
+  "tier": 2,
+  "topAssurance": "partial",
+  "topic": "Cybersecurity assessment",
+  "version": "SD02C"
+}

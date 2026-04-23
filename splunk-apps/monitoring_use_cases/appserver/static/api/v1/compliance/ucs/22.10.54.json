@@ -1,0 +1,70 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/22.10.54.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/22.10.54.json",
+    "sourcePath": "content/cat-22-regulatory-compliance/UC-22.10.54.json"
+  },
+  "apiVersion": "v1",
+  "app": "Splunk Add-on for Microsoft Office 365 (4055)",
+  "cimModels": [
+    "N/A"
+  ],
+  "compliance": [
+    {
+      "assurance": "contributing",
+      "assurance_rationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "clause": "§164.502(b)",
+      "controlObjective": "Evidence that HIPAA Security §164.502(b) is enforced — Splunk UC-22.10.54: Third-Party Data Sharing — O365 Sharing Links to External Domains on PHI Libraries.",
+      "evidenceArtifact": "Saved search 'UC-22.10.54' running on sourcetype ms:o365:management and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "hipaa-security@2013-final#§164.502(b)",
+      "provenance": "maintainer",
+      "regulation": "HIPAA Security",
+      "requires_sme_review": true,
+      "version": "2013-final"
+    },
+    {
+      "assurance": "contributing",
+      "assurance_rationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "clause": "§164.514(e)",
+      "controlObjective": "Evidence that HIPAA Security §164.514(e) is enforced — Splunk UC-22.10.54: Third-Party Data Sharing — O365 Sharing Links to External Domains on PHI Libraries.",
+      "evidenceArtifact": "Saved search 'UC-22.10.54' running on sourcetype ms:o365:management and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "hipaa-security@2013-final#§164.514(e)",
+      "provenance": "maintainer",
+      "regulation": "HIPAA Security",
+      "requires_sme_review": true,
+      "version": "2013-final"
+    }
+  ],
+  "criticality": "critical",
+  "dataSources": "`index=o365` `sourcetype=ms:o365:management` SharePointFileOperation or SharingSet operations, Purview sensitivity labels when present",
+  "description": "Surfaces SharePoint or OneDrive anonymous or company links created in sites labeled for clinical operations that resolve to recipients outside the covered entity tenant.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Splunk Add-on for Microsoft Office 365 (4055).\n• Ensure the following data sources are available: `index=o365` `sourcetype=ms:o365:management` SharePointFileOperation or SharingSet operations, Purview sensitivity labels when present.\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\n(1) Replace `@yourhealthorg\\.com` with your primary tenant SMTP domain; (2) align `site_label` with Purview labels actually deployed; (3) tune for legitimate research collaborators via domain allow list; (4) integrate with insider risk workflows.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=o365 sourcetype=\"ms:o365:management\" Workload=SharePoint earliest=-7d Operation IN (\"SharingSet\",\"AnonymousLinkCreated\",\"CompanyLinkCreated\")\n| eval site_label=coalesce(SensitivityLabel, SiteSensitivity)\n| where match(lower(site_label),\"clinical|phi|hipaa|restricted\")\n| eval sharee_lower=lower(Sharee)\n| eval external=if(match(sharee_lower,\"@yourhealthorg\\.com$\"),0,1)\n| where external=1\n| stats count values(Sharee) as sharees by UserId, ObjectId, Operation, site_label\n| sort - count\n```\n\nUnderstanding this SPL\n\n**Third-Party Data Sharing — O365 Sharing Links to External Domains on PHI Libraries (§164.502(b) / §164.514(e))** — Surfaces SharePoint or OneDrive anonymous or company links created in sites labeled for clinical operations that resolve to recipients outside the covered entity tenant.\n\nDocumented **Data sources**: `index=o365` `sourcetype=ms:o365:management` SharePointFileOperation or SharingSet operations, Purview sensitivity labels when present. **App/TA** (typical add-on context): Splunk Add-on for Microsoft Office 365 (4055). The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: o365; **sourcetype**: ms:o365:management. That sourcetype matches what this use case lists under Data sources.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=o365, sourcetype=\"ms:o365:management\", time bounds. Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• `eval` defines or adjusts **site_label** — often to normalize units, derive a ratio, or prepare for thresholds.\n• Filters the current rows with `where match(lower(site_label),\"clinical|phi|hipaa|restricted\")` — typically the threshold or rule expression for this monitoring goal.\n• `eval` defines or adjusts **sharee_lower** — often to normalize units, derive a ratio, or prepare for thresholds.\n• `eval` defines or adjusts **external** — often to normalize units, derive a ratio, or prepare for thresholds.\n• Filters the current rows with `where external=1` — typically the threshold or rule expression for this monitoring goal.\n• `stats` rolls up events into metrics; results are split **by UserId, ObjectId, Operation, site_label** so each row reflects one combination of those dimensions (useful for per-host, per-user, or per-entity comparisons for this use case).\n• Orders rows with `sort` — combine with `head`/`tail` for top-N patterns.\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Table (user, object, sharees), Bar chart (external shares by label), Single value (anonymous links).",
+  "difficulty": "intermediate",
+  "equipment": [
+    "m365",
+    "sharepoint"
+  ],
+  "grandmaExplanation": "Surfaces SharePoint or OneDrive anonymous or company links created in sites labeled for clinical operations that resolve to recipients outside the covered entity tenant — so you can show exactly what is being watched and when something went wrong.",
+  "id": "22.10.54",
+  "implementation": "(1) Replace `@yourhealthorg\\.com` with your primary tenant SMTP domain; (2) align `site_label` with Purview labels actually deployed; (3) tune for legitimate research collaborators via domain allow list; (4) integrate with insider risk workflows.",
+  "knownFalsePositives": "Administrative tasks, scheduled jobs or platform updates can match this pattern — correlate with change management, maintenance windows and user role before raising severity.",
+  "monitoringType": [
+    "Security",
+    "Compliance"
+  ],
+  "references": [
+    {
+      "title": "Splunk Add-on for Microsoft Office 365",
+      "url": "https://splunkbase.splunk.com/app/4055"
+    }
+  ],
+  "spl": "index=o365 sourcetype=\"ms:o365:management\" Workload=SharePoint earliest=-7d Operation IN (\"SharingSet\",\"AnonymousLinkCreated\",\"CompanyLinkCreated\")\n| eval site_label=coalesce(SensitivityLabel, SiteSensitivity)\n| where match(lower(site_label),\"clinical|phi|hipaa|restricted\")\n| eval sharee_lower=lower(Sharee)\n| eval external=if(match(sharee_lower,\"@yourhealthorg\\.com$\"),0,1)\n| where external=1\n| stats count values(Sharee) as sharees by UserId, ObjectId, Operation, site_label\n| sort - count",
+  "splunkPillar": "Security",
+  "title": "Third-Party Data Sharing — O365 Sharing Links to External Domains on PHI Libraries",
+  "value": "Surfaces SharePoint or OneDrive anonymous or company links created in sites labeled for clinical operations that resolve to recipients outside the covered entity tenant.",
+  "visualization": "Table (user, object, sharees), Bar chart (external shares by label), Single value (anonymous links)."
+}

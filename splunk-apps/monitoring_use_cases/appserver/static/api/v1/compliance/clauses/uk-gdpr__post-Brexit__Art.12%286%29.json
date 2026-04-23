@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "Art.12(6)",
+  "clauseId": "uk-gdpr@post-Brexit#Art.12(6)",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Derived from GDPR@2016/679 Art.12(6) (parent assurance='partial'). UK GDPR preserves parent clause numbering; inherited assurance degraded one step.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Detects violations of UK GDPR Art.12(6) — Splunk UC-22.36.4: DSAR identity-verification friction — failed-verification anomaly.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.36.4' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "detects-violation-of",
+      "provenance": "derived-from-parent",
+      "smeCaveat": null,
+      "ucId": "22.36.4",
+      "ucTitle": "DSAR identity-verification friction — failed-verification anomaly"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/uk-gdpr__post-Brexit__Art.12%286%29.json",
+  "gapNote": "uk-gdpr clause Art.12(6) has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "detects-violation-of": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "uk-gdpr",
+  "regulationName": "uk-gdpr",
+  "regulationShortName": "uk-gdpr",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/uk-gdpr.json",
+    "regulationVersion": "/api/v1/compliance/regulations/uk-gdpr@post-Brexit.json",
+    "story": "/api/v1/compliance/story/uk-gdpr.json"
+  },
+  "tier": null,
+  "topAssurance": "contributing",
+  "topic": null,
+  "version": "post-Brexit"
+}

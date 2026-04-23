@@ -1,0 +1,116 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/22.11.106.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/22.11.106.json",
+    "sourcePath": "content/cat-22-regulatory-compliance/UC-22.11.106.json"
+  },
+  "apiVersion": "v1",
+  "app": "Splunk Enterprise Security",
+  "cimModels": [
+    "N/A"
+  ],
+  "compliance": [
+    {
+      "assurance": "full",
+      "assurance_rationale": "PCI-DSS 12.3 Targeted risk analysis — cadence adherence is direct evidence.",
+      "clause": "12.3",
+      "clauseUrl": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf",
+      "controlObjective": "Evidence that PCI-DSS 12.3 (Targeted risk analysis) is enforced — Splunk UC-22.11.106: PCI-DSS 12.3 — Targeted risk analysis: frequency adherence for per-requirement TRAs.",
+      "evidenceArtifact": "Saved search 'UC-22.11.106' running on index=grc sourcetype=archer:tra_record; TRA register pci_tra_register.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "pci-dss@v4.0#12.3",
+      "regulation": "PCI-DSS",
+      "requires_sme_review": true,
+      "version": "v4.0"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "ISO/IEC 27001:2022 Clause 8.2 Information security risk assessment — contributing.",
+      "clause": "8.2",
+      "clauseUrl": "https://www.iso.org/standard/27001",
+      "controlObjective": "Evidence that ISO/IEC 27001 8.2 (Information-security risk assessment) is enforced — Splunk UC-22.11.106: PCI-DSS 12.3 — Targeted risk analysis: frequency adherence for per-requirement TRAs.",
+      "evidenceArtifact": "Saved search 'UC-22.11.106' running on index=grc sourcetype=archer:tra_record; TRA register pci_tra_register.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "iso-27001@2022#8.2",
+      "regulation": "ISO/IEC 27001",
+      "requires_sme_review": true,
+      "version": "2022"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "DORA Art.6 ICT risk-management framework — contributing.",
+      "clause": "Art.6",
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj",
+      "controlObjective": "Evidence that DORA Art.6 (ICT risk-management framework) is enforced — Splunk UC-22.11.106: PCI-DSS 12.3 — Targeted risk analysis: frequency adherence for per-requirement TRAs.",
+      "evidenceArtifact": "Saved search 'UC-22.11.106' running on index=grc sourcetype=archer:tra_record; TRA register pci_tra_register.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "dora@Regulation (EU) 2022/2554#Art.6",
+      "regulation": "DORA",
+      "requires_sme_review": true,
+      "version": "Regulation (EU) 2022/2554"
+    }
+  ],
+  "controlFamily": "policy-to-control-traceability",
+  "controlTest": {
+    "fixtureRef": "sample-data/uc-22.11.106-fixture.json",
+    "negativeScenario": "A TRA refreshed in the past 200d with frequency_days=365 is absent.",
+    "positiveScenario": "A TRA with frequency_days=365 and last_refresh_at 400d ago returns overdue_days=35."
+  },
+  "criticality": "medium",
+  "dataSources": "`index=grc` sourcetype=archer:tra_record; TRA register `pci_tra_register.csv`.",
+  "description": "PCI-DSS v4.0 introduced targeted risk analyses (TRAs) at 12.3. This UC makes the refresh cadence measurable.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Splunk Enterprise Security.\n• Ensure the following data sources are available: `index=grc` sourcetype=archer:tra_record; TRA register `pci_tra_register.csv`..\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\n(1) Maintain pci_tra_register.csv with requirement and frequency_days; (2) GRC writes each refresh event; (3) schedule UC daily; (4) overdue TRAs open a CISO-owned task; (5) quarterly compliance report.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\n| inputlookup pci_tra_register.csv\n| join type=outer tra_id\n  [search index=grc sourcetype=archer:tra_record earliest=-2y\n   | stats latest(_time) AS last_refresh_at BY tra_id]\n| eval overdue_days=round((now()-last_refresh_at)/86400,0)-frequency_days\n| where overdue_days>0 OR isnull(last_refresh_at)\n| table tra_id requirement frequency_days last_refresh_at overdue_days\n```\n\nUnderstanding this SPL\n\n**PCI-DSS 12.3 — Targeted risk analysis: frequency adherence for per-requirement TRAs** — Gives compliance an explicit overdue list — the v4.0 TRA is a common reason for 'in progress' at year-two assessments.\n\nDocumented **Data sources**: `index=grc` sourcetype=archer:tra_record; TRA register `pci_tra_register.csv`. **App/TA** (typical add-on context): Splunk Enterprise Security. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\n**Pipeline walkthrough**\n\n• Loads rows via `inputlookup` (KV store or CSV lookup) for enrichment or reporting.\n• Joins to a subsearch with `join` — set `max=` to match cardinality and avoid silent truncation.\n• `eval` defines or adjusts **overdue_days** — often to normalize units, derive a ratio, or prepare for thresholds.\n• Filters the current rows with `where overdue_days>0 OR isnull(last_refresh_at)` — typically the threshold or rule expression for this monitoring goal.\n• Pipeline stage (see **PCI-DSS 12.3 — Targeted risk analysis: frequency adherence for per-requirement TRAs**): table tra_id requirement frequency_days last_refresh_at overdue_days\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Table of overdue TRAs, bar chart by requirement, single value 'TRAs overdue'.",
+  "detectionType": "Baseline",
+  "difficulty": "intermediate",
+  "evidence": "Saved search 'pci_12_3_tra_refresh' (daily) emits per TRA: tra_id, requirement, frequency_days, last_refresh_at, overdue_days, to compliance_summary.",
+  "exclusions": "Does NOT evaluate the TRA content; reports TRAs whose refresh is overdue per documented frequency.",
+  "grandmaExplanation": "Gives compliance an explicit overdue list — the v4.0 TRA is a common reason for 'in progress' at year-two assessments — so you can show exactly what is being watched and when something went wrong.",
+  "id": "22.11.106",
+  "implementation": "(1) Maintain pci_tra_register.csv with requirement and frequency_days; (2) GRC writes each refresh event; (3) schedule UC daily; (4) overdue TRAs open a CISO-owned task; (5) quarterly compliance report.",
+  "knownFalsePositives": "TRAs whose requirement is marked 'not applicable' should be excluded via scope_applicable=false.",
+  "lastReviewed": "2026-04-16",
+  "monitoringType": [
+    "Compliance"
+  ],
+  "owner": "CISO",
+  "premiumApps": [
+    "Splunk Enterprise Security"
+  ],
+  "references": [
+    {
+      "retrieved": "2026-04-16",
+      "title": "PCI-DSS v4.0",
+      "url": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "ISO/IEC 27001 2022",
+      "url": "https://www.iso.org/standard/27001"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "DORA Regulation (EU) 2022/2554",
+      "url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj"
+    }
+  ],
+  "requiredFields": [
+    "tra_id",
+    "requirement",
+    "_time"
+  ],
+  "reviewer": "N/A",
+  "securityDomain": "audit",
+  "spl": "| inputlookup pci_tra_register.csv\n| join type=outer tra_id\n  [search index=grc sourcetype=archer:tra_record earliest=-2y\n   | stats latest(_time) AS last_refresh_at BY tra_id]\n| eval overdue_days=round((now()-last_refresh_at)/86400,0)-frequency_days\n| where overdue_days>0 OR isnull(last_refresh_at)\n| table tra_id requirement frequency_days last_refresh_at overdue_days",
+  "splunkPillar": "Security",
+  "splunkVersions": [
+    "9.2+",
+    "Cloud"
+  ],
+  "status": "verified",
+  "subcategory": "22.11#1",
+  "title": "PCI-DSS 12.3 — Targeted risk analysis: frequency adherence for per-requirement TRAs",
+  "value": "Gives compliance an explicit overdue list — the v4.0 TRA is a common reason for 'in progress' at year-two assessments.",
+  "visualization": "Table of overdue TRAs, bar chart by requirement, single value 'TRAs overdue'."
+}

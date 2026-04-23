@@ -1,0 +1,116 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/22.6.49.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/22.6.49.json",
+    "sourcePath": "content/cat-22-regulatory-compliance/UC-22.6.49.json"
+  },
+  "apiVersion": "v1",
+  "app": "Splunk Enterprise Security",
+  "cimModels": [
+    "Performance"
+  ],
+  "compliance": [
+    {
+      "assurance": "full",
+      "assurance_rationale": "Clause 9.1 requires monitoring, measurement, analysis, and evaluation; proof the telemetry is alive is a prerequisite for the rest of the clause.",
+      "clause": "9.1",
+      "clauseUrl": "https://www.iso.org/standard/27001",
+      "controlObjective": "Evidence that ISO/IEC 27001 9.1 (Monitoring, measurement, analysis, evaluation) is enforced — Splunk UC-22.6.49: ISO/IEC 27001:2022 Clause 9.1 — Monitoring programme coverage: KPI telemetry uptime.",
+      "evidenceArtifact": "Saved search 'UC-22.6.49' running on sourcetype splunkd and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "iso-27001@2022#9.1",
+      "regulation": "ISO/IEC 27001",
+      "requires_sme_review": true,
+      "version": "2022"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "NIST 800-53 CA-7 Continuous Monitoring — contributing evidence.",
+      "clause": "CA-7",
+      "clauseUrl": "https://doi.org/10.6028/NIST.SP.800-53r5",
+      "controlObjective": "Evidence that NIST 800-53 CA-7 is enforced — Splunk UC-22.6.49: ISO/IEC 27001:2022 Clause 9.1 — Monitoring programme coverage: KPI telemetry uptime.",
+      "evidenceArtifact": "Saved search 'UC-22.6.49' running on sourcetype splunkd and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "nist-800-53@Rev. 5#CA-7",
+      "regulation": "NIST 800-53",
+      "requires_sme_review": true,
+      "version": "Rev. 5"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "SOC 2 CC7.1 System Operations Monitoring — contributing.",
+      "clause": "CC7.1",
+      "clauseUrl": "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services",
+      "controlObjective": "Evidence that SOC-2 CC7.1 (System operations monitoring) is enforced — Splunk UC-22.6.49: ISO/IEC 27001:2022 Clause 9.1 — Monitoring programme coverage: KPI telemetry uptime.",
+      "evidenceArtifact": "Saved search 'UC-22.6.49' running on sourcetype splunkd and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "soc-2@2017 TSC#CC7.1",
+      "regulation": "SOC-2",
+      "requires_sme_review": true,
+      "version": "2017 TSC"
+    }
+  ],
+  "controlFamily": "log-source-completeness",
+  "controlTest": {
+    "fixtureRef": "sample-data/uc-22.6.49-fixture.json",
+    "negativeScenario": "A KPI posting within sla_minutes is absent.",
+    "positiveScenario": "Stopping the data-engineering job for kpi_id=patch_mttr for 1h past its sla_minutes sets is_stale=1."
+  },
+  "criticality": "high",
+  "dataSources": "`index=_internal` sourcetype=splunkd (scheduler logs); `index=compliance` sourcetype=isms:objective_result; KPI freshness lookup `iso_27001_kpi_freshness.csv`.",
+  "description": "For every ISMS KPI the committee has agreed to measure under Clause 9.1, check the pipeline is alive within the KPI's freshness SLA. Stale pipelines are a silent failure mode of monitoring programmes.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Splunk Enterprise Security.\n• Ensure the following data sources are available: `index=_internal` sourcetype=splunkd (scheduler logs); `index=compliance` sourcetype=isms:objective_result; KPI freshness lookup `iso_27001_kpi_freshness.csv`..\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\n(1) Push each KPI into index=compliance; (2) maintain iso_27001_kpi_freshness.csv per KPI with its SLA; (3) schedule UC every 15m; (4) is_stale=1 pages the data-engineering owner of the KPI; (5) weekly ISMS report attaches the latest state.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\n| inputlookup iso_27001_kpi_freshness.csv\n| join type=outer kpi_id\n  [search index=compliance sourcetype=isms:objective_result earliest=-7d\n   | stats latest(_time) AS last_seen BY kpi_id]\n| eval age_min=round((now()-last_seen)/60,0)\n| eval is_stale=if(age_min>sla_minutes OR isnull(last_seen),1,0)\n| table kpi_id last_seen age_min sla_minutes is_stale\n```\n\nUnderstanding this SPL\n\n**ISO/IEC 27001:2022 Clause 9.1 — Monitoring programme coverage: KPI telemetry uptime** — Prevents the worst external-audit outcome (monitoring 'was in place' but had silently died) and gives the Head of Platform a single dashboard tile showing ISMS telemetry health.\n\nDocumented **Data sources**: `index=_internal` sourcetype=splunkd (scheduler logs); `index=compliance` sourcetype=isms:objective_result; KPI freshness lookup `iso_27001_kpi_freshness.csv`. **App/TA** (typical add-on context): Splunk Enterprise Security. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\n**Pipeline walkthrough**\n\n• Loads rows via `inputlookup` (KV store or CSV lookup) for enrichment or reporting.\n• Joins to a subsearch with `join` — set `max=` to match cardinality and avoid silent truncation.\n• `eval` defines or adjusts **age_min** — often to normalize units, derive a ratio, or prepare for thresholds.\n• `eval` defines or adjusts **is_stale** — often to normalize units, derive a ratio, or prepare for thresholds.\n• Pipeline stage (see **ISO/IEC 27001:2022 Clause 9.1 — Monitoring programme coverage: KPI telemetry uptime**): table kpi_id last_seen age_min sla_minutes is_stale\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Heatmap of KPI staleness, table of stale KPIs, single value 'stale KPIs right now'.",
+  "detectionType": "Baseline",
+  "difficulty": "intermediate",
+  "evidence": "Saved search 'iso_27001_9_1_kpi_uptime' (every 15m) emits per KPI: kpi_id, last_seen, sla_minutes, is_stale, to compliance_summary.",
+  "exclusions": "Does NOT evaluate KPI correctness; detects KPIs whose data pipeline has been silent beyond their contracted freshness window, which means the monitoring programme itself has decayed.",
+  "grandmaExplanation": "We help you prevent the worst external-audit outcome (monitoring 'was in place' but had silently died) and gives the Head of Platform a single dashboard tile showing ISMS telemetry health — so you can show exactly what is being watched and when something went wrong.",
+  "id": "22.6.49",
+  "implementation": "(1) Push each KPI into index=compliance; (2) maintain iso_27001_kpi_freshness.csv per KPI with its SLA; (3) schedule UC every 15m; (4) is_stale=1 pages the data-engineering owner of the KPI; (5) weekly ISMS report attaches the latest state.",
+  "knownFalsePositives": "KPI suspended during maintenance windows legitimately shows as stale — exclude with a maintenance_calendar.csv lookup.",
+  "lastReviewed": "2026-04-16",
+  "monitoringType": [
+    "Compliance",
+    "Availability"
+  ],
+  "owner": "Head of Platform",
+  "premiumApps": [
+    "Splunk Enterprise Security"
+  ],
+  "references": [
+    {
+      "retrieved": "2026-04-16",
+      "title": "ISO/IEC 27001 2022",
+      "url": "https://www.iso.org/standard/27001"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "NIST 800-53 Rev. 5",
+      "url": "https://doi.org/10.6028/NIST.SP.800-53r5"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "SOC-2 2017 TSC",
+      "url": "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services"
+    }
+  ],
+  "requiredFields": [
+    "kpi_id",
+    "_time"
+  ],
+  "reviewer": "N/A",
+  "securityDomain": "audit",
+  "spl": "| inputlookup iso_27001_kpi_freshness.csv\n| join type=outer kpi_id\n  [search index=compliance sourcetype=isms:objective_result earliest=-7d\n   | stats latest(_time) AS last_seen BY kpi_id]\n| eval age_min=round((now()-last_seen)/60,0)\n| eval is_stale=if(age_min>sla_minutes OR isnull(last_seen),1,0)\n| table kpi_id last_seen age_min sla_minutes is_stale",
+  "splunkPillar": "Platform",
+  "splunkVersions": [
+    "9.2+",
+    "Cloud"
+  ],
+  "status": "verified",
+  "subcategory": "22.6#1",
+  "title": "ISO/IEC 27001:2022 Clause 9.1 — Monitoring programme coverage: KPI telemetry uptime",
+  "value": "Prevents the worst external-audit outcome (monitoring 'was in place' but had silently died) and gives the Head of Platform a single dashboard tile showing ISMS telemetry health.",
+  "visualization": "Heatmap of KPI staleness, table of stale KPIs, single value 'stale KPIs right now'."
+}

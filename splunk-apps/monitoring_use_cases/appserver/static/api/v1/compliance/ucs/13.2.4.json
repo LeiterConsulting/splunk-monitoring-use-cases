@@ -1,0 +1,46 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/13.2.4.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/13.2.4.json",
+    "sourcePath": "content/cat-13-observability-monitoring-stack/UC-13.2.4.json"
+  },
+  "apiVersion": "v1",
+  "app": "Splunk ITSI",
+  "cimModels": [
+    "N/A"
+  ],
+  "criticality": "high",
+  "dataSources": "ITSI entity overview, entity health scores",
+  "description": "Entity health provides granular visibility into individual infrastructure components feeding services. Unstable entities degrade service health.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Splunk ITSI.\n• Ensure the following data sources are available: ITSI entity overview, entity health scores.\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\nConfigure entity discovery (AD, CMDB, cloud APIs). Monitor entity states (active, inactive, unstable). Alert when critical entities become inactive. Track entity population for coverage analysis.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\n| inputlookup itsi_entities\n| where entity_status!=\"active\"\n| table title, entity_type, entity_status, last_seen\n```\n\nUnderstanding this SPL\n\n**Entity Status Monitoring** — Entity health provides granular visibility into individual infrastructure components feeding services. Unstable entities degrade service health.\n\nDocumented **Data sources**: ITSI entity overview, entity health scores. **App/TA** (typical add-on context): Splunk ITSI. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\n**Pipeline walkthrough**\n\n• Loads rows via `inputlookup` (KV store or CSV lookup) for enrichment or reporting.\n• Filters the current rows with `where entity_status!=\"active\"` — typically the threshold or rule expression for this monitoring goal.\n• Pipeline stage (see **Entity Status Monitoring**): table title, entity_type, entity_status, last_seen\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Status grid (entities by type × status), Table (inactive entities), Single value (active entity count).",
+  "difficulty": "intermediate",
+  "equipment": [
+    "itsi"
+  ],
+  "grandmaExplanation": "Entity health provides granular visibility into individual infrastructure components feeding services — so you always trust the numbers you are looking at.",
+  "id": "13.2.4",
+  "implementation": "Configure entity discovery (AD, CMDB, cloud APIs). Monitor entity states (active, inactive, unstable). Alert when critical entities become inactive. Track entity population for coverage analysis.",
+  "monitoringType": [
+    "Availability"
+  ],
+  "premiumApps": [
+    {
+      "displayName": "Splunk IT Service Intelligence",
+      "name": "Splunk ITSI",
+      "note": "ITSI"
+    }
+  ],
+  "references": [
+    {
+      "title": "Splunk ITSI",
+      "url": "https://splunkbase.splunk.com/app/1841"
+    }
+  ],
+  "spl": "| inputlookup itsi_entities\n| where entity_status!=\"active\"\n| table title, entity_type, entity_status, last_seen",
+  "splunkPillar": "Observability",
+  "title": "Entity Status Monitoring",
+  "value": "Entity health provides granular visibility into individual infrastructure components feeding services. Unstable entities degrade service health.",
+  "visualization": "Status grid (entities by type × status), Table (inactive entities), Single value (active entity count)."
+}

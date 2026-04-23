@@ -1,0 +1,137 @@
+{
+  "aliases": [
+    "Petroleumsforskriften"
+  ],
+  "apiVersion": "v1",
+  "id": "no-petroleumsforskriften",
+  "jurisdiction": [
+    "NO"
+  ],
+  "name": "Norwegian Petroleumsforskriften (Petroleum Safety regulation)",
+  "shortName": "NO Petroleumsforskriften",
+  "tags": [
+    "critical-infrastructure",
+    "oil-gas"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://lovdata.no/dokument/SF/forskrift/1997-06-27-653",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§11",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.50.7"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Emergency preparedness and response"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 5,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§15",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.26.11",
+            "22.26.12",
+            "22.26.13",
+            "22.26.14",
+            "22.26.15"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Health, safety and environmental (HSE) management requirements"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§3",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.50.20"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "contributing",
+          "topic": "General operator obligations for safety and security"
+        }
+      ],
+      "clauseExamples": [
+        "§3",
+        "§15"
+      ],
+      "clauseGrammar": "^§\\d+(-\\d+)?$",
+      "clauseUrlTemplate": null,
+      "clausesReferencedByCatalogue": [
+        "§11",
+        "§15",
+        "§3"
+      ],
+      "commonClauses": [
+        {
+          "clause": "§15",
+          "priorityWeight": 1.0,
+          "topic": "Health, safety and environmental (HSE) management requirements"
+        },
+        {
+          "clause": "§11",
+          "priorityWeight": 1.0,
+          "topic": "Emergency preparedness and response"
+        },
+        {
+          "clause": "§3",
+          "priorityWeight": 0.7,
+          "topic": "General operator obligations for safety and security"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 100.0,
+        "commonClauseCount": 3,
+        "coveredClauseCount": 3,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 25.0,
+        "stateCounts": {
+          "contributing-only": 3,
+          "covered-full": 0,
+          "covered-partial": 0,
+          "uncovered": 0
+        }
+      },
+      "effectiveFrom": "1997-07-01",
+      "endpoint": "/api/v1/compliance/regulations/no-petroleumsforskriften@1997-as-amended.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [
+        "22.26.11",
+        "22.26.12",
+        "22.26.13",
+        "22.26.14",
+        "22.26.15",
+        "22.50.20",
+        "22.50.7"
+      ],
+      "version": "1997 as amended"
+    }
+  ]
+}

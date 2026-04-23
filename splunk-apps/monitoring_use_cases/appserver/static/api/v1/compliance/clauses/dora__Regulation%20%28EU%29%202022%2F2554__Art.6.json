@@ -1,0 +1,98 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 1,
+    "partial": 2,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj#Art.6",
+  "clause": "Art.6",
+  "clauseId": "dora@Regulation (EU) 2022/2554#Art.6",
+  "coverageState": "covered-full",
+  "coveringUcCount": 4,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "Art.6 requires a 'sound, comprehensive and well-documented ICT risk-management framework'. A continuously-verified delta between documented and operational controls is the direct evidence a supervisor would request.",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj",
+      "controlObjective": "Evidence that DORA Art.6 (ICT risk-management framework) is enforced — Splunk UC-22.3.41: DORA Art.6 — ICT risk-management framework evidence: control catalogue drift detection.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.3.41' running on sourcetype archer:control and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.3.41",
+      "ucTitle": "DORA Art.6 — ICT risk-management framework evidence: control catalogue drift detection"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "DORA Art.6 — the same register is commonly reused by financial entities; review cadence is one maintenance dimension.",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj",
+      "controlObjective": "Evidence that DORA Art.6 (ICT risk-management framework) is enforced — Splunk UC-22.6.46: ISO/IEC 27001:2022 Clause 6.1 — Risk-assessment evidence: live risk register decay.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.6.46' running on sourcetype archer:risk and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.6.46",
+      "ucTitle": "ISO/IEC 27001:2022 Clause 6.1 — Risk-assessment evidence: live risk register decay"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "DORA Art.6 ICT risk-management framework — contributing.",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj",
+      "controlObjective": "Evidence that DORA Art.6 (ICT risk-management framework) is enforced — Splunk UC-22.11.106: PCI-DSS 12.3 — Targeted risk analysis: frequency adherence for per-requirement TRAs.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.11.106' running on index=grc sourcetype=archer:tra_record; TRA register pci_tra_register.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.11.106",
+      "ucTitle": "PCI-DSS 12.3 — Targeted risk analysis: frequency adherence for per-requirement TRAs"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'Art.5-16' → 'Art.6'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj#Art.6",
+      "controlObjective": "Evidence that DORA Art.6 (ICT risk-management framework) is enforced — Splunk UC-22.3.1: DORA ICT Risk Management Dashboard.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.3.1' running on index=risk sourcetype=\"stash\" (risk_object, risk_object_type, risk_score, source, _time), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.3.1",
+      "ucTitle": "DORA ICT Risk Management Dashboard"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/dora__Regulation%20%28EU%29%202022%2F2554__Art.6.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 4
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "dora",
+  "regulationName": "EU Digital Operational Resilience Act",
+  "regulationShortName": "DORA",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/dora.json",
+    "regulationVersion": "/api/v1/compliance/regulations/dora@Regulation%20%28EU%29%202022%2F2554.json",
+    "story": "/api/v1/compliance/story/dora.json"
+  },
+  "tier": 1,
+  "topAssurance": "full",
+  "topic": "ICT risk-management framework",
+  "version": "Regulation (EU) 2022/2554"
+}

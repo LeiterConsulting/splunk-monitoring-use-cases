@@ -1,0 +1,68 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 2,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.aicpa-cima.com/tsc2017#CC7.3",
+  "clause": "CC7.3",
+  "clauseId": "soc-2@2017 TSC#CC7.3",
+  "coverageState": "covered-full",
+  "coveringUcCount": 2,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "SOC 2 CC7.3 Evaluated events and incidents — aligns.",
+      "category": 22,
+      "clauseUrl": "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services",
+      "controlObjective": "Evidence that SOC-2 CC7.3 (Evaluated events and incidents) is enforced — Splunk UC-22.6.52: ISO/IEC 27001:2022 Annex A.5.25 — Event classification decisions: SIEM-to-incident triage traceability.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.6.52' running on index=notable (ES notable events); index=soar sourcetype=phantom:incident (classification decisions)., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.6.52",
+      "ucTitle": "ISO/IEC 27001:2022 Annex A.5.25 — Event classification decisions: SIEM-to-incident triage traceability"
+    },
+    {
+      "assurance": "full",
+      "assuranceRationale": "CC7.3 Evaluated events and incidents — rationale adherence is the direct signal.",
+      "category": 22,
+      "clauseUrl": "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services",
+      "controlObjective": "Evidence that SOC-2 CC7.3 (Evaluated events and incidents) is enforced — Splunk UC-22.8.34: SOC 2 CC7.3 — Evaluated events: threshold breaches without documented rationale.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.8.34' running on index=notable (ES notable); index=soar sourcetype=phantom:incident., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.8.34",
+      "ucTitle": "SOC 2 CC7.3 — Evaluated events: threshold breaches without documented rationale"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/soc-2__2017%20TSC__CC7.3.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 2
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "soc-2",
+  "regulationName": "SOC 2 Trust Services Criteria",
+  "regulationShortName": "SOC 2",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/soc-2.json",
+    "regulationVersion": "/api/v1/compliance/regulations/soc-2@2017%20TSC.json",
+    "story": "/api/v1/compliance/story/soc-2.json"
+  },
+  "tier": 1,
+  "topAssurance": "full",
+  "topic": "Evaluated events and incidents",
+  "version": "2017 TSC"
+}

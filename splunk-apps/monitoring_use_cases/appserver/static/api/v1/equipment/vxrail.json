@@ -1,0 +1,29 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 3,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "vxrail",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Dell VxRail",
+  "models": [],
+  "regulationIds": [],
+  "regulations": [],
+  "useCaseCount": 3,
+  "useCaseIds": [
+    "19.2.13",
+    "19.2.26",
+    "19.2.32"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 19,
+      "useCaseCount": 3,
+      "useCaseIds": [
+        "19.2.13",
+        "19.2.26",
+        "19.2.32"
+      ]
+    }
+  ]
+}

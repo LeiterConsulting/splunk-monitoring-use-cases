@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "SR-6",
+  "clauseId": "nist-800-53@Rev. 5#SR-6",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "SR-6 supplier assessments and reviews include telemetry.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that NIST-800-53 SR-6 is enforced — Splunk UC-22.44.4: Vendor access telemetry — principals active outside contracted hours/geos.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.44.4' running on IdP authentication events for named vendor principals, vendor contracts lookup with contracted hours/geos., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.44.4",
+      "ucTitle": "Vendor access telemetry — principals active outside contracted hours/geos"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/nist-800-53__Rev.%205__SR-6.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "nist-800-53",
+  "regulationName": "nist-800-53",
+  "regulationShortName": "nist-800-53",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/nist-800-53.json",
+    "regulationVersion": "/api/v1/compliance/regulations/nist-800-53@Rev.%205.json",
+    "story": "/api/v1/compliance/story/nist-800-53.json"
+  },
+  "tier": null,
+  "topAssurance": "partial",
+  "topic": null,
+  "version": "Rev. 5"
+}

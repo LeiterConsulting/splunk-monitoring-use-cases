@@ -1,0 +1,116 @@
+{
+  "aliases": [
+    "FTC Safeguards Rule",
+    "GLBA"
+  ],
+  "apiVersion": "v1",
+  "id": "glba",
+  "jurisdiction": [
+    "US"
+  ],
+  "name": "Gramm-Leach-Bliley Act — Safeguards Rule",
+  "shortName": "GLBA",
+  "tags": [
+    "financial-services",
+    "privacy"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§314.4(b)",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Risk assessment"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§314.4(c)(1)",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Access controls"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§314.4(d)(2)",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Continuous monitoring"
+        }
+      ],
+      "clauseExamples": [
+        "§314.4(b)",
+        "§314.4(c)(1)"
+      ],
+      "clauseGrammar": "^§314\\.\\d+\\([a-z]\\)(\\(\\d+\\))?$",
+      "clauseUrlTemplate": null,
+      "clausesReferencedByCatalogue": [],
+      "commonClauses": [
+        {
+          "clause": "§314.4(b)",
+          "priorityWeight": 1.0,
+          "topic": "Risk assessment"
+        },
+        {
+          "clause": "§314.4(c)(1)",
+          "priorityWeight": 1.0,
+          "topic": "Access controls"
+        },
+        {
+          "clause": "§314.4(d)(2)",
+          "priorityWeight": 1.0,
+          "topic": "Continuous monitoring"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 0.0,
+        "commonClauseCount": 3,
+        "coveredClauseCount": 0,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 0.0,
+        "stateCounts": {
+          "contributing-only": 0,
+          "covered-full": 0,
+          "covered-partial": 0,
+          "uncovered": 3
+        }
+      },
+      "effectiveFrom": "2023-06-09",
+      "endpoint": "/api/v1/compliance/regulations/glba@16-CFR-314--2023-amendments-.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [],
+      "version": "16 CFR 314 (2023 amendments)"
+    }
+  ]
+}

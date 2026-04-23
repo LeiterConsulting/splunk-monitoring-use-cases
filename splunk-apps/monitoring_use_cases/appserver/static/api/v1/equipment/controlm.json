@@ -1,0 +1,27 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 2,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "controlm",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Control-M",
+  "models": [],
+  "regulationIds": [],
+  "regulations": [],
+  "useCaseCount": 2,
+  "useCaseIds": [
+    "16.3.11",
+    "16.3.12"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 16,
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "16.3.11",
+        "16.3.12"
+      ]
+    }
+  ]
+}

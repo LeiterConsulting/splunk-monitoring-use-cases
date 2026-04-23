@@ -1,0 +1,147 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 21,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "apache",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Apache HTTP Server",
+  "models": [
+    {
+      "id": "apache_httpd",
+      "label": "Apache httpd",
+      "modelId": "httpd",
+      "useCaseCount": 21,
+      "useCaseIds": [
+        "8.1.1",
+        "8.1.2",
+        "8.1.3",
+        "8.1.4",
+        "8.1.7",
+        "8.1.8",
+        "8.1.9",
+        "8.1.10",
+        "8.1.12",
+        "8.1.16",
+        "22.1.5",
+        "22.4.2",
+        "22.4.7",
+        "23.1.1",
+        "23.1.2",
+        "23.1.3",
+        "23.1.5",
+        "23.1.7",
+        "23.1.9",
+        "23.3.4",
+        "23.3.6"
+      ]
+    }
+  ],
+  "regulationIds": [
+    "ccpa",
+    "gdpr"
+  ],
+  "regulations": [
+    {
+      "clauseMappings": [
+        {
+          "clause": "§1798.120",
+          "useCaseId": "22.4.2",
+          "version": "CPRA (as amended)"
+        },
+        {
+          "clause": "§1798.125",
+          "useCaseId": "22.4.7",
+          "version": "CPRA (as amended)"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/ccpa.json",
+      "regulationId": "ccpa",
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "22.4.2",
+        "22.4.7"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "Art.7",
+          "useCaseId": "22.1.5",
+          "version": "2016/679"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/gdpr.json",
+      "regulationId": "gdpr",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.1.5"
+      ]
+    }
+  ],
+  "useCaseCount": 21,
+  "useCaseIds": [
+    "8.1.1",
+    "8.1.2",
+    "8.1.3",
+    "8.1.4",
+    "8.1.7",
+    "8.1.8",
+    "8.1.9",
+    "8.1.10",
+    "8.1.12",
+    "8.1.16",
+    "22.1.5",
+    "22.4.2",
+    "22.4.7",
+    "23.1.1",
+    "23.1.2",
+    "23.1.3",
+    "23.1.5",
+    "23.1.7",
+    "23.1.9",
+    "23.3.4",
+    "23.3.6"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 8,
+      "useCaseCount": 10,
+      "useCaseIds": [
+        "8.1.1",
+        "8.1.2",
+        "8.1.3",
+        "8.1.4",
+        "8.1.7",
+        "8.1.8",
+        "8.1.9",
+        "8.1.10",
+        "8.1.12",
+        "8.1.16"
+      ]
+    },
+    {
+      "category": 22,
+      "useCaseCount": 3,
+      "useCaseIds": [
+        "22.1.5",
+        "22.4.2",
+        "22.4.7"
+      ]
+    },
+    {
+      "category": 23,
+      "useCaseCount": 8,
+      "useCaseIds": [
+        "23.1.1",
+        "23.1.2",
+        "23.1.3",
+        "23.1.5",
+        "23.1.7",
+        "23.1.9",
+        "23.3.4",
+        "23.3.6"
+      ]
+    }
+  ]
+}

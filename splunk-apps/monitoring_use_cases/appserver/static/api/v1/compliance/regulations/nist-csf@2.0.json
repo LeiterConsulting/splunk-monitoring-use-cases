@@ -1,0 +1,1220 @@
+{
+  "apiVersion": "v1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "nist-csf",
+  "jurisdiction": [
+    "GLOBAL",
+    "US"
+  ],
+  "name": "NIST Cybersecurity Framework",
+  "shortName": "NIST CSF",
+  "tags": [
+    "framework",
+    "outcomes"
+  ],
+  "tier": 1,
+  "version": {
+    "authoritativeUrl": "https://www.nist.gov/cyberframework",
+    "clauseCoverageMatrix": [
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "DE.AE-02",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.37"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Anomalies and events analysis"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "DE.CM-01",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.31"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Network monitoring"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "DE.CM-03",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.33"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Personnel activity monitoring"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 0,
+          "partial": 1
+        },
+        "clause": "DE.CM-09",
+        "coverageState": "covered-partial",
+        "coveringUcs": [
+          "22.7.5"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 0.7,
+        "topAssurance": "partial",
+        "topic": "Environment monitoring"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "GV.OC-01",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.8"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 0.7,
+        "topAssurance": "contributing",
+        "topic": "Organisational context"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "GV.RM-01",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.10"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Risk management strategy"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "GV.RR-01",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.11"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 0.7,
+        "topAssurance": "contributing",
+        "topic": "Organisational leadership"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 2,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "ID.AM-01",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.1",
+          "22.7.16"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Asset inventory"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "ID.RA-01",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.19"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Risk assessment"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "PR.AA-01",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.23"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Authentication"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "PR.AA-05",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.7.4"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Access permissions"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "PR.DS-01",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.26"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Data-at-rest protection"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "PR.DS-02",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.27"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Data-in-transit protection"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 0,
+          "partial": 1
+        },
+        "clause": "PR.PS-04",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.32"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Log generation"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "RC.RP-01",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.46"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Recovery plan execution"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "RS.AN-03",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.7.6"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Incident analysis"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "RS.MA-01",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.39"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Incident management"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "DE.AE-01",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.36"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "DE.AE-03",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.38"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "DE.CM-02",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.32"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "DE.CM-04",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.34"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "DE.CM-05",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.35"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "DE.CM-7",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.5"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "GV.OC-02",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.9"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "GV.OV-01",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.14"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "GV.OV-02",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.9.2"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "GV.OV-03",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.9.1"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "GV.PO-01",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.12"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 2,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "GV.PO-02",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.13",
+          "22.9.5"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "GV.SC-01",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.15"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "ID.AM-02",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.17"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "ID.AM-03",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.18"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "ID.AM-2",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.3"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "ID.IM-01",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.21"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 2,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "ID.IM-02",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.22",
+          "22.9.3"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "ID.RA-02",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.20"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "PR.AA-02",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.24"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "PR.AC-1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.4"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "PR.AT-01",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.25"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "PR.IR-01",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.29"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "PR.IR-02",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.30"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "PR.PS-01",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.28"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "RC.CO-01",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.49"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "RC.CO-02",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.50"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "RC.RP-02",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.47"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "RC.RP-03",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.48"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "RC.RP-1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.7"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "RS.AN-01",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.41"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "RS.AN-02",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.42"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "RS.CO-01",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.43"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "RS.CO-02",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.44"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "RS.MA-02",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.40"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "RS.MI-01",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.45"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "RS.RP-1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.7.6"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      }
+    ],
+    "clauseExamples": [
+      "GV.OC-01",
+      "ID.AM-01",
+      "PR.AA-01",
+      "DE.CM-01"
+    ],
+    "clauseGrammar": "^(GV|ID|PR|DE|RS|RC)\\.[A-Z]{2}(-[0-9]+)?$",
+    "clauseUrlTemplate": "https://csrc.nist.gov/pubs/cswp/29/final#{clause}",
+    "clausesReferencedByCatalogue": [
+      "DE.AE-01",
+      "DE.AE-02",
+      "DE.AE-03",
+      "DE.CM-01",
+      "DE.CM-02",
+      "DE.CM-03",
+      "DE.CM-04",
+      "DE.CM-05",
+      "DE.CM-09",
+      "DE.CM-7",
+      "GV.OC-01",
+      "GV.OC-02",
+      "GV.OV-01",
+      "GV.OV-02",
+      "GV.OV-03",
+      "GV.PO-01",
+      "GV.PO-02",
+      "GV.RM-01",
+      "GV.RR-01",
+      "GV.SC-01",
+      "ID.AM-01",
+      "ID.AM-02",
+      "ID.AM-03",
+      "ID.AM-2",
+      "ID.IM-01",
+      "ID.IM-02",
+      "ID.RA-01",
+      "ID.RA-02",
+      "PR.AA-01",
+      "PR.AA-02",
+      "PR.AA-05",
+      "PR.AC-1",
+      "PR.AT-01",
+      "PR.DS-01",
+      "PR.DS-02",
+      "PR.IR-01",
+      "PR.IR-02",
+      "PR.PS-01",
+      "PR.PS-04",
+      "RC.CO-01",
+      "RC.CO-02",
+      "RC.RP-01",
+      "RC.RP-02",
+      "RC.RP-03",
+      "RC.RP-1",
+      "RS.AN-01",
+      "RS.AN-02",
+      "RS.AN-03",
+      "RS.CO-01",
+      "RS.CO-02",
+      "RS.MA-01",
+      "RS.MA-02",
+      "RS.MI-01",
+      "RS.RP-1"
+    ],
+    "commonClauses": [
+      {
+        "clause": "GV.OC-01",
+        "priorityWeight": 0.7,
+        "topic": "Organisational context"
+      },
+      {
+        "clause": "GV.RM-01",
+        "priorityWeight": 1.0,
+        "topic": "Risk management strategy"
+      },
+      {
+        "clause": "GV.RR-01",
+        "priorityWeight": 0.7,
+        "topic": "Organisational leadership"
+      },
+      {
+        "clause": "ID.AM-01",
+        "priorityWeight": 1.0,
+        "topic": "Asset inventory"
+      },
+      {
+        "clause": "ID.RA-01",
+        "priorityWeight": 1.0,
+        "topic": "Risk assessment"
+      },
+      {
+        "clause": "PR.AA-01",
+        "priorityWeight": 1.0,
+        "topic": "Authentication"
+      },
+      {
+        "clause": "PR.AA-05",
+        "priorityWeight": 1.0,
+        "topic": "Access permissions"
+      },
+      {
+        "clause": "PR.DS-01",
+        "priorityWeight": 1.0,
+        "topic": "Data-at-rest protection"
+      },
+      {
+        "clause": "PR.DS-02",
+        "priorityWeight": 1.0,
+        "topic": "Data-in-transit protection"
+      },
+      {
+        "clause": "PR.PS-04",
+        "priorityWeight": 1.0,
+        "topic": "Log generation"
+      },
+      {
+        "clause": "DE.AE-02",
+        "priorityWeight": 1.0,
+        "topic": "Anomalies and events analysis"
+      },
+      {
+        "clause": "DE.CM-01",
+        "priorityWeight": 1.0,
+        "topic": "Network monitoring"
+      },
+      {
+        "clause": "DE.CM-03",
+        "priorityWeight": 1.0,
+        "topic": "Personnel activity monitoring"
+      },
+      {
+        "clause": "DE.CM-09",
+        "priorityWeight": 0.7,
+        "topic": "Environment monitoring"
+      },
+      {
+        "clause": "RS.MA-01",
+        "priorityWeight": 1.0,
+        "topic": "Incident management"
+      },
+      {
+        "clause": "RS.AN-03",
+        "priorityWeight": 1.0,
+        "topic": "Incident analysis"
+      },
+      {
+        "clause": "RC.RP-01",
+        "priorityWeight": 1.0,
+        "topic": "Recovery plan execution"
+      }
+    ],
+    "coverageSummary": {
+      "clauseCoveragePercent": 100.0,
+      "commonClauseCount": 17,
+      "coveredClauseCount": 17,
+      "offCommonListClauseCount": 37,
+      "priorityWeightedCoveragePercent": 36.96,
+      "stateCounts": {
+        "contributing-only": 14,
+        "covered-full": 2,
+        "covered-partial": 1,
+        "uncovered": 0
+      }
+    },
+    "effectiveFrom": "2024-02-26",
+    "endpoint": "/api/v1/compliance/regulations/nist-csf@2.0.json",
+    "pendingChanges": [],
+    "sunsetOn": null,
+    "useCasesTaggingThisVersion": [
+      "22.7.1",
+      "22.7.10",
+      "22.7.11",
+      "22.7.12",
+      "22.7.13",
+      "22.7.14",
+      "22.7.15",
+      "22.7.16",
+      "22.7.17",
+      "22.7.18",
+      "22.7.19",
+      "22.7.20",
+      "22.7.21",
+      "22.7.22",
+      "22.7.23",
+      "22.7.24",
+      "22.7.25",
+      "22.7.26",
+      "22.7.27",
+      "22.7.28",
+      "22.7.29",
+      "22.7.3",
+      "22.7.30",
+      "22.7.31",
+      "22.7.32",
+      "22.7.33",
+      "22.7.34",
+      "22.7.35",
+      "22.7.36",
+      "22.7.37",
+      "22.7.38",
+      "22.7.39",
+      "22.7.4",
+      "22.7.40",
+      "22.7.41",
+      "22.7.42",
+      "22.7.43",
+      "22.7.44",
+      "22.7.45",
+      "22.7.46",
+      "22.7.47",
+      "22.7.48",
+      "22.7.49",
+      "22.7.5",
+      "22.7.50",
+      "22.7.6",
+      "22.7.7",
+      "22.7.8",
+      "22.7.9",
+      "22.9.1",
+      "22.9.2",
+      "22.9.3",
+      "22.9.5"
+    ],
+    "version": "2.0"
+  }
+}

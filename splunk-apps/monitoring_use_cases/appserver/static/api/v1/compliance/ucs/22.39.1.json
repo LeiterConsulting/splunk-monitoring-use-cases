@@ -1,0 +1,210 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/22.39.1.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/22.39.1.json",
+    "sourcePath": "content/cat-22-regulatory-compliance/UC-22.39.1.json"
+  },
+  "apiVersion": "v1",
+  "app": "Splunk Enterprise / Splunk Cloud Platform",
+  "cimModels": [
+    "Alerts",
+    "Ticket_Management"
+  ],
+  "compliance": [
+    {
+      "assurance": "full",
+      "assurance_rationale": "Art.33(1) requires notification to the supervisory authority without undue delay and where feasible within 72 hours; the UC measures elapsed time from classification to submission evidence.",
+      "clause": "Art.33",
+      "controlObjective": "Evidence that GDPR Art.33 (Breach notification to supervisory authority) is enforced — Splunk UC-22.39.1: Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA).",
+      "evidenceArtifact": "Saved search 'UC-22.39.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "gdpr@2016/679#Art.33",
+      "regulation": "GDPR",
+      "requires_sme_review": true,
+      "version": "2016/679"
+    },
+    {
+      "assurance": "full",
+      "assurance_rationale": "NIS2 Art.23 imposes an early-warning obligation within 24h and an incident notification within 72h; the UC evidences both clocks for every eligible incident.",
+      "clause": "Art.23",
+      "controlObjective": "Evidence that NIS2 Art.23 (Reporting obligations) is enforced — Splunk UC-22.39.1: Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA).",
+      "evidenceArtifact": "Saved search 'UC-22.39.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "nis2@Directive (EU) 2022/2555#Art.23",
+      "regulation": "NIS2",
+      "requires_sme_review": true,
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assurance": "full",
+      "assurance_rationale": "DORA Art.19 requires major ICT-related incident reporting; SLA tracking against intermediate and final reports is the canonical evidence.",
+      "clause": "Art.19",
+      "controlObjective": "Evidence that DORA Art.19 (Reporting of major ICT-related incidents) is enforced — Splunk UC-22.39.1: Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA).",
+      "evidenceArtifact": "Saved search 'UC-22.39.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "dora@Regulation (EU) 2022/2554#Art.19",
+      "regulation": "DORA",
+      "requires_sme_review": true,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "§164.308(a)(6) security incident procedures include notification duties per §164.400-414; the UC surfaces the timer but breach assessment is decided by the privacy officer.",
+      "clause": "§164.308(a)(6)",
+      "controlObjective": "Evidence that HIPAA Security §164.308(a)(6) (Security incident procedures) is enforced — Splunk UC-22.39.1: Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA).",
+      "evidenceArtifact": "Saved search 'UC-22.39.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "hipaa-security@2013-final#§164.308(a)(6)",
+      "regulation": "HIPAA Security",
+      "requires_sme_review": true,
+      "version": "2013-final"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "Derived from GDPR@2016/679 Art.33 (parent assurance='full'). Clause mapped per data/regulations.json derivesFrom graph; inherited assurance degraded one step.",
+      "clause": "Art.26",
+      "controlObjective": "Evidence that APPI Art.26 (Leakage reporting) is enforced — Splunk UC-22.39.1: Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA).",
+      "derivationSource": {
+        "inheritanceMode": "mapped",
+        "parentAssurance": "full",
+        "parentClause": "Art.33",
+        "parentRegulation": "gdpr",
+        "parentVersion": "2016/679"
+      },
+      "evidenceArtifact": "Saved search 'UC-22.39.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "appi@2022 amendments#Art.26",
+      "provenance": "derived-from-parent",
+      "regulation": "APPI",
+      "requires_sme_review": true,
+      "version": "2022 amendments"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "Derived from GDPR@2016/679 Art.33 (parent assurance='full'). Clause mapped per data/regulations.json derivesFrom graph; inherited assurance degraded one step. Divergence recorded — SME review should confirm scope fit.",
+      "clause": "Art.48",
+      "controlObjective": "Evidence that LGPD Art.48 (Breach notification) is enforced — Splunk UC-22.39.1: Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA).",
+      "derivationSource": {
+        "divergenceNote": "ANPD is the competent authority; notification timelines differ.",
+        "inheritanceMode": "mapped",
+        "parentAssurance": "full",
+        "parentClause": "Art.33",
+        "parentRegulation": "gdpr",
+        "parentVersion": "2016/679"
+      },
+      "evidenceArtifact": "Saved search 'UC-22.39.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "lgpd@Lei nº 13.709/2018#Art.48",
+      "provenance": "derived-from-parent",
+      "regulation": "LGPD",
+      "requires_sme_review": true,
+      "version": "Lei nº 13.709/2018"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "Derived from GDPR@2016/679 Art.33 (parent assurance='full'). Clause mapped per data/regulations.json derivesFrom graph; inherited assurance degraded one step. Divergence recorded — SME review should confirm scope fit.",
+      "clause": "Art.24",
+      "controlObjective": "Evidence that Swiss nFADP Art.24 (Data breach notification) is enforced — Splunk UC-22.39.1: Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA).",
+      "derivationSource": {
+        "divergenceNote": "Swiss FDPIC replaces EU supervisory authority for breach notification.",
+        "inheritanceMode": "mapped",
+        "parentAssurance": "full",
+        "parentClause": "Art.33",
+        "parentRegulation": "gdpr",
+        "parentVersion": "2016/679"
+      },
+      "evidenceArtifact": "Saved search 'UC-22.39.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "swiss-nfadp@2020 revision#Art.24",
+      "provenance": "derived-from-parent",
+      "regulation": "Swiss nFADP",
+      "requires_sme_review": true,
+      "version": "2020 revision"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "Derived from GDPR@2016/679 Art.33 (parent assurance='full'). UK GDPR preserves parent clause numbering; inherited assurance degraded one step.",
+      "clause": "Art.33",
+      "controlObjective": "Evidence that UK GDPR Art.33 is enforced — Splunk UC-22.39.1: Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA).",
+      "derivationSource": {
+        "inheritanceMode": "identity",
+        "parentAssurance": "full",
+        "parentClause": "Art.33",
+        "parentRegulation": "gdpr",
+        "parentVersion": "2016/679"
+      },
+      "evidenceArtifact": "Saved search 'UC-22.39.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "uk-gdpr@post-Brexit#Art.33",
+      "provenance": "derived-from-parent",
+      "regulation": "UK GDPR",
+      "requires_sme_review": true,
+      "version": "post-Brexit"
+    }
+  ],
+  "controlFamily": "ir-drill-evidence",
+  "controlTest": {
+    "fixtureRef": "sample-data/uc-22.39.1-fixture.json",
+    "negativeScenario": "Incidents not classified as breach, or incidents whose notification was submitted before the deadline with a valid tracking_id, do NOT fire.",
+    "positiveScenario": "When an incident is classified 'breach' (per incident_register.csv) and no regulator-submission record exists 90 minutes before the applicable SLA deadline, the UC fires with a warning; at breach, it fires at severity critical."
+  },
+  "criticality": "critical",
+  "dataSources": "See subcategory preamble.",
+  "description": "Tracks every incident that has crossed the 'breach' threshold and reports on the notification clock per applicable regulator. Imminent breaches trigger a warning; missed deadlines trigger a critical notable and a board-level communication.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Splunk Enterprise / Splunk Cloud Platform.\n• Ensure the following data sources are available: See subcategory preamble..\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\n(1) Ingest classifications from ServiceNow / ES incident index; (2) maintain sla_catalog.csv with regulator → SLA hours; (3) ingest notification-portal tracking IDs; (4) schedule every 15 min; (5) integrate with SOAR to auto-escalate.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\n| inputlookup incident_register.csv\n| where classification=\"breach\"\n| eval applicable_regs=split(applicable_regs,\",\")\n| mvexpand applicable_regs\n| lookup sla_catalog.csv regulator as applicable_regs OUTPUT sla_hours\n| eval deadline=strptime(classified_at,\"%Y-%m-%dT%H:%M:%SZ\")+sla_hours*3600\n| join incident_id applicable_regs [search index=notifications sourcetype=regulator:submission | fields incident_id applicable_regs tracking_id submitted_at]\n| eval status=case(isnull(tracking_id) AND now()>deadline, \"breach\", isnull(tracking_id) AND (deadline-now())<5400, \"imminent\", isnotnull(tracking_id), \"submitted\")\n| table incident_id applicable_regs deadline submitted_at status\n```\n\nUnderstanding this SPL\n\n**Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA)** — Most enforcement actions against supervisory breaches (ICO, DPC, BaFin) focus on notification timeliness. This UC turns the obligation into a visible KPI instead of a post-facto audit finding.\n\nDocumented **Data sources**: See subcategory preamble. **App/TA** (typical add-on context): Splunk Enterprise / Splunk Cloud Platform. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\n**Pipeline walkthrough**\n\n• Loads rows via `inputlookup` (KV store or CSV lookup) for enrichment or reporting.\n• Filters the current rows with `where classification=\"breach\"` — typically the threshold or rule expression for this monitoring goal.\n• `eval` defines or adjusts **applicable_regs** — often to normalize units, derive a ratio, or prepare for thresholds.\n• Expands multivalue fields with `mvexpand` — use `limit=` to cap row explosion.\n• Enriches events using `lookup` (lookup definition + optional OUTPUT fields).\n• `eval` defines or adjusts **deadline** — often to normalize units, derive a ratio, or prepare for thresholds.\n• Joins to a subsearch with `join` — set `max=` to match cardinality and avoid silent truncation.\n• `eval` defines or adjusts **status** — often to normalize units, derive a ratio, or prepare for thresholds.\n• Pipeline stage (see **Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA)**): table incident_id applicable_regs deadline submitted_at status\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Gantt of incidents vs SLA deadlines, single-value 'incidents notified on time (90d)', breakdown by regulator.",
+  "detectionType": "Correlation",
+  "difficulty": "advanced",
+  "equipment": [
+    "servicenow"
+  ],
+  "evidence": "Saved search 'breach_notification_sla' runs every 15 min and writes per-incident SLA status (against every applicable regulator) to compliance_summary.",
+  "exclusions": "Does NOT determine whether an event rises to 'breach'; relies on classification decided in the incident-management system.",
+  "grandmaExplanation": "Most enforcement actions against supervisory breaches (ICO, DPC, BaFin) focus on notification timeliness — so you can show exactly what is being watched and when something went wrong.",
+  "id": "22.39.1",
+  "implementation": "(1) Ingest classifications from ServiceNow / ES incident index; (2) maintain sla_catalog.csv with regulator → SLA hours; (3) ingest notification-portal tracking IDs; (4) schedule every 15 min; (5) integrate with SOAR to auto-escalate.",
+  "knownFalsePositives": "Incidents whose submission happens offline with post-hoc upload require a timezone-normalised submitted_at; mis-mapped timezones produce false SLA breaches.",
+  "lastReviewed": "2026-04-16",
+  "monitoringType": [
+    "Compliance"
+  ],
+  "owner": "CISO",
+  "references": [
+    {
+      "retrieved": "2026-04-16",
+      "title": "Regulation (EU) 2016/679 — GDPR",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "Directive (EU) 2022/2555 — NIS2",
+      "url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "Regulation (EU) 2022/2554 — DORA",
+      "url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "45 CFR Part 164 — HIPAA",
+      "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164"
+    }
+  ],
+  "requiredFields": [
+    "_time"
+  ],
+  "reviewer": "N/A",
+  "securityDomain": "threat",
+  "spl": "| inputlookup incident_register.csv\n| where classification=\"breach\"\n| eval applicable_regs=split(applicable_regs,\",\")\n| mvexpand applicable_regs\n| lookup sla_catalog.csv regulator as applicable_regs OUTPUT sla_hours\n| eval deadline=strptime(classified_at,\"%Y-%m-%dT%H:%M:%SZ\")+sla_hours*3600\n| join incident_id applicable_regs [search index=notifications sourcetype=regulator:submission | fields incident_id applicable_regs tracking_id submitted_at]\n| eval status=case(isnull(tracking_id) AND now()>deadline, \"breach\", isnull(tracking_id) AND (deadline-now())<5400, \"imminent\", isnotnull(tracking_id), \"submitted\")\n| table incident_id applicable_regs deadline submitted_at status",
+  "splunkPillar": "Security",
+  "splunkVersions": [
+    "9.2+",
+    "Cloud"
+  ],
+  "status": "verified",
+  "title": "Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA)",
+  "value": "Most enforcement actions against supervisory breaches (ICO, DPC, BaFin) focus on notification timeliness. This UC turns the obligation into a visible KPI instead of a post-facto audit finding.",
+  "visualization": "Gantt of incidents vs SLA deadlines, single-value 'incidents notified on time (90d)', breakdown by regulator."
+}

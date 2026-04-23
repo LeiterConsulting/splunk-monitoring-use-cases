@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://csrc.nist.gov/pubs/cswp/29/final#DE.CM-09",
+  "clause": "DE.CM-09",
+  "clauseId": "nist-csf@2.0#DE.CM-09",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "NIST CSF 2.0 DE.CM-09 Computing hardware and software, runtime environments, and their data are monitored to find potentially adverse events — UC covers continuous vulnerability exposure drift on critical servers, a concrete environment-monitoring signal.",
+      "category": 22,
+      "clauseUrl": "https://www.nist.gov/cyberframework",
+      "controlObjective": "Evidence that NIST CSF DE.CM-09 (Environment monitoring) is enforced — Splunk UC-22.7.5: NIST CSF Detect — Continuous Vulnerability Exposure Drift on Critical Servers.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.7.5' running on index=vuln sourcetype=\"tenable:vuln\" (host, plugin_id, severity, first_seen, last_seen, cve), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.7.5",
+      "ucTitle": "NIST CSF Detect — Continuous Vulnerability Exposure Drift on Critical Servers"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/nist-csf__2.0__DE.CM-09.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 0.7,
+  "regulationId": "nist-csf",
+  "regulationName": "NIST Cybersecurity Framework",
+  "regulationShortName": "NIST CSF",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/nist-csf.json",
+    "regulationVersion": "/api/v1/compliance/regulations/nist-csf@2.0.json",
+    "story": "/api/v1/compliance/story/nist-csf.json"
+  },
+  "tier": 1,
+  "topAssurance": "partial",
+  "topic": "Environment monitoring",
+  "version": "2.0"
+}

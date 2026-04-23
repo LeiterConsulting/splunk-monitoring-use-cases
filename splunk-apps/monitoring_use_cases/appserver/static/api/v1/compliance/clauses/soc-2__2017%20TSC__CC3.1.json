@@ -1,0 +1,113 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 4,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.aicpa-cima.com/tsc2017#CC3.1",
+  "clause": "CC3.1",
+  "clauseId": "soc-2@2017 TSC#CC3.1",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 5,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "CC3.1 risk assessment — repeat findings indicate unresolved risk.",
+      "category": 22,
+      "clauseUrl": "https://www.aicpa-cima.com/tsc2017#CC3.1",
+      "controlObjective": "Evidence that SOC 2 CC3.1 (Risk assessment) is enforced — Splunk UC-22.47.2: Repeat audit findings — same control deficiency across consecutive audit cycles.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.47.2' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.47.2",
+      "ucTitle": "Repeat audit findings — same control deficiency across consecutive audit cycles"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'unspecified' → 'CC3.1'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.aicpa-cima.com/tsc2017#CC3.1",
+      "controlObjective": "Evidence that SOC 2 CC3.1 (Risk assessment) is enforced — Splunk UC-22.8.12: SOC 2 CC3 — Management Accountability for Control Deficiency Remediation SLAs.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.8.12' running on sourcetype snow:problem and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.8.12",
+      "ucTitle": "SOC 2 CC3 — Management Accountability for Control Deficiency Remediation SLAs"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'unspecified' → 'CC3.1'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.aicpa-cima.com/tsc2017#CC3.1",
+      "controlObjective": "Evidence that SOC 2 CC3.1 (Risk assessment) is enforced — Splunk UC-22.8.19: SOC 2 CC6 — Timeliness of Access Removal After HR Termination Events.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.8.19' running on sourcetype workday:termination and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.8.19",
+      "ucTitle": "SOC 2 CC6 — Timeliness of Access Removal After HR Termination Events"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'unspecified' → 'CC3.1'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.aicpa-cima.com/tsc2017#CC3.1",
+      "controlObjective": "Evidence that SOC 2 CC3.1 (Risk assessment) is enforced — Splunk UC-22.8.23: SOC 2 CC7 — Vulnerability Management SLA and Exception Expiry Tracking.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.8.23' running on index vuln and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.8.23",
+      "ucTitle": "SOC 2 CC7 — Vulnerability Management SLA and Exception Expiry Tracking"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Phase-D retagged from meta-multi placeholder to a concrete SOC 2 clause. SOC 2 CC3.1 Risk Assessment — regulatory change is a primary risk-assessment input. Assurance level set to 'contributing' pending SME review per Phase E of the plan.",
+      "category": 22,
+      "clauseUrl": "https://www.aicpa-cima.com/tsc2017#CC3.1",
+      "controlObjective": "Evidence that SOC 2 CC3.1 (Risk assessment) is enforced — Splunk UC-22.9.9: Compliance Trending — Regulatory Change Feed Impact Score on In-Scope Controls.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.9.9' running on sourcetype reg:change_item and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.9.9",
+      "ucTitle": "Compliance Trending — Regulatory Change Feed Impact Score on In-Scope Controls"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/soc-2__2017%20TSC__CC3.1.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 5
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "soc-2",
+  "regulationName": "SOC 2 Trust Services Criteria",
+  "regulationShortName": "SOC 2",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/soc-2.json",
+    "regulationVersion": "/api/v1/compliance/regulations/soc-2@2017%20TSC.json",
+    "story": "/api/v1/compliance/story/soc-2.json"
+  },
+  "tier": 1,
+  "topAssurance": "partial",
+  "topic": "Risk assessment",
+  "version": "2017 TSC"
+}

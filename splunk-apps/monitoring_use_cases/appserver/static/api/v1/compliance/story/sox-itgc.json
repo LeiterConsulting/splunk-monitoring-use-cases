@@ -1,0 +1,1103 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 4,
+        "partial": 0
+      },
+      "clause": "ITGC.AccessMgmt.Privileged",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.12.2",
+        "22.12.28",
+        "22.40.1",
+        "22.40.2",
+        "22.40.4",
+        "7.1.21"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Privileged access",
+      "version": "PCAOB AS 2201"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 1
+      },
+      "clause": "ITGC.AccessMgmt.Provisioning",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.12.1",
+        "22.12.36",
+        "9.5.15"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "User provisioning",
+      "version": "PCAOB AS 2201"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "ITGC.AccessMgmt.Review",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.12.26",
+        "22.40.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "full",
+      "topic": "Periodic access review",
+      "version": "PCAOB AS 2201"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 1
+      },
+      "clause": "ITGC.AccessMgmt.SOD",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.12.3",
+        "22.48.1",
+        "22.48.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Segregation of duties",
+      "version": "PCAOB AS 2201"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "ITGC.AccessMgmt.Termination",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.12.37",
+        "22.12.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Timely deprovisioning",
+      "version": "PCAOB AS 2201"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "ITGC.Change.Approval",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.42.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "PCAOB AS 2201"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "ITGC.Change.Rollback",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.42.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "PCAOB AS 2201"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "ITGC.Change.SoD",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.48.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "PCAOB AS 2201"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 2,
+        "partial": 1
+      },
+      "clause": "ITGC.ChangeMgmt.Approval",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "12.2.17",
+        "22.12.10",
+        "22.12.11",
+        "22.12.39",
+        "22.6.55"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Change approved",
+      "version": "PCAOB AS 2201"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 2,
+        "partial": 1
+      },
+      "clause": "ITGC.ChangeMgmt.Authorization",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "16.4.1",
+        "22.42.1",
+        "7.1.13"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Change authorised",
+      "version": "PCAOB AS 2201"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 27,
+        "full": 1,
+        "partial": 1
+      },
+      "clause": "ITGC.ChangeMgmt.Testing",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.11.95",
+        "22.12.12",
+        "22.12.13",
+        "22.12.14",
+        "22.12.15",
+        "22.12.16",
+        "22.12.17",
+        "22.12.18",
+        "22.12.19",
+        "22.12.20",
+        "22.12.21",
+        "22.12.22",
+        "22.12.23",
+        "22.12.24",
+        "22.12.25",
+        "22.12.27",
+        "22.12.29",
+        "22.12.30",
+        "22.12.31",
+        "22.12.32",
+        "22.12.33",
+        "22.12.34",
+        "22.12.35",
+        "22.12.38",
+        "22.12.4",
+        "22.12.6",
+        "22.12.7",
+        "22.12.8",
+        "22.12.9"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Change tested",
+      "version": "PCAOB AS 2201"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "ITGC.Crypto.SoD",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.41.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "PCAOB AS 2201"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "ITGC.Evidence.Integrity",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.47.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "PCAOB AS 2201"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "ITGC.Financial.SoD",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.48.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "PCAOB AS 2201"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "ITGC.Logging.Continuity",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.35.1",
+        "22.35.2",
+        "22.9.8",
+        "7.1.40"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Audit trail completeness",
+      "version": "PCAOB AS 2201"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 1
+      },
+      "clause": "ITGC.Logging.Integrity",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.11.102",
+        "22.11.99",
+        "22.35.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "PCAOB AS 2201"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "ITGC.Logging.Review",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.47.2",
+        "22.49.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "partial",
+      "topic": "Log review",
+      "version": "PCAOB AS 2201"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "ITGC.Operations.Backup",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.45.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Backup and restore",
+      "version": "PCAOB AS 2201"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "ITGC.Operations.JobSchedule",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.12.40"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "full",
+      "topic": "Batch scheduling and monitoring",
+      "version": "PCAOB AS 2201"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "ITGC.Privileged.JIT",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.40.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "PCAOB AS 2201"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "ITGC.Vendor.SoD",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.48.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "PCAOB AS 2201"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "12 of 12 common clauses are covered by the catalogue, with a priority-weighted coverage of 92.34% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 12,
+      "coveredClauseCount": 12,
+      "priorityWeightedCoveragePercent": 92.34,
+      "stateCounts": {
+        "contributing-only": 1,
+        "covered-full": 10,
+        "covered-partial": 1,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "ITGC.AccessMgmt.Privileged",
+        "killerUcId": "22.12.2",
+        "killerUcTitle": "Privileged access review completion and aging for financial systems",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Privileged access",
+        "version": "PCAOB AS 2201",
+        "why": "Clause ITGC.AccessMgmt.Privileged (Privileged access) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "ITGC.AccessMgmt.Provisioning",
+        "killerUcId": "22.12.1",
+        "killerUcTitle": "User provisioning evidence tied to financial application accounts",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "User provisioning",
+        "version": "PCAOB AS 2201",
+        "why": "Clause ITGC.AccessMgmt.Provisioning (User provisioning) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "ITGC.AccessMgmt.SOD",
+        "killerUcId": "22.12.3",
+        "killerUcTitle": "Segregation of duties conflicts across SAP / Oracle financial roles",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Segregation of duties",
+        "version": "PCAOB AS 2201",
+        "why": "Clause ITGC.AccessMgmt.SOD (Segregation of duties) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "ITGC.AccessMgmt.Termination",
+        "killerUcId": "22.12.37",
+        "killerUcTitle": "SOX-ITGC AccessMgmt.Termination — Deprovisioning SLA after HR termination event",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Timely deprovisioning",
+        "version": "PCAOB AS 2201",
+        "why": "Clause ITGC.AccessMgmt.Termination (Timely deprovisioning) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "ITGC.ChangeMgmt.Approval",
+        "killerUcId": "12.2.17",
+        "killerUcTitle": "Deploy Approval Bypass Detection",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Change approved",
+        "version": "PCAOB AS 2201",
+        "why": "Clause ITGC.ChangeMgmt.Approval (Change approved) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "ITGC.AccessMgmt.Privileged",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.12.28",
+            "ucTitle": "Quarterly privileged ERP role population for sign-off"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.40.1",
+            "ucTitle": "Privileged session recording — missing recordings for elevated sessions"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.40.2",
+            "ucTitle": "Break-glass account usage review with mandatory post-use approval"
+          }
+        ],
+        "topic": "Privileged access",
+        "version": "PCAOB AS 2201"
+      },
+      {
+        "clause": "ITGC.AccessMgmt.Provisioning",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "9.5.15",
+            "ucTitle": "Okta User Lifecycle Events (Provisioning / Deprovisioning)"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.12.1",
+            "ucTitle": "User provisioning evidence tied to financial application accounts"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.12.36",
+            "ucTitle": "SOX-ITGC AccessMgmt.Provisioning — Financial-system user provisioning SLA & workflow adherence"
+          }
+        ],
+        "topic": "User provisioning",
+        "version": "PCAOB AS 2201"
+      },
+      {
+        "clause": "ITGC.AccessMgmt.SOD",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.48.1",
+            "ucTitle": "Segregation of duties — toxic role combinations in IAM"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.48.2",
+            "ucTitle": "SoD violations via break-glass usage — emergency role abuse"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "low",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.12.3",
+            "ucTitle": "Segregation of duties conflicts across SAP / Oracle financial roles"
+          }
+        ],
+        "topic": "Segregation of duties",
+        "version": "PCAOB AS 2201"
+      },
+      {
+        "clause": "ITGC.AccessMgmt.Termination",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.12.37",
+            "ucTitle": "SOX-ITGC AccessMgmt.Termination — Deprovisioning SLA after HR termination event"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.12.5",
+            "ucTitle": "Terminated-user authentication after HR termination date"
+          }
+        ],
+        "topic": "Timely deprovisioning",
+        "version": "PCAOB AS 2201"
+      },
+      {
+        "clause": "ITGC.ChangeMgmt.Approval",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "12.2.17",
+            "ucTitle": "Deploy Approval Bypass Detection"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.12.39",
+            "ucTitle": "SOX-ITGC ChangeMgmt.Approval — Segregation of duties in financial-system change approval"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.55",
+            "ucTitle": "ISO/IEC 27001:2022 Clause 8.1 — Operational planning: change advisory board (CAB) approval evidence"
+          }
+        ],
+        "topic": "Change approved",
+        "version": "PCAOB AS 2201"
+      },
+      {
+        "clause": "ITGC.ChangeMgmt.Authorization",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "16.4.1",
+            "ucTitle": "Unauthorized Change Detection"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.42.1",
+            "ucTitle": "Unauthorized production change — no approved CR matches the observed change"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "7.1.13",
+            "ucTitle": "Schema Change Detection"
+          }
+        ],
+        "topic": "Change authorised",
+        "version": "PCAOB AS 2201"
+      },
+      {
+        "clause": "ITGC.ChangeMgmt.Testing",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.12.4",
+            "ucTitle": "Administrator and break-glass usage on production financial hosts"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.12.8",
+            "ucTitle": "Emergency change retrospective documentation completeness"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.12.12",
+            "ucTitle": "Production change volume during financial close windows"
+          }
+        ],
+        "topic": "Change tested",
+        "version": "PCAOB AS 2201"
+      },
+      {
+        "clause": "ITGC.Logging.Continuity",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "7.1.40",
+            "ucTitle": "Database Audit Log Tampering Detection"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.35.1",
+            "ucTitle": "Audit-log continuity: detect indexing gap indicating lost evidence"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.35.2",
+            "ucTitle": "Log tamper detection via write-once-read-many chain-of-custody"
+          }
+        ],
+        "topic": "Audit trail completeness",
+        "version": "PCAOB AS 2201"
+      },
+      {
+        "clause": "ITGC.Operations.Backup",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.45.3",
+            "ucTitle": "Backup completeness — unprotected workloads with regulated data"
+          }
+        ],
+        "topic": "Backup and restore",
+        "version": "PCAOB AS 2201"
+      },
+      {
+        "clause": "ITGC.AccessMgmt.Review",
+        "coverageState": "covered-full",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.40.3",
+            "ucTitle": "Periodic access review SLA — stale certifications by control owner"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.12.26",
+            "ucTitle": "Sensitive management financial report access and export"
+          }
+        ],
+        "topic": "Periodic access review",
+        "version": "PCAOB AS 2201"
+      },
+      {
+        "clause": "ITGC.Logging.Review",
+        "coverageState": "covered-partial",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.47.2",
+            "ucTitle": "Repeat audit findings — same control deficiency across consecutive audit cycles"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.49.3",
+            "ucTitle": "Litigation-hold override audit — holds applied/released without ticket"
+          }
+        ],
+        "topic": "Log review",
+        "version": "PCAOB AS 2201"
+      },
+      {
+        "clause": "ITGC.Operations.JobSchedule",
+        "coverageState": "covered-full",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.12.40",
+            "ucTitle": "SOX-ITGC Operations.JobSchedule — Batch-schedule monitoring: financial-job exception visibility"
+          }
+        ],
+        "topic": "Batch scheduling and monitoring",
+        "version": "PCAOB AS 2201"
+      },
+      {
+        "clause": "ITGC.Change.Approval",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.42.4",
+            "ucTitle": "CAB approval bypass — change pushed before scheduled window"
+          }
+        ],
+        "topic": null,
+        "version": "PCAOB AS 2201"
+      },
+      {
+        "clause": "ITGC.Change.Rollback",
+        "coverageState": "covered-partial",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.42.3",
+            "ucTitle": "Change rollback execution evidence — declared rollback vs actual"
+          }
+        ],
+        "topic": null,
+        "version": "PCAOB AS 2201"
+      },
+      {
+        "clause": "ITGC.Change.SoD",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.48.3",
+            "ucTitle": "Developer-to-production SoD — same developer submits AND approves merge"
+          }
+        ],
+        "topic": null,
+        "version": "PCAOB AS 2201"
+      },
+      {
+        "clause": "ITGC.Crypto.SoD",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.41.5",
+            "ucTitle": "Key custodian SoD — same identity creates AND approves a key"
+          }
+        ],
+        "topic": null,
+        "version": "PCAOB AS 2201"
+      },
+      {
+        "clause": "ITGC.Evidence.Integrity",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.47.4",
+            "ucTitle": "Evidence-pack drift — auditor-facing vs pre-production evidence"
+          }
+        ],
+        "topic": null,
+        "version": "PCAOB AS 2201"
+      },
+      {
+        "clause": "ITGC.Financial.SoD",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.48.4",
+            "ucTitle": "Financial SoD — same identity posts AND approves a journal entry"
+          }
+        ],
+        "topic": null,
+        "version": "PCAOB AS 2201"
+      },
+      {
+        "clause": "ITGC.Logging.Integrity",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.11.99",
+            "ucTitle": "PCI-DSS 10.3 — Audit log integrity: tampering/deletion detection on CDE log source"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.35.4",
+            "ucTitle": "Log signing chain integrity — cryptographic signature drift on evidence archive"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.11.102",
+            "ucTitle": "PCI-DSS 10.7 — Log retention: CDE data-source retention + immutability attestation"
+          }
+        ],
+        "topic": null,
+        "version": "PCAOB AS 2201"
+      },
+      {
+        "clause": "ITGC.Privileged.JIT",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.40.5",
+            "ucTitle": "High-risk privileged-session command without JIT approval"
+          }
+        ],
+        "topic": null,
+        "version": "PCAOB AS 2201"
+      },
+      {
+        "clause": "ITGC.Vendor.SoD",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.48.5",
+            "ucTitle": "Vendor-master SoD — same identity creates vendor AND approves payment"
+          }
+        ],
+        "topic": null,
+        "version": "PCAOB AS 2201"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "US"
+  ],
+  "narrative": {
+    "evidencePack": "docs/evidence-packs/sox-itgc.md",
+    "matchedBy": "manual-map",
+    "name": "SOX / ITGC",
+    "primer": "docs/regulatory-primer.md#45-sox-itgc--sarbanes-oxley-it-general-controls-us--t1",
+    "splunkValue": "We catch privileged access to financial systems without a ticket, detect emergency changes that bypassed approval, evidence user-access reviews and termination timeliness, and produce year-end ITGC evidence packs with sample-set timestamps auditors can independently walk through.",
+    "whatItIs": "The US federal law that makes executives of publicly listed companies personally accountable for financial reporting accuracy. IT General Controls (ITGC) are the subset of controls over the IT systems that process financial data — access, change, and operations.",
+    "whoItAffects": "US-listed public companies and their subsidiaries — and often private companies preparing for IPO. External auditors test ITGC every year under PCAOB guidance; deficiencies flow into management's Section 404 assertions."
+  },
+  "narrativeRef": "non-technical-view.js#cat-22/area/sox-itgc",
+  "regulationId": "sox-itgc",
+  "regulationName": "SOX — PCAOB AS 2201 ITGCs",
+  "regulationShortName": "SOX ITGC",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=sox-itgc",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#sox-itgc",
+    "evidencePack": "docs/evidence-packs/sox-itgc.md",
+    "primerAnchor": "docs/regulatory-primer.md#45-sox-itgc-sarbanes-oxley-it-general-controls-us-t1",
+    "regulation": "/api/v1/compliance/regulations/sox-itgc.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 1
+}

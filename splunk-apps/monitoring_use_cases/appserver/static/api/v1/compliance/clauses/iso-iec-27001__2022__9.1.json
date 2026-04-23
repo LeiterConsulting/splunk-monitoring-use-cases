@@ -1,0 +1,68 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 1,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "9.1",
+  "clauseId": "iso-iec-27001@2022#9.1",
+  "coverageState": "covered-full",
+  "coveringUcCount": 2,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "Clause 9.1 requires monitoring, measurement, analysis, and evaluation; proof the telemetry is alive is a prerequisite for the rest of the clause.",
+      "category": 22,
+      "clauseUrl": "https://www.iso.org/standard/27001",
+      "controlObjective": "Evidence that ISO/IEC 27001 9.1 (Monitoring, measurement, analysis, evaluation) is enforced — Splunk UC-22.6.49: ISO/IEC 27001:2022 Clause 9.1 — Monitoring programme coverage: KPI telemetry uptime.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.6.49' running on sourcetype splunkd and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.6.49",
+      "ucTitle": "ISO/IEC 27001:2022 Clause 9.1 — Monitoring programme coverage: KPI telemetry uptime"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "Clause 9.1 (monitoring, measurement, analysis, evaluation) — same measurements feed it.",
+      "category": 22,
+      "clauseUrl": "https://www.iso.org/standard/27001",
+      "controlObjective": "Evidence that ISO/IEC 27001 9.1 (Monitoring, measurement, analysis, evaluation) is enforced — Splunk UC-22.6.47: ISO/IEC 27001:2022 Clause 6.2 — Information-security objectives: measurable-target attainment.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.6.47' running on sourcetype isms:objective_result and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.6.47",
+      "ucTitle": "ISO/IEC 27001:2022 Clause 6.2 — Information-security objectives: measurable-target attainment"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/iso-iec-27001__2022__9.1.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 2
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "iso-iec-27001",
+  "regulationName": "iso-iec-27001",
+  "regulationShortName": "iso-iec-27001",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/iso-iec-27001.json",
+    "regulationVersion": "/api/v1/compliance/regulations/iso-iec-27001@2022.json",
+    "story": "/api/v1/compliance/story/iso-iec-27001.json"
+  },
+  "tier": null,
+  "topAssurance": "full",
+  "topic": null,
+  "version": "2022"
+}

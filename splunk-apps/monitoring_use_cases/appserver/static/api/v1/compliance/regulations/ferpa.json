@@ -1,0 +1,94 @@
+{
+  "aliases": [
+    "FERPA"
+  ],
+  "apiVersion": "v1",
+  "id": "ferpa",
+  "jurisdiction": [
+    "US"
+  ],
+  "name": "Family Educational Rights and Privacy Act",
+  "shortName": "FERPA",
+  "tags": [
+    "education",
+    "privacy"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://www.ecfr.gov/current/title-34/subtitle-A/part-99",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§99.31",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Conditions for disclosure without consent"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§99.33",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": null,
+          "topic": "Redisclosure and record-keeping"
+        }
+      ],
+      "clauseExamples": [
+        "§99.31",
+        "§99.33"
+      ],
+      "clauseGrammar": "^§99\\.\\d+$",
+      "clauseUrlTemplate": null,
+      "clausesReferencedByCatalogue": [],
+      "commonClauses": [
+        {
+          "clause": "§99.31",
+          "priorityWeight": 1.0,
+          "topic": "Conditions for disclosure without consent"
+        },
+        {
+          "clause": "§99.33",
+          "priorityWeight": 0.7,
+          "topic": "Redisclosure and record-keeping"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 0.0,
+        "commonClauseCount": 2,
+        "coveredClauseCount": 0,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 0.0,
+        "stateCounts": {
+          "contributing-only": 0,
+          "covered-full": 0,
+          "covered-partial": 0,
+          "uncovered": 2
+        }
+      },
+      "effectiveFrom": "1974-08-21",
+      "endpoint": "/api/v1/compliance/regulations/ferpa@20-USC--1232g.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [],
+      "version": "20 USC §1232g"
+    }
+  ]
+}

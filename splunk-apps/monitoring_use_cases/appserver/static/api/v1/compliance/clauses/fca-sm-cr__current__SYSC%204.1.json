@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "SYSC 4.1",
+  "clauseId": "fca-sm-cr@current#SYSC 4.1",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Phase-C authored UC targeting FCA SM&CR SYSC 4.1 (General organisational requirements). Uses continuous, production-grade Splunk telemetry to provide auditor-facing evidence; assurance level set to 'contributing' pending SME review per Phase E of the regulation-coverage plan.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that FCA SM&CR SYSC 4.1 (General organisational requirements) is enforced — Splunk UC-22.50.15: SYSC 4.1 organisational requirements — role-population and responsibilities map.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.50.15' running on HR system, SMCR responsibilities map, IAM role assignments., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": "Phase-C draft: SME review required before uplifting assurance from 'contributing' to 'partial' or 'full'. Confirm that the SPL captures the specific regulator expectation and that the telemetry exists in the deployment.",
+      "ucId": "22.50.15",
+      "ucTitle": "SYSC 4.1 organisational requirements — role-population and responsibilities map"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/fca-sm-cr__current__SYSC%204.1.json",
+  "gapNote": "fca-sm-cr clause SYSC 4.1 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "fca-sm-cr",
+  "regulationName": "fca-sm-cr",
+  "regulationShortName": "fca-sm-cr",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/fca-sm-cr.json",
+    "regulationVersion": "/api/v1/compliance/regulations/fca-sm-cr@current.json",
+    "story": "/api/v1/compliance/story/fca-sm-cr.json"
+  },
+  "tier": null,
+  "topAssurance": "contributing",
+  "topic": null,
+  "version": "current"
+}

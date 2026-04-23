@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://dodcio.defense.gov/CMMC/#AC.L2-3.1.5",
+  "clause": "AC.L2-3.1.5",
+  "clauseId": "cmmc@2.0#AC.L2-3.1.5",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "CMMC AC.L2-3.1.5 Least privilege — UC area 2 surfaces CUI-marked systems requiring privilege review, feeding the least-privilege practice for DoD contractors.",
+      "category": 22,
+      "clauseUrl": "https://dodcio.defense.gov/CMMC/",
+      "controlObjective": "Evidence that CMMC AC.L2-3.1.5 (Least privilege) is enforced — Splunk UC-22.20.2: CMMC Level 2 practice evidence — CUI control area 2.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.20.2' running on WinEventLog:Security, CrowdStrike FDR, Defender for Office 365, NetFlow, encryption posture exports, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.20.2",
+      "ucTitle": "CMMC Level 2 practice evidence — CUI control area 2"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/cmmc__2.0__AC.L2-3.1.5.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "cmmc",
+  "regulationName": "Cybersecurity Maturity Model Certification",
+  "regulationShortName": "CMMC",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/cmmc.json",
+    "regulationVersion": "/api/v1/compliance/regulations/cmmc@2.0.json",
+    "story": "/api/v1/compliance/story/cmmc.json"
+  },
+  "tier": 1,
+  "topAssurance": "partial",
+  "topic": "Least privilege",
+  "version": "2.0"
+}

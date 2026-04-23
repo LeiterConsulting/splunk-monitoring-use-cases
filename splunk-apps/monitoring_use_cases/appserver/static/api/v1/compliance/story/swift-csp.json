@@ -1,0 +1,249 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 6,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "1.1",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.34.10",
+        "22.34.2",
+        "22.34.5",
+        "22.34.6",
+        "22.34.9",
+        "5.1.7",
+        "5.2.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "SWIFT environment protection",
+      "version": "CSCF v2025"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "6.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.50.13"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Malware protection",
+      "version": "CSCF v2025"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 9,
+        "full": 0,
+        "partial": 4
+      },
+      "clause": "6.4",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "1.1.65",
+        "1.2.33",
+        "13.1.35",
+        "13.1.36",
+        "15.3.2",
+        "22.34.1",
+        "22.34.11",
+        "22.34.12",
+        "22.34.3",
+        "22.34.4",
+        "22.34.7",
+        "22.34.8",
+        "7.1.40"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Logging and monitoring",
+      "version": "CSCF v2025"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "3 of 3 common clauses are covered by the catalogue, with a priority-weighted coverage of 41.67% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 3,
+      "priorityWeightedCoveragePercent": 41.67,
+      "stateCounts": {
+        "contributing-only": 1,
+        "covered-full": 0,
+        "covered-partial": 2,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "1.1",
+        "killerUcId": "22.34.10",
+        "killerUcTitle": "Annual KYC-SA attestation evidence pack",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "SWIFT environment protection",
+        "version": "CSCF v2025",
+        "why": "Clause 1.1 (SWIFT environment protection) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "6.4",
+        "killerUcId": "1.1.65",
+        "killerUcTitle": "Auditd Rule Violation Detection",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Logging and monitoring",
+        "version": "CSCF v2025",
+        "why": "Clause 6.4 (Logging and monitoring) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "6.1",
+        "killerUcId": "22.50.13",
+        "killerUcTitle": "SWIFT CSCF 6.1 — malware protection across the SWIFT secure zone",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Malware protection",
+        "version": "CSCF v2025",
+        "why": "Clause 6.1 (Malware protection) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "1.1",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "5.2.2",
+            "ucTitle": "Policy Change Audit"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.34.2",
+            "ucTitle": "Operating system privileged account control within SWIFT zone"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.34.9",
+            "ucTitle": "Intrusion detection coverage within SWIFT environment"
+          }
+        ],
+        "topic": "SWIFT environment protection",
+        "version": "CSCF v2025"
+      },
+      {
+        "clause": "6.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.50.13",
+            "ucTitle": "SWIFT CSCF 6.1 — malware protection across the SWIFT secure zone"
+          }
+        ],
+        "topic": "Malware protection",
+        "version": "CSCF v2025"
+      },
+      {
+        "clause": "6.4",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "1.1.65",
+            "ucTitle": "Auditd Rule Violation Detection"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "1.2.33",
+            "ucTitle": "Audit Policy Changes"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "7.1.40",
+            "ucTitle": "Database Audit Log Tampering Detection"
+          }
+        ],
+        "topic": "Logging and monitoring",
+        "version": "CSCF v2025"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "GLOBAL"
+  ],
+  "narrative": {
+    "evidencePack": null,
+    "matchedBy": "fuzzy-shortname",
+    "name": "SWIFT CSP",
+    "primer": null,
+    "splunkValue": "We evidence secure-zone segregation, operator-authentication strength, intrusion detection on SWIFT hosts, and produce the CSCF workbook with timestamped query evidence instead of screenshots for the annual KYC-SA attestation.",
+    "whatItIs": "SWIFT's Customer Security Programme mandates baseline security controls for every user of the SWIFT network and requires an annual self-attestation (now independently assessed) of compliance with the Customer Security Controls Framework.",
+    "whoItAffects": "Every organisation that connects to SWIFT — banks, central banks, broker-dealers, large corporates, and service bureaus — regardless of size. Non-compliance can be reported to counterparties and national regulators."
+  },
+  "narrativeRef": "non-technical-view.js#cat-22/area/swift-csp",
+  "regulationId": "swift-csp",
+  "regulationName": "SWIFT Customer Security Programme",
+  "regulationShortName": "SWIFT CSP",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=swift-csp",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#swift-csp",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/swift-csp.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

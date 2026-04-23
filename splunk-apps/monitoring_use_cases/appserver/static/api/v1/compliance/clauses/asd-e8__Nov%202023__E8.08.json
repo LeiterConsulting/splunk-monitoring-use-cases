@@ -1,0 +1,113 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 1,
+    "partial": 3,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model",
+  "clause": "E8.08",
+  "clauseId": "asd-e8@Nov 2023#E8.08",
+  "coverageState": "covered-full",
+  "coveringUcCount": 5,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "ASD Essential Eight E8.08 Regular backups — backup-job success-rate monitoring is the direct operational evidence of the regular-backups maturity criterion.",
+      "category": 6,
+      "clauseUrl": "https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model",
+      "controlObjective": "Evidence that ASD E8 E8.08 (Regular backups) is enforced — Splunk UC-6.3.1: Backup Job Success Rate.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-6.3.1' running on Backup server job logs (job name, status, start/end time, data size), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "6.3.1",
+      "ucTitle": "Backup Job Success Rate"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "ASD Essential Eight E8.08 Regular backups — tracking freshness of network device config backups evidences the regular-backup strategy applied to infrastructure.",
+      "category": 5,
+      "clauseUrl": "https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model",
+      "controlObjective": "Evidence that ASD E8 E8.08 (Regular backups) is enforced — Splunk UC-5.1.24: Network Device Configuration Backup Freshness.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-5.1.24' running on Backup system logs (timestamps of last successful backup per device), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "5.1.24",
+      "ucTitle": "Network Device Configuration Backup Freshness"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "ASD Essential Eight E8.08 Regular backups — RPO/RTO compliance tracking is cited at Maturity Level 2+ for the regular-backup strategy.",
+      "category": 6,
+      "clauseUrl": "https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model",
+      "controlObjective": "Evidence that ASD E8 E8.08 (Regular backups) is enforced — Splunk UC-6.3.13: Backup RPO and RTO Compliance.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-6.3.13' running on Last successful backup time, last restore test duration, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "6.3.13",
+      "ucTitle": "Backup RPO and RTO Compliance"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "ASD Essential Eight E8.08 Regular backups — immutable-backup and ransomware-recovery readiness evidences Maturity Level 3 of the regular-backups strategy.",
+      "category": 6,
+      "clauseUrl": "https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model",
+      "controlObjective": "Evidence that ASD E8 E8.08 (Regular backups) is enforced — Splunk UC-6.3.23: Immutable Backup and Ransomware Recovery Readiness.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-6.3.23' running on Backup copy retention lock status, object lock (S3), backup integrity checksum, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "6.3.23",
+      "ucTitle": "Immutable Backup and Ransomware Recovery Readiness"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'ASD Essential Eight' → 'E8.08'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model",
+      "controlObjective": "Evidence that ASD E8 E8.08 (Regular backups) is enforced — Splunk UC-22.31.12: Daily backup verification and restore test evidence.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.31.12' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.31.12",
+      "ucTitle": "Daily backup verification and restore test evidence"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/asd-e8__Nov%202023__E8.08.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 5
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "asd-e8",
+  "regulationName": "ASD Essential Eight Maturity Model",
+  "regulationShortName": "ASD E8",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/asd-e8.json",
+    "regulationVersion": "/api/v1/compliance/regulations/asd-e8@Nov%202023.json",
+    "story": "/api/v1/compliance/story/asd-e8.json"
+  },
+  "tier": 2,
+  "topAssurance": "full",
+  "topic": "Regular backups",
+  "version": "Nov 2023"
+}

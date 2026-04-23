@@ -1,0 +1,54 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 5,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "mongodb",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "MongoDB",
+  "models": [
+    {
+      "id": "mongodb_mongod",
+      "label": "MongoDB Server",
+      "modelId": "mongod",
+      "useCaseCount": 5,
+      "useCaseIds": [
+        "7.2.11",
+        "7.2.12",
+        "7.2.13",
+        "7.2.18",
+        "7.2.23"
+      ]
+    },
+    {
+      "id": "mongodb_wiredtiger",
+      "label": "WiredTiger",
+      "modelId": "wiredtiger",
+      "useCaseCount": 0,
+      "useCaseIds": []
+    }
+  ],
+  "regulationIds": [],
+  "regulations": [],
+  "useCaseCount": 5,
+  "useCaseIds": [
+    "7.2.11",
+    "7.2.12",
+    "7.2.13",
+    "7.2.18",
+    "7.2.23"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 7,
+      "useCaseCount": 5,
+      "useCaseIds": [
+        "7.2.11",
+        "7.2.12",
+        "7.2.13",
+        "7.2.18",
+        "7.2.23"
+      ]
+    }
+  ]
+}

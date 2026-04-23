@@ -1,0 +1,119 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/22.8.37.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/22.8.37.json",
+    "sourcePath": "content/cat-22-regulatory-compliance/UC-22.8.37.json"
+  },
+  "apiVersion": "v1",
+  "app": "Splunk Add-on for ServiceNow",
+  "cimModels": [
+    "Change"
+  ],
+  "compliance": [
+    {
+      "assurance": "full",
+      "assurance_rationale": "CC9.1 Risk mitigation — vendor-action closure is the direct evidence.",
+      "clause": "CC9.1",
+      "clauseUrl": "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services",
+      "controlObjective": "Evidence that SOC-2 CC9.1 (Risk mitigation activities) is enforced — Splunk UC-22.8.37: SOC 2 CC9.1 — Risk-mitigation activity: vendor-risk action closure SLA.",
+      "evidenceArtifact": "Saved search 'UC-22.8.37' running on index=grc sourcetype=servicenow:vendor_risk; vendor register lookup vendor_register.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "soc-2@2017 TSC#CC9.1",
+      "regulation": "SOC-2",
+      "requires_sme_review": true,
+      "version": "2017 TSC"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "ISO/IEC 27001:2022 A.5.19 Information security in supplier relationships — contributing.",
+      "clause": "A.5.19",
+      "clauseUrl": "https://www.iso.org/standard/27001",
+      "controlObjective": "Evidence that ISO/IEC 27001 A.5.19 is enforced — Splunk UC-22.8.37: SOC 2 CC9.1 — Risk-mitigation activity: vendor-risk action closure SLA.",
+      "evidenceArtifact": "Saved search 'UC-22.8.37' running on index=grc sourcetype=servicenow:vendor_risk; vendor register lookup vendor_register.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "iso-27001@2022#A.5.19",
+      "regulation": "ISO/IEC 27001",
+      "requires_sme_review": true,
+      "version": "2022"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "DORA Art.28 ICT third-party risk — contributing.",
+      "clause": "Art.28",
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj",
+      "controlObjective": "Evidence that DORA Art.28 (ICT third-party risk) is enforced — Splunk UC-22.8.37: SOC 2 CC9.1 — Risk-mitigation activity: vendor-risk action closure SLA.",
+      "evidenceArtifact": "Saved search 'UC-22.8.37' running on index=grc sourcetype=servicenow:vendor_risk; vendor register lookup vendor_register.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "dora@Regulation (EU) 2022/2554#Art.28",
+      "regulation": "DORA",
+      "requires_sme_review": true,
+      "version": "Regulation (EU) 2022/2554"
+    }
+  ],
+  "controlFamily": "third-party-activity",
+  "controlTest": {
+    "fixtureRef": "sample-data/uc-22.8.37-fixture.json",
+    "negativeScenario": "A closed action that was closed before due_at is absent.",
+    "positiveScenario": "A high-severity action past due_at with state=open returns sla_met=0."
+  },
+  "criticality": "medium",
+  "dataSources": "`index=grc` sourcetype=servicenow:vendor_risk; vendor register lookup `vendor_register.csv`.",
+  "description": "CC9.1 requires the entity to identify, select, and develop risk-mitigation activities. Closure SLA on vendor-risk actions is a direct control output.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Splunk Add-on for ServiceNow.\n• Ensure the following data sources are available: `index=grc` sourcetype=servicenow:vendor_risk; vendor register lookup `vendor_register.csv`..\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\n(1) Route vendor_risk events from ServiceNow GRC; (2) maintain vendor_register.csv; (3) schedule UC daily; (4) sla_met=0 escalates per severity matrix; (5) monthly CISO report.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=grc sourcetype=servicenow:vendor_risk state IN (open,closed) earliest=-120d\n| stats latest(state) AS state latest(severity) AS severity latest(due_at) AS due_at latest(closed_at) AS closed_at BY action_id vendor\n| eval sla_met=case(state=\"closed\" AND closed_at<=due_at,1,state=\"closed\",0,now()>due_at,0,true(),1)\n| where sla_met=0\n| table action_id vendor severity due_at closed_at sla_met\n```\n\nUnderstanding this SPL\n\n**SOC 2 CC9.1 — Risk-mitigation activity: vendor-risk action closure SLA** — Replaces the quarterly Procurement PowerPoint with a continuous signal. Top vendors with overdue actions are the first line of an Audit Committee brief.\n\nDocumented **Data sources**: `index=grc` sourcetype=servicenow:vendor_risk; vendor register lookup `vendor_register.csv`. **App/TA** (typical add-on context): Splunk Add-on for ServiceNow. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: grc; **sourcetype**: servicenow:vendor_risk. That sourcetype matches what this use case lists under Data sources.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=grc, sourcetype=servicenow:vendor_risk, time bounds. Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• `stats` rolls up events into metrics; results are split **by action_id vendor** so each row reflects one combination of those dimensions (useful for per-host, per-user, or per-entity comparisons for this use case).\n• `eval` defines or adjusts **sla_met** — often to normalize units, derive a ratio, or prepare for thresholds.\n• Filters the current rows with `where sla_met=0` — typically the threshold or rule expression for this monitoring goal.\n• Pipeline stage (see **SOC 2 CC9.1 — Risk-mitigation activity: vendor-risk action closure SLA**): table action_id vendor severity due_at closed_at sla_met\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Table of overdue actions by vendor, bar chart of SLA adherence by severity, single value 'overdue vendor-risk actions'.",
+  "detectionType": "Baseline",
+  "difficulty": "intermediate",
+  "equipment": [
+    "servicenow"
+  ],
+  "evidence": "Saved search 'soc2_cc9_1_vendor_risk_sla' (daily) emits per action: action_id, vendor, severity, due_at, closed_at, sla_met, to compliance_summary.",
+  "exclusions": "Does NOT rate vendors; measures closure SLA for risk-mitigation actions from vendor assessments.",
+  "grandmaExplanation": "Replaces the quarterly Procurement PowerPoint with a continuous signal — so you can show exactly what is being watched and when something went wrong.",
+  "id": "22.8.37",
+  "implementation": "(1) Route vendor_risk events from ServiceNow GRC; (2) maintain vendor_register.csv; (3) schedule UC daily; (4) sla_met=0 escalates per severity matrix; (5) monthly CISO report.",
+  "knownFalsePositives": "Actions waiting on vendor response can be legitimately late — mark state='awaiting-vendor' and exclude.",
+  "lastReviewed": "2026-04-16",
+  "monitoringType": [
+    "Compliance"
+  ],
+  "owner": "Procurement",
+  "references": [
+    {
+      "retrieved": "2026-04-16",
+      "title": "SOC-2 2017 TSC",
+      "url": "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "ISO/IEC 27001 2022",
+      "url": "https://www.iso.org/standard/27001"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "DORA Regulation (EU) 2022/2554",
+      "url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj"
+    }
+  ],
+  "requiredFields": [
+    "action_id",
+    "vendor",
+    "severity",
+    "due_at",
+    "closed_at",
+    "_time"
+  ],
+  "reviewer": "N/A",
+  "securityDomain": "audit",
+  "spl": "index=grc sourcetype=servicenow:vendor_risk state IN (open,closed) earliest=-120d\n| stats latest(state) AS state latest(severity) AS severity latest(due_at) AS due_at latest(closed_at) AS closed_at BY action_id vendor\n| eval sla_met=case(state=\"closed\" AND closed_at<=due_at,1,state=\"closed\",0,now()>due_at,0,true(),1)\n| where sla_met=0\n| table action_id vendor severity due_at closed_at sla_met",
+  "splunkPillar": "Security",
+  "splunkVersions": [
+    "9.2+",
+    "Cloud"
+  ],
+  "status": "verified",
+  "subcategory": "22.8#1",
+  "title": "SOC 2 CC9.1 — Risk-mitigation activity: vendor-risk action closure SLA",
+  "value": "Replaces the quarterly Procurement PowerPoint with a continuous signal. Top vendors with overdue actions are the first line of an Audit Committee brief.",
+  "visualization": "Table of overdue actions by vendor, bar chart of SLA adherence by severity, single value 'overdue vendor-risk actions'."
+}

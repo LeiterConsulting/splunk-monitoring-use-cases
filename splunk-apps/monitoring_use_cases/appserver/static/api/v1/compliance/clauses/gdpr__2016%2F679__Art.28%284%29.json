@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "Art.28(4)",
+  "clauseId": "gdpr@2016/679#Art.28(4)",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that GDPR Art.28(4) is enforced — Splunk UC-22.1.28: GDPR Sub-Processor Change Monitoring.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.1.28' running on CIM Network_Traffic data model, index=proxy, gdpr_processor_subprocessor_allowlist.csv, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.1.28",
+      "ucTitle": "GDPR Sub-Processor Change Monitoring"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/gdpr__2016%2F679__Art.28%284%29.json",
+  "gapNote": "gdpr clause Art.28(4) has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "gdpr",
+  "regulationName": "gdpr",
+  "regulationShortName": "gdpr",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/gdpr.json",
+    "regulationVersion": "/api/v1/compliance/regulations/gdpr@2016%2F679.json",
+    "story": "/api/v1/compliance/story/gdpr.json"
+  },
+  "tier": null,
+  "topAssurance": "contributing",
+  "topic": null,
+  "version": "2016/679"
+}

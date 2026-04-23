@@ -1,0 +1,89 @@
+{
+  "apiVersion": "v1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "psd2",
+  "jurisdiction": [
+    "EU"
+  ],
+  "name": "Revised Payment Services Directive",
+  "shortName": "PSD2",
+  "tags": [
+    "payments"
+  ],
+  "tier": 2,
+  "version": {
+    "authoritativeUrl": "https://eur-lex.europa.eu/eli/dir/2015/2366/oj",
+    "clauseExamples": [
+      "Art.95",
+      "Art.96",
+      "Art.97"
+    ],
+    "clauseGrammar": "^Art\\.\\d+(\\(\\d+\\))?$",
+    "clauseUrlTemplate": "https://eur-lex.europa.eu/eli/dir/2015/2366/oj#{clause}",
+    "clausesReferencedByCatalogue": [
+      "Art.95",
+      "Art.96",
+      "Art.97"
+    ],
+    "commonClauses": [
+      {
+        "clause": "Art.95",
+        "priorityWeight": 1.0,
+        "topic": "Management of operational and security risks"
+      },
+      {
+        "clause": "Art.96",
+        "priorityWeight": 1.0,
+        "topic": "Incident reporting"
+      },
+      {
+        "clause": "Art.97",
+        "priorityWeight": 1.0,
+        "topic": "Strong customer authentication"
+      }
+    ],
+    "effectiveFrom": "2018-01-13",
+    "endpoint": "/api/v1/compliance/regulations/psd2@Directive--EU--2015-2366.json",
+    "pendingChanges": [],
+    "sunsetOn": null,
+    "useCasesTaggingThisVersion": [
+      "12.3.2",
+      "16.3.6",
+      "17.2.2",
+      "22.22.1",
+      "22.22.10",
+      "22.22.11",
+      "22.22.12",
+      "22.22.13",
+      "22.22.14",
+      "22.22.15",
+      "22.22.16",
+      "22.22.17",
+      "22.22.18",
+      "22.22.19",
+      "22.22.2",
+      "22.22.20",
+      "22.22.21",
+      "22.22.22",
+      "22.22.23",
+      "22.22.24",
+      "22.22.25",
+      "22.22.26",
+      "22.22.27",
+      "22.22.28",
+      "22.22.29",
+      "22.22.3",
+      "22.22.30",
+      "22.22.4",
+      "22.22.5",
+      "22.22.6",
+      "22.22.7",
+      "22.22.8",
+      "22.22.9",
+      "4.1.5",
+      "9.1.1",
+      "9.3.1"
+    ],
+    "version": "Directive (EU) 2015/2366"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://cppa.ca.gov/regulations/",
+  "clause": "§1798.150",
+  "clauseId": "ccpa@CPRA (as amended)#§1798.150",
+  "coverageState": "uncovered",
+  "coveringUcCount": 0,
+  "coveringUcs": [],
+  "endpoint": "/api/v1/compliance/clauses/ccpa__CPRA%20%28as%20amended%29__%C2%A71798.150.json",
+  "gapNote": "CCPA/CPRA clause §1798.150 (Private right of action for data breaches) is listed in data/regulations.json as a common clause but no use case currently tags it. Candidate UCs are tracked in docs/compliance-gaps.md and api/v1/compliance/gaps.json.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {},
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 0.7,
+  "regulationId": "ccpa",
+  "regulationName": "California Consumer Privacy Act / CPRA",
+  "regulationShortName": "CCPA/CPRA",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/ccpa.json",
+    "regulationVersion": "/api/v1/compliance/regulations/ccpa@CPRA%20%28as%20amended%29.json",
+    "story": "/api/v1/compliance/story/ccpa.json"
+  },
+  "tier": 2,
+  "topAssurance": null,
+  "topic": "Private right of action for data breaches",
+  "version": "CPRA (as amended)"
+}

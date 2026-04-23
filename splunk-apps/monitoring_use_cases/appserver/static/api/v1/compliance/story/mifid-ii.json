@@ -1,0 +1,454 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.16",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.5.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Directive 2014/65/EU"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.16(7)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.5.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Record keeping of communications",
+      "version": "Directive 2014/65/EU"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 10,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.17",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.5.10",
+        "22.5.11",
+        "22.5.15",
+        "22.5.16",
+        "22.5.17",
+        "22.5.18",
+        "22.5.19",
+        "22.5.20",
+        "22.5.8",
+        "22.5.9"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Algorithmic trading controls",
+      "version": "Directive 2014/65/EU"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 5,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.25",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.5.12",
+        "22.5.13",
+        "22.5.14",
+        "22.5.6",
+        "22.5.7"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Directive 2014/65/EU"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 4,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.26",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.5.1",
+        "22.5.24",
+        "22.5.25",
+        "22.5.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Directive 2014/65/EU"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 4,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.27",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.5.21",
+        "22.5.22",
+        "22.5.23",
+        "22.5.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Directive 2014/65/EU"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.9",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.5.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Directive 2014/65/EU"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "2 of 2 common clauses are covered by the catalogue, with a priority-weighted coverage of 25.0% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoveragePercent": 25.0,
+      "stateCounts": {
+        "contributing-only": 2,
+        "covered-full": 0,
+        "covered-partial": 0,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "Art.16(7)",
+        "killerUcId": "22.5.2",
+        "killerUcTitle": "MiFID II Communications Recording and Retention Audit",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Record keeping of communications",
+        "version": "Directive 2014/65/EU",
+        "why": "Clause Art.16(7) (Record keeping of communications) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "Art.17",
+        "killerUcId": "22.5.10",
+        "killerUcTitle": "MiFID II Algo Trading — Kill-Switch Activation Audit Trail and Dual Authorization",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Algorithmic trading controls",
+        "version": "Directive 2014/65/EU",
+        "why": "Clause Art.17 (Algorithmic trading controls) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "Art.16",
+        "killerUcId": "22.5.5",
+        "killerUcTitle": "MiFID II Product Governance and Target Market Appropriateness Evidence",
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null,
+        "version": "Directive 2014/65/EU",
+        "why": "Clause Art.16 (topic not recorded) carries a regulator-assigned priority weight of None, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "Art.25",
+        "killerUcId": "22.5.12",
+        "killerUcTitle": "MiFID II Client Suitability — Know-Your-Client Refresh Overdue by Risk Segment",
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null,
+        "version": "Directive 2014/65/EU",
+        "why": "Clause Art.25 (topic not recorded) carries a regulator-assigned priority weight of None, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "Art.26",
+        "killerUcId": "22.5.1",
+        "killerUcTitle": "MiFID II Trade and Transaction Reporting Completeness",
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null,
+        "version": "Directive 2014/65/EU",
+        "why": "Clause Art.26 (topic not recorded) carries a regulator-assigned priority weight of None, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "Art.16(7)",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.5.2",
+            "ucTitle": "MiFID II Communications Recording and Retention Audit"
+          }
+        ],
+        "topic": "Record keeping of communications",
+        "version": "Directive 2014/65/EU"
+      },
+      {
+        "clause": "Art.17",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.5.8",
+            "ucTitle": "MiFID II Algorithmic Trading Strategy Limits and Kill-Switch Audit"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.5.9",
+            "ucTitle": "MiFID II Algo Trading — Per-Instrument Circuit Breaker Trigger Frequency and Cooling-Off Compliance"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.5.10",
+            "ucTitle": "MiFID II Algo Trading — Kill-Switch Activation Audit Trail and Dual Authorization"
+          }
+        ],
+        "topic": "Algorithmic trading controls",
+        "version": "Directive 2014/65/EU"
+      },
+      {
+        "clause": "Art.16",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.5.5",
+            "ucTitle": "MiFID II Product Governance and Target Market Appropriateness Evidence"
+          }
+        ],
+        "topic": null,
+        "version": "Directive 2014/65/EU"
+      },
+      {
+        "clause": "Art.25",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.5.6",
+            "ucTitle": "MiFID II Order and Decision Data Record Integrity"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.5.7",
+            "ucTitle": "MiFID II Clock Synchronization and Timestamp Quality for Reporting"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.5.13",
+            "ucTitle": "MiFID II Client Suitability — Appropriateness Test Pass Required Before Complex Product Orders"
+          }
+        ],
+        "topic": null,
+        "version": "Directive 2014/65/EU"
+      },
+      {
+        "clause": "Art.26",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.5.1",
+            "ucTitle": "MiFID II Trade and Transaction Reporting Completeness"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.5.4",
+            "ucTitle": "MiFID II Transaction Reporting Timeliness and Rejection Root-Cause"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.5.24",
+            "ucTitle": "MiFID II Transaction Reporting — Field Population Quality Scorecards by Counterparty"
+          }
+        ],
+        "topic": null,
+        "version": "Directive 2014/65/EU"
+      },
+      {
+        "clause": "Art.27",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.5.3",
+            "ucTitle": "MiFID II Best Execution Monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.5.21",
+            "ucTitle": "MiFID II Best Execution — Venue Quality of Execution Report Ingestion Completeness"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.5.22",
+            "ucTitle": "MiFID II Best Execution — Slippage vs Reference Price by Client Segment and Instrument Class"
+          }
+        ],
+        "topic": null,
+        "version": "Directive 2014/65/EU"
+      },
+      {
+        "clause": "Art.9",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.5.5",
+            "ucTitle": "MiFID II Product Governance and Target Market Appropriateness Evidence"
+          }
+        ],
+        "topic": null,
+        "version": "Directive 2014/65/EU"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "EU"
+  ],
+  "narrative": {
+    "evidencePack": null,
+    "matchedBy": "manual-map",
+    "name": "MiFID II",
+    "primer": null,
+    "splunkValue": "We monitor trade-reporting completeness and latency, detect circuit-breaker events and algo kill-switch activations, and correlate order-flow anomalies against market-abuse patterns — the evidence ESMA and national competent authorities ask for on inspection.",
+    "whatItIs": "The EU regulation governing investment firms, trading venues, and market infrastructure. It mandates detailed transaction reporting, best execution proof, market-abuse surveillance, and strict algorithmic-trading risk controls.",
+    "whoItAffects": "Investment firms and trading venues authorised to operate in the EU, plus algorithmic traders and high-frequency-trading participants."
+  },
+  "narrativeRef": "non-technical-view.js#cat-22/area/mifid-ii",
+  "regulationId": "mifid-ii",
+  "regulationName": "Markets in Financial Instruments Directive II",
+  "regulationShortName": "MiFID II",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=mifid-ii",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#mifid-ii",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/mifid-ii.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

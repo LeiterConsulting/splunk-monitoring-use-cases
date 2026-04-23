@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.fedlex.admin.ch/eli/cc/2022/491/en#Art.7",
+  "clause": "Art.7",
+  "clauseId": "swiss-nfadp@2020 revision#Art.7",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Phase-C authored UC targeting Swiss nFADP Art.7 (Privacy by design and by default). Uses continuous, production-grade Splunk telemetry to provide auditor-facing evidence; assurance level set to 'contributing' pending SME review per Phase E of the regulation-coverage plan.",
+      "category": 22,
+      "clauseUrl": "https://www.fedlex.admin.ch/eli/cc/2022/491/en#Art.7",
+      "controlObjective": "Evidence that Swiss nFADP Art.7 (Privacy by design) is enforced — Splunk UC-22.50.14: Swiss nFADP Art.7 — privacy-by-design checkpoints in the SDLC.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.50.14' running on SDLC / GitOps pipeline logs, code-review audit events, DPIA tracker., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": "Phase-C draft: SME review required before uplifting assurance from 'contributing' to 'partial' or 'full'. Confirm that the SPL captures the specific regulator expectation and that the telemetry exists in the deployment.",
+      "ucId": "22.50.14",
+      "ucTitle": "Swiss nFADP Art.7 — privacy-by-design checkpoints in the SDLC"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/swiss-nfadp__2020%20revision__Art.7.json",
+  "gapNote": "Swiss nFADP clause Art.7 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "swiss-nfadp",
+  "regulationName": "Swiss Federal Act on Data Protection (nFADP)",
+  "regulationShortName": "Swiss nFADP",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/swiss-nfadp.json",
+    "regulationVersion": "/api/v1/compliance/regulations/swiss-nfadp@2020%20revision.json",
+    "story": "/api/v1/compliance/story/swiss-nfadp.json"
+  },
+  "tier": 2,
+  "topAssurance": "contributing",
+  "topic": "Privacy by design",
+  "version": "2020 revision"
+}

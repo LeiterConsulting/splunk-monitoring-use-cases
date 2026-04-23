@@ -1,0 +1,68 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 1,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "§164.312(b)",
+  "clauseId": "hipaa@2013-final#§164.312(b)",
+  "coverageState": "covered-full",
+  "coveringUcCount": 2,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "§164.312(b) 'Audit controls' is satisfied when the covered entity can show audit logs are captured continuously; this UC produces that evidence directly.",
+      "category": 22,
+      "clauseUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312#p-164.312(b)",
+      "controlObjective": "Evidence that HIPAA §164.312(b) (Audit controls) is enforced — Splunk UC-22.35.1: Audit-log continuity: detect indexing gap indicating lost evidence.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.35.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.35.1",
+      "ucTitle": "Audit-log continuity: detect indexing gap indicating lost evidence"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "Audit controls must capture search activity on ePHI; detecting deletion of the activity trail is one of several required aspects.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that HIPAA §164.312(b) (Audit controls) is enforced — Splunk UC-22.35.5: Search-head audit-trail completeness — deleted or rewritten search jobs.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.35.5' running on _audit (action=search), /services/search/jobs REST for current artifacts, dispatch directory state via Splunk REST., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.35.5",
+      "ucTitle": "Search-head audit-trail completeness — deleted or rewritten search jobs"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/hipaa__2013-final__%C2%A7164.312%28b%29.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 2
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "hipaa",
+  "regulationName": "hipaa",
+  "regulationShortName": "hipaa",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/hipaa.json",
+    "regulationVersion": "/api/v1/compliance/regulations/hipaa@2013-final.json",
+    "story": "/api/v1/compliance/story/hipaa.json"
+  },
+  "tier": null,
+  "topAssurance": "full",
+  "topic": null,
+  "version": "2013-final"
+}

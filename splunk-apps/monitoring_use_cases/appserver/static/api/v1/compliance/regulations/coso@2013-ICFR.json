@@ -1,0 +1,135 @@
+{
+  "apiVersion": "v1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "coso",
+  "jurisdiction": [
+    "Global",
+    "US"
+  ],
+  "name": "Committee of Sponsoring Organizations — Internal Control / ERM Framework",
+  "shortName": "COSO",
+  "tags": [
+    "financial-reporting",
+    "governance",
+    "internal-controls"
+  ],
+  "tier": 2,
+  "version": {
+    "authoritativeUrl": "https://www.coso.org/guidance-on-ic",
+    "clauseCoverageMatrix": [
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "Principle1",
+        "coverageState": "uncovered",
+        "coveringUcs": [],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": null,
+        "topic": "Commitment to integrity and ethical values"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "Principle11",
+        "coverageState": "uncovered",
+        "coveringUcs": [],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": null,
+        "topic": "Selects and develops general controls over technology"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "Principle16",
+        "coverageState": "uncovered",
+        "coveringUcs": [],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 0.7,
+        "topAssurance": null,
+        "topic": "Ongoing and/or separate evaluations"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "Principle5",
+        "coverageState": "uncovered",
+        "coveringUcs": [],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": null,
+        "topic": "Enforces accountability"
+      }
+    ],
+    "clauseExamples": [
+      "Principle1",
+      "Principle5",
+      "Principle11"
+    ],
+    "clauseGrammar": "^Principle\\d+$",
+    "clauseUrlTemplate": null,
+    "clausesReferencedByCatalogue": [],
+    "commonClauses": [
+      {
+        "clause": "Principle1",
+        "priorityWeight": 1.0,
+        "topic": "Commitment to integrity and ethical values"
+      },
+      {
+        "clause": "Principle5",
+        "priorityWeight": 1.0,
+        "topic": "Enforces accountability"
+      },
+      {
+        "clause": "Principle11",
+        "priorityWeight": 1.0,
+        "topic": "Selects and develops general controls over technology"
+      },
+      {
+        "clause": "Principle16",
+        "priorityWeight": 0.7,
+        "topic": "Ongoing and/or separate evaluations"
+      }
+    ],
+    "coverageSummary": {
+      "clauseCoveragePercent": 0.0,
+      "commonClauseCount": 4,
+      "coveredClauseCount": 0,
+      "offCommonListClauseCount": 0,
+      "priorityWeightedCoveragePercent": 0.0,
+      "stateCounts": {
+        "contributing-only": 0,
+        "covered-full": 0,
+        "covered-partial": 0,
+        "uncovered": 4
+      }
+    },
+    "effectiveFrom": "2013-05-14",
+    "endpoint": "/api/v1/compliance/regulations/coso@2013-ICFR.json",
+    "pendingChanges": [],
+    "sunsetOn": null,
+    "useCasesTaggingThisVersion": [],
+    "version": "2013 ICFR"
+  }
+}

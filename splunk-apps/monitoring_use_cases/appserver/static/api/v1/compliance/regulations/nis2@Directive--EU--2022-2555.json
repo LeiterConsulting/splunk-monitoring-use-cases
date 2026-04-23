@@ -1,0 +1,185 @@
+{
+  "apiVersion": "v1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "nis2",
+  "jurisdiction": [
+    "EU"
+  ],
+  "name": "EU NIS2 Directive",
+  "shortName": "NIS2",
+  "tags": [
+    "critical-infrastructure",
+    "supply-chain"
+  ],
+  "tier": 1,
+  "version": {
+    "authoritativeUrl": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+    "clauseExamples": [
+      "Art.21(2)(a)",
+      "Art.21(2)(h)",
+      "Art.23"
+    ],
+    "clauseGrammar": "^Art\\.\\d+(\\(\\d+\\)(\\([a-z]\\))?)?$",
+    "clauseUrlTemplate": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj#{clause}",
+    "clausesReferencedByCatalogue": [
+      "Art.14",
+      "Art.2(1)",
+      "Art.20",
+      "Art.21(2)",
+      "Art.21(2)(a)",
+      "Art.21(2)(b)",
+      "Art.21(2)(c)",
+      "Art.21(2)(d)",
+      "Art.21(2)(e)",
+      "Art.21(2)(f)",
+      "Art.21(2)(g)",
+      "Art.21(2)(h)",
+      "Art.21(2)(i)",
+      "Art.21(2)(j)",
+      "Art.23",
+      "Art.23(1)",
+      "Art.23(2)",
+      "Art.23(3)",
+      "Art.23(4)",
+      "Art.32",
+      "Art.33"
+    ],
+    "commonClauses": [
+      {
+        "clause": "Art.20",
+        "priorityWeight": 1.0,
+        "topic": "Governance"
+      },
+      {
+        "clause": "Art.21(2)(a)",
+        "priorityWeight": 1.0,
+        "topic": "Risk analysis and information-system security policies"
+      },
+      {
+        "clause": "Art.21(2)(b)",
+        "priorityWeight": 1.0,
+        "topic": "Incident handling"
+      },
+      {
+        "clause": "Art.21(2)(c)",
+        "priorityWeight": 1.0,
+        "topic": "Business continuity and crisis management"
+      },
+      {
+        "clause": "Art.21(2)(d)",
+        "priorityWeight": 1.0,
+        "topic": "Supply-chain security"
+      },
+      {
+        "clause": "Art.21(2)(e)",
+        "priorityWeight": 1.0,
+        "topic": "Security in acquisition, development and maintenance"
+      },
+      {
+        "clause": "Art.21(2)(f)",
+        "priorityWeight": 0.7,
+        "topic": "Policies and procedures effectiveness"
+      },
+      {
+        "clause": "Art.21(2)(g)",
+        "priorityWeight": 0.7,
+        "topic": "Cyber-hygiene and training"
+      },
+      {
+        "clause": "Art.21(2)(h)",
+        "priorityWeight": 1.0,
+        "topic": "Cryptography and encryption"
+      },
+      {
+        "clause": "Art.21(2)(i)",
+        "priorityWeight": 1.0,
+        "topic": "Human resources and access control"
+      },
+      {
+        "clause": "Art.21(2)(j)",
+        "priorityWeight": 1.0,
+        "topic": "MFA and secure communications"
+      },
+      {
+        "clause": "Art.23",
+        "priorityWeight": 1.0,
+        "topic": "Reporting obligations"
+      }
+    ],
+    "effectiveFrom": "2024-10-17",
+    "endpoint": "/api/v1/compliance/regulations/nis2@Directive--EU--2022-2555.json",
+    "pendingChanges": [
+      {
+        "date": "2024-10-17",
+        "note": "Member-state transposition deadline; some national laws still in draft."
+      }
+    ],
+    "sunsetOn": null,
+    "useCasesTaggingThisVersion": [
+      "22.2.1",
+      "22.2.10",
+      "22.2.11",
+      "22.2.12",
+      "22.2.13",
+      "22.2.14",
+      "22.2.15",
+      "22.2.16",
+      "22.2.17",
+      "22.2.18",
+      "22.2.19",
+      "22.2.2",
+      "22.2.20",
+      "22.2.21",
+      "22.2.22",
+      "22.2.23",
+      "22.2.24",
+      "22.2.25",
+      "22.2.26",
+      "22.2.27",
+      "22.2.28",
+      "22.2.29",
+      "22.2.3",
+      "22.2.30",
+      "22.2.31",
+      "22.2.32",
+      "22.2.33",
+      "22.2.34",
+      "22.2.35",
+      "22.2.36",
+      "22.2.37",
+      "22.2.38",
+      "22.2.39",
+      "22.2.4",
+      "22.2.40",
+      "22.2.41",
+      "22.2.42",
+      "22.2.43",
+      "22.2.44",
+      "22.2.45",
+      "22.2.5",
+      "22.2.6",
+      "22.2.7",
+      "22.2.8",
+      "22.2.9",
+      "22.3.42",
+      "22.3.44",
+      "22.39.1",
+      "22.39.2",
+      "22.39.4",
+      "22.39.5",
+      "22.41.2",
+      "22.43.1",
+      "22.43.3",
+      "22.43.5",
+      "22.44.1",
+      "22.44.4",
+      "22.44.5",
+      "22.45.5",
+      "22.46.1",
+      "22.46.2",
+      "22.46.4",
+      "22.9.4"
+    ],
+    "version": "Directive (EU) 2022/2555"
+  }
+}

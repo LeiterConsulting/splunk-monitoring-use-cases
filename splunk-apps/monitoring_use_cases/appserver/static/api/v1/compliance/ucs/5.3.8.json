@@ -1,0 +1,43 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/5.3.8.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/5.3.8.json",
+    "sourcePath": "content/cat-05-network-infrastructure/UC-5.3.8.json"
+  },
+  "apiVersion": "v1",
+  "app": "`Splunk_TA_f5-bigip` (ASM)",
+  "cimModels": [
+    "N/A"
+  ],
+  "criticality": "high",
+  "dataSources": "`sourcetype=f5:bigip:asm:syslog`",
+  "description": "WAF violations indicate attacks — SQL injection, XSS, command injection. Trending reveals campaigns.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: `Splunk_TA_f5-bigip` (ASM).\n• Ensure the following data sources are available: `sourcetype=f5:bigip:asm:syslog`.\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\nEnable F5 ASM logging. Dashboard showing top violations, attack sources, and targeted URIs.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=network sourcetype=\"f5:bigip:asm:syslog\"\n| stats count by violation_name, src, request_uri, severity | sort -count\n```\n\nUnderstanding this SPL\n\n**WAF Policy Violations (F5 BIG-IP ASM)** — WAF violations indicate attacks — SQL injection, XSS, command injection. Trending reveals campaigns.\n\nDocumented **Data sources**: `sourcetype=f5:bigip:asm:syslog`. **App/TA** (typical add-on context): `Splunk_TA_f5-bigip` (ASM). The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: network; **sourcetype**: f5:bigip:asm:syslog. That sourcetype matches what this use case lists under Data sources.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=network, sourcetype=\"f5:bigip:asm:syslog\". Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• `stats` rolls up events into metrics; results are split **by violation_name, src, request_uri, severity** so each row reflects one combination of those dimensions (useful for per-host, per-user, or per-entity comparisons for this use case).\n• Orders rows with `sort` — combine with `head`/`tail` for top-N patterns.\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Table, Bar chart by violation, Map (source IPs), Timeline.",
+  "difficulty": "beginner",
+  "equipment": [
+    "f5"
+  ],
+  "equipmentModels": [
+    "f5_asm",
+    "f5_bigip"
+  ],
+  "grandmaExplanation": "WAF violations indicate attacks — SQL injection, XSS, command injection — so outages, slowdowns, and risky changes get flagged in time to act.",
+  "id": "5.3.8",
+  "implementation": "Enable F5 ASM logging. Dashboard showing top violations, attack sources, and targeted URIs.",
+  "monitoringType": [
+    "Security"
+  ],
+  "references": [
+    {
+      "title": "Splunk_TA_f5-bigip",
+      "url": "https://splunkbase.splunk.com/app/2680"
+    }
+  ],
+  "spl": "index=network sourcetype=\"f5:bigip:asm:syslog\"\n| stats count by violation_name, src, request_uri, severity | sort -count",
+  "splunkPillar": "Security",
+  "title": "WAF Policy Violations (F5 BIG-IP ASM)",
+  "value": "WAF violations indicate attacks — SQL injection, XSS, command injection. Trending reveals campaigns.",
+  "visualization": "Table, Bar chart by violation, Map (source IPs), Timeline."
+}

@@ -1,0 +1,1769 @@
+{
+  "apiVersion": "v1",
+  "catalogueCoverageSummary": {
+    "api-rp-1164": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoverageMean": 50.0,
+      "uncoveredClauseCount": 0
+    },
+    "appi": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoverageMean": 37.5,
+      "uncoveredClauseCount": 0
+    },
+    "apra-cps-234": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 3,
+      "priorityWeightedCoverageMean": 43.52,
+      "uncoveredClauseCount": 0
+    },
+    "asd-e8": {
+      "commonClauseCount": 5,
+      "coveredClauseCount": 5,
+      "priorityWeightedCoverageMean": 55.0,
+      "uncoveredClauseCount": 0
+    },
+    "au-privacy-act": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 3,
+      "priorityWeightedCoverageMean": 25.0,
+      "uncoveredClauseCount": 0
+    },
+    "bait-kait": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoverageMean": 50.0,
+      "uncoveredClauseCount": 0
+    },
+    "basel-iii": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 0,
+      "priorityWeightedCoverageMean": 0.0,
+      "uncoveredClauseCount": 2
+    },
+    "bsi-kritisv": {
+      "commonClauseCount": 1,
+      "coveredClauseCount": 1,
+      "priorityWeightedCoverageMean": 25.0,
+      "uncoveredClauseCount": 0
+    },
+    "ccpa": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 0,
+      "priorityWeightedCoverageMean": 0.0,
+      "uncoveredClauseCount": 3
+    },
+    "cjis": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoverageMean": 37.5,
+      "uncoveredClauseCount": 0
+    },
+    "cmmc": {
+      "commonClauseCount": 9,
+      "coveredClauseCount": 9,
+      "priorityWeightedCoverageMean": 50.0,
+      "uncoveredClauseCount": 0
+    },
+    "cobit": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 0,
+      "priorityWeightedCoverageMean": 0.0,
+      "uncoveredClauseCount": 3
+    },
+    "coppa": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 0,
+      "priorityWeightedCoverageMean": 0.0,
+      "uncoveredClauseCount": 2
+    },
+    "coso": {
+      "commonClauseCount": 4,
+      "coveredClauseCount": 0,
+      "priorityWeightedCoverageMean": 0.0,
+      "uncoveredClauseCount": 4
+    },
+    "dora": {
+      "commonClauseCount": 14,
+      "coveredClauseCount": 14,
+      "priorityWeightedCoverageMean": 71.83,
+      "uncoveredClauseCount": 0
+    },
+    "eidas": {
+      "commonClauseCount": 1,
+      "coveredClauseCount": 1,
+      "priorityWeightedCoverageMean": 25.0,
+      "uncoveredClauseCount": 0
+    },
+    "eu-ai-act": {
+      "commonClauseCount": 6,
+      "coveredClauseCount": 6,
+      "priorityWeightedCoverageMean": 29.39,
+      "uncoveredClauseCount": 0
+    },
+    "eu-aml": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoverageMean": 25.0,
+      "uncoveredClauseCount": 0
+    },
+    "eu-cra": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoverageMean": 100.0,
+      "uncoveredClauseCount": 0
+    },
+    "fca-smcr": {
+      "commonClauseCount": 4,
+      "coveredClauseCount": 0,
+      "priorityWeightedCoverageMean": 0.0,
+      "uncoveredClauseCount": 4
+    },
+    "fca-ss1-21": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 3,
+      "priorityWeightedCoverageMean": 41.67,
+      "uncoveredClauseCount": 0
+    },
+    "fda-part-11": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 3,
+      "priorityWeightedCoverageMean": 58.33,
+      "uncoveredClauseCount": 0
+    },
+    "fedramp": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 3,
+      "priorityWeightedCoverageMean": 66.67,
+      "uncoveredClauseCount": 0
+    },
+    "ferpa": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 0,
+      "priorityWeightedCoverageMean": 0.0,
+      "uncoveredClauseCount": 2
+    },
+    "fisma": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoverageMean": 25.0,
+      "uncoveredClauseCount": 0
+    },
+    "gdpr": {
+      "commonClauseCount": 20,
+      "coveredClauseCount": 20,
+      "priorityWeightedCoverageMean": 70.38,
+      "uncoveredClauseCount": 0
+    },
+    "glba": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 0,
+      "priorityWeightedCoverageMean": 0.0,
+      "uncoveredClauseCount": 3
+    },
+    "hipaa-privacy": {
+      "commonClauseCount": 4,
+      "coveredClauseCount": 4,
+      "priorityWeightedCoverageMean": 32.35,
+      "uncoveredClauseCount": 0
+    },
+    "hipaa-security": {
+      "commonClauseCount": 15,
+      "coveredClauseCount": 14,
+      "priorityWeightedCoverageMean": 52.72,
+      "uncoveredClauseCount": 1
+    },
+    "hitrust": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoverageMean": 75.0,
+      "uncoveredClauseCount": 0
+    },
+    "hkma-tm-g-2": {
+      "commonClauseCount": 1,
+      "coveredClauseCount": 1,
+      "priorityWeightedCoverageMean": 25.0,
+      "uncoveredClauseCount": 0
+    },
+    "iec-62443": {
+      "commonClauseCount": 4,
+      "coveredClauseCount": 4,
+      "priorityWeightedCoverageMean": 45.27,
+      "uncoveredClauseCount": 0
+    },
+    "iso-27001": {
+      "commonClauseCount": 28,
+      "coveredClauseCount": 15,
+      "priorityWeightedCoverageMean": 13.63,
+      "uncoveredClauseCount": 13
+    },
+    "it-grundschutz": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoverageMean": 75.0,
+      "uncoveredClauseCount": 0
+    },
+    "it-sig-2": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 0,
+      "priorityWeightedCoverageMean": 0.0,
+      "uncoveredClauseCount": 2
+    },
+    "lgpd": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoverageMean": 37.5,
+      "uncoveredClauseCount": 0
+    },
+    "mas-trm": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 3,
+      "priorityWeightedCoverageMean": 33.33,
+      "uncoveredClauseCount": 0
+    },
+    "meta-multi": {
+      "commonClauseCount": 0,
+      "coveredClauseCount": 0,
+      "priorityWeightedCoverageMean": 0.0,
+      "uncoveredClauseCount": 0
+    },
+    "mifid-ii": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoverageMean": 25.0,
+      "uncoveredClauseCount": 0
+    },
+    "nerc-cip": {
+      "commonClauseCount": 5,
+      "coveredClauseCount": 5,
+      "priorityWeightedCoverageMean": 65.0,
+      "uncoveredClauseCount": 0
+    },
+    "nesa-uae-ias": {
+      "commonClauseCount": 4,
+      "coveredClauseCount": 0,
+      "priorityWeightedCoverageMean": 0.0,
+      "uncoveredClauseCount": 4
+    },
+    "nis2": {
+      "commonClauseCount": 12,
+      "coveredClauseCount": 12,
+      "priorityWeightedCoverageMean": 60.31,
+      "uncoveredClauseCount": 0
+    },
+    "nist-800-53": {
+      "commonClauseCount": 24,
+      "coveredClauseCount": 24,
+      "priorityWeightedCoverageMean": 67.32,
+      "uncoveredClauseCount": 0
+    },
+    "nist-csf": {
+      "commonClauseCount": 20,
+      "coveredClauseCount": 20,
+      "priorityWeightedCoverageMean": 68.48,
+      "uncoveredClauseCount": 0
+    },
+    "no-kbf-nve": {
+      "commonClauseCount": 1,
+      "coveredClauseCount": 0,
+      "priorityWeightedCoverageMean": 0.0,
+      "uncoveredClauseCount": 1
+    },
+    "no-personopplysningsloven": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 3,
+      "priorityWeightedCoverageMean": 25.0,
+      "uncoveredClauseCount": 0
+    },
+    "no-petroleumsforskriften": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 3,
+      "priorityWeightedCoverageMean": 25.0,
+      "uncoveredClauseCount": 0
+    },
+    "no-sikkerhetsloven": {
+      "commonClauseCount": 4,
+      "coveredClauseCount": 4,
+      "priorityWeightedCoverageMean": 25.0,
+      "uncoveredClauseCount": 0
+    },
+    "nzism": {
+      "commonClauseCount": 4,
+      "coveredClauseCount": 4,
+      "priorityWeightedCoverageMean": 25.0,
+      "uncoveredClauseCount": 0
+    },
+    "pci-dss": {
+      "commonClauseCount": 29,
+      "coveredClauseCount": 29,
+      "priorityWeightedCoverageMean": 96.55,
+      "uncoveredClauseCount": 0
+    },
+    "pipl": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoverageMean": 25.0,
+      "uncoveredClauseCount": 0
+    },
+    "pra-ss2-21": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoverageMean": 37.5,
+      "uncoveredClauseCount": 0
+    },
+    "psd2": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 3,
+      "priorityWeightedCoverageMean": 41.67,
+      "uncoveredClauseCount": 0
+    },
+    "qcb-cyber": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 3,
+      "priorityWeightedCoverageMean": 25.0,
+      "uncoveredClauseCount": 0
+    },
+    "rbi-cyber": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoverageMean": 37.5,
+      "uncoveredClauseCount": 0
+    },
+    "sa-pdpl": {
+      "commonClauseCount": 4,
+      "coveredClauseCount": 4,
+      "priorityWeightedCoverageMean": 25.0,
+      "uncoveredClauseCount": 0
+    },
+    "sama-csf": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoverageMean": 37.5,
+      "uncoveredClauseCount": 0
+    },
+    "sg-pdpa": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 3,
+      "priorityWeightedCoverageMean": 50.0,
+      "uncoveredClauseCount": 0
+    },
+    "soc-2": {
+      "commonClauseCount": 16,
+      "coveredClauseCount": 16,
+      "priorityWeightedCoverageMean": 89.03,
+      "uncoveredClauseCount": 0
+    },
+    "sox-itgc": {
+      "commonClauseCount": 12,
+      "coveredClauseCount": 12,
+      "priorityWeightedCoverageMean": 92.34,
+      "uncoveredClauseCount": 0
+    },
+    "swift-csp": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 3,
+      "priorityWeightedCoverageMean": 41.67,
+      "uncoveredClauseCount": 0
+    },
+    "swiss-nfadp": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoverageMean": 37.5,
+      "uncoveredClauseCount": 0
+    },
+    "tsa-sd": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoverageMean": 50.0,
+      "uncoveredClauseCount": 0
+    },
+    "uk-cyber-essentials": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 0,
+      "priorityWeightedCoverageMean": 0.0,
+      "uncoveredClauseCount": 2
+    },
+    "uk-gdpr": {
+      "commonClauseCount": 1,
+      "coveredClauseCount": 1,
+      "priorityWeightedCoverageMean": 25.0,
+      "uncoveredClauseCount": 0
+    },
+    "uk-nis": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoverageMean": 37.5,
+      "uncoveredClauseCount": 0
+    }
+  },
+  "frameworkCount": 66,
+  "frameworks": [
+    {
+      "aliases": [
+        "API RP 1164"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/api-rp-1164.json",
+      "id": "api-rp-1164",
+      "jurisdiction": [
+        "US"
+      ],
+      "name": "API Recommended Practice 1164 — Pipeline Control Systems Cybersecurity",
+      "shortName": "API RP 1164",
+      "tags": [
+        "energy",
+        "ics",
+        "pipeline"
+      ],
+      "tier": 2,
+      "versions": [
+        "3rd edition"
+      ]
+    },
+    {
+      "aliases": [
+        "APPI"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/appi.json",
+      "id": "appi",
+      "jurisdiction": [
+        "JP"
+      ],
+      "name": "Japan Act on the Protection of Personal Information",
+      "shortName": "APPI",
+      "tags": [
+        "privacy"
+      ],
+      "tier": 2,
+      "versions": [
+        "2022 amendments"
+      ]
+    },
+    {
+      "aliases": [
+        "APRA CPS 234",
+        "CPS 234"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/apra-cps-234.json",
+      "id": "apra-cps-234",
+      "jurisdiction": [
+        "AU"
+      ],
+      "name": "APRA CPS 234 Information Security",
+      "shortName": "APRA CPS 234",
+      "tags": [
+        "financial-services"
+      ],
+      "tier": 2,
+      "versions": [
+        "current"
+      ]
+    },
+    {
+      "aliases": [
+        "ASD E8",
+        "ASD Essential Eight",
+        "Essential Eight"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/asd-e8.json",
+      "id": "asd-e8",
+      "jurisdiction": [
+        "AU"
+      ],
+      "name": "ASD Essential Eight Maturity Model",
+      "shortName": "ASD E8",
+      "tags": [
+        "baseline",
+        "government"
+      ],
+      "tier": 2,
+      "versions": [
+        "Nov 2023"
+      ]
+    },
+    {
+      "aliases": [
+        "APP",
+        "NDB",
+        "Privacy Act 1988"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/au-privacy-act.json",
+      "id": "au-privacy-act",
+      "jurisdiction": [
+        "AU"
+      ],
+      "name": "Australian Privacy Act 1988 and Notifiable Data Breaches scheme",
+      "shortName": "AU Privacy Act",
+      "tags": [
+        "privacy"
+      ],
+      "tier": 2,
+      "versions": [
+        "current"
+      ]
+    },
+    {
+      "aliases": [
+        "BAIT",
+        "KAIT"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/bait-kait.json",
+      "id": "bait-kait",
+      "jurisdiction": [
+        "DE"
+      ],
+      "name": "BaFin Banking/Insurance Supervisory Requirements for IT (BAIT/KAIT)",
+      "shortName": "BAIT/KAIT",
+      "tags": [
+        "financial"
+      ],
+      "tier": 2,
+      "versions": [
+        "Aug 2021"
+      ]
+    },
+    {
+      "aliases": [
+        "BCBS",
+        "Basel Framework"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/basel-iii.json",
+      "id": "basel-iii",
+      "jurisdiction": [
+        "Global"
+      ],
+      "name": "Basel III — BCBS Operational Risk and Resilience",
+      "shortName": "Basel III",
+      "tags": [
+        "banking",
+        "financial-services",
+        "operational-risk"
+      ],
+      "tier": 2,
+      "versions": [
+        "BCBS 2021"
+      ]
+    },
+    {
+      "aliases": [
+        "BSI-KritisV",
+        "KRITIS-V"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/bsi-kritisv.json",
+      "id": "bsi-kritisv",
+      "jurisdiction": [
+        "DE"
+      ],
+      "name": "BSI KRITIS-Verordnung",
+      "shortName": "BSI-KritisV",
+      "tags": [
+        "critical-infrastructure"
+      ],
+      "tier": 2,
+      "versions": [
+        "2021 (as amended)"
+      ]
+    },
+    {
+      "aliases": [
+        "CCPA",
+        "CPRA"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/ccpa.json",
+      "id": "ccpa",
+      "jurisdiction": [
+        "US-CA"
+      ],
+      "name": "California Consumer Privacy Act / CPRA",
+      "shortName": "CCPA/CPRA",
+      "tags": [
+        "consumer-rights",
+        "privacy"
+      ],
+      "tier": 2,
+      "versions": [
+        "CPRA (as amended)"
+      ]
+    },
+    {
+      "aliases": [
+        "CJIS",
+        "CJIS Security Policy"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/cjis.json",
+      "id": "cjis",
+      "jurisdiction": [
+        "US"
+      ],
+      "name": "FBI CJIS Security Policy",
+      "shortName": "CJIS",
+      "tags": [
+        "government",
+        "law-enforcement"
+      ],
+      "tier": 2,
+      "versions": [
+        "v5.9.4"
+      ]
+    },
+    {
+      "aliases": [
+        "CMMC",
+        "CMMC 2.0"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/cmmc.json",
+      "id": "cmmc",
+      "jurisdiction": [
+        "US"
+      ],
+      "name": "Cybersecurity Maturity Model Certification",
+      "shortName": "CMMC",
+      "tags": [
+        "defense",
+        "federal"
+      ],
+      "tier": 1,
+      "versions": [
+        "2.0"
+      ]
+    },
+    {
+      "aliases": [
+        "COBIT 2019",
+        "COBIT 5"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/cobit.json",
+      "id": "cobit",
+      "jurisdiction": [
+        "Global"
+      ],
+      "name": "COBIT — Control Objectives for Information and Related Technologies",
+      "shortName": "COBIT",
+      "tags": [
+        "governance",
+        "it-governance"
+      ],
+      "tier": 2,
+      "versions": [
+        "2019"
+      ]
+    },
+    {
+      "aliases": [
+        "COPPA",
+        "COPPA Rule"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/coppa.json",
+      "id": "coppa",
+      "jurisdiction": [
+        "US"
+      ],
+      "name": "Children's Online Privacy Protection Act",
+      "shortName": "COPPA",
+      "tags": [
+        "children",
+        "privacy"
+      ],
+      "tier": 2,
+      "versions": [
+        "16 CFR 312"
+      ]
+    },
+    {
+      "aliases": [
+        "COSO 2013",
+        "COSO ERM",
+        "COSO ICFR"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/coso.json",
+      "id": "coso",
+      "jurisdiction": [
+        "Global",
+        "US"
+      ],
+      "name": "Committee of Sponsoring Organizations — Internal Control / ERM Framework",
+      "shortName": "COSO",
+      "tags": [
+        "financial-reporting",
+        "governance",
+        "internal-controls"
+      ],
+      "tier": 2,
+      "versions": [
+        "2013 ICFR"
+      ]
+    },
+    {
+      "aliases": [
+        "DORA",
+        "EU DORA",
+        "Regulation (EU) 2022/2554"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/dora.json",
+      "id": "dora",
+      "jurisdiction": [
+        "EU"
+      ],
+      "name": "EU Digital Operational Resilience Act",
+      "shortName": "DORA",
+      "tags": [
+        "financial-services",
+        "operational-resilience"
+      ],
+      "tier": 1,
+      "versions": [
+        "Regulation (EU) 2022/2554"
+      ]
+    },
+    {
+      "aliases": [
+        "eIDAS 2.0"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/eidas.json",
+      "id": "eidas",
+      "jurisdiction": [
+        "EU"
+      ],
+      "name": "EU eIDAS Regulation",
+      "shortName": "eIDAS",
+      "tags": [
+        "identity",
+        "trust-services"
+      ],
+      "tier": 2,
+      "versions": [
+        "Regulation (EU) 2024/1183"
+      ]
+    },
+    {
+      "aliases": [
+        "EU AI Act",
+        "Regulation (EU) 2024/1689"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/eu-ai-act.json",
+      "id": "eu-ai-act",
+      "jurisdiction": [
+        "EU"
+      ],
+      "name": "EU AI Act",
+      "shortName": "EU AI Act",
+      "tags": [
+        "ai",
+        "risk-management"
+      ],
+      "tier": 2,
+      "versions": [
+        "Regulation (EU) 2024/1689"
+      ]
+    },
+    {
+      "aliases": [
+        "AMLD6",
+        "EU AML"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/eu-aml.json",
+      "id": "eu-aml",
+      "jurisdiction": [
+        "EU"
+      ],
+      "name": "EU Anti-Money-Laundering Framework",
+      "shortName": "EU AML",
+      "tags": [
+        "financial-services"
+      ],
+      "tier": 2,
+      "versions": [
+        "6AMLD / AMLR 2024"
+      ]
+    },
+    {
+      "aliases": [
+        "Cyber Resilience Act",
+        "EU CRA"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/eu-cra.json",
+      "id": "eu-cra",
+      "jurisdiction": [
+        "EU"
+      ],
+      "name": "EU Cyber Resilience Act",
+      "shortName": "EU CRA",
+      "tags": [
+        "product-security",
+        "supply-chain"
+      ],
+      "tier": 2,
+      "versions": [
+        "Regulation (EU) 2024/2847"
+      ]
+    },
+    {
+      "aliases": [
+        "FCA SM&CR",
+        "SM&CR"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/fca-smcr.json",
+      "id": "fca-smcr",
+      "jurisdiction": [
+        "UK"
+      ],
+      "name": "FCA Senior Managers and Certification Regime",
+      "shortName": "FCA SM&CR",
+      "tags": [
+        "financial",
+        "governance"
+      ],
+      "tier": 2,
+      "versions": [
+        "current"
+      ]
+    },
+    {
+      "aliases": [
+        "FCA SS1/21",
+        "SS1/21"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/fca-ss1-21.json",
+      "id": "fca-ss1-21",
+      "jurisdiction": [
+        "UK"
+      ],
+      "name": "FCA SS1/21 Operational Resilience",
+      "shortName": "FCA SS1/21",
+      "tags": [
+        "financial",
+        "operational-resilience"
+      ],
+      "tier": 2,
+      "versions": [
+        "2021"
+      ]
+    },
+    {
+      "aliases": [
+        "FDA 21 CFR Part 11",
+        "Part 11"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/fda-part-11.json",
+      "id": "fda-part-11",
+      "jurisdiction": [
+        "US"
+      ],
+      "name": "FDA 21 CFR Part 11",
+      "shortName": "FDA Part 11",
+      "tags": [
+        "gxp",
+        "lifesciences"
+      ],
+      "tier": 2,
+      "versions": [
+        "current"
+      ]
+    },
+    {
+      "aliases": [
+        "FedRAMP"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/fedramp.json",
+      "id": "fedramp",
+      "jurisdiction": [
+        "US"
+      ],
+      "name": "Federal Risk and Authorization Management Program",
+      "shortName": "FedRAMP",
+      "tags": [
+        "cloud",
+        "federal"
+      ],
+      "tier": 2,
+      "versions": [
+        "Rev.5 Baselines"
+      ]
+    },
+    {
+      "aliases": [
+        "FERPA"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/ferpa.json",
+      "id": "ferpa",
+      "jurisdiction": [
+        "US"
+      ],
+      "name": "Family Educational Rights and Privacy Act",
+      "shortName": "FERPA",
+      "tags": [
+        "education",
+        "privacy"
+      ],
+      "tier": 2,
+      "versions": [
+        "20 USC §1232g"
+      ]
+    },
+    {
+      "aliases": [
+        "FISMA"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/fisma.json",
+      "id": "fisma",
+      "jurisdiction": [
+        "US"
+      ],
+      "name": "Federal Information Security Modernization Act",
+      "shortName": "FISMA",
+      "tags": [
+        "federal"
+      ],
+      "tier": 2,
+      "versions": [
+        "2014"
+      ]
+    },
+    {
+      "aliases": [
+        "GDPR",
+        "Regulation (EU) 2016/679"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/gdpr.json",
+      "id": "gdpr",
+      "jurisdiction": [
+        "EEA",
+        "EU"
+      ],
+      "name": "General Data Protection Regulation",
+      "shortName": "GDPR",
+      "tags": [
+        "data-protection",
+        "privacy"
+      ],
+      "tier": 1,
+      "versions": [
+        "2016/679"
+      ]
+    },
+    {
+      "aliases": [
+        "FTC Safeguards Rule",
+        "GLBA"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/glba.json",
+      "id": "glba",
+      "jurisdiction": [
+        "US"
+      ],
+      "name": "Gramm-Leach-Bliley Act — Safeguards Rule",
+      "shortName": "GLBA",
+      "tags": [
+        "financial-services",
+        "privacy"
+      ],
+      "tier": 2,
+      "versions": [
+        "16 CFR 314 (2023 amendments)"
+      ]
+    },
+    {
+      "aliases": [
+        "45 CFR 164 Subpart E",
+        "HIPAA Privacy Rule"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/hipaa-privacy.json",
+      "id": "hipaa-privacy",
+      "jurisdiction": [
+        "US"
+      ],
+      "name": "HIPAA Privacy Rule",
+      "shortName": "HIPAA Privacy",
+      "tags": [
+        "healthcare",
+        "phi"
+      ],
+      "tier": 2,
+      "versions": [
+        "current"
+      ]
+    },
+    {
+      "aliases": [
+        "45 CFR 164 Subpart C",
+        "HIPAA",
+        "HIPAA Security Rule"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/hipaa-security.json",
+      "id": "hipaa-security",
+      "jurisdiction": [
+        "US"
+      ],
+      "name": "HIPAA Security Rule",
+      "shortName": "HIPAA Security",
+      "tags": [
+        "healthcare",
+        "phi"
+      ],
+      "tier": 1,
+      "versions": [
+        "2013-final"
+      ]
+    },
+    {
+      "aliases": [
+        "HITRUST",
+        "HITRUST CSF"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/hitrust.json",
+      "id": "hitrust",
+      "jurisdiction": [
+        "US"
+      ],
+      "name": "HITRUST CSF",
+      "shortName": "HITRUST",
+      "tags": [
+        "certification",
+        "healthcare"
+      ],
+      "tier": 2,
+      "versions": [
+        "v11"
+      ]
+    },
+    {
+      "aliases": [
+        "HKMA TM-G-2",
+        "TM-G-2"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/hkma-tm-g-2.json",
+      "id": "hkma-tm-g-2",
+      "jurisdiction": [
+        "HK"
+      ],
+      "name": "HKMA TM-G-2 General Principles for Technology Risk Management",
+      "shortName": "HKMA TM-G-2",
+      "tags": [
+        "financial"
+      ],
+      "tier": 2,
+      "versions": [
+        "current"
+      ]
+    },
+    {
+      "aliases": [
+        "IEC 62443",
+        "ISA/IEC 62443"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/iec-62443.json",
+      "id": "iec-62443",
+      "jurisdiction": [
+        "GLOBAL"
+      ],
+      "name": "IEC 62443 Industrial Automation and Control Systems Security",
+      "shortName": "IEC 62443",
+      "tags": [
+        "ics",
+        "ot"
+      ],
+      "tier": 2,
+      "versions": [
+        "2013-ongoing"
+      ]
+    },
+    {
+      "aliases": [
+        "ISO 27001",
+        "ISO/IEC 27001"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/iso-27001.json",
+      "id": "iso-27001",
+      "jurisdiction": [
+        "GLOBAL"
+      ],
+      "name": "ISO/IEC 27001 — ISMS",
+      "shortName": "ISO 27001",
+      "tags": [
+        "certification",
+        "isms"
+      ],
+      "tier": 1,
+      "versions": [
+        "2013",
+        "2022"
+      ]
+    },
+    {
+      "aliases": [
+        "Grundschutz",
+        "IT-Grundschutz"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/it-grundschutz.json",
+      "id": "it-grundschutz",
+      "jurisdiction": [
+        "DE"
+      ],
+      "name": "BSI IT-Grundschutz Compendium",
+      "shortName": "IT-Grundschutz",
+      "tags": [
+        "baseline"
+      ],
+      "tier": 2,
+      "versions": [
+        "2023 Edition"
+      ]
+    },
+    {
+      "aliases": [
+        "IT-SiG 2.0"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/it-sig-2.json",
+      "id": "it-sig-2",
+      "jurisdiction": [
+        "DE"
+      ],
+      "name": "German IT-Sicherheitsgesetz 2.0",
+      "shortName": "IT-SiG 2.0",
+      "tags": [
+        "critical-infrastructure",
+        "supply-chain"
+      ],
+      "tier": 2,
+      "versions": [
+        "2021"
+      ]
+    },
+    {
+      "aliases": [
+        "LGPD"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/lgpd.json",
+      "id": "lgpd",
+      "jurisdiction": [
+        "BR"
+      ],
+      "name": "Lei Geral de Proteção de Dados Pessoais",
+      "shortName": "LGPD",
+      "tags": [
+        "privacy"
+      ],
+      "tier": 2,
+      "versions": [
+        "Lei nº 13.709/2018"
+      ]
+    },
+    {
+      "aliases": [
+        "MAS TRM"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/mas-trm.json",
+      "id": "mas-trm",
+      "jurisdiction": [
+        "SG"
+      ],
+      "name": "MAS Technology Risk Management Guidelines",
+      "shortName": "MAS TRM",
+      "tags": [
+        "financial"
+      ],
+      "tier": 2,
+      "versions": [
+        "2021"
+      ]
+    },
+    {
+      "aliases": [
+        "APAC breach laws",
+        "Multiple"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/meta-multi.json",
+      "id": "meta-multi",
+      "jurisdiction": [
+        "GLOBAL"
+      ],
+      "name": "Placeholder: multi-regulation or jurisdiction-generic",
+      "shortName": "Multiple",
+      "tags": [
+        "meta"
+      ],
+      "tier": 3,
+      "versions": [
+        "n/a"
+      ]
+    },
+    {
+      "aliases": [
+        "MiFID II"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/mifid-ii.json",
+      "id": "mifid-ii",
+      "jurisdiction": [
+        "EU"
+      ],
+      "name": "Markets in Financial Instruments Directive II",
+      "shortName": "MiFID II",
+      "tags": [
+        "financial-services"
+      ],
+      "tier": 2,
+      "versions": [
+        "Directive 2014/65/EU"
+      ]
+    },
+    {
+      "aliases": [
+        "NERC CIP"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/nerc-cip.json",
+      "id": "nerc-cip",
+      "jurisdiction": [
+        "CA",
+        "US"
+      ],
+      "name": "NERC Critical Infrastructure Protection",
+      "shortName": "NERC CIP",
+      "tags": [
+        "energy",
+        "ics",
+        "ot"
+      ],
+      "tier": 2,
+      "versions": [
+        "current"
+      ]
+    },
+    {
+      "aliases": [
+        "NESA IAS",
+        "NESA UAE IAS"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/nesa-uae-ias.json",
+      "id": "nesa-uae-ias",
+      "jurisdiction": [
+        "AE"
+      ],
+      "name": "UAE NESA Information Assurance Standards",
+      "shortName": "NESA IAS",
+      "tags": [
+        "baseline",
+        "government"
+      ],
+      "tier": 2,
+      "versions": [
+        "v2 (2020)"
+      ]
+    },
+    {
+      "aliases": [
+        "Directive (EU) 2022/2555",
+        "EU NIS2",
+        "NIS2"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/nis2.json",
+      "id": "nis2",
+      "jurisdiction": [
+        "EU"
+      ],
+      "name": "EU NIS2 Directive",
+      "shortName": "NIS2",
+      "tags": [
+        "critical-infrastructure",
+        "supply-chain"
+      ],
+      "tier": 1,
+      "versions": [
+        "Directive (EU) 2022/2555"
+      ]
+    },
+    {
+      "aliases": [
+        "800-53 Rev 5",
+        "NIST 800-53",
+        "NIST SP 800-53",
+        "NIST SP 800-53 Rev. 5"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/nist-800-53.json",
+      "id": "nist-800-53",
+      "jurisdiction": [
+        "US"
+      ],
+      "name": "NIST SP 800-53 Rev. 5",
+      "shortName": "NIST 800-53",
+      "tags": [
+        "controls",
+        "federal"
+      ],
+      "tier": 1,
+      "versions": [
+        "Rev. 5"
+      ]
+    },
+    {
+      "aliases": [
+        "Cybersecurity Framework",
+        "NIST CSF"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/nist-csf.json",
+      "id": "nist-csf",
+      "jurisdiction": [
+        "GLOBAL",
+        "US"
+      ],
+      "name": "NIST Cybersecurity Framework",
+      "shortName": "NIST CSF",
+      "tags": [
+        "framework",
+        "outcomes"
+      ],
+      "tier": 1,
+      "versions": [
+        "1.1",
+        "2.0"
+      ]
+    },
+    {
+      "aliases": [
+        "KBF",
+        "Kraftberedskapsforskriften"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/no-kbf-nve.json",
+      "id": "no-kbf-nve",
+      "jurisdiction": [
+        "NO"
+      ],
+      "name": "Norwegian Kraftberedskapsforskriften (NVE Power-sector emergency preparedness regulation)",
+      "shortName": "NO KBF",
+      "tags": [
+        "critical-infrastructure",
+        "utilities"
+      ],
+      "tier": 2,
+      "versions": [
+        "2012 as amended"
+      ]
+    },
+    {
+      "aliases": [
+        "Personopplysningsloven"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/no-personopplysningsloven.json",
+      "id": "no-personopplysningsloven",
+      "jurisdiction": [
+        "NO"
+      ],
+      "name": "Norwegian Personopplysningsloven (Personal Data Act)",
+      "shortName": "NO Personopplysningsloven",
+      "tags": [
+        "privacy"
+      ],
+      "tier": 2,
+      "versions": [
+        "2018"
+      ]
+    },
+    {
+      "aliases": [
+        "Petroleumsforskriften"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/no-petroleumsforskriften.json",
+      "id": "no-petroleumsforskriften",
+      "jurisdiction": [
+        "NO"
+      ],
+      "name": "Norwegian Petroleumsforskriften (Petroleum Safety regulation)",
+      "shortName": "NO Petroleumsforskriften",
+      "tags": [
+        "critical-infrastructure",
+        "oil-gas"
+      ],
+      "tier": 2,
+      "versions": [
+        "1997 as amended"
+      ]
+    },
+    {
+      "aliases": [
+        "Sikkerhetsloven"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/no-sikkerhetsloven.json",
+      "id": "no-sikkerhetsloven",
+      "jurisdiction": [
+        "NO"
+      ],
+      "name": "Norwegian Sikkerhetsloven (National Security Act)",
+      "shortName": "NO Sikkerhetsloven",
+      "tags": [
+        "critical-infrastructure",
+        "government"
+      ],
+      "tier": 2,
+      "versions": [
+        "2018"
+      ]
+    },
+    {
+      "aliases": [
+        "NZISM"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/nzism.json",
+      "id": "nzism",
+      "jurisdiction": [
+        "NZ"
+      ],
+      "name": "New Zealand Information Security Manual",
+      "shortName": "NZISM",
+      "tags": [
+        "baseline",
+        "government"
+      ],
+      "tier": 2,
+      "versions": [
+        "3.7"
+      ]
+    },
+    {
+      "aliases": [
+        "PCI DSS",
+        "PCI-DSS"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/pci-dss.json",
+      "id": "pci-dss",
+      "jurisdiction": [
+        "GLOBAL"
+      ],
+      "name": "Payment Card Industry Data Security Standard",
+      "shortName": "PCI DSS",
+      "tags": [
+        "cardholder-data",
+        "payments"
+      ],
+      "tier": 1,
+      "versions": [
+        "v3.2.1",
+        "v4.0"
+      ]
+    },
+    {
+      "aliases": [
+        "PIPL"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/pipl.json",
+      "id": "pipl",
+      "jurisdiction": [
+        "CN"
+      ],
+      "name": "China Personal Information Protection Law",
+      "shortName": "PIPL",
+      "tags": [
+        "privacy"
+      ],
+      "tier": 2,
+      "versions": [
+        "2021"
+      ]
+    },
+    {
+      "aliases": [
+        "SS2/21"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/pra-ss2-21.json",
+      "id": "pra-ss2-21",
+      "jurisdiction": [
+        "UK"
+      ],
+      "name": "PRA SS2/21 Outsourcing and third-party risk management",
+      "shortName": "PRA SS2/21",
+      "tags": [
+        "financial"
+      ],
+      "tier": 2,
+      "versions": [
+        "2021"
+      ]
+    },
+    {
+      "aliases": [
+        "EU PSD2",
+        "PSD2"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/psd2.json",
+      "id": "psd2",
+      "jurisdiction": [
+        "EU"
+      ],
+      "name": "Revised Payment Services Directive",
+      "shortName": "PSD2",
+      "tags": [
+        "payments"
+      ],
+      "tier": 2,
+      "versions": [
+        "Directive (EU) 2015/2366"
+      ]
+    },
+    {
+      "aliases": [
+        "QCB Cyber"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/qcb-cyber.json",
+      "id": "qcb-cyber",
+      "jurisdiction": [
+        "QA"
+      ],
+      "name": "Qatar Central Bank Cybersecurity Framework",
+      "shortName": "QCB Cyber",
+      "tags": [
+        "financial"
+      ],
+      "tier": 2,
+      "versions": [
+        "2018"
+      ]
+    },
+    {
+      "aliases": [
+        "RBI Cyber",
+        "RBI Cyber Security Framework"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/rbi-cyber.json",
+      "id": "rbi-cyber",
+      "jurisdiction": [
+        "IN"
+      ],
+      "name": "RBI Cyber Security Framework for Banks",
+      "shortName": "RBI Cyber",
+      "tags": [
+        "financial"
+      ],
+      "tier": 2,
+      "versions": [
+        "2016 (as amended)"
+      ]
+    },
+    {
+      "aliases": [
+        "SA PDPL",
+        "Saudi PDPL"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/sa-pdpl.json",
+      "id": "sa-pdpl",
+      "jurisdiction": [
+        "SA"
+      ],
+      "name": "Saudi Personal Data Protection Law",
+      "shortName": "SA PDPL",
+      "tags": [
+        "privacy"
+      ],
+      "tier": 2,
+      "versions": [
+        "current"
+      ]
+    },
+    {
+      "aliases": [
+        "SAMA CSF"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/sama-csf.json",
+      "id": "sama-csf",
+      "jurisdiction": [
+        "SA"
+      ],
+      "name": "SAMA Cyber Security Framework",
+      "shortName": "SAMA CSF",
+      "tags": [
+        "financial"
+      ],
+      "tier": 2,
+      "versions": [
+        "v1.0 (2017)"
+      ]
+    },
+    {
+      "aliases": [
+        "PDPA",
+        "SG PDPA",
+        "Singapore PDPA"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/sg-pdpa.json",
+      "id": "sg-pdpa",
+      "jurisdiction": [
+        "SG"
+      ],
+      "name": "Singapore Personal Data Protection Act",
+      "shortName": "SG PDPA",
+      "tags": [
+        "privacy"
+      ],
+      "tier": 2,
+      "versions": [
+        "2020 amended"
+      ]
+    },
+    {
+      "aliases": [
+        "SOC 2",
+        "SOC2",
+        "Trust Services Criteria"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/soc-2.json",
+      "id": "soc-2",
+      "jurisdiction": [
+        "GLOBAL",
+        "US"
+      ],
+      "name": "SOC 2 Trust Services Criteria",
+      "shortName": "SOC 2",
+      "tags": [
+        "assurance",
+        "service-providers"
+      ],
+      "tier": 1,
+      "versions": [
+        "2017 TSC"
+      ]
+    },
+    {
+      "aliases": [
+        "PCAOB AS 2201",
+        "SOX",
+        "SOX ITGC",
+        "Sarbanes-Oxley"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/sox-itgc.json",
+      "id": "sox-itgc",
+      "jurisdiction": [
+        "US"
+      ],
+      "name": "SOX — PCAOB AS 2201 ITGCs",
+      "shortName": "SOX ITGC",
+      "tags": [
+        "financial-reporting",
+        "itgc"
+      ],
+      "tier": 1,
+      "versions": [
+        "PCAOB AS 2201"
+      ]
+    },
+    {
+      "aliases": [
+        "SWIFT CSP"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/swift-csp.json",
+      "id": "swift-csp",
+      "jurisdiction": [
+        "GLOBAL"
+      ],
+      "name": "SWIFT Customer Security Programme",
+      "shortName": "SWIFT CSP",
+      "tags": [
+        "financial-services",
+        "payments"
+      ],
+      "tier": 2,
+      "versions": [
+        "CSCF v2025"
+      ]
+    },
+    {
+      "aliases": [
+        "Swiss FADP",
+        "nFADP"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/swiss-nfadp.json",
+      "id": "swiss-nfadp",
+      "jurisdiction": [
+        "CH"
+      ],
+      "name": "Swiss Federal Act on Data Protection (nFADP)",
+      "shortName": "Swiss nFADP",
+      "tags": [
+        "privacy"
+      ],
+      "tier": 2,
+      "versions": [
+        "2020 revision"
+      ]
+    },
+    {
+      "aliases": [
+        "SD Pipeline-2021",
+        "TSA Pipeline Security Directive"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/tsa-sd.json",
+      "id": "tsa-sd",
+      "jurisdiction": [
+        "US"
+      ],
+      "name": "TSA Pipeline Security Directive",
+      "shortName": "TSA SD",
+      "tags": [
+        "pipeline",
+        "transportation"
+      ],
+      "tier": 2,
+      "versions": [
+        "SD02C"
+      ]
+    },
+    {
+      "aliases": [
+        "Cyber Essentials",
+        "Cyber Essentials Plus"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/uk-cyber-essentials.json",
+      "id": "uk-cyber-essentials",
+      "jurisdiction": [
+        "UK"
+      ],
+      "name": "UK NCSC Cyber Essentials",
+      "shortName": "Cyber Essentials",
+      "tags": [
+        "baseline",
+        "supply-chain"
+      ],
+      "tier": 2,
+      "versions": [
+        "Montpellier (2025)"
+      ]
+    },
+    {
+      "aliases": [
+        "UK GDPR"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/uk-gdpr.json",
+      "id": "uk-gdpr",
+      "jurisdiction": [
+        "UK"
+      ],
+      "name": "UK General Data Protection Regulation",
+      "shortName": "UK GDPR",
+      "tags": [
+        "privacy"
+      ],
+      "tier": 2,
+      "versions": [
+        "post-Brexit"
+      ]
+    },
+    {
+      "aliases": [
+        "NIS Regulations (UK)",
+        "UK NIS"
+      ],
+      "endpoint": "/api/v1/compliance/regulations/uk-nis.json",
+      "id": "uk-nis",
+      "jurisdiction": [
+        "UK"
+      ],
+      "name": "UK Network and Information Systems Regulations 2018",
+      "shortName": "UK NIS",
+      "tags": [
+        "critical-infrastructure"
+      ],
+      "tier": 2,
+      "versions": [
+        "2018"
+      ]
+    }
+  ],
+  "schemaVersion": "1.1.0"
+}

@@ -1,0 +1,12 @@
+{
+  "apiVersion": "v1",
+  "count": 1,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "items": [
+    {
+      "endpoint": "/api/v1/oscal/component-definitions/22.35.1.json",
+      "source": "data/crosswalks/oscal/component-definition-uc-22.35.1.json",
+      "ucId": "22.35.1"
+    }
+  ]
+}

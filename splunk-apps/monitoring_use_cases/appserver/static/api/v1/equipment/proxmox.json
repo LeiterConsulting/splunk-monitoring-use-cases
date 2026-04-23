@@ -1,0 +1,27 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 2,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "proxmox",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Proxmox VE",
+  "models": [],
+  "regulationIds": [],
+  "regulations": [],
+  "useCaseCount": 2,
+  "useCaseIds": [
+    "2.3.11",
+    "2.3.17"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 2,
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "2.3.11",
+        "2.3.17"
+      ]
+    }
+  ]
+}

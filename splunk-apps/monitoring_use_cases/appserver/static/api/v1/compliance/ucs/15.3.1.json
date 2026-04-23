@@ -1,0 +1,77 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/15.3.1.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/15.3.1.json",
+    "sourcePath": "content/cat-15-data-center-physical-infrastructure/UC-15.3.1.json"
+  },
+  "apiVersion": "v1",
+  "app": "Access control syslog/API",
+  "cimModels": [
+    "N/A"
+  ],
+  "compliance": [
+    {
+      "assurance": "contributing",
+      "assurance_rationale": "TSA SD02C III.A Cybersecurity plan — physical badge audit is one of the plan components when control rooms are in scope.",
+      "clause": "III.A",
+      "clauseUrl": "https://www.tsa.gov/sd02c",
+      "controlObjective": "Evidence that TSA SD III.A (Cybersecurity plan) is enforced — Splunk UC-15.3.1: Badge Access Audit.",
+      "evidenceArtifact": "Saved search 'UC-15.3.1' running on Access control system events, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "tsa-sd@SD02C#III.A",
+      "regulation": "TSA SD",
+      "requires_sme_review": true,
+      "version": "SD02C"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "API RP 1164 3rd edition 5.3 Access control — pipeline-facility physical access-control audit is a named control in the recommended practice.",
+      "clause": "5.3",
+      "clauseUrl": "https://www.api.org/products-and-services/standards/important-standards-announcements/standard-1164",
+      "controlObjective": "Evidence that API RP 1164 5.3 (Access control) is enforced — Splunk UC-15.3.1: Badge Access Audit.",
+      "evidenceArtifact": "Saved search 'UC-15.3.1' running on Access control system events, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "api-rp-1164@3rd edition#5.3",
+      "regulation": "API RP 1164",
+      "requires_sme_review": true,
+      "version": "3rd edition"
+    },
+    {
+      "assurance": "contributing",
+      "assurance_rationale": "NERC CIP-005-7 R1 Electronic security perimeter — physical badge audit supports the Physical Security Perimeter requirement adjacent to the ESP.",
+      "clause": "CIP-005-7 R1",
+      "clauseUrl": "https://www.nerc.com/pa/Stand/Pages/CIPStandards.aspx",
+      "controlObjective": "Evidence that NERC CIP CIP-005-7 R1 (Electronic security perimeter) is enforced — Splunk UC-15.3.1: Badge Access Audit.",
+      "evidenceArtifact": "Saved search 'UC-15.3.1' running on Access control system events, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "nerc-cip@current#CIP-005-7 R1",
+      "regulation": "NERC CIP",
+      "requires_sme_review": true,
+      "version": "current"
+    }
+  ],
+  "criticality": "high",
+  "dataSources": "Access control system events",
+  "description": "Complete badge access audit trail is required for compliance (SOC2, PCI-DSS) and supports security investigations.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Access control syslog/API.\n• Ensure the following data sources are available: Access control system events.\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\nForward access control events to Splunk. Parse all badge events (granted, denied, door held, forced). Retain per compliance requirements. Enable search by person, door, or time for investigations.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=physical sourcetype=\"access_control\"\n| table _time, badge_holder, badge_id, door, action, result\n| sort -_time\n```\n\nUnderstanding this SPL\n\n**Badge Access Audit** — Complete badge access audit trail is required for compliance (SOC2, PCI-DSS) and supports security investigations.\n\nDocumented **Data sources**: Access control system events. **App/TA** (typical add-on context): Access control syslog/API. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: physical; **sourcetype**: access_control. If that sourcetype is not mentioned in Data sources, double-check parsing or update the documentation to match the feed you actually ingest.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=physical, sourcetype=\"access_control\". Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• Pipeline stage (see **Badge Access Audit**): table _time, badge_holder, badge_id, door, action, result\n• Orders rows with `sort` — combine with `head`/`tail` for top-N patterns.\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Table (access log), Bar chart (access by door), Timeline (access events for person), Single value (total access today).",
+  "difficulty": "beginner",
+  "grandmaExplanation": "Complete badge access audit trail is required for compliance (SOC2, ) and supports security investigations — so power, cooling, and physical access problems are found before they hurt uptime.",
+  "id": "15.3.1",
+  "implementation": "Forward access control events to Splunk. Parse all badge events (granted, denied, door held, forced). Retain per compliance requirements. Enable search by person, door, or time for investigations.",
+  "monitoringType": [
+    "Compliance"
+  ],
+  "references": [
+    {
+      "title": "Splunk Lantern — use case library",
+      "url": "https://lantern.splunk.com/"
+    }
+  ],
+  "spl": "index=physical sourcetype=\"access_control\"\n| table _time, badge_holder, badge_id, door, action, result\n| sort -_time",
+  "splunkPillar": "Security",
+  "title": "Badge Access Audit",
+  "value": "Complete badge access audit trail is required for compliance (SOC2, PCI-DSS) and supports security investigations.",
+  "visualization": "Table (access log), Bar chart (access by door), Timeline (access events for person), Single value (total access today)."
+}

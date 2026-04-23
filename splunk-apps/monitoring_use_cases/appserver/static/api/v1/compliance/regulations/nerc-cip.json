@@ -1,0 +1,1607 @@
+{
+  "aliases": [
+    "NERC CIP"
+  ],
+  "apiVersion": "v1",
+  "id": "nerc-cip",
+  "jurisdiction": [
+    "CA",
+    "US"
+  ],
+  "name": "NERC Critical Infrastructure Protection",
+  "shortName": "NERC CIP",
+  "tags": [
+    "energy",
+    "ics",
+    "ot"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://www.nerc.com/pa/Stand/Pages/CIPStandards.aspx",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "CIP-002-5.1a R1",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "14.2.11"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "BES cyber system identification"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 1,
+            "partial": 3
+          },
+          "clause": "CIP-005-7 R1",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "14.2.14",
+            "14.2.4",
+            "14.9.22",
+            "15.3.1",
+            "17.3.3"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "full",
+          "topic": "Electronic security perimeter"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 3
+          },
+          "clause": "CIP-007-6 R4",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "14.2.11",
+            "14.2.14",
+            "14.9.14"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Security event monitoring"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-008-6 R1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.50.6"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Incident response"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 3,
+            "full": 2,
+            "partial": 3
+          },
+          "clause": "CIP-010-4 R1",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "1.2.9",
+            "13.1.36",
+            "14.2.9",
+            "14.6.6",
+            "16.4.1",
+            "5.1.24",
+            "5.1.7",
+            "7.1.13"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "full",
+          "topic": "Configuration change management"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-002-6 R1 Part 1.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.1"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-002-6 R1 Part 1.2",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.3"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-002-6 R2",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.2"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-002-6 R4",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.4"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-003-8 R1 Part 1.2",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.5"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-003-8 R2",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.6"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-003-8 R3",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.7"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-003-8 R4",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.8"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-004-6 R1 Part 1.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.9"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-004-6 R2",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.10"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-004-6 R3",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.11"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-004-6 R4 Part 4.2",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.12"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-004-6 R5",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.13"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-004-6 R6",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.14"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-005-6 R1 Part 1.3",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.15"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-005-6 R1 Part 1.4",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.20"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-005-6 R2 Part 2.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.16"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-005-6 R2 Part 2.3",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.17"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-005-6 R2 Part 2.4",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.22"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-005-6 R3",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.18"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-005-6 R3 Part 3.2",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.21"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-005-6 R4 Part 4.2",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.19"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-006-6 R1 Part 1.2",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.23"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-006-6 R2",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.24"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-006-6 R3 Part 3.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.25"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-006-6 R3 Part 3.2",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.27"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-006-6 R4",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.26"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-007-6 R1 Part 1.2",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.28"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-007-6 R2 Part 2.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.29"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-007-6 R2 Part 2.3",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.30"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-007-6 R3 Part 3.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.31"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-007-6 R4 Part 4.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.32"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-007-6 R4 Part 4.2",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.33"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-007-6 R5 Part 5.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.34"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-007-6 R5 Part 5.2",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.35"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-007-6 R5 Part 5.3",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.36"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-007-6 R5 Part 5.4",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.37"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-008-6 R1 Part 1.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.38"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-008-6 R2 Part 2.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.39"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-008-6 R3 Part 3.2",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.40"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-008-6 R4 Part 4.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.41"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-008-6 R5 Part 5.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.42"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-008-6 R6",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.43"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-009-6 R1 Part 1.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.44"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-009-6 R2 Part 2.2",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.45"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-009-6 R3 Part 3.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.46"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-009-6 R4 Part 4.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.47"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-009-6 R5 Part 5.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.48"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-010-4 R1 Part 1.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.49"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-010-4 R1 Part 1.3",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.56"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-010-4 R2 Part 2.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.50"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-010-4 R3 Part 3.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.51"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-010-4 R4 Part 4.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.52"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-010-4 R5 Part 5.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.53"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-010-4 R5 Part 5.3",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.55"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-010-4 R6 Part 6.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.54"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-011-3 R1 Part 1.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.57"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-011-3 R2 Part 2.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.58"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-011-3 R3 Part 3.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.59"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-011-3 R4 Part 4.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.60"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-012-1 R1 Part 1.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.61"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-012-1 R2 Part 2.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.62"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-012-1 R3 Part 3.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.63"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-013-1 R1 Part 1.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.64"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-013-1 R2 Part 2.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.65"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-013-1 R3 Part 3.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.66"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-013-1 R4 Part 4.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.67"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-014-3 R1 Part 1.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.68"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-014-3 R2 Part 2.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.69"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CIP-014-3 R3 Part 3.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.13.70"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        }
+      ],
+      "clauseExamples": [
+        "CIP-005-7 R1",
+        "CIP-007-6 R4.1",
+        "CIP-002-5.1a R1",
+        "CIP-005-6 R1 Part 1.3"
+      ],
+      "clauseGrammar": "^CIP-\\d{3}(-\\d+(\\.\\d+[a-z]?)?)?(\\s+R\\d+(\\.\\d+)?)?(\\s+Part\\s+\\d+(\\.\\d+)?)?$",
+      "clauseUrlTemplate": "https://www.nerc.com/pa/Stand/Reliability%20Standards/{clause}.pdf",
+      "clausesReferencedByCatalogue": [
+        "CIP-002-5.1a R1",
+        "CIP-002-6 R1 Part 1.1",
+        "CIP-002-6 R1 Part 1.2",
+        "CIP-002-6 R2",
+        "CIP-002-6 R4",
+        "CIP-003-8 R1 Part 1.2",
+        "CIP-003-8 R2",
+        "CIP-003-8 R3",
+        "CIP-003-8 R4",
+        "CIP-004-6 R1 Part 1.1",
+        "CIP-004-6 R2",
+        "CIP-004-6 R3",
+        "CIP-004-6 R4 Part 4.2",
+        "CIP-004-6 R5",
+        "CIP-004-6 R6",
+        "CIP-005-6 R1 Part 1.3",
+        "CIP-005-6 R1 Part 1.4",
+        "CIP-005-6 R2 Part 2.1",
+        "CIP-005-6 R2 Part 2.3",
+        "CIP-005-6 R2 Part 2.4",
+        "CIP-005-6 R3",
+        "CIP-005-6 R3 Part 3.2",
+        "CIP-005-6 R4 Part 4.2",
+        "CIP-005-7 R1",
+        "CIP-006-6 R1 Part 1.2",
+        "CIP-006-6 R2",
+        "CIP-006-6 R3 Part 3.1",
+        "CIP-006-6 R3 Part 3.2",
+        "CIP-006-6 R4",
+        "CIP-007-6 R1 Part 1.2",
+        "CIP-007-6 R2 Part 2.1",
+        "CIP-007-6 R2 Part 2.3",
+        "CIP-007-6 R3 Part 3.1",
+        "CIP-007-6 R4",
+        "CIP-007-6 R4 Part 4.1",
+        "CIP-007-6 R4 Part 4.2",
+        "CIP-007-6 R5 Part 5.1",
+        "CIP-007-6 R5 Part 5.2",
+        "CIP-007-6 R5 Part 5.3",
+        "CIP-007-6 R5 Part 5.4",
+        "CIP-008-6 R1",
+        "CIP-008-6 R1 Part 1.1",
+        "CIP-008-6 R2 Part 2.1",
+        "CIP-008-6 R3 Part 3.2",
+        "CIP-008-6 R4 Part 4.1",
+        "CIP-008-6 R5 Part 5.1",
+        "CIP-008-6 R6",
+        "CIP-009-6 R1 Part 1.1",
+        "CIP-009-6 R2 Part 2.2",
+        "CIP-009-6 R3 Part 3.1",
+        "CIP-009-6 R4 Part 4.1",
+        "CIP-009-6 R5 Part 5.1",
+        "CIP-010-4 R1",
+        "CIP-010-4 R1 Part 1.1",
+        "CIP-010-4 R1 Part 1.3",
+        "CIP-010-4 R2 Part 2.1",
+        "CIP-010-4 R3 Part 3.1",
+        "CIP-010-4 R4 Part 4.1",
+        "CIP-010-4 R5 Part 5.1",
+        "CIP-010-4 R5 Part 5.3",
+        "CIP-010-4 R6 Part 6.1",
+        "CIP-011-3 R1 Part 1.1",
+        "CIP-011-3 R2 Part 2.1",
+        "CIP-011-3 R3 Part 3.1",
+        "CIP-011-3 R4 Part 4.1",
+        "CIP-012-1 R1 Part 1.1",
+        "CIP-012-1 R2 Part 2.1",
+        "CIP-012-1 R3 Part 3.1",
+        "CIP-013-1 R1 Part 1.1",
+        "CIP-013-1 R2 Part 2.1",
+        "CIP-013-1 R3 Part 3.1",
+        "CIP-013-1 R4 Part 4.1",
+        "CIP-014-3 R1 Part 1.1",
+        "CIP-014-3 R2 Part 2.1",
+        "CIP-014-3 R3 Part 3.1"
+      ],
+      "commonClauses": [
+        {
+          "clause": "CIP-002-5.1a R1",
+          "priorityWeight": 1.0,
+          "topic": "BES cyber system identification"
+        },
+        {
+          "clause": "CIP-005-7 R1",
+          "priorityWeight": 1.0,
+          "topic": "Electronic security perimeter"
+        },
+        {
+          "clause": "CIP-007-6 R4",
+          "priorityWeight": 1.0,
+          "topic": "Security event monitoring"
+        },
+        {
+          "clause": "CIP-008-6 R1",
+          "priorityWeight": 1.0,
+          "topic": "Incident response"
+        },
+        {
+          "clause": "CIP-010-4 R1",
+          "priorityWeight": 1.0,
+          "topic": "Configuration change management"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 100.0,
+        "commonClauseCount": 5,
+        "coveredClauseCount": 5,
+        "offCommonListClauseCount": 70,
+        "priorityWeightedCoveragePercent": 65.0,
+        "stateCounts": {
+          "contributing-only": 1,
+          "covered-full": 2,
+          "covered-partial": 2,
+          "uncovered": 0
+        }
+      },
+      "effectiveFrom": "2016-07-01",
+      "endpoint": "/api/v1/compliance/regulations/nerc-cip@current.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [
+        "1.2.9",
+        "13.1.36",
+        "14.2.11",
+        "14.2.14",
+        "14.2.4",
+        "14.2.9",
+        "14.6.6",
+        "14.9.14",
+        "14.9.22",
+        "15.3.1",
+        "16.4.1",
+        "17.3.3",
+        "22.13.1",
+        "22.13.10",
+        "22.13.11",
+        "22.13.12",
+        "22.13.13",
+        "22.13.14",
+        "22.13.15",
+        "22.13.16",
+        "22.13.17",
+        "22.13.18",
+        "22.13.19",
+        "22.13.2",
+        "22.13.20",
+        "22.13.21",
+        "22.13.22",
+        "22.13.23",
+        "22.13.24",
+        "22.13.25",
+        "22.13.26",
+        "22.13.27",
+        "22.13.28",
+        "22.13.29",
+        "22.13.3",
+        "22.13.30",
+        "22.13.31",
+        "22.13.32",
+        "22.13.33",
+        "22.13.34",
+        "22.13.35",
+        "22.13.36",
+        "22.13.37",
+        "22.13.38",
+        "22.13.39",
+        "22.13.4",
+        "22.13.40",
+        "22.13.41",
+        "22.13.42",
+        "22.13.43",
+        "22.13.44",
+        "22.13.45",
+        "22.13.46",
+        "22.13.47",
+        "22.13.48",
+        "22.13.49",
+        "22.13.5",
+        "22.13.50",
+        "22.13.51",
+        "22.13.52",
+        "22.13.53",
+        "22.13.54",
+        "22.13.55",
+        "22.13.56",
+        "22.13.57",
+        "22.13.58",
+        "22.13.59",
+        "22.13.6",
+        "22.13.60",
+        "22.13.61",
+        "22.13.62",
+        "22.13.63",
+        "22.13.64",
+        "22.13.65",
+        "22.13.66",
+        "22.13.67",
+        "22.13.68",
+        "22.13.69",
+        "22.13.7",
+        "22.13.70",
+        "22.13.8",
+        "22.13.9",
+        "22.50.6",
+        "5.1.24",
+        "5.1.7",
+        "7.1.13"
+      ],
+      "version": "current"
+    }
+  ]
+}

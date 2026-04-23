@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 1,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf#clause=12.10",
+  "clause": "12.10",
+  "clauseId": "pci-dss@v4.0#12.10",
+  "coverageState": "covered-full",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "PCI-DSS 12.10 Security incident response — drill cadence is direct evidence.",
+      "category": 22,
+      "clauseUrl": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf",
+      "controlObjective": "Evidence that PCI-DSS 12.10 (Security incident response) is enforced — Splunk UC-22.11.105: PCI-DSS 12.10 — Incident response: IR readiness — playbook exercise evidence.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.11.105' running on index=testing sourcetype=ir:drill; playbook register ir_playbook_register.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.11.105",
+      "ucTitle": "PCI-DSS 12.10 — Incident response: IR readiness — playbook exercise evidence"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/pci-dss__v4.0__12.10.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "pci-dss",
+  "regulationName": "Payment Card Industry Data Security Standard",
+  "regulationShortName": "PCI DSS",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/pci-dss.json",
+    "regulationVersion": "/api/v1/compliance/regulations/pci-dss@v4.0.json",
+    "story": "/api/v1/compliance/story/pci-dss.json"
+  },
+  "tier": 1,
+  "topAssurance": "full",
+  "topic": "Security incident response",
+  "version": "v4.0"
+}

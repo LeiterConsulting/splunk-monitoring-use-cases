@@ -1,0 +1,219 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 16,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "qualys",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Qualys",
+  "models": [],
+  "regulationIds": [
+    "dora",
+    "iso-27001",
+    "nis2",
+    "nist-800-53",
+    "pci-dss",
+    "soc-2"
+  ],
+  "regulations": [
+    {
+      "clauseMappings": [
+        {
+          "clause": "Art.25",
+          "useCaseId": "22.3.16",
+          "version": "Regulation (EU) 2022/2554"
+        },
+        {
+          "clause": "Art.8",
+          "useCaseId": "22.3.43",
+          "version": "Regulation (EU) 2022/2554"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/dora.json",
+      "regulationId": "dora",
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "22.3.16",
+        "22.3.43"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "A.8.8",
+          "useCaseId": "22.3.43",
+          "version": "2022"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/iso-27001.json",
+      "regulationId": "iso-27001",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.3.43"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "Art.21(2)(i)",
+          "useCaseId": "22.2.13",
+          "version": "Directive (EU) 2022/2555"
+        },
+        {
+          "clause": "Art.21(2)",
+          "useCaseId": "22.2.22",
+          "version": "Directive (EU) 2022/2555"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/nis2.json",
+      "regulationId": "nis2",
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "22.2.13",
+        "22.2.22"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "RA-5",
+          "useCaseId": "22.3.43",
+          "version": "Rev. 5"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/nist-800-53.json",
+      "regulationId": "nist-800-53",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.3.43"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "11.3.1",
+          "useCaseId": "22.3.43",
+          "version": "v4.0"
+        },
+        {
+          "clause": "2.2.3",
+          "useCaseId": "22.11.9",
+          "version": "v4.0"
+        },
+        {
+          "clause": "4.2.1",
+          "useCaseId": "22.11.23",
+          "version": "v4.0"
+        },
+        {
+          "clause": "4.2.1.2",
+          "useCaseId": "22.11.24",
+          "version": "v4.0"
+        },
+        {
+          "clause": "11.3.1",
+          "useCaseId": "22.11.33",
+          "version": "v4.0"
+        },
+        {
+          "clause": "6.2.4",
+          "useCaseId": "22.11.39",
+          "version": "v4.0"
+        },
+        {
+          "clause": "11.3.2",
+          "useCaseId": "22.11.73",
+          "version": "v4.0"
+        },
+        {
+          "clause": "6.3.1",
+          "useCaseId": "22.11.79",
+          "version": "v4.0"
+        },
+        {
+          "clause": "6.3.1",
+          "useCaseId": "22.11.80",
+          "version": "v4.0"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/pci-dss.json",
+      "regulationId": "pci-dss",
+      "useCaseCount": 9,
+      "useCaseIds": [
+        "22.3.43",
+        "22.11.9",
+        "22.11.23",
+        "22.11.24",
+        "22.11.33",
+        "22.11.39",
+        "22.11.73",
+        "22.11.79",
+        "22.11.80"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "CC3.1",
+          "useCaseId": "22.8.23",
+          "version": "2017 TSC"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/soc-2.json",
+      "regulationId": "soc-2",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.8.23"
+      ]
+    }
+  ],
+  "useCaseCount": 16,
+  "useCaseIds": [
+    "10.6.1",
+    "10.13.25",
+    "10.16.1",
+    "22.2.13",
+    "22.2.22",
+    "22.3.16",
+    "22.3.43",
+    "22.8.23",
+    "22.11.9",
+    "22.11.23",
+    "22.11.24",
+    "22.11.33",
+    "22.11.39",
+    "22.11.73",
+    "22.11.79",
+    "22.11.80"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 10,
+      "useCaseCount": 3,
+      "useCaseIds": [
+        "10.6.1",
+        "10.13.25",
+        "10.16.1"
+      ]
+    },
+    {
+      "category": 22,
+      "useCaseCount": 13,
+      "useCaseIds": [
+        "22.2.13",
+        "22.2.22",
+        "22.3.16",
+        "22.3.43",
+        "22.8.23",
+        "22.11.9",
+        "22.11.23",
+        "22.11.24",
+        "22.11.33",
+        "22.11.39",
+        "22.11.73",
+        "22.11.79",
+        "22.11.80"
+      ]
+    }
+  ]
+}

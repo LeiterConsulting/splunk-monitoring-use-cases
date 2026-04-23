@@ -1,0 +1,68 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.mas.gov.sg/-/media/mas/regulations-and-financial-stability/regulatory-and-supervisory-framework/risk-management/trm-guidelines-18-january-2021.pdf",
+  "clause": "§8.1.1",
+  "clauseId": "mas-trm@2021#§8.1.1",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 2,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "MAS TRM 2021 §8.1.1 IT operations — incident mgmt — major-incident post-mortem is the closure artefact MAS supervisors require.",
+      "category": 16,
+      "clauseUrl": "https://www.mas.gov.sg/-/media/mas/regulations-and-financial-stability/regulatory-and-supervisory-framework/risk-management/trm-guidelines-18-january-2021.pdf",
+      "controlObjective": "Evidence that MAS TRM §8.1.1 (IT operations — incident mgmt) is enforced — Splunk UC-16.1.20: Major Incident Post-Mortem Compliance.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-16.1.20' running on Incidents with major_incident or u_major_incident, post-mortem fields, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "16.1.20",
+      "ucTitle": "Major Incident Post-Mortem Compliance"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'MAS TRM' → '§8.1.1'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.mas.gov.sg/-/media/mas/regulations-and-financial-stability/regulatory-and-supervisory-framework/risk-management/trm-guidelines-18-january-2021.pdf",
+      "controlObjective": "Evidence that MAS TRM §8.1.1 (IT operations — incident mgmt) is enforced — Splunk UC-22.30.6: Incident notification to MAS timeline tracking.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.30.6' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.30.6",
+      "ucTitle": "Incident notification to MAS timeline tracking"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/mas-trm__2021__%C2%A78.1.1.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 2
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "mas-trm",
+  "regulationName": "MAS Technology Risk Management Guidelines",
+  "regulationShortName": "MAS TRM",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/mas-trm.json",
+    "regulationVersion": "/api/v1/compliance/regulations/mas-trm@2021.json",
+    "story": "/api/v1/compliance/story/mas-trm.json"
+  },
+  "tier": 2,
+  "topAssurance": "partial",
+  "topic": "IT operations — incident mgmt",
+  "version": "2021"
+}

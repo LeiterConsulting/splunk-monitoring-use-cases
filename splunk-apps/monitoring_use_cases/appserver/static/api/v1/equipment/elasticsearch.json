@@ -1,0 +1,106 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 10,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "elasticsearch",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Elasticsearch / OpenSearch",
+  "models": [
+    {
+      "id": "elasticsearch_es",
+      "label": "Elasticsearch",
+      "modelId": "es",
+      "useCaseCount": 6,
+      "useCaseIds": [
+        "7.4.6",
+        "7.4.7",
+        "7.5.1",
+        "7.5.11",
+        "7.5.13",
+        "13.2.9"
+      ]
+    },
+    {
+      "id": "elasticsearch_opensearch",
+      "label": "OpenSearch",
+      "modelId": "opensearch",
+      "useCaseCount": 4,
+      "useCaseIds": [
+        "7.5.3",
+        "7.5.4",
+        "20.2.30",
+        "22.4.25"
+      ]
+    }
+  ],
+  "regulationIds": [
+    "ccpa"
+  ],
+  "regulations": [
+    {
+      "clauseMappings": [
+        {
+          "clause": "§1798.105",
+          "useCaseId": "22.4.25",
+          "version": "CPRA (as amended)"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/ccpa.json",
+      "regulationId": "ccpa",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.4.25"
+      ]
+    }
+  ],
+  "useCaseCount": 10,
+  "useCaseIds": [
+    "7.4.6",
+    "7.4.7",
+    "7.5.1",
+    "7.5.3",
+    "7.5.4",
+    "7.5.11",
+    "7.5.13",
+    "13.2.9",
+    "20.2.30",
+    "22.4.25"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 7,
+      "useCaseCount": 7,
+      "useCaseIds": [
+        "7.4.6",
+        "7.4.7",
+        "7.5.1",
+        "7.5.3",
+        "7.5.4",
+        "7.5.11",
+        "7.5.13"
+      ]
+    },
+    {
+      "category": 13,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "13.2.9"
+      ]
+    },
+    {
+      "category": 20,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "20.2.30"
+      ]
+    },
+    {
+      "category": 22,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.4.25"
+      ]
+    }
+  ]
+}

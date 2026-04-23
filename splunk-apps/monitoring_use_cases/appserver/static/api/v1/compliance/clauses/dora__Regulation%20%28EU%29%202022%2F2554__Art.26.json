@@ -1,0 +1,68 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 2,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj#Art.26",
+  "clause": "Art.26",
+  "clauseId": "dora@Regulation (EU) 2022/2554#Art.26",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 2,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'Art.24-27' → 'Art.26'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj#Art.26",
+      "controlObjective": "Evidence that DORA Art.26 (Threat-led penetration testing) is enforced — Splunk UC-22.3.3: DORA Digital Operational Resilience Testing.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.3.3' running on index=itsi_summary (service_name, kpi_name, alert_value, severity_value, is_service_in_maintenance, _time), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.3.3",
+      "ucTitle": "DORA Digital Operational Resilience Testing"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj#Art.26",
+      "controlObjective": "Evidence that DORA Art.26 (Threat-led penetration testing) is enforced — Splunk UC-22.3.17: DORA Threat-Led Penetration Testing (TLPT) Lifecycle.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.3.17' running on index itsm and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.3.17",
+      "ucTitle": "DORA Threat-Led Penetration Testing (TLPT) Lifecycle"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/dora__Regulation%20%28EU%29%202022%2F2554__Art.26.json",
+  "gapNote": "DORA clause Art.26 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 2
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 0.7,
+  "regulationId": "dora",
+  "regulationName": "EU Digital Operational Resilience Act",
+  "regulationShortName": "DORA",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/dora.json",
+    "regulationVersion": "/api/v1/compliance/regulations/dora@Regulation%20%28EU%29%202022%2F2554.json",
+    "story": "/api/v1/compliance/story/dora.json"
+  },
+  "tier": 1,
+  "topAssurance": "contributing",
+  "topic": "Threat-led penetration testing",
+  "version": "Regulation (EU) 2022/2554"
+}

@@ -1,0 +1,259 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "§11.10(d)",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "7.1.21"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "System access limited to authorized individuals",
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 20,
+        "full": 2,
+        "partial": 3
+      },
+      "clause": "§11.10(e)",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "1.1.65",
+        "1.2.33",
+        "1.2.51",
+        "22.17.1",
+        "22.17.11",
+        "22.17.12",
+        "22.17.13",
+        "22.17.14",
+        "22.17.15",
+        "22.17.16",
+        "22.17.17",
+        "22.17.18",
+        "22.17.19",
+        "22.17.2",
+        "22.17.20",
+        "22.17.21",
+        "22.17.22",
+        "22.17.23",
+        "22.17.24",
+        "22.17.25",
+        "22.17.3",
+        "22.17.4",
+        "22.17.5",
+        "7.1.13",
+        "7.1.40"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Audit trails",
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 5,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§11.200",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.17.10",
+        "22.17.6",
+        "22.17.7",
+        "22.17.8",
+        "22.17.9"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Electronic signatures",
+      "version": "current"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "3 of 3 common clauses are covered by the catalogue, with a priority-weighted coverage of 58.33% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 3,
+      "priorityWeightedCoveragePercent": 58.33,
+      "stateCounts": {
+        "contributing-only": 1,
+        "covered-full": 1,
+        "covered-partial": 1,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "§11.10(e)",
+        "killerUcId": "1.1.65",
+        "killerUcTitle": "Auditd Rule Violation Detection",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Audit trails",
+        "version": "current",
+        "why": "Clause §11.10(e) (Audit trails) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "§11.10(d)",
+        "killerUcId": "7.1.21",
+        "killerUcTitle": "Database User and Privilege Change Audit",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "System access limited to authorized individuals",
+        "version": "current",
+        "why": "Clause §11.10(d) (System access limited to authorized individuals) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "§11.200",
+        "killerUcId": "22.17.10",
+        "killerUcTitle": "Electronic signatures — control theme 5",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Electronic signatures",
+        "version": "current",
+        "why": "Clause §11.200 (Electronic signatures) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "§11.10(d)",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "7.1.21",
+            "ucTitle": "Database User and Privilege Change Audit"
+          }
+        ],
+        "topic": "System access limited to authorized individuals",
+        "version": "current"
+      },
+      {
+        "clause": "§11.10(e)",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "1.1.65",
+            "ucTitle": "Auditd Rule Violation Detection"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "1.2.33",
+            "ucTitle": "Audit Policy Changes"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "7.1.40",
+            "ucTitle": "Database Audit Log Tampering Detection"
+          }
+        ],
+        "topic": "Audit trails",
+        "version": "current"
+      },
+      {
+        "clause": "§11.200",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.17.8",
+            "ucTitle": "Electronic signatures — control theme 3"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.17.9",
+            "ucTitle": "Electronic signatures — control theme 4"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.17.6",
+            "ucTitle": "Electronic signatures — control theme 1"
+          }
+        ],
+        "topic": "Electronic signatures",
+        "version": "current"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "US"
+  ],
+  "narrative": {
+    "evidencePack": null,
+    "matchedBy": "fuzzy-shortname",
+    "name": "FDA Part 11 pharma",
+    "primer": null,
+    "splunkValue": "We watch GxP system audit-trail completeness, detect disabled or bypassed audit trails, prove operator identity on every signed record, and flag ALCOA+ exceptions that will otherwise surface during an FDA 483 inspection.",
+    "whatItIs": "US FDA 21 CFR Part 11 — the rules that let pharmaceutical, biotech, and medical-device companies use electronic records and signatures instead of paper. It demands comprehensive audit trails, operator attribution, and data-integrity guarantees under the ALCOA+ principles.",
+    "whoItAffects": "Pharmaceutical, biotech, and medical-device manufacturers, CROs, and labs that run GxP systems (QMS, MES, LIMS, electronic batch records) under FDA jurisdiction — plus their equivalents in ICH-member regions."
+  },
+  "narrativeRef": "non-technical-view.js#cat-22/area/fda-part-11-pharma",
+  "regulationId": "fda-part-11",
+  "regulationName": "FDA 21 CFR Part 11",
+  "regulationShortName": "FDA Part 11",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=fda-part-11",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#fda-part-11",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/fda-part-11.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

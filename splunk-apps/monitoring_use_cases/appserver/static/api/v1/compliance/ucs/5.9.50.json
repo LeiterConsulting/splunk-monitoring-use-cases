@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/5.9.50.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/5.9.50.json",
+    "sourcePath": "content/cat-05-network-infrastructure/UC-5.9.50.json"
+  },
+  "apiVersion": "v1",
+  "app": "`Cisco ThousandEyes App for Splunk` (Splunkbase 7719), ITSI Content Pack for Cisco ThousandEyes",
+  "cimModels": [
+    "N/A"
+  ],
+  "criticality": "high",
+  "dataSources": "`index=thousandeyes`, ThousandEyes OTel data via ITSI KPI base searches",
+  "description": "The ITSI Content Pack for Cisco ThousandEyes provides pre-built service templates, KPI base searches, entity types, and Glass Tables for service-centric monitoring. It maps ThousandEyes test results to ITSI services for unified health scoring across all monitoring domains.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: `Cisco ThousandEyes App for Splunk` (Splunkbase 7719), ITSI Content Pack for Cisco ThousandEyes.\n• Ensure the following data sources are available: `index=thousandeyes`, ThousandEyes OTel data via ITSI KPI base searches.\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\nInstall the ITSI Content Pack for Cisco ThousandEyes from the ITSI Content Library. The content pack provides: entity types (ThousandEyes Test, ThousandEyes Agent), KPI base searches (latency, loss, jitter, availability, MOS for each test type), service templates, and Glass Table templates. After installation, import the service templates and configure entity discovery to match your ThousandEyes tests. KPIs are automatically populated from the ThousandEyes data model.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\n| from datamodel:\"ITSI_KPI_Summary\"\n| where service_name=\"*ThousandEyes*\"\n| stats latest(kpi_urgency) as urgency latest(alert_level) as alert_level by service_name, kpiid, itsi_kpi_id\n| sort -urgency\n```\n\nUnderstanding this SPL\n\n**ThousandEyes ITSI Service Health (Content Pack)** — The ITSI Content Pack for Cisco ThousandEyes provides pre-built service templates, KPI base searches, entity types, and Glass Tables for service-centric monitoring. It maps ThousandEyes test results to ITSI services for unified health scoring across all monitoring domains.\n\nDocumented **Data sources**: `index=thousandeyes`, ThousandEyes OTel data via ITSI KPI base searches. **App/TA** (typical add-on context): `Cisco ThousandEyes App for Splunk` (Splunkbase 7719), ITSI Content Pack for Cisco ThousandEyes. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\n**Pipeline walkthrough**\n\n• Uses `from` (dataset / Federated Search) — verify dataset availability and permissions.\n• Filters the current rows with `where service_name=\"*ThousandEyes*\"` — typically the threshold or rule expression for this monitoring goal.\n• `stats` rolls up events into metrics; results are split **by service_name, kpiid, itsi_kpi_id** so each row reflects one combination of those dimensions (useful for per-host, per-user, or per-entity comparisons for this use case).\n• Orders rows with `sort` — combine with `head`/`tail` for top-N patterns.\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: ITSI Service Tree, Glass Table, KPI cards (latency, loss, availability, MOS), Service health score.",
+  "difficulty": "intermediate",
+  "equipment": [
+    "cisco",
+    "itsi"
+  ],
+  "equipmentModels": [
+    "cisco_thousandeyes"
+  ],
+  "grandmaExplanation": "The ITSI Content Pack for Cisco ThousandEyes provides pre-built service templates, key numbers base searches, entity types, and Glass Tables for service-centric monitoring — so outages, slowdowns, and risky changes get flagged in time to act.",
+  "id": "5.9.50",
+  "implementation": "Install the ITSI Content Pack for Cisco ThousandEyes from the ITSI Content Library. The content pack provides: entity types (ThousandEyes Test, ThousandEyes Agent), KPI base searches (latency, loss, jitter, availability, MOS for each test type), service templates, and Glass Table templates. After installation, import the service templates and configure entity discovery to match your ThousandEyes tests. KPIs are automatically populated from the ThousandEyes data model.",
+  "monitoringType": [
+    "Availability",
+    "Performance"
+  ],
+  "premiumApps": [
+    {
+      "displayName": "Splunk IT Service Intelligence",
+      "name": "Splunk ITSI",
+      "note": "ITSI"
+    }
+  ],
+  "references": [
+    {
+      "title": "Splunkbase app 7719",
+      "url": "https://splunkbase.splunk.com/app/7719"
+    }
+  ],
+  "spl": "| from datamodel:\"ITSI_KPI_Summary\"\n| where service_name=\"*ThousandEyes*\"\n| stats latest(kpi_urgency) as urgency latest(alert_level) as alert_level by service_name, kpiid, itsi_kpi_id\n| sort -urgency",
+  "splunkPillar": "Observability",
+  "title": "ThousandEyes ITSI Service Health (Content Pack)",
+  "value": "The ITSI Content Pack for Cisco ThousandEyes provides pre-built service templates, KPI base searches, entity types, and Glass Tables for service-centric monitoring. It maps ThousandEyes test results to ITSI services for unified health scoring across all monitoring domains.",
+  "visualization": "ITSI Service Tree, Glass Table, KPI cards (latency, loss, availability, MOS), Service health score."
+}

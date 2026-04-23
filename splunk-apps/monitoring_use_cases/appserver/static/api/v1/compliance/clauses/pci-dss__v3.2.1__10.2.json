@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 1,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://listings.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf#clause=10.2",
+  "clause": "10.2",
+  "clauseId": "pci-dss@v3.2.1#10.2",
+  "coverageState": "covered-full",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "PCI-DSS v3.2.1 10.2 Audit events required to be logged — UC detects missing Windows Security events per CDE host, directly enforcing the required-audit-events list.",
+      "category": 22,
+      "clauseUrl": "https://listings.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf",
+      "controlObjective": "Evidence that PCI-DSS 10.2 (Audit events required to be logged) is enforced — Splunk UC-22.11.61: Audit Log Source Completeness — Missing Windows Security Events per CDE Host.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.11.61' running on index=windows WinEventLog:Security; lookup pci_windows_cde_assets.csv, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.11.61",
+      "ucTitle": "Audit Log Source Completeness — Missing Windows Security Events per CDE Host"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/pci-dss__v3.2.1__10.2.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "pci-dss",
+  "regulationName": "Payment Card Industry Data Security Standard",
+  "regulationShortName": "PCI DSS",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/pci-dss.json",
+    "regulationVersion": "/api/v1/compliance/regulations/pci-dss@v3.2.1.json",
+    "story": "/api/v1/compliance/story/pci-dss.json"
+  },
+  "tier": 1,
+  "topAssurance": "full",
+  "topic": "Audit events required to be logged",
+  "version": "v3.2.1"
+}

@@ -1,0 +1,119 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 23,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "opcua",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "OPC-UA",
+  "models": [],
+  "regulationIds": [
+    "api-rp-1164",
+    "iec-62443",
+    "nerc-cip"
+  ],
+  "regulations": [
+    {
+      "clauseMappings": [
+        {
+          "clause": "6.2.1",
+          "useCaseId": "14.2.9",
+          "version": "3rd edition"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/api-rp-1164.json",
+      "regulationId": "api-rp-1164",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "14.2.9"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "FR 6.2",
+          "useCaseId": "14.2.9",
+          "version": "2013-ongoing"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/iec-62443.json",
+      "regulationId": "iec-62443",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "14.2.9"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "CIP-010-4 R1",
+          "useCaseId": "14.2.9",
+          "version": "current"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/nerc-cip.json",
+      "regulationId": "nerc-cip",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "14.2.9"
+      ]
+    }
+  ],
+  "useCaseCount": 23,
+  "useCaseIds": [
+    "14.1.9",
+    "14.2.1",
+    "14.2.2",
+    "14.2.3",
+    "14.2.5",
+    "14.2.8",
+    "14.2.9",
+    "14.2.12",
+    "14.2.13",
+    "14.2.15",
+    "14.2.16",
+    "14.2.25",
+    "14.3.31",
+    "14.3.35",
+    "14.3.37",
+    "14.3.38",
+    "14.5.2",
+    "14.5.4",
+    "14.5.7",
+    "14.5.9",
+    "14.5.12",
+    "14.5.15",
+    "14.8.2"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 14,
+      "useCaseCount": 23,
+      "useCaseIds": [
+        "14.1.9",
+        "14.2.1",
+        "14.2.2",
+        "14.2.3",
+        "14.2.5",
+        "14.2.8",
+        "14.2.9",
+        "14.2.12",
+        "14.2.13",
+        "14.2.15",
+        "14.2.16",
+        "14.2.25",
+        "14.3.31",
+        "14.3.35",
+        "14.3.37",
+        "14.3.38",
+        "14.5.2",
+        "14.5.4",
+        "14.5.7",
+        "14.5.9",
+        "14.5.12",
+        "14.5.15",
+        "14.8.2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 1,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf#clause=6.3",
+  "clause": "6.3",
+  "clauseId": "pci-dss@v4.0#6.3",
+  "coverageState": "covered-full",
+  "coveringUcCount": 2,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "PCI 6.3 requires addressing vulnerabilities within a defined window — 30 days for critical.",
+      "category": 22,
+      "clauseUrl": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf#clause=6.3",
+      "controlObjective": "Evidence that PCI DSS 6.3 (Vulnerabilities identified and addressed) is enforced — Splunk UC-22.43.1: Critical vulnerability SLA tracker — unpatched 30+ days with exploited-in-the-wild indicator.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.43.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.43.1",
+      "ucTitle": "Critical vulnerability SLA tracker — unpatched 30+ days with exploited-in-the-wild indicator"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "PCI 6.3 requires proactive verification; regressed vulns defeat the remediation.",
+      "category": 22,
+      "clauseUrl": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf#clause=6.3",
+      "controlObjective": "Evidence that PCI DSS 6.3 (Vulnerabilities identified and addressed) is enforced — Splunk UC-22.43.2: Vulnerability rediscovery after patch — regressed exposures.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.43.2' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.43.2",
+      "ucTitle": "Vulnerability rediscovery after patch — regressed exposures"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/pci-dss__v4.0__6.3.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 2
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "pci-dss",
+  "regulationName": "Payment Card Industry Data Security Standard",
+  "regulationShortName": "PCI DSS",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/pci-dss.json",
+    "regulationVersion": "/api/v1/compliance/regulations/pci-dss@v4.0.json",
+    "story": "/api/v1/compliance/story/pci-dss.json"
+  },
+  "tier": 1,
+  "topAssurance": "full",
+  "topic": "Vulnerabilities identified and addressed",
+  "version": "v4.0"
+}

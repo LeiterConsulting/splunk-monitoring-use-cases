@@ -1,0 +1,178 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 36,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "zscaler",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Zscaler",
+  "models": [],
+  "regulationIds": [
+    "ccpa",
+    "gdpr",
+    "iso-27001",
+    "nist-800-53"
+  ],
+  "regulations": [
+    {
+      "clauseMappings": [
+        {
+          "clause": "unknown",
+          "useCaseId": "10.11.62",
+          "version": "unknown"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/ccpa.json",
+      "regulationId": "ccpa",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "10.11.62"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "unknown",
+          "useCaseId": "10.11.62",
+          "version": "unknown"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/gdpr.json",
+      "regulationId": "gdpr",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "10.11.62"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "A.8.21",
+          "useCaseId": "22.6.42",
+          "version": "2022"
+        },
+        {
+          "clause": "A.8.23",
+          "useCaseId": "22.6.42",
+          "version": "2022"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/iso-27001.json",
+      "regulationId": "iso-27001",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.6.42"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "SC-10",
+          "useCaseId": "22.14.69",
+          "version": "Rev. 5"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/nist-800-53.json",
+      "regulationId": "nist-800-53",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.14.69"
+      ]
+    }
+  ],
+  "useCaseCount": 36,
+  "useCaseIds": [
+    "10.5.1",
+    "10.5.20",
+    "10.11.51",
+    "10.11.52",
+    "10.11.53",
+    "10.11.54",
+    "10.11.55",
+    "10.11.56",
+    "10.11.57",
+    "10.11.58",
+    "10.11.59",
+    "10.11.60",
+    "10.11.61",
+    "10.11.62",
+    "10.11.106",
+    "10.11.107",
+    "10.11.108",
+    "10.11.109",
+    "17.3.1",
+    "17.3.2",
+    "17.3.4",
+    "17.3.5",
+    "17.3.6",
+    "17.3.7",
+    "17.3.8",
+    "17.3.12",
+    "17.3.13",
+    "17.3.15",
+    "17.3.16",
+    "17.3.18",
+    "17.3.19",
+    "17.3.20",
+    "17.3.21",
+    "17.3.22",
+    "22.6.42",
+    "22.14.69"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 10,
+      "useCaseCount": 18,
+      "useCaseIds": [
+        "10.5.1",
+        "10.5.20",
+        "10.11.51",
+        "10.11.52",
+        "10.11.53",
+        "10.11.54",
+        "10.11.55",
+        "10.11.56",
+        "10.11.57",
+        "10.11.58",
+        "10.11.59",
+        "10.11.60",
+        "10.11.61",
+        "10.11.62",
+        "10.11.106",
+        "10.11.107",
+        "10.11.108",
+        "10.11.109"
+      ]
+    },
+    {
+      "category": 17,
+      "useCaseCount": 16,
+      "useCaseIds": [
+        "17.3.1",
+        "17.3.2",
+        "17.3.4",
+        "17.3.5",
+        "17.3.6",
+        "17.3.7",
+        "17.3.8",
+        "17.3.12",
+        "17.3.13",
+        "17.3.15",
+        "17.3.16",
+        "17.3.18",
+        "17.3.19",
+        "17.3.20",
+        "17.3.21",
+        "17.3.22"
+      ]
+    },
+    {
+      "category": 22,
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "22.6.42",
+        "22.14.69"
+      ]
+    }
+  ]
+}

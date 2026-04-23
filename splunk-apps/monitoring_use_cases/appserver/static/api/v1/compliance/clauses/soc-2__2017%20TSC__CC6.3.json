@@ -1,0 +1,84 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 3,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "CC6.3",
+  "clauseId": "soc-2@2017 TSC#CC6.3",
+  "coverageState": "covered-full",
+  "coveringUcCount": 3,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "SOC 2 CC6.3 Logical access removal — directly evidenced.",
+      "category": 22,
+      "clauseUrl": "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services",
+      "controlObjective": "Evidence that SOC-2 CC6.3 is enforced — Splunk UC-22.12.37: SOX-ITGC AccessMgmt.Termination — Deprovisioning SLA after HR termination event.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.12.37' running on sourcetype workday:termination and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.12.37",
+      "ucTitle": "SOX-ITGC AccessMgmt.Termination — Deprovisioning SLA after HR termination event"
+    },
+    {
+      "assurance": "full",
+      "assuranceRationale": "CC6.3 logical access authorisation — SoD in code path.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Detects violations of SOC-2 CC6.3 — Splunk UC-22.48.3: Developer-to-production SoD — same developer submits AND approves merge.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.48.3' running on Git provider audit logs (GitHub, GitLab, Bitbucket), CI/CD deployment events., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "detects-violation-of",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.48.3",
+      "ucTitle": "Developer-to-production SoD — same developer submits AND approves merge"
+    },
+    {
+      "assurance": "full",
+      "assuranceRationale": "SoD in financial system access.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Detects violations of SOC-2 CC6.3 — Splunk UC-22.48.4: Financial SoD — same identity posts AND approves a journal entry.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.48.4' running on ERP financial-journal audit events (SAP, Oracle E-Business, Workday Financials)., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "detects-violation-of",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.48.4",
+      "ucTitle": "Financial SoD — same identity posts AND approves a journal entry"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/soc-2__2017%20TSC__CC6.3.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "detects-violation-of": 2,
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "soc-2",
+  "regulationName": "soc-2",
+  "regulationShortName": "soc-2",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/soc-2.json",
+    "regulationVersion": "/api/v1/compliance/regulations/soc-2@2017%20TSC.json",
+    "story": "/api/v1/compliance/story/soc-2.json"
+  },
+  "tier": null,
+  "topAssurance": "full",
+  "topic": null,
+  "version": "2017 TSC"
+}

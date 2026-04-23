@@ -1,0 +1,98 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 2,
+    "full": 1,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj#Art.21(2)(g)",
+  "clause": "Art.21(2)(g)",
+  "clauseId": "nis2@Directive (EU) 2022/2555#Art.21(2)(g)",
+  "coverageState": "covered-full",
+  "coveringUcCount": 4,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "Art.21(2)(g) cyber hygiene and training — completion tracking is standard evidence.",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj#Art.21(2)(g)",
+      "controlObjective": "Evidence that NIS2 Art.21(2)(g) (Cyber-hygiene and training) is enforced — Splunk UC-22.46.1: Mandatory security training — completion SLA by role.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.46.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.46.1",
+      "ucTitle": "Mandatory security training — completion SLA by role"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "Art.21(2)(g) — beyond completion, regulators want to see the program is effective.",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj#Art.21(2)(g)",
+      "controlObjective": "Evidence that NIS2 Art.21(2)(g) (Cyber-hygiene and training) is enforced — Splunk UC-22.46.2: Phishing simulation efficacy — click-rate trend and repeat-clicker detection.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.46.2' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.46.2",
+      "ucTitle": "Phishing simulation efficacy — click-rate trend and repeat-clicker detection"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj#Art.21(2)(g)",
+      "controlObjective": "Evidence that NIS2 Art.21(2)(g) (Cyber-hygiene and training) is enforced — Splunk UC-22.2.10: NIS2 Cyber Hygiene and Training Compliance.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.2.10' running on sourcetype ms:o365:management and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.2.10",
+      "ucTitle": "NIS2 Cyber Hygiene and Training Compliance"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj#Art.21(2)(g)",
+      "controlObjective": "Evidence that NIS2 Art.21(2)(g) (Cyber-hygiene and training) is enforced — Splunk UC-22.2.28: NIS2 Cyber Hygiene Practices — Baseline Control Compliance.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.2.28' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.2.28",
+      "ucTitle": "NIS2 Cyber Hygiene Practices — Baseline Control Compliance"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/nis2__Directive%20%28EU%29%202022%2F2555__Art.21%282%29%28g%29.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 4
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 0.7,
+  "regulationId": "nis2",
+  "regulationName": "EU NIS2 Directive",
+  "regulationShortName": "NIS2",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/nis2.json",
+    "regulationVersion": "/api/v1/compliance/regulations/nis2@Directive%20%28EU%29%202022%2F2555.json",
+    "story": "/api/v1/compliance/story/nis2.json"
+  },
+  "tier": 1,
+  "topAssurance": "full",
+  "topic": "Cyber-hygiene and training",
+  "version": "Directive (EU) 2022/2555"
+}

@@ -1,0 +1,633 @@
+{
+  "apiVersion": "v1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "sox-itgc",
+  "jurisdiction": [
+    "US"
+  ],
+  "name": "SOX — PCAOB AS 2201 ITGCs",
+  "shortName": "SOX ITGC",
+  "tags": [
+    "financial-reporting",
+    "itgc"
+  ],
+  "tier": 1,
+  "version": {
+    "authoritativeUrl": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+    "clauseCoverageMatrix": [
+      {
+        "assuranceBreakdown": {
+          "contributing": 2,
+          "full": 4,
+          "partial": 0
+        },
+        "clause": "ITGC.AccessMgmt.Privileged",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.12.2",
+          "22.12.28",
+          "22.40.1",
+          "22.40.2",
+          "22.40.4",
+          "7.1.21"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Privileged access"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 1,
+          "partial": 1
+        },
+        "clause": "ITGC.AccessMgmt.Provisioning",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.12.1",
+          "22.12.36",
+          "9.5.15"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "User provisioning"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "ITGC.AccessMgmt.Review",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.12.26",
+          "22.40.3"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 0.7,
+        "topAssurance": "full",
+        "topic": "Periodic access review"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 1,
+          "partial": 1
+        },
+        "clause": "ITGC.AccessMgmt.SOD",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.12.3",
+          "22.48.1",
+          "22.48.2"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Segregation of duties"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "ITGC.AccessMgmt.Termination",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.12.37",
+          "22.12.5"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Timely deprovisioning"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 2,
+          "full": 2,
+          "partial": 1
+        },
+        "clause": "ITGC.ChangeMgmt.Approval",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "12.2.17",
+          "22.12.10",
+          "22.12.11",
+          "22.12.39",
+          "22.6.55"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Change approved"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 2,
+          "partial": 1
+        },
+        "clause": "ITGC.ChangeMgmt.Authorization",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "16.4.1",
+          "22.42.1",
+          "7.1.13"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Change authorised"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 27,
+          "full": 1,
+          "partial": 1
+        },
+        "clause": "ITGC.ChangeMgmt.Testing",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.95",
+          "22.12.12",
+          "22.12.13",
+          "22.12.14",
+          "22.12.15",
+          "22.12.16",
+          "22.12.17",
+          "22.12.18",
+          "22.12.19",
+          "22.12.20",
+          "22.12.21",
+          "22.12.22",
+          "22.12.23",
+          "22.12.24",
+          "22.12.25",
+          "22.12.27",
+          "22.12.29",
+          "22.12.30",
+          "22.12.31",
+          "22.12.32",
+          "22.12.33",
+          "22.12.34",
+          "22.12.35",
+          "22.12.38",
+          "22.12.4",
+          "22.12.6",
+          "22.12.7",
+          "22.12.8",
+          "22.12.9"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Change tested"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 3,
+          "full": 0,
+          "partial": 1
+        },
+        "clause": "ITGC.Logging.Continuity",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.35.1",
+          "22.35.2",
+          "22.9.8",
+          "7.1.40"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Audit trail completeness"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 1
+        },
+        "clause": "ITGC.Logging.Review",
+        "coverageState": "covered-partial",
+        "coveringUcs": [
+          "22.47.2",
+          "22.49.3"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 0.7,
+        "topAssurance": "partial",
+        "topic": "Log review"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "ITGC.Operations.Backup",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.45.3"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Backup and restore"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "ITGC.Operations.JobSchedule",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.12.40"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 0.7,
+        "topAssurance": "full",
+        "topic": "Batch scheduling and monitoring"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "ITGC.Change.Approval",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.42.4"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "full",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 0,
+          "partial": 1
+        },
+        "clause": "ITGC.Change.Rollback",
+        "coverageState": "covered-partial",
+        "coveringUcs": [
+          "22.42.3"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "partial",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "ITGC.Change.SoD",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.48.3"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "full",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 0,
+          "partial": 1
+        },
+        "clause": "ITGC.Crypto.SoD",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.41.5"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "partial",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "ITGC.Evidence.Integrity",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.47.4"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "full",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "ITGC.Financial.SoD",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.48.4"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "full",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 1,
+          "partial": 1
+        },
+        "clause": "ITGC.Logging.Integrity",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.102",
+          "22.11.99",
+          "22.35.4"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "full",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "ITGC.Privileged.JIT",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.40.5"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "full",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "ITGC.Vendor.SoD",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.48.5"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "full",
+        "topic": null
+      }
+    ],
+    "clauseExamples": [
+      "ITGC.AccessMgmt.Provisioning",
+      "ITGC.ChangeMgmt.Approval",
+      "ITGC.Logging.Continuity"
+    ],
+    "clauseGrammar": "^ITGC\\.[A-Za-z]+\\.[A-Za-z]+$",
+    "clauseUrlTemplate": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201#{clause}",
+    "clausesReferencedByCatalogue": [
+      "ITGC.AccessMgmt.Privileged",
+      "ITGC.AccessMgmt.Provisioning",
+      "ITGC.AccessMgmt.Review",
+      "ITGC.AccessMgmt.SOD",
+      "ITGC.AccessMgmt.Termination",
+      "ITGC.Change.Approval",
+      "ITGC.Change.Rollback",
+      "ITGC.Change.SoD",
+      "ITGC.ChangeMgmt.Approval",
+      "ITGC.ChangeMgmt.Authorization",
+      "ITGC.ChangeMgmt.Testing",
+      "ITGC.Crypto.SoD",
+      "ITGC.Evidence.Integrity",
+      "ITGC.Financial.SoD",
+      "ITGC.Logging.Continuity",
+      "ITGC.Logging.Integrity",
+      "ITGC.Logging.Review",
+      "ITGC.Operations.Backup",
+      "ITGC.Operations.JobSchedule",
+      "ITGC.Privileged.JIT",
+      "ITGC.Vendor.SoD"
+    ],
+    "commonClauses": [
+      {
+        "clause": "ITGC.AccessMgmt.Provisioning",
+        "priorityWeight": 1.0,
+        "topic": "User provisioning"
+      },
+      {
+        "clause": "ITGC.AccessMgmt.Termination",
+        "priorityWeight": 1.0,
+        "topic": "Timely deprovisioning"
+      },
+      {
+        "clause": "ITGC.AccessMgmt.Privileged",
+        "priorityWeight": 1.0,
+        "topic": "Privileged access"
+      },
+      {
+        "clause": "ITGC.AccessMgmt.SOD",
+        "priorityWeight": 1.0,
+        "topic": "Segregation of duties"
+      },
+      {
+        "clause": "ITGC.AccessMgmt.Review",
+        "priorityWeight": 0.7,
+        "topic": "Periodic access review"
+      },
+      {
+        "clause": "ITGC.ChangeMgmt.Authorization",
+        "priorityWeight": 1.0,
+        "topic": "Change authorised"
+      },
+      {
+        "clause": "ITGC.ChangeMgmt.Testing",
+        "priorityWeight": 1.0,
+        "topic": "Change tested"
+      },
+      {
+        "clause": "ITGC.ChangeMgmt.Approval",
+        "priorityWeight": 1.0,
+        "topic": "Change approved"
+      },
+      {
+        "clause": "ITGC.Operations.JobSchedule",
+        "priorityWeight": 0.7,
+        "topic": "Batch scheduling and monitoring"
+      },
+      {
+        "clause": "ITGC.Operations.Backup",
+        "priorityWeight": 1.0,
+        "topic": "Backup and restore"
+      },
+      {
+        "clause": "ITGC.Logging.Continuity",
+        "priorityWeight": 1.0,
+        "topic": "Audit trail completeness"
+      },
+      {
+        "clause": "ITGC.Logging.Review",
+        "priorityWeight": 0.7,
+        "topic": "Log review"
+      }
+    ],
+    "coverageSummary": {
+      "clauseCoveragePercent": 100.0,
+      "commonClauseCount": 12,
+      "coveredClauseCount": 12,
+      "offCommonListClauseCount": 9,
+      "priorityWeightedCoveragePercent": 92.34,
+      "stateCounts": {
+        "contributing-only": 1,
+        "covered-full": 10,
+        "covered-partial": 1,
+        "uncovered": 0
+      }
+    },
+    "effectiveFrom": "2007-11-15",
+    "endpoint": "/api/v1/compliance/regulations/sox-itgc@PCAOB-AS-2201.json",
+    "pendingChanges": [],
+    "sunsetOn": null,
+    "useCasesTaggingThisVersion": [
+      "12.2.17",
+      "16.4.1",
+      "22.11.102",
+      "22.11.95",
+      "22.11.99",
+      "22.12.1",
+      "22.12.10",
+      "22.12.11",
+      "22.12.12",
+      "22.12.13",
+      "22.12.14",
+      "22.12.15",
+      "22.12.16",
+      "22.12.17",
+      "22.12.18",
+      "22.12.19",
+      "22.12.2",
+      "22.12.20",
+      "22.12.21",
+      "22.12.22",
+      "22.12.23",
+      "22.12.24",
+      "22.12.25",
+      "22.12.26",
+      "22.12.27",
+      "22.12.28",
+      "22.12.29",
+      "22.12.3",
+      "22.12.30",
+      "22.12.31",
+      "22.12.32",
+      "22.12.33",
+      "22.12.34",
+      "22.12.35",
+      "22.12.36",
+      "22.12.37",
+      "22.12.38",
+      "22.12.39",
+      "22.12.4",
+      "22.12.40",
+      "22.12.5",
+      "22.12.6",
+      "22.12.7",
+      "22.12.8",
+      "22.12.9",
+      "22.35.1",
+      "22.35.2",
+      "22.35.4",
+      "22.40.1",
+      "22.40.2",
+      "22.40.3",
+      "22.40.4",
+      "22.40.5",
+      "22.41.5",
+      "22.42.1",
+      "22.42.3",
+      "22.42.4",
+      "22.45.3",
+      "22.47.2",
+      "22.47.4",
+      "22.48.1",
+      "22.48.2",
+      "22.48.3",
+      "22.48.4",
+      "22.48.5",
+      "22.49.3",
+      "22.6.55",
+      "22.9.8",
+      "7.1.13",
+      "7.1.21",
+      "7.1.40",
+      "9.5.15"
+    ],
+    "version": "PCAOB AS 2201"
+  }
+}

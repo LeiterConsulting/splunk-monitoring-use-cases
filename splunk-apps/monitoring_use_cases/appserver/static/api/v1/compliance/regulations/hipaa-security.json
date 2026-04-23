@@ -1,0 +1,1091 @@
+{
+  "aliases": [
+    "45 CFR 164 Subpart C",
+    "HIPAA",
+    "HIPAA Security Rule"
+  ],
+  "apiVersion": "v1",
+  "id": "hipaa-security",
+  "jurisdiction": [
+    "US"
+  ],
+  "name": "HIPAA Security Rule",
+  "shortName": "HIPAA Security",
+  "tags": [
+    "healthcare",
+    "phi"
+  ],
+  "tier": 1,
+  "versions": [
+    {
+      "authoritativeUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 4,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.308(a)(1)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.1",
+            "22.10.2",
+            "22.10.22",
+            "22.10.55"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Security management process"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.308(a)(3)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.4"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Workforce security"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.308(a)(4)",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Information access management"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 1,
+            "partial": 0
+          },
+          "clause": "§164.308(a)(5)",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.10.6",
+            "22.46.1"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "full",
+          "topic": "Security awareness and training"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "§164.308(a)(6)",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.10.7",
+            "22.39.1"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Security incident procedures"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 1,
+            "partial": 0
+          },
+          "clause": "§164.308(a)(7)",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.10.8",
+            "22.45.2"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "full",
+          "topic": "Contingency plan"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.308(a)(8)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.9"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "contributing",
+          "topic": "Evaluation"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.310(a)(1)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.31"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Facility access controls"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 1,
+            "partial": 1
+          },
+          "clause": "§164.310(d)(1)",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.10.29",
+            "22.49.1",
+            "22.49.2"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "full",
+          "topic": "Device and media controls"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 3,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.312(a)(1)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.21",
+            "22.10.24",
+            "22.10.25"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Access control"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 1,
+            "partial": 0
+          },
+          "clause": "§164.312(a)(2)(iv)",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.10.16",
+            "22.41.1"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "full",
+          "topic": "Encryption and decryption"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 2,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.312(b)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.17",
+            "22.10.36"
+          ],
+          "obligationSource": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312#p-164.312(b)",
+          "obligationText": "A covered entity or business associate must implement hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic protected health information.",
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Audit controls"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 2,
+            "full": 1,
+            "partial": 0
+          },
+          "clause": "§164.312(c)(1)",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.10.18",
+            "22.10.27",
+            "22.35.2"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "full",
+          "topic": "Integrity"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 3,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.312(d)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.19",
+            "22.10.23",
+            "22.10.42"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Person or entity authentication"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 3,
+            "full": 1,
+            "partial": 0
+          },
+          "clause": "§164.312(e)(1)",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.10.20",
+            "22.10.22",
+            "22.10.26",
+            "22.41.2"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "full",
+          "topic": "Transmission security"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.308(a)(1)(ii)(A)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.49"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.308(a)(1)(ii)(B)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.10"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.308(a)(1)(ii)(C)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.12"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.308(a)(1)(ii)(D)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.3"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.308(a)(3)(ii)(C)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.5"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.308(b)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.51"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.308(b)(1)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.11"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.308(b)(3)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.52"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 2,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.310(b)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.28",
+            "22.10.32"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.310(c)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.32"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.310(d)(2)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.30"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.312(a)(2)(i)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.13"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.312(a)(2)(ii)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.14"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.312(a)(2)(iii)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.15"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 2,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.402",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.44",
+            "22.10.48"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 2,
+            "full": 1,
+            "partial": 0
+          },
+          "clause": "§164.404",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.10.43",
+            "22.10.44",
+            "22.39.3"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "full",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.404(b)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.45"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.406(c)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.47"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 2,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.408",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.46",
+            "22.10.50"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.502(a)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.39"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 2,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.502(a)(1)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.35",
+            "22.10.40"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.502(a)(2)(ii)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.34"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 4,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.502(b)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.33",
+            "22.10.36",
+            "22.10.37",
+            "22.10.54"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 4,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.502(e)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.51",
+            "22.10.52",
+            "22.10.53",
+            "22.10.55"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.502(f)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.38"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.512(i)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.40"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.514(d)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.33"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.514(e)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.54"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.528",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.41"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.530(c)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.10.42"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        }
+      ],
+      "clauseExamples": [
+        "§164.308(a)(1)",
+        "§164.312(b)",
+        "§164.312(e)(1)",
+        "§164.308(a)(7)(ii)(D)",
+        "§164.402",
+        "§164.404(b)",
+        "§164.502(a)",
+        "§164.514(d)"
+      ],
+      "clauseGrammar": "^§164\\.(30[0-9]|31[0-9]|40[0-9]|41[0-9]|50[0-9]|51[0-9]|52[0-9]|53[0-9])(\\([a-z]\\))?(\\(\\d+\\))?(\\([ivx]+\\))?(\\([A-Z]\\))?$",
+      "clauseUrlTemplate": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-{section}#p-{clause}",
+      "clausesReferencedByCatalogue": [
+        "§164.308(a)(1)",
+        "§164.308(a)(1)(ii)(A)",
+        "§164.308(a)(1)(ii)(B)",
+        "§164.308(a)(1)(ii)(C)",
+        "§164.308(a)(1)(ii)(D)",
+        "§164.308(a)(3)",
+        "§164.308(a)(3)(ii)(C)",
+        "§164.308(a)(5)",
+        "§164.308(a)(6)",
+        "§164.308(a)(7)",
+        "§164.308(a)(8)",
+        "§164.308(b)",
+        "§164.308(b)(1)",
+        "§164.308(b)(3)",
+        "§164.310(a)(1)",
+        "§164.310(b)",
+        "§164.310(c)",
+        "§164.310(d)(1)",
+        "§164.310(d)(2)",
+        "§164.312(a)(1)",
+        "§164.312(a)(2)(i)",
+        "§164.312(a)(2)(ii)",
+        "§164.312(a)(2)(iii)",
+        "§164.312(a)(2)(iv)",
+        "§164.312(b)",
+        "§164.312(c)(1)",
+        "§164.312(d)",
+        "§164.312(e)(1)",
+        "§164.402",
+        "§164.404",
+        "§164.404(b)",
+        "§164.406(c)",
+        "§164.408",
+        "§164.502(a)",
+        "§164.502(a)(1)",
+        "§164.502(a)(2)(ii)",
+        "§164.502(b)",
+        "§164.502(e)",
+        "§164.502(f)",
+        "§164.512(i)",
+        "§164.514(d)",
+        "§164.514(e)",
+        "§164.528",
+        "§164.530(c)"
+      ],
+      "commonClauses": [
+        {
+          "clause": "§164.308(a)(1)",
+          "priorityWeight": 1.0,
+          "topic": "Security management process"
+        },
+        {
+          "clause": "§164.308(a)(3)",
+          "priorityWeight": 1.0,
+          "topic": "Workforce security"
+        },
+        {
+          "clause": "§164.308(a)(4)",
+          "priorityWeight": 1.0,
+          "topic": "Information access management"
+        },
+        {
+          "clause": "§164.308(a)(5)",
+          "priorityWeight": 0.7,
+          "topic": "Security awareness and training"
+        },
+        {
+          "clause": "§164.308(a)(6)",
+          "priorityWeight": 1.0,
+          "topic": "Security incident procedures"
+        },
+        {
+          "clause": "§164.308(a)(7)",
+          "priorityWeight": 1.0,
+          "topic": "Contingency plan"
+        },
+        {
+          "clause": "§164.308(a)(8)",
+          "priorityWeight": 0.7,
+          "topic": "Evaluation"
+        },
+        {
+          "clause": "§164.310(a)(1)",
+          "priorityWeight": 1.0,
+          "topic": "Facility access controls"
+        },
+        {
+          "clause": "§164.310(d)(1)",
+          "priorityWeight": 0.7,
+          "topic": "Device and media controls"
+        },
+        {
+          "clause": "§164.312(a)(1)",
+          "priorityWeight": 1.0,
+          "topic": "Access control"
+        },
+        {
+          "clause": "§164.312(a)(2)(iv)",
+          "priorityWeight": 0.7,
+          "topic": "Encryption and decryption"
+        },
+        {
+          "clause": "§164.312(b)",
+          "obligationSource": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312#p-164.312(b)",
+          "obligationText": "A covered entity or business associate must implement hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic protected health information.",
+          "priorityWeight": 1.0,
+          "topic": "Audit controls"
+        },
+        {
+          "clause": "§164.312(c)(1)",
+          "priorityWeight": 1.0,
+          "topic": "Integrity"
+        },
+        {
+          "clause": "§164.312(d)",
+          "priorityWeight": 1.0,
+          "topic": "Person or entity authentication"
+        },
+        {
+          "clause": "§164.312(e)(1)",
+          "priorityWeight": 1.0,
+          "topic": "Transmission security"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 93.33,
+        "commonClauseCount": 15,
+        "coveredClauseCount": 14,
+        "offCommonListClauseCount": 30,
+        "priorityWeightedCoveragePercent": 52.72,
+        "stateCounts": {
+          "contributing-only": 7,
+          "covered-full": 6,
+          "covered-partial": 1,
+          "uncovered": 1
+        }
+      },
+      "effectiveFrom": "2013-09-23",
+      "endpoint": "/api/v1/compliance/regulations/hipaa-security@2013-final.json",
+      "pendingChanges": [
+        {
+          "date": "2026-01-06",
+          "note": "HHS NPRM proposing Security Rule updates (cybersecurity requirements, MFA, encryption). Monitor federalregister.gov/d/2024-30983."
+        }
+      ],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [
+        "22.10.1",
+        "22.10.10",
+        "22.10.11",
+        "22.10.12",
+        "22.10.13",
+        "22.10.14",
+        "22.10.15",
+        "22.10.16",
+        "22.10.17",
+        "22.10.18",
+        "22.10.19",
+        "22.10.2",
+        "22.10.20",
+        "22.10.21",
+        "22.10.22",
+        "22.10.23",
+        "22.10.24",
+        "22.10.25",
+        "22.10.26",
+        "22.10.27",
+        "22.10.28",
+        "22.10.29",
+        "22.10.3",
+        "22.10.30",
+        "22.10.31",
+        "22.10.32",
+        "22.10.33",
+        "22.10.34",
+        "22.10.35",
+        "22.10.36",
+        "22.10.37",
+        "22.10.38",
+        "22.10.39",
+        "22.10.4",
+        "22.10.40",
+        "22.10.41",
+        "22.10.42",
+        "22.10.43",
+        "22.10.44",
+        "22.10.45",
+        "22.10.46",
+        "22.10.47",
+        "22.10.48",
+        "22.10.49",
+        "22.10.5",
+        "22.10.50",
+        "22.10.51",
+        "22.10.52",
+        "22.10.53",
+        "22.10.54",
+        "22.10.55",
+        "22.10.6",
+        "22.10.7",
+        "22.10.8",
+        "22.10.9",
+        "22.35.2",
+        "22.39.1",
+        "22.39.3",
+        "22.41.1",
+        "22.41.2",
+        "22.45.2",
+        "22.46.1",
+        "22.49.1",
+        "22.49.2"
+      ],
+      "version": "2013-final"
+    }
+  ]
+}

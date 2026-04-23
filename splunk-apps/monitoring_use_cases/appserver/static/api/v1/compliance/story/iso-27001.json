@@ -1,0 +1,2453 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.12.4.1",
+      "coverageState": "uncovered",
+      "coveringUcs": [],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": null,
+      "topic": "Event logging (2013)",
+      "version": "2013"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.12.4.2",
+      "coverageState": "uncovered",
+      "coveringUcs": [],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": null,
+      "topic": "Protection of log information (2013)",
+      "version": "2013"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.12.4.3",
+      "coverageState": "uncovered",
+      "coveringUcs": [],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": null,
+      "topic": "Administrator and operator logs (2013)",
+      "version": "2013"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.16.1.2",
+      "coverageState": "uncovered",
+      "coveringUcs": [],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": null,
+      "topic": "Reporting information security events (2013)",
+      "version": "2013"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.9.2.5",
+      "coverageState": "uncovered",
+      "coveringUcs": [],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": null,
+      "topic": "Review of user access rights (2013)",
+      "version": "2013"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "6.1",
+      "coverageState": "uncovered",
+      "coveringUcs": [],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": null,
+      "topic": "Risk assessment",
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "6.2",
+      "coverageState": "uncovered",
+      "coveringUcs": [],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": null,
+      "topic": "Information-security objectives",
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "7.2",
+      "coverageState": "uncovered",
+      "coveringUcs": [],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": null,
+      "topic": "Competence",
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "7.5",
+      "coverageState": "uncovered",
+      "coveringUcs": [],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": null,
+      "topic": "Documented information",
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "8.1",
+      "coverageState": "uncovered",
+      "coveringUcs": [],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": null,
+      "topic": "Operational planning",
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "8.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.9.7"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Information-security risk assessment",
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 4,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "9.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.9.10",
+        "22.9.6",
+        "22.9.7",
+        "22.9.9"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Monitoring, measurement, analysis, evaluation",
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "9.2",
+      "coverageState": "uncovered",
+      "coveringUcs": [],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": null,
+      "topic": "Internal audit",
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.10.1.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.12.4",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.13.1.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.6"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.15.1.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.7"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.5.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.9"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "A.5.15",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.40.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Access control",
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "A.5.18",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.40.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Access rights review",
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.5.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.10"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.5.23",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.13"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Information security in cloud services (2022 new)",
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.5.24",
+      "coverageState": "uncovered",
+      "coveringUcs": [],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": null,
+      "topic": "Incident management planning",
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.5.25",
+      "coverageState": "uncovered",
+      "coveringUcs": [],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": null,
+      "topic": "Assessment and decision on events",
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.5.29",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.14"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "A.5.3",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.48.1",
+        "22.6.8"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.5.30",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.15"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "A.5.33",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.49.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "A.5.35",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.47.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 5,
+        "full": 1,
+        "partial": 1
+      },
+      "clause": "A.5.36",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.47.1",
+        "22.47.5",
+        "22.6.16",
+        "22.9.1",
+        "22.9.2",
+        "22.9.3",
+        "22.9.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.5.7",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.11"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "contributing",
+      "topic": "Threat intelligence (2022 new)",
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.5.8",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.12"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.6.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.17"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "A.6.3",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.46.5",
+        "22.6.18"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.6.4",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.19"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.6.7",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.20"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.7.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.21"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.7.10",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.23"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.7.14",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.24"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.7.4",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.22"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.8.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.25"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.8.10",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.33"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.8.11",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.34"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.8.12",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.35"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Data leakage prevention",
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.8.13",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.36"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.8.14",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.37"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.8.15",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.38"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Logging",
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.8.16",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.1",
+        "22.6.39"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Monitoring activities",
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.8.17",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.40"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "contributing",
+      "topic": "Clock synchronisation",
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.8.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.26"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Privileged access rights",
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.8.2.3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.8.20",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.41"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.8.21",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.42"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.8.22",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.43"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.8.23",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.42"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "contributing",
+      "topic": "Web filtering (2022 new)",
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.8.24",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.44"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.8.25",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.45"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Secure development life cycle",
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.8.26",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.45"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.8.28",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.45"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "contributing",
+      "topic": "Secure coding (2022 new)",
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.8.3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.27"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "A.8.30",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.48.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.8.5",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.28"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.8.6",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.29"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.8.7",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.30"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 2,
+        "partial": 0
+      },
+      "clause": "A.8.8",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.43.1",
+        "22.43.4",
+        "22.6.31"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "A.8.9",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.42.5",
+        "22.6.32"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Configuration management (2022 new)",
+      "version": "2022"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A.9.2.5",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2022"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "15 of 28 common clauses are covered by the catalogue, with a priority-weighted coverage of 13.63% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 28,
+      "coveredClauseCount": 15,
+      "priorityWeightedCoveragePercent": 13.63,
+      "stateCounts": {
+        "contributing-only": 12,
+        "covered-full": 3,
+        "covered-partial": 0,
+        "uncovered": 13
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "A.5.15",
+        "killerUcId": "22.40.2",
+        "killerUcTitle": "Break-glass account usage review with mandatory post-use approval",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Access control",
+        "version": "2022",
+        "why": "Clause A.5.15 (Access control) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "A.5.18",
+        "killerUcId": "22.40.3",
+        "killerUcTitle": "Periodic access review SLA — stale certifications by control owner",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Access rights review",
+        "version": "2022",
+        "why": "Clause A.5.18 (Access rights review) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "A.8.9",
+        "killerUcId": "22.42.5",
+        "killerUcTitle": "Infrastructure-as-code drift — applied state diverges from merged plan",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Configuration management (2022 new)",
+        "version": "2022",
+        "why": "Clause A.8.9 (Configuration management (2022 new)) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "8.2",
+        "killerUcId": "22.9.7",
+        "killerUcTitle": "Compliance Trending — ISO 27001 Statement of Applicability Control Exception Burn-Down",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Information-security risk assessment",
+        "version": "2022",
+        "why": "Clause 8.2 (Information-security risk assessment) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "9.1",
+        "killerUcId": "22.9.10",
+        "killerUcTitle": "Compliance Trending — Weighted Compliance Posture Composite and Driver Attribution",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Monitoring, measurement, analysis, evaluation",
+        "version": "2022",
+        "why": "Clause 9.1 (Monitoring, measurement, analysis, evaluation) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": [
+      {
+        "clause": "A.12.4.1",
+        "mitigationNote": "No UC currently claims A.12.4.1 (Event logging (2013)). Candidates are tracked in docs/compliance-gaps.md until a UC is authored.",
+        "obligationText": null,
+        "priorityWeight": 1.0,
+        "topic": "Event logging (2013)",
+        "version": "2013"
+      },
+      {
+        "clause": "A.12.4.2",
+        "mitigationNote": "No UC currently claims A.12.4.2 (Protection of log information (2013)). Candidates are tracked in docs/compliance-gaps.md until a UC is authored.",
+        "obligationText": null,
+        "priorityWeight": 1.0,
+        "topic": "Protection of log information (2013)",
+        "version": "2013"
+      },
+      {
+        "clause": "A.16.1.2",
+        "mitigationNote": "No UC currently claims A.16.1.2 (Reporting information security events (2013)). Candidates are tracked in docs/compliance-gaps.md until a UC is authored.",
+        "obligationText": null,
+        "priorityWeight": 1.0,
+        "topic": "Reporting information security events (2013)",
+        "version": "2013"
+      }
+    ]
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "8.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.9.7",
+            "ucTitle": "Compliance Trending — ISO 27001 Statement of Applicability Control Exception Burn-Down"
+          }
+        ],
+        "topic": "Information-security risk assessment",
+        "version": "2022"
+      },
+      {
+        "clause": "9.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.9.7",
+            "ucTitle": "Compliance Trending — ISO 27001 Statement of Applicability Control Exception Burn-Down"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.9.9",
+            "ucTitle": "Compliance Trending — Regulatory Change Feed Impact Score on In-Scope Controls"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.9.10",
+            "ucTitle": "Compliance Trending — Weighted Compliance Posture Composite and Driver Attribution"
+          }
+        ],
+        "topic": "Monitoring, measurement, analysis, evaluation",
+        "version": "2022"
+      },
+      {
+        "clause": "A.5.15",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.40.2",
+            "ucTitle": "Break-glass account usage review with mandatory post-use approval"
+          }
+        ],
+        "topic": "Access control",
+        "version": "2022"
+      },
+      {
+        "clause": "A.5.18",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.40.3",
+            "ucTitle": "Periodic access review SLA — stale certifications by control owner"
+          }
+        ],
+        "topic": "Access rights review",
+        "version": "2022"
+      },
+      {
+        "clause": "A.5.23",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.13",
+            "ucTitle": "Cloud Shared Responsibility Control Coverage Map"
+          }
+        ],
+        "topic": "Information security in cloud services (2022 new)",
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.12",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.35",
+            "ucTitle": "Data Leakage Prevention — High Volume Print to PDF on HR Workstations"
+          }
+        ],
+        "topic": "Data leakage prevention",
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.15",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.38",
+            "ucTitle": "Logging — Forwarder Stopped or CrashLoop on Security-Relevant Hosts"
+          }
+        ],
+        "topic": "Logging",
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.16",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.1",
+            "ucTitle": "ISO 27001 Annex A Control Effectiveness Monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.39",
+            "ucTitle": "Monitoring Activities — SOC Queue Depth vs On-Shift Analyst Headcount"
+          }
+        ],
+        "topic": "Monitoring activities",
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.26",
+            "ucTitle": "Privileged Access — Sudo and RunAs Usage Outside PAM Session"
+          }
+        ],
+        "topic": "Privileged access rights",
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.25",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.45",
+            "ucTitle": "Secure SDLC, App Security Requirements, and Secure Coding Pipeline Gates"
+          }
+        ],
+        "topic": "Secure development life cycle",
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.9",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.42.5",
+            "ucTitle": "Infrastructure-as-code drift — applied state diverges from merged plan"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.32",
+            "ucTitle": "Configuration Management — Drift on CIS Hardening Parameters for Web Tier"
+          }
+        ],
+        "topic": "Configuration management (2022 new)",
+        "version": "2022"
+      },
+      {
+        "clause": "A.5.7",
+        "coverageState": "contributing-only",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.11",
+            "ucTitle": "Threat Intelligence Feed Freshness and STIX Object Ingest Gaps"
+          }
+        ],
+        "topic": "Threat intelligence (2022 new)",
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.17",
+        "coverageState": "contributing-only",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.40",
+            "ucTitle": "Clock Synchronization — Kerberos Clock Skew Related Authentication Failures"
+          }
+        ],
+        "topic": "Clock synchronisation",
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.23",
+        "coverageState": "contributing-only",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.42",
+            "ucTitle": "Web and Email Filtering — Denied High-Risk Categories Toward Young Domains"
+          }
+        ],
+        "topic": "Web filtering (2022 new)",
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.28",
+        "coverageState": "contributing-only",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.45",
+            "ucTitle": "Secure SDLC, App Security Requirements, and Secure Coding Pipeline Gates"
+          }
+        ],
+        "topic": "Secure coding (2022 new)",
+        "version": "2022"
+      },
+      {
+        "clause": "A.10.1.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.5",
+            "ucTitle": "ISO 27001 Cryptographic Key and Certificate Lifecycle Monitoring"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.12.4",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.2",
+            "ucTitle": "ISO 27001 Information Security Event Log Review Compliance"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.13.1.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.6",
+            "ucTitle": "ISO 27001 Network Security — Segmentation and Firewall Deny Baseline"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.15.1.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.7",
+            "ucTitle": "ISO 27001 Supplier IAM and SaaS Integration Change Surveillance"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.5.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.9",
+            "ucTitle": "ISMS Policy Acknowledgment and Version Drift in Confluence or SharePoint"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.5.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.10",
+            "ucTitle": "Security Role Changes vs RACI in ServiceNow CMDB Ownership"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.5.29",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.14",
+            "ucTitle": "Business Continuity — RTO Breach Signals from ITSI Service Degradation"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.5.3",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.8",
+            "ucTitle": "ISO 27001 Segregation of Duties — Privileged Splunk Knowledge Object Changes"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.48.1",
+            "ucTitle": "Segregation of duties — toxic role combinations in IAM"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.5.30",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.15",
+            "ucTitle": "ICT Readiness for BC — Backup Window Overruns vs RPO"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.5.33",
+        "coverageState": "covered-partial",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.49.3",
+            "ucTitle": "Litigation-hold override audit — holds applied/released without ticket"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.5.35",
+        "coverageState": "covered-partial",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.47.3",
+            "ucTitle": "Control owner attestation freshness"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.5.36",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.9.1",
+            "ucTitle": "Compliance Posture Score Trending"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.9.2",
+            "ucTitle": "Audit Finding Closure Rate Trending"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.9.3",
+            "ucTitle": "Control Effectiveness Trending"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.5.8",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.12",
+            "ucTitle": "Project Security Gate — Production Deploys Without Security CAB Tag"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.6.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.17",
+            "ucTitle": "Personnel Screening — Contractor Badge Activations Before Background Check Complete"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.6.3",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.46.5",
+            "ucTitle": "Developer data-handling training — prod-access engineers lacking training"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.18",
+            "ucTitle": "Security Awareness Completion Rate by Department"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.6.4",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.19",
+            "ucTitle": "Disciplinary Process Triggers — HR Case Codes Correlated with Security Incidents"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.6.7",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.20",
+            "ucTitle": "Remote Working — VPN Split Tunnel and Sensitive App Access"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.7.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.21",
+            "ucTitle": "Physical Perimeter — After-Hours Badge Swipes Without Matching Shift"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.7.10",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.23",
+            "ucTitle": "Removable Storage — USB Mount Events on Engineering Workstations"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.7.14",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.24",
+            "ucTitle": "Secure Disposal — Asset Decommission Wipe Confirmation Before CMDB Retire"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.7.4",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.22",
+            "ucTitle": "Physical Security Monitoring — Camera NVR Offline or Disk Full Events"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.25",
+            "ucTitle": "User Endpoint Patch Latency Beyond SLA"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.10",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.33",
+            "ucTitle": "Information Deletion — S3 Object Delete Storm Outside Retention Workflow"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.11",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.34",
+            "ucTitle": "Data Masking — Sampled PII Pattern Hits in Non-Production Test Indexes"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.13",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.36",
+            "ucTitle": "Information Backup — Immutable Backup Bucket Policy Change Attempts"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.14",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.37",
+            "ucTitle": "Redundancy of IT — Cluster Node Loss Events for Critical Databases"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.2.3",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.4",
+            "ucTitle": "ISO 27001 Information Labelling and Media Handling via DLP"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.20",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.41",
+            "ucTitle": "Network Security — East-West Firewall Deny Spike on Server VLAN"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.21",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.42",
+            "ucTitle": "Web and Email Filtering — Denied High-Risk Categories Toward Young Domains"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.22",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.43",
+            "ucTitle": "Network Segmentation — Cross-VLAN RDP Allowed by Mis-Tuned ACL"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.24",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.44",
+            "ucTitle": "Use of Cryptography — Weak Cipher Suites Negotiated on Public Load Balancer"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.26",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.45",
+            "ucTitle": "Secure SDLC, App Security Requirements, and Secure Coding Pipeline Gates"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.3",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.27",
+            "ucTitle": "Information Access Restriction — SharePoint Anonymous Link Creation Blocked vs Attempted"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.30",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.48.3",
+            "ucTitle": "Developer-to-production SoD — same developer submits AND approves merge"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.5",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.28",
+            "ucTitle": "Secure Authentication — Password Spray Pattern in Entra Sign-Ins"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.6",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.29",
+            "ucTitle": "Capacity Management — Disk Utilization Forecast Breach in 14 Days"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.7",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.30",
+            "ucTitle": "Malware Protection — AV Engine Disabled or Out of Date Events"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.8.8",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.43.1",
+            "ucTitle": "Critical vulnerability SLA tracker — unpatched 30+ days with exploited-in-the-wild indicator"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.31",
+            "ucTitle": "Technical Vulnerability Management — Exploitable CVEs with Public PoC on In-Scope Hosts"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.43.4",
+            "ucTitle": "Scanner coverage gap — regulated hosts without a recent scan"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      },
+      {
+        "clause": "A.9.2.5",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.3",
+            "ucTitle": "ISO 27001 Access Rights Review and Recertification"
+          }
+        ],
+        "topic": null,
+        "version": "2022"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "GLOBAL"
+  ],
+  "narrative": {
+    "evidencePack": "docs/evidence-packs/iso-27001.md",
+    "matchedBy": "manual-map",
+    "name": "ISO 27001:2022",
+    "primer": "docs/regulatory-primer.md#47-iso-270012022--information-security-management-system-global--t1",
+    "splunkValue": "We give the ISMS owner live evidence that Annex A controls are operating — access reviews, log monitoring, backups, change management, supplier risk, and incident response — so surveillance audits become a data pull rather than a month-long evidence hunt.",
+    "whatItIs": "The world's most widely recognised information-security management standard. An accredited auditor checks that the organisation has a working security programme — not just written policies — and awards certification every three years with yearly surveillance audits.",
+    "whoItAffects": "Any organisation seeking a recognised ISMS certification to demonstrate security maturity to customers, regulators, and insurers. Common in technology, finance, healthcare, and public-sector procurement bids."
+  },
+  "narrativeRef": "non-technical-view.js#cat-22/area/iso-27001-2022",
+  "regulationId": "iso-27001",
+  "regulationName": "ISO/IEC 27001 — ISMS",
+  "regulationShortName": "ISO 27001",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=iso-27001",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#iso-27001",
+    "evidencePack": "docs/evidence-packs/iso-27001.md",
+    "primerAnchor": "docs/regulatory-primer.md#47-iso-270012022-information-security-management-system-global-t1",
+    "regulation": "/api/v1/compliance/regulations/iso-27001.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 1
+}

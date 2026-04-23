@@ -1,0 +1,155 @@
+{
+  "aliases": [
+    "Cyber Resilience Act",
+    "EU CRA"
+  ],
+  "apiVersion": "v1",
+  "id": "eu-cra",
+  "jurisdiction": [
+    "EU"
+  ],
+  "name": "EU Cyber Resilience Act",
+  "shortName": "EU CRA",
+  "tags": [
+    "product-security",
+    "supply-chain"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://eur-lex.europa.eu/eli/reg/2024/2847/oj",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 1,
+            "partial": 5
+          },
+          "clause": "Art.13",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "12.1.4",
+            "12.3.10",
+            "12.3.2",
+            "22.43.5",
+            "22.44.5",
+            "3.1.5"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "full",
+          "topic": "Obligations of manufacturers"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 20,
+            "full": 1,
+            "partial": 1
+          },
+          "clause": "Art.14",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "12.3.2",
+            "22.23.1",
+            "22.23.10",
+            "22.23.11",
+            "22.23.12",
+            "22.23.13",
+            "22.23.14",
+            "22.23.15",
+            "22.23.16",
+            "22.23.17",
+            "22.23.18",
+            "22.23.19",
+            "22.23.2",
+            "22.23.20",
+            "22.23.3",
+            "22.23.4",
+            "22.23.5",
+            "22.23.6",
+            "22.23.7",
+            "22.23.8",
+            "22.23.9",
+            "3.1.5"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "full",
+          "topic": "Reporting of actively exploited vulnerabilities"
+        }
+      ],
+      "clauseExamples": [
+        "Art.13",
+        "Art.14"
+      ],
+      "clauseGrammar": "^Art\\.\\d+(\\(\\d+\\))?$",
+      "clauseUrlTemplate": "https://eur-lex.europa.eu/eli/reg/2024/2847/oj#{clause}",
+      "clausesReferencedByCatalogue": [
+        "Art.13",
+        "Art.14"
+      ],
+      "commonClauses": [
+        {
+          "clause": "Art.13",
+          "priorityWeight": 1.0,
+          "topic": "Obligations of manufacturers"
+        },
+        {
+          "clause": "Art.14",
+          "priorityWeight": 1.0,
+          "topic": "Reporting of actively exploited vulnerabilities"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 100.0,
+        "commonClauseCount": 2,
+        "coveredClauseCount": 2,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 100.0,
+        "stateCounts": {
+          "contributing-only": 0,
+          "covered-full": 2,
+          "covered-partial": 0,
+          "uncovered": 0
+        }
+      },
+      "effectiveFrom": "2027-12-11",
+      "endpoint": "/api/v1/compliance/regulations/eu-cra@Regulation--EU--2024-2847.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [
+        "12.1.4",
+        "12.3.10",
+        "12.3.2",
+        "22.23.1",
+        "22.23.10",
+        "22.23.11",
+        "22.23.12",
+        "22.23.13",
+        "22.23.14",
+        "22.23.15",
+        "22.23.16",
+        "22.23.17",
+        "22.23.18",
+        "22.23.19",
+        "22.23.2",
+        "22.23.20",
+        "22.23.3",
+        "22.23.4",
+        "22.23.5",
+        "22.23.6",
+        "22.23.7",
+        "22.23.8",
+        "22.23.9",
+        "22.43.5",
+        "22.44.5",
+        "3.1.5"
+      ],
+      "version": "Regulation (EU) 2024/2847"
+    }
+  ]
+}

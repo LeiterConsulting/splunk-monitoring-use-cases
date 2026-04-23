@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards#SR%202.9",
+  "clause": "SR 2.9",
+  "clauseId": "iec-62443@2013-ongoing#SR 2.9",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards#SR%202.9",
+      "controlObjective": "Evidence that IEC 62443 SR 2.9 (Audit storage capacity) is enforced — Splunk UC-22.15.23: Audit Index Growth vs Licensed Retention (Capacity Risk).",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.15.23' running on /services/data/indexes for ot_audit, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.15.23",
+      "ucTitle": "Audit Index Growth vs Licensed Retention (Capacity Risk)"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/iec-62443__2013-ongoing__SR%202.9.json",
+  "gapNote": "IEC 62443 clause SR 2.9 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 0.7,
+  "regulationId": "iec-62443",
+  "regulationName": "IEC 62443 Industrial Automation and Control Systems Security",
+  "regulationShortName": "IEC 62443",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/iec-62443.json",
+    "regulationVersion": "/api/v1/compliance/regulations/iec-62443@2013-ongoing.json",
+    "story": "/api/v1/compliance/story/iec-62443.json"
+  },
+  "tier": 2,
+  "topAssurance": "contributing",
+  "topic": "Audit storage capacity",
+  "version": "2013-ongoing"
+}

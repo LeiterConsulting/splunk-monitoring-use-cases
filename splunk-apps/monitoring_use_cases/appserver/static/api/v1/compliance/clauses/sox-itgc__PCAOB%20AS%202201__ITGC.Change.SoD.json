@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 1,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "ITGC.Change.SoD",
+  "clauseId": "sox-itgc@PCAOB AS 2201#ITGC.Change.SoD",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "Direct evidence of SoD deficiency in the deployment pipeline.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Detects violations of SOX-ITGC ITGC.Change.SoD — Splunk UC-22.48.3: Developer-to-production SoD — same developer submits AND approves merge.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.48.3' running on Git provider audit logs (GitHub, GitLab, Bitbucket), CI/CD deployment events., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "detects-violation-of",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.48.3",
+      "ucTitle": "Developer-to-production SoD — same developer submits AND approves merge"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/sox-itgc__PCAOB%20AS%202201__ITGC.Change.SoD.json",
+  "gapNote": "sox-itgc clause ITGC.Change.SoD has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "detects-violation-of": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "sox-itgc",
+  "regulationName": "sox-itgc",
+  "regulationShortName": "sox-itgc",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/sox-itgc.json",
+    "regulationVersion": "/api/v1/compliance/regulations/sox-itgc@PCAOB%20AS%202201.json",
+    "story": "/api/v1/compliance/story/sox-itgc.json"
+  },
+  "tier": null,
+  "topAssurance": "full",
+  "topic": null,
+  "version": "PCAOB AS 2201"
+}

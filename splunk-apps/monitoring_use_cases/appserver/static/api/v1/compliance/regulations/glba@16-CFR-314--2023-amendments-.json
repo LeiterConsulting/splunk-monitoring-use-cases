@@ -1,0 +1,48 @@
+{
+  "apiVersion": "v1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "glba",
+  "jurisdiction": [
+    "US"
+  ],
+  "name": "Gramm-Leach-Bliley Act — Safeguards Rule",
+  "shortName": "GLBA",
+  "tags": [
+    "financial-services",
+    "privacy"
+  ],
+  "tier": 2,
+  "version": {
+    "authoritativeUrl": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314",
+    "clauseExamples": [
+      "§314.4(b)",
+      "§314.4(c)(1)"
+    ],
+    "clauseGrammar": "^§314\\.\\d+\\([a-z]\\)(\\(\\d+\\))?$",
+    "clauseUrlTemplate": null,
+    "clausesReferencedByCatalogue": [],
+    "commonClauses": [
+      {
+        "clause": "§314.4(b)",
+        "priorityWeight": 1.0,
+        "topic": "Risk assessment"
+      },
+      {
+        "clause": "§314.4(c)(1)",
+        "priorityWeight": 1.0,
+        "topic": "Access controls"
+      },
+      {
+        "clause": "§314.4(d)(2)",
+        "priorityWeight": 1.0,
+        "topic": "Continuous monitoring"
+      }
+    ],
+    "effectiveFrom": "2023-06-09",
+    "endpoint": "/api/v1/compliance/regulations/glba@16-CFR-314--2023-amendments-.json",
+    "pendingChanges": [],
+    "sunsetOn": null,
+    "useCasesTaggingThisVersion": [],
+    "version": "16 CFR 314 (2023 amendments)"
+  }
+}

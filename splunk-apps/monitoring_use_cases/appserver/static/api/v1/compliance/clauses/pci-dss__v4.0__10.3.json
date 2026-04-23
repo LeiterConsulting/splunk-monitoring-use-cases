@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 1,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf#clause=10.3",
+  "clause": "10.3",
+  "clauseId": "pci-dss@v4.0#10.3",
+  "coverageState": "covered-full",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "PCI-DSS 10.3 Audit logs protected from modification — directly evidenced.",
+      "category": 22,
+      "clauseUrl": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf",
+      "controlObjective": "Evidence that PCI-DSS 10.3 (Audit logs protected from modification) is enforced — Splunk UC-22.11.99: PCI-DSS 10.3 — Audit log integrity: tampering/deletion detection on CDE log source.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.11.99' running on index=windows EventCode IN (1102,104); index=linux auditd log clears, syslog rotated-by-hand., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.11.99",
+      "ucTitle": "PCI-DSS 10.3 — Audit log integrity: tampering/deletion detection on CDE log source"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/pci-dss__v4.0__10.3.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "pci-dss",
+  "regulationName": "Payment Card Industry Data Security Standard",
+  "regulationShortName": "PCI DSS",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/pci-dss.json",
+    "regulationVersion": "/api/v1/compliance/regulations/pci-dss@v4.0.json",
+    "story": "/api/v1/compliance/story/pci-dss.json"
+  },
+  "tier": 1,
+  "topAssurance": "full",
+  "topic": "Audit logs protected from modification",
+  "version": "v4.0"
+}

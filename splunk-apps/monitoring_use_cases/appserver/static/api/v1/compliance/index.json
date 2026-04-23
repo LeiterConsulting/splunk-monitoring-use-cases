@@ -1,0 +1,26 @@
+{
+  "apiVersion": "v1",
+  "counts": {
+    "cat22UseCases": 1310,
+    "regulationsTotal": 66,
+    "useCasesTotal": 6447,
+    "useCasesWithCompliance": 1395
+  },
+  "docs": {
+    "legal": "/LEGAL.md",
+    "methodology": "/docs/coverage-methodology.md",
+    "versioning": "/docs/api-versioning.md"
+  },
+  "endpoints": {
+    "coverage": "/api/v1/compliance/coverage.json",
+    "gaps": "/api/v1/compliance/gaps.json",
+    "regulations": "/api/v1/compliance/regulations/index.json",
+    "ucs": "/api/v1/compliance/ucs/index.json"
+  },
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "regulationsVersion": "1.1.0",
+  "relatedEndpoints": {
+    "equipmentDetail": "/api/v1/equipment/{equipmentId}.json",
+    "equipmentIndex": "/api/v1/equipment/index.json"
+  }
+}

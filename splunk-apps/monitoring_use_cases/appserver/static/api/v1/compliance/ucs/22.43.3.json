@@ -1,0 +1,121 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/22.43.3.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/22.43.3.json",
+    "sourcePath": "content/cat-22-regulatory-compliance/UC-22.43.3.json"
+  },
+  "apiVersion": "v1",
+  "app": "Splunk Enterprise / Splunk Cloud Platform",
+  "cimModels": [
+    "Vulnerabilities"
+  ],
+  "compliance": [
+    {
+      "assurance": "full",
+      "assurance_rationale": "NIS2 risk-management measures include vulnerability handling on exposed assets.",
+      "clause": "Art.21(2)(e)",
+      "controlObjective": "Evidence that NIS2 Art.21(2)(e) (Security in acquisition, development and maintenance) is enforced — Splunk UC-22.43.3: Internet-facing asset × unpatched critical CVE.",
+      "evidenceArtifact": "Saved search 'UC-22.43.3' running on Vulnerability scanner feeds, external-facing inventory (Shodan, Censys, AWS ALB/NLB, cloud LBs)., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "nis2@Directive (EU) 2022/2555#Art.21(2)(e)",
+      "regulation": "NIS2",
+      "requires_sme_review": true,
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assurance": "full",
+      "assurance_rationale": "PCI 6.3.3 requires critical vulnerabilities be addressed within one month; Internet-facing is the worst case.",
+      "clause": "6.3.3",
+      "controlObjective": "Evidence that PCI-DSS 6.3.3 is enforced — Splunk UC-22.43.3: Internet-facing asset × unpatched critical CVE.",
+      "evidenceArtifact": "Saved search 'UC-22.43.3' running on Vulnerability scanner feeds, external-facing inventory (Shodan, Censys, AWS ALB/NLB, cloud LBs)., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "pci-dss@v4.0#6.3.3",
+      "regulation": "PCI-DSS",
+      "requires_sme_review": true,
+      "version": "v4.0"
+    },
+    {
+      "assurance": "full",
+      "assurance_rationale": "RA-5 vulnerability scanning and remediation; Internet-facing is a priority.",
+      "clause": "RA-5",
+      "controlObjective": "Evidence that NIST-800-53 RA-5 (Vulnerability scanning) is enforced — Splunk UC-22.43.3: Internet-facing asset × unpatched critical CVE.",
+      "evidenceArtifact": "Saved search 'UC-22.43.3' running on Vulnerability scanner feeds, external-facing inventory (Shodan, Censys, AWS ALB/NLB, cloud LBs)., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "nist-800-53@Rev. 5#RA-5",
+      "regulation": "NIST-800-53",
+      "requires_sme_review": true,
+      "version": "Rev. 5"
+    }
+  ],
+  "controlFamily": "regulation-specific",
+  "controlTest": {
+    "attackTechnique": "T1190",
+    "fixtureRef": "sample-data/uc-22.43.3-fixture.json",
+    "negativeScenario": "Host is on internal network; no alert (different UC handles internal).",
+    "positiveScenario": "Host web-01 is in the external-facing inventory and has CVE-2024-XXXX (CVSS 9.8) unpatched for 3 days; the UC fires."
+  },
+  "criticality": "critical",
+  "dataSources": "Vulnerability scanner feeds, external-facing inventory (Shodan, Censys, AWS ALB/NLB, cloud LBs).",
+  "description": "Any Internet-facing asset with an unpatched critical CVE is the single highest-priority audit and security finding; this UC keeps it at one-hour latency.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Splunk Enterprise / Splunk Cloud Platform.\n• Ensure the following data sources are available: Vulnerability scanner feeds, external-facing inventory (Shodan, Censys, AWS ALB/NLB, cloud LBs)..\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\n(1) Maintain external_asset_inventory.csv refreshed daily from LB config or external attack-surface tooling; (2) run hourly; (3) SOAR auto-escalates on hit.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=vuln earliest=-24h cvss_v3_base>=9.0\n| lookup external_asset_inventory.csv host OUTPUT external_exposed\n| where external_exposed=\"true\"\n| stats min(_time) as first_seen values(cve) as cves by host\n| eval age_days=round((now()-first_seen)/86400,0)\n| where age_days>0\n| table host cves age_days\n```\n\nUnderstanding this SPL\n\n**Internet-facing asset × unpatched critical CVE** — Eliminates the gap between scanner output and risk-based patch-SLA tracking.\n\nDocumented **Data sources**: Vulnerability scanner feeds, external-facing inventory (Shodan, Censys, AWS ALB/NLB, cloud LBs). **App/TA** (typical add-on context): Splunk Enterprise / Splunk Cloud Platform. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: vuln.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=vuln, time bounds. Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• Enriches events using `lookup` (lookup definition + optional OUTPUT fields).\n• Filters the current rows with `where external_exposed=\"true\"` — typically the threshold or rule expression for this monitoring goal.\n• `stats` rolls up events into metrics; results are split **by host** so each row reflects one combination of those dimensions (useful for per-host, per-user, or per-entity comparisons for this use case).\n• `eval` defines or adjusts **age_days** — often to normalize units, derive a ratio, or prepare for thresholds.\n• Filters the current rows with `where age_days>0` — typically the threshold or rule expression for this monitoring goal.\n• Pipeline stage (see **Internet-facing asset × unpatched critical CVE**): table host cves age_days\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Table of Internet-facing hosts with critical CVEs, bar chart of patch-age buckets, single-value 'Internet-facing hosts fully patched'.",
+  "detectionType": "Correlation",
+  "difficulty": "intermediate",
+  "evidence": "Saved search 'internet_facing_critical_cve' (hourly) intersects external-facing inventory with unpatched critical CVEs present on any such host.",
+  "exclusions": "Does NOT evaluate internal hosts (covered by 22.43.1 in aggregate).",
+  "grandmaExplanation": "Eliminates the gap between scanner output and risk-based patch-service promises tracking — so you can show exactly what is being watched and when something went wrong.",
+  "id": "22.43.3",
+  "implementation": "(1) Maintain external_asset_inventory.csv refreshed daily from LB config or external attack-surface tooling; (2) run hourly; (3) SOAR auto-escalates on hit.",
+  "knownFalsePositives": "Honeypot / deliberately-exposed research assets can be excluded via an inventory annotation.",
+  "lastReviewed": "2026-04-16",
+  "mitreAttack": [
+    "T1190"
+  ],
+  "monitoringType": [
+    "Compliance",
+    "Security"
+  ],
+  "owner": "CISO",
+  "references": [
+    {
+      "retrieved": "2026-04-16",
+      "title": "Directive (EU) 2022/2555 — NIS2",
+      "url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "PCI DSS v4.0",
+      "url": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "NIST SP 800-53 Rev. 5",
+      "url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "MITRE ATT&CK — T1190 Exploit Public-Facing Application",
+      "url": "https://attack.mitre.org/techniques/T1190/"
+    }
+  ],
+  "requiredFields": [
+    "host",
+    "cve",
+    "cvss_v3_base",
+    "_time"
+  ],
+  "reviewer": "N/A",
+  "securityDomain": "network",
+  "spl": "index=vuln earliest=-24h cvss_v3_base>=9.0\n| lookup external_asset_inventory.csv host OUTPUT external_exposed\n| where external_exposed=\"true\"\n| stats min(_time) as first_seen values(cve) as cves by host\n| eval age_days=round((now()-first_seen)/86400,0)\n| where age_days>0\n| table host cves age_days",
+  "splunkPillar": "Security",
+  "splunkVersions": [
+    "9.2+",
+    "Cloud"
+  ],
+  "status": "draft",
+  "subcategory": "22.43#1",
+  "title": "Internet-facing asset × unpatched critical CVE",
+  "value": "Eliminates the gap between scanner output and risk-based patch-SLA tracking.",
+  "visualization": "Table of Internet-facing hosts with critical CVEs, bar chart of patch-age buckets, single-value 'Internet-facing hosts fully patched'."
+}

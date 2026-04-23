@@ -1,0 +1,83 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 1,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-{section}#p-%C2%A7164.310(d)(1)",
+  "clause": "§164.310(d)(1)",
+  "clauseId": "hipaa-security@2013-final#§164.310(d)(1)",
+  "coverageState": "covered-full",
+  "coveringUcCount": 3,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "§164.310(d)(1) device and media controls — disposal evidence is required.",
+      "category": 22,
+      "clauseUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-{section}#p-%C2%A7164.310(d)(1)",
+      "controlObjective": "Evidence that HIPAA Security §164.310(d)(1) (Device and media controls) is enforced — Splunk UC-22.49.2: Disposal workflow completion — failed disposals requiring manual review.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.49.2' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.49.2",
+      "ucTitle": "Disposal workflow completion — failed disposals requiring manual review"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "§164.310(d)(1) device and media controls — disposal is included.",
+      "category": 22,
+      "clauseUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-{section}#p-%C2%A7164.310(d)(1)",
+      "controlObjective": "Evidence that HIPAA Security §164.310(d)(1) (Device and media controls) is enforced — Splunk UC-22.49.1: Retention execution evidence — records past retention still present.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.49.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.49.1",
+      "ucTitle": "Retention execution evidence — records past retention still present"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-{section}#p-%C2%A7164.310(d)(1)",
+      "controlObjective": "Evidence that HIPAA Security §164.310(d)(1) (Device and media controls) is enforced — Splunk UC-22.10.29: Device & Media Controls — USB Mass Storage on ePHI Workstations.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.10.29' running on WinEventLog:Microsoft-Windows-Kernel-PnP/Configuration 400, index=endpoint sourcetype=crowdstrike:usb if available, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.10.29",
+      "ucTitle": "Device & Media Controls — USB Mass Storage on ePHI Workstations"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/hipaa-security__2013-final__%C2%A7164.310%28d%29%281%29.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 3
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 0.7,
+  "regulationId": "hipaa-security",
+  "regulationName": "HIPAA Security Rule",
+  "regulationShortName": "HIPAA Security",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/hipaa-security.json",
+    "regulationVersion": "/api/v1/compliance/regulations/hipaa-security@2013-final.json",
+    "story": "/api/v1/compliance/story/hipaa-security.json"
+  },
+  "tier": 1,
+  "topAssurance": "full",
+  "topic": "Device and media controls",
+  "version": "2013-final"
+}

@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "§164.310(d)(2)(i)",
+  "clauseId": "hipaa@2013-final#§164.310(d)(2)(i)",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "HIPAA device/media disposal.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that HIPAA §164.310(d)(2)(i) is enforced — Splunk UC-22.49.5: Cryptographic erasure attestation — per-asset destruction evidence.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.49.5' running on Asset disposal workflow events, KMS key destruction events., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.49.5",
+      "ucTitle": "Cryptographic erasure attestation — per-asset destruction evidence"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/hipaa__2013-final__%C2%A7164.310%28d%29%282%29%28i%29.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "hipaa",
+  "regulationName": "hipaa",
+  "regulationShortName": "hipaa",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/hipaa.json",
+    "regulationVersion": "/api/v1/compliance/regulations/hipaa@2013-final.json",
+    "story": "/api/v1/compliance/story/hipaa.json"
+  },
+  "tier": null,
+  "topAssurance": "partial",
+  "topic": null,
+  "version": "2013-final"
+}

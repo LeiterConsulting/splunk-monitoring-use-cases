@@ -1,0 +1,75 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "https://fenre.github.io/splunk-monitoring-use-cases/ns/",
+    "Clause": "smuc:Clause",
+    "ComplianceMapping": "smuc:ComplianceMapping",
+    "ControlTest": "smuc:ControlTest",
+    "Equipment": "smuc:Equipment",
+    "EquipmentModel": "smuc:EquipmentModel",
+    "Regulation": "smuc:Regulation",
+    "UseCase": "smuc:UseCase",
+    "assurance": "smuc:assuranceLevel",
+    "assurance_rationale": "smuc:assuranceRationale",
+    "attackTechnique": "smuc:attackTechnique",
+    "attck": "https://attack.mitre.org/techniques/",
+    "clause": "smuc:clause",
+    "clauseUrl": {
+      "@id": "smuc:clauseUrl",
+      "@type": "@id"
+    },
+    "controlFamily": "smuc:controlFamily",
+    "controlTest": "smuc:controlTest",
+    "criticality": "smuc:criticality",
+    "d3fend": "https://d3fend.mitre.org/ontologies/d3fend.owl#",
+    "dataSources": "smuc:dataSource",
+    "description": "schema:description",
+    "detectionType": "smuc:detectionType",
+    "equipment": {
+      "@container": "@set",
+      "@id": "smuc:equipment"
+    },
+    "equipmentModels": {
+      "@container": "@set",
+      "@id": "smuc:equipmentModel"
+    },
+    "evidence": "smuc:evidence",
+    "exclusions": "smuc:exclusions",
+    "fixtureRef": {
+      "@id": "smuc:fixtureRef",
+      "@type": "@id"
+    },
+    "id": "@id",
+    "mitreAttack": {
+      "@container": "@set",
+      "@id": "smuc:mitreTechnique"
+    },
+    "mode": "smuc:assuranceMode",
+    "negativeScenario": "smuc:negativeScenario",
+    "nist": "https://pages.nist.gov/OSCAL/",
+    "oscal": "urn:oscal:",
+    "owner": "smuc:owner",
+    "positiveScenario": "smuc:positiveScenario",
+    "prerequisiteUseCases": {
+      "@container": "@set",
+      "@id": "smuc:requiresUseCase",
+      "@type": "@id"
+    },
+    "references": {
+      "@container": "@set",
+      "@id": "smuc:reference"
+    },
+    "regulation": {
+      "@id": "smuc:regulation",
+      "@type": "@id"
+    },
+    "schema": "http://schema.org/",
+    "securityDomain": "smuc:securityDomain",
+    "smuc": "https://fenre.github.io/splunk-monitoring-use-cases/ns/",
+    "spl": "smuc:splDetection",
+    "title": "schema:name",
+    "type": "@type",
+    "version": "smuc:version",
+    "wave": "smuc:implementationWave"
+  }
+}

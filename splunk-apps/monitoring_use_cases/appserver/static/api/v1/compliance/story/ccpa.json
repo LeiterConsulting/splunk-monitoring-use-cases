@@ -1,0 +1,320 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§1798.100",
+      "coverageState": "uncovered",
+      "coveringUcs": [],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": null,
+      "topic": "Consumer right to know",
+      "version": "CPRA (as amended)"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "§1798.100(b)",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.37.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "CPRA (as amended)"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "§1798.100(c)",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.49.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "CPRA (as amended)"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§1798.105",
+      "coverageState": "uncovered",
+      "coveringUcs": [],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": null,
+      "topic": "Consumer right to delete",
+      "version": "CPRA (as amended)"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "§1798.130(a)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.36.4",
+        "22.36.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "CPRA (as amended)"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§1798.135(b)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.37.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "CPRA (as amended)"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§1798.150",
+      "coverageState": "uncovered",
+      "coveringUcs": [],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": null,
+      "topic": "Private right of action for data breaches",
+      "version": "CPRA (as amended)"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "0 of 3 common clauses are covered by the catalogue, with a priority-weighted coverage of 0.0% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 0,
+      "priorityWeightedCoveragePercent": 0.0,
+      "stateCounts": {
+        "contributing-only": 0,
+        "covered-full": 0,
+        "covered-partial": 0,
+        "uncovered": 3
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "§1798.100(c)",
+        "killerUcId": "22.49.4",
+        "killerUcTitle": "Retention policy drift — system config vs policy catalogue",
+        "priorityWeight": null,
+        "topAssurance": "full",
+        "topic": null,
+        "version": "CPRA (as amended)",
+        "why": "Clause §1798.100(c) (topic not recorded) carries a regulator-assigned priority weight of None, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "§1798.100(b)",
+        "killerUcId": "22.37.4",
+        "killerUcTitle": "Purpose-limitation enforcement — processing not matching declared purpose",
+        "priorityWeight": null,
+        "topAssurance": "partial",
+        "topic": null,
+        "version": "CPRA (as amended)",
+        "why": "Clause §1798.100(b) (topic not recorded) carries a regulator-assigned priority weight of None, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "§1798.130(a)",
+        "killerUcId": "22.36.4",
+        "killerUcTitle": "DSAR identity-verification friction — failed-verification anomaly",
+        "priorityWeight": null,
+        "topAssurance": "partial",
+        "topic": null,
+        "version": "CPRA (as amended)",
+        "why": "Clause §1798.130(a) (topic not recorded) carries a regulator-assigned priority weight of None, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "§1798.135(b)",
+        "killerUcId": "22.37.5",
+        "killerUcTitle": "IAB TCF consent string mutation without user interaction",
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null,
+        "version": "CPRA (as amended)",
+        "why": "Clause §1798.135(b) (topic not recorded) carries a regulator-assigned priority weight of None, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": [
+      {
+        "clause": "§1798.100",
+        "mitigationNote": "No UC currently claims §1798.100 (Consumer right to know). Candidates are tracked in docs/compliance-gaps.md until a UC is authored.",
+        "obligationText": null,
+        "priorityWeight": 1.0,
+        "topic": "Consumer right to know",
+        "version": "CPRA (as amended)"
+      },
+      {
+        "clause": "§1798.105",
+        "mitigationNote": "No UC currently claims §1798.105 (Consumer right to delete). Candidates are tracked in docs/compliance-gaps.md until a UC is authored.",
+        "obligationText": null,
+        "priorityWeight": 1.0,
+        "topic": "Consumer right to delete",
+        "version": "CPRA (as amended)"
+      },
+      {
+        "clause": "§1798.150",
+        "mitigationNote": "No UC currently claims §1798.150 (Private right of action for data breaches). Candidates are tracked in docs/compliance-gaps.md until a UC is authored.",
+        "obligationText": null,
+        "priorityWeight": 0.7,
+        "topic": "Private right of action for data breaches",
+        "version": "CPRA (as amended)"
+      }
+    ]
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "§1798.100(b)",
+        "coverageState": "covered-partial",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.37.4",
+            "ucTitle": "Purpose-limitation enforcement — processing not matching declared purpose"
+          }
+        ],
+        "topic": null,
+        "version": "CPRA (as amended)"
+      },
+      {
+        "clause": "§1798.100(c)",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.49.4",
+            "ucTitle": "Retention policy drift — system config vs policy catalogue"
+          }
+        ],
+        "topic": null,
+        "version": "CPRA (as amended)"
+      },
+      {
+        "clause": "§1798.130(a)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.36.4",
+            "ucTitle": "DSAR identity-verification friction — failed-verification anomaly"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.36.5",
+            "ucTitle": "DSAR request-type mix anomaly — zero-deletion skew indicating broken workflow"
+          }
+        ],
+        "topic": null,
+        "version": "CPRA (as amended)"
+      },
+      {
+        "clause": "§1798.135(b)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.37.5",
+            "ucTitle": "IAB TCF consent string mutation without user interaction"
+          }
+        ],
+        "topic": null,
+        "version": "CPRA (as amended)"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "US-CA"
+  ],
+  "narrative": null,
+  "narrativeRef": null,
+  "regulationId": "ccpa",
+  "regulationName": "California Consumer Privacy Act / CPRA",
+  "regulationShortName": "CCPA/CPRA",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=ccpa",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#ccpa",
+    "evidencePack": null,
+    "primerAnchor": "docs/regulatory-primer.md#52-ccpa-cpra-gdpr-mapped-mode",
+    "regulation": "/api/v1/compliance/regulations/ccpa.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

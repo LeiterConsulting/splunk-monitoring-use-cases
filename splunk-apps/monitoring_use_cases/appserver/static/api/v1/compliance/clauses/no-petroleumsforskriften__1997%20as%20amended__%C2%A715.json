@@ -1,0 +1,113 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 5,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://lovdata.no/dokument/SF/forskrift/1997-06-27-653",
+  "clause": "§15",
+  "clauseId": "no-petroleumsforskriften@1997 as amended#§15",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 5,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'PSA' → '§15'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://lovdata.no/dokument/SF/forskrift/1997-06-27-653",
+      "controlObjective": "Evidence that NO Petroleumsforskriften §15 (Health, safety and environmental (HSE) management requirements) is enforced — Splunk UC-22.26.11: Offshore platform system monitoring.",
+      "criticality": "low",
+      "evidenceArtifact": "Saved search 'UC-22.26.11' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.26.11",
+      "ucTitle": "Offshore platform system monitoring"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'Petroleumsforskriften' → '§15'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://lovdata.no/dokument/SF/forskrift/1997-06-27-653",
+      "controlObjective": "Evidence that NO Petroleumsforskriften §15 (Health, safety and environmental (HSE) management requirements) is enforced — Splunk UC-22.26.12: Safety-critical system integrity.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.26.12' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.26.12",
+      "ucTitle": "Safety-critical system integrity"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'PSA' → '§15'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://lovdata.no/dokument/SF/forskrift/1997-06-27-653",
+      "controlObjective": "Evidence that NO Petroleumsforskriften §15 (Health, safety and environmental (HSE) management requirements) is enforced — Splunk UC-22.26.13: PSA compliance evidence.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.26.13' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.26.13",
+      "ucTitle": "PSA compliance evidence"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'HSE' → '§15'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://lovdata.no/dokument/SF/forskrift/1997-06-27-653",
+      "controlObjective": "Evidence that NO Petroleumsforskriften §15 (Health, safety and environmental (HSE) management requirements) is enforced — Splunk UC-22.26.14: HSE system audit trails.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.26.14' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.26.14",
+      "ucTitle": "HSE system audit trails"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'Petroleumsforskriften' → '§15'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://lovdata.no/dokument/SF/forskrift/1997-06-27-653",
+      "controlObjective": "Evidence that NO Petroleumsforskriften §15 (Health, safety and environmental (HSE) management requirements) is enforced — Splunk UC-22.26.15: Petroleum facility access control.",
+      "criticality": "low",
+      "evidenceArtifact": "Saved search 'UC-22.26.15' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.26.15",
+      "ucTitle": "Petroleum facility access control"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/no-petroleumsforskriften__1997%20as%20amended__%C2%A715.json",
+  "gapNote": "NO Petroleumsforskriften clause §15 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 5
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "no-petroleumsforskriften",
+  "regulationName": "Norwegian Petroleumsforskriften (Petroleum Safety regulation)",
+  "regulationShortName": "NO Petroleumsforskriften",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/no-petroleumsforskriften.json",
+    "regulationVersion": "/api/v1/compliance/regulations/no-petroleumsforskriften@1997%20as%20amended.json",
+    "story": "/api/v1/compliance/story/no-petroleumsforskriften.json"
+  },
+  "tier": 2,
+  "topAssurance": "contributing",
+  "topic": "Health, safety and environmental (HSE) management requirements",
+  "version": "1997 as amended"
+}

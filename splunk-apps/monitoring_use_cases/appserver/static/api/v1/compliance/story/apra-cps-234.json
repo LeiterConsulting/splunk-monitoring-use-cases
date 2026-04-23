@@ -1,0 +1,257 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "15",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "1.2.9",
+        "1.3.4",
+        "22.30.21"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "contributing",
+      "topic": "Policy framework",
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 9,
+        "full": 0,
+        "partial": 3
+      },
+      "clause": "23",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "16.1.20",
+        "16.3.6",
+        "22.30.19",
+        "22.30.20",
+        "22.30.23",
+        "22.30.24",
+        "22.30.25",
+        "22.31.14",
+        "22.31.15",
+        "22.31.17",
+        "6.3.1",
+        "6.3.23"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Incident management",
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 2
+      },
+      "clause": "36",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "16.1.20",
+        "16.3.6",
+        "22.30.22",
+        "22.31.16"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Notification of incidents",
+      "version": "current"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "3 of 3 common clauses are covered by the catalogue, with a priority-weighted coverage of 43.52% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 3,
+      "priorityWeightedCoveragePercent": 43.52,
+      "stateCounts": {
+        "contributing-only": 1,
+        "covered-full": 0,
+        "covered-partial": 2,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "23",
+        "killerUcId": "16.1.20",
+        "killerUcTitle": "Major Incident Post-Mortem Compliance",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Incident management",
+        "version": "current",
+        "why": "Clause 23 (Incident management) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "36",
+        "killerUcId": "16.1.20",
+        "killerUcTitle": "Major Incident Post-Mortem Compliance",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Notification of incidents",
+        "version": "current",
+        "why": "Clause 36 (Notification of incidents) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "15",
+        "killerUcId": "1.2.9",
+        "killerUcTitle": "Windows Update Compliance",
+        "priorityWeight": 0.7,
+        "topAssurance": "contributing",
+        "topic": "Policy framework",
+        "version": "current",
+        "why": "Clause 15 (Policy framework) carries a regulator-assigned priority weight of 0.7, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "23",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "6.3.1",
+            "ucTitle": "Backup Job Success Rate"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "6.3.23",
+            "ucTitle": "Immutable Backup and Ransomware Recovery Readiness"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.30.20",
+            "ucTitle": "Information asset classification drift detection"
+          }
+        ],
+        "topic": "Incident management",
+        "version": "current"
+      },
+      {
+        "clause": "36",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.31.16",
+            "ucTitle": "Incident notification workflow within regulatory expectations"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "16.1.20",
+            "ucTitle": "Major Incident Post-Mortem Compliance"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "16.3.6",
+            "ucTitle": "Major Incident and Post-Mortem Tracking"
+          }
+        ],
+        "topic": "Notification of incidents",
+        "version": "current"
+      },
+      {
+        "clause": "15",
+        "coverageState": "contributing-only",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.30.21",
+            "ucTitle": "Policy framework compliance monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "1.2.9",
+            "ucTitle": "Windows Update Compliance"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "1.3.4",
+            "ucTitle": "Software Update Compliance"
+          }
+        ],
+        "topic": "Policy framework",
+        "version": "current"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "AU"
+  ],
+  "narrative": null,
+  "narrativeRef": null,
+  "regulationId": "apra-cps-234",
+  "regulationName": "APRA CPS 234 Information Security",
+  "regulationShortName": "APRA CPS 234",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=apra-cps-234",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#apra-cps-234",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/apra-cps-234.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

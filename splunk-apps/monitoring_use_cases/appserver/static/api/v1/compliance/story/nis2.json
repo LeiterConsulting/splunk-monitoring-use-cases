@@ -1,0 +1,1149 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.14",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.2.44"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.2(1)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.2.31"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.20",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.2.20",
+        "22.2.41",
+        "22.2.42"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Governance",
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.21(2)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.2.21",
+        "22.2.22",
+        "22.2.32"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 5,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.21(2)(a)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.2.18",
+        "22.2.26",
+        "22.2.36",
+        "22.2.37",
+        "22.2.6"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Risk analysis and information-system security policies",
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "Art.21(2)(b)",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.2.23",
+        "22.46.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Incident handling",
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 4,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "Art.21(2)(c)",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.2.17",
+        "22.2.24",
+        "22.2.4",
+        "22.2.40",
+        "22.45.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Business continuity and crisis management",
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 1,
+        "partial": 4
+      },
+      "clause": "Art.21(2)(d)",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.2.16",
+        "22.2.2",
+        "22.2.25",
+        "22.3.42",
+        "22.43.5",
+        "22.44.1",
+        "22.44.4",
+        "22.44.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Supply-chain security",
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 4,
+        "full": 1,
+        "partial": 1
+      },
+      "clause": "Art.21(2)(e)",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.2.15",
+        "22.2.27",
+        "22.2.3",
+        "22.2.38",
+        "22.43.1",
+        "22.43.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Security in acquisition, development and maintenance",
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.21(2)(f)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.2.39",
+        "22.2.43",
+        "22.2.9"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "contributing",
+      "topic": "Policies and procedures effectiveness",
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 1,
+        "partial": 1
+      },
+      "clause": "Art.21(2)(g)",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.2.10",
+        "22.2.28",
+        "22.46.1",
+        "22.46.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "full",
+      "topic": "Cyber-hygiene and training",
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "Art.21(2)(h)",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.2.11",
+        "22.2.29",
+        "22.41.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Cryptography and encryption",
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 4,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.21(2)(i)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.2.13",
+        "22.2.14",
+        "22.2.30",
+        "22.2.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Human resources and access control",
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.21(2)(j)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.2.12"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "MFA and secure communications",
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 4,
+        "full": 3,
+        "partial": 0
+      },
+      "clause": "Art.23",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.2.1",
+        "22.2.33",
+        "22.2.45",
+        "22.3.44",
+        "22.39.1",
+        "22.39.2",
+        "22.9.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Reporting obligations",
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.23(1)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.39.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.23(2)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.2.7"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.23(3)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.2.19",
+        "22.2.34"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "Art.23(4)",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.2.8",
+        "22.39.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.32",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.2.35"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.33",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.2.35"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Directive (EU) 2022/2555"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "12 of 12 common clauses are covered by the catalogue, with a priority-weighted coverage of 60.31% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 12,
+      "coveredClauseCount": 12,
+      "priorityWeightedCoveragePercent": 60.31,
+      "stateCounts": {
+        "contributing-only": 5,
+        "covered-full": 5,
+        "covered-partial": 2,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "Art.21(2)(d)",
+        "killerUcId": "22.2.16",
+        "killerUcTitle": "NIS2 Supply Chain Third-Party Risk Continuous Monitoring",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Supply-chain security",
+        "version": "Directive (EU) 2022/2555",
+        "why": "Clause Art.21(2)(d) (Supply-chain security) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "Art.21(2)(e)",
+        "killerUcId": "22.2.15",
+        "killerUcTitle": "NIS2 Secure System Acquisition and Development Lifecycle",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Security in acquisition, development and maintenance",
+        "version": "Directive (EU) 2022/2555",
+        "why": "Clause Art.21(2)(e) (Security in acquisition, development and maintenance) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "Art.21(2)(h)",
+        "killerUcId": "22.2.11",
+        "killerUcTitle": "NIS2 Cryptography and Encryption Policy Monitoring",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Cryptography and encryption",
+        "version": "Directive (EU) 2022/2555",
+        "why": "Clause Art.21(2)(h) (Cryptography and encryption) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "Art.23",
+        "killerUcId": "22.2.1",
+        "killerUcTitle": "NIS2 Incident Detection and 24-Hour Early Warning Reporting",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Reporting obligations",
+        "version": "Directive (EU) 2022/2555",
+        "why": "Clause Art.23 (Reporting obligations) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "Art.21(2)(b)",
+        "killerUcId": "22.2.23",
+        "killerUcTitle": "NIS2 Incident Handling Procedure Adherence and Playbook Execution",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Incident handling",
+        "version": "Directive (EU) 2022/2555",
+        "why": "Clause Art.21(2)(b) (Incident handling) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "Art.20",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.20",
+            "ucTitle": "NIS2 Management Body Accountability and Governance Evidence"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.41",
+            "ucTitle": "NIS2 Management Body Cybersecurity Training Evidence"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.42",
+            "ucTitle": "NIS2 Board-Level Cyber Risk Reporting Distribution Audit"
+          }
+        ],
+        "topic": "Governance",
+        "version": "Directive (EU) 2022/2555"
+      },
+      {
+        "clause": "Art.21(2)(a)",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.6",
+            "ucTitle": "NIS2 Risk Analysis and Information System Security Policy Evidence"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.18",
+            "ucTitle": "NIS2 Network Security Monitoring and Anomaly Detection"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.26",
+            "ucTitle": "NIS2 Network Security Monitoring Coverage by Segment"
+          }
+        ],
+        "topic": "Risk analysis and information-system security policies",
+        "version": "Directive (EU) 2022/2555"
+      },
+      {
+        "clause": "Art.21(2)(b)",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.23",
+            "ucTitle": "NIS2 Incident Handling Procedure Adherence and Playbook Execution"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.46.4",
+            "ucTitle": "Tabletop rehearsal evidence — IR plan exercise frequency"
+          }
+        ],
+        "topic": "Incident handling",
+        "version": "Directive (EU) 2022/2555"
+      },
+      {
+        "clause": "Art.21(2)(c)",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.4",
+            "ucTitle": "NIS2 Business Continuity and Crisis Management Monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.17",
+            "ucTitle": "NIS2 Backup Management and Disaster Recovery Verification"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.24",
+            "ucTitle": "NIS2 Business Continuity and ICT Continuity Evidence"
+          }
+        ],
+        "topic": "Business continuity and crisis management",
+        "version": "Directive (EU) 2022/2555"
+      },
+      {
+        "clause": "Art.21(2)(d)",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.2",
+            "ucTitle": "NIS2 Supply Chain Security Monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.16",
+            "ucTitle": "NIS2 Supply Chain Third-Party Risk Continuous Monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.25",
+            "ucTitle": "NIS2 Supply Chain Security Assessment Coverage"
+          }
+        ],
+        "topic": "Supply-chain security",
+        "version": "Directive (EU) 2022/2555"
+      },
+      {
+        "clause": "Art.21(2)(e)",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.3",
+            "ucTitle": "NIS2 Vulnerability Disclosure and Patch Management Tracking"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.43.1",
+            "ucTitle": "Critical vulnerability SLA tracker — unpatched 30+ days with exploited-in-the-wild indicator"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.43.3",
+            "ucTitle": "Internet-facing asset × unpatched critical CVE"
+          }
+        ],
+        "topic": "Security in acquisition, development and maintenance",
+        "version": "Directive (EU) 2022/2555"
+      },
+      {
+        "clause": "Art.21(2)(h)",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.11",
+            "ucTitle": "NIS2 Cryptography and Encryption Policy Monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.29",
+            "ucTitle": "NIS2 Cryptography Policy Compliance — TLS and Certificate Posture"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.41.2",
+            "ucTitle": "Certificate / TLS posture — weak cipher and expired-cert detection"
+          }
+        ],
+        "topic": "Cryptography and encryption",
+        "version": "Directive (EU) 2022/2555"
+      },
+      {
+        "clause": "Art.21(2)(i)",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.5",
+            "ucTitle": "NIS2 Network and Information Systems Access Control Audit"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.13",
+            "ucTitle": "NIS2 Asset Management and Configuration Baseline"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.14",
+            "ucTitle": "NIS2 Human Resources Security — Joiner/Mover/Leaver Process"
+          }
+        ],
+        "topic": "Human resources and access control",
+        "version": "Directive (EU) 2022/2555"
+      },
+      {
+        "clause": "Art.21(2)(j)",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.12",
+            "ucTitle": "NIS2 Multi-Factor Authentication and Secure Communications"
+          }
+        ],
+        "topic": "MFA and secure communications",
+        "version": "Directive (EU) 2022/2555"
+      },
+      {
+        "clause": "Art.23",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.1",
+            "ucTitle": "NIS2 Incident Detection and 24-Hour Early Warning Reporting"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.33",
+            "ucTitle": "NIS2 Incident Reporting Timeline Compliance (24h Early Warning / 72h Notification)"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.45",
+            "ucTitle": "NIS2 CSIRT Notification Compliance and Channel Health"
+          }
+        ],
+        "topic": "Reporting obligations",
+        "version": "Directive (EU) 2022/2555"
+      },
+      {
+        "clause": "Art.21(2)(f)",
+        "coverageState": "contributing-only",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.39",
+            "ucTitle": "NIS2 OT Incident Detection — Process and Protocol Anomalies"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.9",
+            "ucTitle": "NIS2 Effectiveness Assessment of Cybersecurity Measures"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.43",
+            "ucTitle": "NIS2 Annual Security Assessment Completion Tracking"
+          }
+        ],
+        "topic": "Policies and procedures effectiveness",
+        "version": "Directive (EU) 2022/2555"
+      },
+      {
+        "clause": "Art.21(2)(g)",
+        "coverageState": "covered-full",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.28",
+            "ucTitle": "NIS2 Cyber Hygiene Practices — Baseline Control Compliance"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.10",
+            "ucTitle": "NIS2 Cyber Hygiene and Training Compliance"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.46.1",
+            "ucTitle": "Mandatory security training — completion SLA by role"
+          }
+        ],
+        "topic": "Cyber-hygiene and training",
+        "version": "Directive (EU) 2022/2555"
+      },
+      {
+        "clause": "Art.14",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.44",
+            "ucTitle": "NIS2 Cooperation Group and Sector Information Sharing Participation"
+          }
+        ],
+        "topic": null,
+        "version": "Directive (EU) 2022/2555"
+      },
+      {
+        "clause": "Art.2(1)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.31",
+            "ucTitle": "NIS2 Entity Classification Validation (Essential vs Important)"
+          }
+        ],
+        "topic": null,
+        "version": "Directive (EU) 2022/2555"
+      },
+      {
+        "clause": "Art.21(2)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.21",
+            "ucTitle": "NIS2 Risk Analysis Evidence for Essential Entities"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.22",
+            "ucTitle": "NIS2 Risk Analysis Evidence for Important Entities"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.32",
+            "ucTitle": "NIS2 Proportional Security Measure Verification by Tier"
+          }
+        ],
+        "topic": null,
+        "version": "Directive (EU) 2022/2555"
+      },
+      {
+        "clause": "Art.23(1)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.39.5",
+            "ucTitle": "Regulator-portal authentication failure during submission window"
+          }
+        ],
+        "topic": null,
+        "version": "Directive (EU) 2022/2555"
+      },
+      {
+        "clause": "Art.23(2)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.7",
+            "ucTitle": "NIS2 72-Hour Incident Notification Readiness"
+          }
+        ],
+        "topic": null,
+        "version": "Directive (EU) 2022/2555"
+      },
+      {
+        "clause": "Art.23(3)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.19",
+            "ucTitle": "NIS2 Cross-Border Incident Impact Assessment"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.34",
+            "ucTitle": "NIS2 Cross-Border Incident Coordination Task Tracking"
+          }
+        ],
+        "topic": null,
+        "version": "Directive (EU) 2022/2555"
+      },
+      {
+        "clause": "Art.23(4)",
+        "coverageState": "covered-partial",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.8",
+            "ucTitle": "NIS2 One-Month Final Incident Report Tracking"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.39.4",
+            "ucTitle": "Cross-regulator consistency — divergent material facts across submissions"
+          }
+        ],
+        "topic": null,
+        "version": "Directive (EU) 2022/2555"
+      },
+      {
+        "clause": "Art.32",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.35",
+            "ucTitle": "NIS2 Supervisory Compliance Evidence Pack Readiness"
+          }
+        ],
+        "topic": null,
+        "version": "Directive (EU) 2022/2555"
+      },
+      {
+        "clause": "Art.33",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.2.35",
+            "ucTitle": "NIS2 Supervisory Compliance Evidence Pack Readiness"
+          }
+        ],
+        "topic": null,
+        "version": "Directive (EU) 2022/2555"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "EU"
+  ],
+  "narrative": {
+    "evidencePack": "docs/evidence-packs/nis2.md",
+    "matchedBy": "manual-map",
+    "name": "NIS2 compliance",
+    "primer": "docs/regulatory-primer.md#410-nis2--network-and-information-security-directive-2-eu--t1",
+    "splunkValue": "We start the 24-hour early-warning clock the moment an incident is detected, capture supply-chain risk telemetry, evidence MFA and patching compliance, and produce board-level dashboards that demonstrate the Article 21 risk-management measures are working.",
+    "whatItIs": "The EU's updated cybersecurity law for important and essential service providers. It raises the bar on risk management, incident reporting, and personal board-member accountability for cyber governance.",
+    "whoItAffects": "Operators in 18 sectors including energy, transport, banking, healthcare, water, digital infrastructure, public administration, and cloud / data-centre providers in the EU. Medium and large entities are automatically in scope."
+  },
+  "narrativeRef": "non-technical-view.js#cat-22/area/nis2-compliance",
+  "regulationId": "nis2",
+  "regulationName": "EU NIS2 Directive",
+  "regulationShortName": "NIS2",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=nis2",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#nis2",
+    "evidencePack": "docs/evidence-packs/nis2.md",
+    "primerAnchor": "docs/regulatory-primer.md#410-nis2-network-and-information-security-directive-2-eu-t1",
+    "regulation": "/api/v1/compliance/regulations/nis2.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 1
+}

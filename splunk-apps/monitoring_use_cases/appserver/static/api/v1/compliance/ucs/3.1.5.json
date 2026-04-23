@@ -1,0 +1,77 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/3.1.5.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/3.1.5.json",
+    "sourcePath": "content/cat-03-containers-orchestration/UC-3.1.5.json"
+  },
+  "apiVersion": "v1",
+  "app": "Custom input (Trivy, Snyk, Grype JSON output)",
+  "cimModels": [
+    "N/A"
+  ],
+  "compliance": [
+    {
+      "assurance": "partial",
+      "assurance_rationale": "ASD Essential Eight E8.06 Patch operating systems — container image scanning supplies the OS/container patch-evidence for the E8 patching strategy.",
+      "clause": "E8.06",
+      "clauseUrl": "https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model",
+      "controlObjective": "Evidence that ASD E8 E8.06 (Patch operating systems) is enforced — Splunk UC-3.1.5: Image Vulnerability Scanning.",
+      "evidenceArtifact": "Saved search 'UC-3.1.5' running on JSON scan results from vulnerability scanners, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "asd-e8@Nov 2023#E8.06",
+      "regulation": "ASD E8",
+      "requires_sme_review": true,
+      "version": "Nov 2023"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "EU CRA Art.13 Obligations of manufacturers — image vulnerability scanning evidences vulnerability-handling obligations for product containers.",
+      "clause": "Art.13",
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2024/2847/oj",
+      "controlObjective": "Evidence that EU CRA Art.13 (Obligations of manufacturers) is enforced — Splunk UC-3.1.5: Image Vulnerability Scanning.",
+      "evidenceArtifact": "Saved search 'UC-3.1.5' running on JSON scan results from vulnerability scanners, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "eu-cra@Regulation (EU) 2024/2847#Art.13",
+      "regulation": "EU CRA",
+      "requires_sme_review": true,
+      "version": "Regulation (EU) 2024/2847"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "EU CRA Art.14 Reporting of actively exploited vulnerabilities — image scanning feeds the pipeline that detects actively exploited vulnerabilities in shipped container images.",
+      "clause": "Art.14",
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2024/2847/oj",
+      "controlObjective": "Evidence that EU CRA Art.14 (Reporting of actively exploited vulnerabilities) is enforced — Splunk UC-3.1.5: Image Vulnerability Scanning.",
+      "evidenceArtifact": "Saved search 'UC-3.1.5' running on JSON scan results from vulnerability scanners, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "eu-cra@Regulation (EU) 2024/2847#Art.14",
+      "regulation": "EU CRA",
+      "requires_sme_review": true,
+      "version": "Regulation (EU) 2024/2847"
+    }
+  ],
+  "criticality": "medium",
+  "dataSources": "JSON scan results from vulnerability scanners",
+  "description": "Container images with known CVEs are deployed directly into production. Scanning and tracking vulnerabilities prevents running exploitable workloads.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Custom input (Trivy, Snyk, Grype JSON output).\n• Ensure the following data sources are available: JSON scan results from vulnerability scanners.\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\nRun vulnerability scans in CI/CD pipeline (Trivy, Grype, or Snyk). Send Trivy/Grype scan results to Splunk via HEC with `sourcetype=trivy:scan` (or equivalent scanner output); batch results per image digest. Alert on `Severity=CRITICAL` for images whose `image_tag` matches production entries in a `prod_images` lookup. Exclude known-accepted CVEs via a `cve_exceptions.csv` lookup refreshed by the security team.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=containers sourcetype=\"trivy:scan\"\n| stats count by image, Severity\n| xyseries image Severity count\n| sort -CRITICAL -HIGH\n```\n\nUnderstanding this SPL\n\n**Image Vulnerability Scanning** — Container images with known CVEs are deployed directly into production. Scanning and tracking vulnerabilities prevents running exploitable workloads.\n\nDocumented **Data sources**: JSON scan results from vulnerability scanners. **App/TA** (typical add-on context): Custom input (Trivy, Snyk, Grype JSON output). The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: containers; **sourcetype**: trivy:scan. If that sourcetype is not mentioned in Data sources, double-check parsing or update the documentation to match the feed you actually ingest.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=containers, sourcetype=\"trivy:scan\". Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• `stats` rolls up events into metrics; results are split **by image, Severity** so each row reflects one combination of those dimensions (useful for per-host, per-user, or per-entity comparisons for this use case).\n• Pivots fields for charting with `xyseries`.\n• Orders rows with `sort` — combine with `head`/`tail` for top-N patterns.\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Table (image, critical, high, medium, low), Stacked bar chart by image, Trend line.",
+  "difficulty": "intermediate",
+  "grandmaExplanation": "Container images with known CVEs are deployed directly into production — so you know when an app is crashing, stuck, or running somewhere it should not.",
+  "id": "3.1.5",
+  "implementation": "Run vulnerability scans in CI/CD pipeline (Trivy, Grype, or Snyk). Send Trivy/Grype scan results to Splunk via HEC with `sourcetype=trivy:scan` (or equivalent scanner output); batch results per image digest. Alert on `Severity=CRITICAL` for images whose `image_tag` matches production entries in a `prod_images` lookup. Exclude known-accepted CVEs via a `cve_exceptions.csv` lookup refreshed by the security team.",
+  "monitoringType": [
+    "Security"
+  ],
+  "references": [
+    {
+      "title": "Splunk Lantern — use case library",
+      "url": "https://lantern.splunk.com/"
+    }
+  ],
+  "spl": "index=containers sourcetype=\"trivy:scan\"\n| stats count by image, Severity\n| xyseries image Severity count\n| sort -CRITICAL -HIGH",
+  "splunkPillar": "Security",
+  "title": "Image Vulnerability Scanning",
+  "value": "Container images with known CVEs are deployed directly into production. Scanning and tracking vulnerabilities prevents running exploitable workloads.",
+  "visualization": "Table (image, critical, high, medium, low), Stacked bar chart by image, Trend line."
+}

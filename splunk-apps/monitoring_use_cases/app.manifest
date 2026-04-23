@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "2.0.0",
+  "info": {
+    "id": {
+      "group": null,
+      "name": "monitoring_use_cases",
+      "version": "7.1.0"
+    },
+    "title": "Monitoring Use Cases Catalog",
+    "author": [
+      {
+        "company": null,
+        "email": null,
+        "name": "Splunk Monitoring Use Cases contributors"
+      }
+    ],
+    "classification": {
+      "categories": [
+        "IT Operations",
+        "Security"
+      ],
+      "developmentStatus": "Production/Stable",
+      "intendedAudience": "SecOps, IT Operations, Platform owners"
+    },
+    "commonInformationModels": {
+      "Splunk_CIM": "5.3"
+    },
+    "description": "Hosts the compiled Splunk Monitoring Use Cases catalog inside Splunk as a static app, including the overview dashboard, API-backed search, documentation, reports, and companion tooling.",
+    "license": {
+      "name": "MIT",
+      "text": "LICENSE",
+      "uri": "https://github.com/fenre/splunk-monitoring-use-cases/blob/main/LICENSE"
+    },
+    "privacyPolicy": {
+      "name": null,
+      "text": null,
+      "uri": null
+    },
+    "releaseDate": null,
+    "releaseNotes": {
+      "name": null,
+      "text": "README.md",
+      "uri": "https://github.com/fenre/splunk-monitoring-use-cases/blob/main/CHANGELOG.md"
+    }
+  },
+  "dependencies": null,
+  "incompatibleApps": {},
+  "inputGroups": {},
+  "platformRequirements": {
+    "splunk": {
+      "Enterprise": ">=9.2"
+    }
+  },
+  "supportedDeployments": [
+    "_standalone",
+    "_distributed",
+    "_search_head_clustering"
+  ],
+  "targetWorkloads": [
+    "_search_heads"
+  ],
+  "tasks": []
+}

@@ -1,0 +1,83 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 2,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#/control?version=5.1&number=SC-8",
+  "clause": "SC-8",
+  "clauseId": "nist-800-53@Rev. 5#SC-8",
+  "coverageState": "covered-full",
+  "coveringUcCount": 3,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "SC-8(1) transmission confidentiality and integrity — implemented via strong TLS.",
+      "category": 22,
+      "clauseUrl": "https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#/control?version=5.1&number=SC-8",
+      "controlObjective": "Evidence that NIST 800-53 SC-8 (Transmission confidentiality and integrity) is enforced — Splunk UC-22.41.2: Certificate / TLS posture — weak cipher and expired-cert detection.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.41.2' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.41.2",
+      "ucTitle": "Certificate / TLS posture — weak cipher and expired-cert detection"
+    },
+    {
+      "assurance": "full",
+      "assuranceRationale": "SC-8 transmission confidentiality; legacy cipher negotiation is a direct failure.",
+      "category": 22,
+      "clauseUrl": "https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#/control?version=5.1&number=SC-8",
+      "controlObjective": "Evidence that NIST-800-53 SC-8 (Transmission confidentiality and integrity) is enforced — Splunk UC-22.41.4: TLS downgrade / legacy-cipher handshake spike.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.41.4' running on F5/NGINX/HAProxy TLS handshake logs, cloud-provider LB telemetry, TLS scanner longitudinal results., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.41.4",
+      "ucTitle": "TLS downgrade / legacy-cipher handshake spike"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#/control?version=5.1&number=SC-8",
+      "controlObjective": "Evidence that NIST 800-53 SC-8 (Transmission confidentiality and integrity) is enforced — Splunk UC-22.14.68: Transmission Confidentiality and Integrity — TLS Policy Downgrades.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.14.68' running on stream:tls or tenable: plugin SSL findings, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.14.68",
+      "ucTitle": "Transmission Confidentiality and Integrity — TLS Policy Downgrades"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/nist-800-53__Rev.%205__SC-8.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 3
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "nist-800-53",
+  "regulationName": "NIST SP 800-53 Rev. 5",
+  "regulationShortName": "NIST 800-53",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/nist-800-53.json",
+    "regulationVersion": "/api/v1/compliance/regulations/nist-800-53@Rev.%205.json",
+    "story": "/api/v1/compliance/story/nist-800-53.json"
+  },
+  "tier": 1,
+  "topAssurance": "full",
+  "topic": "Transmission confidentiality and integrity",
+  "version": "Rev. 5"
+}

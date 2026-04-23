@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "Art.23(1)",
+  "clauseId": "nis2@Directive (EU) 2022/2555#Art.23(1)",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Same for NIS2 initial notification obligation.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that NIS2 Art.23(1) is enforced — Splunk UC-22.39.5: Regulator-portal authentication failure during submission window.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.39.5' running on IdP audit logs (okta:audit, azuread:audit), incident_register.csv with open_status flag., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.39.5",
+      "ucTitle": "Regulator-portal authentication failure during submission window"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/nis2__Directive%20%28EU%29%202022%2F2555__Art.23%281%29.json",
+  "gapNote": "nis2 clause Art.23(1) has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "nis2",
+  "regulationName": "nis2",
+  "regulationShortName": "nis2",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/nis2.json",
+    "regulationVersion": "/api/v1/compliance/regulations/nis2@Directive%20%28EU%29%202022%2F2555.json",
+    "story": "/api/v1/compliance/story/nis2.json"
+  },
+  "tier": null,
+  "topAssurance": "contributing",
+  "topic": null,
+  "version": "Directive (EU) 2022/2555"
+}

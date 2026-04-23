@@ -1,0 +1,2067 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "Art.10",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.3.1",
+        "22.3.7",
+        "22.8.33"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Detection",
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.11",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.1",
+        "22.3.5",
+        "22.3.8"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Response and recovery",
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 3,
+        "partial": 1
+      },
+      "clause": "Art.12",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.3.1",
+        "22.3.5",
+        "22.3.9",
+        "22.35.3",
+        "22.45.1",
+        "22.45.3",
+        "22.45.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Backup policies and recovery methods",
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.13",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.1",
+        "22.3.10"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.14",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.1",
+        "22.3.20"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.15",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.1"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.16",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.1"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 1,
+        "partial": 4
+      },
+      "clause": "Art.17",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.3.2",
+        "22.3.23",
+        "22.3.31",
+        "22.3.44",
+        "22.6.51",
+        "22.6.52",
+        "22.8.34",
+        "22.8.35"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "ICT-related incident management process",
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.18",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.11",
+        "22.3.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Classification of ICT-related incidents",
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 1,
+        "partial": 1
+      },
+      "clause": "Art.19",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.3.12",
+        "22.3.2",
+        "22.3.38",
+        "22.39.1",
+        "22.39.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Reporting of major ICT-related incidents",
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.20",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.21",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.22",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.23",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 5,
+        "full": 2,
+        "partial": 2
+      },
+      "clause": "Art.24",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.11.105",
+        "22.3.25",
+        "22.3.27",
+        "22.3.28",
+        "22.3.3",
+        "22.3.39",
+        "22.3.45",
+        "22.45.5",
+        "22.46.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "full",
+      "topic": "Digital operational-resilience testing",
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.25",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.16",
+        "22.3.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.26",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.17",
+        "22.3.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "contributing",
+      "topic": "Threat-led penetration testing",
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.27",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 3,
+        "partial": 4
+      },
+      "clause": "Art.28",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.3.4",
+        "22.3.40",
+        "22.38.3",
+        "22.38.5",
+        "22.44.1",
+        "22.44.2",
+        "22.44.3",
+        "22.44.4",
+        "22.8.37"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "ICT third-party risk",
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.28(3)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.13"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.28(8)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.18"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.29",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.30",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.14",
+        "22.3.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.31",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.32",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.33",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.34",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.35",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.36",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.37",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.38",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.39",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.40",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.41",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.42",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.43",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.44",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 14,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.5",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.1",
+        "22.3.19",
+        "22.3.21",
+        "22.3.22",
+        "22.3.24",
+        "22.3.26",
+        "22.3.29",
+        "22.3.30",
+        "22.3.32",
+        "22.3.33",
+        "22.3.34",
+        "22.3.35",
+        "22.3.36",
+        "22.3.37"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "ICT risk-management governance",
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 2
+      },
+      "clause": "Art.6",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.11.106",
+        "22.3.1",
+        "22.3.41",
+        "22.6.46"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "ICT risk-management framework",
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 1
+      },
+      "clause": "Art.7",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.3.1",
+        "22.3.42",
+        "22.8.32"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "ICT systems, protocols and tools",
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 1
+      },
+      "clause": "Art.8",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.11.103",
+        "22.3.1",
+        "22.3.43"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Identification",
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 2
+      },
+      "clause": "Art.9",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.11.97",
+        "22.3.1",
+        "22.41.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Protection and prevention",
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.9(4)(c)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.15"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.9(4)(e)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.6"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Regulation (EU) 2022/2554"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "14 of 14 common clauses are covered by the catalogue, with a priority-weighted coverage of 71.83% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 14,
+      "coveredClauseCount": 14,
+      "priorityWeightedCoveragePercent": 71.83,
+      "stateCounts": {
+        "contributing-only": 4,
+        "covered-full": 8,
+        "covered-partial": 2,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "Art.12",
+        "killerUcId": "22.3.1",
+        "killerUcTitle": "DORA ICT Risk Management Dashboard",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Backup policies and recovery methods",
+        "version": "Regulation (EU) 2022/2554",
+        "why": "Clause Art.12 (Backup policies and recovery methods) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "Art.17",
+        "killerUcId": "22.3.2",
+        "killerUcTitle": "DORA ICT Incident Classification and Reporting",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "ICT-related incident management process",
+        "version": "Regulation (EU) 2022/2554",
+        "why": "Clause Art.17 (ICT-related incident management process) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "Art.19",
+        "killerUcId": "22.3.12",
+        "killerUcTitle": "DORA ICT Incident Intermediate and Final Report Tracking",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Reporting of major ICT-related incidents",
+        "version": "Regulation (EU) 2022/2554",
+        "why": "Clause Art.19 (Reporting of major ICT-related incidents) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "Art.28",
+        "killerUcId": "22.3.4",
+        "killerUcTitle": "DORA Third-Party ICT Provider Concentration Risk",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "ICT third-party risk",
+        "version": "Regulation (EU) 2022/2554",
+        "why": "Clause Art.28 (ICT third-party risk) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "Art.6",
+        "killerUcId": "22.11.106",
+        "killerUcTitle": "PCI-DSS 12.3 — Targeted risk analysis: frequency adherence for per-requirement TRAs",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "ICT risk-management framework",
+        "version": "Regulation (EU) 2022/2554",
+        "why": "Clause Art.6 (ICT risk-management framework) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "Art.10",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.1",
+            "ucTitle": "DORA ICT Risk Management Dashboard"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.7",
+            "ucTitle": "DORA ICT Anomaly Detection Capabilities"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.33",
+            "ucTitle": "SOC 2 CC7.1 — System-operations monitoring: uptime attestation and alert-noise governance"
+          }
+        ],
+        "topic": "Detection",
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.11",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.1",
+            "ucTitle": "DORA ICT Risk Management Dashboard"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.5",
+            "ucTitle": "DORA Cross-Region Disaster Recovery Compliance"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.8",
+            "ucTitle": "DORA ICT Incident Response and Recovery Time Tracking"
+          }
+        ],
+        "topic": "Response and recovery",
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.12",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.1",
+            "ucTitle": "DORA ICT Risk Management Dashboard"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.5",
+            "ucTitle": "DORA Cross-Region Disaster Recovery Compliance"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.9",
+            "ucTitle": "DORA Backup Completeness and Restoration Testing"
+          }
+        ],
+        "topic": "Backup policies and recovery methods",
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.17",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.2",
+            "ucTitle": "DORA ICT Incident Classification and Reporting"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.44",
+            "ucTitle": "DORA Art.17 — ICT incident classification timeliness: major-incident clock evidence"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.23",
+            "ucTitle": "DORA ICT Concentration — Regional Provider Outage Correlation Exposure Score"
+          }
+        ],
+        "topic": "ICT-related incident management process",
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.18",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.2",
+            "ucTitle": "DORA ICT Incident Classification and Reporting"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.11",
+            "ucTitle": "DORA Major ICT Incident 7-Criteria Classification"
+          }
+        ],
+        "topic": "Classification of ICT-related incidents",
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.19",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.2",
+            "ucTitle": "DORA ICT Incident Classification and Reporting"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.12",
+            "ucTitle": "DORA ICT Incident Intermediate and Final Report Tracking"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.39.1",
+            "ucTitle": "Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA)"
+          }
+        ],
+        "topic": "Reporting of major ICT-related incidents",
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.28",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.38.5",
+            "ucTitle": "Bulk regulated-data export targeting non-adequate jurisdiction"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.4",
+            "ucTitle": "DORA Third-Party ICT Provider Concentration Risk"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.38.3",
+            "ucTitle": "Data localization enforcement — regulated-data must-stay-in-region"
+          }
+        ],
+        "topic": "ICT third-party risk",
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.5",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.1",
+            "ucTitle": "DORA ICT Risk Management Dashboard"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.22",
+            "ucTitle": "DORA ICT Concentration — Critical Service Dependency Fan-In by Provider"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.34",
+            "ucTitle": "DORA Outsourcing Registers — Data Localization and Cross-Border Transfer Field Validation"
+          }
+        ],
+        "topic": "ICT risk-management governance",
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.6",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.1",
+            "ucTitle": "DORA ICT Risk Management Dashboard"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.41",
+            "ucTitle": "DORA Art.6 — ICT risk-management framework evidence: control catalogue drift detection"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.46",
+            "ucTitle": "ISO/IEC 27001:2022 Clause 6.1 — Risk-assessment evidence: live risk register decay"
+          }
+        ],
+        "topic": "ICT risk-management framework",
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.7",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.1",
+            "ucTitle": "DORA ICT Risk Management Dashboard"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.42",
+            "ucTitle": "DORA Art.7 — ICT systems inventory completeness: unmanaged endpoints attached to financial services"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.32",
+            "ucTitle": "SOC 2 CC6.7 — System boundary & data-transmission control: unapproved egress destinations"
+          }
+        ],
+        "topic": "ICT systems, protocols and tools",
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.8",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.1",
+            "ucTitle": "DORA ICT Risk Management Dashboard"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.43",
+            "ucTitle": "DORA Art.8 — ICT risk identification: newly discovered high-severity exposure on critical financial services"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.11.103",
+            "ucTitle": "PCI-DSS 11.3 — Vulnerability programme: overdue scan cadence and unremediated high-severity"
+          }
+        ],
+        "topic": "Identification",
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.9",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.1",
+            "ucTitle": "DORA ICT Risk Management Dashboard"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.11.97",
+            "ucTitle": "PCI-DSS 8.4 — MFA coverage: administrative access to CDE without MFA"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.41.3",
+            "ucTitle": "Key rotation attestation — KMS/HSM rotation SLA tracker"
+          }
+        ],
+        "topic": "Protection and prevention",
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.24",
+        "coverageState": "covered-full",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.3",
+            "ucTitle": "DORA Digital Operational Resilience Testing"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.25",
+            "ucTitle": "DORA TLPT — Test Planning Milestone and Scope Lock Audit Trail"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.27",
+            "ucTitle": "DORA TLPT — Findings Severity, Remediation Owner, and Due Date Tracking"
+          }
+        ],
+        "topic": "Digital operational-resilience testing",
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.26",
+        "coverageState": "contributing-only",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.3",
+            "ucTitle": "DORA Digital Operational Resilience Testing"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.17",
+            "ucTitle": "DORA Threat-Led Penetration Testing (TLPT) Lifecycle"
+          }
+        ],
+        "topic": "Threat-led penetration testing",
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.13",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.1",
+            "ucTitle": "DORA ICT Risk Management Dashboard"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.10",
+            "ucTitle": "DORA Post-Incident Review and Learning"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.14",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.1",
+            "ucTitle": "DORA ICT Risk Management Dashboard"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.20",
+            "ucTitle": "DORA ICT Crisis Communication Readiness"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.15",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.1",
+            "ucTitle": "DORA ICT Risk Management Dashboard"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.16",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.1",
+            "ucTitle": "DORA ICT Risk Management Dashboard"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.20",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.2",
+            "ucTitle": "DORA ICT Incident Classification and Reporting"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.21",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.2",
+            "ucTitle": "DORA ICT Incident Classification and Reporting"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.22",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.2",
+            "ucTitle": "DORA ICT Incident Classification and Reporting"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.23",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.2",
+            "ucTitle": "DORA ICT Incident Classification and Reporting"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.25",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.3",
+            "ucTitle": "DORA Digital Operational Resilience Testing"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.16",
+            "ucTitle": "DORA Vulnerability Assessment and Penetration Test Tracking"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.27",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.3",
+            "ucTitle": "DORA Digital Operational Resilience Testing"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.28(3)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.13",
+            "ucTitle": "DORA Register of Information for ICT Third-Party Arrangements"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.28(8)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.18",
+            "ucTitle": "DORA ICT Third-Party Exit Strategy Readiness"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.29",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.4",
+            "ucTitle": "DORA Third-Party ICT Provider Concentration Risk"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.30",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.4",
+            "ucTitle": "DORA Third-Party ICT Provider Concentration Risk"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.14",
+            "ucTitle": "DORA ICT Third-Party SLA Performance Monitoring"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.31",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.4",
+            "ucTitle": "DORA Third-Party ICT Provider Concentration Risk"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.32",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.4",
+            "ucTitle": "DORA Third-Party ICT Provider Concentration Risk"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.33",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.4",
+            "ucTitle": "DORA Third-Party ICT Provider Concentration Risk"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.34",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.4",
+            "ucTitle": "DORA Third-Party ICT Provider Concentration Risk"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.35",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.4",
+            "ucTitle": "DORA Third-Party ICT Provider Concentration Risk"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.36",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.4",
+            "ucTitle": "DORA Third-Party ICT Provider Concentration Risk"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.37",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.4",
+            "ucTitle": "DORA Third-Party ICT Provider Concentration Risk"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.38",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.4",
+            "ucTitle": "DORA Third-Party ICT Provider Concentration Risk"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.39",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.4",
+            "ucTitle": "DORA Third-Party ICT Provider Concentration Risk"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.40",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.4",
+            "ucTitle": "DORA Third-Party ICT Provider Concentration Risk"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.41",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.4",
+            "ucTitle": "DORA Third-Party ICT Provider Concentration Risk"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.42",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.4",
+            "ucTitle": "DORA Third-Party ICT Provider Concentration Risk"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.43",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.4",
+            "ucTitle": "DORA Third-Party ICT Provider Concentration Risk"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.44",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.4",
+            "ucTitle": "DORA Third-Party ICT Provider Concentration Risk"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.9(4)(c)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.15",
+            "ucTitle": "DORA ICT Access Control and Authentication Monitoring"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      },
+      {
+        "clause": "Art.9(4)(e)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.6",
+            "ucTitle": "DORA ICT Change Management and Patch Compliance"
+          }
+        ],
+        "topic": null,
+        "version": "Regulation (EU) 2022/2554"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "EU"
+  ],
+  "narrative": {
+    "evidencePack": "docs/evidence-packs/dora.md",
+    "matchedBy": "manual-map",
+    "name": "DORA digital resilience",
+    "primer": "docs/regulatory-primer.md#411-dora--digital-operational-resilience-act-eu--t1",
+    "splunkValue": "We classify incidents against DORA's seven major-incident criteria to trigger the 4-hour clock, track TLPT lifecycle evidence, measure concentration risk across cloud and critical ICT providers, and evidence the 2-hour major-incident initial report with timestamps.",
+    "whatItIs": "The EU's single rulebook for operational resilience in the financial sector. It consolidates scattered ICT requirements into one regulation covering risk management, incident reporting, testing, third-party oversight, and information-sharing arrangements.",
+    "whoItAffects": "All EU regulated financial entities — banks, insurers, investment firms, crypto-asset service providers, payment institutions — plus the critical ICT third parties they depend on."
+  },
+  "narrativeRef": "non-technical-view.js#cat-22/area/dora-digital-resilience",
+  "regulationId": "dora",
+  "regulationName": "EU Digital Operational Resilience Act",
+  "regulationShortName": "DORA",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=dora",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#dora",
+    "evidencePack": "docs/evidence-packs/dora.md",
+    "primerAnchor": "docs/regulatory-primer.md#411-dora-digital-operational-resilience-act-eu-t1",
+    "regulation": "/api/v1/compliance/regulations/dora.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 1
+}

@@ -1,0 +1,98 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 1,
+    "partial": 2,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "Art.46",
+  "clauseId": "uk-gdpr@post-Brexit#Art.46",
+  "coverageState": "covered-full",
+  "coveringUcCount": 4,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "UK equivalent to Art.46 is maintained through TIAs (ICO International Data Transfer Agreement).",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that UK-GDPR Art.46 is enforced — Splunk UC-22.38.4: Transfer Impact Assessment currency — stale Schrems II assessments.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.38.4' running on TIA register (tia_register.csv), transfer_register.csv, DPO review events., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.38.4",
+      "ucTitle": "Transfer Impact Assessment currency — stale Schrems II assessments"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "Derived from GDPR@2016/679 Art.46 (parent assurance='full'). UK GDPR preserves parent clause numbering; inherited assurance degraded one step.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that UK GDPR Art.46 is enforced — Splunk UC-22.38.2: SCC / adequacy decision reference freshness — stale-safeguard detector.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.38.2' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "derived-from-parent",
+      "smeCaveat": null,
+      "ucId": "22.38.2",
+      "ucTitle": "SCC / adequacy decision reference freshness — stale-safeguard detector"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "Derived from GDPR@2016/679 Art.46 (parent assurance='full'). UK GDPR preserves parent clause numbering; inherited assurance degraded one step.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that UK GDPR Art.46 is enforced — Splunk UC-22.38.4: Transfer Impact Assessment currency — stale Schrems II assessments.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.38.4' running on TIA register (tia_register.csv), transfer_register.csv, DPO review events., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "derived-from-parent",
+      "smeCaveat": null,
+      "ucId": "22.38.4",
+      "ucTitle": "Transfer Impact Assessment currency — stale Schrems II assessments"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Derived from GDPR@2016/679 Art.46 (parent assurance='partial'). UK GDPR preserves parent clause numbering; inherited assurance degraded one step.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that UK GDPR Art.46 is enforced — Splunk UC-22.38.1: Cross-border personal-data flow anomaly — egress to unsanctioned jurisdictions.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.38.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "derived-from-parent",
+      "smeCaveat": null,
+      "ucId": "22.38.1",
+      "ucTitle": "Cross-border personal-data flow anomaly — egress to unsanctioned jurisdictions"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/uk-gdpr__post-Brexit__Art.46.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 4
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "uk-gdpr",
+  "regulationName": "uk-gdpr",
+  "regulationShortName": "uk-gdpr",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/uk-gdpr.json",
+    "regulationVersion": "/api/v1/compliance/regulations/uk-gdpr@post-Brexit.json",
+    "story": "/api/v1/compliance/story/uk-gdpr.json"
+  },
+  "tier": null,
+  "topAssurance": "full",
+  "topic": null,
+  "version": "post-Brexit"
+}

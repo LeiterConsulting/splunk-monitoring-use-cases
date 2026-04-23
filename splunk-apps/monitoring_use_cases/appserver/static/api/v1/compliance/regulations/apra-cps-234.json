@@ -1,0 +1,159 @@
+{
+  "aliases": [
+    "APRA CPS 234",
+    "CPS 234"
+  ],
+  "apiVersion": "v1",
+  "id": "apra-cps-234",
+  "jurisdiction": [
+    "AU"
+  ],
+  "name": "APRA CPS 234 Information Security",
+  "shortName": "APRA CPS 234",
+  "tags": [
+    "financial-services"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://www.apra.gov.au/information-security",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 3,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "15",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "1.2.9",
+            "1.3.4",
+            "22.30.21"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "contributing",
+          "topic": "Policy framework"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 9,
+            "full": 0,
+            "partial": 3
+          },
+          "clause": "23",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "16.1.20",
+            "16.3.6",
+            "22.30.19",
+            "22.30.20",
+            "22.30.23",
+            "22.30.24",
+            "22.30.25",
+            "22.31.14",
+            "22.31.15",
+            "22.31.17",
+            "6.3.1",
+            "6.3.23"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Incident management"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 2,
+            "full": 0,
+            "partial": 2
+          },
+          "clause": "36",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "16.1.20",
+            "16.3.6",
+            "22.30.22",
+            "22.31.16"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Notification of incidents"
+        }
+      ],
+      "clauseExamples": [
+        "23",
+        "36"
+      ],
+      "clauseGrammar": "^\\d+$",
+      "clauseUrlTemplate": null,
+      "clausesReferencedByCatalogue": [
+        "15",
+        "23",
+        "36"
+      ],
+      "commonClauses": [
+        {
+          "clause": "15",
+          "priorityWeight": 0.7,
+          "topic": "Policy framework"
+        },
+        {
+          "clause": "23",
+          "priorityWeight": 1.0,
+          "topic": "Incident management"
+        },
+        {
+          "clause": "36",
+          "priorityWeight": 1.0,
+          "topic": "Notification of incidents"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 100.0,
+        "commonClauseCount": 3,
+        "coveredClauseCount": 3,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 43.52,
+        "stateCounts": {
+          "contributing-only": 1,
+          "covered-full": 0,
+          "covered-partial": 2,
+          "uncovered": 0
+        }
+      },
+      "effectiveFrom": "2019-07-01",
+      "endpoint": "/api/v1/compliance/regulations/apra-cps-234@current.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [
+        "1.2.9",
+        "1.3.4",
+        "16.1.20",
+        "16.3.6",
+        "22.30.19",
+        "22.30.20",
+        "22.30.21",
+        "22.30.22",
+        "22.30.23",
+        "22.30.24",
+        "22.30.25",
+        "22.31.14",
+        "22.31.15",
+        "22.31.16",
+        "22.31.17",
+        "6.3.1",
+        "6.3.23"
+      ],
+      "version": "current"
+    }
+  ]
+}

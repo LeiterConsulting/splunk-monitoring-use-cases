@@ -1,0 +1,57 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 8,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "iis",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Microsoft IIS",
+  "models": [],
+  "regulationIds": [],
+  "regulations": [],
+  "useCaseCount": 8,
+  "useCaseIds": [
+    "2.6.10",
+    "8.1.1",
+    "8.1.17",
+    "8.1.18",
+    "8.7.1",
+    "17.2.16",
+    "21.3.18",
+    "21.3.24"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 2,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "2.6.10"
+      ]
+    },
+    {
+      "category": 8,
+      "useCaseCount": 4,
+      "useCaseIds": [
+        "8.1.1",
+        "8.1.17",
+        "8.1.18",
+        "8.7.1"
+      ]
+    },
+    {
+      "category": 17,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "17.2.16"
+      ]
+    },
+    {
+      "category": 21,
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "21.3.18",
+        "21.3.24"
+      ]
+    }
+  ]
+}

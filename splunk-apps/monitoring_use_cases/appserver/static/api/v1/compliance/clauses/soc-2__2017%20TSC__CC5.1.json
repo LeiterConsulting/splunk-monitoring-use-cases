@@ -1,0 +1,83 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 2,
+    "full": 1,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.aicpa-cima.com/tsc2017#CC5.1",
+  "clause": "CC5.1",
+  "clauseId": "soc-2@2017 TSC#CC5.1",
+  "coverageState": "covered-full",
+  "coveringUcCount": 3,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "CC5.1 establishment of control activities — freshness is required for continuous operation.",
+      "category": 22,
+      "clauseUrl": "https://www.aicpa-cima.com/tsc2017#CC5.1",
+      "controlObjective": "Evidence that SOC 2 CC5.1 (Control activities) is enforced — Splunk UC-22.47.1: Control test freshness — evidence older than policy cadence.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.47.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.47.1",
+      "ucTitle": "Control test freshness — evidence older than policy cadence"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'unspecified' → 'CC5.1'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.aicpa-cima.com/tsc2017#CC5.1",
+      "controlObjective": "Evidence that SOC 2 CC5.1 (Control activities) is enforced — Splunk UC-22.8.15: SOC 2 CC5 — Change Impact Analysis Completeness for Production Releases.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.8.15' running on sourcetype snow:change_request and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.8.15",
+      "ucTitle": "SOC 2 CC5 — Change Impact Analysis Completeness for Production Releases"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Phase-D retagged from meta-multi placeholder to a concrete SOC 2 clause. SOC 2 CC5.1 Control Activities — auditor evidence pack throughput and deficiency metrics show that control activities are operating. Assurance level set to 'contributing' pending SME review per Phase E of the plan.",
+      "category": 22,
+      "clauseUrl": "https://www.aicpa-cima.com/tsc2017#CC5.1",
+      "controlObjective": "Evidence that SOC 2 CC5.1 (Control activities) is enforced — Splunk UC-22.9.8: Compliance Trending — Auditor Evidence Pack Generation Volume and Deficiency Rate.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.9.8' running on sourcetype audit:evidence_pack and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.9.8",
+      "ucTitle": "Compliance Trending — Auditor Evidence Pack Generation Volume and Deficiency Rate"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/soc-2__2017%20TSC__CC5.1.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 3
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "soc-2",
+  "regulationName": "SOC 2 Trust Services Criteria",
+  "regulationShortName": "SOC 2",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/soc-2.json",
+    "regulationVersion": "/api/v1/compliance/regulations/soc-2@2017%20TSC.json",
+    "story": "/api/v1/compliance/story/soc-2.json"
+  },
+  "tier": 1,
+  "topAssurance": "full",
+  "topic": "Control activities",
+  "version": "2017 TSC"
+}

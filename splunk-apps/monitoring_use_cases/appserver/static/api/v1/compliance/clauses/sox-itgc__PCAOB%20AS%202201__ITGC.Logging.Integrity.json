@@ -1,0 +1,84 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 1,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "ITGC.Logging.Integrity",
+  "clauseId": "sox-itgc@PCAOB AS 2201#ITGC.Logging.Integrity",
+  "coverageState": "covered-full",
+  "coveringUcCount": 3,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "SOX-ITGC Logging.Integrity — directly evidenced.",
+      "category": 22,
+      "clauseUrl": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+      "controlObjective": "Evidence that SOX-ITGC ITGC.Logging.Integrity is enforced — Splunk UC-22.11.99: PCI-DSS 10.3 — Audit log integrity: tampering/deletion detection on CDE log source.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.11.99' running on index=windows EventCode IN (1102,104); index=linux auditd log clears, syslog rotated-by-hand., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.11.99",
+      "ucTitle": "PCI-DSS 10.3 — Audit log integrity: tampering/deletion detection on CDE log source"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "SOX-ITGC Logging.Integrity — contributing.",
+      "category": 22,
+      "clauseUrl": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+      "controlObjective": "Evidence that SOX-ITGC ITGC.Logging.Integrity is enforced — Splunk UC-22.11.102: PCI-DSS 10.7 — Log retention: CDE data-source retention + immutability attestation.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.11.102' running on Splunk REST /services/data/indexes; index=compliance sourcetype=worm:signer., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.11.102",
+      "ucTitle": "PCI-DSS 10.7 — Log retention: CDE data-source retention + immutability attestation"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "A broken signature chain is a textbook ITGC deficiency but the control also needs management attestation.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Detects violations of SOX-ITGC ITGC.Logging.Integrity — Splunk UC-22.35.4: Log signing chain integrity — cryptographic signature drift on evidence archive.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.35.4' running on sourcetype archive:signer and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "detects-violation-of",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.35.4",
+      "ucTitle": "Log signing chain integrity — cryptographic signature drift on evidence archive"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/sox-itgc__PCAOB%20AS%202201__ITGC.Logging.Integrity.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "detects-violation-of": 1,
+    "satisfies": 2
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "sox-itgc",
+  "regulationName": "sox-itgc",
+  "regulationShortName": "sox-itgc",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/sox-itgc.json",
+    "regulationVersion": "/api/v1/compliance/regulations/sox-itgc@PCAOB%20AS%202201.json",
+    "story": "/api/v1/compliance/story/sox-itgc.json"
+  },
+  "tier": null,
+  "topAssurance": "full",
+  "topic": null,
+  "version": "PCAOB AS 2201"
+}

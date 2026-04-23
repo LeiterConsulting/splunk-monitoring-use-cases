@@ -1,0 +1,68 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "§1798.130(a)",
+  "clauseId": "ccpa@CPRA (as amended)#§1798.130(a)",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 2,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "CCPA requires a verifiable consumer request process; excessive friction is an enforcement pattern.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Detects violations of CCPA §1798.130(a) — Splunk UC-22.36.4: DSAR identity-verification friction — failed-verification anomaly.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.36.4' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "detects-violation-of",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.36.4",
+      "ucTitle": "DSAR identity-verification friction — failed-verification anomaly"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "CCPA reporting metrics require accurate categorisation; a sudden request-type skew often means a broken form.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Detects violations of CCPA §1798.130(a) — Splunk UC-22.36.5: DSAR request-type mix anomaly — zero-deletion skew indicating broken workflow.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.36.5' running on DSAR ticketing system request-type field, historic aggregates from compliance summary index., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "detects-violation-of",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.36.5",
+      "ucTitle": "DSAR request-type mix anomaly — zero-deletion skew indicating broken workflow"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/ccpa__CPRA%20%28as%20amended%29__%C2%A71798.130%28a%29.json",
+  "gapNote": "ccpa clause §1798.130(a) has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "detects-violation-of": 2
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "ccpa",
+  "regulationName": "ccpa",
+  "regulationShortName": "ccpa",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/ccpa.json",
+    "regulationVersion": "/api/v1/compliance/regulations/ccpa@CPRA%20%28as%20amended%29.json",
+    "story": "/api/v1/compliance/story/ccpa.json"
+  },
+  "tier": null,
+  "topAssurance": "partial",
+  "topic": null,
+  "version": "CPRA (as amended)"
+}

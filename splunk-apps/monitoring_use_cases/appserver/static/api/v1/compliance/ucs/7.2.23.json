@@ -1,0 +1,42 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/7.2.23.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/7.2.23.json",
+    "sourcePath": "content/cat-07-database-data-platforms/UC-7.2.23.json"
+  },
+  "apiVersion": "v1",
+  "app": "mongosh `$indexStats`, log export",
+  "cimModels": [
+    "N/A"
+  ],
+  "criticality": "medium",
+  "dataSources": "`collStats`, `$indexStats` output",
+  "description": "Indexes with near-zero `accesses.ops` and large `size` waste RAM and slow writes. Identifies candidates for drop or partial indexes.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: mongosh `$indexStats`, log export.\n• Ensure the following data sources are available: `collStats`, `$indexStats` output.\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\nWeekly job exports `$indexStats`. Flag large indexes with minimal usage. Exclude `_id` and required unique indexes via lookup.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=database sourcetype=\"mongodb:index_stats\"\n| eval usage=ops_since_start\n| where index_size_bytes > 104857600 AND usage < 10\n| table ns, name, index_size_bytes, usage\n| sort -index_size_bytes\n```\n\nUnderstanding this SPL\n\n**MongoDB Index Inefficiency (Usage vs Size)** — Indexes with near-zero `accesses.ops` and large `size` waste RAM and slow writes. Identifies candidates for drop or partial indexes.\n\nDocumented **Data sources**: `collStats`, `$indexStats` output. **App/TA** (typical add-on context): mongosh `$indexStats`, log export. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: database; **sourcetype**: mongodb:index_stats. If that sourcetype is not mentioned in Data sources, double-check parsing or update the documentation to match the feed you actually ingest.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=database, sourcetype=\"mongodb:index_stats\". Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• `eval` defines or adjusts **usage** — often to normalize units, derive a ratio, or prepare for thresholds.\n• Filters the current rows with `where index_size_bytes > 104857600 AND usage < 10` — typically the threshold or rule expression for this monitoring goal.\n• Pipeline stage (see **MongoDB Index Inefficiency (Usage vs Size)**): table ns, name, index_size_bytes, usage\n• Orders rows with `sort` — combine with `head`/`tail` for top-N patterns.\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Table (namespace, index, size, ops), Bar chart (wasted index size), Single value (low-usage large indexes count).",
+  "difficulty": "advanced",
+  "equipment": [
+    "mongodb"
+  ],
+  "equipmentModels": [
+    "mongodb_mongod"
+  ],
+  "grandmaExplanation": "Data with near-zero and large waste RAM and slow writes — so slow queries, failed backups, and odd changes surface early.",
+  "id": "7.2.23",
+  "implementation": "Weekly job exports `$indexStats`. Flag large indexes with minimal usage. Exclude `_id` and required unique indexes via lookup.",
+  "monitoringType": [
+    "Performance"
+  ],
+  "references": [
+    {
+      "title": "Splunk Lantern — use case library",
+      "url": "https://lantern.splunk.com/"
+    }
+  ],
+  "spl": "index=database sourcetype=\"mongodb:index_stats\"\n| eval usage=ops_since_start\n| where index_size_bytes > 104857600 AND usage < 10\n| table ns, name, index_size_bytes, usage\n| sort -index_size_bytes",
+  "splunkPillar": "Observability",
+  "title": "MongoDB Index Inefficiency (Usage vs Size)",
+  "value": "Indexes with near-zero `accesses.ops` and large `size` waste RAM and slow writes. Identifies candidates for drop or partial indexes.",
+  "visualization": "Table (namespace, index, size, ops), Bar chart (wasted index size), Single value (low-usage large indexes count)."
+}

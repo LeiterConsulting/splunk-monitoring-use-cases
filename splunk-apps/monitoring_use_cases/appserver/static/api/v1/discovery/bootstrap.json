@@ -1,0 +1,609 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-04-21T09:24:26+02:00",
+  "catalogVersion": "7.1.0",
+  "appId": "monitoring_use_cases",
+  "track": "discovery",
+  "runtimeModel": {
+    "inventory": "saved-search-and-kv-store",
+    "orchestration": "browser-splunkjs",
+    "customRestEndpoints": "deferred",
+    "rationale": "monitoring_use_cases is generator-owned and static-first, while splunk-uc-recommender already proves a Cloud-safe discovery pattern with collections.conf, savedsearches.conf, and browser-side SplunkJS without a primary-app bin or restmap surface."
+  },
+  "stateVocabulary": {
+    "engineStates": [
+      "direct",
+      "adjacent",
+      "partial",
+      "none"
+    ],
+    "effectiveStates": [
+      "direct",
+      "adjacent",
+      "partial",
+      "none",
+      "admin_asserted",
+      "admin_rejected"
+    ],
+    "overrideTypes": [
+      "assert_direct",
+      "assert_adjacent",
+      "assert_partial",
+      "reject",
+      "note_only"
+    ]
+  },
+  "artifacts": {
+    "requirementProfiles": "/api/v1/discovery/requirements.json"
+  },
+  "counts": {
+    "requirementProfiles": 6472,
+    "catalogFallbackProfiles": 25
+  },
+  "discoveryEngine": {
+    "latestSnapshotRunId": "inventory_snapshot_latest",
+    "scanModes": [
+      {
+        "id": "quick",
+        "label": "Quick scan",
+        "description": "Metadata inventory only for indexes, sourcetypes, sources, and hosts.",
+        "stages": [
+          "inventory_indexes",
+          "inventory_sourcetypes",
+          "inventory_sources",
+          "inventory_hosts",
+          "inventory_summary"
+        ]
+      },
+      {
+        "id": "standard",
+        "label": "Standard scan",
+        "description": "Metadata inventory plus field prevalence and CIM clues.",
+        "stages": [
+          "inventory_indexes",
+          "inventory_sourcetypes",
+          "inventory_sources",
+          "inventory_hosts",
+          "inventory_cim",
+          "inventory_fields",
+          "inventory_telemetry",
+          "inventory_summary"
+        ]
+      },
+      {
+        "id": "deep",
+        "label": "Deep scan",
+        "description": "Reserved for expanded sampling after the bounded inventory stages are stable.",
+        "stages": [
+          "inventory_indexes",
+          "inventory_sourcetypes",
+          "inventory_sources",
+          "inventory_hosts",
+          "inventory_cim",
+          "inventory_fields",
+          "inventory_telemetry",
+          "inventory_summary"
+        ]
+      }
+    ],
+    "inventoryCaps": {
+      "indexes": 512,
+      "sourcetypes": 4000,
+      "sources": 5000,
+      "hosts": 5000,
+      "data_models": 256,
+      "field_sample_sourcetypes": 24,
+      "field_sample_events": 200,
+      "field_sample_fields": 20
+    },
+    "savedSearches": [
+      {
+        "name": "Monitoring Use Cases - Discovery Index Inventory",
+        "stage": "inventory_indexes",
+        "mode": "quick",
+        "outputCollection": "muc_discovered_datasets",
+        "cronSchedule": "*/30 * * * *"
+      },
+      {
+        "name": "Monitoring Use Cases - Discovery Sourcetype Inventory",
+        "stage": "inventory_sourcetypes",
+        "mode": "quick",
+        "outputCollection": "muc_discovered_datasets",
+        "cronSchedule": "1-59/30 * * * *"
+      },
+      {
+        "name": "Monitoring Use Cases - Discovery Source Inventory",
+        "stage": "inventory_sources",
+        "mode": "quick",
+        "outputCollection": "muc_discovered_datasets",
+        "cronSchedule": "2-59/30 * * * *"
+      },
+      {
+        "name": "Monitoring Use Cases - Discovery Host Inventory",
+        "stage": "inventory_hosts",
+        "mode": "quick",
+        "outputCollection": "muc_discovered_datasets",
+        "cronSchedule": "3-59/30 * * * *"
+      },
+      {
+        "name": "Monitoring Use Cases - Discovery Data Model Inventory",
+        "stage": "inventory_cim",
+        "mode": "standard",
+        "outputCollection": "muc_discovered_datasets",
+        "cronSchedule": "4 * * * *"
+      },
+      {
+        "name": "Monitoring Use Cases - Discovery Field Sample",
+        "stage": "inventory_fields",
+        "mode": "standard",
+        "outputCollection": "muc_discovered_datasets",
+        "cronSchedule": "5 * * * *"
+      },
+      {
+        "name": "Monitoring Use Cases - Discovery Telemetry Snapshot",
+        "stage": "inventory_telemetry",
+        "mode": "standard",
+        "outputCollection": "muc_scan_logs",
+        "cronSchedule": "6 * * * *"
+      },
+      {
+        "name": "Monitoring Use Cases - Discovery Inventory Summary",
+        "stage": "inventory_summary",
+        "mode": "standard",
+        "outputCollection": "muc_scan_runs",
+        "cronSchedule": "8-59/30 * * * *"
+      }
+    ]
+  },
+  "collections": [
+    {
+      "name": "muc_requirement_profiles",
+      "schema": "requirementProfile",
+      "purpose": "Normalized runtime requirements for each use case.",
+      "primaryKey": "use_case_id"
+    },
+    {
+      "name": "muc_discovered_datasets",
+      "schema": "discoveredDataset",
+      "purpose": "Normalized datasets observed in the local Splunk environment.",
+      "primaryKey": "dataset_id"
+    },
+    {
+      "name": "muc_use_case_mappings",
+      "schema": "useCaseMapping",
+      "purpose": "Engine and effective mapping state for each use case.",
+      "primaryKey": "use_case_id"
+    },
+    {
+      "name": "muc_mapping_overrides",
+      "schema": "mappingOverride",
+      "purpose": "Admin-authored overrides that persist across reruns.",
+      "primaryKey": "override_id"
+    },
+    {
+      "name": "muc_scan_runs",
+      "schema": "scanRun",
+      "purpose": "Lifecycle and summary telemetry for discovery scans.",
+      "primaryKey": "scan_run_id"
+    },
+    {
+      "name": "muc_scan_logs",
+      "schema": "scanLog",
+      "purpose": "Stage-by-stage logs for each discovery scan.",
+      "primaryKey": "log_id"
+    },
+    {
+      "name": "muc_adjacency_registry",
+      "schema": "adjacencyRegistry",
+      "purpose": "Deterministic adjacency hints and evidence weights.",
+      "primaryKey": "adjacency_id"
+    }
+  ],
+  "schemas": {
+    "requirementProfile": {
+      "type": "object",
+      "required": [
+        "use_case_id",
+        "schema_version",
+        "title",
+        "generated_at",
+        "requirements"
+      ],
+      "properties": {
+        "use_case_id": {
+          "type": "string"
+        },
+        "schema_version": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "category": {
+          "type": "string"
+        },
+        "generated_at": {
+          "type": "string"
+        },
+        "requirements": {
+          "type": "object"
+        },
+        "normalization_hints": {
+          "type": "object"
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "discoveredDataset": {
+      "type": "object",
+      "required": [
+        "dataset_id",
+        "scan_run_id",
+        "dataset_key",
+        "display_name",
+        "origin"
+      ],
+      "properties": {
+        "dataset_id": {
+          "type": "string"
+        },
+        "scan_run_id": {
+          "type": "string"
+        },
+        "dataset_key": {
+          "type": "string"
+        },
+        "display_name": {
+          "type": "string"
+        },
+        "origin": {
+          "type": "string"
+        },
+        "snapshot_source": {
+          "type": "string",
+          "enum": [
+            "current",
+            "prior"
+          ]
+        },
+        "datamodels": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "indexes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sourcetypes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "hosts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "cim_models": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "supporting_apps": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "acceleration_state": {
+          "type": "string"
+        },
+        "field_sample_source": {
+          "type": "string"
+        },
+        "field_sample_size": {
+          "type": "number"
+        },
+        "field_sample_limit": {
+          "type": "number"
+        },
+        "field_summary": {
+          "type": "object"
+        },
+        "confidence": {
+          "type": "number"
+        },
+        "last_seen": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "useCaseMapping": {
+      "type": "object",
+      "required": [
+        "use_case_id",
+        "scan_run_id",
+        "engine_state",
+        "effective_state"
+      ],
+      "properties": {
+        "use_case_id": {
+          "type": "string"
+        },
+        "scan_run_id": {
+          "type": "string"
+        },
+        "engine_state": {
+          "type": "string",
+          "enum": [
+            "direct",
+            "adjacent",
+            "partial",
+            "none"
+          ]
+        },
+        "effective_state": {
+          "type": "string",
+          "enum": [
+            "direct",
+            "adjacent",
+            "partial",
+            "none",
+            "admin_asserted",
+            "admin_rejected"
+          ]
+        },
+        "matched_dataset_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "missing_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "precedence_reason": {
+          "type": "string"
+        },
+        "updated_at": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "mappingOverride": {
+      "type": "object",
+      "required": [
+        "override_id",
+        "use_case_id",
+        "override_type",
+        "note",
+        "created_by",
+        "created_at",
+        "active"
+      ],
+      "properties": {
+        "override_id": {
+          "type": "string"
+        },
+        "use_case_id": {
+          "type": "string"
+        },
+        "dataset_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "override_type": {
+          "type": "string",
+          "enum": [
+            "assert_direct",
+            "assert_adjacent",
+            "assert_partial",
+            "reject",
+            "note_only"
+          ]
+        },
+        "note": {
+          "type": "string"
+        },
+        "created_by": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "active": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "scanRun": {
+      "type": "object",
+      "required": [
+        "scan_run_id",
+        "status",
+        "mode",
+        "started_at"
+      ],
+      "properties": {
+        "scan_run_id": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "queued",
+            "running",
+            "failed",
+            "degraded",
+            "complete"
+          ]
+        },
+        "mode": {
+          "type": "string"
+        },
+        "started_at": {
+          "type": "string"
+        },
+        "completed_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "failed_stage": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "summary_json": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "datasets_discovered": {
+          "type": "number"
+        },
+        "use_cases_direct": {
+          "type": "number"
+        },
+        "use_cases_adjacent": {
+          "type": "number"
+        },
+        "use_cases_partial": {
+          "type": "number"
+        },
+        "use_cases_none": {
+          "type": "number"
+        },
+        "error_summary": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "scanLog": {
+      "type": "object",
+      "required": [
+        "log_id",
+        "scan_run_id",
+        "stage",
+        "level",
+        "logged_at",
+        "message"
+      ],
+      "properties": {
+        "log_id": {
+          "type": "string"
+        },
+        "scan_run_id": {
+          "type": "string"
+        },
+        "stage": {
+          "type": "string"
+        },
+        "level": {
+          "type": "string",
+          "enum": [
+            "info",
+            "warning",
+            "error"
+          ]
+        },
+        "logged_at": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        },
+        "record_count": {
+          "type": "number"
+        },
+        "details_json": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "adjacencyRegistry": {
+      "type": "object",
+      "required": [
+        "adjacency_id",
+        "source_key",
+        "target_key",
+        "relation_type",
+        "weight"
+      ],
+      "properties": {
+        "adjacency_id": {
+          "type": "string"
+        },
+        "source_key": {
+          "type": "string"
+        },
+        "target_key": {
+          "type": "string"
+        },
+        "relation_type": {
+          "type": "string"
+        },
+        "weight": {
+          "type": "number"
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "updated_at": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

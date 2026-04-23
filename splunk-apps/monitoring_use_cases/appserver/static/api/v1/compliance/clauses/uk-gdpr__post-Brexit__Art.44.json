@@ -1,0 +1,84 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 3,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "Art.44",
+  "clauseId": "uk-gdpr@post-Brexit#Art.44",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 3,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "Derived from GDPR@2016/679 Art.44 (parent assurance='full'). UK GDPR preserves parent clause numbering; inherited assurance degraded one step.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Detects violations of UK GDPR Art.44 — Splunk UC-22.38.1: Cross-border personal-data flow anomaly — egress to unsanctioned jurisdictions.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.38.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "detects-violation-of",
+      "provenance": "derived-from-parent",
+      "smeCaveat": null,
+      "ucId": "22.38.1",
+      "ucTitle": "Cross-border personal-data flow anomaly — egress to unsanctioned jurisdictions"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "Derived from GDPR@2016/679 Art.44 (parent assurance='full'). UK GDPR preserves parent clause numbering; inherited assurance degraded one step.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Detects violations of UK GDPR Art.44 — Splunk UC-22.38.3: Data localization enforcement — regulated-data must-stay-in-region.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.38.3' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "detects-violation-of",
+      "provenance": "derived-from-parent",
+      "smeCaveat": null,
+      "ucId": "22.38.3",
+      "ucTitle": "Data localization enforcement — regulated-data must-stay-in-region"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "Derived from GDPR@2016/679 Art.44 (parent assurance='full'). UK GDPR preserves parent clause numbering; inherited assurance degraded one step.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that UK GDPR Art.44 is enforced — Splunk UC-22.38.5: Bulk regulated-data export targeting non-adequate jurisdiction.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.38.5' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "derived-from-parent",
+      "smeCaveat": null,
+      "ucId": "22.38.5",
+      "ucTitle": "Bulk regulated-data export targeting non-adequate jurisdiction"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/uk-gdpr__post-Brexit__Art.44.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "detects-violation-of": 2,
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "uk-gdpr",
+  "regulationName": "uk-gdpr",
+  "regulationShortName": "uk-gdpr",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/uk-gdpr.json",
+    "regulationVersion": "/api/v1/compliance/regulations/uk-gdpr@post-Brexit.json",
+    "story": "/api/v1/compliance/story/uk-gdpr.json"
+  },
+  "tier": null,
+  "topAssurance": "partial",
+  "topic": null,
+  "version": "post-Brexit"
+}

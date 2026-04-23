@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "Art.17(2)",
+  "clauseId": "gdpr@2016/679#Art.17(2)",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "Art.17(2) requires reasonable measures to inform third parties; this UC surfaces the subset of third-party processors that acknowledged the erasure, but the DPO must verify the remainder manually.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that GDPR Art.17(2) is enforced — Splunk UC-22.36.2: Right-to-erasure propagation completeness across downstream systems.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.36.2' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.36.2",
+      "ucTitle": "Right-to-erasure propagation completeness across downstream systems"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/gdpr__2016%2F679__Art.17%282%29.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "gdpr",
+  "regulationName": "gdpr",
+  "regulationShortName": "gdpr",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/gdpr.json",
+    "regulationVersion": "/api/v1/compliance/regulations/gdpr@2016%2F679.json",
+    "story": "/api/v1/compliance/story/gdpr.json"
+  },
+  "tier": null,
+  "topAssurance": "partial",
+  "topic": null,
+  "version": "2016/679"
+}

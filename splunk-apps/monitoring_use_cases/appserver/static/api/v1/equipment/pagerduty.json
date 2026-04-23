@@ -1,0 +1,67 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 4,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "pagerduty",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "PagerDuty / Opsgenie",
+  "models": [],
+  "regulationIds": [
+    "nist-csf"
+  ],
+  "regulations": [
+    {
+      "clauseMappings": [
+        {
+          "clause": "RS.CO-01",
+          "useCaseId": "22.7.43",
+          "version": "2.0"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/nist-csf.json",
+      "regulationId": "nist-csf",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.7.43"
+      ]
+    }
+  ],
+  "useCaseCount": 4,
+  "useCaseIds": [
+    "12.2.22",
+    "13.3.3",
+    "16.1.13",
+    "22.7.43"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 12,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "12.2.22"
+      ]
+    },
+    {
+      "category": 13,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "13.3.3"
+      ]
+    },
+    {
+      "category": 16,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "16.1.13"
+      ]
+    },
+    {
+      "category": 22,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.7.43"
+      ]
+    }
+  ]
+}

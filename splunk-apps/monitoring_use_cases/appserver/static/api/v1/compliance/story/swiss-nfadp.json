@@ -1,0 +1,150 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 2
+      },
+      "clause": "Art.24",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.39.1",
+        "22.39.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Data breach notification",
+      "version": "2020 revision"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.7",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.50.14"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Privacy by design",
+      "version": "2020 revision"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "2 of 2 common clauses are covered by the catalogue, with a priority-weighted coverage of 37.5% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoveragePercent": 37.5,
+      "stateCounts": {
+        "contributing-only": 1,
+        "covered-full": 0,
+        "covered-partial": 1,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "Art.24",
+        "killerUcId": "22.39.1",
+        "killerUcTitle": "Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA)",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Data breach notification",
+        "version": "2020 revision",
+        "why": "Clause Art.24 (Data breach notification) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "Art.7",
+        "killerUcId": "22.50.14",
+        "killerUcTitle": "Swiss nFADP Art.7 — privacy-by-design checkpoints in the SDLC",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Privacy by design",
+        "version": "2020 revision",
+        "why": "Clause Art.7 (Privacy by design) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "Art.24",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.39.1",
+            "ucTitle": "Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA)"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.39.2",
+            "ucTitle": "Regulator-portal submission evidence — one-way API acknowledgement audit"
+          }
+        ],
+        "topic": "Data breach notification",
+        "version": "2020 revision"
+      },
+      {
+        "clause": "Art.7",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.50.14",
+            "ucTitle": "Swiss nFADP Art.7 — privacy-by-design checkpoints in the SDLC"
+          }
+        ],
+        "topic": "Privacy by design",
+        "version": "2020 revision"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "CH"
+  ],
+  "narrative": null,
+  "narrativeRef": null,
+  "regulationId": "swiss-nfadp",
+  "regulationName": "Swiss Federal Act on Data Protection (nFADP)",
+  "regulationShortName": "Swiss nFADP",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=swiss-nfadp",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#swiss-nfadp",
+    "evidencePack": null,
+    "primerAnchor": "docs/regulatory-primer.md#53-swiss-nfadp-gdpr-mapped-mode",
+    "regulation": "/api/v1/compliance/regulations/swiss-nfadp.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

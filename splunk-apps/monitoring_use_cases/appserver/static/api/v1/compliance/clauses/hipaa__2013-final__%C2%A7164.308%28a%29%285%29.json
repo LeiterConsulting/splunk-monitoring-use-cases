@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "§164.308(a)(5)",
+  "clauseId": "hipaa@2013-final#§164.308(a)(5)",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "HIPAA workforce training applies to workforce with ePHI access.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that HIPAA §164.308(a)(5) (Security awareness and training) is enforced — Splunk UC-22.46.5: Developer data-handling training — prod-access engineers lacking training.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.46.5' running on IdP prod-access group membership, LMS completion records for DPO-approved course ids., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.46.5",
+      "ucTitle": "Developer data-handling training — prod-access engineers lacking training"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/hipaa__2013-final__%C2%A7164.308%28a%29%285%29.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "hipaa",
+  "regulationName": "hipaa",
+  "regulationShortName": "hipaa",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/hipaa.json",
+    "regulationVersion": "/api/v1/compliance/regulations/hipaa@2013-final.json",
+    "story": "/api/v1/compliance/story/hipaa.json"
+  },
+  "tier": null,
+  "topAssurance": "partial",
+  "topic": null,
+  "version": "2013-final"
+}

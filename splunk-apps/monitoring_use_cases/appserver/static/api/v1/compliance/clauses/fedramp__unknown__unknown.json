@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "unknown",
+  "clauseId": "fedramp@unknown#unknown",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-generated from legacy markdown 'Regulations' line during the per-UC migration. Requires SME review to fill in version, clause, mode, and assurance for FedRAMP.",
+      "category": 10,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that FedRAMP unknown is enforced — Splunk UC-10.12.39: FedRAMP Continuous Monitoring.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-10.12.39' running on sourcetype=\"aws:cloudtrail\", sourcetype=\"tenable:scan\", archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "10.12.39",
+      "ucTitle": "FedRAMP Continuous Monitoring"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/fedramp__unknown__unknown.json",
+  "gapNote": "fedramp clause unknown has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "fedramp",
+  "regulationName": "fedramp",
+  "regulationShortName": "fedramp",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/fedramp.json",
+    "regulationVersion": "/api/v1/compliance/regulations/fedramp@unknown.json",
+    "story": "/api/v1/compliance/story/fedramp.json"
+  },
+  "tier": null,
+  "topAssurance": "contributing",
+  "topic": null,
+  "version": "unknown"
+}

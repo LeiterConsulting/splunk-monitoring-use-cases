@@ -1,0 +1,14 @@
+{
+  "apiVersion": "v1",
+  "counts": {
+    "distinctTechniquesReferencedByCatalogue": 368,
+    "techniquesTotal": 898,
+    "ucsWithTechniques": 2443
+  },
+  "endpoints": {
+    "coverage": "/api/v1/mitre/coverage.json",
+    "d3fend": "/api/v1/mitre/d3fend.json",
+    "techniques": "/api/v1/mitre/techniques.json"
+  },
+  "generatedAt": "2026-04-21T07:24:26Z"
+}

@@ -1,0 +1,83 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 2,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.legislation.gov.uk/uksi/2018/506/contents",
+  "clause": "Reg.11",
+  "clauseId": "uk-nis@2018#Reg.11",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 3,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "UK NIS 2018 Reg.11 Incident reporting — post-mortem compliance ensures OES/RDSP incident reports are complete and timely.",
+      "category": 16,
+      "clauseUrl": "https://www.legislation.gov.uk/uksi/2018/506/contents",
+      "controlObjective": "Evidence that UK NIS Reg.11 (Incident reporting) is enforced — Splunk UC-16.1.20: Major Incident Post-Mortem Compliance.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-16.1.20' running on Incidents with major_incident or u_major_incident, post-mortem fields, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "16.1.20",
+      "ucTitle": "Major Incident Post-Mortem Compliance"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "UK NIS 2018 Reg.11 Incident reporting — incident tracking backs the 72-hour OES/RDSP reporting duty.",
+      "category": 16,
+      "clauseUrl": "https://www.legislation.gov.uk/uksi/2018/506/contents",
+      "controlObjective": "Evidence that UK NIS Reg.11 (Incident reporting) is enforced — Splunk UC-16.3.6: Major Incident and Post-Mortem Tracking.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-16.3.6' running on Major incident flag, post-mortem due and completed dates, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "16.3.6",
+      "ucTitle": "Major Incident and Post-Mortem Tracking"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'UK NIS Regulations' → 'Reg.11'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.legislation.gov.uk/uksi/2018/506/contents",
+      "controlObjective": "Evidence that UK NIS Reg.11 (Incident reporting) is enforced — Splunk UC-22.27.4: Network and information systems incident reporting.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.27.4' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.27.4",
+      "ucTitle": "Network and information systems incident reporting"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/uk-nis__2018__Reg.11.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 3
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "uk-nis",
+  "regulationName": "UK Network and Information Systems Regulations 2018",
+  "regulationShortName": "UK NIS",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/uk-nis.json",
+    "regulationVersion": "/api/v1/compliance/regulations/uk-nis@2018.json",
+    "story": "/api/v1/compliance/story/uk-nis.json"
+  },
+  "tier": 2,
+  "topAssurance": "partial",
+  "topic": "Incident reporting",
+  "version": "2018"
+}

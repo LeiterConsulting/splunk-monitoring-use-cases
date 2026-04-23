@@ -1,0 +1,107 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/22.45.1.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/22.45.1.json",
+    "sourcePath": "content/cat-22-regulatory-compliance/UC-22.45.1.json"
+  },
+  "apiVersion": "v1",
+  "app": "Splunk Enterprise / Splunk Cloud Platform",
+  "cimModels": [
+    "N/A"
+  ],
+  "compliance": [
+    {
+      "assurance": "full",
+      "assurance_rationale": "CP-9 system backup — the UC evidences successful test restoration.",
+      "clause": "CP-9",
+      "controlObjective": "Evidence that NIST 800-53 CP-9 (System backup) is enforced — Splunk UC-22.45.1: Backup restore test evidence — RPO/RTO SLA compliance per tier.",
+      "evidenceArtifact": "Saved search 'UC-22.45.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "nist-800-53@Rev. 5#CP-9",
+      "regulation": "NIST 800-53",
+      "requires_sme_review": true,
+      "version": "Rev. 5"
+    },
+    {
+      "assurance": "full",
+      "assurance_rationale": "Art.12 backup policies and recovery methods — mandates tested RPO/RTO.",
+      "clause": "Art.12",
+      "controlObjective": "Evidence that DORA Art.12 (Backup policies and recovery methods) is enforced — Splunk UC-22.45.1: Backup restore test evidence — RPO/RTO SLA compliance per tier.",
+      "evidenceArtifact": "Saved search 'UC-22.45.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "dora@Regulation (EU) 2022/2554#Art.12",
+      "regulation": "DORA",
+      "requires_sme_review": true,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assurance": "full",
+      "assurance_rationale": "A1.2 availability — backup testing is standard SOC 2 evidence.",
+      "clause": "A1.2",
+      "controlObjective": "Evidence that SOC 2 A1.2 (Availability commitments) is enforced — Splunk UC-22.45.1: Backup restore test evidence — RPO/RTO SLA compliance per tier.",
+      "evidenceArtifact": "Saved search 'UC-22.45.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "soc-2@2017 TSC#A1.2",
+      "regulation": "SOC 2",
+      "requires_sme_review": true,
+      "version": "2017 TSC"
+    }
+  ],
+  "controlFamily": "backup-restore-evidence",
+  "controlTest": {
+    "fixtureRef": "sample-data/uc-22.45.1-fixture.json",
+    "negativeScenario": "Tier-1 systems meeting both RPO and RTO do NOT fire.",
+    "positiveScenario": "When a tier-1 system misses either its RPO or RTO during the weekly test, the UC fires with system, tier, measured_rpo, measured_rto."
+  },
+  "criticality": "critical",
+  "dataSources": "See subcategory preamble.",
+  "description": "Weekly restore-test evidence with per-tier SLOs. Any failing test becomes an audit-visible finding instead of a silently-missed DR exercise.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Splunk Enterprise / Splunk Cloud Platform.\n• Ensure the following data sources are available: See subcategory preamble..\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\n(1) Configure restore test jobs; (2) ingest durations and results; (3) schedule weekly; (4) on miss, escalate to continuity lead.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=backup sourcetype=restore:test earliest=-7d\n| stats max(rpo_seconds) as rpo_s, max(rto_seconds) as rto_s by system tier test_id\n| lookup dr_tiers.csv tier OUTPUT rpo_slo rto_slo\n| where rpo_s>rpo_slo OR rto_s>rto_slo\n| table system tier rpo_s rpo_slo rto_s rto_slo\n```\n\nUnderstanding this SPL\n\n**Backup restore test evidence — RPO/RTO SLA compliance per tier** — Makes backup testing a continuous control rather than an annual artefact.\n\nDocumented **Data sources**: See subcategory preamble. **App/TA** (typical add-on context): Splunk Enterprise / Splunk Cloud Platform. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: backup; **sourcetype**: restore:test. If that sourcetype is not mentioned in Data sources, double-check parsing or update the documentation to match the feed you actually ingest.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=backup, sourcetype=restore:test, time bounds. Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• `stats` rolls up events into metrics; results are split **by system tier test_id** so each row reflects one combination of those dimensions (useful for per-host, per-user, or per-entity comparisons for this use case).\n• Enriches events using `lookup` (lookup definition + optional OUTPUT fields).\n• Filters the current rows with `where rpo_s>rpo_slo OR rto_s>rto_slo` — typically the threshold or rule expression for this monitoring goal.\n• Pipeline stage (see **Backup restore test evidence — RPO/RTO SLA compliance per tier**): table system tier rpo_s rpo_slo rto_s rto_slo\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Table of tests, line chart of RPO/RTO trend, single-value '% of tier-1 systems within SLO'.",
+  "detectionType": "Correlation",
+  "difficulty": "intermediate",
+  "evidence": "Weekly 'backup_restore_sla' writes RPO/RTO test evidence per tier to compliance_summary.",
+  "exclusions": "Does NOT evaluate data-integrity of restored content; pairs with UC-22.45.2.",
+  "grandmaExplanation": "Makes backup testing a continuous control rather than an annual artefact — so you can show exactly what is being watched and when something went wrong.",
+  "id": "22.45.1",
+  "implementation": "(1) Configure restore test jobs; (2) ingest durations and results; (3) schedule weekly; (4) on miss, escalate to continuity lead.",
+  "knownFalsePositives": "Tier-2/-3 systems may legitimately miss the tier-1 SLO; ensure tier lookup is current.",
+  "lastReviewed": "2026-04-16",
+  "monitoringType": [
+    "Compliance"
+  ],
+  "owner": "Head of IT Operations",
+  "references": [
+    {
+      "retrieved": "2026-04-16",
+      "title": "NIST SP 800-53 Rev. 5",
+      "url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "Regulation (EU) 2022/2554 — DORA",
+      "url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "AICPA Trust Services Criteria",
+      "url": "https://www.aicpa-cima.com/resources/download/2017-trust-services-criteria-with-revised-points-of-focus-2022"
+    }
+  ],
+  "requiredFields": [
+    "_time"
+  ],
+  "reviewer": "N/A",
+  "securityDomain": "cloud",
+  "spl": "index=backup sourcetype=restore:test earliest=-7d\n| stats max(rpo_seconds) as rpo_s, max(rto_seconds) as rto_s by system tier test_id\n| lookup dr_tiers.csv tier OUTPUT rpo_slo rto_slo\n| where rpo_s>rpo_slo OR rto_s>rto_slo\n| table system tier rpo_s rpo_slo rto_s rto_slo",
+  "splunkPillar": "Platform",
+  "splunkVersions": [
+    "9.2+",
+    "Cloud"
+  ],
+  "status": "verified",
+  "title": "Backup restore test evidence — RPO/RTO SLA compliance per tier",
+  "value": "Makes backup testing a continuous control rather than an annual artefact.",
+  "visualization": "Table of tests, line chart of RPO/RTO trend, single-value '% of tier-1 systems within SLO'."
+}

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Splunk Monitoring Use Cases</title>
+  <link href="https://fenre.github.io/splunk-monitoring-use-cases/feed.xml" rel="self" />
+  <link href="https://fenre.github.io/splunk-monitoring-use-cases/" />
+  <id>https://fenre.github.io/splunk-monitoring-use-cases/</id>
+  <updated>1970-01-01T00:00:00Z</updated>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.1/</id>
+    <title>UC-1.1.1 CPU Utilization Trending (Linux)</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.1/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.10/</id>
+    <title>UC-1.1.10 Cron Job Failure Monitoring</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.10/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.100/</id>
+    <title>UC-1.1.100 Softirq Rate Monitoring</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.100/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.101/</id>
+    <title>UC-1.1.101 Context Switch Anomalies Detection</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.101/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.102/</id>
+    <title>UC-1.1.102 EDAC Memory Error Tracking</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.102/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.103/</id>
+    <title>UC-1.1.103 IPMI Sensor Threshold Violations</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.103/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.104/</id>
+    <title>UC-1.1.104 Thermal Throttling Detection</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.104/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.105/</id>
+    <title>UC-1.1.105 Fan Speed Anomalies</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.105/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.106/</id>
+    <title>UC-1.1.106 Power Supply State Changes</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.106/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.107/</id>
+    <title>UC-1.1.107 Hardware Clock Drift Detection</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.107/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.108/</id>
+    <title>UC-1.1.108 Password Policy Violation Detection</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.108/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.109/</id>
+    <title>UC-1.1.109 Account Expiry Monitoring</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.109/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.11/</id>
+    <title>UC-1.1.11 Kernel Panic Detection</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.11/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.110/</id>
+    <title>UC-1.1.110 Inactive User Detection</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.110/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.111/</id>
+    <title>UC-1.1.111 World-Writable File Detection</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.111/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.112/</id>
+    <title>UC-1.1.112 Unowned File Detection</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.112/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.113/</id>
+    <title>UC-1.1.113 SETUID Audit and Tracking</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.113/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.114/</id>
+    <title>UC-1.1.114 Open File Handle Per-Process Monitoring</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.114/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.115/</id>
+    <title>UC-1.1.115 Listening Port Compliance</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.115/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.116/</id>
+    <title>UC-1.1.116 Installed Package Drift Detection</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.116/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.117/</id>
+    <title>UC-1.1.117 Configuration File Change Tracking (/etc)</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.117/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.118/</id>
+    <title>UC-1.1.118 System Reboot Frequency Anomaly</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.118/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.119/</id>
+    <title>UC-1.1.119 Defunct (Zombie) Process Accumulation</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.119/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.12/</id>
+    <title>UC-1.1.12 NTP Time Sync Drift (Linux)</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.12/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.120/</id>
+    <title>UC-1.1.120 Symbolic Link Chain Depth Monitoring</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.120/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.121/</id>
+    <title>UC-1.1.121 Bootloader Configuration Changes</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.121/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.122/</id>
+    <title>UC-1.1.122 Systemd Unit State Monitoring</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.122/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.123/</id>
+    <title>UC-1.1.123 Linux Cgroup Resource Pressure (PSI)</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.123/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.124/</id>
+    <title>UC-1.1.124 Linux Entropy Pool Depletion</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.124/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.125/</id>
+    <title>UC-1.1.125 Linux Journal / Journald Health</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.125/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.126/</id>
+    <title>UC-1.1.126 Chrony / NTP Time Synchronization Drift</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.126/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.127/</id>
+    <title>UC-1.1.127 Swap Activity Rate Trending</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.127/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.128/</id>
+    <title>UC-1.1.128 Filesystem Inode Exhaustion</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.128/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.129/</id>
+    <title>UC-1.1.129 Linux Softirq / Hardirq Time</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.129/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.13/</id>
+    <title>UC-1.1.13 Zombie Process Accumulation</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.13/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.130/</id>
+    <title>UC-1.1.130 TCP Connection State Distribution (Linux)</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.130/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.131/</id>
+    <title>UC-1.1.131 Linux OOM Killer Invocation Tracking</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.131/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.14/</id>
+    <title>UC-1.1.14 File Descriptor Exhaustion</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.14/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.15/</id>
+    <title>UC-1.1.15 Network Interface Errors</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.15/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.16/</id>
+    <title>UC-1.1.16 Package Vulnerability Tracking</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.16/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.17/</id>
+    <title>UC-1.1.17 Service Availability Monitoring</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.17/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.18/</id>
+    <title>UC-1.1.18 User Account Changes</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.18/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.19/</id>
+    <title>UC-1.1.19 Filesystem Read-Only Detection</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.19/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.2/</id>
+    <title>UC-1.1.2 Memory Pressure Detection (Linux)</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.2/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.20/</id>
+    <title>UC-1.1.20 Reboot Detection (Linux)</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.20/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.21/</id>
+    <title>UC-1.1.21 Kernel Module Loading Tracking</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.21/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.22/</id>
+    <title>UC-1.1.22 Sysctl Parameter Changes Detection</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.22/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.23/</id>
+    <title>UC-1.1.23 Kernel Core Dump Generation</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.23/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.24/</id>
+    <title>UC-1.1.24 Kernel Ring Buffer Error Rate</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.24/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+  <entry>
+    <id>https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.25/</id>
+    <title>UC-1.1.25 NUMA Imbalance Detection</title>
+    <link href="https://fenre.github.io/splunk-monitoring-use-cases/uc/UC-1.1.25/" />
+    <updated>1970-01-01T00:00:00Z</updated>
+  </entry>
+</feed>

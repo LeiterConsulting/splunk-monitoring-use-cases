@@ -1,0 +1,137 @@
+{
+  "aliases": [
+    "NESA IAS",
+    "NESA UAE IAS"
+  ],
+  "apiVersion": "v1",
+  "id": "nesa-uae-ias",
+  "jurisdiction": [
+    "AE"
+  ],
+  "name": "UAE NESA Information Assurance Standards",
+  "shortName": "NESA IAS",
+  "tags": [
+    "baseline",
+    "government"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://www.nesa.gov.ae/",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "T3.2",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Access control management"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "T3.5",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": null,
+          "topic": "Cryptographic controls and key management"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "T4.3",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Audit trails, logging and information-system monitoring"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "T6.3",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Information security incident management"
+        }
+      ],
+      "clauseExamples": [
+        "T1.1",
+        "T2.3.1"
+      ],
+      "clauseGrammar": "^T\\d+(\\.\\d+){0,2}$",
+      "clauseUrlTemplate": null,
+      "clausesReferencedByCatalogue": [],
+      "commonClauses": [
+        {
+          "clause": "T3.2",
+          "priorityWeight": 1.0,
+          "topic": "Access control management"
+        },
+        {
+          "clause": "T4.3",
+          "priorityWeight": 1.0,
+          "topic": "Audit trails, logging and information-system monitoring"
+        },
+        {
+          "clause": "T6.3",
+          "priorityWeight": 1.0,
+          "topic": "Information security incident management"
+        },
+        {
+          "clause": "T3.5",
+          "priorityWeight": 0.7,
+          "topic": "Cryptographic controls and key management"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 0.0,
+        "commonClauseCount": 4,
+        "coveredClauseCount": 0,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 0.0,
+        "stateCounts": {
+          "contributing-only": 0,
+          "covered-full": 0,
+          "covered-partial": 0,
+          "uncovered": 4
+        }
+      },
+      "effectiveFrom": "2020-01-01",
+      "endpoint": "/api/v1/compliance/regulations/nesa-uae-ias@v2--2020-.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [],
+      "version": "v2 (2020)"
+    }
+  ]
+}

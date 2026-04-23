@@ -1,0 +1,172 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/22.39.2.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/22.39.2.json",
+    "sourcePath": "content/cat-22-regulatory-compliance/UC-22.39.2.json"
+  },
+  "apiVersion": "v1",
+  "app": "Splunk Enterprise / Splunk Cloud Platform",
+  "cimModels": [
+    "Ticket_Management"
+  ],
+  "compliance": [
+    {
+      "assurance": "full",
+      "assurance_rationale": "Art.33 requires the notification to reach the authority; a submitted-without-ack outcome is not a completed notification.",
+      "clause": "Art.33",
+      "controlObjective": "Evidence that GDPR Art.33 (Breach notification to supervisory authority) is enforced — Splunk UC-22.39.2: Regulator-portal submission evidence — one-way API acknowledgement audit.",
+      "evidenceArtifact": "Saved search 'UC-22.39.2' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "gdpr@2016/679#Art.33",
+      "regulation": "GDPR",
+      "requires_sme_review": true,
+      "version": "2016/679"
+    },
+    {
+      "assurance": "full",
+      "assurance_rationale": "NIS2 Art.23 requires CSIRT notification with acknowledgement; the UC evidences the closed loop.",
+      "clause": "Art.23",
+      "controlObjective": "Evidence that NIS2 Art.23 (Reporting obligations) is enforced — Splunk UC-22.39.2: Regulator-portal submission evidence — one-way API acknowledgement audit.",
+      "evidenceArtifact": "Saved search 'UC-22.39.2' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "nis2@Directive (EU) 2022/2555#Art.23",
+      "regulation": "NIS2",
+      "requires_sme_review": true,
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "Derived from GDPR@2016/679 Art.33 (parent assurance='full'). Clause mapped per data/regulations.json derivesFrom graph; inherited assurance degraded one step.",
+      "clause": "Art.26",
+      "controlObjective": "Evidence that APPI Art.26 (Leakage reporting) is enforced — Splunk UC-22.39.2: Regulator-portal submission evidence — one-way API acknowledgement audit.",
+      "derivationSource": {
+        "inheritanceMode": "mapped",
+        "parentAssurance": "full",
+        "parentClause": "Art.33",
+        "parentRegulation": "gdpr",
+        "parentVersion": "2016/679"
+      },
+      "evidenceArtifact": "Saved search 'UC-22.39.2' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "appi@2022 amendments#Art.26",
+      "provenance": "derived-from-parent",
+      "regulation": "APPI",
+      "requires_sme_review": true,
+      "version": "2022 amendments"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "Derived from GDPR@2016/679 Art.33 (parent assurance='full'). Clause mapped per data/regulations.json derivesFrom graph; inherited assurance degraded one step. Divergence recorded — SME review should confirm scope fit.",
+      "clause": "Art.48",
+      "controlObjective": "Evidence that LGPD Art.48 (Breach notification) is enforced — Splunk UC-22.39.2: Regulator-portal submission evidence — one-way API acknowledgement audit.",
+      "derivationSource": {
+        "divergenceNote": "ANPD is the competent authority; notification timelines differ.",
+        "inheritanceMode": "mapped",
+        "parentAssurance": "full",
+        "parentClause": "Art.33",
+        "parentRegulation": "gdpr",
+        "parentVersion": "2016/679"
+      },
+      "evidenceArtifact": "Saved search 'UC-22.39.2' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "lgpd@Lei nº 13.709/2018#Art.48",
+      "provenance": "derived-from-parent",
+      "regulation": "LGPD",
+      "requires_sme_review": true,
+      "version": "Lei nº 13.709/2018"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "Derived from GDPR@2016/679 Art.33 (parent assurance='full'). Clause mapped per data/regulations.json derivesFrom graph; inherited assurance degraded one step. Divergence recorded — SME review should confirm scope fit.",
+      "clause": "Art.24",
+      "controlObjective": "Evidence that Swiss nFADP Art.24 (Data breach notification) is enforced — Splunk UC-22.39.2: Regulator-portal submission evidence — one-way API acknowledgement audit.",
+      "derivationSource": {
+        "divergenceNote": "Swiss FDPIC replaces EU supervisory authority for breach notification.",
+        "inheritanceMode": "mapped",
+        "parentAssurance": "full",
+        "parentClause": "Art.33",
+        "parentRegulation": "gdpr",
+        "parentVersion": "2016/679"
+      },
+      "evidenceArtifact": "Saved search 'UC-22.39.2' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "swiss-nfadp@2020 revision#Art.24",
+      "provenance": "derived-from-parent",
+      "regulation": "Swiss nFADP",
+      "requires_sme_review": true,
+      "version": "2020 revision"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "Derived from GDPR@2016/679 Art.33 (parent assurance='full'). UK GDPR preserves parent clause numbering; inherited assurance degraded one step.",
+      "clause": "Art.33",
+      "controlObjective": "Evidence that UK GDPR Art.33 is enforced — Splunk UC-22.39.2: Regulator-portal submission evidence — one-way API acknowledgement audit.",
+      "derivationSource": {
+        "inheritanceMode": "identity",
+        "parentAssurance": "full",
+        "parentClause": "Art.33",
+        "parentRegulation": "gdpr",
+        "parentVersion": "2016/679"
+      },
+      "evidenceArtifact": "Saved search 'UC-22.39.2' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "uk-gdpr@post-Brexit#Art.33",
+      "provenance": "derived-from-parent",
+      "regulation": "UK GDPR",
+      "requires_sme_review": true,
+      "version": "post-Brexit"
+    }
+  ],
+  "controlFamily": "ir-drill-evidence",
+  "controlTest": {
+    "fixtureRef": "sample-data/uc-22.39.2-fixture.json",
+    "negativeScenario": "Submissions with a valid tracking_id and an ack event do NOT fire.",
+    "positiveScenario": "When a regulator submission is sent but no acknowledgement is captured within 15 minutes of submission, the UC fires and escalates to the incident coordinator."
+  },
+  "criticality": "high",
+  "dataSources": "See subcategory preamble.",
+  "description": "Closes the loop on regulator submissions by requiring a matching ack. Silent failures of the submission channel show up within minutes instead of being noticed during audit months later.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Splunk Enterprise / Splunk Cloud Platform.\n• Ensure the following data sources are available: See subcategory preamble..\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\n(1) Instrument submission and ack channels to emit matching tracking_ids; (2) schedule hourly; (3) on miss, SOAR opens an incident-notification retry case.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=notifications sourcetype=regulator:submission earliest=-72h\n| stats values(tracking_id) as tracking_id min(_time) as submitted by incident_id regulator\n| join type=outer incident_id regulator [search index=notifications sourcetype=regulator:ack earliest=-72h | stats values(tracking_id) as ack_tracking_id max(_time) as acked by incident_id regulator]\n| where isnull(ack_tracking_id) OR (acked-submitted)>900\n| table incident_id regulator tracking_id submitted acked\n```\n\nUnderstanding this SPL\n\n**Regulator-portal submission evidence — one-way API acknowledgement audit** — Addresses the repeatedly-cited 'we submitted but the authority never acknowledged' defence that now carries no weight in supervisory decisions.\n\nDocumented **Data sources**: See subcategory preamble. **App/TA** (typical add-on context): Splunk Enterprise / Splunk Cloud Platform. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: notifications; **sourcetype**: regulator:submission. If that sourcetype is not mentioned in Data sources, double-check parsing or update the documentation to match the feed you actually ingest.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=notifications, sourcetype=regulator:submission, time bounds. Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• `stats` rolls up events into metrics; results are split **by incident_id regulator** so each row reflects one combination of those dimensions (useful for per-host, per-user, or per-entity comparisons for this use case).\n• Joins to a subsearch with `join` — set `max=` to match cardinality and avoid silent truncation.\n• Filters the current rows with `where isnull(ack_tracking_id) OR (acked-submitted)>900` — typically the threshold or rule expression for this monitoring goal.\n• Pipeline stage (see **Regulator-portal submission evidence — one-way API acknowledgement audit**): table incident_id regulator tracking_id submitted acked\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Funnel (submitted → acked), bar chart of delays by regulator, single-value 'submissions acked within 15 min'.",
+  "detectionType": "Correlation",
+  "difficulty": "intermediate",
+  "evidence": "Hourly search 'regulator_submission_ack' captures submission → acknowledgement round-trip and stores receipts to compliance_summary.",
+  "exclusions": "Does NOT validate correctness of the report content; pairs with internal QA review.",
+  "grandmaExplanation": "Addresses the repeatedly-cited 'we submitted but the authority never acknowledged' defence that now carries no weight in supervisory decisions — so you can show exactly what is being watched and when something went wrong.",
+  "id": "22.39.2",
+  "implementation": "(1) Instrument submission and ack channels to emit matching tracking_ids; (2) schedule hourly; (3) on miss, SOAR opens an incident-notification retry case.",
+  "knownFalsePositives": "Regulator portals that batch acks daily produce legitimate lag; configure a per-regulator grace window.",
+  "lastReviewed": "2026-04-16",
+  "monitoringType": [
+    "Compliance"
+  ],
+  "owner": "CISO",
+  "references": [
+    {
+      "retrieved": "2026-04-16",
+      "title": "Regulation (EU) 2016/679 — GDPR",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "Directive (EU) 2022/2555 — NIS2",
+      "url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj"
+    }
+  ],
+  "requiredFields": [
+    "_time"
+  ],
+  "reviewer": "N/A",
+  "securityDomain": "threat",
+  "spl": "index=notifications sourcetype=regulator:submission earliest=-72h\n| stats values(tracking_id) as tracking_id min(_time) as submitted by incident_id regulator\n| join type=outer incident_id regulator [search index=notifications sourcetype=regulator:ack earliest=-72h | stats values(tracking_id) as ack_tracking_id max(_time) as acked by incident_id regulator]\n| where isnull(ack_tracking_id) OR (acked-submitted)>900\n| table incident_id regulator tracking_id submitted acked",
+  "splunkPillar": "Security",
+  "splunkVersions": [
+    "9.2+",
+    "Cloud"
+  ],
+  "status": "community",
+  "title": "Regulator-portal submission evidence — one-way API acknowledgement audit",
+  "value": "Addresses the repeatedly-cited 'we submitted but the authority never acknowledged' defence that now carries no weight in supervisory decisions.",
+  "visualization": "Funnel (submitted → acked), bar chart of delays by regulator, single-value 'submissions acked within 15 min'."
+}

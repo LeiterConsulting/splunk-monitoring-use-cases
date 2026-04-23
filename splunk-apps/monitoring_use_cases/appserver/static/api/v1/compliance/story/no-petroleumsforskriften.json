@@ -1,0 +1,209 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§11",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.50.7"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Emergency preparedness and response",
+      "version": "1997 as amended"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 5,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§15",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.26.11",
+        "22.26.12",
+        "22.26.13",
+        "22.26.14",
+        "22.26.15"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Health, safety and environmental (HSE) management requirements",
+      "version": "1997 as amended"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.50.20"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "contributing",
+      "topic": "General operator obligations for safety and security",
+      "version": "1997 as amended"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "3 of 3 common clauses are covered by the catalogue, with a priority-weighted coverage of 25.0% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 3,
+      "priorityWeightedCoveragePercent": 25.0,
+      "stateCounts": {
+        "contributing-only": 3,
+        "covered-full": 0,
+        "covered-partial": 0,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "§11",
+        "killerUcId": "22.50.7",
+        "killerUcTitle": "Petroleumsforskriften §11 — emergency preparedness drill evidence",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Emergency preparedness and response",
+        "version": "1997 as amended",
+        "why": "Clause §11 (Emergency preparedness and response) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "§15",
+        "killerUcId": "22.26.11",
+        "killerUcTitle": "Offshore platform system monitoring",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Health, safety and environmental (HSE) management requirements",
+        "version": "1997 as amended",
+        "why": "Clause §15 (Health, safety and environmental (HSE) management requirements) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "§3",
+        "killerUcId": "22.50.20",
+        "killerUcTitle": "Petroleumsforskriften §3 — operator safety/security obligation register",
+        "priorityWeight": 0.7,
+        "topAssurance": "contributing",
+        "topic": "General operator obligations for safety and security",
+        "version": "1997 as amended",
+        "why": "Clause §3 (General operator obligations for safety and security) carries a regulator-assigned priority weight of 0.7, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "§11",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.50.7",
+            "ucTitle": "Petroleumsforskriften §11 — emergency preparedness drill evidence"
+          }
+        ],
+        "topic": "Emergency preparedness and response",
+        "version": "1997 as amended"
+      },
+      {
+        "clause": "§15",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.26.12",
+            "ucTitle": "Safety-critical system integrity"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.26.14",
+            "ucTitle": "HSE system audit trails"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.26.13",
+            "ucTitle": "PSA compliance evidence"
+          }
+        ],
+        "topic": "Health, safety and environmental (HSE) management requirements",
+        "version": "1997 as amended"
+      },
+      {
+        "clause": "§3",
+        "coverageState": "contributing-only",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.50.20",
+            "ucTitle": "Petroleumsforskriften §3 — operator safety/security obligation register"
+          }
+        ],
+        "topic": "General operator obligations for safety and security",
+        "version": "1997 as amended"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "NO"
+  ],
+  "narrative": null,
+  "narrativeRef": null,
+  "regulationId": "no-petroleumsforskriften",
+  "regulationName": "Norwegian Petroleumsforskriften (Petroleum Safety regulation)",
+  "regulationShortName": "NO Petroleumsforskriften",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=no-petroleumsforskriften",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#no-petroleumsforskriften",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/no-petroleumsforskriften.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

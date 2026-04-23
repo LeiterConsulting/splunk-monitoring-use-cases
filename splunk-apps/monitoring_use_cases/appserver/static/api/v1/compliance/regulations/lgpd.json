@@ -1,0 +1,147 @@
+{
+  "aliases": [
+    "LGPD"
+  ],
+  "apiVersion": "v1",
+  "id": "lgpd",
+  "jurisdiction": [
+    "BR"
+  ],
+  "name": "Lei Geral de Proteção de Dados Pessoais",
+  "shortName": "LGPD",
+  "tags": [
+    "privacy"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 10,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.46",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.32.1",
+            "22.32.2",
+            "22.32.4",
+            "22.32.5",
+            "22.32.6",
+            "22.32.7",
+            "22.32.8",
+            "22.35.2",
+            "22.35.3",
+            "22.41.1"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Security measures"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 3
+          },
+          "clause": "Art.48",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.32.3",
+            "22.39.1",
+            "22.39.2",
+            "22.39.3"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Breach notification"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "Art.6",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.37.4"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "partial",
+          "topic": null
+        }
+      ],
+      "clauseExamples": [
+        "Art.46",
+        "Art.48"
+      ],
+      "clauseGrammar": "^Art\\.\\d+(\\([a-z]\\))?$",
+      "clauseUrlTemplate": null,
+      "clausesReferencedByCatalogue": [
+        "Art.46",
+        "Art.48",
+        "Art.6"
+      ],
+      "commonClauses": [
+        {
+          "clause": "Art.46",
+          "priorityWeight": 1.0,
+          "topic": "Security measures"
+        },
+        {
+          "clause": "Art.48",
+          "priorityWeight": 1.0,
+          "topic": "Breach notification"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 100.0,
+        "commonClauseCount": 2,
+        "coveredClauseCount": 2,
+        "offCommonListClauseCount": 1,
+        "priorityWeightedCoveragePercent": 37.5,
+        "stateCounts": {
+          "contributing-only": 1,
+          "covered-full": 0,
+          "covered-partial": 1,
+          "uncovered": 0
+        }
+      },
+      "effectiveFrom": "2020-09-18",
+      "endpoint": "/api/v1/compliance/regulations/lgpd@Lei-n--13.709-2018.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [
+        "22.32.1",
+        "22.32.2",
+        "22.32.3",
+        "22.32.4",
+        "22.32.5",
+        "22.32.6",
+        "22.32.7",
+        "22.32.8",
+        "22.35.2",
+        "22.35.3",
+        "22.37.4",
+        "22.39.1",
+        "22.39.2",
+        "22.39.3",
+        "22.41.1"
+      ],
+      "version": "Lei nº 13.709/2018"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 2,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj#Art.10",
+  "clause": "Art.10",
+  "clauseId": "dora@Regulation (EU) 2022/2554#Art.10",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 3,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "DORA Art.10 Detection mechanisms — contributing.",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj",
+      "controlObjective": "Evidence that DORA Art.10 (Detection) is enforced — Splunk UC-22.8.33: SOC 2 CC7.1 — System-operations monitoring: uptime attestation and alert-noise governance.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.8.33' running on index=monitoring sourcetype=heartbeat:agent; index=alerts sourcetype=opsgenie:alert; CMDB lookup cmdb_ci_list.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.8.33",
+      "ucTitle": "SOC 2 CC7.1 — System-operations monitoring: uptime attestation and alert-noise governance"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'Art.5-16' → 'Art.10'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj#Art.10",
+      "controlObjective": "Evidence that DORA Art.10 (Detection) is enforced — Splunk UC-22.3.1: DORA ICT Risk Management Dashboard.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.3.1' running on index=risk sourcetype=\"stash\" (risk_object, risk_object_type, risk_score, source, _time), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.3.1",
+      "ucTitle": "DORA ICT Risk Management Dashboard"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj#Art.10",
+      "controlObjective": "Evidence that DORA Art.10 (Detection) is enforced — Splunk UC-22.3.7: DORA ICT Anomaly Detection Capabilities.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.3.7' running on _audit (correlation search execution), _internal (data ingestion), ES Content Management, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.3.7",
+      "ucTitle": "DORA ICT Anomaly Detection Capabilities"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/dora__Regulation%20%28EU%29%202022%2F2554__Art.10.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 3
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "dora",
+  "regulationName": "EU Digital Operational Resilience Act",
+  "regulationShortName": "DORA",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/dora.json",
+    "regulationVersion": "/api/v1/compliance/regulations/dora@Regulation%20%28EU%29%202022%2F2554.json",
+    "story": "/api/v1/compliance/story/dora.json"
+  },
+  "tier": 1,
+  "topAssurance": "partial",
+  "topic": "Detection",
+  "version": "Regulation (EU) 2022/2554"
+}

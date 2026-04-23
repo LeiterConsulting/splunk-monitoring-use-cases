@@ -1,0 +1,27 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 2,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "memcached",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Memcached",
+  "models": [],
+  "regulationIds": [],
+  "regulations": [],
+  "useCaseCount": 2,
+  "useCaseIds": [
+    "8.5.8",
+    "8.7.4"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 8,
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "8.5.8",
+        "8.7.4"
+      ]
+    }
+  ]
+}

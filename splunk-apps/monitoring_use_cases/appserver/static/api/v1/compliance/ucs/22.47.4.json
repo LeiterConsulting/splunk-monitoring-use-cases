@@ -1,0 +1,102 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/22.47.4.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/22.47.4.json",
+    "sourcePath": "content/cat-22-regulatory-compliance/UC-22.47.4.json"
+  },
+  "apiVersion": "v1",
+  "app": "Splunk Enterprise / Splunk Cloud Platform",
+  "cimModels": [
+    "N/A"
+  ],
+  "compliance": [
+    {
+      "assurance": "full",
+      "assurance_rationale": "CC1.5 accountability for controls includes evidence integrity.",
+      "clause": "CC1.5",
+      "controlObjective": "Evidence that SOC-2 CC1.5 is enforced — Splunk UC-22.47.4: Evidence-pack drift — auditor-facing vs pre-production evidence.",
+      "evidenceArtifact": "Saved search 'UC-22.47.4' running on Evidence-pack build pipeline, publication manifest, auditor-delivery signature events., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "soc-2@2017 TSC#CC1.5",
+      "regulation": "SOC-2",
+      "requires_sme_review": true,
+      "version": "2017 TSC"
+    },
+    {
+      "assurance": "full",
+      "assurance_rationale": "ITGC evidence-integrity requirement.",
+      "clause": "ITGC.Evidence.Integrity",
+      "controlObjective": "Evidence that SOX-ITGC ITGC.Evidence.Integrity is enforced — Splunk UC-22.47.4: Evidence-pack drift — auditor-facing vs pre-production evidence.",
+      "evidenceArtifact": "Saved search 'UC-22.47.4' running on Evidence-pack build pipeline, publication manifest, auditor-delivery signature events., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "sox-itgc@PCAOB AS 2201#ITGC.Evidence.Integrity",
+      "regulation": "SOX-ITGC",
+      "requires_sme_review": true,
+      "version": "PCAOB AS 2201"
+    }
+  ],
+  "controlFamily": "policy-to-control-traceability",
+  "controlTest": {
+    "attackTechnique": "T1070",
+    "fixtureRef": "sample-data/uc-22.47.4-fixture.json",
+    "negativeScenario": "Hashes match; no alert.",
+    "positiveScenario": "A pack published to the auditor has a different SHA256 than the pre-production manifest; the UC fires and names the pack."
+  },
+  "criticality": "high",
+  "dataSources": "Evidence-pack build pipeline, publication manifest, auditor-delivery signature events.",
+  "description": "Compares the pack published to an auditor against the pack that passed internal QA. Divergence is either a reproducibility failure or a tamper event.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Splunk Enterprise / Splunk Cloud Platform.\n• Ensure the following data sources are available: Evidence-pack build pipeline, publication manifest, auditor-delivery signature events..\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\n(1) Sign both preprod and published packs; (2) run post-publish; (3) on mismatch, alert internal audit and QA pipeline.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=grc sourcetype=evidence_pack:publish earliest=-30d\n| stats latest(sha256) as published_sha latest(pack_id) as pack by _time\n| join pack [search index=grc sourcetype=evidence_pack:preprod | stats latest(sha256) as preprod_sha by pack]\n| where published_sha!=preprod_sha\n| table pack published_sha preprod_sha\n```\n\nUnderstanding this SPL\n\n**Evidence-pack drift — auditor-facing vs pre-production evidence** — Protects the integrity of the evidence that underpins the external audit.\n\nDocumented **Data sources**: Evidence-pack build pipeline, publication manifest, auditor-delivery signature events. **App/TA** (typical add-on context): Splunk Enterprise / Splunk Cloud Platform. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: grc; **sourcetype**: evidence_pack:publish. If that sourcetype is not mentioned in Data sources, double-check parsing or update the documentation to match the feed you actually ingest.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=grc, sourcetype=evidence_pack:publish, time bounds. Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• `stats` rolls up events into metrics; results are split **by _time** so each row reflects one combination of those dimensions (useful for per-host, per-user, or per-entity comparisons for this use case).\n• Joins to a subsearch with `join` — set `max=` to match cardinality and avoid silent truncation.\n• Filters the current rows with `where published_sha!=preprod_sha` — typically the threshold or rule expression for this monitoring goal.\n• Pipeline stage (see **Evidence-pack drift — auditor-facing vs pre-production evidence**): table pack published_sha preprod_sha\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Table of mismatches, single-value 'packs with matching SHA (30d)'.",
+  "detectionType": "Correlation",
+  "difficulty": "advanced",
+  "evidence": "Saved search 'evidence_pack_drift' (after each publish) checks the published pack SHA256 against the pre-production manifest.",
+  "exclusions": "Does NOT evaluate the content of the evidence itself; only the SHA256 of the compiled pack.",
+  "grandmaExplanation": "Protects the integrity of the evidence that underpins the external audit — so you can show exactly what is being watched and when something went wrong.",
+  "id": "22.47.4",
+  "implementation": "(1) Sign both preprod and published packs; (2) run post-publish; (3) on mismatch, alert internal audit and QA pipeline.",
+  "knownFalsePositives": "Legitimate last-mile redactions can produce intended SHA changes; capture them in a redaction_log.csv.",
+  "lastReviewed": "2026-04-16",
+  "mitreAttack": [
+    "T1070"
+  ],
+  "monitoringType": [
+    "Security",
+    "Compliance"
+  ],
+  "owner": "Board / Audit Committee",
+  "references": [
+    {
+      "retrieved": "2026-04-16",
+      "title": "AICPA Trust Services Criteria",
+      "url": "https://www.aicpa-cima.com/resources/download/2017-trust-services-criteria-with-revised-points-of-focus-2022"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "PCAOB AS 2201",
+      "url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "MITRE ATT&CK — T1070 Indicator Removal",
+      "url": "https://attack.mitre.org/techniques/T1070/"
+    }
+  ],
+  "requiredFields": [
+    "pack_id",
+    "sha256"
+  ],
+  "reviewer": "N/A",
+  "securityDomain": "audit",
+  "spl": "index=grc sourcetype=evidence_pack:publish earliest=-30d\n| stats latest(sha256) as published_sha latest(pack_id) as pack by _time\n| join pack [search index=grc sourcetype=evidence_pack:preprod | stats latest(sha256) as preprod_sha by pack]\n| where published_sha!=preprod_sha\n| table pack published_sha preprod_sha",
+  "splunkPillar": "Platform",
+  "splunkVersions": [
+    "9.2+",
+    "Cloud"
+  ],
+  "status": "draft",
+  "subcategory": "22.47#1",
+  "title": "Evidence-pack drift — auditor-facing vs pre-production evidence",
+  "value": "Protects the integrity of the evidence that underpins the external audit.",
+  "visualization": "Table of mismatches, single-value 'packs with matching SHA (30d)'."
+}

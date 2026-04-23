@@ -1,0 +1,48 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "contextUrl": "/api/v1/context.jsonld",
+  "counts": {
+    "regulationsTotal": 66,
+    "useCasesTotal": 6447,
+    "useCasesWithCompliance": 1395
+  },
+  "deprecations": [],
+  "endpoints": {
+    "compliance": {
+      "coverage": "/api/v1/compliance/coverage.json",
+      "gaps": "/api/v1/compliance/gaps.json",
+      "index": "/api/v1/compliance/index.json",
+      "regulations": "/api/v1/compliance/regulations/index.json",
+      "ucs": "/api/v1/compliance/ucs/index.json"
+    },
+    "equipment": {
+      "detail": "/api/v1/equipment/{equipmentId}.json",
+      "index": "/api/v1/equipment/index.json"
+    },
+    "mitre": {
+      "coverage": "/api/v1/mitre/coverage.json",
+      "d3fend": "/api/v1/mitre/d3fend.json",
+      "index": "/api/v1/mitre/index.json",
+      "techniques": "/api/v1/mitre/techniques.json"
+    },
+    "oscal": {
+      "catalogs": "/api/v1/oscal/catalogs/",
+      "componentDefinitions": "/api/v1/oscal/component-definitions/index.json",
+      "index": "/api/v1/oscal/index.json"
+    },
+    "recommender": {
+      "appIndex": "/api/v1/recommender/app-index.json",
+      "cimIndex": "/api/v1/recommender/cim-index.json",
+      "sourcetypeIndex": "/api/v1/recommender/sourcetype-index.json",
+      "ucThin": "/api/v1/recommender/uc-thin.json"
+    }
+  },
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "legalDoc": "/LEGAL.md",
+  "methodologyDoc": "/docs/coverage-methodology.md",
+  "openapiSpec": "/api/v1/openapi.yaml",
+  "status": "passed",
+  "successor": null,
+  "versioningDoc": "/docs/api-versioning.md"
+}

@@ -1,0 +1,230 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 6,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§1.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.27.11",
+        "22.27.13",
+        "22.27.15",
+        "22.27.16",
+        "22.27.17",
+        "22.27.18"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Identify important business services",
+      "version": "2021"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "§2.1",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.27.12",
+        "6.3.13"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Set impact tolerances",
+      "version": "2021"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "§3.1",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.27.14",
+        "6.3.13"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Scenario testing",
+      "version": "2021"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "3 of 3 common clauses are covered by the catalogue, with a priority-weighted coverage of 41.67% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 3,
+      "priorityWeightedCoveragePercent": 41.67,
+      "stateCounts": {
+        "contributing-only": 1,
+        "covered-full": 0,
+        "covered-partial": 2,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "§2.1",
+        "killerUcId": "22.27.12",
+        "killerUcTitle": "Impact tolerance testing evidence",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Set impact tolerances",
+        "version": "2021",
+        "why": "Clause §2.1 (Set impact tolerances) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "§3.1",
+        "killerUcId": "22.27.14",
+        "killerUcTitle": "Scenario testing record capture",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Scenario testing",
+        "version": "2021",
+        "why": "Clause §3.1 (Scenario testing) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "§1.1",
+        "killerUcId": "22.27.11",
+        "killerUcTitle": "Important business service mapping health",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Identify important business services",
+        "version": "2021",
+        "why": "Clause §1.1 (Identify important business services) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "§1.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.27.16",
+            "ucTitle": "Self-assessment compliance scoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.27.13",
+            "ucTitle": "Third-party dependency concentration monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.27.17",
+            "ucTitle": "FCA notification timeline tracking"
+          }
+        ],
+        "topic": "Identify important business services",
+        "version": "2021"
+      },
+      {
+        "clause": "§2.1",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "6.3.13",
+            "ucTitle": "Backup RPO and RTO Compliance"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.27.12",
+            "ucTitle": "Impact tolerance testing evidence"
+          }
+        ],
+        "topic": "Set impact tolerances",
+        "version": "2021"
+      },
+      {
+        "clause": "§3.1",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "6.3.13",
+            "ucTitle": "Backup RPO and RTO Compliance"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.27.14",
+            "ucTitle": "Scenario testing record capture"
+          }
+        ],
+        "topic": "Scenario testing",
+        "version": "2021"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "UK"
+  ],
+  "narrative": null,
+  "narrativeRef": null,
+  "regulationId": "fca-ss1-21",
+  "regulationName": "FCA SS1/21 Operational Resilience",
+  "regulationShortName": "FCA SS1/21",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=fca-ss1-21",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#fca-ss1-21",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/fca-ss1-21.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

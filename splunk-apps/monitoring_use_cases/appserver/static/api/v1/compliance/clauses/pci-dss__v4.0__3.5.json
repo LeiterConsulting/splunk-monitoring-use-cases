@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 1,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf#clause=3.5",
+  "clause": "3.5",
+  "clauseId": "pci-dss@v4.0#3.5",
+  "coverageState": "covered-full",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "PCI 3.5 requires rendering stored account data unreadable; the UC detects any CHD-scoped storage without encryption.",
+      "category": 22,
+      "clauseUrl": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf#clause=3.5",
+      "controlObjective": "Evidence that PCI DSS 3.5 (PAN protection) is enforced — Splunk UC-22.41.1: Encryption-at-rest coverage gap — unencrypted storage with regulated data.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.41.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.41.1",
+      "ucTitle": "Encryption-at-rest coverage gap — unencrypted storage with regulated data"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/pci-dss__v4.0__3.5.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "pci-dss",
+  "regulationName": "Payment Card Industry Data Security Standard",
+  "regulationShortName": "PCI DSS",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/pci-dss.json",
+    "regulationVersion": "/api/v1/compliance/regulations/pci-dss@v4.0.json",
+    "story": "/api/v1/compliance/story/pci-dss.json"
+  },
+  "tier": 1,
+  "topAssurance": "full",
+  "topic": "PAN protection",
+  "version": "v4.0"
+}

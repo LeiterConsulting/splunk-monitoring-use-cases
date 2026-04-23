@@ -1,0 +1,146 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/22.8.38.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/22.8.38.json",
+    "sourcePath": "content/cat-22-regulatory-compliance/UC-22.8.38.json"
+  },
+  "apiVersion": "v1",
+  "app": "Splunk Add-on for Microsoft Purview, Splunk Add-on for Symantec DLP",
+  "cimModels": [
+    "Data Loss Prevention"
+  ],
+  "compliance": [
+    {
+      "assurance": "full",
+      "assurance_rationale": "C1.1 Confidentiality — continuous DLP boundary detection is the direct evidence.",
+      "clause": "C1.1",
+      "clauseUrl": "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services",
+      "controlObjective": "Evidence that SOC-2 C1.1 (Confidentiality) is enforced — Splunk UC-22.8.38: SOC 2 C1.1 — Confidentiality: sensitive-data exposure at the egress boundary.",
+      "evidenceArtifact": "Saved search 'UC-22.8.38' running on index=dlp sourcetype=symantec:dlp OR sourcetype=microsoft:purview:dlp; approved-destination lookup approved_egress.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "soc-2@2017 TSC#C1.1",
+      "regulation": "SOC-2",
+      "requires_sme_review": true,
+      "version": "2017 TSC"
+    },
+    {
+      "assurance": "full",
+      "assurance_rationale": "ISO/IEC 27001:2022 A.8.12 Data leakage prevention — directly evidenced.",
+      "clause": "A.8.12",
+      "clauseUrl": "https://www.iso.org/standard/27001",
+      "controlObjective": "Evidence that ISO/IEC 27001 A.8.12 (Data leakage prevention) is enforced — Splunk UC-22.8.38: SOC 2 C1.1 — Confidentiality: sensitive-data exposure at the egress boundary.",
+      "evidenceArtifact": "Saved search 'UC-22.8.38' running on index=dlp sourcetype=symantec:dlp OR sourcetype=microsoft:purview:dlp; approved-destination lookup approved_egress.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "iso-27001@2022#A.8.12",
+      "regulation": "ISO/IEC 27001",
+      "requires_sme_review": true,
+      "version": "2022"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "HIPAA Security §164.312(e)(1) Transmission security — contributing.",
+      "clause": "§164.312(e)(1)",
+      "clauseUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164",
+      "controlObjective": "Evidence that HIPAA Security Rule §164.312(e)(1) (Transmission security) is enforced — Splunk UC-22.8.38: SOC 2 C1.1 — Confidentiality: sensitive-data exposure at the egress boundary.",
+      "evidenceArtifact": "Saved search 'UC-22.8.38' running on index=dlp sourcetype=symantec:dlp OR sourcetype=microsoft:purview:dlp; approved-destination lookup approved_egress.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "hipaa-security@2013-final#§164.312(e)(1)",
+      "regulation": "HIPAA Security Rule",
+      "requires_sme_review": true,
+      "version": "2013-final"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "PCI-DSS 10.6.2 Review logs for anomalies (applied to DLP) — contributing.",
+      "clause": "10.6.2",
+      "clauseUrl": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf",
+      "controlObjective": "Evidence that PCI-DSS 10.6.2 is enforced — Splunk UC-22.8.38: SOC 2 C1.1 — Confidentiality: sensitive-data exposure at the egress boundary.",
+      "evidenceArtifact": "Saved search 'UC-22.8.38' running on index=dlp sourcetype=symantec:dlp OR sourcetype=microsoft:purview:dlp; approved-destination lookup approved_egress.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "pci-dss@v4.0#10.6.2",
+      "regulation": "PCI-DSS",
+      "requires_sme_review": true,
+      "version": "v4.0"
+    }
+  ],
+  "controlFamily": "data-flow-cross-border",
+  "controlTest": {
+    "attackTechnique": "T1048",
+    "fixtureRef": "sample-data/uc-22.8.38-fixture.json",
+    "negativeScenario": "Confidential data sent to a partner with approved='yes' is absent.",
+    "positiveScenario": "A deliberate DLP test file containing cardholder PAN sent to an unlisted cloud-share triggers a hit within 30m."
+  },
+  "criticality": "high",
+  "dataSources": "`index=dlp` sourcetype=symantec:dlp OR sourcetype=microsoft:purview:dlp; approved-destination lookup `approved_egress.csv`.",
+  "description": "Surfaces DLP detections for confidential-class data whose destination is not in the approved-egress registry.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Splunk Add-on for Microsoft Purview, Splunk Add-on for Symantec DLP.\n• Ensure the following data sources are available: `index=dlp` sourcetype=symantec:dlp OR sourcetype=microsoft:purview:dlp; approved-destination lookup `approved_egress.csv`..\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\n(1) Onboard DLP; (2) maintain approved_egress.csv; (3) schedule UC every 30m; (4) hit opens a P1 to DPO + user's manager; (5) weekly DPO report.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=dlp sourcetype IN (symantec:dlp,microsoft:purview:dlp) severity IN (\"high\",\"critical\") earliest=-30m\n| rename destination_ip AS dest policy_name AS dlp_policy\n| lookup approved_egress.csv dest OUTPUT approved\n| where approved!=\"yes\" OR isnull(approved)\n| stats count BY dlp_policy severity user dest approved\n```\n\nUnderstanding this SPL\n\n**SOC 2 C1.1 — Confidentiality: sensitive-data exposure at the egress boundary** — C1.1 confidentiality assurance hinges on continuous detection of data leaving the boundary. This UC gives the DPO a queryable control output.\n\nDocumented **Data sources**: `index=dlp` sourcetype=symantec:dlp OR sourcetype=microsoft:purview:dlp; approved-destination lookup `approved_egress.csv`. **App/TA** (typical add-on context): Splunk Add-on for Microsoft Purview, Splunk Add-on for Symantec DLP. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: dlp.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=dlp, time bounds. Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• Renames fields with `rename` for clarity or joins.\n• Enriches events using `lookup` (lookup definition + optional OUTPUT fields).\n• Filters the current rows with `where approved!=\"yes\" OR isnull(approved)` — typically the threshold or rule expression for this monitoring goal.\n• `stats` rolls up events into metrics; results are split **by dlp_policy severity user dest approved** so each row reflects one combination of those dimensions (useful for per-host, per-user, or per-entity comparisons for this use case).\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Table of unapproved egress detections, bar chart by policy, single value 'new unapproved egress (1h)'.",
+  "detectionType": "TTP",
+  "difficulty": "advanced",
+  "equipment": [
+    "broadcom_symantec"
+  ],
+  "evidence": "Saved search 'soc2_c1_1_egress_confidential' (every 30m) emits per detection: dlp_policy, severity, user, dest, approved, to compliance_summary.",
+  "exclusions": "Does NOT intercept content; consumes DLP telemetry and focuses on confidential-class detections leaving the trust boundary to an unapproved destination.",
+  "grandmaExplanation": "C1.1 confidentiality assurance hinges on continuous detection of data leaving the boundary — so you can show exactly what is being watched and when something went wrong.",
+  "id": "22.8.38",
+  "implementation": "(1) Onboard DLP; (2) maintain approved_egress.csv; (3) schedule UC every 30m; (4) hit opens a P1 to DPO + user's manager; (5) weekly DPO report.",
+  "knownFalsePositives": "Legitimate cross-tenant file shares with approved partners can produce detections — allowlist by partner in approved_egress.csv.",
+  "lastReviewed": "2026-04-16",
+  "mitreAttack": [
+    "T1048"
+  ],
+  "monitoringType": [
+    "Compliance",
+    "Security"
+  ],
+  "owner": "DPO",
+  "references": [
+    {
+      "retrieved": "2026-04-16",
+      "title": "SOC-2 2017 TSC",
+      "url": "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "ISO/IEC 27001 2022",
+      "url": "https://www.iso.org/standard/27001"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "HIPAA Security Rule 2013-final",
+      "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "PCI-DSS v4.0",
+      "url": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "MITRE ATT&CK — T1048",
+      "url": "https://attack.mitre.org/techniques/T1048/"
+    }
+  ],
+  "requiredFields": [
+    "dlp_policy",
+    "severity",
+    "user",
+    "destination_ip",
+    "_time"
+  ],
+  "reviewer": "N/A",
+  "securityDomain": "network",
+  "spl": "index=dlp sourcetype IN (symantec:dlp,microsoft:purview:dlp) severity IN (\"high\",\"critical\") earliest=-30m\n| rename destination_ip AS dest policy_name AS dlp_policy\n| lookup approved_egress.csv dest OUTPUT approved\n| where approved!=\"yes\" OR isnull(approved)\n| stats count BY dlp_policy severity user dest approved",
+  "splunkPillar": "Security",
+  "splunkVersions": [
+    "9.2+",
+    "Cloud"
+  ],
+  "status": "verified",
+  "subcategory": "22.8#1",
+  "title": "SOC 2 C1.1 — Confidentiality: sensitive-data exposure at the egress boundary",
+  "value": "C1.1 confidentiality assurance hinges on continuous detection of data leaving the boundary. This UC gives the DPO a queryable control output.",
+  "visualization": "Table of unapproved egress detections, bar chart by policy, single value 'new unapproved egress (1h)'."
+}

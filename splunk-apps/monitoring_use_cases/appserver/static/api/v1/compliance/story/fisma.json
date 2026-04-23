@@ -1,0 +1,215 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 14,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§3554(b)(1)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.19.10",
+        "22.19.11",
+        "22.19.12",
+        "22.19.13",
+        "22.19.14",
+        "22.19.15",
+        "22.19.6",
+        "22.19.7",
+        "22.19.8",
+        "22.19.9",
+        "22.32.10",
+        "22.32.11",
+        "22.32.14",
+        "22.32.15"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Information security program",
+      "version": "2014"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 19,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§3554(b)(5)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.19.1",
+        "22.19.16",
+        "22.19.17",
+        "22.19.18",
+        "22.19.19",
+        "22.19.2",
+        "22.19.20",
+        "22.19.21",
+        "22.19.22",
+        "22.19.23",
+        "22.19.24",
+        "22.19.25",
+        "22.19.3",
+        "22.19.4",
+        "22.19.5",
+        "22.32.12",
+        "22.32.13",
+        "22.32.16",
+        "22.32.9"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Security controls and monitoring",
+      "version": "2014"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "2 of 2 common clauses are covered by the catalogue, with a priority-weighted coverage of 25.0% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoveragePercent": 25.0,
+      "stateCounts": {
+        "contributing-only": 2,
+        "covered-full": 0,
+        "covered-partial": 0,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "§3554(b)(1)",
+        "killerUcId": "22.19.10",
+        "killerUcTitle": "Authorization and boundary — indicator 5",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Information security program",
+        "version": "2014",
+        "why": "Clause §3554(b)(1) (Information security program) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "§3554(b)(5)",
+        "killerUcId": "22.19.1",
+        "killerUcTitle": "Continuous monitoring — indicator 1",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Security controls and monitoring",
+        "version": "2014",
+        "why": "Clause §3554(b)(5) (Security controls and monitoring) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "§3554(b)(1)",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.19.8",
+            "ucTitle": "Authorization and boundary — indicator 3"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.19.12",
+            "ucTitle": "Federal incident handling — indicator 2"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.32.10",
+            "ucTitle": "Plan of action and milestone (POA&M) aging management"
+          }
+        ],
+        "topic": "Information security program",
+        "version": "2014"
+      },
+      {
+        "clause": "§3554(b)(5)",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.19.4",
+            "ucTitle": "Continuous monitoring — indicator 4"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.19.16",
+            "ucTitle": "Privileged and remote access — indicator 1"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.19.20",
+            "ucTitle": "Privileged and remote access — indicator 5"
+          }
+        ],
+        "topic": "Security controls and monitoring",
+        "version": "2014"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "US"
+  ],
+  "narrative": {
+    "evidencePack": null,
+    "matchedBy": "fuzzy-shortname",
+    "name": "FISMA / FedRAMP",
+    "primer": null,
+    "splunkValue": "We produce the ConMon deliverables — vulnerability metrics, POA&M ageing, inventory, configuration compliance, and incident metrics — in the format expected by the JAB and agency authorising officials, not a home-grown template.",
+    "whatItIs": "The Federal Information Security Modernization Act requires US federal agencies to run a continuous monitoring programme over their systems. FedRAMP extends that to cloud providers that want to sell to the federal government, with a standardised authorisation-to-operate.",
+    "whoItAffects": "US federal agencies, their contractors, and cloud service providers pursuing FedRAMP authorisation (Low, Moderate, High impact levels). State agencies and higher education often adopt FISMA-aligned programmes as well."
+  },
+  "narrativeRef": "non-technical-view.js#cat-22/area/fisma-fedramp",
+  "regulationId": "fisma",
+  "regulationName": "Federal Information Security Modernization Act",
+  "regulationShortName": "FISMA",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=fisma",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#fisma",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/fisma.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

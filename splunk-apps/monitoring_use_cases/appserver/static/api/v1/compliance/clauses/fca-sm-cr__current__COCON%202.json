@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "COCON 2",
+  "clauseId": "fca-sm-cr@current#COCON 2",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'SM&CR' → 'COCON 2'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that FCA SM&CR COCON 2 (Individual Conduct Rules (including acting with integrity/due care)) is enforced — Splunk UC-22.27.26: Conduct rule breach monitoring.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.27.26' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.27.26",
+      "ucTitle": "Conduct rule breach monitoring"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/fca-sm-cr__current__COCON%202.json",
+  "gapNote": "fca-sm-cr clause COCON 2 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "fca-sm-cr",
+  "regulationName": "fca-sm-cr",
+  "regulationShortName": "fca-sm-cr",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/fca-sm-cr.json",
+    "regulationVersion": "/api/v1/compliance/regulations/fca-sm-cr@current.json",
+    "story": "/api/v1/compliance/story/fca-sm-cr.json"
+  },
+  "tier": null,
+  "topAssurance": "contributing",
+  "topic": null,
+  "version": "current"
+}

@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-{section}#%C2%A7164.528",
+  "clause": "§164.528",
+  "clauseId": "hipaa-privacy@current#§164.528",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Phase-C authored UC targeting HIPAA Privacy §164.528 (Accounting of disclosures). Uses continuous, production-grade Splunk telemetry to provide auditor-facing evidence; assurance level set to 'contributing' pending SME review per Phase E of the regulation-coverage plan.",
+      "category": 22,
+      "clauseUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-{section}#%C2%A7164.528",
+      "controlObjective": "Evidence that HIPAA Privacy §164.528 (Accounting of disclosures) is enforced — Splunk UC-22.50.16: §164.528 accounting-of-disclosures — retention and responsiveness.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.50.16' running on PHI disclosure ledger, patient-request queue logs., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": "Phase-C draft: SME review required before uplifting assurance from 'contributing' to 'partial' or 'full'. Confirm that the SPL captures the specific regulator expectation and that the telemetry exists in the deployment.",
+      "ucId": "22.50.16",
+      "ucTitle": "§164.528 accounting-of-disclosures — retention and responsiveness"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/hipaa-privacy__current__%C2%A7164.528.json",
+  "gapNote": "HIPAA Privacy clause §164.528 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 0.7,
+  "regulationId": "hipaa-privacy",
+  "regulationName": "HIPAA Privacy Rule",
+  "regulationShortName": "HIPAA Privacy",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/hipaa-privacy.json",
+    "regulationVersion": "/api/v1/compliance/regulations/hipaa-privacy@current.json",
+    "story": "/api/v1/compliance/story/hipaa-privacy.json"
+  },
+  "tier": 2,
+  "topAssurance": "contributing",
+  "topic": "Accounting of disclosures",
+  "version": "current"
+}

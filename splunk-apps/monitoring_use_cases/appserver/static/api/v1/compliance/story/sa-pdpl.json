@@ -1,0 +1,255 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 4,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art. 19",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.33.11",
+        "22.33.12",
+        "22.33.13",
+        "22.33.15"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Data security and protection obligations",
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art. 20",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.33.14"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Personal data breach notification",
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art. 29",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.50.23"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "contributing",
+      "topic": "Cross-border personal data transfers",
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art. 6",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.50.12"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Lawful grounds and consent for processing",
+      "version": "current"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "4 of 4 common clauses are covered by the catalogue, with a priority-weighted coverage of 25.0% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 4,
+      "coveredClauseCount": 4,
+      "priorityWeightedCoveragePercent": 25.0,
+      "stateCounts": {
+        "contributing-only": 4,
+        "covered-full": 0,
+        "covered-partial": 0,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "Art. 19",
+        "killerUcId": "22.33.11",
+        "killerUcTitle": "Personal data processing compliance monitoring",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Data security and protection obligations",
+        "version": "current",
+        "why": "Clause Art. 19 (Data security and protection obligations) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "Art. 20",
+        "killerUcId": "22.33.14",
+        "killerUcTitle": "Personal data breach notification to SDAIA tracking",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Personal data breach notification",
+        "version": "current",
+        "why": "Clause Art. 20 (Personal data breach notification) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "Art. 6",
+        "killerUcId": "22.50.12",
+        "killerUcTitle": "SA PDPL Art. 6 — processing-purpose and lawful-basis evidence",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Lawful grounds and consent for processing",
+        "version": "current",
+        "why": "Clause Art. 6 (Lawful grounds and consent for processing) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "Art. 29",
+        "killerUcId": "22.50.23",
+        "killerUcTitle": "SA PDPL Art. 29 — cross-border transfer inventory and legal-basis evidence",
+        "priorityWeight": 0.7,
+        "topAssurance": "contributing",
+        "topic": "Cross-border personal data transfers",
+        "version": "current",
+        "why": "Clause Art. 29 (Cross-border personal data transfers) carries a regulator-assigned priority weight of 0.7, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "Art. 19",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.33.12",
+            "ucTitle": "Data subject rights implementation evidence"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.33.11",
+            "ucTitle": "Personal data processing compliance monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.33.15",
+            "ucTitle": "Data protection impact assessment completion monitoring"
+          }
+        ],
+        "topic": "Data security and protection obligations",
+        "version": "current"
+      },
+      {
+        "clause": "Art. 20",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.33.14",
+            "ucTitle": "Personal data breach notification to SDAIA tracking"
+          }
+        ],
+        "topic": "Personal data breach notification",
+        "version": "current"
+      },
+      {
+        "clause": "Art. 6",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.50.12",
+            "ucTitle": "SA PDPL Art. 6 — processing-purpose and lawful-basis evidence"
+          }
+        ],
+        "topic": "Lawful grounds and consent for processing",
+        "version": "current"
+      },
+      {
+        "clause": "Art. 29",
+        "coverageState": "contributing-only",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.50.23",
+            "ucTitle": "SA PDPL Art. 29 — cross-border transfer inventory and legal-basis evidence"
+          }
+        ],
+        "topic": "Cross-border personal data transfers",
+        "version": "current"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "SA"
+  ],
+  "narrative": null,
+  "narrativeRef": null,
+  "regulationId": "sa-pdpl",
+  "regulationName": "Saudi Personal Data Protection Law",
+  "regulationShortName": "SA PDPL",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=sa-pdpl",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#sa-pdpl",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/sa-pdpl.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

@@ -1,0 +1,263 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 3
+      },
+      "clause": "§164.502(a)",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "11.1.5",
+        "11.1.6",
+        "15.3.37",
+        "7.1.21"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Uses and disclosures of PHI — general rules",
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.504(e)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.50.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Business Associate contracts",
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.514(a)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "11.1.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "contributing",
+      "topic": "De-identification of PHI",
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.528",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.50.16"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "contributing",
+      "topic": "Accounting of disclosures",
+      "version": "current"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "4 of 4 common clauses are covered by the catalogue, with a priority-weighted coverage of 32.35% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 4,
+      "coveredClauseCount": 4,
+      "priorityWeightedCoveragePercent": 32.35,
+      "stateCounts": {
+        "contributing-only": 3,
+        "covered-full": 0,
+        "covered-partial": 1,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "§164.502(a)",
+        "killerUcId": "11.1.5",
+        "killerUcTitle": "SharePoint/OneDrive Sharing Audit",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Uses and disclosures of PHI — general rules",
+        "version": "current",
+        "why": "Clause §164.502(a) (Uses and disclosures of PHI — general rules) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "§164.504(e)",
+        "killerUcId": "22.50.4",
+        "killerUcTitle": "§164.504(e) Business Associate activity — PHI access by BA principals",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Business Associate contracts",
+        "version": "current",
+        "why": "Clause §164.504(e) (Business Associate contracts) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "§164.514(a)",
+        "killerUcId": "11.1.5",
+        "killerUcTitle": "SharePoint/OneDrive Sharing Audit",
+        "priorityWeight": 0.7,
+        "topAssurance": "contributing",
+        "topic": "De-identification of PHI",
+        "version": "current",
+        "why": "Clause §164.514(a) (De-identification of PHI) carries a regulator-assigned priority weight of 0.7, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "§164.528",
+        "killerUcId": "22.50.16",
+        "killerUcTitle": "§164.528 accounting-of-disclosures — retention and responsiveness",
+        "priorityWeight": 0.7,
+        "topAssurance": "contributing",
+        "topic": "Accounting of disclosures",
+        "version": "current",
+        "why": "Clause §164.528 (Accounting of disclosures) carries a regulator-assigned priority weight of 0.7, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "§164.502(a)",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "7.1.21",
+            "ucTitle": "Database User and Privilege Change Audit"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "11.1.5",
+            "ucTitle": "SharePoint/OneDrive Sharing Audit"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "11.1.6",
+            "ucTitle": "DLP Policy Events"
+          }
+        ],
+        "topic": "Uses and disclosures of PHI — general rules",
+        "version": "current"
+      },
+      {
+        "clause": "§164.504(e)",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.50.4",
+            "ucTitle": "§164.504(e) Business Associate activity — PHI access by BA principals"
+          }
+        ],
+        "topic": "Business Associate contracts",
+        "version": "current"
+      },
+      {
+        "clause": "§164.514(a)",
+        "coverageState": "contributing-only",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "11.1.5",
+            "ucTitle": "SharePoint/OneDrive Sharing Audit"
+          }
+        ],
+        "topic": "De-identification of PHI",
+        "version": "current"
+      },
+      {
+        "clause": "§164.528",
+        "coverageState": "contributing-only",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.50.16",
+            "ucTitle": "§164.528 accounting-of-disclosures — retention and responsiveness"
+          }
+        ],
+        "topic": "Accounting of disclosures",
+        "version": "current"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "US"
+  ],
+  "narrative": {
+    "evidencePack": "docs/evidence-packs/hipaa-security.md",
+    "matchedBy": "manual-map",
+    "name": "HIPAA healthcare",
+    "primer": "docs/regulatory-primer.md#44-hipaa-security--health-insurance-portability-and-accountability-act-security-rule-us--t1",
+    "splunkValue": "We detect unauthorised patient-record access (the 'snooping' pattern auditors always ask about), prove ePHI encryption at rest and in transit, start the 60-day breach clock the moment discovery happens, and produce a business-associate evidence pack on demand.",
+    "whatItIs": "The US federal law protecting Protected Health Information (PHI). Its Security Rule sets Administrative, Physical, and Technical safeguards; its Breach Notification Rule runs a 60-day clock; its Privacy Rule limits who may use or disclose PHI.",
+    "whoItAffects": "US healthcare providers, health plans, healthcare clearinghouses, and any Business Associate that handles PHI on their behalf (cloud hosters, billing firms, analytics vendors, MSPs)."
+  },
+  "narrativeRef": "non-technical-view.js#cat-22/area/hipaa-healthcare",
+  "regulationId": "hipaa-privacy",
+  "regulationName": "HIPAA Privacy Rule",
+  "regulationShortName": "HIPAA Privacy",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=hipaa-privacy",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#hipaa-privacy",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/hipaa-privacy.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

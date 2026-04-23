@@ -1,0 +1,166 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 13,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "hardware_bmc",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Hardware / BMC",
+  "models": [
+    {
+      "id": "hardware_bmc_dmidecode",
+      "label": "System info (dmidecode)",
+      "modelId": "dmidecode",
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "1.4.5",
+        "1.4.11"
+      ]
+    },
+    {
+      "id": "hardware_bmc_edac",
+      "label": "Memory / EDAC (edac-util)",
+      "modelId": "edac",
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "1.4.6",
+        "13.4.9"
+      ]
+    },
+    {
+      "id": "hardware_bmc_idrac",
+      "label": "Dell iDRAC",
+      "modelId": "idrac",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "1.4.3"
+      ]
+    },
+    {
+      "id": "hardware_bmc_ilo",
+      "label": "HPE iLO",
+      "modelId": "ilo",
+      "useCaseCount": 5,
+      "useCaseIds": [
+        "1.4.3",
+        "6.1.11",
+        "6.1.12",
+        "6.4.13",
+        "8.2.22"
+      ]
+    },
+    {
+      "id": "hardware_bmc_ipmi",
+      "label": "IPMI (generic)",
+      "modelId": "ipmi",
+      "useCaseCount": 6,
+      "useCaseIds": [
+        "1.4.1",
+        "1.4.3",
+        "1.4.5",
+        "1.4.6",
+        "1.4.7",
+        "1.4.9"
+      ]
+    },
+    {
+      "id": "hardware_bmc_megacli",
+      "label": "LSI MegaRAID (megacli)",
+      "modelId": "megacli",
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "1.4.2",
+        "6.1.17"
+      ]
+    },
+    {
+      "id": "hardware_bmc_perccli",
+      "label": "Dell PERC (perccli)",
+      "modelId": "perccli",
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "1.4.10",
+        "6.1.17"
+      ]
+    },
+    {
+      "id": "hardware_bmc_smartctl",
+      "label": "Disks (SMART / smartctl)",
+      "modelId": "smartctl",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "1.4.4"
+      ]
+    },
+    {
+      "id": "hardware_bmc_ssacli",
+      "label": "HPE Smart Array (ssacli)",
+      "modelId": "ssacli",
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "1.4.2",
+        "1.4.10"
+      ]
+    },
+    {
+      "id": "hardware_bmc_storcli",
+      "label": "LSI MegaRAID (storcli)",
+      "modelId": "storcli",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "1.4.2"
+      ]
+    }
+  ],
+  "regulationIds": [],
+  "regulations": [],
+  "useCaseCount": 13,
+  "useCaseIds": [
+    "1.4.1",
+    "1.4.2",
+    "1.4.3",
+    "1.4.4",
+    "1.4.5",
+    "1.4.6",
+    "1.4.10",
+    "1.4.11",
+    "6.1.11",
+    "6.1.12",
+    "6.1.17",
+    "6.4.13",
+    "8.2.22"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 1,
+      "useCaseCount": 8,
+      "useCaseIds": [
+        "1.4.1",
+        "1.4.2",
+        "1.4.3",
+        "1.4.4",
+        "1.4.5",
+        "1.4.6",
+        "1.4.10",
+        "1.4.11"
+      ]
+    },
+    {
+      "category": 6,
+      "useCaseCount": 4,
+      "useCaseIds": [
+        "6.1.11",
+        "6.1.12",
+        "6.1.17",
+        "6.4.13"
+      ]
+    },
+    {
+      "category": 8,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "8.2.22"
+      ]
+    }
+  ]
+}

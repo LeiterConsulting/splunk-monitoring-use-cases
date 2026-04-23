@@ -1,0 +1,88 @@
+{
+  "aliases": [
+    "BSI-KritisV",
+    "KRITIS-V"
+  ],
+  "apiVersion": "v1",
+  "id": "bsi-kritisv",
+  "jurisdiction": [
+    "DE"
+  ],
+  "name": "BSI KRITIS-Verordnung",
+  "shortName": "BSI-KritisV",
+  "tags": [
+    "critical-infrastructure"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://www.gesetze-im-internet.de/bsi-kritisv/",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 5,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§8a",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.28.10",
+            "22.28.6",
+            "22.28.7",
+            "22.28.8",
+            "22.28.9"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Security in IT systems"
+        }
+      ],
+      "clauseExamples": [
+        "§2",
+        "§8",
+        "§8a"
+      ],
+      "clauseGrammar": "^§\\d+[a-z]?$",
+      "clauseUrlTemplate": null,
+      "clausesReferencedByCatalogue": [
+        "§8a"
+      ],
+      "commonClauses": [
+        {
+          "clause": "§8a",
+          "priorityWeight": 1.0,
+          "topic": "Security in IT systems"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 100.0,
+        "commonClauseCount": 1,
+        "coveredClauseCount": 1,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 25.0,
+        "stateCounts": {
+          "contributing-only": 1,
+          "covered-full": 0,
+          "covered-partial": 0,
+          "uncovered": 0
+        }
+      },
+      "effectiveFrom": "2021-01-01",
+      "endpoint": "/api/v1/compliance/regulations/bsi-kritisv@2021--as-amended-.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [
+        "22.28.10",
+        "22.28.6",
+        "22.28.7",
+        "22.28.8",
+        "22.28.9"
+      ],
+      "version": "2021 (as amended)"
+    }
+  ]
+}

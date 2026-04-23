@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 1,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://csrc.nist.gov/pubs/cswp/29/final#PR.AA-05",
+  "clause": "PR.AA-05",
+  "clauseId": "nist-csf@2.0#PR.AA-05",
+  "coverageState": "covered-full",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "NIST CSF 2.0 PR.AA-05 Access permissions, entitlements, and authorizations are defined, managed, enforced, and reviewed — UC evidences identity authentication hardening and MFA coverage, which is the access-permission enforcement signal.",
+      "category": 22,
+      "clauseUrl": "https://www.nist.gov/cyberframework",
+      "controlObjective": "Evidence that NIST CSF PR.AA-05 (Access permissions) is enforced — Splunk UC-22.7.4: NIST CSF Protect — Identity Authentication Hardening and MFA Gaps.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.7.4' running on sourcetype WinEventLog:Security and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.7.4",
+      "ucTitle": "NIST CSF Protect — Identity Authentication Hardening and MFA Gaps"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/nist-csf__2.0__PR.AA-05.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "nist-csf",
+  "regulationName": "NIST Cybersecurity Framework",
+  "regulationShortName": "NIST CSF",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/nist-csf.json",
+    "regulationVersion": "/api/v1/compliance/regulations/nist-csf@2.0.json",
+    "story": "/api/v1/compliance/story/nist-csf.json"
+  },
+  "tier": 1,
+  "topAssurance": "full",
+  "topic": "Access permissions",
+  "version": "2.0"
+}

@@ -1,0 +1,71 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 4,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "defender",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Microsoft Defender",
+  "models": [],
+  "regulationIds": [
+    "iso-27001",
+    "nist-csf"
+  ],
+  "regulations": [
+    {
+      "clauseMappings": [
+        {
+          "clause": "A.8.7",
+          "useCaseId": "22.6.30",
+          "version": "2022"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/iso-27001.json",
+      "regulationId": "iso-27001",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.6.30"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "RS.MI-01",
+          "useCaseId": "22.7.45",
+          "version": "2.0"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/nist-csf.json",
+      "regulationId": "nist-csf",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.7.45"
+      ]
+    }
+  ],
+  "useCaseCount": 4,
+  "useCaseIds": [
+    "10.3.1",
+    "10.16.8",
+    "22.6.30",
+    "22.7.45"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 10,
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "10.3.1",
+        "10.16.8"
+      ]
+    },
+    {
+      "category": 22,
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "22.6.30",
+        "22.7.45"
+      ]
+    }
+  ]
+}

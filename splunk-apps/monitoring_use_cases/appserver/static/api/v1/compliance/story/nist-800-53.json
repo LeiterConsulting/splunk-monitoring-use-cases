@@ -1,0 +1,4113 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "AC-11",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.22"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "AC-12",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.23"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "AC-17",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.24"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "AC-2",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.14.16",
+        "22.40.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Account management",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "AC-2(7)",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "9.1.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "AC-20",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.25"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "AC-3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.17"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Access enforcement",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "AC-5",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.14.18",
+        "22.40.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 2,
+        "partial": 0
+      },
+      "clause": "AC-6",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.14.19",
+        "22.40.1",
+        "22.40.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Least privilege",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "AC-6(9)",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.40.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "AC-7",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.20"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "AC-8",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.21"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "AT-3",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.46.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "AU-10",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.9"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "AU-11",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.11.102",
+        "22.14.10"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "AU-12",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.11"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Audit record generation",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "AU-13",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.12"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "AU-14",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.13"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "AU-15",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.14"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "AU-16",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.15"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "AU-2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.1"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Event logging",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "AU-3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Content of audit records",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "AU-4",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "AU-5",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "AU-6",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Audit review, analysis, and reporting",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "AU-7",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.6"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "AU-8",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.11.100",
+        "22.14.7"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Time stamps",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "AU-9",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.14.8",
+        "22.35.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Protection of audit information",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "CA-2",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.14.60",
+        "22.47.3",
+        "22.6.50"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CA-3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.61"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CA-5",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.62"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 1
+      },
+      "clause": "CA-7",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.14.63",
+        "22.47.5",
+        "22.6.49"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CA-8",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.64",
+        "22.3.45"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CA-9",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.65"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CM-11",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.59"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "CM-2",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.14.52",
+        "22.42.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Baseline configuration",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 3,
+        "partial": 0
+      },
+      "clause": "CM-3",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.14.53",
+        "22.42.1",
+        "22.42.3",
+        "22.42.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CM-4",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.54"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CM-5",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.55"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 2,
+        "partial": 1
+      },
+      "clause": "CM-6",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.11.92",
+        "22.14.56",
+        "22.42.2",
+        "22.42.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Configuration settings",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CM-7",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.57"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CM-8",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.58"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CP-10",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.80"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CP-2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.78"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "CP-4",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.45.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 3,
+        "partial": 0
+      },
+      "clause": "CP-9",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.14.79",
+        "22.45.1",
+        "22.45.2",
+        "22.45.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "System backup",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "CP-9(3)",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.45.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "IA-11",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.32"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "IA-12",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.33"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 1
+      },
+      "clause": "IA-2",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.11.96",
+        "22.11.98",
+        "22.14.26"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Identification and authentication (users)",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "IA-2(1)",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.11.97"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "IA-3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.27"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "IA-4",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.28"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "IA-5",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.29"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Authenticator management",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "IA-6",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.30"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "IA-8",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.31"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "IR-10",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.51"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "IR-2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.44"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "IR-3",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.46.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "IR-4",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.45",
+        "22.6.51",
+        "22.6.52"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Incident handling",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "IR-5",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.46"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "IR-6",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.47"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "IR-7",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.48"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "IR-8",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.49"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "IR-9",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.50"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "MP-6",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.49.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "PL-2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.54"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "PM-1",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.47.1"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "partial",
+      "topic": "Information security program plan",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "PM-6",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.6.47"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "PM-9",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.3.41",
+        "22.6.46"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "PS-4",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.10.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Personnel termination",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "PT-3",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.1.48"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "partial",
+      "topic": "Personally identifiable information processing purposes",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "RA-10",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.77"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "RA-3",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.14.74",
+        "22.6.48"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 3,
+        "partial": 2
+      },
+      "clause": "RA-5",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.11.103",
+        "22.14.75",
+        "22.3.43",
+        "22.43.1",
+        "22.43.2",
+        "22.43.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Vulnerability scanning",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "RA-5(2)",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.43.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "RA-7",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.76"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SC-10",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.69"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "SC-12",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.14.70",
+        "22.41.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 2,
+        "partial": 0
+      },
+      "clause": "SC-13",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.14.71",
+        "22.41.1",
+        "22.41.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Cryptographic protection",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SC-23",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.72"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SC-28",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.73"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SC-4",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.66"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SC-7",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.67"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Boundary protection",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 2,
+        "partial": 0
+      },
+      "clause": "SC-8",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.14.68",
+        "22.41.2",
+        "22.41.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Transmission confidentiality and integrity",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SI-10",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.40"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SI-11",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.41"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SI-12",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.42"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SI-16",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.43"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SI-2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.34"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "SI-3",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.11.94",
+        "22.14.35"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "SI-4",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.14.36",
+        "22.8.33"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "System monitoring",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SI-5",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.37"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SI-6",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.38"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SI-7",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.14.39"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "SR-11",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.43.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "SR-11(1)",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.44.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "SR-3",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.44.1"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "partial",
+      "topic": "Supply chain controls and processes",
+      "version": "Rev. 5"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "SR-6",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.44.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "Rev. 5"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "24 of 24 common clauses are covered by the catalogue, with a priority-weighted coverage of 67.32% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 24,
+      "coveredClauseCount": 24,
+      "priorityWeightedCoveragePercent": 67.32,
+      "stateCounts": {
+        "contributing-only": 8,
+        "covered-full": 12,
+        "covered-partial": 4,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "AC-2",
+        "killerUcId": "22.14.16",
+        "killerUcTitle": "Account Management — Orphan and Stale Privileged Accounts",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Account management",
+        "version": "Rev. 5",
+        "why": "Clause AC-2 (Account management) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "AC-6",
+        "killerUcId": "22.14.19",
+        "killerUcTitle": "Least Privilege — Excessive Cloud IAM Permissions",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Least privilege",
+        "version": "Rev. 5",
+        "why": "Clause AC-6 (Least privilege) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "AU-8",
+        "killerUcId": "22.11.100",
+        "killerUcTitle": "PCI-DSS 10.4 — Time synchronisation: NTP drift on CDE hosts",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Time stamps",
+        "version": "Rev. 5",
+        "why": "Clause AU-8 (Time stamps) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "AU-9",
+        "killerUcId": "22.14.8",
+        "killerUcTitle": "Protection of Audit Information — Tamper Detection on Audit Indexes",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Protection of audit information",
+        "version": "Rev. 5",
+        "why": "Clause AU-9 (Protection of audit information) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "CM-2",
+        "killerUcId": "22.14.52",
+        "killerUcTitle": "Baseline Configuration Drift vs Gold Build",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Baseline configuration",
+        "version": "Rev. 5",
+        "why": "Clause CM-2 (Baseline configuration) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "AC-2",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.16",
+            "ucTitle": "Account Management — Orphan and Stale Privileged Accounts"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.40.3",
+            "ucTitle": "Periodic access review SLA — stale certifications by control owner"
+          }
+        ],
+        "topic": "Account management",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AC-3",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.17",
+            "ucTitle": "Access Enforcement — Unauthorized Access Attempts to Sensitive Shares"
+          }
+        ],
+        "topic": "Access enforcement",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AC-6",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.19",
+            "ucTitle": "Least Privilege — Excessive Cloud IAM Permissions"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.40.1",
+            "ucTitle": "Privileged session recording — missing recordings for elevated sessions"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.40.2",
+            "ucTitle": "Break-glass account usage review with mandatory post-use approval"
+          }
+        ],
+        "topic": "Least privilege",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AU-12",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.11",
+            "ucTitle": "Audit Generation Coverage for Critical Network Controls"
+          }
+        ],
+        "topic": "Audit record generation",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AU-2",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.1",
+            "ucTitle": "Centralized Audit Event Logging Policy Coverage"
+          }
+        ],
+        "topic": "Event logging",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AU-3",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.2",
+            "ucTitle": "Audit Record Content Completeness for Privileged Actions"
+          }
+        ],
+        "topic": "Content of audit records",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AU-6",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.5",
+            "ucTitle": "Audit Review, Analysis, and Reporting for Privileged Users"
+          }
+        ],
+        "topic": "Audit review, analysis, and reporting",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AU-8",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.11.100",
+            "ucTitle": "PCI-DSS 10.4 — Time synchronisation: NTP drift on CDE hosts"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.7",
+            "ucTitle": "Time Synchronization and Clock Skew for Audit Timestamps"
+          }
+        ],
+        "topic": "Time stamps",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AU-9",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.8",
+            "ucTitle": "Protection of Audit Information — Tamper Detection on Audit Indexes"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.35.3",
+            "ucTitle": "Indexer replication lag exposing evidence to single-point failure"
+          }
+        ],
+        "topic": "Protection of audit information",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "CM-2",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.52",
+            "ucTitle": "Baseline Configuration Drift vs Gold Build"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.42.2",
+            "ucTitle": "Configuration baseline drift — regulated hosts deviating from CIS benchmark"
+          }
+        ],
+        "topic": "Baseline configuration",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "CM-6",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.11.92",
+            "ucTitle": "PCI-DSS 2.2 — Secure configuration baseline: drift from approved hardening template"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.56",
+            "ucTitle": "Configuration Settings Compliance — CIS Benchmark Control Checks"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.42.2",
+            "ucTitle": "Configuration baseline drift — regulated hosts deviating from CIS benchmark"
+          }
+        ],
+        "topic": "Configuration settings",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "CP-9",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.79",
+            "ucTitle": "System Backup Success and RPO Violations"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.45.1",
+            "ucTitle": "Backup restore test evidence — RPO/RTO SLA compliance per tier"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.45.2",
+            "ucTitle": "Backup encryption and air-gap integrity — tamper detection on immutable storage"
+          }
+        ],
+        "topic": "System backup",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "IA-2",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.11.96",
+            "ucTitle": "PCI-DSS 8.3 — Strong authentication: password-only logins against privileged accounts"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.26",
+            "ucTitle": "Multifactor Authentication Gaps for Interactive Sign-Ins"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.11.98",
+            "ucTitle": "PCI-DSS 8.6 — Application and system accounts: interactive use of a service account"
+          }
+        ],
+        "topic": "Identification and authentication (users)",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "IA-5",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.29",
+            "ucTitle": "Authenticator Management — Password Age and Rotation Anomalies"
+          }
+        ],
+        "topic": "Authenticator management",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "IR-4",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.45",
+            "ucTitle": "Incident Handling Stage Timestamps from Case Management"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.52",
+            "ucTitle": "ISO/IEC 27001:2022 Annex A.5.25 — Event classification decisions: SIEM-to-incident triage traceability"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.51",
+            "ucTitle": "ISO/IEC 27001:2022 Annex A.5.24 — Incident-management planning: runbook currency attestation"
+          }
+        ],
+        "topic": "Incident handling",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "PS-4",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.5",
+            "ucTitle": "Termination — Access Revocation Within Policy Window"
+          }
+        ],
+        "topic": "Personnel termination",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "RA-5",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.43",
+            "ucTitle": "DORA Art.8 — ICT risk identification: newly discovered high-severity exposure on critical financial services"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.75",
+            "ucTitle": "Vulnerability Monitoring — Exploitable in the Wild Prioritization"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.43.1",
+            "ucTitle": "Critical vulnerability SLA tracker — unpatched 30+ days with exploited-in-the-wild indicator"
+          }
+        ],
+        "topic": "Vulnerability scanning",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "SC-13",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.41.1",
+            "ucTitle": "Encryption-at-rest coverage gap — unencrypted storage with regulated data"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.71",
+            "ucTitle": "Cryptographic Protection — BitLocker or Disk Encryption Status Drops"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.41.3",
+            "ucTitle": "Key rotation attestation — KMS/HSM rotation SLA tracker"
+          }
+        ],
+        "topic": "Cryptographic protection",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "SC-7",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.67",
+            "ucTitle": "Boundary Protection — Firewall Deny Burst to Sensitive Segments"
+          }
+        ],
+        "topic": "Boundary protection",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "SC-8",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.68",
+            "ucTitle": "Transmission Confidentiality and Integrity — TLS Policy Downgrades"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.41.2",
+            "ucTitle": "Certificate / TLS posture — weak cipher and expired-cert detection"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.41.4",
+            "ucTitle": "TLS downgrade / legacy-cipher handshake spike"
+          }
+        ],
+        "topic": "Transmission confidentiality and integrity",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "SI-4",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.36",
+            "ucTitle": "System Monitoring — Host Instrumentation Coverage vs Inventory"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.33",
+            "ucTitle": "SOC 2 CC7.1 — System-operations monitoring: uptime attestation and alert-noise governance"
+          }
+        ],
+        "topic": "System monitoring",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "PM-1",
+        "coverageState": "covered-partial",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.47.1",
+            "ucTitle": "Control test freshness — evidence older than policy cadence"
+          }
+        ],
+        "topic": "Information security program plan",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "PT-3",
+        "coverageState": "covered-partial",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.48",
+            "ucTitle": "GDPR Purpose Limitation Enforcement Across Systems"
+          }
+        ],
+        "topic": "Personally identifiable information processing purposes",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "SR-3",
+        "coverageState": "covered-partial",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.44.1",
+            "ucTitle": "Supplier attestation currency — stale SOC 2 / ISO 27001 reports for critical vendors"
+          }
+        ],
+        "topic": "Supply chain controls and processes",
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AC-11",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.22",
+            "ucTitle": "Session Lock Events for Workstation Inactivity Policy"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AC-12",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.23",
+            "ucTitle": "Session Termination on Logoff and VPN Disconnect"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AC-17",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.24",
+            "ucTitle": "Remote Access Anomalies — Geo-Velocity and Off-Hours VPN"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AC-2(7)",
+        "coverageState": "covered-partial",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "9.1.3",
+            "ucTitle": "Privileged Group Membership Changes"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AC-20",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.25",
+            "ucTitle": "Use of External Systems — Unmanaged SaaS OAuth Grants"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AC-5",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.40.4",
+            "ucTitle": "Standing-privilege credential vaulting drift — admin accounts outside PAM"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.18",
+            "ucTitle": "Separation of Duties Violations in Change Tickets"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AC-6(9)",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.40.5",
+            "ucTitle": "High-risk privileged-session command without JIT approval"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AC-7",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.20",
+            "ucTitle": "Unsuccessful Logon Attempts and Account Lockout Patterns"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AC-8",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.21",
+            "ucTitle": "System Use Notification Banner Acceptance in SSH Sessions"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AT-3",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.46.3",
+            "ucTitle": "Privileged-role specialist training — admins lacking annual deep-training"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AU-10",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.9",
+            "ucTitle": "Non-Repudiation Evidence for Sensitive Transactions"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AU-11",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.11.102",
+            "ucTitle": "PCI-DSS 10.7 — Log retention: CDE data-source retention + immutability attestation"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.10",
+            "ucTitle": "Audit Record Retention Compliance vs Policy"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AU-13",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.12",
+            "ucTitle": "Monitoring for Information Disclosure via DLP and Web Exfil Patterns"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AU-14",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.13",
+            "ucTitle": "Session Audit for Privileged Interactive Access"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AU-15",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.14",
+            "ucTitle": "Alternate Audit Capability During Control Outages"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AU-16",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.15",
+            "ucTitle": "Cross-Organizational Audit Forwarding Health to SIEM"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AU-4",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.3",
+            "ucTitle": "Audit Storage Capacity and Index Growth Guardrails"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AU-5",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.4",
+            "ucTitle": "Response to Audit Logging Failures and Forwarder Gaps"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "AU-7",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.6",
+            "ucTitle": "Audit Reduction and Report Generation Integrity"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "CA-2",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.60",
+            "ucTitle": "Control Assessment Findings Ingest and Aging"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.50",
+            "ucTitle": "ISO/IEC 27001:2022 Clause 9.2 — Internal audit coverage: control sample rotation"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.47.3",
+            "ucTitle": "Control owner attestation freshness"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "CA-3",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.61",
+            "ucTitle": "Information Exchange Agreements — Data Share Volume Anomalies"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "CA-5",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.62",
+            "ucTitle": "Plan of Action and Milestones Open Items Past Due"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "CA-7",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.63",
+            "ucTitle": "Continuous Monitoring Control Health Scores"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.49",
+            "ucTitle": "ISO/IEC 27001:2022 Clause 9.1 — Monitoring programme coverage: KPI telemetry uptime"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.47.5",
+            "ucTitle": "Continuous control monitoring anomaly — failure-rate trending up"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "CA-8",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.45",
+            "ucTitle": "DORA Art.24 — Digital operational-resilience testing: test-plan execution attestation"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.64",
+            "ucTitle": "Penetration Test Windows and Detected Activities"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "CA-9",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.65",
+            "ucTitle": "Internal System Connections — East-West New Service Relationships"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "CM-11",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.59",
+            "ucTitle": "User-Installed Software Detections on Corporate Images"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "CM-3",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.53",
+            "ucTitle": "Configuration Change Control — Unauthorized Firewall Rule Adds"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.42.1",
+            "ucTitle": "Unauthorized production change — no approved CR matches the observed change"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.42.4",
+            "ucTitle": "CAB approval bypass — change pushed before scheduled window"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "CM-4",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.54",
+            "ucTitle": "Security Impact Analysis Signals for Emergency Changes"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "CM-5",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.55",
+            "ucTitle": "Access Restrictions for Change — Privileged Route Changes"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "CM-7",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.57",
+            "ucTitle": "Least Functionality — Unexpected Listening Ports"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "CM-8",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.58",
+            "ucTitle": "System Component Inventory vs Observed Network Assets"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "CP-10",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.80",
+            "ucTitle": "System Recovery Time Objective Tracking from DR Drills"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "CP-2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.78",
+            "ucTitle": "Contingency Plan Tabletop and Activation Logging"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "CP-4",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.45.5",
+            "ucTitle": "Business-continuity rehearsal evidence — BCP/DR exercise execution logged"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "CP-9(3)",
+        "coverageState": "covered-partial",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.45.4",
+            "ucTitle": "Backup repository TLS posture — aged or weak-cipher endpoints"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "IA-11",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.32",
+            "ucTitle": "Re-Authentication for Sensitive Application Roles"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "IA-12",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.33",
+            "ucTitle": "Identity Proofing Evidence for HR Onboarding Events"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "IA-2(1)",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.11.97",
+            "ucTitle": "PCI-DSS 8.4 — MFA coverage: administrative access to CDE without MFA"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "IA-3",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.27",
+            "ucTitle": "Device Identification for Corporate-Managed Endpoints"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "IA-4",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.28",
+            "ucTitle": "Identifier Management — Non-Human Service Account Sprawl"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "IA-6",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.30",
+            "ucTitle": "Authentication Feedback — Credential Stuffing via Login Failures"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "IA-8",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.31",
+            "ucTitle": "Identification of Non-Organization Users in Collaboration Tools"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "IR-10",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.51",
+            "ucTitle": "Integrated Information Security Analysis Team Handoffs"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "IR-2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.44",
+            "ucTitle": "Incident Response Training Completion Tracking"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "IR-3",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.46.4",
+            "ucTitle": "Tabletop rehearsal evidence — IR plan exercise frequency"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "IR-5",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.46",
+            "ucTitle": "Incident Monitoring — SOC Queue Depth and Severity Mix"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "IR-6",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.47",
+            "ucTitle": "Incident Reporting to Authorities — Regulatory Timer Watch"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "IR-7",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.48",
+            "ucTitle": "Incident Response Assistance — External IR Firm Access Auditing"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "IR-8",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.49",
+            "ucTitle": "Incident Response Plan Test Evidence from Scheduled Tabletop Tags"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "IR-9",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.50",
+            "ucTitle": "Information Spillage — DLP High-Severity Exfil Indicators"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "MP-6",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.49.5",
+            "ucTitle": "Cryptographic erasure attestation — per-asset destruction evidence"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "PL-2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.54",
+            "ucTitle": "ISO/IEC 27001:2022 Clause 7.5 — Documented information control: policy register approval trail"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "PM-6",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.47",
+            "ucTitle": "ISO/IEC 27001:2022 Clause 6.2 — Information-security objectives: measurable-target attainment"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "PM-9",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.3.41",
+            "ucTitle": "DORA Art.6 — ICT risk-management framework evidence: control catalogue drift detection"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.46",
+            "ucTitle": "ISO/IEC 27001:2022 Clause 6.1 — Risk-assessment evidence: live risk register decay"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "RA-10",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.77",
+            "ucTitle": "Threat Hunting Outcomes Logged for Repeatable Hunts"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "RA-3",
+        "coverageState": "covered-partial",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.48",
+            "ucTitle": "ISO/IEC 27001:2022 Clause 8.2 — Operational risk-assessment: per-change risk-score recalculation"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.74",
+            "ucTitle": "Risk Assessment Inputs — Control Deficiency Hotspots"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "RA-5(2)",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.43.4",
+            "ucTitle": "Scanner coverage gap — regulated hosts without a recent scan"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "RA-7",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.76",
+            "ucTitle": "Risk Response Effectiveness After Control Changes"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "SC-10",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.69",
+            "ucTitle": "Network Disconnect for Inactive Sessions on Admin Services"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "SC-12",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.70",
+            "ucTitle": "Cryptographic Key Management Events from Cloud KMS"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.41.5",
+            "ucTitle": "Key custodian SoD — same identity creates AND approves a key"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "SC-23",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.72",
+            "ucTitle": "Session Authenticity — Token Replay Across Geographies"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "SC-28",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.73",
+            "ucTitle": "Protection of Information at Rest — Storage Encryption Misconfigurations"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "SC-4",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.66",
+            "ucTitle": "Residual Information in Shared Cloud Object Stores"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "SI-10",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.40",
+            "ucTitle": "Information Input Validation — Web Parameter Anomalies"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "SI-11",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.41",
+            "ucTitle": "Error Handling — Application Stack Traces Exposing Internals"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "SI-12",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.42",
+            "ucTitle": "Information Management — Sensitive Fields in Unapproved Indexes"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "SI-16",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.43",
+            "ucTitle": "Memory Protection Signals — Exploitation Primitives in EDR Telemetry"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "SI-2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.34",
+            "ucTitle": "Flaw Remediation SLA Tracking from Vulnerability Scans"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "SI-3",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.35",
+            "ucTitle": "Malicious Code Protection — EDR / AV Detections Volume and Gaps"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.11.94",
+            "ucTitle": "PCI-DSS 5.2 — Anti-malware: EDR coverage + detection-queue attestation"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "SI-5",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.37",
+            "ucTitle": "Security Alerts Ingestion Health from Vendor Feeds"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "SI-6",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.38",
+            "ucTitle": "Security Function Verification — Forwarder Config Change Auditing"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "SI-7",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.14.39",
+            "ucTitle": "Software and Firmware Integrity — Unexpected Driver Loads"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "SR-11",
+        "coverageState": "covered-partial",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.43.5",
+            "ucTitle": "SBOM vendor-component CVE exposure"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "SR-11(1)",
+        "coverageState": "covered-partial",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.44.5",
+            "ucTitle": "SBOM attestation completeness — critical vendors without signed SBOM"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      },
+      {
+        "clause": "SR-6",
+        "coverageState": "covered-partial",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.44.4",
+            "ucTitle": "Vendor access telemetry — principals active outside contracted hours/geos"
+          }
+        ],
+        "topic": null,
+        "version": "Rev. 5"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "US"
+  ],
+  "narrative": {
+    "evidencePack": "docs/evidence-packs/nist-800-53.md",
+    "matchedBy": "manual-map",
+    "name": "NIST 800-53",
+    "primer": "docs/regulatory-primer.md#49-nist-800-53-rev5--security-and-privacy-controls-us--t1",
+    "splunkValue": "We evidence each control family — AU-2 logging completeness, AC-2 account lifecycle, SI-4 system monitoring, CM-6 configuration compliance, and more — with per-control dashboards and tstats-backed reports suitable for a FedRAMP ConMon package.",
+    "whatItIs": "The US federal catalogue of security and privacy controls. Version Rev.5 integrates privacy, supply-chain risk, and outcome-based language; it is the underpinning control set for FedRAMP authorisations and many state and sector programmes.",
+    "whoItAffects": "US federal agencies, contractors supporting federal systems, FedRAMP cloud providers, and organisations that voluntarily adopt 800-53 as a gold-standard baseline (common in healthcare, finance, and critical infrastructure)."
+  },
+  "narrativeRef": "non-technical-view.js#cat-22/area/nist-800-53",
+  "regulationId": "nist-800-53",
+  "regulationName": "NIST SP 800-53 Rev. 5",
+  "regulationShortName": "NIST 800-53",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=nist-800-53",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#nist-800-53",
+    "evidencePack": "docs/evidence-packs/nist-800-53.md",
+    "primerAnchor": "docs/regulatory-primer.md#49-nist-800-53-rev5-security-and-privacy-controls-us-t1",
+    "regulation": "/api/v1/compliance/regulations/nist-800-53.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 1
+}

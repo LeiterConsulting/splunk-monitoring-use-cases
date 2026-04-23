@@ -1,0 +1,202 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 5
+      },
+      "clause": "Art.13",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "12.1.4",
+        "12.3.10",
+        "12.3.2",
+        "22.43.5",
+        "22.44.5",
+        "3.1.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Obligations of manufacturers",
+      "version": "Regulation (EU) 2024/2847"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 20,
+        "full": 1,
+        "partial": 1
+      },
+      "clause": "Art.14",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "12.3.2",
+        "22.23.1",
+        "22.23.10",
+        "22.23.11",
+        "22.23.12",
+        "22.23.13",
+        "22.23.14",
+        "22.23.15",
+        "22.23.16",
+        "22.23.17",
+        "22.23.18",
+        "22.23.19",
+        "22.23.2",
+        "22.23.20",
+        "22.23.3",
+        "22.23.4",
+        "22.23.5",
+        "22.23.6",
+        "22.23.7",
+        "22.23.8",
+        "22.23.9",
+        "3.1.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Reporting of actively exploited vulnerabilities",
+      "version": "Regulation (EU) 2024/2847"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "2 of 2 common clauses are covered by the catalogue, with a priority-weighted coverage of 100.0% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoveragePercent": 100.0,
+      "stateCounts": {
+        "contributing-only": 0,
+        "covered-full": 2,
+        "covered-partial": 0,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "Art.13",
+        "killerUcId": "12.1.4",
+        "killerUcTitle": "Secret Exposure Detection",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Obligations of manufacturers",
+        "version": "Regulation (EU) 2024/2847",
+        "why": "Clause Art.13 (Obligations of manufacturers) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "Art.14",
+        "killerUcId": "12.3.2",
+        "killerUcTitle": "Dependency Vulnerability Alerts",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Reporting of actively exploited vulnerabilities",
+        "version": "Regulation (EU) 2024/2847",
+        "why": "Clause Art.14 (Reporting of actively exploited vulnerabilities) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "Art.13",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "12.1.4",
+            "ucTitle": "Secret Exposure Detection"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "12.3.2",
+            "ucTitle": "Dependency Vulnerability Alerts"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "12.3.10",
+            "ucTitle": "Artifact Signing Verification"
+          }
+        ],
+        "topic": "Obligations of manufacturers",
+        "version": "Regulation (EU) 2024/2847"
+      },
+      {
+        "clause": "Art.14",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "12.3.2",
+            "ucTitle": "Dependency Vulnerability Alerts"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.23.15",
+            "ucTitle": "Actively Exploited Vulnerability Notification Window (24h evidence)"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.23.16",
+            "ucTitle": "Incident Notification to ENISA — Delivery and Acknowledgement"
+          }
+        ],
+        "topic": "Reporting of actively exploited vulnerabilities",
+        "version": "Regulation (EU) 2024/2847"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "EU"
+  ],
+  "narrative": null,
+  "narrativeRef": null,
+  "regulationId": "eu-cra",
+  "regulationName": "EU Cyber Resilience Act",
+  "regulationShortName": "EU CRA",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=eu-cra",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#eu-cra",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/eu-cra.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

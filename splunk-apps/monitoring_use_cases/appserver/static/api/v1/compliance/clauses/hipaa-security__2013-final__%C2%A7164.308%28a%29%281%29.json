@@ -1,0 +1,98 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 4,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-{section}#p-%C2%A7164.308(a)(1)",
+  "clause": "§164.308(a)(1)",
+  "clauseId": "hipaa-security@2013-final#§164.308(a)(1)",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 4,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-{section}#p-%C2%A7164.308(a)(1)",
+      "controlObjective": "Evidence that HIPAA Security §164.308(a)(1) (Security management process) is enforced — Splunk UC-22.10.1: HIPAA Risk Analysis Evidence — Asset & ePHI System Inventory.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.10.1' running on sourcetype epic:integration and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.10.1",
+      "ucTitle": "HIPAA Risk Analysis Evidence — Asset & ePHI System Inventory"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-{section}#p-%C2%A7164.308(a)(1)",
+      "controlObjective": "Evidence that HIPAA Security §164.308(a)(1) (Security management process) is enforced — Splunk UC-22.10.2: HIPAA Risk Management — Control Deficiency Tracking.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.10.2' running on notable or index=grc HEC JSON (control_id, framework, status, due_date, owner) from GRC exports, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.10.2",
+      "ucTitle": "HIPAA Risk Management — Control Deficiency Tracking"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-{section}#p-%C2%A7164.308(a)(1)",
+      "controlObjective": "Evidence that HIPAA Security §164.308(a)(1) (Security management process) is enforced — Splunk UC-22.10.22: Remote ePHI Access — MFA Gap for VPN + O365 Clinical Mail.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.10.22' running on index=o365 sourcetype=ms:o365:reporting or Audit.Exchange / AzureActiveDirectory JSON, index=vpn GlobalProtect logs, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.10.22",
+      "ucTitle": "Remote ePHI Access — MFA Gap for VPN + O365 Clinical Mail"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-{section}#p-%C2%A7164.308(a)(1)",
+      "controlObjective": "Evidence that HIPAA Security §164.308(a)(1) (Security management process) is enforced — Splunk UC-22.10.55: Cloud Service Provider — ePHI Hosting Admin Actions in AWS or Azure Audit.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.10.55' running on sourcetype aws:cloudtrail and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.10.55",
+      "ucTitle": "Cloud Service Provider — ePHI Hosting Admin Actions in AWS or Azure Audit"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/hipaa-security__2013-final__%C2%A7164.308%28a%29%281%29.json",
+  "gapNote": "HIPAA Security clause §164.308(a)(1) has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 4
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "hipaa-security",
+  "regulationName": "HIPAA Security Rule",
+  "regulationShortName": "HIPAA Security",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/hipaa-security.json",
+    "regulationVersion": "/api/v1/compliance/regulations/hipaa-security@2013-final.json",
+    "story": "/api/v1/compliance/story/hipaa-security.json"
+  },
+  "tier": 1,
+  "topAssurance": "contributing",
+  "topic": "Security management process",
+  "version": "2013-final"
+}

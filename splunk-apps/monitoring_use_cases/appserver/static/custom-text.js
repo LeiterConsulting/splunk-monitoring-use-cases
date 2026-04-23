@@ -1,0 +1,47 @@
+/**
+ * Custom site text — safe to edit
+ * ---------------------------------
+ * Change any of the values below to customize the website. This file is
+ * NOT generated or overwritten by build scripts or automated updates.
+ * Your edits here will stay in place.
+ *
+ * Leave a value as-is or set to "" to keep the default. To override,
+ * set the property to your desired string.
+ */
+window.SITE_CUSTOM = {
+  // Hero (Overview top)
+  heroBadge: "> Solving IT Issues Together",
+  heroTitle: "Use Case Repository for Monitoring",
+  heroTitleSpan: "with Splunk",
+  heroIntro: "Find {useCases} use cases across {categories} infrastructure domains. ",
+  statUseCases: "Use Cases",
+  statCategories: "Categories",
+  statSubcategories: "Subcategories",
+  statQuickWins: "Quick Wins",
+
+  // Implementation Roadmap
+  roadmapTitle: "How to Start Implementing",
+  roadmapSub: "A phased approach to building comprehensive infrastructure monitoring",
+  phase1Title: "Phase 1",
+  phase1Heading: "Foundation",
+  phase1Desc: "Deploy forwarders and start collecting data for immediate visibility.",
+  phase2Title: "Phase 2",
+  phase2Heading: "Core Monitoring",
+  phase2Desc: "Expand data collection and build dashboards for critical infrastructure.",
+  phase3Title: "Phase 3",
+  phase3Heading: "Expand Coverage",
+  phase3Desc: "Bring in cloud, application, and database monitoring for full-stack visibility.",
+  phase4Title: "Phase 4",
+  phase4Heading: "Optimize & Automate",
+  phase4Desc: "Add ML-driven anomaly detection, automated remediation, and executive reporting.",
+
+  // Quick-win starters label
+  starterListLabel: "Top Quick-Win Use Cases — ready to implement",
+
+  // Filter chip labels (Overview)
+  filterAll: "Categories",
+
+  // Footer
+  siteAuthor: "Fredrik Lima Sudmann",
+  siteRepoUrl: "https://github.com/fenre/splunk-monitoring-use-cases"
+};

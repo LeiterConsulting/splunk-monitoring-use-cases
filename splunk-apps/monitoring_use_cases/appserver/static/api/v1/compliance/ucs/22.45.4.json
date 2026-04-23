@@ -1,0 +1,121 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/22.45.4.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/22.45.4.json",
+    "sourcePath": "content/cat-22-regulatory-compliance/UC-22.45.4.json"
+  },
+  "apiVersion": "v1",
+  "app": "Splunk Enterprise / Splunk Cloud Platform",
+  "cimModels": [
+    "Certificates"
+  ],
+  "compliance": [
+    {
+      "assurance": "partial",
+      "assurance_rationale": "DORA Art.12 backup policies include protection of transport.",
+      "clause": "Art.12",
+      "controlObjective": "Evidence that DORA Art.12 (Backup policies and recovery methods) is enforced — Splunk UC-22.45.4: Backup repository TLS posture — aged or weak-cipher endpoints.",
+      "evidenceArtifact": "Saved search 'UC-22.45.4' running on TLS scanner output for backup endpoint inventory., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "dora@Regulation (EU) 2022/2554#Art.12",
+      "regulation": "DORA",
+      "requires_sme_review": true,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "HIPAA transmission security applies to backup ingress.",
+      "clause": "§164.312(e)(1)",
+      "controlObjective": "Evidence that HIPAA §164.312(e)(1) (Transmission security) is enforced — Splunk UC-22.45.4: Backup repository TLS posture — aged or weak-cipher endpoints.",
+      "evidenceArtifact": "Saved search 'UC-22.45.4' running on TLS scanner output for backup endpoint inventory., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "hipaa-security@2013-final#§164.312(e)(1)",
+      "regulation": "HIPAA",
+      "requires_sme_review": true,
+      "version": "2013-final"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "CP-9(3) protection of backup confidentiality.",
+      "clause": "CP-9(3)",
+      "controlObjective": "Evidence that NIST-800-53 CP-9(3) is enforced — Splunk UC-22.45.4: Backup repository TLS posture — aged or weak-cipher endpoints.",
+      "evidenceArtifact": "Saved search 'UC-22.45.4' running on TLS scanner output for backup endpoint inventory., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "nist-800-53@Rev. 5#CP-9(3)",
+      "regulation": "NIST-800-53",
+      "requires_sme_review": true,
+      "version": "Rev. 5"
+    }
+  ],
+  "controlFamily": "backup-restore-evidence",
+  "controlTest": {
+    "attackTechnique": "T1040",
+    "fixtureRef": "sample-data/uc-22.45.4-fixture.json",
+    "negativeScenario": "All backup endpoints negotiate TLS 1.2/1.3 with strong ciphers; no alert.",
+    "positiveScenario": "Backup repo at backup.example.com negotiates TLS 1.0; the UC fires daily."
+  },
+  "criticality": "medium",
+  "dataSources": "TLS scanner output for backup endpoint inventory.",
+  "description": "Ensures the transport to backup repositories — traditionally neglected — matches the same TLS posture as customer-facing systems.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Splunk Enterprise / Splunk Cloud Platform.\n• Ensure the following data sources are available: TLS scanner output for backup endpoint inventory..\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\n(1) Inventory backup endpoints; (2) scan daily; (3) on finding, ticket to platform engineering.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=tls sourcetype=tls:scan earliest=-24h\n| search host IN (`backup_repository_endpoints`)\n| eval days_to_expiry=round((expires-now())/86400,0)\n| where days_to_expiry<45 OR protocol=\"TLSv1.0\" OR protocol=\"TLSv1.1\" OR match(cipher,\"3DES|RC4|NULL|DES|EXPORT\")\n| table host days_to_expiry protocol cipher\n```\n\nUnderstanding this SPL\n\n**Backup repository TLS posture — aged or weak-cipher endpoints** — Closes a gap pattern observed in DORA inspections where the backup plane had older TLS than the production plane.\n\nDocumented **Data sources**: TLS scanner output for backup endpoint inventory. **App/TA** (typical add-on context): Splunk Enterprise / Splunk Cloud Platform. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: tls; **sourcetype**: tls:scan. If that sourcetype is not mentioned in Data sources, double-check parsing or update the documentation to match the feed you actually ingest.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=tls, sourcetype=tls:scan, time bounds. Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• Applies an explicit `search` filter to narrow the current result set.\n• `eval` defines or adjusts **days_to_expiry** — often to normalize units, derive a ratio, or prepare for thresholds.\n• Filters the current rows with `where days_to_expiry<45 OR protocol=\"TLSv1.0\" OR protocol=\"TLSv1.1\" OR match(cipher,\"3DES|RC4|NULL|DES|EXPORT\")` — typically the threshold or rule expression for this monitoring goal.\n• Pipeline stage (see **Backup repository TLS posture — aged or weak-cipher endpoints**): table host days_to_expiry protocol cipher\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Table of endpoints with weak posture, time chart of scan results, single-value '% of backup endpoints with strong TLS'.",
+  "detectionType": "Anomaly",
+  "difficulty": "intermediate",
+  "evidence": "Saved search 'backup_tls_posture' (daily) reports any backup repository endpoint with legacy protocol or near-expiry certificate.",
+  "exclusions": "Does NOT validate key rotation (covered by 22.41.3); focuses on transport posture at backup ingress.",
+  "grandmaExplanation": "Closes a gap pattern observed in DORA inspections where the backup plane had older secure connections than the production plane — so you can show exactly what is being watched and when something went wrong.",
+  "id": "22.45.4",
+  "implementation": "(1) Inventory backup endpoints; (2) scan daily; (3) on finding, ticket to platform engineering.",
+  "knownFalsePositives": "Appliance-managed endpoints with vendor-pinned TLS libraries may need a supply-chain exception.",
+  "lastReviewed": "2026-04-16",
+  "mitreAttack": [
+    "T1040"
+  ],
+  "monitoringType": [
+    "Compliance",
+    "Security"
+  ],
+  "owner": "Head of Platform",
+  "references": [
+    {
+      "retrieved": "2026-04-16",
+      "title": "Regulation (EU) 2022/2554 — DORA",
+      "url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "45 CFR Part 164 — HIPAA",
+      "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "NIST SP 800-53 Rev. 5",
+      "url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "MITRE ATT&CK — T1040 Network Sniffing",
+      "url": "https://attack.mitre.org/techniques/T1040/"
+    }
+  ],
+  "requiredFields": [
+    "host",
+    "protocol",
+    "cipher",
+    "expires"
+  ],
+  "reviewer": "N/A",
+  "securityDomain": "network",
+  "spl": "index=tls sourcetype=tls:scan earliest=-24h\n| search host IN (`backup_repository_endpoints`)\n| eval days_to_expiry=round((expires-now())/86400,0)\n| where days_to_expiry<45 OR protocol=\"TLSv1.0\" OR protocol=\"TLSv1.1\" OR match(cipher,\"3DES|RC4|NULL|DES|EXPORT\")\n| table host days_to_expiry protocol cipher",
+  "splunkPillar": "Platform",
+  "splunkVersions": [
+    "9.2+",
+    "Cloud"
+  ],
+  "status": "draft",
+  "subcategory": "22.45#1",
+  "title": "Backup repository TLS posture — aged or weak-cipher endpoints",
+  "value": "Closes a gap pattern observed in DORA inspections where the backup plane had older TLS than the production plane.",
+  "visualization": "Table of endpoints with weak posture, time chart of scan results, single-value '% of backup endpoints with strong TLS'."
+}

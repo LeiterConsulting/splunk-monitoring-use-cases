@@ -1,0 +1,684 @@
+{
+  "$schema": "/schemas/v2/manifest.schema.json",
+  "categories": [
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/category/server-compute/",
+      "id": 1,
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/category/server-compute/index.json",
+      "name": "Server & Compute",
+      "slug": "server-compute",
+      "useCases": 275
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/category/virtualization/",
+      "id": 2,
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/category/virtualization/index.json",
+      "name": "Virtualization",
+      "slug": "virtualization",
+      "useCases": 124
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/category/containers-orchestration/",
+      "id": 3,
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/category/containers-orchestration/index.json",
+      "name": "Containers & Orchestration",
+      "slug": "containers-orchestration",
+      "useCases": 115
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/category/cloud-infrastructure/",
+      "id": 4,
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/category/cloud-infrastructure/index.json",
+      "name": "Cloud Infrastructure",
+      "slug": "cloud-infrastructure",
+      "useCases": 227
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/category/network-infrastructure/",
+      "id": 5,
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/category/network-infrastructure/index.json",
+      "name": "Network Infrastructure",
+      "slug": "network-infrastructure",
+      "useCases": 329
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/category/storage-backup/",
+      "id": 6,
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/category/storage-backup/index.json",
+      "name": "Storage & Backup",
+      "slug": "storage-backup",
+      "useCases": 81
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/category/database-data-platforms/",
+      "id": 7,
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/category/database-data-platforms/index.json",
+      "name": "Database & Data Platforms",
+      "slug": "database-data-platforms",
+      "useCases": 122
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/category/application-infrastructure/",
+      "id": 8,
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/category/application-infrastructure/index.json",
+      "name": "Application Infrastructure",
+      "slug": "application-infrastructure",
+      "useCases": 106
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/category/identity-access-management/",
+      "id": 9,
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/category/identity-access-management/index.json",
+      "name": "Identity & Access Management",
+      "slug": "identity-access-management",
+      "useCases": 104
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/category/security-infrastructure/",
+      "id": 10,
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/category/security-infrastructure/index.json",
+      "name": "Security Infrastructure",
+      "slug": "security-infrastructure",
+      "useCases": 2402
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/category/email-collaboration/",
+      "id": 11,
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/category/email-collaboration/index.json",
+      "name": "Email & Collaboration",
+      "slug": "email-collaboration",
+      "useCases": 107
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/category/devops-ci-cd/",
+      "id": 12,
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/category/devops-ci-cd/index.json",
+      "name": "DevOps & CI/CD",
+      "slug": "devops-ci-cd",
+      "useCases": 88
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/category/observability-monitoring-stack/",
+      "id": 13,
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/category/observability-monitoring-stack/index.json",
+      "name": "Observability & Monitoring Stack",
+      "slug": "observability-monitoring-stack",
+      "useCases": 143
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/category/iot-operational-technology-ot/",
+      "id": 14,
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/category/iot-operational-technology-ot/index.json",
+      "name": "IoT & Operational Technology (OT)",
+      "slug": "iot-operational-technology-ot",
+      "useCases": 230
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/category/data-center-physical-infrastructure/",
+      "id": 15,
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/category/data-center-physical-infrastructure/index.json",
+      "name": "Data Center Physical Infrastructure",
+      "slug": "data-center-physical-infrastructure",
+      "useCases": 81
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/category/service-management-itsm/",
+      "id": 16,
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/category/service-management-itsm/index.json",
+      "name": "Service Management & ITSM",
+      "slug": "service-management-itsm",
+      "useCases": 81
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/category/network-security-zero-trust/",
+      "id": 17,
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/category/network-security-zero-trust/index.json",
+      "name": "Network Security & Zero Trust",
+      "slug": "network-security-zero-trust",
+      "useCases": 105
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/category/data-center-fabric-sdn/",
+      "id": 18,
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/category/data-center-fabric-sdn/index.json",
+      "name": "Data Center Fabric & SDN",
+      "slug": "data-center-fabric-sdn",
+      "useCases": 76
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/category/compute-infrastructure-hci-converged/",
+      "id": 19,
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/category/compute-infrastructure-hci-converged/index.json",
+      "name": "Compute Infrastructure (HCI & Converged)",
+      "slug": "compute-infrastructure-hci-converged",
+      "useCases": 72
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/category/cost-capacity-management/",
+      "id": 20,
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/category/cost-capacity-management/index.json",
+      "name": "Cost & Capacity Management",
+      "slug": "cost-capacity-management",
+      "useCases": 77
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/category/industry-verticals/",
+      "id": 21,
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/category/industry-verticals/index.json",
+      "name": "Industry Verticals",
+      "slug": "industry-verticals",
+      "useCases": 129
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/category/regulatory-compliance/",
+      "id": 22,
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/category/regulatory-compliance/index.json",
+      "name": "Regulatory and Compliance Frameworks",
+      "slug": "regulatory-compliance",
+      "useCases": 1310
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/category/business-analytics/",
+      "id": 23,
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/category/business-analytics/index.json",
+      "name": "Business Analytics & Executive Intelligence",
+      "slug": "business-analytics",
+      "useCases": 63
+    }
+  ],
+  "endpoints": {
+    "atom": "https://fenre.github.io/splunk-monitoring-use-cases/feed.xml",
+    "browse": "https://fenre.github.io/splunk-monitoring-use-cases/browse/",
+    "catalogIndex": "https://fenre.github.io/splunk-monitoring-use-cases/api/catalog-index.json",
+    "landing": "https://fenre.github.io/splunk-monitoring-use-cases/",
+    "llms": "https://fenre.github.io/splunk-monitoring-use-cases/llms.txt",
+    "llmsFull": "https://fenre.github.io/splunk-monitoring-use-cases/llms-full.txt",
+    "openapi": "https://fenre.github.io/splunk-monitoring-use-cases/openapi.yaml",
+    "regulationsIndex": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/",
+    "regulationsJson": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/index.json",
+    "sitemap": "https://fenre.github.io/splunk-monitoring-use-cases/sitemap.xml"
+  },
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "regulations": [
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/api-rp-1164/",
+      "id": "api-rp-1164",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/api-rp-1164/index.json",
+      "name": "API Recommended Practice 1164 — Pipeline Control Systems Cybersecurity",
+      "shortName": "API RP 1164",
+      "slug": "api-rp-1164"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/appi/",
+      "id": "appi",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/appi/index.json",
+      "name": "Japan Act on the Protection of Personal Information",
+      "shortName": "APPI",
+      "slug": "appi"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/apra-cps-234/",
+      "id": "apra-cps-234",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/apra-cps-234/index.json",
+      "name": "APRA CPS 234 Information Security",
+      "shortName": "APRA CPS 234",
+      "slug": "apra-cps-234"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/asd-e8/",
+      "id": "asd-e8",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/asd-e8/index.json",
+      "name": "ASD Essential Eight Maturity Model",
+      "shortName": "ASD E8",
+      "slug": "asd-e8"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/au-privacy-act/",
+      "id": "au-privacy-act",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/au-privacy-act/index.json",
+      "name": "Australian Privacy Act 1988 and Notifiable Data Breaches scheme",
+      "shortName": "AU Privacy Act",
+      "slug": "au-privacy-act"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/bait-kait/",
+      "id": "bait-kait",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/bait-kait/index.json",
+      "name": "BaFin Banking/Insurance Supervisory Requirements for IT (BAIT/KAIT)",
+      "shortName": "BAIT/KAIT",
+      "slug": "bait-kait"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/bsi-kritisv/",
+      "id": "bsi-kritisv",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/bsi-kritisv/index.json",
+      "name": "BSI KRITIS-Verordnung",
+      "shortName": "BSI-KritisV",
+      "slug": "bsi-kritisv"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/ccpa/",
+      "id": "ccpa",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/ccpa/index.json",
+      "name": "California Consumer Privacy Act / CPRA",
+      "shortName": "CCPA/CPRA",
+      "slug": "ccpa"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/cjis/",
+      "id": "cjis",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/cjis/index.json",
+      "name": "FBI CJIS Security Policy",
+      "shortName": "CJIS",
+      "slug": "cjis"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/cmmc/",
+      "id": "cmmc",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/cmmc/index.json",
+      "name": "Cybersecurity Maturity Model Certification",
+      "shortName": "CMMC",
+      "slug": "cmmc"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/dora/",
+      "id": "dora",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/dora/index.json",
+      "name": "EU Digital Operational Resilience Act",
+      "shortName": "DORA",
+      "slug": "dora"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/eidas/",
+      "id": "eidas",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/eidas/index.json",
+      "name": "EU eIDAS Regulation",
+      "shortName": "eIDAS",
+      "slug": "eidas"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/eu-ai-act/",
+      "id": "eu-ai-act",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/eu-ai-act/index.json",
+      "name": "EU AI Act",
+      "shortName": "EU AI Act",
+      "slug": "eu-ai-act"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/eu-aml/",
+      "id": "eu-aml",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/eu-aml/index.json",
+      "name": "EU Anti-Money-Laundering Framework",
+      "shortName": "EU AML",
+      "slug": "eu-aml"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/eu-cra/",
+      "id": "eu-cra",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/eu-cra/index.json",
+      "name": "EU Cyber Resilience Act",
+      "shortName": "EU CRA",
+      "slug": "eu-cra"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/fca-smcr/",
+      "id": "fca-smcr",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/fca-smcr/index.json",
+      "name": "FCA Senior Managers and Certification Regime",
+      "shortName": "FCA SM&CR",
+      "slug": "fca-smcr"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/fca-ss1-21/",
+      "id": "fca-ss1-21",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/fca-ss1-21/index.json",
+      "name": "FCA SS1/21 Operational Resilience",
+      "shortName": "FCA SS1/21",
+      "slug": "fca-ss1-21"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/fda-part-11/",
+      "id": "fda-part-11",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/fda-part-11/index.json",
+      "name": "FDA 21 CFR Part 11",
+      "shortName": "FDA Part 11",
+      "slug": "fda-part-11"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/fedramp/",
+      "id": "fedramp",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/fedramp/index.json",
+      "name": "Federal Risk and Authorization Management Program",
+      "shortName": "FedRAMP",
+      "slug": "fedramp"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/fisma/",
+      "id": "fisma",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/fisma/index.json",
+      "name": "Federal Information Security Modernization Act",
+      "shortName": "FISMA",
+      "slug": "fisma"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/gdpr/",
+      "id": "gdpr",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/gdpr/index.json",
+      "name": "General Data Protection Regulation",
+      "shortName": "GDPR",
+      "slug": "gdpr"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/hipaa-privacy/",
+      "id": "hipaa-privacy",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/hipaa-privacy/index.json",
+      "name": "HIPAA Privacy Rule",
+      "shortName": "HIPAA Privacy",
+      "slug": "hipaa-privacy"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/hipaa-security/",
+      "id": "hipaa-security",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/hipaa-security/index.json",
+      "name": "HIPAA Security Rule",
+      "shortName": "HIPAA Security",
+      "slug": "hipaa-security"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/hitrust/",
+      "id": "hitrust",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/hitrust/index.json",
+      "name": "HITRUST CSF",
+      "shortName": "HITRUST",
+      "slug": "hitrust"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/hkma-tm-g-2/",
+      "id": "hkma-tm-g-2",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/hkma-tm-g-2/index.json",
+      "name": "HKMA TM-G-2 General Principles for Technology Risk Management",
+      "shortName": "HKMA TM-G-2",
+      "slug": "hkma-tm-g-2"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/iec-62443/",
+      "id": "iec-62443",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/iec-62443/index.json",
+      "name": "IEC 62443 Industrial Automation and Control Systems Security",
+      "shortName": "IEC 62443",
+      "slug": "iec-62443"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/iso-27001/",
+      "id": "iso-27001",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/iso-27001/index.json",
+      "name": "ISO/IEC 27001 — ISMS",
+      "shortName": "ISO 27001",
+      "slug": "iso-27001"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/it-grundschutz/",
+      "id": "it-grundschutz",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/it-grundschutz/index.json",
+      "name": "BSI IT-Grundschutz Compendium",
+      "shortName": "IT-Grundschutz",
+      "slug": "it-grundschutz"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/it-sig-2/",
+      "id": "it-sig-2",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/it-sig-2/index.json",
+      "name": "German IT-Sicherheitsgesetz 2.0",
+      "shortName": "IT-SiG 2.0",
+      "slug": "it-sig-2"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/lgpd/",
+      "id": "lgpd",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/lgpd/index.json",
+      "name": "Lei Geral de Proteção de Dados Pessoais",
+      "shortName": "LGPD",
+      "slug": "lgpd"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/mas-trm/",
+      "id": "mas-trm",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/mas-trm/index.json",
+      "name": "MAS Technology Risk Management Guidelines",
+      "shortName": "MAS TRM",
+      "slug": "mas-trm"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/mifid-ii/",
+      "id": "mifid-ii",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/mifid-ii/index.json",
+      "name": "Markets in Financial Instruments Directive II",
+      "shortName": "MiFID II",
+      "slug": "mifid-ii"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/nerc-cip/",
+      "id": "nerc-cip",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/nerc-cip/index.json",
+      "name": "NERC Critical Infrastructure Protection",
+      "shortName": "NERC CIP",
+      "slug": "nerc-cip"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/nesa-uae-ias/",
+      "id": "nesa-uae-ias",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/nesa-uae-ias/index.json",
+      "name": "UAE NESA Information Assurance Standards",
+      "shortName": "NESA IAS",
+      "slug": "nesa-uae-ias"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/nis2/",
+      "id": "nis2",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/nis2/index.json",
+      "name": "EU NIS2 Directive",
+      "shortName": "NIS2",
+      "slug": "nis2"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/nist-800-53/",
+      "id": "nist-800-53",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/nist-800-53/index.json",
+      "name": "NIST SP 800-53 Rev. 5",
+      "shortName": "NIST 800-53",
+      "slug": "nist-800-53"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/nist-csf/",
+      "id": "nist-csf",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/nist-csf/index.json",
+      "name": "NIST Cybersecurity Framework",
+      "shortName": "NIST CSF",
+      "slug": "nist-csf"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/no-kbf-nve/",
+      "id": "no-kbf-nve",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/no-kbf-nve/index.json",
+      "name": "Norwegian Kraftberedskapsforskriften (NVE Power-sector emergency preparedness regulation)",
+      "shortName": "NO KBF",
+      "slug": "no-kbf-nve"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/no-personopplysningsloven/",
+      "id": "no-personopplysningsloven",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/no-personopplysningsloven/index.json",
+      "name": "Norwegian Personopplysningsloven (Personal Data Act)",
+      "shortName": "NO Personopplysningsloven",
+      "slug": "no-personopplysningsloven"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/no-petroleumsforskriften/",
+      "id": "no-petroleumsforskriften",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/no-petroleumsforskriften/index.json",
+      "name": "Norwegian Petroleumsforskriften (Petroleum Safety regulation)",
+      "shortName": "NO Petroleumsforskriften",
+      "slug": "no-petroleumsforskriften"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/no-sikkerhetsloven/",
+      "id": "no-sikkerhetsloven",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/no-sikkerhetsloven/index.json",
+      "name": "Norwegian Sikkerhetsloven (National Security Act)",
+      "shortName": "NO Sikkerhetsloven",
+      "slug": "no-sikkerhetsloven"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/nzism/",
+      "id": "nzism",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/nzism/index.json",
+      "name": "New Zealand Information Security Manual",
+      "shortName": "NZISM",
+      "slug": "nzism"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/pci-dss/",
+      "id": "pci-dss",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/pci-dss/index.json",
+      "name": "Payment Card Industry Data Security Standard",
+      "shortName": "PCI DSS",
+      "slug": "pci-dss"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/pipl/",
+      "id": "pipl",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/pipl/index.json",
+      "name": "China Personal Information Protection Law",
+      "shortName": "PIPL",
+      "slug": "pipl"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/pra-ss2-21/",
+      "id": "pra-ss2-21",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/pra-ss2-21/index.json",
+      "name": "PRA SS2/21 Outsourcing and third-party risk management",
+      "shortName": "PRA SS2/21",
+      "slug": "pra-ss2-21"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/psd2/",
+      "id": "psd2",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/psd2/index.json",
+      "name": "Revised Payment Services Directive",
+      "shortName": "PSD2",
+      "slug": "psd2"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/qcb-cyber/",
+      "id": "qcb-cyber",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/qcb-cyber/index.json",
+      "name": "Qatar Central Bank Cybersecurity Framework",
+      "shortName": "QCB Cyber",
+      "slug": "qcb-cyber"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/rbi-cyber/",
+      "id": "rbi-cyber",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/rbi-cyber/index.json",
+      "name": "RBI Cyber Security Framework for Banks",
+      "shortName": "RBI Cyber",
+      "slug": "rbi-cyber"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/sa-pdpl/",
+      "id": "sa-pdpl",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/sa-pdpl/index.json",
+      "name": "Saudi Personal Data Protection Law",
+      "shortName": "SA PDPL",
+      "slug": "sa-pdpl"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/sama-csf/",
+      "id": "sama-csf",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/sama-csf/index.json",
+      "name": "SAMA Cyber Security Framework",
+      "shortName": "SAMA CSF",
+      "slug": "sama-csf"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/sg-pdpa/",
+      "id": "sg-pdpa",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/sg-pdpa/index.json",
+      "name": "Singapore Personal Data Protection Act",
+      "shortName": "SG PDPA",
+      "slug": "sg-pdpa"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/soc-2/",
+      "id": "soc-2",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/soc-2/index.json",
+      "name": "SOC 2 Trust Services Criteria",
+      "shortName": "SOC 2",
+      "slug": "soc-2"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/sox-itgc/",
+      "id": "sox-itgc",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/sox-itgc/index.json",
+      "name": "SOX — PCAOB AS 2201 ITGCs",
+      "shortName": "SOX ITGC",
+      "slug": "sox-itgc"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/swift-csp/",
+      "id": "swift-csp",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/swift-csp/index.json",
+      "name": "SWIFT Customer Security Programme",
+      "shortName": "SWIFT CSP",
+      "slug": "swift-csp"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/swiss-nfadp/",
+      "id": "swiss-nfadp",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/swiss-nfadp/index.json",
+      "name": "Swiss Federal Act on Data Protection (nFADP)",
+      "shortName": "Swiss nFADP",
+      "slug": "swiss-nfadp"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/tsa-sd/",
+      "id": "tsa-sd",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/tsa-sd/index.json",
+      "name": "TSA Pipeline Security Directive",
+      "shortName": "TSA SD",
+      "slug": "tsa-sd"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/uk-cyber-essentials/",
+      "id": "uk-cyber-essentials",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/uk-cyber-essentials/index.json",
+      "name": "UK NCSC Cyber Essentials",
+      "shortName": "Cyber Essentials",
+      "slug": "uk-cyber-essentials"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/uk-gdpr/",
+      "id": "uk-gdpr",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/uk-gdpr/index.json",
+      "name": "UK General Data Protection Regulation",
+      "shortName": "UK GDPR",
+      "slug": "uk-gdpr"
+    },
+    {
+      "html": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/uk-nis/",
+      "id": "uk-nis",
+      "json": "https://fenre.github.io/splunk-monitoring-use-cases/regulation/uk-nis/index.json",
+      "name": "UK Network and Information Systems Regulations 2018",
+      "shortName": "UK NIS",
+      "slug": "uk-nis"
+    }
+  ],
+  "site": "https://fenre.github.io/splunk-monitoring-use-cases",
+  "stats": {
+    "categories": 23,
+    "regulations": 59,
+    "totalRegulations": 66,
+    "useCases": 6447
+  },
+  "version": "2.0.0"
+}

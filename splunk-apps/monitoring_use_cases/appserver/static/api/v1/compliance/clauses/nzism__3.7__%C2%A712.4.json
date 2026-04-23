@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.nzism.gcsb.govt.nz/",
+  "clause": "§12.4",
+  "clauseId": "nzism@3.7#§12.4",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Phase-C authored UC targeting NZISM §12.4 (Information security documentation and policy). Uses continuous, production-grade Splunk telemetry to provide auditor-facing evidence; assurance level set to 'contributing' pending SME review per Phase E of the regulation-coverage plan.",
+      "category": 22,
+      "clauseUrl": "https://www.nzism.gcsb.govt.nz/",
+      "controlObjective": "Evidence that NZISM §12.4 (Information security documentation and policy) is enforced — Splunk UC-22.50.22: NZISM §12.4 — policy documentation freshness and approval state.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.50.22' running on Policy repository, document control system, CISO approval records., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": "Phase-C draft: SME review required before uplifting assurance from 'contributing' to 'partial' or 'full'. Confirm that the SPL captures the specific regulator expectation and that the telemetry exists in the deployment.",
+      "ucId": "22.50.22",
+      "ucTitle": "NZISM §12.4 — policy documentation freshness and approval state"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/nzism__3.7__%C2%A712.4.json",
+  "gapNote": "NZISM clause §12.4 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 0.7,
+  "regulationId": "nzism",
+  "regulationName": "New Zealand Information Security Manual",
+  "regulationShortName": "NZISM",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/nzism.json",
+    "regulationVersion": "/api/v1/compliance/regulations/nzism@3.7.json",
+    "story": "/api/v1/compliance/story/nzism.json"
+  },
+  "tier": 2,
+  "topAssurance": "contributing",
+  "topic": "Information security documentation and policy",
+  "version": "3.7"
+}

@@ -1,0 +1,29 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 3,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "forcepoint",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Forcepoint ONE",
+  "models": [],
+  "regulationIds": [],
+  "regulations": [],
+  "useCaseCount": 3,
+  "useCaseIds": [
+    "17.3.20",
+    "17.3.59",
+    "17.3.60"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 17,
+      "useCaseCount": 3,
+      "useCaseIds": [
+        "17.3.20",
+        "17.3.59",
+        "17.3.60"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 4,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.sama.gov.sa/en-US/Laws/BankingRules/SAMA%20Cyber%20Security%20Framework.pdf",
+  "clause": "3.1.1",
+  "clauseId": "sama-csf@v1.0 (2017)#3.1.1",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 4,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'SAMA Cyber Security Framework' → '3.1.1'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.sama.gov.sa/en-US/Laws/BankingRules/SAMA%20Cyber%20Security%20Framework.pdf",
+      "controlObjective": "Evidence that SAMA CSF 3.1.1 (Cyber security governance) is enforced — Splunk UC-22.33.6: SAMA cybersecurity framework control testing.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.33.6' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.33.6",
+      "ucTitle": "SAMA cybersecurity framework control testing"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'SAMA Cyber Security Framework' → '3.1.1'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.sama.gov.sa/en-US/Laws/BankingRules/SAMA%20Cyber%20Security%20Framework.pdf",
+      "controlObjective": "Evidence that SAMA CSF 3.1.1 (Cyber security governance) is enforced — Splunk UC-22.33.8: SAMA cybersecurity incident reporting timeline.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.33.8' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.33.8",
+      "ucTitle": "SAMA cybersecurity incident reporting timeline"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'SAMA Cyber Security Framework' → '3.1.1'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.sama.gov.sa/en-US/Laws/BankingRules/SAMA%20Cyber%20Security%20Framework.pdf",
+      "controlObjective": "Evidence that SAMA CSF 3.1.1 (Cyber security governance) is enforced — Splunk UC-22.33.9: Secure system development lifecycle evidence.",
+      "criticality": "low",
+      "evidenceArtifact": "Saved search 'UC-22.33.9' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.33.9",
+      "ucTitle": "Secure system development lifecycle evidence"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'SAMA Cyber Security Framework' → '3.1.1'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.sama.gov.sa/en-US/Laws/BankingRules/SAMA%20Cyber%20Security%20Framework.pdf",
+      "controlObjective": "Evidence that SAMA CSF 3.1.1 (Cyber security governance) is enforced — Splunk UC-22.33.10: Cybersecurity awareness program completion tracking.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.33.10' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.33.10",
+      "ucTitle": "Cybersecurity awareness program completion tracking"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/sama-csf__v1.0%20%282017%29__3.1.1.json",
+  "gapNote": "SAMA CSF clause 3.1.1 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 4
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "sama-csf",
+  "regulationName": "SAMA Cyber Security Framework",
+  "regulationShortName": "SAMA CSF",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/sama-csf.json",
+    "regulationVersion": "/api/v1/compliance/regulations/sama-csf@v1.0%20%282017%29.json",
+    "story": "/api/v1/compliance/story/sama-csf.json"
+  },
+  "tier": 2,
+  "topAssurance": "contributing",
+  "topic": "Cyber security governance",
+  "version": "v1.0 (2017)"
+}

@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.qcb.gov.qa/",
+  "clause": "§4.1",
+  "clauseId": "qcb-cyber@2018#§4.1",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Phase-C authored UC targeting QCB Cyber §4.1 (Cyber risk identification and management). Uses continuous, production-grade Splunk telemetry to provide auditor-facing evidence; assurance level set to 'contributing' pending SME review per Phase E of the regulation-coverage plan.",
+      "category": 22,
+      "clauseUrl": "https://www.qcb.gov.qa/",
+      "controlObjective": "Evidence that QCB Cyber §4.1 (Cyber risk identification and management) is enforced — Splunk UC-22.50.11: QCB §4.1 — cyber-risk register evidence with treatment progress.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.50.11' running on GRC risk register, vulnerability management, threat-intelligence feeds., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": "Phase-C draft: SME review required before uplifting assurance from 'contributing' to 'partial' or 'full'. Confirm that the SPL captures the specific regulator expectation and that the telemetry exists in the deployment.",
+      "ucId": "22.50.11",
+      "ucTitle": "QCB §4.1 — cyber-risk register evidence with treatment progress"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/qcb-cyber__2018__%C2%A74.1.json",
+  "gapNote": "QCB Cyber clause §4.1 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "qcb-cyber",
+  "regulationName": "Qatar Central Bank Cybersecurity Framework",
+  "regulationShortName": "QCB Cyber",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/qcb-cyber.json",
+    "regulationVersion": "/api/v1/compliance/regulations/qcb-cyber@2018.json",
+    "story": "/api/v1/compliance/story/qcb-cyber.json"
+  },
+  "tier": 2,
+  "topAssurance": "contributing",
+  "topic": "Cyber risk identification and management",
+  "version": "2018"
+}

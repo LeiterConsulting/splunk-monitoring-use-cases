@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf#page=170",
+  "clause": "10.2",
+  "clauseId": "pci-dss@v4.0#10.2",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "PCI 10.2 logs all actions by administrative / root users; recording completes the evidentiary loop.",
+      "category": 22,
+      "clauseUrl": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf#page=170",
+      "controlObjective": "Evidence that PCI DSS 10.2 (Audit logs captured for all system components) is enforced — Splunk UC-22.40.1: Privileged session recording — missing recordings for elevated sessions.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.40.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.40.1",
+      "ucTitle": "Privileged session recording — missing recordings for elevated sessions"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/pci-dss__v4.0__10.2.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf#page=170",
+  "obligationText": "Audit logs are implemented to support the detection of anomalies and suspicious activity, and the forensic analysis of events. Audit logs capture all individual user access to cardholder data; all actions taken by any individual with administrative access, including any interactive use of application or system accounts; all access to audit logs; all invalid logical access attempts; all changes to identification and authentication credentials; the initialization, stopping or pausing of the existing audit logs; and the creation and deletion of system-level objects.",
+  "priorityWeight": 1.0,
+  "regulationId": "pci-dss",
+  "regulationName": "Payment Card Industry Data Security Standard",
+  "regulationShortName": "PCI DSS",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/pci-dss.json",
+    "regulationVersion": "/api/v1/compliance/regulations/pci-dss@v4.0.json",
+    "story": "/api/v1/compliance/story/pci-dss.json"
+  },
+  "tier": 1,
+  "topAssurance": "partial",
+  "topic": "Audit logs captured for all system components",
+  "version": "v4.0"
+}

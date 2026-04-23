@@ -1,0 +1,35 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314",
+  "clause": "§314.4(b)",
+  "clauseId": "glba@16 CFR 314 (2023 amendments)#§314.4(b)",
+  "coverageState": "uncovered",
+  "coveringUcCount": 0,
+  "coveringUcs": [],
+  "endpoint": "/api/v1/compliance/clauses/glba__16%20CFR%20314%20%282023%20amendments%29__%C2%A7314.4%28b%29.json",
+  "gapNote": "GLBA clause §314.4(b) (Risk assessment) is listed in data/regulations.json as a common clause but no use case currently tags it. Candidate UCs are tracked in docs/compliance-gaps.md and api/v1/compliance/gaps.json.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {},
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "glba",
+  "regulationName": "Gramm-Leach-Bliley Act — Safeguards Rule",
+  "regulationShortName": "GLBA",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/glba.json",
+    "regulationVersion": "/api/v1/compliance/regulations/glba@16%20CFR%20314%20%282023%20amendments%29.json",
+    "story": "/api/v1/compliance/story/glba.json"
+  },
+  "tier": 2,
+  "topAssurance": null,
+  "topic": "Risk assessment",
+  "version": "16 CFR 314 (2023 amendments)"
+}

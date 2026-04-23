@@ -1,0 +1,2297 @@
+{
+  "apiVersion": "v1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "pci-dss",
+  "jurisdiction": [
+    "GLOBAL"
+  ],
+  "name": "Payment Card Industry Data Security Standard",
+  "shortName": "PCI DSS",
+  "tags": [
+    "cardholder-data",
+    "payments"
+  ],
+  "tier": 1,
+  "version": {
+    "authoritativeUrl": "https://www.pcisecuritystandards.org/document_library/",
+    "clauseCoverageMatrix": [
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 0,
+          "partial": 1
+        },
+        "clause": "1.2",
+        "coverageState": "covered-partial",
+        "coveringUcs": [
+          "22.42.2"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Network security controls configuration"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "1.3",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.91"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "CDE network boundary"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 0,
+          "partial": 1
+        },
+        "clause": "10.2",
+        "coverageState": "covered-partial",
+        "coveringUcs": [
+          "22.40.1"
+        ],
+        "obligationSource": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf#page=170",
+        "obligationText": "Audit logs are implemented to support the detection of anomalies and suspicious activity, and the forensic analysis of events. Audit logs capture all individual user access to cardholder data; all actions taken by any individual with administrative access, including any interactive use of application or system accounts; all access to audit logs; all invalid logical access attempts; all changes to identification and authentication credentials; the initialization, stopping or pausing of the existing audit logs; and the creation and deletion of system-level objects.",
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Audit logs captured for all system components"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "10.3",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.99"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Audit logs protected from modification"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "10.4",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.100"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Time synchronised"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "10.6",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.101"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Logs reviewed"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "10.7",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.102"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Log retention"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "11.3",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.103"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "External and internal vulnerabilities identified"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "11.4",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.104"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Intrusion detection / prevention"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "12.10",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.105"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Security incident response"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "12.3",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.106"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 0.7,
+        "topAssurance": "full",
+        "topic": "Targeted risk analysis"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "2.2",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.92"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Secure system component configuration"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "3.3",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.93"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Sensitive authentication data not stored"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "3.5",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.41.1"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "PAN protection"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "4.2",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.41.2"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Strong cryptography for CHD in transit"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "5.2",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.94"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Anti-malware mechanisms"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "6.2",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.95"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Bespoke software developed securely"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 1
+        },
+        "clause": "6.3",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.43.1",
+          "22.43.2"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Vulnerabilities identified and addressed"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 0,
+          "partial": 1
+        },
+        "clause": "7.2",
+        "coverageState": "covered-partial",
+        "coveringUcs": [
+          "22.48.1"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Access granted on least privilege"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "8.3",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.96"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Strong authentication"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "8.4",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.97"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "MFA"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "8.6",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.98"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Application and system accounts"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 2,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "1.2.1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.2",
+          "22.11.82"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "1.2.3",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.75"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "1.2.6",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.7"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "1.2.8",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.1"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 1
+        },
+        "clause": "1.3.1",
+        "coverageState": "covered-partial",
+        "coveringUcs": [
+          "22.11.3",
+          "22.8.32"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "partial",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "1.3.2",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.4"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "1.3.3",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.78"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "1.3.7",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.5"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 0,
+          "partial": 1
+        },
+        "clause": "10.2.1",
+        "coverageState": "covered-partial",
+        "coveringUcs": [
+          "22.35.1"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "partial",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "10.2.1.2",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.65"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 3,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "10.2.2",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.44",
+          "22.11.67",
+          "22.11.71",
+          "22.40.5"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "full",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "10.2.4",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.49"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "10.3.1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.61"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "10.3.2",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.35.5"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "full",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "10.3.4",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.35.4"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "full",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "10.4.1.1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.63"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "10.5",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.35.2"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "full",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "10.5.1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.62"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "10.5.1.2",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.68"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "10.6.1.2",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.64"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "10.6.1.3",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.66"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 0,
+          "partial": 1
+        },
+        "clause": "10.6.2",
+        "coverageState": "covered-partial",
+        "coveringUcs": [
+          "22.8.38"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "partial",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 1
+        },
+        "clause": "11.3.1",
+        "coverageState": "covered-partial",
+        "coveringUcs": [
+          "22.11.33",
+          "22.3.43"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "partial",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "11.3.1.1",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.43.4"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "full",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "11.3.1.3",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.74"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "11.3.2",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.73"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "11.4.1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.69"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "11.4.4",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.77"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "11.4.5",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.76"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "11.5.1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.70"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "11.5.1.1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.81"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "12.1.1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.60"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "12.1.2",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.90"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "12.10.1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.72"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "12.10.2",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.84"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "12.3.2",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.85"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "12.5.1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.88"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 2
+        },
+        "clause": "12.6",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.46.1",
+          "22.46.2",
+          "22.6.53"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "full",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 2,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "12.6.1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.31",
+          "22.11.87"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 1
+        },
+        "clause": "12.6.3",
+        "coverageState": "covered-partial",
+        "coveringUcs": [
+          "22.11.83",
+          "22.46.3"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "partial",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "12.8.1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.46"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "12.8.2",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.86"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "2.1.2",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.11"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 2,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "2.2.2",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.52",
+          "22.11.8"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 2,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "2.2.3",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.13",
+          "22.11.9"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 4,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "2.2.4",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.12",
+          "22.11.26",
+          "22.11.6",
+          "22.11.89"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "2.2.5",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.10"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 2,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "3.2.1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.19",
+          "22.11.58"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "3.3.1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.16"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 3,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "3.4.1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.14",
+          "22.11.18",
+          "22.11.25"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 2,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "3.5.1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.17",
+          "22.11.20"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "3.6",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.41.3"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "full",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "3.6.1",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.15",
+          "22.41.5"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "full",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "3.6.4",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.21"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 2,
+          "full": 2,
+          "partial": 0
+        },
+        "clause": "4.2.1",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.22",
+          "22.11.23",
+          "22.41.4",
+          "22.8.31"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "full",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "4.2.1.2",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.24"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 3,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "5.3.1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.27",
+          "22.11.30",
+          "22.11.32"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 2,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "5.3.2",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.28",
+          "22.11.29"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "6.2.4",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.39"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 3,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "6.3.1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.36",
+          "22.11.79",
+          "22.11.80"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "6.3.2",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.38"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "6.3.3",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.34",
+          "22.43.3"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "full",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "6.4.2",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.35"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 0,
+          "partial": 1
+        },
+        "clause": "6.4.4",
+        "coverageState": "covered-partial",
+        "coveringUcs": [
+          "22.12.39"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "partial",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 0,
+          "partial": 1
+        },
+        "clause": "6.4.6",
+        "coverageState": "covered-partial",
+        "coveringUcs": [
+          "22.12.38"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "partial",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "6.5.2",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.37"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "7.2.2",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.40"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 1
+        },
+        "clause": "7.2.5",
+        "coverageState": "covered-partial",
+        "coveringUcs": [
+          "22.11.41",
+          "22.48.5"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "partial",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "7.2.5.1",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.40.4"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "full",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 2,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "8.2.1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.42",
+          "22.11.43"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 1
+        },
+        "clause": "8.2.4",
+        "coverageState": "covered-partial",
+        "coveringUcs": [
+          "22.11.50",
+          "22.12.36"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "partial",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 0,
+          "partial": 1
+        },
+        "clause": "8.2.5",
+        "coverageState": "covered-partial",
+        "coveringUcs": [
+          "22.12.37"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "partial",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "8.2.6",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.51"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "8.2.8",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.55"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "8.3.7",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.48"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "8.4.2",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.47"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "8.5.1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.53"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 2,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "8.6.1",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.45",
+          "22.11.54"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "9.3.2",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.59"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "9.4.2",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.56"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "9.4.4",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.57"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      }
+    ],
+    "clauseExamples": [
+      "1.2.1",
+      "10.2.1.1",
+      "11.4.1",
+      "12.3.1"
+    ],
+    "clauseGrammar": "^\\d+(\\.\\d+){1,3}(\\.[a-z])?$",
+    "clauseUrlTemplate": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf#clause={clause}",
+    "clausesReferencedByCatalogue": [
+      "1.2",
+      "1.2.1",
+      "1.2.3",
+      "1.2.6",
+      "1.2.8",
+      "1.3",
+      "1.3.1",
+      "1.3.2",
+      "1.3.3",
+      "1.3.7",
+      "10.2",
+      "10.2.1",
+      "10.2.1.2",
+      "10.2.2",
+      "10.2.4",
+      "10.3",
+      "10.3.1",
+      "10.3.2",
+      "10.3.4",
+      "10.4",
+      "10.4.1.1",
+      "10.5",
+      "10.5.1",
+      "10.5.1.2",
+      "10.6",
+      "10.6.1.2",
+      "10.6.1.3",
+      "10.6.2",
+      "10.7",
+      "11.3",
+      "11.3.1",
+      "11.3.1.1",
+      "11.3.1.3",
+      "11.3.2",
+      "11.4",
+      "11.4.1",
+      "11.4.4",
+      "11.4.5",
+      "11.5.1",
+      "11.5.1.1",
+      "12.1.1",
+      "12.1.2",
+      "12.10",
+      "12.10.1",
+      "12.10.2",
+      "12.3",
+      "12.3.2",
+      "12.5.1",
+      "12.6",
+      "12.6.1",
+      "12.6.3",
+      "12.8.1",
+      "12.8.2",
+      "2.1.2",
+      "2.2",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4",
+      "2.2.5",
+      "3.2.1",
+      "3.3",
+      "3.3.1",
+      "3.4.1",
+      "3.5",
+      "3.5.1",
+      "3.6",
+      "3.6.1",
+      "3.6.4",
+      "4.2",
+      "4.2.1",
+      "4.2.1.2",
+      "5.2",
+      "5.3.1",
+      "5.3.2",
+      "6.2",
+      "6.2.4",
+      "6.3",
+      "6.3.1",
+      "6.3.2",
+      "6.3.3",
+      "6.4.2",
+      "6.4.4",
+      "6.4.6",
+      "6.5.2",
+      "7.2",
+      "7.2.2",
+      "7.2.5",
+      "7.2.5.1",
+      "8.2.1",
+      "8.2.4",
+      "8.2.5",
+      "8.2.6",
+      "8.2.8",
+      "8.3",
+      "8.3.7",
+      "8.4",
+      "8.4.2",
+      "8.5.1",
+      "8.6",
+      "8.6.1",
+      "9.3.2",
+      "9.4.2",
+      "9.4.4"
+    ],
+    "commonClauses": [
+      {
+        "clause": "1.2",
+        "priorityWeight": 1.0,
+        "topic": "Network security controls configuration"
+      },
+      {
+        "clause": "1.3",
+        "priorityWeight": 1.0,
+        "topic": "CDE network boundary"
+      },
+      {
+        "clause": "2.2",
+        "priorityWeight": 1.0,
+        "topic": "Secure system component configuration"
+      },
+      {
+        "clause": "3.3",
+        "priorityWeight": 1.0,
+        "topic": "Sensitive authentication data not stored"
+      },
+      {
+        "clause": "3.5",
+        "priorityWeight": 1.0,
+        "topic": "PAN protection"
+      },
+      {
+        "clause": "4.2",
+        "priorityWeight": 1.0,
+        "topic": "Strong cryptography for CHD in transit"
+      },
+      {
+        "clause": "5.2",
+        "priorityWeight": 1.0,
+        "topic": "Anti-malware mechanisms"
+      },
+      {
+        "clause": "6.2",
+        "priorityWeight": 1.0,
+        "topic": "Bespoke software developed securely"
+      },
+      {
+        "clause": "6.3",
+        "priorityWeight": 1.0,
+        "topic": "Vulnerabilities identified and addressed"
+      },
+      {
+        "clause": "7.2",
+        "priorityWeight": 1.0,
+        "topic": "Access granted on least privilege"
+      },
+      {
+        "clause": "8.3",
+        "priorityWeight": 1.0,
+        "topic": "Strong authentication"
+      },
+      {
+        "clause": "8.4",
+        "priorityWeight": 1.0,
+        "topic": "MFA"
+      },
+      {
+        "clause": "8.6",
+        "priorityWeight": 1.0,
+        "topic": "Application and system accounts"
+      },
+      {
+        "clause": "10.2",
+        "obligationSource": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf#page=170",
+        "obligationText": "Audit logs are implemented to support the detection of anomalies and suspicious activity, and the forensic analysis of events. Audit logs capture all individual user access to cardholder data; all actions taken by any individual with administrative access, including any interactive use of application or system accounts; all access to audit logs; all invalid logical access attempts; all changes to identification and authentication credentials; the initialization, stopping or pausing of the existing audit logs; and the creation and deletion of system-level objects.",
+        "priorityWeight": 1.0,
+        "topic": "Audit logs captured for all system components"
+      },
+      {
+        "clause": "10.3",
+        "priorityWeight": 1.0,
+        "topic": "Audit logs protected from modification"
+      },
+      {
+        "clause": "10.4",
+        "priorityWeight": 1.0,
+        "topic": "Time synchronised"
+      },
+      {
+        "clause": "10.6",
+        "priorityWeight": 1.0,
+        "topic": "Logs reviewed"
+      },
+      {
+        "clause": "10.7",
+        "priorityWeight": 1.0,
+        "topic": "Log retention"
+      },
+      {
+        "clause": "11.3",
+        "priorityWeight": 1.0,
+        "topic": "External and internal vulnerabilities identified"
+      },
+      {
+        "clause": "11.4",
+        "priorityWeight": 1.0,
+        "topic": "Intrusion detection / prevention"
+      },
+      {
+        "clause": "12.3",
+        "priorityWeight": 0.7,
+        "topic": "Targeted risk analysis"
+      },
+      {
+        "clause": "12.10",
+        "priorityWeight": 1.0,
+        "topic": "Security incident response"
+      }
+    ],
+    "coverageSummary": {
+      "clauseCoveragePercent": 100.0,
+      "commonClauseCount": 22,
+      "coveredClauseCount": 22,
+      "offCommonListClauseCount": 81,
+      "priorityWeightedCoveragePercent": 93.09,
+      "stateCounts": {
+        "contributing-only": 0,
+        "covered-full": 19,
+        "covered-partial": 3,
+        "uncovered": 0
+      }
+    },
+    "effectiveFrom": "2022-03-31",
+    "endpoint": "/api/v1/compliance/regulations/pci-dss@v4.0.json",
+    "pendingChanges": [
+      {
+        "date": "2025-03-31",
+        "note": "Future-dated v4.0 requirements (including 3.5.1.2, 8.4.2 MFA, 11.3.1.2) become effective."
+      }
+    ],
+    "sunsetOn": null,
+    "useCasesTaggingThisVersion": [
+      "22.11.1",
+      "22.11.10",
+      "22.11.100",
+      "22.11.101",
+      "22.11.102",
+      "22.11.103",
+      "22.11.104",
+      "22.11.105",
+      "22.11.106",
+      "22.11.11",
+      "22.11.12",
+      "22.11.13",
+      "22.11.14",
+      "22.11.15",
+      "22.11.16",
+      "22.11.17",
+      "22.11.18",
+      "22.11.19",
+      "22.11.2",
+      "22.11.20",
+      "22.11.21",
+      "22.11.22",
+      "22.11.23",
+      "22.11.24",
+      "22.11.25",
+      "22.11.26",
+      "22.11.27",
+      "22.11.28",
+      "22.11.29",
+      "22.11.3",
+      "22.11.30",
+      "22.11.31",
+      "22.11.32",
+      "22.11.33",
+      "22.11.34",
+      "22.11.35",
+      "22.11.36",
+      "22.11.37",
+      "22.11.38",
+      "22.11.39",
+      "22.11.4",
+      "22.11.40",
+      "22.11.41",
+      "22.11.42",
+      "22.11.43",
+      "22.11.44",
+      "22.11.45",
+      "22.11.46",
+      "22.11.47",
+      "22.11.48",
+      "22.11.49",
+      "22.11.5",
+      "22.11.50",
+      "22.11.51",
+      "22.11.52",
+      "22.11.53",
+      "22.11.54",
+      "22.11.55",
+      "22.11.56",
+      "22.11.57",
+      "22.11.58",
+      "22.11.59",
+      "22.11.6",
+      "22.11.60",
+      "22.11.61",
+      "22.11.62",
+      "22.11.63",
+      "22.11.64",
+      "22.11.65",
+      "22.11.66",
+      "22.11.67",
+      "22.11.68",
+      "22.11.69",
+      "22.11.7",
+      "22.11.70",
+      "22.11.71",
+      "22.11.72",
+      "22.11.73",
+      "22.11.74",
+      "22.11.75",
+      "22.11.76",
+      "22.11.77",
+      "22.11.78",
+      "22.11.79",
+      "22.11.8",
+      "22.11.80",
+      "22.11.81",
+      "22.11.82",
+      "22.11.83",
+      "22.11.84",
+      "22.11.85",
+      "22.11.86",
+      "22.11.87",
+      "22.11.88",
+      "22.11.89",
+      "22.11.9",
+      "22.11.90",
+      "22.11.91",
+      "22.11.92",
+      "22.11.93",
+      "22.11.94",
+      "22.11.95",
+      "22.11.96",
+      "22.11.97",
+      "22.11.98",
+      "22.11.99",
+      "22.12.36",
+      "22.12.37",
+      "22.12.38",
+      "22.12.39",
+      "22.3.43",
+      "22.35.1",
+      "22.35.2",
+      "22.35.4",
+      "22.35.5",
+      "22.40.1",
+      "22.40.4",
+      "22.40.5",
+      "22.41.1",
+      "22.41.2",
+      "22.41.3",
+      "22.41.4",
+      "22.41.5",
+      "22.42.2",
+      "22.43.1",
+      "22.43.2",
+      "22.43.3",
+      "22.43.4",
+      "22.46.1",
+      "22.46.2",
+      "22.46.3",
+      "22.48.1",
+      "22.48.5",
+      "22.6.53",
+      "22.8.31",
+      "22.8.32",
+      "22.8.38"
+    ],
+    "version": "v4.0"
+  }
+}

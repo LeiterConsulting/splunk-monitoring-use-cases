@@ -1,0 +1,83 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 3,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.legislation.gov.uk/eur/2016/679/article/Art.32",
+  "clause": "Art.32",
+  "clauseId": "uk-gdpr@post-Brexit#Art.32",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 3,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Derived from GDPR@2016/679 Art.32 (parent assurance='partial'). UK GDPR preserves parent clause numbering; inherited assurance degraded one step.",
+      "category": 22,
+      "clauseUrl": "https://www.legislation.gov.uk/eur/2016/679/article/Art.32",
+      "controlObjective": "Evidence that UK GDPR Art.32 (Security of processing) is enforced — Splunk UC-22.35.2: Log tamper detection via write-once-read-many chain-of-custody.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.35.2' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "derived-from-parent",
+      "smeCaveat": null,
+      "ucId": "22.35.2",
+      "ucTitle": "Log tamper detection via write-once-read-many chain-of-custody"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Derived from GDPR@2016/679 Art.32 (parent assurance='partial'). UK GDPR preserves parent clause numbering; inherited assurance degraded one step.",
+      "category": 22,
+      "clauseUrl": "https://www.legislation.gov.uk/eur/2016/679/article/Art.32",
+      "controlObjective": "Evidence that UK GDPR Art.32 (Security of processing) is enforced — Splunk UC-22.35.3: Indexer replication lag exposing evidence to single-point failure.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.35.3' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "derived-from-parent",
+      "smeCaveat": null,
+      "ucId": "22.35.3",
+      "ucTitle": "Indexer replication lag exposing evidence to single-point failure"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Derived from GDPR@2016/679 Art.32 (parent assurance='partial'). UK GDPR preserves parent clause numbering; inherited assurance degraded one step.",
+      "category": 22,
+      "clauseUrl": "https://www.legislation.gov.uk/eur/2016/679/article/Art.32",
+      "controlObjective": "Evidence that UK GDPR Art.32 (Security of processing) is enforced — Splunk UC-22.41.1: Encryption-at-rest coverage gap — unencrypted storage with regulated data.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.41.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "derived-from-parent",
+      "smeCaveat": null,
+      "ucId": "22.41.1",
+      "ucTitle": "Encryption-at-rest coverage gap — unencrypted storage with regulated data"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/uk-gdpr__post-Brexit__Art.32.json",
+  "gapNote": "UK GDPR clause Art.32 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 3
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "uk-gdpr",
+  "regulationName": "UK General Data Protection Regulation",
+  "regulationShortName": "UK GDPR",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/uk-gdpr.json",
+    "regulationVersion": "/api/v1/compliance/regulations/uk-gdpr@post-Brexit.json",
+    "story": "/api/v1/compliance/story/uk-gdpr.json"
+  },
+  "tier": 2,
+  "topAssurance": "contributing",
+  "topic": "Security of processing",
+  "version": "post-Brexit"
+}

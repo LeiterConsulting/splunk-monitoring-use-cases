@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://lovdata.no/dokument/NL/lov/2018-06-01-24",
+  "clause": "§6-1",
+  "clauseId": "no-sikkerhetsloven@2018#§6-1",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Phase-C authored UC targeting NO Sikkerhetsloven §6-1 (General preventive security measures). Uses continuous, production-grade Splunk telemetry to provide auditor-facing evidence; assurance level set to 'contributing' pending SME review per Phase E of the regulation-coverage plan.",
+      "category": 22,
+      "clauseUrl": "https://lovdata.no/dokument/NL/lov/2018-06-01-24",
+      "controlObjective": "Evidence that NO Sikkerhetsloven §6-1 (General preventive security measures) is enforced — Splunk UC-22.50.8: Sikkerhetsloven §6-1 — preventive control effectiveness across classified systems.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.50.8' running on Endpoint security logs, access control logs, encryption/crypto inventory for classified systems., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": "Phase-C draft: SME review required before uplifting assurance from 'contributing' to 'partial' or 'full'. Confirm that the SPL captures the specific regulator expectation and that the telemetry exists in the deployment.",
+      "ucId": "22.50.8",
+      "ucTitle": "Sikkerhetsloven §6-1 — preventive control effectiveness across classified systems"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/no-sikkerhetsloven__2018__%C2%A76-1.json",
+  "gapNote": "NO Sikkerhetsloven clause §6-1 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "no-sikkerhetsloven",
+  "regulationName": "Norwegian Sikkerhetsloven (National Security Act)",
+  "regulationShortName": "NO Sikkerhetsloven",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/no-sikkerhetsloven.json",
+    "regulationVersion": "/api/v1/compliance/regulations/no-sikkerhetsloven@2018.json",
+    "story": "/api/v1/compliance/story/no-sikkerhetsloven.json"
+  },
+  "tier": 2,
+  "topAssurance": "contributing",
+  "topic": "General preventive security measures",
+  "version": "2018"
+}

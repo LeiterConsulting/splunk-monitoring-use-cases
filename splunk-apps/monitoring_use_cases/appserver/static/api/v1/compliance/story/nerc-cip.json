@@ -1,0 +1,2947 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "CIP-002-5.1a R1",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "14.2.11"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "BES cyber system identification",
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-002-6 R1 Part 1.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.1"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-002-6 R1 Part 1.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-002-6 R2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-002-6 R4",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-003-8 R1 Part 1.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-003-8 R2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.6"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-003-8 R3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.7"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-003-8 R4",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.8"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-004-6 R1 Part 1.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.9"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-004-6 R2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.10"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-004-6 R3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.11"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-004-6 R4 Part 4.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.12"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-004-6 R5",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.13"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-004-6 R6",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.14"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-005-6 R1 Part 1.3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.15"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-005-6 R1 Part 1.4",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.20"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-005-6 R2 Part 2.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.16"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-005-6 R2 Part 2.3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.17"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-005-6 R2 Part 2.4",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.22"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-005-6 R3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.18"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-005-6 R3 Part 3.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.21"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-005-6 R4 Part 4.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.19"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 3
+      },
+      "clause": "CIP-005-7 R1",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "14.2.14",
+        "14.2.4",
+        "14.9.22",
+        "15.3.1",
+        "17.3.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Electronic security perimeter",
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-006-6 R1 Part 1.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.23"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-006-6 R2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.24"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-006-6 R3 Part 3.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.25"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-006-6 R3 Part 3.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.27"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-006-6 R4",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.26"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-007-6 R1 Part 1.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.28"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-007-6 R2 Part 2.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.29"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-007-6 R2 Part 2.3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.30"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-007-6 R3 Part 3.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.31"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 3
+      },
+      "clause": "CIP-007-6 R4",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "14.2.11",
+        "14.2.14",
+        "14.9.14"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Security event monitoring",
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-007-6 R4 Part 4.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.32"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-007-6 R4 Part 4.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.33"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-007-6 R5 Part 5.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.34"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-007-6 R5 Part 5.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.35"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-007-6 R5 Part 5.3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.36"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-007-6 R5 Part 5.4",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.37"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-008-6 R1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.50.6"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Incident response",
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-008-6 R1 Part 1.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.38"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-008-6 R2 Part 2.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.39"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-008-6 R3 Part 3.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.40"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-008-6 R4 Part 4.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.41"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-008-6 R5 Part 5.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.42"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-008-6 R6",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.43"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-009-6 R1 Part 1.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.44"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-009-6 R2 Part 2.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.45"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-009-6 R3 Part 3.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.46"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-009-6 R4 Part 4.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.47"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-009-6 R5 Part 5.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.48"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 2,
+        "partial": 3
+      },
+      "clause": "CIP-010-4 R1",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "1.2.9",
+        "13.1.36",
+        "14.2.9",
+        "14.6.6",
+        "16.4.1",
+        "5.1.24",
+        "5.1.7",
+        "7.1.13"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Configuration change management",
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-010-4 R1 Part 1.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.49"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-010-4 R1 Part 1.3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.56"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-010-4 R2 Part 2.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.50"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-010-4 R3 Part 3.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.51"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-010-4 R4 Part 4.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.52"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-010-4 R5 Part 5.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.53"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-010-4 R5 Part 5.3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.55"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-010-4 R6 Part 6.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.54"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-011-3 R1 Part 1.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.57"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-011-3 R2 Part 2.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.58"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-011-3 R3 Part 3.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.59"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-011-3 R4 Part 4.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.60"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-012-1 R1 Part 1.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.61"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-012-1 R2 Part 2.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.62"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-012-1 R3 Part 3.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.63"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-013-1 R1 Part 1.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.64"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-013-1 R2 Part 2.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.65"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-013-1 R3 Part 3.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.66"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-013-1 R4 Part 4.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.67"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-014-3 R1 Part 1.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.68"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-014-3 R2 Part 2.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.69"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CIP-014-3 R3 Part 3.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.13.70"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "current"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "5 of 5 common clauses are covered by the catalogue, with a priority-weighted coverage of 65.0% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 5,
+      "coveredClauseCount": 5,
+      "priorityWeightedCoveragePercent": 65.0,
+      "stateCounts": {
+        "contributing-only": 1,
+        "covered-full": 2,
+        "covered-partial": 2,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "CIP-005-7 R1",
+        "killerUcId": "14.2.14",
+        "killerUcTitle": "HMI Unauthorized Access",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Electronic security perimeter",
+        "version": "current",
+        "why": "Clause CIP-005-7 R1 (Electronic security perimeter) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "CIP-010-4 R1",
+        "killerUcId": "1.2.9",
+        "killerUcTitle": "Windows Update Compliance",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Configuration change management",
+        "version": "current",
+        "why": "Clause CIP-010-4 R1 (Configuration change management) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "CIP-002-5.1a R1",
+        "killerUcId": "14.2.11",
+        "killerUcTitle": "NERC CIP Compliance Checks",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "BES cyber system identification",
+        "version": "current",
+        "why": "Clause CIP-002-5.1a R1 (BES cyber system identification) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "CIP-007-6 R4",
+        "killerUcId": "14.2.11",
+        "killerUcTitle": "NERC CIP Compliance Checks",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Security event monitoring",
+        "version": "current",
+        "why": "Clause CIP-007-6 R4 (Security event monitoring) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "CIP-008-6 R1",
+        "killerUcId": "22.50.6",
+        "killerUcTitle": "NERC CIP-008-6 R1 incident response plan — evidence of activation and review",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Incident response",
+        "version": "current",
+        "why": "Clause CIP-008-6 R1 (Incident response) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "CIP-002-5.1a R1",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "14.2.11",
+            "ucTitle": "NERC CIP Compliance Checks"
+          }
+        ],
+        "topic": "BES cyber system identification",
+        "version": "current"
+      },
+      {
+        "clause": "CIP-005-7 R1",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "14.2.4",
+            "ucTitle": "Network Segmentation Monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "14.2.14",
+            "ucTitle": "HMI Unauthorized Access"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "14.9.22",
+            "ucTitle": "IEC 62443 Zone and Conduit Compliance Monitoring"
+          }
+        ],
+        "topic": "Electronic security perimeter",
+        "version": "current"
+      },
+      {
+        "clause": "CIP-007-6 R4",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "14.2.11",
+            "ucTitle": "NERC CIP Compliance Checks"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "14.2.14",
+            "ucTitle": "HMI Unauthorized Access"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "14.9.14",
+            "ucTitle": "OT Device Authentication Failure Detection"
+          }
+        ],
+        "topic": "Security event monitoring",
+        "version": "current"
+      },
+      {
+        "clause": "CIP-008-6 R1",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.50.6",
+            "ucTitle": "NERC CIP-008-6 R1 incident response plan — evidence of activation and review"
+          }
+        ],
+        "topic": "Incident response",
+        "version": "current"
+      },
+      {
+        "clause": "CIP-010-4 R1",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "14.2.9",
+            "ucTitle": "PLC Firmware Change Detection"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "14.6.6",
+            "ucTitle": "Modbus Register Value Change Tracking"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "16.4.1",
+            "ucTitle": "Unauthorized Change Detection"
+          }
+        ],
+        "topic": "Configuration change management",
+        "version": "current"
+      },
+      {
+        "clause": "CIP-002-6 R1 Part 1.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.1",
+            "ucTitle": "BES Cyber Asset Inventory Reconciliation Against Telemetry"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-002-6 R1 Part 1.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.3",
+            "ucTitle": "ESP Boundary Change Detection via Firewall Configuration Events"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-002-6 R2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.2",
+            "ucTitle": "BES Cyber System Impact Rating Drift Detection"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-002-6 R4",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.4",
+            "ucTitle": "Annual CIP-002 Categorization Review Evidence Package"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-003-8 R1 Part 1.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.5",
+            "ucTitle": "Security Policy Exception Register with Expiration Tracking"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-003-8 R2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.6",
+            "ucTitle": "Cyber Security Plan Technical Control Attestation — MFA for Privileged Access"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-003-8 R3",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.7",
+            "ucTitle": "Delegated Authority Register Change History"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-003-8 R4",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.8",
+            "ucTitle": "Low-Impact BES Cyber System Electronic Access Path Enforcement"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-004-6 R1 Part 1.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.9",
+            "ucTitle": "Security Awareness Training Completion for BES Personnel"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-004-6 R2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.10",
+            "ucTitle": "Personnel Risk Assessment Due-Date Monitoring"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-004-6 R3",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.11",
+            "ucTitle": "Electronic Access Authorization Record Coverage for PAM Sessions"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-004-6 R4 Part 4.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.12",
+            "ucTitle": "Post-Termination Access Revocation within 24 Hours"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-004-6 R5",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.13",
+            "ucTitle": "Quarterly Access Review Dataset — Interactive Sessions by System"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-004-6 R6",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.14",
+            "ucTitle": "Background Investigation Recency for ESP and PAM Users"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-005-6 R1 Part 1.3",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.15",
+            "ucTitle": "ESP Inbound First-Seen External Source Detection"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-005-6 R1 Part 1.4",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.20",
+            "ucTitle": "ESP Security Rule Commit Without Approved Change Record"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-005-6 R2 Part 2.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.16",
+            "ucTitle": "ESP Outbound Bytes Spike versus Rolling Baseline"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-005-6 R2 Part 2.3",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.17",
+            "ucTitle": "Denied ESP Traversal Bursts Followed by Allowed Sessions"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-005-6 R2 Part 2.4",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.22",
+            "ucTitle": "Dial-Up or Serial Out-of-Band Access on ESP-Adjacent Segments"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-005-6 R3",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.18",
+            "ucTitle": "Interactive Remote Access Session Duration on Jump Hosts"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-005-6 R3 Part 3.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.21",
+            "ucTitle": "Vendor Interactive Remote Access — Encryption and Session Recording Evidence"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-005-6 R4 Part 4.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.19",
+            "ucTitle": "EACMS and IRA Authentication Failure Concentration"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-006-6 R1 Part 1.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.23",
+            "ucTitle": "Physical Access Outside Approved Maintenance Window at PSP"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-006-6 R2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.24",
+            "ucTitle": "Unauthorized Physical Access Attempts at PSP"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-006-6 R3 Part 3.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.25",
+            "ucTitle": "Visitor Badge Without Escort Within Policy Window"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-006-6 R3 Part 3.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.27",
+            "ucTitle": "PSP Forced Door with Concurrent ESP Interactive Logon"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-006-6 R4",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.26",
+            "ucTitle": "Physical Access Log Ingest Continuity for Retention Evidence"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-007-6 R1 Part 1.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.28",
+            "ucTitle": "Listening Port and Service Baseline Deviation on BES Servers"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-007-6 R2 Part 2.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.29",
+            "ucTitle": "Security Patch Evaluation Completion Tracking"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-007-6 R2 Part 2.3",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.30",
+            "ucTitle": "Patch Installation or Mitigation within 35-Day Window"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-007-6 R3 Part 3.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.31",
+            "ucTitle": "Malware Prevention Agent Coverage on BES Cyber Assets"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-007-6 R4 Part 4.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.32",
+            "ucTitle": "Malware Detection Events on BES Cyber Systems"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-007-6 R4 Part 4.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.33",
+            "ucTitle": "Security Event Log Generation Validation for Windows BES Hosts"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-007-6 R5 Part 5.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.34",
+            "ucTitle": "Failed and Successful Login Attempt Monitoring on BES Assets"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-007-6 R5 Part 5.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.35",
+            "ucTitle": "Default, Built-In, or Generic Account Usage on BES Hosts"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-007-6 R5 Part 5.3",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.36",
+            "ucTitle": "Shared Account Justification Review Queue"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-007-6 R5 Part 5.4",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.37",
+            "ucTitle": "Password or Passphrase Policy Violations from Domain Controller Auditing"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-008-6 R1 Part 1.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.38",
+            "ucTitle": "Cyber Security Incident Identification from Correlated ESP and Endpoint Alerts"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-008-6 R2 Part 2.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.39",
+            "ucTitle": "Reportable Incident Classification — BES Reliability Impact Signals"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-008-6 R3 Part 3.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.40",
+            "ucTitle": "Incident Response Timeline Milestone Tracking"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-008-6 R4 Part 4.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.41",
+            "ucTitle": "NERC Filing Deadline Compliance Countdown"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-008-6 R5 Part 5.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.42",
+            "ucTitle": "Incident Evidence Preservation — Splunk Search Artifact Export Audit"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-008-6 R6",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.43",
+            "ucTitle": "Post-Incident Lessons Learned Action Item Tracking"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-009-6 R1 Part 1.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.44",
+            "ucTitle": "Backup Job Success and Failure for BES Databases and Configuration Stores"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-009-6 R2 Part 2.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.45",
+            "ucTitle": "Backup Media Integrity Test Results"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-009-6 R3 Part 3.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.46",
+            "ucTitle": "Recovery Plan Exercise Attendance and Scenario Evidence"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-009-6 R4 Part 4.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.47",
+            "ucTitle": "Data Preservation During Recovery Activities"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-009-6 R5 Part 5.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.48",
+            "ucTitle": "BES Cyber System Restore Drill — RTO Measurement"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-010-4 R1 Part 1.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.49",
+            "ucTitle": "Baseline Configuration Deviation — Key OS and Application Settings"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-010-4 R1 Part 1.3",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.56",
+            "ucTitle": "Baseline Update Documentation — Config Baseline Version Changes"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-010-4 R2 Part 2.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.50",
+            "ucTitle": "Unauthorized Software Installation on BES Windows Servers"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-010-4 R3 Part 3.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.51",
+            "ucTitle": "Configuration Change Authorization Linkage for Network Devices"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-010-4 R4 Part 4.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.52",
+            "ucTitle": "Vulnerability Assessment After Material Configuration Changes"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-010-4 R5 Part 5.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.53",
+            "ucTitle": "Transient Cyber Asset Connection Logging to ESP Jump Zones"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-010-4 R5 Part 5.3",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.55",
+            "ucTitle": "TCA Scan-Before-Connect Compliance from NAC or Agent Logs"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-010-4 R6 Part 6.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.54",
+            "ucTitle": "Removable Media Mount Events on Engineering Workstations"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-011-3 R1 Part 1.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.57",
+            "ucTitle": "BES Cyber System Information Access via Share and Web Downloads"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-011-3 R2 Part 2.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.58",
+            "ucTitle": "BCSI Storage Location Inventory vs. Observed Disk Paths"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-011-3 R3 Part 3.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.59",
+            "ucTitle": "Information Handling Procedure Compliance — Email DLP for BCSI"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-011-3 R4 Part 4.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.60",
+            "ucTitle": "BCSI Destruction and Sanitization Evidence from ITAD Tickets"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-012-1 R1 Part 1.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.61",
+            "ucTitle": "Control Center Real-Time Assessment TLS Cipher and Certificate Health"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-012-1 R2 Part 2.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.62",
+            "ucTitle": "Inter-Control-Center Link Availability from Synthetic Tests"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-012-1 R3 Part 3.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.63",
+            "ucTitle": "Communication Path Integrity — Unexpected Route or ASN Changes"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-013-1 R1 Part 1.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.64",
+            "ucTitle": "Vendor Risk Assessment Due Dates for Critical Suppliers"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-013-1 R2 Part 2.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.65",
+            "ucTitle": "Software Package Integrity — Signed Installer Verification Failures"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-013-1 R3 Part 3.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.66",
+            "ucTitle": "Vendor Security Incident Notification Receipt Tracking"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-013-1 R4 Part 4.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.67",
+            "ucTitle": "Supply Chain Incident Response Task Tracking"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-014-3 R1 Part 1.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.68",
+            "ucTitle": "Transmission Station Threat Assessment Evidence Indexing"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-014-3 R2 Part 2.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.69",
+            "ucTitle": "Transmission Physical Security Plan Control Checklist Status"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      },
+      {
+        "clause": "CIP-014-3 R3 Part 3.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.13.70",
+            "ucTitle": "Unplanned Physical Security Incidents at Transmission Sites"
+          }
+        ],
+        "topic": null,
+        "version": "current"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "CA",
+    "US"
+  ],
+  "narrative": {
+    "evidencePack": null,
+    "matchedBy": "fuzzy-shortname",
+    "name": "NERC CIP power grid",
+    "primer": null,
+    "splunkValue": "We evidence BES Cyber System categorisation, monitor Electronic Security Perimeter traffic for unapproved protocols, log privileged-access sessions to EMS / SCADA, and prepare the CIP-008 incident response artefacts a regional audit team expects to see.",
+    "whatItIs": "The mandatory cybersecurity standard for North America's bulk electric system. NERC CIP requires grid operators to identify critical cyber assets, wall them off behind Electronic Security Perimeters, and prove compliance to regional entities such as WECC, RFC, and SERC.",
+    "whoItAffects": "Registered entities on the North American bulk electric system — generation operators, transmission owners, balancing authorities, reliability coordinators, and their contractors — in the US, Canada, and parts of Mexico."
+  },
+  "narrativeRef": "non-technical-view.js#cat-22/area/nerc-cip-power-grid",
+  "regulationId": "nerc-cip",
+  "regulationName": "NERC Critical Infrastructure Protection",
+  "regulationShortName": "NERC CIP",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=nerc-cip",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#nerc-cip",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/nerc-cip.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

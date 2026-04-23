@@ -1,0 +1,1885 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "4.2.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.1"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "4.2.3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "4.3.2.6",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "4.3.3.3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.9"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "4.3.3.4",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "4.3.4.3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.6"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "4.3.4.4",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.8"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "4.3.4.5",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "4.4.3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.7"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "4.4.3.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.10"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CR 1.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.36"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CR 2.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.37"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CR 2.8",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.38"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CR 3.4",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.39"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CR 4.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.40"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CR 5.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.41"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CR 6.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.42"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CR 6.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.43"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CR 7.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.44"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CR 7.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.45"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 4,
+        "full": 1,
+        "partial": 4
+      },
+      "clause": "FR 6.2",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "14.2.4",
+        "14.2.9",
+        "14.6.6",
+        "14.9.14",
+        "14.9.22",
+        "17.1.8",
+        "17.3.3",
+        "22.15.48",
+        "22.15.50"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Continuous monitoring",
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 4,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 1.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.11",
+        "22.15.51",
+        "22.15.53",
+        "22.15.55"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Human user identification and authentication",
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 1.13",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.17"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 1.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.12"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 1.3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.13"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 1.5",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.14"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 1.7",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.15"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 1.9",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.16"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 2.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.18"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 2.10",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.24"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 2.11",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.25"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 2.12",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.26"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 2.4",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.19"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 2.5",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.20"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 2.6",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.21"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 2.8",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.22",
+        "22.15.52"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Auditable events",
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 2.9",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.23"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "contributing",
+      "topic": "Audit storage capacity",
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 3.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.27"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 3.3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.28"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 3.4",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.29"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 3.5",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.30"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 4.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.31"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 4.3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.32"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 5,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 5.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.33",
+        "22.15.46",
+        "22.15.47",
+        "22.15.49",
+        "22.15.54"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 5.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.34"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "SR 5.4",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.15.35"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-ongoing"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "4 of 4 common clauses are covered by the catalogue, with a priority-weighted coverage of 45.27% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 4,
+      "coveredClauseCount": 4,
+      "priorityWeightedCoveragePercent": 45.27,
+      "stateCounts": {
+        "contributing-only": 3,
+        "covered-full": 1,
+        "covered-partial": 0,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "FR 6.2",
+        "killerUcId": "14.2.4",
+        "killerUcTitle": "Network Segmentation Monitoring",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Continuous monitoring",
+        "version": "2013-ongoing",
+        "why": "Clause FR 6.2 (Continuous monitoring) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "SR 1.1",
+        "killerUcId": "22.15.11",
+        "killerUcTitle": "HMI and Jump Host Human User Identification Gaps",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Human user identification and authentication",
+        "version": "2013-ongoing",
+        "why": "Clause SR 1.1 (Human user identification and authentication) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "SR 2.8",
+        "killerUcId": "22.15.22",
+        "killerUcTitle": "OT Auditable Event Coverage by Zone and Source",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Auditable events",
+        "version": "2013-ongoing",
+        "why": "Clause SR 2.8 (Auditable events) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "SR 2.9",
+        "killerUcId": "22.15.23",
+        "killerUcTitle": "Audit Index Growth vs Licensed Retention (Capacity Risk)",
+        "priorityWeight": 0.7,
+        "topAssurance": "contributing",
+        "topic": "Audit storage capacity",
+        "version": "2013-ongoing",
+        "why": "Clause SR 2.9 (Audit storage capacity) carries a regulator-assigned priority weight of 0.7, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "4.2.2",
+        "killerUcId": "22.15.1",
+        "killerUcTitle": "OT Security Policy Control Evidence from Log Review",
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null,
+        "version": "2013-ongoing",
+        "why": "Clause 4.2.2 (topic not recorded) carries a regulator-assigned priority weight of None, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "FR 6.2",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "14.2.4",
+            "ucTitle": "Network Segmentation Monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "14.2.9",
+            "ucTitle": "PLC Firmware Change Detection"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "14.6.6",
+            "ucTitle": "Modbus Register Value Change Tracking"
+          }
+        ],
+        "topic": "Continuous monitoring",
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 1.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.11",
+            "ucTitle": "HMI and Jump Host Human User Identification Gaps"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.51",
+            "ucTitle": "Engineering Workstation Access Control — RDP Skips Jump Tier"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.53",
+            "ucTitle": "Wireless Zone Security Monitoring — Unknown Clients on OT SSID"
+          }
+        ],
+        "topic": "Human user identification and authentication",
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 2.8",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.22",
+            "ucTitle": "OT Auditable Event Coverage by Zone and Source"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.52",
+            "ucTitle": "Historian-to-Corporate Data Flow Audit — Large ODBC Without SPN"
+          }
+        ],
+        "topic": "Auditable events",
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 2.9",
+        "coverageState": "contributing-only",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.23",
+            "ucTitle": "Audit Index Growth vs Licensed Retention (Capacity Risk)"
+          }
+        ],
+        "topic": "Audit storage capacity",
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "4.2.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.1",
+            "ucTitle": "OT Security Policy Control Evidence from Log Review"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "4.2.3",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.2",
+            "ucTitle": "IACS Cyber Risk Assessment — Critical OT Asset Exposure"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "4.3.2.6",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.3",
+            "ucTitle": "OT Security Awareness Training Completion"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "4.3.3.3",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.9",
+            "ucTitle": "Physical Access vs OT Network First-Seen Asset"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "4.3.3.4",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.4",
+            "ucTitle": "Privileged OT Account Changes vs Personnel Screening"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "4.3.4.3",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.6",
+            "ucTitle": "Control System Continuity — Historian Export and OT Backup Health"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "4.3.4.4",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.8",
+            "ucTitle": "OT Change Management — PLC Download Without CM Ticket"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "4.3.4.5",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.5",
+            "ucTitle": "IACS Incident Response Containment Interval"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "4.4.3",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.7",
+            "ucTitle": "OT Security Audit Population Sampling Dashboard"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "4.4.3.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.10",
+            "ucTitle": "Vendor Remote Maintenance Window and Dual-Control Evidence"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "CR 1.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.36",
+            "ucTitle": "PLC Local Console Login Without Corporate Identity"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "CR 2.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.37",
+            "ucTitle": "Unauthorized Firmware Upload Attempt on RTU"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "CR 2.8",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.38",
+            "ucTitle": "Embedded PLC Audit Log Forwarding Gaps"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "CR 3.4",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.39",
+            "ucTitle": "Secure Boot or Image Hash Mismatch on Industrial Appliance"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "CR 4.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.40",
+            "ucTitle": "Modbus Serial Gateway Exposing Registers to Wrong TCP Subnet"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "CR 5.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.41",
+            "ucTitle": "Duplicate IP or MAC on OT Switch — Segmentation Violation"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "CR 6.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.42",
+            "ucTitle": "High-Rate Modbus Exception Responses (Potential DoS)"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "CR 6.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.43",
+            "ucTitle": "PLC CPU Load and Scan Cycle Degradation"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "CR 7.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.44",
+            "ucTitle": "Redundant Controller Failover During Attack Window"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "CR 7.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.45",
+            "ucTitle": "Historian Query Saturation During Incident"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 1.13",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.17",
+            "ucTitle": "OT Access from Untrusted Networks Without Split Tunnel Block"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 1.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.12",
+            "ucTitle": "Non-Interactive Industrial Protocol Clients Without Device Identity"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 1.3",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.13",
+            "ucTitle": "Stale or Shared OT Service Accounts"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 1.5",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.14",
+            "ucTitle": "Weak OTP or Missing MFA Step for OT VPN"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 1.7",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.15",
+            "ucTitle": "Short or Default Password Patterns in OT Authentication Logs"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 1.9",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.16",
+            "ucTitle": "Certificate-Based OPC-UA Logon Failures and Weak Trust Stores"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 2.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.18",
+            "ucTitle": "Unauthorized Writes to Modbus Holding Registers"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 2.10",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.24",
+            "ucTitle": "Forwarder Stops — Audit Pipeline Failure Response"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 2.11",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.25",
+            "ucTitle": "Clock Skew on OT Hosts vs NTP Stratum"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 2.12",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.26",
+            "ucTitle": "Dual-Signature PLC Program Change Without Four-Eyes Ticket"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 2.4",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.19",
+            "ucTitle": "Unsigned Macros or Scripts Executed on Engineering Workstation"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 2.5",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.20",
+            "ucTitle": "HMI Session Lock Bypass — Long Idle Operator Consoles"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 2.6",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.21",
+            "ucTitle": "Forced Remote Engineering Session Termination After Hours"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 3.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.27",
+            "ucTitle": "OPC-UA Message Tampering Indicators via Signature Failures"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 3.3",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.28",
+            "ucTitle": "PLC Firmware Verification Job Failures"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 3.4",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.29",
+            "ucTitle": "Unexpected PLC Logic CRC Change"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 3.5",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.30",
+            "ucTitle": "Out-of-Range SCADA Setpoints and Invalid Control Commands"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 4.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.31",
+            "ucTitle": "Cleartext Industrial Credentials in PCAP-Derived Metadata"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 4.3",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.32",
+            "ucTitle": "Deprecated TLS or SSH Algorithms on OT Jump Hosts"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 5.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.33",
+            "ucTitle": "East-West OT Traffic Crossing Intended Purdue Levels"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.47",
+            "ucTitle": "Conduit Traffic Allowlist Enforcement — Unexpected DNP3 Functions"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.49",
+            "ucTitle": "Safety Zone Isolation Verification — Non-Safety OPC on SIS VLAN"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 5.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.34",
+            "ucTitle": "Denied Exploit Attempts at OT DMZ Boundary"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      },
+      {
+        "clause": "SR 5.4",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.15.35",
+            "ucTitle": "Mixed Safety and Non-Safety Traffic on Same VLAN Evidence"
+          }
+        ],
+        "topic": null,
+        "version": "2013-ongoing"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "GLOBAL"
+  ],
+  "narrative": {
+    "evidencePack": null,
+    "matchedBy": "fuzzy-shortname",
+    "name": "IEC 62443 industrial",
+    "primer": null,
+    "splunkValue": "We watch zone-boundary traffic for unapproved protocols, evidence human-user identification on HMIs and engineering workstations, and prepare the IACS programme artefacts that certifiers look for during SL-C assessments.",
+    "whatItIs": "The international standard family for industrial automation and control system security. It defines zones, conduits, security levels (SL-C/T), and detailed requirements for IACS programmes, system integrators, and component vendors.",
+    "whoItAffects": "Owner-operators of industrial automation systems (manufacturing, utilities, oil and gas, pharma), system integrators building control systems, and component vendors supplying PLCs, HMIs, and historians."
+  },
+  "narrativeRef": "non-technical-view.js#cat-22/area/iec-62443-industrial",
+  "regulationId": "iec-62443",
+  "regulationName": "IEC 62443 Industrial Automation and Control Systems Security",
+  "regulationShortName": "IEC 62443",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=iec-62443",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#iec-62443",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/iec-62443.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

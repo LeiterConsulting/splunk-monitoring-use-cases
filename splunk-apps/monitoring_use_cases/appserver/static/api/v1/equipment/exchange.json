@@ -1,0 +1,89 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 12,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "exchange",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Microsoft Exchange",
+  "models": [],
+  "regulationIds": [
+    "mifid-ii"
+  ],
+  "regulations": [
+    {
+      "clauseMappings": [
+        {
+          "clause": "Art.26",
+          "useCaseId": "22.5.1",
+          "version": "Directive 2014/65/EU"
+        },
+        {
+          "clause": "Art.27",
+          "useCaseId": "22.5.3",
+          "version": "Directive 2014/65/EU"
+        },
+        {
+          "clause": "Art.25",
+          "useCaseId": "22.5.6",
+          "version": "Directive 2014/65/EU"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/mifid-ii.json",
+      "regulationId": "mifid-ii",
+      "useCaseCount": 3,
+      "useCaseIds": [
+        "22.5.1",
+        "22.5.3",
+        "22.5.6"
+      ]
+    }
+  ],
+  "useCaseCount": 12,
+  "useCaseIds": [
+    "10.4.6",
+    "10.12.12",
+    "10.12.13",
+    "10.13.30",
+    "11.1.1",
+    "11.3.9",
+    "11.3.10",
+    "11.3.13",
+    "11.4.8",
+    "22.5.1",
+    "22.5.3",
+    "22.5.6"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 10,
+      "useCaseCount": 4,
+      "useCaseIds": [
+        "10.4.6",
+        "10.12.12",
+        "10.12.13",
+        "10.13.30"
+      ]
+    },
+    {
+      "category": 11,
+      "useCaseCount": 5,
+      "useCaseIds": [
+        "11.1.1",
+        "11.3.9",
+        "11.3.10",
+        "11.3.13",
+        "11.4.8"
+      ]
+    },
+    {
+      "category": 22,
+      "useCaseCount": 3,
+      "useCaseIds": [
+        "22.5.1",
+        "22.5.3",
+        "22.5.6"
+      ]
+    }
+  ]
+}

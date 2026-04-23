@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.nerc.com/pa/Stand/Reliability%20Standards/CIP-002-5.1a%20R1.pdf",
+  "clause": "CIP-002-5.1a R1",
+  "clauseId": "nerc-cip@current#CIP-002-5.1a R1",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "NERC CIP-002-5.1a R1 BES cyber system identification — automated compliance checks inventory and attribute BES Cyber Systems as the R1 identification process requires.",
+      "category": 14,
+      "clauseUrl": "https://www.nerc.com/pa/Stand/Pages/CIPStandards.aspx",
+      "controlObjective": "Evidence that NERC CIP CIP-002-5.1a R1 (BES cyber system identification) is enforced — Splunk UC-14.2.11: NERC CIP Compliance Checks.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-14.2.11' running on Firewall, VPN, AD, asset logs tagged nerc_cip, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "14.2.11",
+      "ucTitle": "NERC CIP Compliance Checks"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/nerc-cip__current__CIP-002-5.1a%20R1.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "nerc-cip",
+  "regulationName": "NERC Critical Infrastructure Protection",
+  "regulationShortName": "NERC CIP",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/nerc-cip.json",
+    "regulationVersion": "/api/v1/compliance/regulations/nerc-cip@current.json",
+    "story": "/api/v1/compliance/story/nerc-cip.json"
+  },
+  "tier": 2,
+  "topAssurance": "partial",
+  "topic": "BES cyber system identification",
+  "version": "current"
+}

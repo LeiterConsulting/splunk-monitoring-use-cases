@@ -1,0 +1,74 @@
+{
+  "aliases": [
+    "KBF",
+    "Kraftberedskapsforskriften"
+  ],
+  "apiVersion": "v1",
+  "id": "no-kbf-nve",
+  "jurisdiction": [
+    "NO"
+  ],
+  "name": "Norwegian Kraftberedskapsforskriften (NVE Power-sector emergency preparedness regulation)",
+  "shortName": "NO KBF",
+  "tags": [
+    "critical-infrastructure",
+    "utilities"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://lovdata.no/dokument/SF/forskrift/2012-12-07-1157",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§6-1",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Informasjonssikkerhet"
+        }
+      ],
+      "clauseExamples": [
+        "§6-1",
+        "§6-2"
+      ],
+      "clauseGrammar": "^§\\d+(-\\d+)?$",
+      "clauseUrlTemplate": null,
+      "clausesReferencedByCatalogue": [],
+      "commonClauses": [
+        {
+          "clause": "§6-1",
+          "priorityWeight": 1.0,
+          "topic": "Informasjonssikkerhet"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 0.0,
+        "commonClauseCount": 1,
+        "coveredClauseCount": 0,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 0.0,
+        "stateCounts": {
+          "contributing-only": 0,
+          "covered-full": 0,
+          "covered-partial": 0,
+          "uncovered": 1
+        }
+      },
+      "effectiveFrom": "2013-01-01",
+      "endpoint": "/api/v1/compliance/regulations/no-kbf-nve@2012-as-amended.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [],
+      "version": "2012 as amended"
+    }
+  ]
+}

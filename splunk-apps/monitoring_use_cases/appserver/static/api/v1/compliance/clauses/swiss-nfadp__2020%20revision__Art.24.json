@@ -1,0 +1,68 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 2,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.fedlex.admin.ch/eli/cc/2022/491/en#Art.24",
+  "clause": "Art.24",
+  "clauseId": "swiss-nfadp@2020 revision#Art.24",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 2,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "Derived from GDPR@2016/679 Art.33 (parent assurance='full'). Clause mapped per data/regulations.json derivesFrom graph; inherited assurance degraded one step. Divergence recorded — SME review should confirm scope fit.",
+      "category": 22,
+      "clauseUrl": "https://www.fedlex.admin.ch/eli/cc/2022/491/en#Art.24",
+      "controlObjective": "Evidence that Swiss nFADP Art.24 (Data breach notification) is enforced — Splunk UC-22.39.1: Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA).",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.39.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "derived-from-parent",
+      "smeCaveat": null,
+      "ucId": "22.39.1",
+      "ucTitle": "Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA)"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "Derived from GDPR@2016/679 Art.33 (parent assurance='full'). Clause mapped per data/regulations.json derivesFrom graph; inherited assurance degraded one step. Divergence recorded — SME review should confirm scope fit.",
+      "category": 22,
+      "clauseUrl": "https://www.fedlex.admin.ch/eli/cc/2022/491/en#Art.24",
+      "controlObjective": "Evidence that Swiss nFADP Art.24 (Data breach notification) is enforced — Splunk UC-22.39.2: Regulator-portal submission evidence — one-way API acknowledgement audit.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.39.2' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "derived-from-parent",
+      "smeCaveat": null,
+      "ucId": "22.39.2",
+      "ucTitle": "Regulator-portal submission evidence — one-way API acknowledgement audit"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/swiss-nfadp__2020%20revision__Art.24.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 2
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "swiss-nfadp",
+  "regulationName": "Swiss Federal Act on Data Protection (nFADP)",
+  "regulationShortName": "Swiss nFADP",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/swiss-nfadp.json",
+    "regulationVersion": "/api/v1/compliance/regulations/swiss-nfadp@2020%20revision.json",
+    "story": "/api/v1/compliance/story/swiss-nfadp.json"
+  },
+  "tier": 2,
+  "topAssurance": "partial",
+  "topic": "Data breach notification",
+  "version": "2020 revision"
+}

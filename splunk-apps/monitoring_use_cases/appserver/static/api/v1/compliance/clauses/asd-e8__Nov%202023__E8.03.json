@@ -1,0 +1,68 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 2,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model",
+  "clause": "E8.03",
+  "clauseId": "asd-e8@Nov 2023#E8.03",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 2,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'ASD Essential Eight' → 'E8.03'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model",
+      "controlObjective": "Evidence that ASD E8 E8.03 (Configure MS Office macro settings) is enforced — Splunk UC-22.31.7: Microsoft Office macro security baseline compliance.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.31.7' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.31.7",
+      "ucTitle": "Microsoft Office macro security baseline compliance"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'ASD Essential Eight' → 'E8.03'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model",
+      "controlObjective": "Evidence that ASD E8 E8.03 (Configure MS Office macro settings) is enforced — Splunk UC-22.31.13: Office macro execution policy violation detection.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.31.13' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.31.13",
+      "ucTitle": "Office macro execution policy violation detection"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/asd-e8__Nov%202023__E8.03.json",
+  "gapNote": "ASD E8 clause E8.03 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 2
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "asd-e8",
+  "regulationName": "ASD Essential Eight Maturity Model",
+  "regulationShortName": "ASD E8",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/asd-e8.json",
+    "regulationVersion": "/api/v1/compliance/regulations/asd-e8@Nov%202023.json",
+    "story": "/api/v1/compliance/story/asd-e8.json"
+  },
+  "tier": 2,
+  "topAssurance": "contributing",
+  "topic": "Configure MS Office macro settings",
+  "version": "Nov 2023"
+}

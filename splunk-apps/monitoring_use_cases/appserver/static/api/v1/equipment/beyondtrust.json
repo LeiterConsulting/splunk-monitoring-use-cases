@@ -1,0 +1,111 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 3,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "beyondtrust",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "BeyondTrust",
+  "models": [],
+  "regulationIds": [
+    "asd-e8",
+    "bait-kait",
+    "fedramp",
+    "hitrust",
+    "sama-csf"
+  ],
+  "regulations": [
+    {
+      "clauseMappings": [
+        {
+          "clause": "E8.05",
+          "useCaseId": "9.4.1",
+          "version": "Nov 2023"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/asd-e8.json",
+      "regulationId": "asd-e8",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "9.4.1"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "§5",
+          "useCaseId": "9.4.1",
+          "version": "Aug 2021"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/bait-kait.json",
+      "regulationId": "bait-kait",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "9.4.1"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "AC-2",
+          "useCaseId": "9.4.1",
+          "version": "Rev.5 Baselines"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/fedramp.json",
+      "regulationId": "fedramp",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "9.4.1"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "01.b",
+          "useCaseId": "9.4.1",
+          "version": "v11"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/hitrust.json",
+      "regulationId": "hitrust",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "9.4.1"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "3.3.5",
+          "useCaseId": "9.4.1",
+          "version": "v1.0 (2017)"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/sama-csf.json",
+      "regulationId": "sama-csf",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "9.4.1"
+      ]
+    }
+  ],
+  "useCaseCount": 3,
+  "useCaseIds": [
+    "9.4.1",
+    "9.4.5",
+    "9.4.15"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 9,
+      "useCaseCount": 3,
+      "useCaseIds": [
+        "9.4.1",
+        "9.4.5",
+        "9.4.15"
+      ]
+    }
+  ]
+}

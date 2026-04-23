@@ -1,0 +1,98 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 2,
+    "full": 2,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "4.2.1",
+  "clauseId": "pci-dss@v4.0#4.2.1",
+  "coverageState": "covered-full",
+  "coveringUcCount": 4,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "PCI-DSS 4.2.1 strong cryptography for transmission of cardholder data across open networks — directly evidenced.",
+      "category": 22,
+      "clauseUrl": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf",
+      "controlObjective": "Evidence that PCI-DSS 4.2.1 is enforced — Splunk UC-22.8.31: SOC 2 CC6.6 — Encryption-in-transit validation: cleartext protocols crossing the trust boundary.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.8.31' running on sourcetype stream:tcp and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.8.31",
+      "ucTitle": "SOC 2 CC6.6 — Encryption-in-transit validation: cleartext protocols crossing the trust boundary"
+    },
+    {
+      "assurance": "full",
+      "assuranceRationale": "PCI 4.2.1 strong cryptography in transmission is directly measured.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that PCI-DSS 4.2.1 is enforced — Splunk UC-22.41.4: TLS downgrade / legacy-cipher handshake spike.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.41.4' running on F5/NGINX/HAProxy TLS handshake logs, cloud-provider LB telemetry, TLS scanner longitudinal results., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.41.4",
+      "ucTitle": "TLS downgrade / legacy-cipher handshake spike"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that PCI DSS 4.2.1 is enforced — Splunk UC-22.11.22: TLS 1.2 Minimum Version Violations on Payment APIs.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.11.22' running on index=stream sourcetype=\"stream:tls\"; index=aws sourcetype=\"aws:elb:accesslogs\" with ssl_protocol, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.11.22",
+      "ucTitle": "TLS 1.2 Minimum Version Violations on Payment APIs"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that PCI DSS 4.2.1 is enforced — Splunk UC-22.11.23: Weak Cipher Suites Offered by Internal TLS Terminators.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.11.23' running on index=stream stream:tls (cipher_suite); index=vm qualys:host SSL QIDs, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.11.23",
+      "ucTitle": "Weak Cipher Suites Offered by Internal TLS Terminators"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/pci-dss__v4.0__4.2.1.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 4
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "pci-dss",
+  "regulationName": "pci-dss",
+  "regulationShortName": "pci-dss",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/pci-dss.json",
+    "regulationVersion": "/api/v1/compliance/regulations/pci-dss@v4.0.json",
+    "story": "/api/v1/compliance/story/pci-dss.json"
+  },
+  "tier": null,
+  "topAssurance": "full",
+  "topic": null,
+  "version": "v4.0"
+}

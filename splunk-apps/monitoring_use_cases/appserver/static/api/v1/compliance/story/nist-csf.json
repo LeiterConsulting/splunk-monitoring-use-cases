@@ -1,0 +1,2244 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "DE.AE-3",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.7.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Event data collection and correlation",
+      "version": "1.1"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "ID.AM-1",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.7.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Physical devices inventory",
+      "version": "1.1"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "PR.AC-1",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.7.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Identities and credentials managed",
+      "version": "1.1"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "DE.AE-01",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.36"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "DE.AE-02",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.37"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Anomalies and events analysis",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "DE.AE-03",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.38"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "DE.CM-01",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.31"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Network monitoring",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "DE.CM-02",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.32"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "DE.CM-03",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.33"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Personnel activity monitoring",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "DE.CM-04",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.34"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "DE.CM-05",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.35"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "DE.CM-09",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.7.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "partial",
+      "topic": "Environment monitoring",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "DE.CM-7",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "GV.OC-01",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.8"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "contributing",
+      "topic": "Organisational context",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "GV.OC-02",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.9"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "GV.OV-01",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.14"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "GV.OV-02",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.9.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "GV.OV-03",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.9.1"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "GV.PO-01",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.12"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "GV.PO-02",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.13",
+        "22.9.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "GV.RM-01",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.10"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Risk management strategy",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "GV.RR-01",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.11"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "contributing",
+      "topic": "Organisational leadership",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "GV.SC-01",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.15"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "ID.AM-01",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.1",
+        "22.7.16"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Asset inventory",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "ID.AM-02",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.17"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "ID.AM-03",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.18"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "ID.AM-2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "ID.IM-01",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.21"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "ID.IM-02",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.22",
+        "22.9.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "ID.RA-01",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.19"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Risk assessment",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "ID.RA-02",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.20"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "PR.AA-01",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.23"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Authentication",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "PR.AA-02",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.24"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "PR.AA-05",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.7.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Access permissions",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "PR.AC-1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "PR.AT-01",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.25"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "PR.DS-01",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.26"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Data-at-rest protection",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "PR.DS-02",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.27"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Data-in-transit protection",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "PR.IR-01",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.29"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "PR.IR-02",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.30"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "PR.PS-01",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.28"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "PR.PS-04",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.32"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Log generation",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "RC.CO-01",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.49"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "RC.CO-02",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.50"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "RC.RP-01",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.46"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Recovery plan execution",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "RC.RP-02",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.47"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "RC.RP-03",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.48"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "RC.RP-1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.7"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "RS.AN-01",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.41"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "RS.AN-02",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.42"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "RS.AN-03",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.7.6"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Incident analysis",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "RS.CO-01",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.43"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "RS.CO-02",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.44"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "RS.MA-01",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.39"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Incident management",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "RS.MA-02",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.40"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "RS.MI-01",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.45"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "RS.RP-1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.7.6"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2.0"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "20 of 20 common clauses are covered by the catalogue, with a priority-weighted coverage of 68.48% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 20,
+      "coveredClauseCount": 20,
+      "priorityWeightedCoveragePercent": 68.48,
+      "stateCounts": {
+        "contributing-only": 14,
+        "covered-full": 5,
+        "covered-partial": 1,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "DE.AE-3",
+        "killerUcId": "22.7.2",
+        "killerUcTitle": "NIST CSF Detect Function Coverage Gap Analysis",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Event data collection and correlation",
+        "version": "1.1",
+        "why": "Clause DE.AE-3 (Event data collection and correlation) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "ID.AM-1",
+        "killerUcId": "22.7.3",
+        "killerUcTitle": "NIST CSF Identify — Asset Inventory Coverage and Shadow SaaS Signals",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Physical devices inventory",
+        "version": "1.1",
+        "why": "Clause ID.AM-1 (Physical devices inventory) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "PR.AC-1",
+        "killerUcId": "22.7.4",
+        "killerUcTitle": "NIST CSF Protect — Identity Authentication Hardening and MFA Gaps",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Identities and credentials managed",
+        "version": "1.1",
+        "why": "Clause PR.AC-1 (Identities and credentials managed) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "PR.AA-05",
+        "killerUcId": "22.7.4",
+        "killerUcTitle": "NIST CSF Protect — Identity Authentication Hardening and MFA Gaps",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Access permissions",
+        "version": "2.0",
+        "why": "Clause PR.AA-05 (Access permissions) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "RS.AN-03",
+        "killerUcId": "22.7.6",
+        "killerUcTitle": "NIST CSF Respond — Incident Response Playbook Execution and Stage Timestamps",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Incident analysis",
+        "version": "2.0",
+        "why": "Clause RS.AN-03 (Incident analysis) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "DE.AE-3",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.2",
+            "ucTitle": "NIST CSF Detect Function Coverage Gap Analysis"
+          }
+        ],
+        "topic": "Event data collection and correlation",
+        "version": "1.1"
+      },
+      {
+        "clause": "ID.AM-1",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.3",
+            "ucTitle": "NIST CSF Identify — Asset Inventory Coverage and Shadow SaaS Signals"
+          }
+        ],
+        "topic": "Physical devices inventory",
+        "version": "1.1"
+      },
+      {
+        "clause": "PR.AC-1",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.4",
+            "ucTitle": "NIST CSF Protect — Identity Authentication Hardening and MFA Gaps"
+          }
+        ],
+        "topic": "Identities and credentials managed",
+        "version": "1.1"
+      },
+      {
+        "clause": "DE.AE-02",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.37",
+            "ucTitle": "Anomaly on Outbound Bytes from Database Subnet"
+          }
+        ],
+        "topic": "Anomalies and events analysis",
+        "version": "2.0"
+      },
+      {
+        "clause": "DE.CM-01",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.31",
+            "ucTitle": "EDR Heartbeat Gap Beyond Policy SLA"
+          }
+        ],
+        "topic": "Network monitoring",
+        "version": "2.0"
+      },
+      {
+        "clause": "DE.CM-03",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.33",
+            "ucTitle": "Proxy Denies Toward Young Threat-Intel Domains"
+          }
+        ],
+        "topic": "Personnel activity monitoring",
+        "version": "2.0"
+      },
+      {
+        "clause": "GV.RM-01",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.10",
+            "ucTitle": "Enterprise Risk Appetite vs Open Critical Vulnerabilities"
+          }
+        ],
+        "topic": "Risk management strategy",
+        "version": "2.0"
+      },
+      {
+        "clause": "ID.AM-01",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.1",
+            "ucTitle": "NIST CSF Maturity Posture Dashboard"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.16",
+            "ucTitle": "Hardware Asset Coverage — Agents Missing on In-Scope Servers"
+          }
+        ],
+        "topic": "Asset inventory",
+        "version": "2.0"
+      },
+      {
+        "clause": "ID.RA-01",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.19",
+            "ucTitle": "Business Process Impact — Incidents by Critical Application"
+          }
+        ],
+        "topic": "Risk assessment",
+        "version": "2.0"
+      },
+      {
+        "clause": "PR.AA-01",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.23",
+            "ucTitle": "Privileged Path — PAM JIT Elevation vs Standing Admin Logons"
+          }
+        ],
+        "topic": "Authentication",
+        "version": "2.0"
+      },
+      {
+        "clause": "PR.AA-05",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.4",
+            "ucTitle": "NIST CSF Protect — Identity Authentication Hardening and MFA Gaps"
+          }
+        ],
+        "topic": "Access permissions",
+        "version": "2.0"
+      },
+      {
+        "clause": "PR.DS-01",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.26",
+            "ucTitle": "Encryption in Transit — Deprecated TLS on Internal APIs"
+          }
+        ],
+        "topic": "Data-at-rest protection",
+        "version": "2.0"
+      },
+      {
+        "clause": "PR.DS-02",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.27",
+            "ucTitle": "DLP — Blocked Exfil to Personal Email Domains"
+          }
+        ],
+        "topic": "Data-in-transit protection",
+        "version": "2.0"
+      },
+      {
+        "clause": "PR.PS-04",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.32",
+            "ucTitle": "Administrative API Logging Volume Drop vs Baseline"
+          }
+        ],
+        "topic": "Log generation",
+        "version": "2.0"
+      },
+      {
+        "clause": "RC.RP-01",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.46",
+            "ucTitle": "Scheduled Restore Test Outcomes vs Policy Frequency"
+          }
+        ],
+        "topic": "Recovery plan execution",
+        "version": "2.0"
+      },
+      {
+        "clause": "RS.AN-03",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.6",
+            "ucTitle": "NIST CSF Respond — Incident Response Playbook Execution and Stage Timestamps"
+          }
+        ],
+        "topic": "Incident analysis",
+        "version": "2.0"
+      },
+      {
+        "clause": "RS.MA-01",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.39",
+            "ucTitle": "IR Ticket Stuck in Containment Beyond SLA"
+          }
+        ],
+        "topic": "Incident management",
+        "version": "2.0"
+      },
+      {
+        "clause": "DE.CM-09",
+        "coverageState": "covered-partial",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.5",
+            "ucTitle": "NIST CSF Detect — Continuous Vulnerability Exposure Drift on Critical Servers"
+          }
+        ],
+        "topic": "Environment monitoring",
+        "version": "2.0"
+      },
+      {
+        "clause": "GV.OC-01",
+        "coverageState": "contributing-only",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.8",
+            "ucTitle": "Governance Context — Business Critical Services Mapped to IT Assets"
+          }
+        ],
+        "topic": "Organisational context",
+        "version": "2.0"
+      },
+      {
+        "clause": "GV.RR-01",
+        "coverageState": "contributing-only",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.11",
+            "ucTitle": "Security Role Attestation — RBAC Changes vs HR Start Dates"
+          }
+        ],
+        "topic": "Organisational leadership",
+        "version": "2.0"
+      },
+      {
+        "clause": "DE.AE-01",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.36",
+            "ucTitle": "Lateral Movement Chain — Auth, RDP, and Process Create Same Src"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "DE.AE-03",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.38",
+            "ucTitle": "Risk Index Spike for Privileged Accounts"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "DE.CM-02",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.32",
+            "ucTitle": "Administrative API Logging Volume Drop vs Baseline"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "DE.CM-04",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.34",
+            "ucTitle": "Database Connection Storm from Application Service Account"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "DE.CM-05",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.35",
+            "ucTitle": "Certificate Transparency — New Public Cert for Corporate Brand"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "DE.CM-7",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.5",
+            "ucTitle": "NIST CSF Detect — Continuous Vulnerability Exposure Drift on Critical Servers"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "GV.OC-02",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.9",
+            "ucTitle": "External Stakeholder Dependencies — Third-Party SaaS in Auth Flows"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "GV.OV-01",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.14",
+            "ucTitle": "Executive Oversight Dashboard — Mean Time to Acknowledge Critical Alerts"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "GV.OV-02",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.9.2",
+            "ucTitle": "Audit Finding Closure Rate Trending"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "GV.OV-03",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.9.1",
+            "ucTitle": "Compliance Posture Score Trending"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "GV.PO-01",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.12",
+            "ucTitle": "Policy Exception Tracking — Conditional Access Exclusion Groups"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "GV.PO-02",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.13",
+            "ucTitle": "Documented Baseline Drift — Firewall Rule Adds Outside CAB Window"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.9.5",
+            "ucTitle": "Policy Violation Volume Trending"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "GV.SC-01",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.15",
+            "ucTitle": "Supply Chain — New Package Installs in CI Against Approved Registry"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "ID.AM-02",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.17",
+            "ucTitle": "Software Bill of Materials Signals — Container Image Digests"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "ID.AM-03",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.18",
+            "ucTitle": "Data Asset Classification — Sensitive Columns in Query Logs"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "ID.AM-2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.3",
+            "ucTitle": "NIST CSF Identify — Asset Inventory Coverage and Shadow SaaS Signals"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "ID.IM-01",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.21",
+            "ucTitle": "Lessons Learned — Post-Incident Analyst Search Activity"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "ID.IM-02",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.9.3",
+            "ucTitle": "Control Effectiveness Trending"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.22",
+            "ucTitle": "Process KPI — Median Days to Remediate High and Critical CVEs"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "ID.RA-02",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.20",
+            "ucTitle": "Control Weakness Heatmap — Failed CIS Benchmark Checks"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "PR.AA-02",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.24",
+            "ucTitle": "Non-Human Identity — Service Principal Secret and Certificate Adds"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "PR.AC-1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.4",
+            "ucTitle": "NIST CSF Protect — Identity Authentication Hardening and MFA Gaps"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "PR.AT-01",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.25",
+            "ucTitle": "Phishing Simulation Clicks vs Security Awareness Completion"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "PR.IR-01",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.29",
+            "ucTitle": "DNS Resolver Error Rate SLO for Internal Resolvers"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "PR.IR-02",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.30",
+            "ucTitle": "Storage Path — Cluster Failover or Multipath Events"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "PR.PS-01",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.28",
+            "ucTitle": "Platform Integrity — sudoers or nsswitch Changes on Linux"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "RC.CO-01",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.49",
+            "ucTitle": "Crisis Email Blast Size to All Employees"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "RC.CO-02",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.50",
+            "ucTitle": "Status Page Update Cadence During Major Incident"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "RC.RP-02",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.47",
+            "ucTitle": "AD Forest Recovery Drill — Directory Service Restore Events"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "RC.RP-03",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.48",
+            "ucTitle": "Multi-Region Failover — Health-Check Driven DNS Answer Changes"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "RC.RP-1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.7",
+            "ucTitle": "NIST CSF Recover — Backup Job Success and RTO Readiness for Critical Databases"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "RS.AN-01",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.41",
+            "ucTitle": "Root Cause Field Completeness on Closed Incidents"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "RS.AN-02",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.42",
+            "ucTitle": "Composite Timeline — Notable, AV, and Proxy Same Host One Hour"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "RS.CO-01",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.43",
+            "ucTitle": "Executive Paging Lag After Sev-1 Playbook Start"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "RS.CO-02",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.44",
+            "ucTitle": "Legal Hold Population — Elevated File Export Activity"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "RS.MA-02",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.40",
+            "ucTitle": "SOAR Case Backlog Aging by Severity"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "RS.MI-01",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.45",
+            "ucTitle": "EDR Host Isolation Action Success Rate"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      },
+      {
+        "clause": "RS.RP-1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.7.6",
+            "ucTitle": "NIST CSF Respond — Incident Response Playbook Execution and Stage Timestamps"
+          }
+        ],
+        "topic": null,
+        "version": "2.0"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "GLOBAL",
+    "US"
+  ],
+  "narrative": {
+    "evidencePack": "docs/evidence-packs/nist-csf.md",
+    "matchedBy": "manual-map",
+    "name": "NIST CSF 2.0",
+    "primer": "docs/regulatory-primer.md#48-nist-csf-20--cybersecurity-framework-us--global--t1",
+    "splunkValue": "We produce maturity scores for each CSF function and category, highlight the weakest sub-categories, and generate evidence packs the CISO can show the board — aligning cyber investment to the function that needs it most.",
+    "whatItIs": "A voluntary framework from the US National Institute of Standards and Technology that helps organisations describe and improve their cybersecurity posture. Version 2.0 added a dedicated Govern function and explicit cyber supply-chain risk management.",
+    "whoItAffects": "Any organisation that needs a common language to describe cyber risk and capability maturity — widely adopted in the US private sector, by US federal agencies (alongside 800-53), and increasingly in EU and APAC procurement questionnaires."
+  },
+  "narrativeRef": "non-technical-view.js#cat-22/area/nist-csf-2-0",
+  "regulationId": "nist-csf",
+  "regulationName": "NIST Cybersecurity Framework",
+  "regulationShortName": "NIST CSF",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=nist-csf",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#nist-csf",
+    "evidencePack": "docs/evidence-packs/nist-csf.md",
+    "primerAnchor": "docs/regulatory-primer.md#48-nist-csf-20-cybersecurity-framework-us-global-t1",
+    "regulation": "/api/v1/compliance/regulations/nist-csf.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 1
+}

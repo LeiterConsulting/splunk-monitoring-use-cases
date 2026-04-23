@@ -1,0 +1,406 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 67,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "fortinet",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Fortinet",
+  "models": [
+    {
+      "id": "fortinet_fortianalyzer",
+      "label": "FortiAnalyzer",
+      "modelId": "fortianalyzer",
+      "useCaseCount": 0,
+      "useCaseIds": []
+    },
+    {
+      "id": "fortinet_fortigate",
+      "label": "FortiGate",
+      "modelId": "fortigate",
+      "useCaseCount": 68,
+      "useCaseIds": [
+        "5.2.1",
+        "5.2.2",
+        "5.2.3",
+        "5.2.4",
+        "5.2.5",
+        "5.2.6",
+        "5.2.7",
+        "5.2.8",
+        "5.2.9",
+        "5.2.10",
+        "5.2.11",
+        "5.2.12",
+        "5.2.13",
+        "5.2.14",
+        "5.2.15",
+        "5.2.16",
+        "5.2.17",
+        "5.2.18",
+        "5.2.44",
+        "5.2.45",
+        "5.2.46",
+        "5.5.24",
+        "10.1.1",
+        "10.11.1",
+        "10.11.2",
+        "10.11.3",
+        "10.11.4",
+        "10.11.5",
+        "10.11.6",
+        "10.11.7",
+        "10.11.8",
+        "10.11.9",
+        "10.11.10",
+        "10.11.11",
+        "10.11.12",
+        "10.11.13",
+        "10.11.14",
+        "10.11.15",
+        "10.11.87",
+        "10.11.88",
+        "10.11.89",
+        "10.11.90",
+        "10.11.91",
+        "10.16.6",
+        "17.2.1",
+        "17.2.2",
+        "17.2.3",
+        "17.2.4",
+        "17.2.5",
+        "17.2.6",
+        "17.2.7",
+        "17.2.8",
+        "17.2.9",
+        "17.2.11",
+        "17.2.18",
+        "17.2.20",
+        "17.3.1",
+        "17.3.4",
+        "17.3.6",
+        "17.3.8",
+        "17.3.15",
+        "17.3.39",
+        "17.3.40",
+        "17.3.41",
+        "17.3.42",
+        "17.3.43",
+        "22.1.6",
+        "22.15.15"
+      ]
+    }
+  ],
+  "regulationIds": [
+    "fedramp",
+    "gdpr",
+    "iec-62443",
+    "psd2",
+    "sama-csf",
+    "swift-csp",
+    "uk-cyber-essentials"
+  ],
+  "regulations": [
+    {
+      "clauseMappings": [
+        {
+          "clause": "AC-2",
+          "useCaseId": "5.2.2",
+          "version": "Rev.5 Baselines"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/fedramp.json",
+      "regulationId": "fedramp",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "5.2.2"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "Art.44",
+          "useCaseId": "22.1.6",
+          "version": "2016/679"
+        },
+        {
+          "clause": "Art.45",
+          "useCaseId": "22.1.6",
+          "version": "2016/679"
+        },
+        {
+          "clause": "Art.46",
+          "useCaseId": "22.1.6",
+          "version": "2016/679"
+        },
+        {
+          "clause": "Art.47",
+          "useCaseId": "22.1.6",
+          "version": "2016/679"
+        },
+        {
+          "clause": "Art.48",
+          "useCaseId": "22.1.6",
+          "version": "2016/679"
+        },
+        {
+          "clause": "Art.49",
+          "useCaseId": "22.1.6",
+          "version": "2016/679"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/gdpr.json",
+      "regulationId": "gdpr",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.1.6"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "SR 1.7",
+          "useCaseId": "22.15.15",
+          "version": "2013-ongoing"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/iec-62443.json",
+      "regulationId": "iec-62443",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.15.15"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "Art.97",
+          "useCaseId": "17.2.2",
+          "version": "Directive (EU) 2015/2366"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/psd2.json",
+      "regulationId": "psd2",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "17.2.2"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "3.3.5",
+          "useCaseId": "17.2.2",
+          "version": "v1.0 (2017)"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/sama-csf.json",
+      "regulationId": "sama-csf",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "17.2.2"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "1.1",
+          "useCaseId": "5.2.2",
+          "version": "CSCF v2025"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/swift-csp.json",
+      "regulationId": "swift-csp",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "5.2.2"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "CE.BF.1",
+          "useCaseId": "5.2.2",
+          "version": "Montpellier (2025)"
+        },
+        {
+          "clause": "CE.SAU.1",
+          "useCaseId": "17.2.2",
+          "version": "Montpellier (2025)"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/uk-cyber-essentials.json",
+      "regulationId": "uk-cyber-essentials",
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "5.2.2",
+        "17.2.2"
+      ]
+    }
+  ],
+  "useCaseCount": 68,
+  "useCaseIds": [
+    "5.2.1",
+    "5.2.2",
+    "5.2.3",
+    "5.2.4",
+    "5.2.5",
+    "5.2.6",
+    "5.2.7",
+    "5.2.8",
+    "5.2.9",
+    "5.2.10",
+    "5.2.11",
+    "5.2.12",
+    "5.2.13",
+    "5.2.14",
+    "5.2.15",
+    "5.2.16",
+    "5.2.17",
+    "5.2.18",
+    "5.2.44",
+    "5.2.45",
+    "5.2.46",
+    "5.5.24",
+    "10.1.1",
+    "10.11.1",
+    "10.11.2",
+    "10.11.3",
+    "10.11.4",
+    "10.11.5",
+    "10.11.6",
+    "10.11.7",
+    "10.11.8",
+    "10.11.9",
+    "10.11.10",
+    "10.11.11",
+    "10.11.12",
+    "10.11.13",
+    "10.11.14",
+    "10.11.15",
+    "10.11.87",
+    "10.11.88",
+    "10.11.89",
+    "10.11.90",
+    "10.11.91",
+    "10.16.6",
+    "17.2.1",
+    "17.2.2",
+    "17.2.3",
+    "17.2.4",
+    "17.2.5",
+    "17.2.6",
+    "17.2.7",
+    "17.2.8",
+    "17.2.9",
+    "17.2.11",
+    "17.2.18",
+    "17.2.20",
+    "17.3.1",
+    "17.3.4",
+    "17.3.6",
+    "17.3.8",
+    "17.3.15",
+    "17.3.39",
+    "17.3.40",
+    "17.3.41",
+    "17.3.42",
+    "17.3.43",
+    "22.1.6",
+    "22.15.15"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 5,
+      "useCaseCount": 22,
+      "useCaseIds": [
+        "5.2.1",
+        "5.2.2",
+        "5.2.3",
+        "5.2.4",
+        "5.2.5",
+        "5.2.6",
+        "5.2.7",
+        "5.2.8",
+        "5.2.9",
+        "5.2.10",
+        "5.2.11",
+        "5.2.12",
+        "5.2.13",
+        "5.2.14",
+        "5.2.15",
+        "5.2.16",
+        "5.2.17",
+        "5.2.18",
+        "5.2.44",
+        "5.2.45",
+        "5.2.46",
+        "5.5.24"
+      ]
+    },
+    {
+      "category": 10,
+      "useCaseCount": 22,
+      "useCaseIds": [
+        "10.1.1",
+        "10.11.1",
+        "10.11.2",
+        "10.11.3",
+        "10.11.4",
+        "10.11.5",
+        "10.11.6",
+        "10.11.7",
+        "10.11.8",
+        "10.11.9",
+        "10.11.10",
+        "10.11.11",
+        "10.11.12",
+        "10.11.13",
+        "10.11.14",
+        "10.11.15",
+        "10.11.87",
+        "10.11.88",
+        "10.11.89",
+        "10.11.90",
+        "10.11.91",
+        "10.16.6"
+      ]
+    },
+    {
+      "category": 17,
+      "useCaseCount": 22,
+      "useCaseIds": [
+        "17.2.1",
+        "17.2.2",
+        "17.2.3",
+        "17.2.4",
+        "17.2.5",
+        "17.2.6",
+        "17.2.7",
+        "17.2.8",
+        "17.2.9",
+        "17.2.11",
+        "17.2.18",
+        "17.2.20",
+        "17.3.1",
+        "17.3.4",
+        "17.3.6",
+        "17.3.8",
+        "17.3.15",
+        "17.3.39",
+        "17.3.40",
+        "17.3.41",
+        "17.3.42",
+        "17.3.43"
+      ]
+    },
+    {
+      "category": 22,
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "22.1.6",
+        "22.15.15"
+      ]
+    }
+  ]
+}

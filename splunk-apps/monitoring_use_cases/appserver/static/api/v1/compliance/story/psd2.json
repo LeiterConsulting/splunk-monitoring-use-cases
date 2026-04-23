@@ -1,0 +1,282 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 12,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.95",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "12.3.2",
+        "22.22.13",
+        "22.22.14",
+        "22.22.15",
+        "22.22.16",
+        "22.22.17",
+        "22.22.19",
+        "22.22.20",
+        "22.22.21",
+        "22.22.22",
+        "22.22.23",
+        "22.22.24"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Management of operational and security risks",
+      "version": "Directive (EU) 2015/2366"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 6,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "Art.96",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "16.3.6",
+        "22.22.25",
+        "22.22.26",
+        "22.22.27",
+        "22.22.28",
+        "22.22.29",
+        "22.22.30"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Incident reporting",
+      "version": "Directive (EU) 2015/2366"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 14,
+        "full": 0,
+        "partial": 3
+      },
+      "clause": "Art.97",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "17.2.2",
+        "22.22.1",
+        "22.22.10",
+        "22.22.11",
+        "22.22.12",
+        "22.22.18",
+        "22.22.2",
+        "22.22.3",
+        "22.22.4",
+        "22.22.5",
+        "22.22.6",
+        "22.22.7",
+        "22.22.8",
+        "22.22.9",
+        "4.1.5",
+        "9.1.1",
+        "9.3.1"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Strong customer authentication",
+      "version": "Directive (EU) 2015/2366"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "3 of 3 common clauses are covered by the catalogue, with a priority-weighted coverage of 41.67% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 3,
+      "priorityWeightedCoveragePercent": 41.67,
+      "stateCounts": {
+        "contributing-only": 1,
+        "covered-full": 0,
+        "covered-partial": 2,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "Art.96",
+        "killerUcId": "16.3.6",
+        "killerUcTitle": "Major Incident and Post-Mortem Tracking",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Incident reporting",
+        "version": "Directive (EU) 2015/2366",
+        "why": "Clause Art.96 (Incident reporting) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "Art.97",
+        "killerUcId": "17.2.2",
+        "killerUcTitle": "VPN Authentication Failures",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Strong customer authentication",
+        "version": "Directive (EU) 2015/2366",
+        "why": "Clause Art.97 (Strong customer authentication) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "Art.95",
+        "killerUcId": "12.3.2",
+        "killerUcTitle": "Dependency Vulnerability Alerts",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Management of operational and security risks",
+        "version": "Directive (EU) 2015/2366",
+        "why": "Clause Art.95 (Management of operational and security risks) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "Art.95",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "12.3.2",
+            "ucTitle": "Dependency Vulnerability Alerts"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.22.13",
+            "ucTitle": "TPP Access Monitoring for AIS/PIS Traffic (RTS APIs)"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.22.14",
+            "ucTitle": "Open Banking API Rate Limiting and Throttle Breaches"
+          }
+        ],
+        "topic": "Management of operational and security risks",
+        "version": "Directive (EU) 2015/2366"
+      },
+      {
+        "clause": "Art.96",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.22.25",
+            "ucTitle": "Major Incident Notification Readiness to NCA (Payment Service)"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "16.3.6",
+            "ucTitle": "Major Incident and Post-Mortem Tracking"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.22.26",
+            "ucTitle": "Operational vs Security Incident Classification Consistency"
+          }
+        ],
+        "topic": "Incident reporting",
+        "version": "Directive (EU) 2015/2366"
+      },
+      {
+        "clause": "Art.97",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "9.1.1",
+            "ucTitle": "Brute-Force Login Detection"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.22.8",
+            "ucTitle": "Unauthorized Transaction Claims and Dispute Intake Velocity"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.22.12",
+            "ucTitle": "Account Takeover Signals Linked to Payment Instrument Changes"
+          }
+        ],
+        "topic": "Strong customer authentication",
+        "version": "Directive (EU) 2015/2366"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "EU"
+  ],
+  "narrative": {
+    "evidencePack": null,
+    "matchedBy": "fuzzy-shortname",
+    "name": "PSD2 payments",
+    "primer": null,
+    "splunkValue": "We watch SCA challenge rates by channel, detect fraud patterns in real time, monitor third-party API access to Open Banking interfaces, and evidence major-incident reporting to national competent authorities within EBA timelines.",
+    "whatItIs": "The EU's Payment Services Directive (2). It mandates Strong Customer Authentication for electronic payments, forces banks to open APIs to licensed third parties, and introduces a common major-incident reporting regime under the EBA guidelines.",
+    "whoItAffects": "Banks, payment institutions, electronic money institutions, and licensed third-party providers (account information service providers and payment initiation service providers) operating in the EEA."
+  },
+  "narrativeRef": "non-technical-view.js#cat-22/area/psd2-payments",
+  "regulationId": "psd2",
+  "regulationName": "Revised Payment Services Directive",
+  "regulationShortName": "PSD2",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=psd2",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#psd2",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/psd2.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

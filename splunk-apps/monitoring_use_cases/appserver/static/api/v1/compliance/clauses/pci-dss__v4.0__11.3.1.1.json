@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 1,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "11.3.1.1",
+  "clauseId": "pci-dss@v4.0#11.3.1.1",
+  "coverageState": "covered-full",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "PCI 11.3.1.1 internal vulnerability scans every three months; this UC measures coverage.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that PCI-DSS 11.3.1.1 is enforced — Splunk UC-22.43.4: Scanner coverage gap — regulated hosts without a recent scan.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.43.4' running on Vulnerability scanner inventory, asset_inventory.csv with regulated flag, per-tier SLA lookup., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.43.4",
+      "ucTitle": "Scanner coverage gap — regulated hosts without a recent scan"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/pci-dss__v4.0__11.3.1.1.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "pci-dss",
+  "regulationName": "pci-dss",
+  "regulationShortName": "pci-dss",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/pci-dss.json",
+    "regulationVersion": "/api/v1/compliance/regulations/pci-dss@v4.0.json",
+    "story": "/api/v1/compliance/story/pci-dss.json"
+  },
+  "tier": null,
+  "topAssurance": "full",
+  "topic": null,
+  "version": "v4.0"
+}

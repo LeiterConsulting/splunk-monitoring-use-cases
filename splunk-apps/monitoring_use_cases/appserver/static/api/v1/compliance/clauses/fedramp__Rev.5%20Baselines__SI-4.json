@@ -1,0 +1,99 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 4,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.fedramp.gov/baselines/#SI-4",
+  "clause": "SI-4",
+  "clauseId": "fedramp@Rev.5 Baselines#SI-4",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 4,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "FedRAMP Rev.5 Baselines SI-4 System monitoring — auditd rule violations are the canonical Linux system-monitoring signal for FedRAMP SI-4 evidence.",
+      "category": 1,
+      "clauseUrl": "https://www.fedramp.gov/baselines/",
+      "controlObjective": "Evidence that FedRAMP SI-4 (System monitoring) is enforced — Splunk UC-1.1.65: Auditd Rule Violation Detection.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-1.1.65' running on sourcetype=linux_audit, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "1.1.65",
+      "ucTitle": "Auditd Rule Violation Detection"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "FedRAMP Rev.5 Baselines SI-4 System monitoring — privilege-escalation detection is called out explicitly as an SI-4(2) indicator of unauthorised use.",
+      "category": 1,
+      "clauseUrl": "https://www.fedramp.gov/baselines/",
+      "controlObjective": "Detects violations of FedRAMP SI-4 (System monitoring) — Splunk UC-1.1.76: Privilege Escalation Detection.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-1.1.76' running on sourcetype=linux_secure, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "detects-violation-of",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "1.1.76",
+      "ucTitle": "Privilege Escalation Detection"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "FedRAMP Rev.5 Baselines SI-4 System monitoring — process/command-line auditing is the canonical host-level input for system-monitoring correlation under FedRAMP.",
+      "category": 1,
+      "clauseUrl": "https://www.fedramp.gov/baselines/",
+      "controlObjective": "Evidence that FedRAMP SI-4 (System monitoring) is enforced — Splunk UC-1.2.51: Process Creation with Command Line Auditing.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-1.2.51' running on sourcetype=WinEventLog:Security (EventCode 4688), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "1.2.51",
+      "ucTitle": "Process Creation with Command Line Auditing"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "FedRAMP Rev.5 Baselines SI-4 System monitoring — unauthorized cloud API call detection is expected CloudTrail-based evidence for SI-4.",
+      "category": 4,
+      "clauseUrl": "https://www.fedramp.gov/baselines/",
+      "controlObjective": "Detects violations of FedRAMP SI-4 (System monitoring) — Splunk UC-4.1.1: Unauthorized API Calls.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-4.1.1' running on sourcetype=aws:cloudtrail, CloudTrail logs, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "detects-violation-of",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "4.1.1",
+      "ucTitle": "Unauthorized API Calls"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/fedramp__Rev.5%20Baselines__SI-4.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "detects-violation-of": 2,
+    "satisfies": 2
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "fedramp",
+  "regulationName": "Federal Risk and Authorization Management Program",
+  "regulationShortName": "FedRAMP",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/fedramp.json",
+    "regulationVersion": "/api/v1/compliance/regulations/fedramp@Rev.5%20Baselines.json",
+    "story": "/api/v1/compliance/story/fedramp.json"
+  },
+  "tier": 2,
+  "topAssurance": "partial",
+  "topic": "System monitoring",
+  "version": "Rev.5 Baselines"
+}

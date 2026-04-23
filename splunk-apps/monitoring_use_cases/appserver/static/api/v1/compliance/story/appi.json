@@ -1,0 +1,190 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 9,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.23",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.29.19",
+        "22.29.20",
+        "22.29.21",
+        "22.29.22",
+        "22.29.23",
+        "22.29.24",
+        "22.35.2",
+        "22.35.3",
+        "22.41.1"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Security control action",
+      "version": "2022 amendments"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 4,
+        "full": 0,
+        "partial": 3
+      },
+      "clause": "Art.26",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.29.10",
+        "22.29.11",
+        "22.29.7",
+        "22.29.8",
+        "22.39.1",
+        "22.39.2",
+        "22.39.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Leakage reporting",
+      "version": "2022 amendments"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "2 of 2 common clauses are covered by the catalogue, with a priority-weighted coverage of 37.5% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoveragePercent": 37.5,
+      "stateCounts": {
+        "contributing-only": 1,
+        "covered-full": 0,
+        "covered-partial": 1,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "Art.26",
+        "killerUcId": "22.29.10",
+        "killerUcTitle": "Authority reporting package completeness",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Leakage reporting",
+        "version": "2022 amendments",
+        "why": "Clause Art.26 (Leakage reporting) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "Art.23",
+        "killerUcId": "22.29.19",
+        "killerUcTitle": "DPO appointment and coverage compliance",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Security control action",
+        "version": "2022 amendments",
+        "why": "Clause Art.23 (Security control action) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "Art.23",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.29.21",
+            "ucTitle": "Privacy impact assessment tracking"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.35.2",
+            "ucTitle": "Log tamper detection via write-once-read-many chain-of-custody"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.41.1",
+            "ucTitle": "Encryption-at-rest coverage gap — unencrypted storage with regulated data"
+          }
+        ],
+        "topic": "Security control action",
+        "version": "2022 amendments"
+      },
+      {
+        "clause": "Art.26",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.29.11",
+            "ucTitle": "Breach register maintenance and linkage"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.39.1",
+            "ucTitle": "Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA)"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.29.10",
+            "ucTitle": "Authority reporting package completeness"
+          }
+        ],
+        "topic": "Leakage reporting",
+        "version": "2022 amendments"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "JP"
+  ],
+  "narrative": null,
+  "narrativeRef": null,
+  "regulationId": "appi",
+  "regulationName": "Japan Act on the Protection of Personal Information",
+  "regulationShortName": "APPI",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=appi",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#appi",
+    "evidencePack": null,
+    "primerAnchor": "docs/regulatory-primer.md#55-appi-gdpr-mapped-mode",
+    "regulation": "/api/v1/compliance/regulations/appi.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

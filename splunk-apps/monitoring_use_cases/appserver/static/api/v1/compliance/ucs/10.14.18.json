@@ -1,0 +1,56 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/10.14.18.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/10.14.18.json",
+    "sourcePath": "content/cat-10-security-infrastructure/UC-10.14.18.json"
+  },
+  "apiVersion": "v1",
+  "app": "OT Security Add-on for Splunk (Splunkbase 5151)",
+  "cimModels": [
+    "N/A"
+  ],
+  "compliance": [
+    {
+      "assurance": "contributing",
+      "assurance_rationale": "Auto-generated from legacy markdown 'Regulations' line during the per-UC migration. Requires SME review to fill in version, clause, mode, and assurance for NERC CIP.",
+      "clause": "unknown",
+      "controlObjective": "Evidence that NERC CIP unknown is enforced — Splunk UC-10.14.18: NERC CIP System Security Management Patch Tracking.",
+      "evidenceArtifact": "Saved search 'UC-10.14.18' running on index=ot_security vulnerability/patch feeds with bes_asset=1, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "nerc-cip@unknown#unknown",
+      "provenance": "maintainer",
+      "regulation": "NERC CIP",
+      "requires_sme_review": true,
+      "version": "unknown"
+    }
+  ],
+  "criticality": "high",
+  "dataSources": "`index=ot_security` vulnerability/patch feeds with `bes_asset=1`",
+  "description": "Supports NERC CIP-007 by tracking patch status and timelines for BES Cyber Assets, reducing exploitable vulnerabilities on cyber systems.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: OT Security Add-on for Splunk (Splunkbase 5151).\n• Ensure the following data sources are available: `index=ot_security` vulnerability/patch feeds with `bes_asset=1`.\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\nIntegrate patch and vulnerability scanners with Splunk ES and OT Security Add-on for BES asset groups. Document evaluation intervals per CIP-007. Drive remediation tickets from overdue findings.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=ot_security sourcetype=\"ot:security:patch\" bes_asset=1\n| eval overdue=if(patch_available=1 AND now()>deadline AND applied=0, 1, 0)\n| stats values(cve) as cves max(severity_score) as max_sev by asset_id, hostname, deadline, applied\n| where overdue=1 OR (max_sev>=7 AND applied=0)\n| eval cip_standard=\"CIP-007\"\n| table cip_standard, asset_id, hostname, cves, max_sev, deadline, applied\n```\n\nUnderstanding this SPL\n\n**NERC CIP System Security Management Patch Tracking** — Supports NERC CIP-007 by tracking patch status and timelines for BES Cyber Assets, reducing exploitable vulnerabilities on cyber systems.\n\nDocumented **Data sources**: `index=ot_security` vulnerability/patch feeds with `bes_asset=1`. **App/TA** (typical add-on context): OT Security Add-on for Splunk (Splunkbase 5151). The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: ot_security; **sourcetype**: ot:security:patch. If that sourcetype is not mentioned in Data sources, double-check parsing or update the documentation to match the feed you actually ingest.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=ot_security, sourcetype=\"ot:security:patch\". Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• `eval` defines or adjusts **overdue** — often to normalize units, derive a ratio, or prepare for thresholds.\n• `stats` rolls up events into metrics; results are split **by asset_id, hostname, deadline, applied** so each row reflects one combination of those dimensions (useful for per-host, per-user, or per-entity comparisons for this use case).\n• Filters the current rows with `where overdue=1 OR (max_sev>=7 AND applied=0)` — typically the threshold or rule expression for this monitoring goal.\n• `eval` defines or adjusts **cip_standard** — often to normalize units, derive a ratio, or prepare for thresholds.\n• Pipeline stage (see **NERC CIP System Security Management Patch Tracking**): table cip_standard, asset_id, hostname, cves, max_sev, deadline, applied\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Gauge of patch compliance %, Timeline to deadlines, Treemap by severity.",
+  "difficulty": "advanced",
+  "grandmaExplanation": "Supports NERC CIP-007 by tracking patch status and timelines for BES Cyber Assets, reducing exploitable vulnerabilities on cyber systems — so we know when protection is off, out of date, or bypassed.",
+  "id": "10.14.18",
+  "implementation": "Integrate patch and vulnerability scanners with Splunk ES and OT Security Add-on for BES asset groups. Document evaluation intervals per CIP-007. Drive remediation tickets from overdue findings.",
+  "knownFalsePositives": "Administrative tasks, scheduled jobs or platform updates can match this pattern — correlate with change management, maintenance windows and user role before raising severity.",
+  "monitoringType": [
+    "Compliance",
+    "Security"
+  ],
+  "premiumApps": [
+    "Splunk OT Security Add-on"
+  ],
+  "references": [
+    {
+      "title": "OT Security Add-on for Splunk",
+      "url": "https://splunkbase.splunk.com/app/5151"
+    }
+  ],
+  "spl": "index=ot_security sourcetype=\"ot:security:patch\" bes_asset=1\n| eval overdue=if(patch_available=1 AND now()>deadline AND applied=0, 1, 0)\n| stats values(cve) as cves max(severity_score) as max_sev by asset_id, hostname, deadline, applied\n| where overdue=1 OR (max_sev>=7 AND applied=0)\n| eval cip_standard=\"CIP-007\"\n| table cip_standard, asset_id, hostname, cves, max_sev, deadline, applied",
+  "splunkPillar": "Security",
+  "title": "NERC CIP System Security Management Patch Tracking",
+  "value": "Supports NERC CIP-007 by tracking patch status and timelines for BES Cyber Assets, reducing exploitable vulnerabilities on cyber systems.",
+  "visualization": "Gauge of patch compliance %, Timeline to deadlines, Treemap by severity."
+}

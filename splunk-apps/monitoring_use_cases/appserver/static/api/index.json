@@ -1,0 +1,140 @@
+[
+  {
+    "number": 1,
+    "name": "Server & Compute",
+    "subcategory_count": 4,
+    "uc_count": 275
+  },
+  {
+    "number": 2,
+    "name": "Virtualization",
+    "subcategory_count": 6,
+    "uc_count": 124
+  },
+  {
+    "number": 3,
+    "name": "Containers & Orchestration",
+    "subcategory_count": 6,
+    "uc_count": 115
+  },
+  {
+    "number": 4,
+    "name": "Cloud Infrastructure",
+    "subcategory_count": 6,
+    "uc_count": 227
+  },
+  {
+    "number": 5,
+    "name": "Network Infrastructure",
+    "subcategory_count": 12,
+    "uc_count": 354
+  },
+  {
+    "number": 6,
+    "name": "Storage & Backup",
+    "subcategory_count": 4,
+    "uc_count": 81
+  },
+  {
+    "number": 7,
+    "name": "Database & Data Platforms",
+    "subcategory_count": 6,
+    "uc_count": 122
+  },
+  {
+    "number": 8,
+    "name": "Application Infrastructure",
+    "subcategory_count": 7,
+    "uc_count": 106
+  },
+  {
+    "number": 9,
+    "name": "Identity & Access Management",
+    "subcategory_count": 7,
+    "uc_count": 104
+  },
+  {
+    "number": 10,
+    "name": "Security Infrastructure",
+    "subcategory_count": 16,
+    "uc_count": 2402
+  },
+  {
+    "number": 11,
+    "name": "Email & Collaboration",
+    "subcategory_count": 5,
+    "uc_count": 107
+  },
+  {
+    "number": 12,
+    "name": "DevOps & CI/CD",
+    "subcategory_count": 6,
+    "uc_count": 88
+  },
+  {
+    "number": 13,
+    "name": "Observability & Monitoring Stack",
+    "subcategory_count": 5,
+    "uc_count": 143
+  },
+  {
+    "number": 14,
+    "name": "IoT & Operational Technology (OT)",
+    "subcategory_count": 9,
+    "uc_count": 230
+  },
+  {
+    "number": 15,
+    "name": "Data Center Physical Infrastructure",
+    "subcategory_count": 3,
+    "uc_count": 81
+  },
+  {
+    "number": 16,
+    "name": "Service Management & ITSM",
+    "subcategory_count": 5,
+    "uc_count": 81
+  },
+  {
+    "number": 17,
+    "name": "Network Security & Zero Trust",
+    "subcategory_count": 3,
+    "uc_count": 105
+  },
+  {
+    "number": 18,
+    "name": "Data Center Fabric & SDN",
+    "subcategory_count": 4,
+    "uc_count": 76
+  },
+  {
+    "number": 19,
+    "name": "Compute Infrastructure (HCI & Converged)",
+    "subcategory_count": 3,
+    "uc_count": 72
+  },
+  {
+    "number": 20,
+    "name": "Cost & Capacity Management",
+    "subcategory_count": 3,
+    "uc_count": 77
+  },
+  {
+    "number": 21,
+    "name": "Industry Verticals",
+    "subcategory_count": 10,
+    "uc_count": 129
+  },
+  {
+    "number": 22,
+    "name": "Regulatory and Compliance Frameworks",
+    "subcategory_count": 70,
+    "uc_count": 1310
+  },
+  {
+    "number": 23,
+    "name": "Business Analytics & Executive Intelligence",
+    "subcategory_count": 9,
+    "uc_count": 63
+  }
+]

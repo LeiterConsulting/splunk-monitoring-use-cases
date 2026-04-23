@@ -1,0 +1,49 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 3,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "postgresql",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "PostgreSQL",
+  "models": [
+    {
+      "id": "postgresql_pg",
+      "label": "PostgreSQL",
+      "modelId": "pg",
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "7.6.1",
+        "7.6.3"
+      ]
+    },
+    {
+      "id": "postgresql_pgbouncer",
+      "label": "PgBouncer",
+      "modelId": "pgbouncer",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "7.1.24"
+      ]
+    }
+  ],
+  "regulationIds": [],
+  "regulations": [],
+  "useCaseCount": 3,
+  "useCaseIds": [
+    "7.1.24",
+    "7.6.1",
+    "7.6.3"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 7,
+      "useCaseCount": 3,
+      "useCaseIds": [
+        "7.1.24",
+        "7.6.1",
+        "7.6.3"
+      ]
+    }
+  ]
+}

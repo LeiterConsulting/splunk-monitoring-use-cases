@@ -1,0 +1,218 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 21,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "mssql",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Microsoft SQL Server",
+  "models": [],
+  "regulationIds": [
+    "fda-part-11",
+    "gdpr",
+    "hipaa-security",
+    "iso-27001",
+    "nerc-cip",
+    "pci-dss",
+    "sox-itgc"
+  ],
+  "regulations": [
+    {
+      "clauseMappings": [
+        {
+          "clause": "§11.10(e)",
+          "useCaseId": "7.1.13",
+          "version": "current"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/fda-part-11.json",
+      "regulationId": "fda-part-11",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "7.1.13"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "Art.32",
+          "useCaseId": "22.1.10",
+          "version": "2016/679"
+        },
+        {
+          "clause": "Art.5(1)(f)",
+          "useCaseId": "22.1.10",
+          "version": "2016/679"
+        },
+        {
+          "clause": "Art.30",
+          "useCaseId": "22.1.43",
+          "version": "2016/679"
+        },
+        {
+          "clause": "Art.5(2)",
+          "useCaseId": "22.1.43",
+          "version": "2016/679"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/gdpr.json",
+      "regulationId": "gdpr",
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "22.1.10",
+        "22.1.43"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "§164.312(a)(2)(iv)",
+          "useCaseId": "22.10.16",
+          "version": "2013-final"
+        },
+        {
+          "clause": "§164.312(c)(1)",
+          "useCaseId": "22.10.18",
+          "version": "2013-final"
+        },
+        {
+          "clause": "§164.312(b)",
+          "useCaseId": "22.10.36",
+          "version": "2013-final"
+        },
+        {
+          "clause": "§164.502(b)",
+          "useCaseId": "22.10.36",
+          "version": "2013-final"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/hipaa-security.json",
+      "regulationId": "hipaa-security",
+      "useCaseCount": 3,
+      "useCaseIds": [
+        "22.10.16",
+        "22.10.18",
+        "22.10.36"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "A.8.14",
+          "useCaseId": "22.6.37",
+          "version": "2022"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/iso-27001.json",
+      "regulationId": "iso-27001",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.6.37"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "CIP-010-4 R1",
+          "useCaseId": "7.1.13",
+          "version": "current"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/nerc-cip.json",
+      "regulationId": "nerc-cip",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "7.1.13"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "8.2.1",
+          "useCaseId": "22.11.43",
+          "version": "v4.0"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/pci-dss.json",
+      "regulationId": "pci-dss",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.11.43"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "ITGC.ChangeMgmt.Authorization",
+          "useCaseId": "7.1.13",
+          "version": "PCAOB AS 2201"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/sox-itgc.json",
+      "regulationId": "sox-itgc",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "7.1.13"
+      ]
+    }
+  ],
+  "useCaseCount": 21,
+  "useCaseIds": [
+    "7.1.1",
+    "7.1.2",
+    "7.1.6",
+    "7.1.7",
+    "7.1.10",
+    "7.1.12",
+    "7.1.13",
+    "7.1.15",
+    "7.1.31",
+    "7.6.1",
+    "7.6.2",
+    "7.6.3",
+    "7.6.4",
+    "7.6.5",
+    "22.1.10",
+    "22.1.43",
+    "22.6.37",
+    "22.10.16",
+    "22.10.18",
+    "22.10.36",
+    "22.11.43"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 7,
+      "useCaseCount": 14,
+      "useCaseIds": [
+        "7.1.1",
+        "7.1.2",
+        "7.1.6",
+        "7.1.7",
+        "7.1.10",
+        "7.1.12",
+        "7.1.13",
+        "7.1.15",
+        "7.1.31",
+        "7.6.1",
+        "7.6.2",
+        "7.6.3",
+        "7.6.4",
+        "7.6.5"
+      ]
+    },
+    {
+      "category": 22,
+      "useCaseCount": 7,
+      "useCaseIds": [
+        "22.1.10",
+        "22.1.43",
+        "22.6.37",
+        "22.10.16",
+        "22.10.18",
+        "22.10.36",
+        "22.11.43"
+      ]
+    }
+  ]
+}

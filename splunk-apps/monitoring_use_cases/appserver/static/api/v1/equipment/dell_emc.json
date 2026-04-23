@@ -1,0 +1,67 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 7,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "dell_emc",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Dell EMC Storage",
+  "models": [],
+  "regulationIds": [
+    "nist-800-53"
+  ],
+  "regulations": [
+    {
+      "clauseMappings": [
+        {
+          "clause": "SI-3",
+          "useCaseId": "22.14.35",
+          "version": "Rev. 5"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/nist-800-53.json",
+      "regulationId": "nist-800-53",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.14.35"
+      ]
+    }
+  ],
+  "useCaseCount": 7,
+  "useCaseIds": [
+    "6.1.11",
+    "6.1.12",
+    "6.4.13",
+    "11.3.49",
+    "11.3.50",
+    "11.4.1",
+    "22.14.35"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 6,
+      "useCaseCount": 3,
+      "useCaseIds": [
+        "6.1.11",
+        "6.1.12",
+        "6.4.13"
+      ]
+    },
+    {
+      "category": 11,
+      "useCaseCount": 3,
+      "useCaseIds": [
+        "11.3.49",
+        "11.3.50",
+        "11.4.1"
+      ]
+    },
+    {
+      "category": 22,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.14.35"
+      ]
+    }
+  ]
+}

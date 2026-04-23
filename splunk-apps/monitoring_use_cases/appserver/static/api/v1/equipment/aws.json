@@ -1,0 +1,2276 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 329,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "aws",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Amazon Web Services (AWS)",
+  "models": [],
+  "regulationIds": [
+    "appi",
+    "apra-cps-234",
+    "au-privacy-act",
+    "bait-kait",
+    "ccpa",
+    "cjis",
+    "cmmc",
+    "dora",
+    "eu-ai-act",
+    "fca-smcr",
+    "fca-ss1-21",
+    "fedramp",
+    "fisma",
+    "gdpr",
+    "hitrust",
+    "hkma-tm-g-2",
+    "iso-27001",
+    "lgpd",
+    "mas-trm",
+    "nis2",
+    "nist-800-53",
+    "nist-csf",
+    "pci-dss",
+    "pipl",
+    "pra-ss2-21",
+    "psd2",
+    "rbi-cyber",
+    "sama-csf",
+    "sg-pdpa",
+    "soc-2",
+    "uk-cyber-essentials",
+    "uk-nis"
+  ],
+  "regulations": [
+    {
+      "clauseMappings": [
+        {
+          "clause": "Art.26",
+          "useCaseId": "22.29.7",
+          "version": "2022 amendments"
+        },
+        {
+          "clause": "Art.26",
+          "useCaseId": "22.29.8",
+          "version": "2022 amendments"
+        },
+        {
+          "clause": "Art.26",
+          "useCaseId": "22.29.10",
+          "version": "2022 amendments"
+        },
+        {
+          "clause": "Art.26",
+          "useCaseId": "22.29.11",
+          "version": "2022 amendments"
+        },
+        {
+          "clause": "Art.23",
+          "useCaseId": "22.29.19",
+          "version": "2022 amendments"
+        },
+        {
+          "clause": "Art.23",
+          "useCaseId": "22.29.20",
+          "version": "2022 amendments"
+        },
+        {
+          "clause": "Art.23",
+          "useCaseId": "22.29.21",
+          "version": "2022 amendments"
+        },
+        {
+          "clause": "Art.23",
+          "useCaseId": "22.29.22",
+          "version": "2022 amendments"
+        },
+        {
+          "clause": "Art.23",
+          "useCaseId": "22.29.23",
+          "version": "2022 amendments"
+        },
+        {
+          "clause": "Art.23",
+          "useCaseId": "22.29.24",
+          "version": "2022 amendments"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/appi.json",
+      "regulationId": "appi",
+      "useCaseCount": 10,
+      "useCaseIds": [
+        "22.29.7",
+        "22.29.8",
+        "22.29.10",
+        "22.29.11",
+        "22.29.19",
+        "22.29.20",
+        "22.29.21",
+        "22.29.22",
+        "22.29.23",
+        "22.29.24"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "23",
+          "useCaseId": "22.30.19",
+          "version": "current"
+        },
+        {
+          "clause": "23",
+          "useCaseId": "22.30.20",
+          "version": "current"
+        },
+        {
+          "clause": "15",
+          "useCaseId": "22.30.21",
+          "version": "current"
+        },
+        {
+          "clause": "36",
+          "useCaseId": "22.30.22",
+          "version": "current"
+        },
+        {
+          "clause": "23",
+          "useCaseId": "22.30.23",
+          "version": "current"
+        },
+        {
+          "clause": "23",
+          "useCaseId": "22.30.24",
+          "version": "current"
+        },
+        {
+          "clause": "23",
+          "useCaseId": "22.30.25",
+          "version": "current"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/apra-cps-234.json",
+      "regulationId": "apra-cps-234",
+      "useCaseCount": 7,
+      "useCaseIds": [
+        "22.30.19",
+        "22.30.20",
+        "22.30.21",
+        "22.30.22",
+        "22.30.23",
+        "22.30.24",
+        "22.30.25"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "§26WK",
+          "useCaseId": "22.29.7",
+          "version": "current"
+        },
+        {
+          "clause": "§26WK",
+          "useCaseId": "22.29.8",
+          "version": "current"
+        },
+        {
+          "clause": "§26WK",
+          "useCaseId": "22.29.9",
+          "version": "current"
+        },
+        {
+          "clause": "§26WK",
+          "useCaseId": "22.29.10",
+          "version": "current"
+        },
+        {
+          "clause": "§26WK",
+          "useCaseId": "22.29.11",
+          "version": "current"
+        },
+        {
+          "clause": "§26WK",
+          "useCaseId": "22.29.12",
+          "version": "current"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/au-privacy-act.json",
+      "regulationId": "au-privacy-act",
+      "useCaseCount": 6,
+      "useCaseIds": [
+        "22.29.7",
+        "22.29.8",
+        "22.29.9",
+        "22.29.10",
+        "22.29.11",
+        "22.29.12"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "§5",
+          "useCaseId": "4.1.4",
+          "version": "Aug 2021"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/bait-kait.json",
+      "regulationId": "bait-kait",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "4.1.4"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "§1798.115",
+          "useCaseId": "22.4.5",
+          "version": "CPRA (as amended)"
+        },
+        {
+          "clause": "§1798.99.80",
+          "useCaseId": "22.4.5",
+          "version": "CPRA (as amended)"
+        },
+        {
+          "clause": "§1798.121",
+          "useCaseId": "22.4.9",
+          "version": "CPRA (as amended)"
+        },
+        {
+          "clause": "§1798.120",
+          "useCaseId": "22.4.14",
+          "version": "CPRA (as amended)"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/ccpa.json",
+      "regulationId": "ccpa",
+      "useCaseCount": 3,
+      "useCaseIds": [
+        "22.4.5",
+        "22.4.9",
+        "22.4.14"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "5.5.1",
+          "useCaseId": "4.1.4",
+          "version": "v5.9.4"
+        },
+        {
+          "clause": "5.5.1",
+          "useCaseId": "22.32.22",
+          "version": "v5.9.4"
+        },
+        {
+          "clause": "5.5.1",
+          "useCaseId": "22.32.23",
+          "version": "v5.9.4"
+        },
+        {
+          "clause": "5.5.1",
+          "useCaseId": "22.32.24",
+          "version": "v5.9.4"
+        },
+        {
+          "clause": "5.5.1",
+          "useCaseId": "22.32.25",
+          "version": "v5.9.4"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/cjis.json",
+      "regulationId": "cjis",
+      "useCaseCount": 5,
+      "useCaseIds": [
+        "4.1.4",
+        "22.32.22",
+        "22.32.23",
+        "22.32.24",
+        "22.32.25"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "AC.L2-3.1.1",
+          "useCaseId": "22.32.17",
+          "version": "2.0"
+        },
+        {
+          "clause": "AC.L2-3.1.1",
+          "useCaseId": "22.32.18",
+          "version": "2.0"
+        },
+        {
+          "clause": "AU.L2-3.3.5",
+          "useCaseId": "22.32.19",
+          "version": "2.0"
+        },
+        {
+          "clause": "AC.L2-3.1.1",
+          "useCaseId": "22.32.20",
+          "version": "2.0"
+        },
+        {
+          "clause": "SI.L2-3.14.6",
+          "useCaseId": "22.32.21",
+          "version": "2.0"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/cmmc.json",
+      "regulationId": "cmmc",
+      "useCaseCount": 5,
+      "useCaseIds": [
+        "22.32.17",
+        "22.32.18",
+        "22.32.19",
+        "22.32.20",
+        "22.32.21"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "Art.28(3)",
+          "useCaseId": "22.3.13",
+          "version": "Regulation (EU) 2022/2554"
+        },
+        {
+          "clause": "Art.28(8)",
+          "useCaseId": "22.3.18",
+          "version": "Regulation (EU) 2022/2554"
+        },
+        {
+          "clause": "Art.17",
+          "useCaseId": "22.3.23",
+          "version": "Regulation (EU) 2022/2554"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/dora.json",
+      "regulationId": "dora",
+      "useCaseCount": 3,
+      "useCaseIds": [
+        "22.3.13",
+        "22.3.18",
+        "22.3.23"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "Art.13",
+          "useCaseId": "22.21.18",
+          "version": "Regulation (EU) 2024/1689"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/eu-ai-act.json",
+      "regulationId": "eu-ai-act",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.21.18"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "SMR 1",
+          "useCaseId": "22.27.24",
+          "version": "current"
+        },
+        {
+          "clause": "SMR 1",
+          "useCaseId": "22.27.25",
+          "version": "current"
+        },
+        {
+          "clause": "COCON 2",
+          "useCaseId": "22.27.26",
+          "version": "current"
+        },
+        {
+          "clause": "SMR 1",
+          "useCaseId": "22.27.27",
+          "version": "current"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/fca-smcr.json",
+      "regulationId": "fca-smcr",
+      "useCaseCount": 4,
+      "useCaseIds": [
+        "22.27.24",
+        "22.27.25",
+        "22.27.26",
+        "22.27.27"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "§1.1",
+          "useCaseId": "22.27.11",
+          "version": "2021"
+        },
+        {
+          "clause": "§2.1",
+          "useCaseId": "22.27.12",
+          "version": "2021"
+        },
+        {
+          "clause": "§1.1",
+          "useCaseId": "22.27.13",
+          "version": "2021"
+        },
+        {
+          "clause": "§3.1",
+          "useCaseId": "22.27.14",
+          "version": "2021"
+        },
+        {
+          "clause": "§1.1",
+          "useCaseId": "22.27.15",
+          "version": "2021"
+        },
+        {
+          "clause": "§1.1",
+          "useCaseId": "22.27.16",
+          "version": "2021"
+        },
+        {
+          "clause": "§1.1",
+          "useCaseId": "22.27.17",
+          "version": "2021"
+        },
+        {
+          "clause": "§1.1",
+          "useCaseId": "22.27.18",
+          "version": "2021"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/fca-ss1-21.json",
+      "regulationId": "fca-ss1-21",
+      "useCaseCount": 8,
+      "useCaseIds": [
+        "22.27.11",
+        "22.27.12",
+        "22.27.13",
+        "22.27.14",
+        "22.27.15",
+        "22.27.16",
+        "22.27.17",
+        "22.27.18"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "AU-6",
+          "useCaseId": "4.1.1",
+          "version": "Rev.5 Baselines"
+        },
+        {
+          "clause": "SI-4",
+          "useCaseId": "4.1.1",
+          "version": "Rev.5 Baselines"
+        },
+        {
+          "clause": "AC-2",
+          "useCaseId": "4.1.4",
+          "version": "Rev.5 Baselines"
+        },
+        {
+          "clause": "unknown",
+          "useCaseId": "10.12.39",
+          "version": "unknown"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/fedramp.json",
+      "regulationId": "fedramp",
+      "useCaseCount": 3,
+      "useCaseIds": [
+        "4.1.1",
+        "4.1.4",
+        "10.12.39"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "§3554(b)(5)",
+          "useCaseId": "22.19.1",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(5)",
+          "useCaseId": "22.19.2",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(5)",
+          "useCaseId": "22.19.3",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(5)",
+          "useCaseId": "22.19.4",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(5)",
+          "useCaseId": "22.19.5",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(1)",
+          "useCaseId": "22.19.6",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(1)",
+          "useCaseId": "22.19.7",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(1)",
+          "useCaseId": "22.19.8",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(1)",
+          "useCaseId": "22.19.9",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(1)",
+          "useCaseId": "22.19.10",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(1)",
+          "useCaseId": "22.19.11",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(1)",
+          "useCaseId": "22.19.12",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(1)",
+          "useCaseId": "22.19.13",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(1)",
+          "useCaseId": "22.19.14",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(1)",
+          "useCaseId": "22.19.15",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(5)",
+          "useCaseId": "22.19.16",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(5)",
+          "useCaseId": "22.19.17",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(5)",
+          "useCaseId": "22.19.18",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(5)",
+          "useCaseId": "22.19.19",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(5)",
+          "useCaseId": "22.19.20",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(5)",
+          "useCaseId": "22.19.21",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(5)",
+          "useCaseId": "22.19.22",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(5)",
+          "useCaseId": "22.19.23",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(5)",
+          "useCaseId": "22.19.24",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(5)",
+          "useCaseId": "22.19.25",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(5)",
+          "useCaseId": "22.32.9",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(1)",
+          "useCaseId": "22.32.10",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(1)",
+          "useCaseId": "22.32.11",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(5)",
+          "useCaseId": "22.32.12",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(5)",
+          "useCaseId": "22.32.13",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(1)",
+          "useCaseId": "22.32.14",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(1)",
+          "useCaseId": "22.32.15",
+          "version": "2014"
+        },
+        {
+          "clause": "§3554(b)(5)",
+          "useCaseId": "22.32.16",
+          "version": "2014"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/fisma.json",
+      "regulationId": "fisma",
+      "useCaseCount": 33,
+      "useCaseIds": [
+        "22.19.1",
+        "22.19.2",
+        "22.19.3",
+        "22.19.4",
+        "22.19.5",
+        "22.19.6",
+        "22.19.7",
+        "22.19.8",
+        "22.19.9",
+        "22.19.10",
+        "22.19.11",
+        "22.19.12",
+        "22.19.13",
+        "22.19.14",
+        "22.19.15",
+        "22.19.16",
+        "22.19.17",
+        "22.19.18",
+        "22.19.19",
+        "22.19.20",
+        "22.19.21",
+        "22.19.22",
+        "22.19.23",
+        "22.19.24",
+        "22.19.25",
+        "22.32.9",
+        "22.32.10",
+        "22.32.11",
+        "22.32.12",
+        "22.32.13",
+        "22.32.14",
+        "22.32.15",
+        "22.32.16"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "Art.32(1)(a)",
+          "useCaseId": "22.1.21",
+          "version": "2016/679"
+        },
+        {
+          "clause": "Art.44",
+          "useCaseId": "22.1.38",
+          "version": "2016/679"
+        },
+        {
+          "clause": "Art.45",
+          "useCaseId": "22.1.38",
+          "version": "2016/679"
+        },
+        {
+          "clause": "Art.46",
+          "useCaseId": "22.1.38",
+          "version": "2016/679"
+        },
+        {
+          "clause": "Art.47",
+          "useCaseId": "22.1.38",
+          "version": "2016/679"
+        },
+        {
+          "clause": "Art.48",
+          "useCaseId": "22.1.38",
+          "version": "2016/679"
+        },
+        {
+          "clause": "Art.49",
+          "useCaseId": "22.1.38",
+          "version": "2016/679"
+        },
+        {
+          "clause": "Art.25(2)",
+          "useCaseId": "22.1.49",
+          "version": "2016/679"
+        },
+        {
+          "clause": "Art.5(1)(e)",
+          "useCaseId": "22.1.49",
+          "version": "2016/679"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/gdpr.json",
+      "regulationId": "gdpr",
+      "useCaseCount": 3,
+      "useCaseIds": [
+        "22.1.21",
+        "22.1.38",
+        "22.1.49"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "01.b",
+          "useCaseId": "4.1.4",
+          "version": "v11"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/hitrust.json",
+      "regulationId": "hitrust",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "4.1.4"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "§3",
+          "useCaseId": "22.30.8",
+          "version": "current"
+        },
+        {
+          "clause": "§3",
+          "useCaseId": "22.30.9",
+          "version": "current"
+        },
+        {
+          "clause": "§3",
+          "useCaseId": "22.30.10",
+          "version": "current"
+        },
+        {
+          "clause": "§3",
+          "useCaseId": "22.30.11",
+          "version": "current"
+        },
+        {
+          "clause": "§3",
+          "useCaseId": "22.30.12",
+          "version": "current"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/hkma-tm-g-2.json",
+      "regulationId": "hkma-tm-g-2",
+      "useCaseCount": 5,
+      "useCaseIds": [
+        "22.30.8",
+        "22.30.9",
+        "22.30.10",
+        "22.30.11",
+        "22.30.12"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "A.5.23",
+          "useCaseId": "22.6.13",
+          "version": "2022"
+        },
+        {
+          "clause": "A.8.10",
+          "useCaseId": "22.6.33",
+          "version": "2022"
+        },
+        {
+          "clause": "A.8.13",
+          "useCaseId": "22.6.36",
+          "version": "2022"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/iso-27001.json",
+      "regulationId": "iso-27001",
+      "useCaseCount": 3,
+      "useCaseIds": [
+        "22.6.13",
+        "22.6.33",
+        "22.6.36"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "Art.46",
+          "useCaseId": "22.32.1",
+          "version": "Lei nº 13.709/2018"
+        },
+        {
+          "clause": "Art.46",
+          "useCaseId": "22.32.2",
+          "version": "Lei nº 13.709/2018"
+        },
+        {
+          "clause": "Art.48",
+          "useCaseId": "22.32.3",
+          "version": "Lei nº 13.709/2018"
+        },
+        {
+          "clause": "Art.46",
+          "useCaseId": "22.32.4",
+          "version": "Lei nº 13.709/2018"
+        },
+        {
+          "clause": "Art.46",
+          "useCaseId": "22.32.5",
+          "version": "Lei nº 13.709/2018"
+        },
+        {
+          "clause": "Art.46",
+          "useCaseId": "22.32.6",
+          "version": "Lei nº 13.709/2018"
+        },
+        {
+          "clause": "Art.46",
+          "useCaseId": "22.32.7",
+          "version": "Lei nº 13.709/2018"
+        },
+        {
+          "clause": "Art.46",
+          "useCaseId": "22.32.8",
+          "version": "Lei nº 13.709/2018"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/lgpd.json",
+      "regulationId": "lgpd",
+      "useCaseCount": 8,
+      "useCaseIds": [
+        "22.32.1",
+        "22.32.2",
+        "22.32.3",
+        "22.32.4",
+        "22.32.5",
+        "22.32.6",
+        "22.32.7",
+        "22.32.8"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "§4.1.1",
+          "useCaseId": "22.30.1",
+          "version": "2021"
+        },
+        {
+          "clause": "§4.1.1",
+          "useCaseId": "22.30.2",
+          "version": "2021"
+        },
+        {
+          "clause": "§4.1.1",
+          "useCaseId": "22.30.3",
+          "version": "2021"
+        },
+        {
+          "clause": "§4.1.1",
+          "useCaseId": "22.30.4",
+          "version": "2021"
+        },
+        {
+          "clause": "§4.1.1",
+          "useCaseId": "22.30.5",
+          "version": "2021"
+        },
+        {
+          "clause": "§8.1.1",
+          "useCaseId": "22.30.6",
+          "version": "2021"
+        },
+        {
+          "clause": "§4.1.1",
+          "useCaseId": "22.30.7",
+          "version": "2021"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/mas-trm.json",
+      "regulationId": "mas-trm",
+      "useCaseCount": 7,
+      "useCaseIds": [
+        "22.30.1",
+        "22.30.2",
+        "22.30.3",
+        "22.30.4",
+        "22.30.5",
+        "22.30.6",
+        "22.30.7"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "Art.21(2)(d)",
+          "useCaseId": "22.2.16",
+          "version": "Directive (EU) 2022/2555"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/nis2.json",
+      "regulationId": "nis2",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.2.16"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "AC-6",
+          "useCaseId": "22.14.19",
+          "version": "Rev. 5"
+        },
+        {
+          "clause": "IA-4",
+          "useCaseId": "22.14.28",
+          "version": "Rev. 5"
+        },
+        {
+          "clause": "CA-3",
+          "useCaseId": "22.14.61",
+          "version": "Rev. 5"
+        },
+        {
+          "clause": "SC-4",
+          "useCaseId": "22.14.66",
+          "version": "Rev. 5"
+        },
+        {
+          "clause": "SC-12",
+          "useCaseId": "22.14.70",
+          "version": "Rev. 5"
+        },
+        {
+          "clause": "SC-28",
+          "useCaseId": "22.14.73",
+          "version": "Rev. 5"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/nist-800-53.json",
+      "regulationId": "nist-800-53",
+      "useCaseCount": 6,
+      "useCaseIds": [
+        "22.14.19",
+        "22.14.28",
+        "22.14.61",
+        "22.14.66",
+        "22.14.70",
+        "22.14.73"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "PR.DS-01",
+          "useCaseId": "22.7.26",
+          "version": "2.0"
+        },
+        {
+          "clause": "DE.CM-02",
+          "useCaseId": "22.7.32",
+          "version": "2.0"
+        },
+        {
+          "clause": "PR.PS-04",
+          "useCaseId": "22.7.32",
+          "version": "2.0"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/nist-csf.json",
+      "regulationId": "nist-csf",
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "22.7.26",
+        "22.7.32"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "3.6.1",
+          "useCaseId": "22.11.15",
+          "version": "v4.0"
+        },
+        {
+          "clause": "3.5.1",
+          "useCaseId": "22.11.17",
+          "version": "v4.0"
+        },
+        {
+          "clause": "3.6.4",
+          "useCaseId": "22.11.21",
+          "version": "v4.0"
+        },
+        {
+          "clause": "4.2.1",
+          "useCaseId": "22.11.22",
+          "version": "v4.0"
+        },
+        {
+          "clause": "6.4.2",
+          "useCaseId": "22.11.35",
+          "version": "v4.0"
+        },
+        {
+          "clause": "6.5.2",
+          "useCaseId": "22.11.37",
+          "version": "v4.0"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/pci-dss.json",
+      "regulationId": "pci-dss",
+      "useCaseCount": 6,
+      "useCaseIds": [
+        "22.11.15",
+        "22.11.17",
+        "22.11.21",
+        "22.11.22",
+        "22.11.35",
+        "22.11.37"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "Art.38",
+          "useCaseId": "22.29.1",
+          "version": "2021"
+        },
+        {
+          "clause": "Art.38",
+          "useCaseId": "22.29.2",
+          "version": "2021"
+        },
+        {
+          "clause": "Art.38",
+          "useCaseId": "22.29.3",
+          "version": "2021"
+        },
+        {
+          "clause": "Art.38",
+          "useCaseId": "22.29.4",
+          "version": "2021"
+        },
+        {
+          "clause": "Art.38",
+          "useCaseId": "22.29.5",
+          "version": "2021"
+        },
+        {
+          "clause": "Art.38",
+          "useCaseId": "22.29.6",
+          "version": "2021"
+        },
+        {
+          "clause": "Art.15",
+          "useCaseId": "22.29.7",
+          "version": "2021"
+        },
+        {
+          "clause": "Art.15",
+          "useCaseId": "22.29.8",
+          "version": "2021"
+        },
+        {
+          "clause": "Art.15",
+          "useCaseId": "22.29.9",
+          "version": "2021"
+        },
+        {
+          "clause": "Art.15",
+          "useCaseId": "22.29.11",
+          "version": "2021"
+        },
+        {
+          "clause": "Art.15",
+          "useCaseId": "22.29.12",
+          "version": "2021"
+        },
+        {
+          "clause": "Art.29",
+          "useCaseId": "22.29.25",
+          "version": "2021"
+        },
+        {
+          "clause": "Art.15",
+          "useCaseId": "22.29.26",
+          "version": "2021"
+        },
+        {
+          "clause": "Art.14",
+          "useCaseId": "22.29.27",
+          "version": "2021"
+        },
+        {
+          "clause": "Art.6",
+          "useCaseId": "22.29.28",
+          "version": "2021"
+        },
+        {
+          "clause": "Art.14",
+          "useCaseId": "22.29.29",
+          "version": "2021"
+        },
+        {
+          "clause": "Art.14",
+          "useCaseId": "22.29.30",
+          "version": "2021"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/pipl.json",
+      "regulationId": "pipl",
+      "useCaseCount": 17,
+      "useCaseIds": [
+        "22.29.1",
+        "22.29.2",
+        "22.29.3",
+        "22.29.4",
+        "22.29.5",
+        "22.29.6",
+        "22.29.7",
+        "22.29.8",
+        "22.29.9",
+        "22.29.11",
+        "22.29.12",
+        "22.29.25",
+        "22.29.26",
+        "22.29.27",
+        "22.29.28",
+        "22.29.29",
+        "22.29.30"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "§3.2",
+          "useCaseId": "22.27.19",
+          "version": "2021"
+        },
+        {
+          "clause": "§3.2",
+          "useCaseId": "22.27.20",
+          "version": "2021"
+        },
+        {
+          "clause": "§9",
+          "useCaseId": "22.27.21",
+          "version": "2021"
+        },
+        {
+          "clause": "§3.2",
+          "useCaseId": "22.27.22",
+          "version": "2021"
+        },
+        {
+          "clause": "§3.2",
+          "useCaseId": "22.27.23",
+          "version": "2021"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/pra-ss2-21.json",
+      "regulationId": "pra-ss2-21",
+      "useCaseCount": 5,
+      "useCaseIds": [
+        "22.27.19",
+        "22.27.20",
+        "22.27.21",
+        "22.27.22",
+        "22.27.23"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "Art.97",
+          "useCaseId": "4.1.5",
+          "version": "Directive (EU) 2015/2366"
+        },
+        {
+          "clause": "Art.95",
+          "useCaseId": "22.22.13",
+          "version": "Directive (EU) 2015/2366"
+        },
+        {
+          "clause": "Art.95",
+          "useCaseId": "22.22.14",
+          "version": "Directive (EU) 2015/2366"
+        },
+        {
+          "clause": "Art.95",
+          "useCaseId": "22.22.15",
+          "version": "Directive (EU) 2015/2366"
+        },
+        {
+          "clause": "Art.95",
+          "useCaseId": "22.22.16",
+          "version": "Directive (EU) 2015/2366"
+        },
+        {
+          "clause": "Art.95",
+          "useCaseId": "22.22.17",
+          "version": "Directive (EU) 2015/2366"
+        },
+        {
+          "clause": "Art.97",
+          "useCaseId": "22.22.18",
+          "version": "Directive (EU) 2015/2366"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/psd2.json",
+      "regulationId": "psd2",
+      "useCaseCount": 7,
+      "useCaseIds": [
+        "4.1.5",
+        "22.22.13",
+        "22.22.14",
+        "22.22.15",
+        "22.22.16",
+        "22.22.17",
+        "22.22.18"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "Annex-A",
+          "useCaseId": "22.30.13",
+          "version": "2016 (as amended)"
+        },
+        {
+          "clause": "Annex-A",
+          "useCaseId": "22.30.14",
+          "version": "2016 (as amended)"
+        },
+        {
+          "clause": "Annex-A",
+          "useCaseId": "22.30.15",
+          "version": "2016 (as amended)"
+        },
+        {
+          "clause": "Annex-A",
+          "useCaseId": "22.30.16",
+          "version": "2016 (as amended)"
+        },
+        {
+          "clause": "Annex-B",
+          "useCaseId": "22.30.17",
+          "version": "2016 (as amended)"
+        },
+        {
+          "clause": "Annex-A",
+          "useCaseId": "22.30.18",
+          "version": "2016 (as amended)"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/rbi-cyber.json",
+      "regulationId": "rbi-cyber",
+      "useCaseCount": 6,
+      "useCaseIds": [
+        "22.30.13",
+        "22.30.14",
+        "22.30.15",
+        "22.30.16",
+        "22.30.17",
+        "22.30.18"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "3.3.5",
+          "useCaseId": "4.1.1",
+          "version": "v1.0 (2017)"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/sama-csf.json",
+      "regulationId": "sama-csf",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "4.1.1"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "§26A",
+          "useCaseId": "22.29.7",
+          "version": "2020 amended"
+        },
+        {
+          "clause": "§26A",
+          "useCaseId": "22.29.8",
+          "version": "2020 amended"
+        },
+        {
+          "clause": "§26A",
+          "useCaseId": "22.29.9",
+          "version": "2020 amended"
+        },
+        {
+          "clause": "§26A",
+          "useCaseId": "22.29.10",
+          "version": "2020 amended"
+        },
+        {
+          "clause": "§24",
+          "useCaseId": "22.29.13",
+          "version": "2020 amended"
+        },
+        {
+          "clause": "§24",
+          "useCaseId": "22.29.14",
+          "version": "2020 amended"
+        },
+        {
+          "clause": "§24",
+          "useCaseId": "22.29.15",
+          "version": "2020 amended"
+        },
+        {
+          "clause": "§24",
+          "useCaseId": "22.29.16",
+          "version": "2020 amended"
+        },
+        {
+          "clause": "§24",
+          "useCaseId": "22.29.17",
+          "version": "2020 amended"
+        },
+        {
+          "clause": "§24",
+          "useCaseId": "22.29.18",
+          "version": "2020 amended"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/sg-pdpa.json",
+      "regulationId": "sg-pdpa",
+      "useCaseCount": 10,
+      "useCaseIds": [
+        "22.29.7",
+        "22.29.8",
+        "22.29.9",
+        "22.29.10",
+        "22.29.13",
+        "22.29.14",
+        "22.29.15",
+        "22.29.16",
+        "22.29.17",
+        "22.29.18"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "CC7.2",
+          "useCaseId": "22.8.20",
+          "version": "2017 TSC"
+        },
+        {
+          "clause": "CC7.2",
+          "useCaseId": "22.8.24",
+          "version": "2017 TSC"
+        },
+        {
+          "clause": "CC8.1",
+          "useCaseId": "22.8.26",
+          "version": "2017 TSC"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/soc-2.json",
+      "regulationId": "soc-2",
+      "useCaseCount": 3,
+      "useCaseIds": [
+        "22.8.20",
+        "22.8.24",
+        "22.8.26"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "CE.SAU.1",
+          "useCaseId": "4.1.5",
+          "version": "Montpellier (2025)"
+        },
+        {
+          "clause": "CE.BF.1",
+          "useCaseId": "22.27.28",
+          "version": "Montpellier (2025)"
+        },
+        {
+          "clause": "CE.SAU.1",
+          "useCaseId": "22.27.29",
+          "version": "Montpellier (2025)"
+        },
+        {
+          "clause": "CE.SAU.1",
+          "useCaseId": "22.27.30",
+          "version": "Montpellier (2025)"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/uk-cyber-essentials.json",
+      "regulationId": "uk-cyber-essentials",
+      "useCaseCount": 4,
+      "useCaseIds": [
+        "4.1.5",
+        "22.27.28",
+        "22.27.29",
+        "22.27.30"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "Reg.10",
+          "useCaseId": "22.27.1",
+          "version": "2018"
+        },
+        {
+          "clause": "Reg.10",
+          "useCaseId": "22.27.2",
+          "version": "2018"
+        },
+        {
+          "clause": "Reg.10",
+          "useCaseId": "22.27.3",
+          "version": "2018"
+        },
+        {
+          "clause": "Reg.11",
+          "useCaseId": "22.27.4",
+          "version": "2018"
+        },
+        {
+          "clause": "Reg.10",
+          "useCaseId": "22.27.5",
+          "version": "2018"
+        },
+        {
+          "clause": "Reg.10",
+          "useCaseId": "22.27.6",
+          "version": "2018"
+        },
+        {
+          "clause": "Reg.10",
+          "useCaseId": "22.27.7",
+          "version": "2018"
+        },
+        {
+          "clause": "Reg.10",
+          "useCaseId": "22.27.8",
+          "version": "2018"
+        },
+        {
+          "clause": "Reg.10",
+          "useCaseId": "22.27.9",
+          "version": "2018"
+        },
+        {
+          "clause": "Reg.10",
+          "useCaseId": "22.27.10",
+          "version": "2018"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/uk-nis.json",
+      "regulationId": "uk-nis",
+      "useCaseCount": 10,
+      "useCaseIds": [
+        "22.27.1",
+        "22.27.2",
+        "22.27.3",
+        "22.27.4",
+        "22.27.5",
+        "22.27.6",
+        "22.27.7",
+        "22.27.8",
+        "22.27.9",
+        "22.27.10"
+      ]
+    }
+  ],
+  "useCaseCount": 331,
+  "useCaseIds": [
+    "4.1.1",
+    "4.1.2",
+    "4.1.3",
+    "4.1.4",
+    "4.1.5",
+    "4.1.6",
+    "4.1.7",
+    "4.1.8",
+    "4.1.9",
+    "4.1.10",
+    "4.1.11",
+    "4.1.12",
+    "4.1.13",
+    "4.1.14",
+    "4.1.15",
+    "4.1.16",
+    "4.1.17",
+    "4.1.18",
+    "4.1.19",
+    "4.1.20",
+    "4.1.21",
+    "4.1.22",
+    "4.1.23",
+    "4.1.24",
+    "4.1.25",
+    "4.1.26",
+    "4.1.27",
+    "4.1.28",
+    "4.1.29",
+    "4.1.30",
+    "4.1.31",
+    "4.1.32",
+    "4.1.33",
+    "4.1.34",
+    "4.1.35",
+    "4.1.36",
+    "4.1.37",
+    "4.1.38",
+    "4.1.39",
+    "4.1.40",
+    "4.1.41",
+    "4.1.42",
+    "4.1.43",
+    "4.1.44",
+    "4.1.45",
+    "4.1.46",
+    "4.1.47",
+    "4.1.48",
+    "4.1.49",
+    "4.1.50",
+    "4.1.51",
+    "4.1.52",
+    "4.1.53",
+    "4.1.54",
+    "4.1.55",
+    "4.1.56",
+    "4.1.57",
+    "4.1.58",
+    "4.1.59",
+    "4.1.60",
+    "4.1.61",
+    "4.1.62",
+    "4.1.63",
+    "4.1.64",
+    "4.1.65",
+    "4.1.66",
+    "4.1.67",
+    "4.1.68",
+    "4.1.69",
+    "4.1.70",
+    "4.1.71",
+    "4.1.72",
+    "4.1.73",
+    "4.1.74",
+    "4.1.75",
+    "4.1.76",
+    "4.1.77",
+    "4.4.10",
+    "4.4.15",
+    "4.4.16",
+    "4.4.17",
+    "4.4.18",
+    "4.4.19",
+    "4.4.21",
+    "4.4.22",
+    "4.4.24",
+    "4.4.25",
+    "4.4.26",
+    "4.4.29",
+    "4.4.32",
+    "4.5.1",
+    "4.5.2",
+    "4.5.3",
+    "4.5.9",
+    "4.5.10",
+    "4.5.11",
+    "4.5.13",
+    "4.5.14",
+    "4.6.1",
+    "4.6.2",
+    "4.6.3",
+    "4.6.4",
+    "4.6.5",
+    "4.6.6",
+    "5.8.26",
+    "5.8.27",
+    "6.2.1",
+    "6.2.2",
+    "6.2.3",
+    "6.2.6",
+    "6.2.7",
+    "6.2.8",
+    "6.2.9",
+    "6.2.10",
+    "6.2.11",
+    "6.2.12",
+    "6.3.20",
+    "7.2.16",
+    "7.3.1",
+    "7.3.2",
+    "7.3.3",
+    "7.3.8",
+    "7.3.11",
+    "7.3.15",
+    "7.4.11",
+    "8.4.11",
+    "8.4.13",
+    "8.7.2",
+    "8.7.5",
+    "10.7.7",
+    "10.12.39",
+    "12.4.13",
+    "13.4.10",
+    "14.4.15",
+    "14.4.18",
+    "20.1.1",
+    "20.1.2",
+    "20.1.3",
+    "20.1.4",
+    "20.1.5",
+    "20.1.6",
+    "20.1.7",
+    "20.1.8",
+    "20.1.10",
+    "20.1.11",
+    "20.1.12",
+    "20.1.14",
+    "20.1.18",
+    "20.1.23",
+    "20.1.24",
+    "20.1.25",
+    "20.1.26",
+    "20.2.9",
+    "20.2.16",
+    "20.2.18",
+    "20.2.24",
+    "20.2.27",
+    "20.2.29",
+    "20.3.5",
+    "22.1.21",
+    "22.1.38",
+    "22.1.49",
+    "22.2.16",
+    "22.3.13",
+    "22.3.18",
+    "22.3.23",
+    "22.4.5",
+    "22.4.9",
+    "22.4.14",
+    "22.6.13",
+    "22.6.33",
+    "22.6.36",
+    "22.7.26",
+    "22.7.32",
+    "22.8.20",
+    "22.8.24",
+    "22.8.26",
+    "22.11.15",
+    "22.11.17",
+    "22.11.21",
+    "22.11.22",
+    "22.11.35",
+    "22.11.37",
+    "22.14.19",
+    "22.14.28",
+    "22.14.61",
+    "22.14.66",
+    "22.14.70",
+    "22.14.73",
+    "22.19.1",
+    "22.19.2",
+    "22.19.3",
+    "22.19.4",
+    "22.19.5",
+    "22.19.6",
+    "22.19.7",
+    "22.19.8",
+    "22.19.9",
+    "22.19.10",
+    "22.19.11",
+    "22.19.12",
+    "22.19.13",
+    "22.19.14",
+    "22.19.15",
+    "22.19.16",
+    "22.19.17",
+    "22.19.18",
+    "22.19.19",
+    "22.19.20",
+    "22.19.21",
+    "22.19.22",
+    "22.19.23",
+    "22.19.24",
+    "22.19.25",
+    "22.21.18",
+    "22.22.13",
+    "22.22.14",
+    "22.22.15",
+    "22.22.16",
+    "22.22.17",
+    "22.22.18",
+    "22.27.1",
+    "22.27.2",
+    "22.27.3",
+    "22.27.4",
+    "22.27.5",
+    "22.27.6",
+    "22.27.7",
+    "22.27.8",
+    "22.27.9",
+    "22.27.10",
+    "22.27.11",
+    "22.27.12",
+    "22.27.13",
+    "22.27.14",
+    "22.27.15",
+    "22.27.16",
+    "22.27.17",
+    "22.27.18",
+    "22.27.19",
+    "22.27.20",
+    "22.27.21",
+    "22.27.22",
+    "22.27.23",
+    "22.27.24",
+    "22.27.25",
+    "22.27.26",
+    "22.27.27",
+    "22.27.28",
+    "22.27.29",
+    "22.27.30",
+    "22.29.1",
+    "22.29.2",
+    "22.29.3",
+    "22.29.4",
+    "22.29.5",
+    "22.29.6",
+    "22.29.7",
+    "22.29.8",
+    "22.29.9",
+    "22.29.10",
+    "22.29.11",
+    "22.29.12",
+    "22.29.13",
+    "22.29.14",
+    "22.29.15",
+    "22.29.16",
+    "22.29.17",
+    "22.29.18",
+    "22.29.19",
+    "22.29.20",
+    "22.29.21",
+    "22.29.22",
+    "22.29.23",
+    "22.29.24",
+    "22.29.25",
+    "22.29.26",
+    "22.29.27",
+    "22.29.28",
+    "22.29.29",
+    "22.29.30",
+    "22.30.1",
+    "22.30.2",
+    "22.30.3",
+    "22.30.4",
+    "22.30.5",
+    "22.30.6",
+    "22.30.7",
+    "22.30.8",
+    "22.30.9",
+    "22.30.10",
+    "22.30.11",
+    "22.30.12",
+    "22.30.13",
+    "22.30.14",
+    "22.30.15",
+    "22.30.16",
+    "22.30.17",
+    "22.30.18",
+    "22.30.19",
+    "22.30.20",
+    "22.30.21",
+    "22.30.22",
+    "22.30.23",
+    "22.30.24",
+    "22.30.25",
+    "22.32.1",
+    "22.32.2",
+    "22.32.3",
+    "22.32.4",
+    "22.32.5",
+    "22.32.6",
+    "22.32.7",
+    "22.32.8",
+    "22.32.9",
+    "22.32.10",
+    "22.32.11",
+    "22.32.12",
+    "22.32.13",
+    "22.32.14",
+    "22.32.15",
+    "22.32.16",
+    "22.32.17",
+    "22.32.18",
+    "22.32.19",
+    "22.32.20",
+    "22.32.21",
+    "22.32.22",
+    "22.32.23",
+    "22.32.24",
+    "22.32.25"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 4,
+      "useCaseCount": 104,
+      "useCaseIds": [
+        "4.1.1",
+        "4.1.2",
+        "4.1.3",
+        "4.1.4",
+        "4.1.5",
+        "4.1.6",
+        "4.1.7",
+        "4.1.8",
+        "4.1.9",
+        "4.1.10",
+        "4.1.11",
+        "4.1.12",
+        "4.1.13",
+        "4.1.14",
+        "4.1.15",
+        "4.1.16",
+        "4.1.17",
+        "4.1.18",
+        "4.1.19",
+        "4.1.20",
+        "4.1.21",
+        "4.1.22",
+        "4.1.23",
+        "4.1.24",
+        "4.1.25",
+        "4.1.26",
+        "4.1.27",
+        "4.1.28",
+        "4.1.29",
+        "4.1.30",
+        "4.1.31",
+        "4.1.32",
+        "4.1.33",
+        "4.1.34",
+        "4.1.35",
+        "4.1.36",
+        "4.1.37",
+        "4.1.38",
+        "4.1.39",
+        "4.1.40",
+        "4.1.41",
+        "4.1.42",
+        "4.1.43",
+        "4.1.44",
+        "4.1.45",
+        "4.1.46",
+        "4.1.47",
+        "4.1.48",
+        "4.1.49",
+        "4.1.50",
+        "4.1.51",
+        "4.1.52",
+        "4.1.53",
+        "4.1.54",
+        "4.1.55",
+        "4.1.56",
+        "4.1.57",
+        "4.1.58",
+        "4.1.59",
+        "4.1.60",
+        "4.1.61",
+        "4.1.62",
+        "4.1.63",
+        "4.1.64",
+        "4.1.65",
+        "4.1.66",
+        "4.1.67",
+        "4.1.68",
+        "4.1.69",
+        "4.1.70",
+        "4.1.71",
+        "4.1.72",
+        "4.1.73",
+        "4.1.74",
+        "4.1.75",
+        "4.1.76",
+        "4.1.77",
+        "4.4.10",
+        "4.4.15",
+        "4.4.16",
+        "4.4.17",
+        "4.4.18",
+        "4.4.19",
+        "4.4.21",
+        "4.4.22",
+        "4.4.24",
+        "4.4.25",
+        "4.4.26",
+        "4.4.29",
+        "4.4.32",
+        "4.5.1",
+        "4.5.2",
+        "4.5.3",
+        "4.5.9",
+        "4.5.10",
+        "4.5.11",
+        "4.5.13",
+        "4.5.14",
+        "4.6.1",
+        "4.6.2",
+        "4.6.3",
+        "4.6.4",
+        "4.6.5",
+        "4.6.6"
+      ]
+    },
+    {
+      "category": 5,
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "5.8.26",
+        "5.8.27"
+      ]
+    },
+    {
+      "category": 6,
+      "useCaseCount": 11,
+      "useCaseIds": [
+        "6.2.1",
+        "6.2.2",
+        "6.2.3",
+        "6.2.6",
+        "6.2.7",
+        "6.2.8",
+        "6.2.9",
+        "6.2.10",
+        "6.2.11",
+        "6.2.12",
+        "6.3.20"
+      ]
+    },
+    {
+      "category": 7,
+      "useCaseCount": 8,
+      "useCaseIds": [
+        "7.2.16",
+        "7.3.1",
+        "7.3.2",
+        "7.3.3",
+        "7.3.8",
+        "7.3.11",
+        "7.3.15",
+        "7.4.11"
+      ]
+    },
+    {
+      "category": 8,
+      "useCaseCount": 4,
+      "useCaseIds": [
+        "8.4.11",
+        "8.4.13",
+        "8.7.2",
+        "8.7.5"
+      ]
+    },
+    {
+      "category": 10,
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "10.7.7",
+        "10.12.39"
+      ]
+    },
+    {
+      "category": 12,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "12.4.13"
+      ]
+    },
+    {
+      "category": 13,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "13.4.10"
+      ]
+    },
+    {
+      "category": 14,
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "14.4.15",
+        "14.4.18"
+      ]
+    },
+    {
+      "category": 20,
+      "useCaseCount": 24,
+      "useCaseIds": [
+        "20.1.1",
+        "20.1.2",
+        "20.1.3",
+        "20.1.4",
+        "20.1.5",
+        "20.1.6",
+        "20.1.7",
+        "20.1.8",
+        "20.1.10",
+        "20.1.11",
+        "20.1.12",
+        "20.1.14",
+        "20.1.18",
+        "20.1.23",
+        "20.1.24",
+        "20.1.25",
+        "20.1.26",
+        "20.2.9",
+        "20.2.16",
+        "20.2.18",
+        "20.2.24",
+        "20.2.27",
+        "20.2.29",
+        "20.3.5"
+      ]
+    },
+    {
+      "category": 22,
+      "useCaseCount": 172,
+      "useCaseIds": [
+        "22.1.21",
+        "22.1.38",
+        "22.1.49",
+        "22.2.16",
+        "22.3.13",
+        "22.3.18",
+        "22.3.23",
+        "22.4.5",
+        "22.4.9",
+        "22.4.14",
+        "22.6.13",
+        "22.6.33",
+        "22.6.36",
+        "22.7.26",
+        "22.7.32",
+        "22.8.20",
+        "22.8.24",
+        "22.8.26",
+        "22.11.15",
+        "22.11.17",
+        "22.11.21",
+        "22.11.22",
+        "22.11.35",
+        "22.11.37",
+        "22.14.19",
+        "22.14.28",
+        "22.14.61",
+        "22.14.66",
+        "22.14.70",
+        "22.14.73",
+        "22.19.1",
+        "22.19.2",
+        "22.19.3",
+        "22.19.4",
+        "22.19.5",
+        "22.19.6",
+        "22.19.7",
+        "22.19.8",
+        "22.19.9",
+        "22.19.10",
+        "22.19.11",
+        "22.19.12",
+        "22.19.13",
+        "22.19.14",
+        "22.19.15",
+        "22.19.16",
+        "22.19.17",
+        "22.19.18",
+        "22.19.19",
+        "22.19.20",
+        "22.19.21",
+        "22.19.22",
+        "22.19.23",
+        "22.19.24",
+        "22.19.25",
+        "22.21.18",
+        "22.22.13",
+        "22.22.14",
+        "22.22.15",
+        "22.22.16",
+        "22.22.17",
+        "22.22.18",
+        "22.27.1",
+        "22.27.2",
+        "22.27.3",
+        "22.27.4",
+        "22.27.5",
+        "22.27.6",
+        "22.27.7",
+        "22.27.8",
+        "22.27.9",
+        "22.27.10",
+        "22.27.11",
+        "22.27.12",
+        "22.27.13",
+        "22.27.14",
+        "22.27.15",
+        "22.27.16",
+        "22.27.17",
+        "22.27.18",
+        "22.27.19",
+        "22.27.20",
+        "22.27.21",
+        "22.27.22",
+        "22.27.23",
+        "22.27.24",
+        "22.27.25",
+        "22.27.26",
+        "22.27.27",
+        "22.27.28",
+        "22.27.29",
+        "22.27.30",
+        "22.29.1",
+        "22.29.2",
+        "22.29.3",
+        "22.29.4",
+        "22.29.5",
+        "22.29.6",
+        "22.29.7",
+        "22.29.8",
+        "22.29.9",
+        "22.29.10",
+        "22.29.11",
+        "22.29.12",
+        "22.29.13",
+        "22.29.14",
+        "22.29.15",
+        "22.29.16",
+        "22.29.17",
+        "22.29.18",
+        "22.29.19",
+        "22.29.20",
+        "22.29.21",
+        "22.29.22",
+        "22.29.23",
+        "22.29.24",
+        "22.29.25",
+        "22.29.26",
+        "22.29.27",
+        "22.29.28",
+        "22.29.29",
+        "22.29.30",
+        "22.30.1",
+        "22.30.2",
+        "22.30.3",
+        "22.30.4",
+        "22.30.5",
+        "22.30.6",
+        "22.30.7",
+        "22.30.8",
+        "22.30.9",
+        "22.30.10",
+        "22.30.11",
+        "22.30.12",
+        "22.30.13",
+        "22.30.14",
+        "22.30.15",
+        "22.30.16",
+        "22.30.17",
+        "22.30.18",
+        "22.30.19",
+        "22.30.20",
+        "22.30.21",
+        "22.30.22",
+        "22.30.23",
+        "22.30.24",
+        "22.30.25",
+        "22.32.1",
+        "22.32.2",
+        "22.32.3",
+        "22.32.4",
+        "22.32.5",
+        "22.32.6",
+        "22.32.7",
+        "22.32.8",
+        "22.32.9",
+        "22.32.10",
+        "22.32.11",
+        "22.32.12",
+        "22.32.13",
+        "22.32.14",
+        "22.32.15",
+        "22.32.16",
+        "22.32.17",
+        "22.32.18",
+        "22.32.19",
+        "22.32.20",
+        "22.32.21",
+        "22.32.22",
+        "22.32.23",
+        "22.32.24",
+        "22.32.25"
+      ]
+    }
+  ]
+}

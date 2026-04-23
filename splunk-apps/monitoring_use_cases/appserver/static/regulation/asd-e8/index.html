@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ASD E8 mappings · Splunk UCs</title>
+<meta name="description" content="21 Splunk monitoring use cases mapped to ASD Essential Eight Maturity Model. Jurisdiction: AU. Topics: baseline, government.">
+<meta name="theme-color" content="#a3360e" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a1817" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://example.invalid/static/app/monitoring_use_cases/regulation/asd-e8/">
+<link rel="alternate" type="application/json" href="https://example.invalid/static/app/monitoring_use_cases/regulation/asd-e8/index.json" title="JSON twin">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ASD E8 — Splunk Use Cases">
+<meta property="og:description" content="21 Splunk monitoring use cases mapped to ASD Essential Eight Maturity Model. Jurisdiction: AU. Topics: baseline, government.">
+<meta property="og:url" content="https://example.invalid/static/app/monitoring_use_cases/regulation/asd-e8/">
+<meta property="og:site_name" content="Splunk Monitoring Use Cases">
+<meta property="og:image" content="https://example.invalid/static/app/monitoring_use_cases/og-image-1200.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ASD E8 — Splunk Use Cases">
+<meta name="twitter:description" content="21 Splunk monitoring use cases mapped to ASD Essential Eight Maturity Model. Jurisdiction: AU. Topics: baseline, government.">
+<style>:root {
+  color-scheme: light dark;
+  --bg: light-dark(#fafaf9, #1a1817);
+  --bg-soft: light-dark(#f3f1ef, #221f1d);
+  --bg-card: light-dark(#ffffff, #2a2624);
+  --fg: light-dark(#1a1817, #f0ece8);
+  --fg-soft: light-dark(#5a544e, #b8b2ab);
+  --fg-muted: light-dark(#7a746e, #918a82);
+  --accent: light-dark(#a3360e, #ff7748);
+  --accent-soft: light-dark(#fde9d8, #2e2018);
+  --accent-fg: light-dark(#ffffff, #1a1817);
+  --border: light-dark(#e6e2dd, #3a3531);
+  --code-bg: light-dark(#f5f1ec, #1f1c1a);
+  --crit-bg: light-dark(#fde2dc, #4a1e16);
+  --high-bg: light-dark(#fde9d8, #4a3018);
+  --med-bg:  light-dark(#fdf3d8, #4a4018);
+  --low-bg:  light-dark(#dff5e6, #1a3a25);
+  --max-w: 64rem;
+  --radius: 8px;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui,
+               "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px; line-height: 1.55;
+  color: var(--fg); background: var(--bg);
+  text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover, a:focus-visible { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.muted { color: var(--fg-muted); font-size: 0.875rem; }
+.prov { color: var(--fg-muted); font-size: 0.85rem; font-style: italic; }
+.lede { font-size: 1.125rem; color: var(--fg-soft); max-width: 42rem;
+  margin: 0.75rem 0 1rem; }
+header.site, footer.site {
+  background: var(--bg-soft); border-bottom: 1px solid var(--border);
+  padding: 0.75rem 1rem;
+}
+footer.site { border-top: 1px solid var(--border); border-bottom: none; }
+header.site nav, footer.site nav {
+  max-width: var(--max-w); margin: 0 auto;
+  display: flex; flex-wrap: wrap; gap: 0.75rem 1.25rem; align-items: center;
+}
+header.site .brand { font-weight: 700; color: var(--fg); text-decoration: none; }
+header.site nav a, footer.site nav a {
+  color: var(--fg-soft); text-decoration: none; font-size: 0.9rem;
+}
+header.site nav a:hover, footer.site nav a:hover { color: var(--accent); }
+main { max-width: var(--max-w); margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+nav.breadcrumb { font-size: 0.875rem; color: var(--fg-muted); margin-bottom: 1rem; }
+nav.breadcrumb ol { list-style: none; padding: 0; margin: 0;
+  display: flex; flex-wrap: wrap; gap: 0.25rem 0.5rem; }
+nav.breadcrumb li { display: inline; }
+nav.breadcrumb li::after { content: "›"; margin-left: 0.5rem; color: var(--fg-muted); }
+nav.breadcrumb li:last-child::after { content: ""; }
+nav.breadcrumb a { color: var(--fg-soft); text-decoration: none; }
+nav.breadcrumb a:hover { color: var(--accent); text-decoration: underline; }
+article { background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.5rem; }
+article > header h1 { font-size: 1.875rem; line-height: 1.2; margin: 0 0 0.5rem; }
+.uc-id { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  color: var(--fg-muted); font-size: 0.875rem; }
+article h2, .section-h { font-size: 1.375rem; margin: 2rem 0 0.75rem;
+  padding-top: 0.5rem; border-top: 1px solid var(--border); }
+article h2:first-of-type, .section-h:first-of-type { border-top: none; padding-top: 0; }
+article h3 { font-size: 1.0625rem; margin: 1.25rem 0 0.5rem; }
+article p { margin: 0.5rem 0 1rem; }
+article ul, article ol { margin: 0.5rem 0 1rem; padding-left: 1.5rem; }
+article li { margin: 0.25rem 0; }
+article code { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  background: var(--code-bg); padding: 1px 4px; border-radius: 3px; font-size: 0.875em; }
+article pre { background: var(--code-bg); border: 1px solid var(--border);
+  border-radius: 6px; padding: 0.875rem 1rem; overflow-x: auto; line-height: 1.4;
+  font-size: 0.875rem; margin: 0.75rem 0 1.25rem; }
+article pre code { background: transparent; padding: 0; border-radius: 0; font-size: inherit; }
+details { border: 1px solid var(--border); border-radius: 6px;
+  padding: 0.5rem 0.875rem; margin: 0.75rem 0 1.25rem; background: var(--bg-soft); }
+details summary { cursor: pointer; font-weight: 600; color: var(--fg-soft); }
+details[open] summary { margin-bottom: 0.5rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 0.375rem; margin: 0.75rem 0 0; }
+.badge { display: inline-flex; align-items: center; gap: 0.25rem;
+  padding: 0.125rem 0.5rem; border-radius: 999px; font-size: 0.75rem;
+  font-weight: 600; line-height: 1.4; border: 1px solid var(--border);
+  background: var(--bg-soft); color: var(--fg-soft); text-decoration: none; }
+a.badge:hover { border-color: var(--accent); color: var(--accent); }
+.badge-crit { background: var(--crit-bg); color: light-dark(#7a1f12, #ffb3a0); border-color: transparent; }
+.badge-high { background: var(--high-bg); color: light-dark(#7a4a18, #ffc890); border-color: transparent; }
+.badge-med  { background: var(--med-bg);  color: light-dark(#6a5018, #ffe690); border-color: transparent; }
+.badge-low  { background: var(--low-bg);  color: light-dark(#1a5a30, #90e6b0); border-color: transparent; }
+.badge-wave-crawl { background: light-dark(#e4f0fa, #183040); color: light-dark(#174a6a, #a8d8f0); border-color: transparent; }
+.badge-wave-walk  { background: light-dark(#efe4fa, #2a1e40); color: light-dark(#4a2a7a, #c8b0f0); border-color: transparent; }
+.badge-wave-run   { background: light-dark(#fae4e4, #401a1e); color: light-dark(#7a1a1a, #f0a8a8); border-color: transparent; }
+.uc-ordering ul.uc-chip-list { list-style: none; padding: 0; margin: 0.5rem 0 1.25rem;
+  display: flex; flex-wrap: wrap; gap: 0.375rem 0.5rem; }
+.uc-ordering ul.uc-chip-list li { margin: 0; }
+a.uc-chip { display: inline-flex; align-items: center; gap: 0.375rem;
+  padding: 0.25rem 0.625rem; border-radius: 999px; font-size: 0.8125rem;
+  border: 1px solid var(--border); background: var(--bg-soft); color: var(--fg);
+  text-decoration: none; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+a.uc-chip:hover, a.uc-chip:focus-visible { border-color: var(--accent); color: var(--accent); }
+a.uc-chip .chip-id { font-weight: 600; letter-spacing: 0.01em; }
+a.uc-chip .chip-wave { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 0.6875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;
+  padding: 0.0625rem 0.375rem; border-radius: 4px; line-height: 1.2; }
+a.uc-chip .chip-wave-crawl { background: light-dark(#cce2f2, #1a3040); color: light-dark(#0f3a5a, #bce0f8); }
+a.uc-chip .chip-wave-walk  { background: light-dark(#e0ccf2, #2a1a40); color: light-dark(#3f1a6a, #dcbcf8); }
+a.uc-chip .chip-wave-run   { background: light-dark(#f2cccc, #401a1a); color: light-dark(#6a0f0f, #f8bcbc); }
+dl.facts { display: grid; grid-template-columns: max-content 1fr;
+  gap: 0.375rem 1rem; margin: 0.75rem 0 1.25rem; font-size: 0.9rem; }
+dl.facts dt { color: var(--fg-muted); font-weight: 600; }
+dl.facts dd { margin: 0; color: var(--fg); }
+ul.uc-list { list-style: none; padding: 0; margin: 0.5rem 0 1.5rem; }
+ul.uc-list .uc-row { display: grid;
+  grid-template-columns: minmax(12rem, max-content) 1fr max-content;
+  gap: 0.25rem 0.875rem; padding: 0.625rem 0.75rem;
+  border-bottom: 1px solid var(--border); align-items: baseline; }
+ul.uc-list .uc-row:hover { background: var(--bg-soft); }
+ul.uc-list .uc-link { display: inline-flex; gap: 0.5rem; align-items: baseline;
+  text-decoration: none; color: var(--fg); }
+ul.uc-list .uc-link:hover .uc-title { color: var(--accent); text-decoration: underline; }
+ul.uc-list .uc-id { font-size: 0.8rem; min-width: 6rem; }
+ul.uc-list .uc-title { font-weight: 600; }
+ul.uc-list .uc-value { color: var(--fg-soft); font-size: 0.875rem; }
+ul.link-list { list-style: none; padding: 0; margin: 0.75rem 0 1rem;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 0.375rem 1rem; }
+ul.link-list a { color: var(--accent); text-decoration: none; }
+ul.link-list a:hover { text-decoration: underline; }
+.hero { padding: 1rem 0 1.5rem; border-bottom: 1px solid var(--border); margin-bottom: 1.5rem; }
+.hero .kicker { color: var(--accent); font-weight: 700; letter-spacing: 0.06em;
+  text-transform: uppercase; font-size: 0.8rem; margin: 0 0 0.5rem; }
+.hero h1 { font-size: 2.125rem; line-height: 1.15; margin: 0 0 0.75rem; max-width: 40rem; }
+.hero .lede { font-size: 1.0625rem; max-width: 38rem; }
+.hero-cta { display: flex; flex-wrap: wrap; gap: 0.625rem; margin-top: 1rem; }
+.cta { display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.5rem 0.875rem; border-radius: 6px; font-weight: 600;
+  text-decoration: none; font-size: 0.9rem;
+  border: 1px solid var(--accent); color: var(--accent); background: transparent; }
+.cta:hover, .cta:focus-visible { filter: brightness(1.05); }
+.cta.primary { background: var(--accent); color: var(--accent-fg); }
+.domain { margin: 1.5rem 0 1.25rem; }
+.domain h3 { font-size: 1.125rem; margin: 0 0 0.25rem; }
+.domain .muted { margin: 0 0 0.875rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 0.875rem; }
+.card { background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 0.875rem 1rem; text-decoration: none;
+  color: var(--fg); display: block; transition: border-color 0.12s; }
+.card:hover, .card:focus-visible { border-color: var(--accent); }
+.card-head { display: flex; justify-content: space-between; gap: 0.5rem;
+  font-size: 0.75rem; color: var(--fg-muted); margin-bottom: 0.25rem; }
+.card-head .cat-id { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+.card-title { font-weight: 600; font-size: 1rem; margin-bottom: 0.25rem; color: var(--fg); }
+.card-blurb { margin: 0; color: var(--fg-soft); font-size: 0.85rem; line-height: 1.4; }
+@media (prefers-reduced-motion: reduce) { .card { transition: none; } }
+@media (max-width: 40rem) {
+  article { padding: 1rem; }
+  article > header h1 { font-size: 1.5rem; }
+  .hero h1 { font-size: 1.625rem; }
+  dl.facts { grid-template-columns: 1fr; gap: 0.125rem 0; }
+  dl.facts dt { margin-top: 0.5rem; }
+  ul.uc-list .uc-row { grid-template-columns: 1fr; gap: 0.125rem; padding: 0.625rem 0.5rem; }
+  ul.uc-list .uc-id { min-width: 0; }
+}
+@media print {
+  header.site, footer.site, .hero-cta, nav.breadcrumb, details { display: none; }
+  details[open] { display: block; }
+  article { border: none; padding: 0; }
+  body { background: white; color: black; }
+  a { color: black; text-decoration: underline; }
+}</style>
+<link rel="prefetch" href="/static/app/monitoring_use_cases/assets/styles.e56aa17f48.css" as="style">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","dateModified":"2026-04-21","description":"21 Splunk monitoring use cases mapped to ASD Essential Eight Maturity Model. Jurisdiction: AU. Topics: baseline, government.","inLanguage":"en","isAccessibleForFree":true,"mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-1.1.76/"},{"@type":"ListItem","position":2,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-1.2.9/"},{"@type":"ListItem","position":3,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-1.2.91/"},{"@type":"ListItem","position":4,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-1.3.4/"},{"@type":"ListItem","position":5,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-3.1.5/"},{"@type":"ListItem","position":6,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-5.1.24/"},{"@type":"ListItem","position":7,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-6.3.1/"},{"@type":"ListItem","position":8,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-6.3.13/"},{"@type":"ListItem","position":9,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-6.3.23/"},{"@type":"ListItem","position":10,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-9.1.3/"},{"@type":"ListItem","position":11,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-9.4.1/"},{"@type":"ListItem","position":12,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-12.3.2/"},{"@type":"ListItem","position":13,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-12.3.10/"},{"@type":"ListItem","position":14,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.31.6/"},{"@type":"ListItem","position":15,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.31.7/"},{"@type":"ListItem","position":16,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.31.8/"},{"@type":"ListItem","position":17,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.31.9/"},{"@type":"ListItem","position":18,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.31.10/"},{"@type":"ListItem","position":19,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.31.11/"},{"@type":"ListItem","position":20,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.31.12/"},{"@type":"ListItem","position":21,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.31.13/"}],"numberOfItems":21},"name":"ASD E8 — Splunk Use Cases","publisher":{"@type":"Organization","name":"Splunk Monitoring Use Cases","url":"https://example.invalid/static/app/monitoring_use_cases"},"url":"https://example.invalid/static/app/monitoring_use_cases/regulation/asd-e8/"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://example.invalid/static/app/monitoring_use_cases/","name":"Home","position":1},{"@type":"ListItem","item":"https://example.invalid/static/app/monitoring_use_cases/regulation/","name":"Regulations","position":2},{"@type":"ListItem","item":"https://example.invalid/static/app/monitoring_use_cases/regulation/asd-e8/","name":"ASD E8","position":3}]}</script>
+<script>
+window.i18n_register = window.i18n_register || function () {};
+</script>
+</head>
+<body>
+<header class="site">
+<nav>
+<a class="brand" href="https://example.invalid/static/app/monitoring_use_cases/">Splunk UCs</a>
+<a href="https://example.invalid/static/app/monitoring_use_cases/browse/">Browse</a>
+<a href="https://example.invalid/static/app/monitoring_use_cases/regulation/">Regulations</a>
+<a href="https://example.invalid/static/app/monitoring_use_cases/api/">API</a>
+<a href="https://github.com/fenre/splunk-monitoring-use-cases" rel="noopener noreferrer">GitHub</a>
+</nav>
+</header>
+<main id="main">
+<nav aria-label="Breadcrumb" class="breadcrumb"><ol><li><a href="https://example.invalid/static/app/monitoring_use_cases/">Home</a></li><li><a href="https://example.invalid/static/app/monitoring_use_cases/regulation/">Regulations</a></li><li aria-current="page">ASD E8</li></ol></nav>
+<article>
+<header>
+<div class="uc-id">Regulation</div>
+<h1>ASD Essential Eight Maturity Model</h1>
+<p class="lede">21 Splunk monitoring use cases mapped to ASD Essential Eight Maturity Model. Jurisdiction: AU. Topics: baseline, government.</p>
+<p class="muted">21 use cases · 7 categories ·
+<a href="https://example.invalid/static/app/monitoring_use_cases/regulation/asd-e8/index.json" rel="alternate">JSON twin →</a></p>
+<dl class="facts">
+<dt>Name</dt><dd>ASD Essential Eight Maturity Model</dd>
+<dt>Short name</dt><dd>ASD E8</dd>
+<dt>Jurisdiction</dt><dd>AU</dd>
+<dt>Topics</dt><dd>baseline, government</dd>
+<dt>Also known as</dt><dd>Essential Eight, ASD E8, ASD Essential Eight</dd>
+<dt>Authoritative source</dt><dd><a href="https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model" rel="noopener noreferrer" target="_blank">ASD Essential Eight Maturity Model Nov 2023</a></dd>
+</dl>
+</header>
+<section id="server-compute"><h2>Server &amp; Compute <span class="muted">(4)</span> <a class="muted" href="https://example.invalid/static/app/monitoring_use_cases/category/server-compute/">→</a></h2><ul class="uc-list"><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-1.1.76/"><span class="uc-id">UC-1.1.76</span><span class="uc-title">Privilege Escalation Detection</span></a><span class="uc-value">Privilege escalation indicates successful security breach enabling attacker to gain administrative access.</span><span class="badge badge-crit">Critical</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-1.2.9/"><span class="uc-id">UC-1.2.9</span><span class="uc-title">Windows Update Compliance</span></a><span class="uc-value">Unpatched systems are primary attack vectors. Tracking patch compliance across the fleet supports vulnerability management and regulatory r…</span><span class="badge badge-med">Medium</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-1.2.91/"><span class="uc-id">UC-1.2.91</span><span class="uc-title">USB / Removable Device Auditing</span></a><span class="uc-value">Removable storage devices are a data exfiltration vector. Auditing device connections enables DLP and compliance enforcement.</span><span class="badge badge-med">Medium</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-1.3.4/"><span class="uc-id">UC-1.3.4</span><span class="uc-title">Software Update Compliance</span></a><span class="uc-value">Unpatched macOS endpoints are vulnerable. Tracking update levels across the fleet supports vulnerability management.</span><span class="badge badge-med">Medium</span></li></ul></section>
+<section id="containers-orchestration"><h2>Containers &amp; Orchestration <span class="muted">(1)</span> <a class="muted" href="https://example.invalid/static/app/monitoring_use_cases/category/containers-orchestration/">→</a></h2><ul class="uc-list"><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-3.1.5/"><span class="uc-id">UC-3.1.5</span><span class="uc-title">Image Vulnerability Scanning</span></a><span class="uc-value">Container images with known CVEs are deployed directly into production. Scanning and tracking vulnerabilities prevents running exploitable…</span><span class="badge badge-med">Medium</span></li></ul></section>
+<section id="network-infrastructure"><h2>Network Infrastructure <span class="muted">(1)</span> <a class="muted" href="https://example.invalid/static/app/monitoring_use_cases/category/network-infrastructure/">→</a></h2><ul class="uc-list"><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-5.1.24/"><span class="uc-id">UC-5.1.24</span><span class="uc-title">Network Device Configuration Backup Freshness</span></a><span class="uc-value">Last backup age tracking; stale backups risk config loss during failures.</span><span class="badge badge-high">High</span></li></ul></section>
+<section id="storage-backup"><h2>Storage &amp; Backup <span class="muted">(3)</span> <a class="muted" href="https://example.invalid/static/app/monitoring_use_cases/category/storage-backup/">→</a></h2><ul class="uc-list"><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-6.3.1/"><span class="uc-id">UC-6.3.1</span><span class="uc-title">Backup Job Success Rate</span></a><span class="uc-value">Failed backups leave systems unprotected. Tracking success rate ensures recoverability and compliance with data protection policies.</span><span class="badge badge-crit">Critical</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-6.3.13/"><span class="uc-id">UC-6.3.13</span><span class="uc-title">Backup RPO and RTO Compliance</span></a><span class="uc-value">Compares actual backup completion time and restore test duration against business RPO/RTO targets per application tier.</span><span class="badge badge-crit">Critical</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-6.3.23/"><span class="uc-id">UC-6.3.23</span><span class="uc-title">Immutable Backup and Ransomware Recovery Readiness</span></a><span class="uc-value">Immutable or air-gapped copies are the last line of defense against ransomware. Verifying immutability and recovery procedure readiness ens…</span><span class="badge badge-crit">Critical</span></li></ul></section>
+<section id="identity-access-management"><h2>Identity &amp; Access Management <span class="muted">(2)</span> <a class="muted" href="https://example.invalid/static/app/monitoring_use_cases/category/identity-access-management/">→</a></h2><ul class="uc-list"><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-9.1.3/"><span class="uc-id">UC-9.1.3</span><span class="uc-title">Privileged Group Membership Changes</span></a><span class="uc-value">Adding accounts to Domain Admins or Enterprise Admins (EventCode 4728/4732/4756) in minutes limits blast radius from stolen Tier-0 credenti…</span><span class="badge badge-crit">Critical</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-9.4.1/"><span class="uc-id">UC-9.4.1</span><span class="uc-title">Privileged Session Audit</span></a><span class="uc-value">Complete audit trail of privileged sessions is required for compliance (SOX, PCI, HIPAA) and security investigation.</span><span class="badge badge-crit">Critical</span></li></ul></section>
+<section id="devops-ci-cd"><h2>DevOps &amp; CI/CD <span class="muted">(2)</span> <a class="muted" href="https://example.invalid/static/app/monitoring_use_cases/category/devops-ci-cd/">→</a></h2><ul class="uc-list"><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-12.3.2/"><span class="uc-id">UC-12.3.2</span><span class="uc-title">Dependency Vulnerability Alerts</span></a><span class="uc-value">Vulnerable dependencies in the software supply chain are a primary attack vector. Tracking ensures timely patching.</span><span class="badge badge-crit">Critical</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-12.3.10/"><span class="uc-id">UC-12.3.10</span><span class="uc-title">Artifact Signing Verification</span></a><span class="uc-value">Cosign/Notary verification results at deploy time—signature missing or wrong key.</span><span class="badge badge-crit">Critical</span></li></ul></section>
+<section id="regulatory-and-compliance-frameworks"><h2>Regulatory and Compliance Frameworks <span class="muted">(8)</span> <a class="muted" href="https://example.invalid/static/app/monitoring_use_cases/category/regulatory-compliance/">→</a></h2><ul class="uc-list"><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.31.6/"><span class="uc-id">UC-22.31.6</span><span class="uc-title">Application control allowlist drift monitoring</span></a><span class="uc-value">Evidences ASD Essential Eight obligations for application control allowlist drift monitoring using endpoint, identity, and cloud telemetry.</span><span class="badge badge-med">Medium</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.31.7/"><span class="uc-id">UC-22.31.7</span><span class="uc-title">Microsoft Office macro security baseline compliance</span></a><span class="uc-value">Evidences ASD Essential Eight obligations for microsoft office macro security baseline compliance using endpoint, identity, and cloud telem…</span><span class="badge badge-crit">Critical</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.31.8/"><span class="uc-id">UC-22.31.8</span><span class="uc-title">User application hardening compliance</span></a><span class="uc-value">Evidences ASD Essential Eight obligations for user application hardening compliance using endpoint, identity, and cloud telemetry.</span><span class="badge badge-crit">Critical</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.31.9/"><span class="uc-id">UC-22.31.9</span><span class="uc-title">Administrative privilege restriction enforcement</span></a><span class="uc-value">Evidences ASD Essential Eight obligations for administrative privilege restriction enforcement using endpoint, identity, and cloud telemetr…</span><span class="badge badge-high">High</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.31.10/"><span class="uc-id">UC-22.31.10</span><span class="uc-title">Operating system patching latency monitoring</span></a><span class="uc-value">Evidences ASD Essential Eight obligations for operating system patching latency monitoring using endpoint, identity, and cloud telemetry.</span><span class="badge badge-med">Medium</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.31.11/"><span class="uc-id">UC-22.31.11</span><span class="uc-title">Multi-factor authentication coverage and failures</span></a><span class="uc-value">Evidences ASD Essential Eight obligations for multi-factor authentication coverage and failures using endpoint, identity, and cloud telemet…</span><span class="badge badge-low">Low</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.31.12/"><span class="uc-id">UC-22.31.12</span><span class="uc-title">Daily backup verification and restore test evidence</span></a><span class="uc-value">Evidences ASD Essential Eight obligations for daily backup verification and restore test evidence using endpoint, identity, and cloud telem…</span><span class="badge badge-crit">Critical</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.31.13/"><span class="uc-id">UC-22.31.13</span><span class="uc-title">Office macro execution policy violation detection</span></a><span class="uc-value">Evidences ASD Essential Eight obligations for office macro execution policy violation detection using endpoint, identity, and cloud telemet…</span><span class="badge badge-high">High</span></li></ul></section>
+</article>
+</main>
+<footer class="site">
+<nav>
+<span>&copy; Splunk Monitoring Use Cases · CC-BY-4.0</span>
+<a href="https://example.invalid/static/app/monitoring_use_cases/api/">API</a>
+<a href="https://example.invalid/static/app/monitoring_use_cases/sitemap.xml">Sitemap</a>
+<a href="https://github.com/fenre/splunk-monitoring-use-cases" rel="noopener noreferrer">Source</a>
+</nav>
+</footer>
+</body>
+</html>

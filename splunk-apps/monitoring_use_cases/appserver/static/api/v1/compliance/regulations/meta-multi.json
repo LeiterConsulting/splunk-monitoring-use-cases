@@ -1,0 +1,49 @@
+{
+  "aliases": [
+    "APAC breach laws",
+    "Multiple"
+  ],
+  "apiVersion": "v1",
+  "id": "meta-multi",
+  "jurisdiction": [
+    "GLOBAL"
+  ],
+  "name": "Placeholder: multi-regulation or jurisdiction-generic",
+  "shortName": "Multiple",
+  "tags": [
+    "meta"
+  ],
+  "tier": 3,
+  "versions": [
+    {
+      "authoritativeUrl": null,
+      "clauseCoverageMatrix": [],
+      "clauseExamples": [
+        "see-uc-description"
+      ],
+      "clauseGrammar": "^.+$",
+      "clauseUrlTemplate": null,
+      "clausesReferencedByCatalogue": [],
+      "commonClauses": [],
+      "coverageSummary": {
+        "clauseCoveragePercent": 0.0,
+        "commonClauseCount": 0,
+        "coveredClauseCount": 0,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 0.0,
+        "stateCounts": {
+          "contributing-only": 0,
+          "covered-full": 0,
+          "covered-partial": 0,
+          "uncovered": 0
+        }
+      },
+      "effectiveFrom": null,
+      "endpoint": "/api/v1/compliance/regulations/meta-multi@n-a.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [],
+      "version": "n/a"
+    }
+  ]
+}

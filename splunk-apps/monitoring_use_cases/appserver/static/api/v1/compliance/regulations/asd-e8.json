@@ -1,0 +1,250 @@
+{
+  "aliases": [
+    "ASD E8",
+    "ASD Essential Eight",
+    "Essential Eight"
+  ],
+  "apiVersion": "v1",
+  "id": "asd-e8",
+  "jurisdiction": [
+    "AU"
+  ],
+  "name": "ASD Essential Eight Maturity Model",
+  "shortName": "ASD E8",
+  "tags": [
+    "baseline",
+    "government"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://www.cyber.gov.au/resources-business-and-government/essential-cyber-security/essential-eight/essential-eight-maturity-model",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 2,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "E8.01",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "1.2.91",
+            "12.3.10",
+            "22.31.6"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Application control"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 2,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "E8.03",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.31.13",
+            "22.31.7"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Configure MS Office macro settings"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 3
+          },
+          "clause": "E8.05",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "1.1.76",
+            "22.31.9",
+            "9.1.3",
+            "9.4.1"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Restrict administrative privileges"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 4
+          },
+          "clause": "E8.06",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "1.2.9",
+            "1.3.4",
+            "12.3.2",
+            "22.31.10",
+            "3.1.5"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Patch operating systems"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 1,
+            "partial": 3
+          },
+          "clause": "E8.08",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.31.12",
+            "5.1.24",
+            "6.3.1",
+            "6.3.13",
+            "6.3.23"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "full",
+          "topic": "Regular backups"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "E8.02",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.31.8"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "E8.07",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.31.11"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        }
+      ],
+      "clauseExamples": [
+        "E8.01",
+        "E8.01.ML2",
+        "E8.08.ML3"
+      ],
+      "clauseGrammar": "^E8\\.(0[1-8])(\\.ML[1-3])?$",
+      "clauseUrlTemplate": null,
+      "clausesReferencedByCatalogue": [
+        "E8.01",
+        "E8.02",
+        "E8.03",
+        "E8.05",
+        "E8.06",
+        "E8.07",
+        "E8.08"
+      ],
+      "commonClauses": [
+        {
+          "clause": "E8.01",
+          "priorityWeight": 1.0,
+          "topic": "Application control"
+        },
+        {
+          "clause": "E8.03",
+          "priorityWeight": 1.0,
+          "topic": "Configure MS Office macro settings"
+        },
+        {
+          "clause": "E8.05",
+          "priorityWeight": 1.0,
+          "topic": "Restrict administrative privileges"
+        },
+        {
+          "clause": "E8.06",
+          "priorityWeight": 1.0,
+          "topic": "Patch operating systems"
+        },
+        {
+          "clause": "E8.08",
+          "priorityWeight": 1.0,
+          "topic": "Regular backups"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 100.0,
+        "commonClauseCount": 5,
+        "coveredClauseCount": 5,
+        "offCommonListClauseCount": 2,
+        "priorityWeightedCoveragePercent": 55.0,
+        "stateCounts": {
+          "contributing-only": 1,
+          "covered-full": 1,
+          "covered-partial": 3,
+          "uncovered": 0
+        }
+      },
+      "effectiveFrom": "2023-11-30",
+      "endpoint": "/api/v1/compliance/regulations/asd-e8@Nov-2023.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [
+        "1.1.76",
+        "1.2.9",
+        "1.2.91",
+        "1.3.4",
+        "12.3.10",
+        "12.3.2",
+        "22.31.10",
+        "22.31.11",
+        "22.31.12",
+        "22.31.13",
+        "22.31.6",
+        "22.31.7",
+        "22.31.8",
+        "22.31.9",
+        "3.1.5",
+        "5.1.24",
+        "6.3.1",
+        "6.3.13",
+        "6.3.23",
+        "9.1.3",
+        "9.4.1"
+      ],
+      "version": "Nov 2023"
+    }
+  ]
+}

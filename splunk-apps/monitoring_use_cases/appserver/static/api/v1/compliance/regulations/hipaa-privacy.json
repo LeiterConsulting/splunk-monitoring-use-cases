@@ -1,0 +1,162 @@
+{
+  "aliases": [
+    "45 CFR 164 Subpart E",
+    "HIPAA Privacy Rule"
+  ],
+  "apiVersion": "v1",
+  "id": "hipaa-privacy",
+  "jurisdiction": [
+    "US"
+  ],
+  "name": "HIPAA Privacy Rule",
+  "shortName": "HIPAA Privacy",
+  "tags": [
+    "healthcare",
+    "phi"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 3
+          },
+          "clause": "§164.502(a)",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "11.1.5",
+            "11.1.6",
+            "15.3.37",
+            "7.1.21"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Uses and disclosures of PHI — general rules"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.504(e)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.50.4"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Business Associate contracts"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.514(a)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "11.1.5"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "contributing",
+          "topic": "De-identification of PHI"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§164.528",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.50.16"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "contributing",
+          "topic": "Accounting of disclosures"
+        }
+      ],
+      "clauseExamples": [
+        "§164.502(a)",
+        "§164.504(e)",
+        "§164.514(a)",
+        "§164.528"
+      ],
+      "clauseGrammar": "^§164\\.5(0[0-9]|1[0-9]|2[0-9])(\\([a-z]\\))?(\\(\\d+\\))?$",
+      "clauseUrlTemplate": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-{section}#{clause}",
+      "clausesReferencedByCatalogue": [
+        "§164.502(a)",
+        "§164.504(e)",
+        "§164.514(a)",
+        "§164.528"
+      ],
+      "commonClauses": [
+        {
+          "clause": "§164.502(a)",
+          "priorityWeight": 1.0,
+          "topic": "Uses and disclosures of PHI — general rules"
+        },
+        {
+          "clause": "§164.504(e)",
+          "priorityWeight": 1.0,
+          "topic": "Business Associate contracts"
+        },
+        {
+          "clause": "§164.514(a)",
+          "priorityWeight": 0.7,
+          "topic": "De-identification of PHI"
+        },
+        {
+          "clause": "§164.528",
+          "priorityWeight": 0.7,
+          "topic": "Accounting of disclosures"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 100.0,
+        "commonClauseCount": 4,
+        "coveredClauseCount": 4,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 32.35,
+        "stateCounts": {
+          "contributing-only": 3,
+          "covered-full": 0,
+          "covered-partial": 1,
+          "uncovered": 0
+        }
+      },
+      "effectiveFrom": "2003-04-14",
+      "endpoint": "/api/v1/compliance/regulations/hipaa-privacy@current.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [
+        "11.1.5",
+        "11.1.6",
+        "15.3.37",
+        "22.50.16",
+        "22.50.4",
+        "7.1.21"
+      ],
+      "version": "current"
+    }
+  ]
+}

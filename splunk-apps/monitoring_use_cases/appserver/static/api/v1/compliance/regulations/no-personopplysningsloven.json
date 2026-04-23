@@ -1,0 +1,136 @@
+{
+  "aliases": [
+    "Personopplysningsloven"
+  ],
+  "apiVersion": "v1",
+  "id": "no-personopplysningsloven",
+  "jurisdiction": [
+    "NO"
+  ],
+  "name": "Norwegian Personopplysningsloven (Personal Data Act)",
+  "shortName": "NO Personopplysningsloven",
+  "tags": [
+    "privacy"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://lovdata.no/dokument/NL/lov/2018-06-15-38",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§14",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.50.18"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "contributing",
+          "topic": "Automated individual decision-making restrictions"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§2",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.50.19"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "contributing",
+          "topic": "Territorial and material scope"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 5,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§8",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.26.16",
+            "22.26.17",
+            "22.26.18",
+            "22.26.19",
+            "22.26.20"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Processing of special categories of personal data"
+        }
+      ],
+      "clauseExamples": [
+        "§1",
+        "§8"
+      ],
+      "clauseGrammar": "^§\\d+$",
+      "clauseUrlTemplate": null,
+      "clausesReferencedByCatalogue": [
+        "§14",
+        "§2",
+        "§8"
+      ],
+      "commonClauses": [
+        {
+          "clause": "§8",
+          "priorityWeight": 1.0,
+          "topic": "Processing of special categories of personal data"
+        },
+        {
+          "clause": "§2",
+          "priorityWeight": 0.7,
+          "topic": "Territorial and material scope"
+        },
+        {
+          "clause": "§14",
+          "priorityWeight": 0.7,
+          "topic": "Automated individual decision-making restrictions"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 100.0,
+        "commonClauseCount": 3,
+        "coveredClauseCount": 3,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 25.0,
+        "stateCounts": {
+          "contributing-only": 3,
+          "covered-full": 0,
+          "covered-partial": 0,
+          "uncovered": 0
+        }
+      },
+      "effectiveFrom": "2018-07-20",
+      "endpoint": "/api/v1/compliance/regulations/no-personopplysningsloven@2018.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [
+        "22.26.16",
+        "22.26.17",
+        "22.26.18",
+        "22.26.19",
+        "22.26.20",
+        "22.50.18",
+        "22.50.19"
+      ],
+      "version": "2018"
+    }
+  ]
+}

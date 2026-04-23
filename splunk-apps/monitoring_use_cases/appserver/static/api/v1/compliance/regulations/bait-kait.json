@@ -1,0 +1,132 @@
+{
+  "aliases": [
+    "BAIT",
+    "KAIT"
+  ],
+  "apiVersion": "v1",
+  "id": "bait-kait",
+  "jurisdiction": [
+    "DE"
+  ],
+  "name": "BaFin Banking/Insurance Supervisory Requirements for IT (BAIT/KAIT)",
+  "shortName": "BAIT/KAIT",
+  "tags": [
+    "financial"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/EN/Rundschreiben/2021/rs_1021_BAIT_en.html",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 7,
+            "full": 0,
+            "partial": 2
+          },
+          "clause": "§5",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "13.1.39",
+            "22.28.16",
+            "22.28.18",
+            "22.28.19",
+            "22.28.20",
+            "4.1.4",
+            "9.1.3",
+            "9.4.1",
+            "9.5.15"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Identity & access management"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 2,
+            "full": 0,
+            "partial": 2
+          },
+          "clause": "§9",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "12.2.17",
+            "16.4.1",
+            "22.28.17",
+            "5.1.24"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "ICT operations management"
+        }
+      ],
+      "clauseExamples": [
+        "§3",
+        "§5.1",
+        "§9.4"
+      ],
+      "clauseGrammar": "^§\\d+(\\.\\d+)?$",
+      "clauseUrlTemplate": null,
+      "clausesReferencedByCatalogue": [
+        "§5",
+        "§9"
+      ],
+      "commonClauses": [
+        {
+          "clause": "§5",
+          "priorityWeight": 1.0,
+          "topic": "Identity & access management"
+        },
+        {
+          "clause": "§9",
+          "priorityWeight": 1.0,
+          "topic": "ICT operations management"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 100.0,
+        "commonClauseCount": 2,
+        "coveredClauseCount": 2,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 50.0,
+        "stateCounts": {
+          "contributing-only": 1,
+          "covered-full": 0,
+          "covered-partial": 1,
+          "uncovered": 0
+        }
+      },
+      "effectiveFrom": "2021-08-16",
+      "endpoint": "/api/v1/compliance/regulations/bait-kait@Aug-2021.json",
+      "pendingChanges": [
+        {
+          "note": "DORA supersedes portions for EU financial entities from 2025-01-17.",
+          "status": "dora-overlap"
+        }
+      ],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [
+        "12.2.17",
+        "13.1.39",
+        "16.4.1",
+        "22.28.16",
+        "22.28.17",
+        "22.28.18",
+        "22.28.19",
+        "22.28.20",
+        "4.1.4",
+        "5.1.24",
+        "9.1.3",
+        "9.4.1",
+        "9.5.15"
+      ],
+      "version": "Aug 2021"
+    }
+  ]
+}

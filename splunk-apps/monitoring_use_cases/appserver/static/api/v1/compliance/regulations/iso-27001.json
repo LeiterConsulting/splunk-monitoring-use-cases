@@ -1,0 +1,1550 @@
+{
+  "aliases": [
+    "ISO 27001",
+    "ISO/IEC 27001"
+  ],
+  "apiVersion": "v1",
+  "id": "iso-27001",
+  "jurisdiction": [
+    "GLOBAL"
+  ],
+  "name": "ISO/IEC 27001 — ISMS",
+  "shortName": "ISO 27001",
+  "tags": [
+    "certification",
+    "isms"
+  ],
+  "tier": 1,
+  "versions": [
+    {
+      "authoritativeUrl": "https://www.iso.org/standard/54534.html",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.12.4.1",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Event logging (2013)"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.12.4.2",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Protection of log information (2013)"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.12.4.3",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": null,
+          "topic": "Administrator and operator logs (2013)"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.16.1.2",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Reporting information security events (2013)"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.9.2.5",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Review of user access rights (2013)"
+        }
+      ],
+      "clauseExamples": [
+        "A.12.4.1",
+        "A.9.2.5",
+        "6.1"
+      ],
+      "clauseGrammar": "^(A\\.)?\\d+(\\.\\d+){0,2}$",
+      "clauseUrlTemplate": "https://www.iso.org/standard/54534.html#{clause}",
+      "clausesReferencedByCatalogue": [],
+      "commonClauses": [
+        {
+          "clause": "A.9.2.5",
+          "priorityWeight": 1.0,
+          "topic": "Review of user access rights (2013)"
+        },
+        {
+          "clause": "A.12.4.1",
+          "priorityWeight": 1.0,
+          "topic": "Event logging (2013)"
+        },
+        {
+          "clause": "A.12.4.2",
+          "priorityWeight": 1.0,
+          "topic": "Protection of log information (2013)"
+        },
+        {
+          "clause": "A.12.4.3",
+          "priorityWeight": 0.7,
+          "topic": "Administrator and operator logs (2013)"
+        },
+        {
+          "clause": "A.16.1.2",
+          "priorityWeight": 1.0,
+          "topic": "Reporting information security events (2013)"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 0.0,
+        "commonClauseCount": 5,
+        "coveredClauseCount": 0,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 0.0,
+        "stateCounts": {
+          "contributing-only": 0,
+          "covered-full": 0,
+          "covered-partial": 0,
+          "uncovered": 5
+        }
+      },
+      "effectiveFrom": "2013-10-01",
+      "endpoint": "/api/v1/compliance/regulations/iso-27001@2013.json",
+      "pendingChanges": [
+        {
+          "date": "2025-10-31",
+          "note": "2013 edition retired; organisations must transition to 2022."
+        }
+      ],
+      "sunsetOn": "2025-10-31",
+      "useCasesTaggingThisVersion": [],
+      "version": "2013"
+    },
+    {
+      "authoritativeUrl": "https://www.iso.org/standard/27001",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "6.1",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Risk assessment"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "6.2",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Information-security objectives"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "7.2",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": null,
+          "topic": "Competence"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "7.5",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": null,
+          "topic": "Documented information"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "8.1",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": null,
+          "topic": "Operational planning"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "8.2",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.9.7"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Information-security risk assessment"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 4,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "9.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.9.10",
+            "22.9.6",
+            "22.9.7",
+            "22.9.9"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Monitoring, measurement, analysis, evaluation"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "9.2",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Internal audit"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 1,
+            "partial": 0
+          },
+          "clause": "A.5.15",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.40.2"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "full",
+          "topic": "Access control"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 1,
+            "partial": 0
+          },
+          "clause": "A.5.18",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.40.3"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "full",
+          "topic": "Access rights review"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.5.23",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.13"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Information security in cloud services (2022 new)"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.5.24",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Incident management planning"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.5.25",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Assessment and decision on events"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.5.7",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.11"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "contributing",
+          "topic": "Threat intelligence (2022 new)"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.8.12",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.35"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Data leakage prevention"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.8.15",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.38"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Logging"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 2,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.8.16",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.1",
+            "22.6.39"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Monitoring activities"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.8.17",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.40"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "contributing",
+          "topic": "Clock synchronisation"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.8.2",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.26"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Privileged access rights"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.8.23",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.42"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "contributing",
+          "topic": "Web filtering (2022 new)"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.8.25",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.45"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Secure development life cycle"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.8.28",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.45"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "contributing",
+          "topic": "Secure coding (2022 new)"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 1,
+            "partial": 0
+          },
+          "clause": "A.8.9",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.42.5",
+            "22.6.32"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "full",
+          "topic": "Configuration management (2022 new)"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.10.1.2",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.5"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.12.4",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.2"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.13.1.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.6"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.15.1.2",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.7"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.5.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.9"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.5.2",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.10"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.5.29",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.14"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 1,
+            "partial": 0
+          },
+          "clause": "A.5.3",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.48.1",
+            "22.6.8"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "full",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.5.30",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.15"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "A.5.33",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.49.3"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "partial",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "A.5.35",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.47.3"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "partial",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 5,
+            "full": 1,
+            "partial": 1
+          },
+          "clause": "A.5.36",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.47.1",
+            "22.47.5",
+            "22.6.16",
+            "22.9.1",
+            "22.9.2",
+            "22.9.3",
+            "22.9.5"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "full",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.5.8",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.12"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.6.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.17"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 1,
+            "partial": 0
+          },
+          "clause": "A.6.3",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.46.5",
+            "22.6.18"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "full",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.6.4",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.19"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.6.7",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.20"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.7.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.21"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.7.10",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.23"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.7.14",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.24"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.7.4",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.22"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.8.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.25"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.8.10",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.33"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.8.11",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.34"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.8.13",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.36"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.8.14",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.37"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.8.2.3",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.4"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.8.20",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.41"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.8.21",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.42"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.8.22",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.43"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.8.24",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.44"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.8.26",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.45"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.8.3",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.27"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "A.8.30",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.48.3"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "partial",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.8.5",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.28"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.8.6",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.29"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.8.7",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.30"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 2,
+            "partial": 0
+          },
+          "clause": "A.8.8",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.43.1",
+            "22.43.4",
+            "22.6.31"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "full",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "A.9.2.5",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.6.3"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        }
+      ],
+      "clauseExamples": [
+        "A.8.15",
+        "A.8.16",
+        "A.5.23",
+        "6.1"
+      ],
+      "clauseGrammar": "^(A\\.)?\\d+(\\.\\d+){0,2}$",
+      "clauseUrlTemplate": "https://www.iso.org/standard/27001#{clause}",
+      "clausesReferencedByCatalogue": [
+        "8.2",
+        "9.1",
+        "A.10.1.2",
+        "A.12.4",
+        "A.13.1.1",
+        "A.15.1.2",
+        "A.5.1",
+        "A.5.15",
+        "A.5.18",
+        "A.5.2",
+        "A.5.23",
+        "A.5.29",
+        "A.5.3",
+        "A.5.30",
+        "A.5.33",
+        "A.5.35",
+        "A.5.36",
+        "A.5.7",
+        "A.5.8",
+        "A.6.1",
+        "A.6.3",
+        "A.6.4",
+        "A.6.7",
+        "A.7.1",
+        "A.7.10",
+        "A.7.14",
+        "A.7.4",
+        "A.8.1",
+        "A.8.10",
+        "A.8.11",
+        "A.8.12",
+        "A.8.13",
+        "A.8.14",
+        "A.8.15",
+        "A.8.16",
+        "A.8.17",
+        "A.8.2",
+        "A.8.2.3",
+        "A.8.20",
+        "A.8.21",
+        "A.8.22",
+        "A.8.23",
+        "A.8.24",
+        "A.8.25",
+        "A.8.26",
+        "A.8.28",
+        "A.8.3",
+        "A.8.30",
+        "A.8.5",
+        "A.8.6",
+        "A.8.7",
+        "A.8.8",
+        "A.8.9",
+        "A.9.2.5"
+      ],
+      "commonClauses": [
+        {
+          "clause": "6.1",
+          "priorityWeight": 1.0,
+          "topic": "Risk assessment"
+        },
+        {
+          "clause": "6.2",
+          "priorityWeight": 1.0,
+          "topic": "Information-security objectives"
+        },
+        {
+          "clause": "7.2",
+          "priorityWeight": 0.7,
+          "topic": "Competence"
+        },
+        {
+          "clause": "7.5",
+          "priorityWeight": 0.7,
+          "topic": "Documented information"
+        },
+        {
+          "clause": "8.1",
+          "priorityWeight": 0.7,
+          "topic": "Operational planning"
+        },
+        {
+          "clause": "8.2",
+          "priorityWeight": 1.0,
+          "topic": "Information-security risk assessment"
+        },
+        {
+          "clause": "9.1",
+          "priorityWeight": 1.0,
+          "topic": "Monitoring, measurement, analysis, evaluation"
+        },
+        {
+          "clause": "9.2",
+          "priorityWeight": 1.0,
+          "topic": "Internal audit"
+        },
+        {
+          "clause": "A.5.7",
+          "priorityWeight": 0.7,
+          "topic": "Threat intelligence (2022 new)"
+        },
+        {
+          "clause": "A.5.15",
+          "priorityWeight": 1.0,
+          "topic": "Access control"
+        },
+        {
+          "clause": "A.5.18",
+          "priorityWeight": 1.0,
+          "topic": "Access rights review"
+        },
+        {
+          "clause": "A.5.23",
+          "priorityWeight": 1.0,
+          "topic": "Information security in cloud services (2022 new)"
+        },
+        {
+          "clause": "A.5.24",
+          "priorityWeight": 1.0,
+          "topic": "Incident management planning"
+        },
+        {
+          "clause": "A.5.25",
+          "priorityWeight": 1.0,
+          "topic": "Assessment and decision on events"
+        },
+        {
+          "clause": "A.8.2",
+          "priorityWeight": 1.0,
+          "topic": "Privileged access rights"
+        },
+        {
+          "clause": "A.8.9",
+          "priorityWeight": 1.0,
+          "topic": "Configuration management (2022 new)"
+        },
+        {
+          "clause": "A.8.12",
+          "priorityWeight": 1.0,
+          "topic": "Data leakage prevention"
+        },
+        {
+          "clause": "A.8.15",
+          "priorityWeight": 1.0,
+          "topic": "Logging"
+        },
+        {
+          "clause": "A.8.16",
+          "priorityWeight": 1.0,
+          "topic": "Monitoring activities"
+        },
+        {
+          "clause": "A.8.17",
+          "priorityWeight": 0.7,
+          "topic": "Clock synchronisation"
+        },
+        {
+          "clause": "A.8.23",
+          "priorityWeight": 0.7,
+          "topic": "Web filtering (2022 new)"
+        },
+        {
+          "clause": "A.8.25",
+          "priorityWeight": 1.0,
+          "topic": "Secure development life cycle"
+        },
+        {
+          "clause": "A.8.28",
+          "priorityWeight": 0.7,
+          "topic": "Secure coding (2022 new)"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 65.22,
+        "commonClauseCount": 23,
+        "coveredClauseCount": 15,
+        "offCommonListClauseCount": 39,
+        "priorityWeightedCoveragePercent": 27.27,
+        "stateCounts": {
+          "contributing-only": 12,
+          "covered-full": 3,
+          "covered-partial": 0,
+          "uncovered": 8
+        }
+      },
+      "effectiveFrom": "2022-10-25",
+      "endpoint": "/api/v1/compliance/regulations/iso-27001@2022.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [
+        "22.40.2",
+        "22.40.3",
+        "22.42.5",
+        "22.43.1",
+        "22.43.4",
+        "22.46.5",
+        "22.47.1",
+        "22.47.3",
+        "22.47.5",
+        "22.48.1",
+        "22.48.3",
+        "22.49.3",
+        "22.6.1",
+        "22.6.10",
+        "22.6.11",
+        "22.6.12",
+        "22.6.13",
+        "22.6.14",
+        "22.6.15",
+        "22.6.16",
+        "22.6.17",
+        "22.6.18",
+        "22.6.19",
+        "22.6.2",
+        "22.6.20",
+        "22.6.21",
+        "22.6.22",
+        "22.6.23",
+        "22.6.24",
+        "22.6.25",
+        "22.6.26",
+        "22.6.27",
+        "22.6.28",
+        "22.6.29",
+        "22.6.3",
+        "22.6.30",
+        "22.6.31",
+        "22.6.32",
+        "22.6.33",
+        "22.6.34",
+        "22.6.35",
+        "22.6.36",
+        "22.6.37",
+        "22.6.38",
+        "22.6.39",
+        "22.6.4",
+        "22.6.40",
+        "22.6.41",
+        "22.6.42",
+        "22.6.43",
+        "22.6.44",
+        "22.6.45",
+        "22.6.5",
+        "22.6.6",
+        "22.6.7",
+        "22.6.8",
+        "22.6.9",
+        "22.9.1",
+        "22.9.10",
+        "22.9.2",
+        "22.9.3",
+        "22.9.5",
+        "22.9.6",
+        "22.9.7",
+        "22.9.9"
+      ],
+      "version": "2022"
+    }
+  ]
+}

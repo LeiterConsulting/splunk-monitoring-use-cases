@@ -1,0 +1,35 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.nesa.gov.ae/",
+  "clause": "T6.3",
+  "clauseId": "nesa-uae-ias@v2 (2020)#T6.3",
+  "coverageState": "uncovered",
+  "coveringUcCount": 0,
+  "coveringUcs": [],
+  "endpoint": "/api/v1/compliance/clauses/nesa-uae-ias__v2%20%282020%29__T6.3.json",
+  "gapNote": "NESA IAS clause T6.3 (Information security incident management) is listed in data/regulations.json as a common clause but no use case currently tags it. Candidate UCs are tracked in docs/compliance-gaps.md and api/v1/compliance/gaps.json.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {},
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "nesa-uae-ias",
+  "regulationName": "UAE NESA Information Assurance Standards",
+  "regulationShortName": "NESA IAS",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/nesa-uae-ias.json",
+    "regulationVersion": "/api/v1/compliance/regulations/nesa-uae-ias@v2%20%282020%29.json",
+    "story": "/api/v1/compliance/story/nesa-uae-ias.json"
+  },
+  "tier": 2,
+  "topAssurance": null,
+  "topic": "Information security incident management",
+  "version": "v2 (2020)"
+}

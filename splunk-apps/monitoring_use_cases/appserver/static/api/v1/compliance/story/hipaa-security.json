@@ -1,0 +1,2032 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 4,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.308(a)(1)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.1",
+        "22.10.2",
+        "22.10.22",
+        "22.10.55"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Security management process",
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.308(a)(1)(ii)(A)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.49"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.308(a)(1)(ii)(B)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.10"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.308(a)(1)(ii)(C)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.12"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.308(a)(1)(ii)(D)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.308(a)(3)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Workforce security",
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.308(a)(3)(ii)(C)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.308(a)(4)",
+      "coverageState": "uncovered",
+      "coveringUcs": [],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": null,
+      "topic": "Information access management",
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "§164.308(a)(5)",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.10.6",
+        "22.46.1"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "full",
+      "topic": "Security awareness and training",
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "§164.308(a)(6)",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.10.7",
+        "22.39.1"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Security incident procedures",
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "§164.308(a)(7)",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.10.8",
+        "22.45.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Contingency plan",
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.308(a)(8)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.9"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "contributing",
+      "topic": "Evaluation",
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.308(b)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.51"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.308(b)(1)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.11"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.308(b)(3)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.52"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.310(a)(1)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.31"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Facility access controls",
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.310(b)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.28",
+        "22.10.32"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.310(c)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.32"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 1
+      },
+      "clause": "§164.310(d)(1)",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.10.29",
+        "22.49.1",
+        "22.49.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "full",
+      "topic": "Device and media controls",
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.310(d)(2)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.30"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.312(a)(1)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.21",
+        "22.10.24",
+        "22.10.25"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Access control",
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.312(a)(2)(i)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.13"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.312(a)(2)(ii)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.14"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.312(a)(2)(iii)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.15"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "§164.312(a)(2)(iv)",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.10.16",
+        "22.41.1"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "full",
+      "topic": "Encryption and decryption",
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.312(b)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.17",
+        "22.10.36"
+      ],
+      "obligationSource": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312#p-164.312(b)",
+      "obligationText": "A covered entity or business associate must implement hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic protected health information.",
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Audit controls",
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "§164.312(c)(1)",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.10.18",
+        "22.10.27",
+        "22.35.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Integrity",
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.312(d)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.19",
+        "22.10.23",
+        "22.10.42"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Person or entity authentication",
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "§164.312(e)(1)",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.10.20",
+        "22.10.22",
+        "22.10.26",
+        "22.41.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Transmission security",
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.402",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.44",
+        "22.10.48"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "§164.404",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.10.43",
+        "22.10.44",
+        "22.39.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.404(b)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.45"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.406(c)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.47"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.408",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.46",
+        "22.10.50"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.502(a)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.39"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.502(a)(1)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.35",
+        "22.10.40"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.502(a)(2)(ii)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.34"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 4,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.502(b)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.33",
+        "22.10.36",
+        "22.10.37",
+        "22.10.54"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 4,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.502(e)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.51",
+        "22.10.52",
+        "22.10.53",
+        "22.10.55"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.502(f)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.38"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.512(i)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.40"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.514(d)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.33"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.514(e)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.54"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.528",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.41"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§164.530(c)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.10.42"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2013-final"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "14 of 15 common clauses are covered by the catalogue, with a priority-weighted coverage of 52.72% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 15,
+      "coveredClauseCount": 14,
+      "priorityWeightedCoveragePercent": 52.72,
+      "stateCounts": {
+        "contributing-only": 7,
+        "covered-full": 6,
+        "covered-partial": 1,
+        "uncovered": 1
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "§164.308(a)(7)",
+        "killerUcId": "22.10.8",
+        "killerUcTitle": "Contingency Plan — Backup Job Success for ePHI Databases",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Contingency plan",
+        "version": "2013-final",
+        "why": "Clause §164.308(a)(7) (Contingency plan) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "§164.312(c)(1)",
+        "killerUcId": "22.10.18",
+        "killerUcTitle": "Integrity — Unexpected UPDATE/DELETE on PHI Tables (Clarity/Caboodle)",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Integrity",
+        "version": "2013-final",
+        "why": "Clause §164.312(c)(1) (Integrity) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "§164.312(e)(1)",
+        "killerUcId": "22.10.20",
+        "killerUcTitle": "Transmission Security — TLS 1.0/1.1 Deprecation for EHR Integrations",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Transmission security",
+        "version": "2013-final",
+        "why": "Clause §164.312(e)(1) (Transmission security) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "§164.308(a)(6)",
+        "killerUcId": "22.10.7",
+        "killerUcTitle": "Login Monitoring & Security Incident Procedures — Brute Force to Clinical SSO",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Security incident procedures",
+        "version": "2013-final",
+        "why": "Clause §164.308(a)(6) (Security incident procedures) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "§164.308(a)(1)",
+        "killerUcId": "22.10.1",
+        "killerUcTitle": "HIPAA Risk Analysis Evidence — Asset & ePHI System Inventory",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Security management process",
+        "version": "2013-final",
+        "why": "Clause §164.308(a)(1) (Security management process) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": [
+      {
+        "clause": "§164.308(a)(4)",
+        "mitigationNote": "No UC currently claims §164.308(a)(4) (Information access management). Candidates are tracked in docs/compliance-gaps.md until a UC is authored.",
+        "obligationText": null,
+        "priorityWeight": 1.0,
+        "topic": "Information access management",
+        "version": "2013-final"
+      }
+    ]
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "§164.308(a)(1)",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.1",
+            "ucTitle": "HIPAA Risk Analysis Evidence — Asset & ePHI System Inventory"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.2",
+            "ucTitle": "HIPAA Risk Management — Control Deficiency Tracking"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.22",
+            "ucTitle": "Remote ePHI Access — MFA Gap for VPN + O365 Clinical Mail"
+          }
+        ],
+        "topic": "Security management process",
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.308(a)(3)",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.4",
+            "ucTitle": "Workforce Clearance — HR Hire vs AD Account Creation"
+          }
+        ],
+        "topic": "Workforce security",
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.308(a)(6)",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.7",
+            "ucTitle": "Login Monitoring & Security Incident Procedures — Brute Force to Clinical SSO"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.39.1",
+            "ucTitle": "Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA)"
+          }
+        ],
+        "topic": "Security incident procedures",
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.308(a)(7)",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.8",
+            "ucTitle": "Contingency Plan — Backup Job Success for ePHI Databases"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.45.2",
+            "ucTitle": "Backup encryption and air-gap integrity — tamper detection on immutable storage"
+          }
+        ],
+        "topic": "Contingency plan",
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.310(a)(1)",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.31",
+            "ucTitle": "Facility vs Logical Access — Badge-In Without VPN/SSO for Remote Roles"
+          }
+        ],
+        "topic": "Facility access controls",
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.312(a)(1)",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.21",
+            "ucTitle": "Access Control — Role-Based Violations (Coder Accessing Medication Admin)"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.24",
+            "ucTitle": "Medical Device Integration — Unapproved HL7 Feeds to EMPI"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.25",
+            "ucTitle": "Endpoint Controls — ePHI Clipboard/Print from VDI"
+          }
+        ],
+        "topic": "Access control",
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.312(b)",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.17",
+            "ucTitle": "Audit Controls — High-Volume ePHI Read Baseline & Anomaly"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.36",
+            "ucTitle": "Bulk ePHI Export — Clarity SQL / Caboodle Extract Volume Spike"
+          }
+        ],
+        "topic": "Audit controls",
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.312(c)(1)",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.18",
+            "ucTitle": "Integrity — Unexpected UPDATE/DELETE on PHI Tables (Clarity/Caboodle)"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.35.2",
+            "ucTitle": "Log tamper detection via write-once-read-many chain-of-custody"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.27",
+            "ucTitle": "Integrity — Caboodle / Clarity ETL Job Failures & Partial Loads"
+          }
+        ],
+        "topic": "Integrity",
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.312(d)",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.42",
+            "ucTitle": "Patient Portal — Suspicious MyChart Password Reset & MFA Changes"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.19",
+            "ucTitle": "Entity Authentication — Smart Card / Certificate Logon Failures"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.23",
+            "ucTitle": "FHIR / SMART on FHIR App Access to ePHI Scopes"
+          }
+        ],
+        "topic": "Person or entity authentication",
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.312(e)(1)",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.22",
+            "ucTitle": "Remote ePHI Access — MFA Gap for VPN + O365 Clinical Mail"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.26",
+            "ucTitle": "Transmission Security — Unencrypted SMTP with PHI Patterns"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.20",
+            "ucTitle": "Transmission Security — TLS 1.0/1.1 Deprecation for EHR Integrations"
+          }
+        ],
+        "topic": "Transmission security",
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.308(a)(5)",
+        "coverageState": "covered-full",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.6",
+            "ucTitle": "Security Awareness & Training — Phish Simulation Failure to ePHI Risk"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.46.1",
+            "ucTitle": "Mandatory security training — completion SLA by role"
+          }
+        ],
+        "topic": "Security awareness and training",
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.308(a)(8)",
+        "coverageState": "contributing-only",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.9",
+            "ucTitle": "Periodic Evaluation — Control Test Evidence Ingest"
+          }
+        ],
+        "topic": "Evaluation",
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.310(d)(1)",
+        "coverageState": "covered-full",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.29",
+            "ucTitle": "Device & Media Controls — USB Mass Storage on ePHI Workstations"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.49.1",
+            "ucTitle": "Retention execution evidence — records past retention still present"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.49.2",
+            "ucTitle": "Disposal workflow completion — failed disposals requiring manual review"
+          }
+        ],
+        "topic": "Device and media controls",
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.312(a)(2)(iv)",
+        "coverageState": "covered-full",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.16",
+            "ucTitle": "Encryption of ePHI at Rest — TDE / BitLocker Status for Clinical Datastores"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.41.1",
+            "ucTitle": "Encryption-at-rest coverage gap — unencrypted storage with regulated data"
+          }
+        ],
+        "topic": "Encryption and decryption",
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.308(a)(1)(ii)(A)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.49",
+            "ucTitle": "Breach Remediation — Control Implementation Evidence Post-Incident"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.308(a)(1)(ii)(B)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.10",
+            "ucTitle": "Business Associate Contracts — BAA Coverage for Connected Systems"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.308(a)(1)(ii)(C)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.12",
+            "ucTitle": "Sanction Policy — Privileged Abuse on EHR Audit Logs"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.308(a)(1)(ii)(D)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.3",
+            "ucTitle": "Information System Activity Review — Cross-Source ePHI Access Summary"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.308(a)(3)(ii)(C)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.5",
+            "ucTitle": "Termination — Access Revocation Within Policy Window"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.308(b)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.51",
+            "ucTitle": "Business Associate Access — VPN/SSO Sessions Originating from BA Address Space"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.308(b)(1)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.11",
+            "ucTitle": "Business Associate Agreements — Expiry & Auto-Renewal Monitoring"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.308(b)(3)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.52",
+            "ucTitle": "BAA Compliance Evidence — Control Attestations vs Technical Telemetry"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.310(b)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.28",
+            "ucTitle": "Workstation Security — Unattended Unlocked Sessions in Clinical Pods"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.32",
+            "ucTitle": "Workstation Use — After-Hours Login from Non-Clinical IP Space"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.310(c)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.32",
+            "ucTitle": "Workstation Use — After-Hours Login from Non-Clinical IP Space"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.310(d)(2)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.30",
+            "ucTitle": "Media Controls — Large PHI Print Jobs to Non-Secure Printers"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.312(a)(2)(i)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.13",
+            "ucTitle": "Unique User Identification — Shared or Generic EHR Accounts"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.312(a)(2)(ii)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.14",
+            "ucTitle": "Emergency Access Procedure — Downtime / Break-Glass Account Usage"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.312(a)(2)(iii)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.15",
+            "ucTitle": "Automatic Logoff — Stale Clinical Workstation Sessions"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.402",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.44",
+            "ucTitle": "Breach Risk Assessment — Four-Factor Documentation Tracking"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.48",
+            "ucTitle": "Breach Log / Incident Register — Immutable Chronological Record"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.404",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.43",
+            "ucTitle": "Breach Discovery — Time-to-Detect from First PHI Indicator"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.44",
+            "ucTitle": "Breach Risk Assessment — Four-Factor Documentation Tracking"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.39.3",
+            "ucTitle": "Data-subject breach communication timeline tracker (Art.34 / §164.404)"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.404(b)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.45",
+            "ucTitle": "Individual Notification — Letter Generation & Mailing Evidence"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.406(c)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.47",
+            "ucTitle": "Media Notification — Large-State Resident Threshold Tracking"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.408",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.46",
+            "ucTitle": "HHS Secretary Notification — 500+ Individuals Threshold Watch"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.50",
+            "ucTitle": "Annual Breach Reporting — Trend of Affected Individuals & Root Cause"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.502(a)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.39",
+            "ucTitle": "VIP / High-Profile Patient — Elevated Access Monitoring"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.502(a)(1)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.40",
+            "ucTitle": "Research Access — Chart Views Without Active IRB Consent Flag"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.35",
+            "ucTitle": "Non-Treating Provider — Specialty Mismatch Chart Access"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.502(a)(2)(ii)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.34",
+            "ucTitle": "Break-Glass — Emergency Access Reason Codes & Post-Review"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.502(b)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.33",
+            "ucTitle": "Minimum Necessary — Access Outside Active Care Team"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.36",
+            "ucTitle": "Bulk ePHI Export — Clarity SQL / Caboodle Extract Volume Spike"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.54",
+            "ucTitle": "Third-Party Data Sharing — O365 Sharing Links to External Domains on PHI Libraries"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.502(e)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.53",
+            "ucTitle": "Subcontractor Access — Downstream API Keys Touching ePHI Interfaces"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.55",
+            "ucTitle": "Cloud Service Provider — ePHI Hosting Admin Actions in AWS or Azure Audit"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.51",
+            "ucTitle": "Business Associate Access — VPN/SSO Sessions Originating from BA Address Space"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.502(f)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.38",
+            "ucTitle": "Deceased Patient Records — Access After Death Date"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.512(i)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.40",
+            "ucTitle": "Research Access — Chart Views Without Active IRB Consent Flag"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.514(d)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.33",
+            "ucTitle": "Minimum Necessary — Access Outside Active Care Team"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.514(e)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.54",
+            "ucTitle": "Third-Party Data Sharing — O365 Sharing Links to External Domains on PHI Libraries"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.528",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.41",
+            "ucTitle": "Accounting of Disclosures — Registry vs EHR-Logged Disclosures"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      },
+      {
+        "clause": "§164.530(c)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.10.42",
+            "ucTitle": "Patient Portal — Suspicious MyChart Password Reset & MFA Changes"
+          }
+        ],
+        "topic": null,
+        "version": "2013-final"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "US"
+  ],
+  "narrative": {
+    "evidencePack": "docs/evidence-packs/hipaa-security.md",
+    "matchedBy": "manual-map",
+    "name": "HIPAA healthcare",
+    "primer": "docs/regulatory-primer.md#44-hipaa-security--health-insurance-portability-and-accountability-act-security-rule-us--t1",
+    "splunkValue": "We detect unauthorised patient-record access (the 'snooping' pattern auditors always ask about), prove ePHI encryption at rest and in transit, start the 60-day breach clock the moment discovery happens, and produce a business-associate evidence pack on demand.",
+    "whatItIs": "The US federal law protecting Protected Health Information (PHI). Its Security Rule sets Administrative, Physical, and Technical safeguards; its Breach Notification Rule runs a 60-day clock; its Privacy Rule limits who may use or disclose PHI.",
+    "whoItAffects": "US healthcare providers, health plans, healthcare clearinghouses, and any Business Associate that handles PHI on their behalf (cloud hosters, billing firms, analytics vendors, MSPs)."
+  },
+  "narrativeRef": "non-technical-view.js#cat-22/area/hipaa-healthcare",
+  "regulationId": "hipaa-security",
+  "regulationName": "HIPAA Security Rule",
+  "regulationShortName": "HIPAA Security",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=hipaa-security",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#hipaa-security",
+    "evidencePack": "docs/evidence-packs/hipaa-security.md",
+    "primerAnchor": "docs/regulatory-primer.md#44-hipaa-security-health-insurance-portability-and-accountability-act-security-rule-us-t1",
+    "regulation": "/api/v1/compliance/regulations/hipaa-security.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 1
+}

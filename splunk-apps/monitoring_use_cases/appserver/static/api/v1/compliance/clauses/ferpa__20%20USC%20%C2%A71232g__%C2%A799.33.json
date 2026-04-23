@@ -1,0 +1,35 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.ecfr.gov/current/title-34/subtitle-A/part-99",
+  "clause": "§99.33",
+  "clauseId": "ferpa@20 USC §1232g#§99.33",
+  "coverageState": "uncovered",
+  "coveringUcCount": 0,
+  "coveringUcs": [],
+  "endpoint": "/api/v1/compliance/clauses/ferpa__20%20USC%20%C2%A71232g__%C2%A799.33.json",
+  "gapNote": "FERPA clause §99.33 (Redisclosure and record-keeping) is listed in data/regulations.json as a common clause but no use case currently tags it. Candidate UCs are tracked in docs/compliance-gaps.md and api/v1/compliance/gaps.json.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {},
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 0.7,
+  "regulationId": "ferpa",
+  "regulationName": "Family Educational Rights and Privacy Act",
+  "regulationShortName": "FERPA",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/ferpa.json",
+    "regulationVersion": "/api/v1/compliance/regulations/ferpa@20%20USC%20%C2%A71232g.json",
+    "story": "/api/v1/compliance/story/ferpa.json"
+  },
+  "tier": 2,
+  "topAssurance": null,
+  "topic": "Redisclosure and record-keeping",
+  "version": "20 USC §1232g"
+}

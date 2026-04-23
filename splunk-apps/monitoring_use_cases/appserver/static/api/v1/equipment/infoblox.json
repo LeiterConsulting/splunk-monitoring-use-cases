@@ -1,0 +1,100 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 12,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "infoblox",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Infoblox",
+  "models": [
+    {
+      "id": "infoblox_dhcp",
+      "label": "Infoblox DHCP",
+      "modelId": "dhcp",
+      "useCaseCount": 0,
+      "useCaseIds": []
+    },
+    {
+      "id": "infoblox_dns",
+      "label": "Infoblox DNS",
+      "modelId": "dns",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "8.6.17"
+      ]
+    }
+  ],
+  "regulationIds": [
+    "nist-800-53"
+  ],
+  "regulations": [
+    {
+      "clauseMappings": [
+        {
+          "clause": "CM-8",
+          "useCaseId": "22.14.58",
+          "version": "Rev. 5"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/nist-800-53.json",
+      "regulationId": "nist-800-53",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.14.58"
+      ]
+    }
+  ],
+  "useCaseCount": 12,
+  "useCaseIds": [
+    "5.6.1",
+    "5.6.5",
+    "5.6.7",
+    "5.6.9",
+    "5.6.10",
+    "5.6.11",
+    "5.6.12",
+    "5.6.16",
+    "5.6.17",
+    "8.6.17",
+    "10.13.13",
+    "22.14.58"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 5,
+      "useCaseCount": 9,
+      "useCaseIds": [
+        "5.6.1",
+        "5.6.5",
+        "5.6.7",
+        "5.6.9",
+        "5.6.10",
+        "5.6.11",
+        "5.6.12",
+        "5.6.16",
+        "5.6.17"
+      ]
+    },
+    {
+      "category": 8,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "8.6.17"
+      ]
+    },
+    {
+      "category": 10,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "10.13.13"
+      ]
+    },
+    {
+      "category": 22,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.14.58"
+      ]
+    }
+  ]
+}

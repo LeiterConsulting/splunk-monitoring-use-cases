@@ -1,0 +1,147 @@
+{
+  "aliases": [
+    "MAS TRM"
+  ],
+  "apiVersion": "v1",
+  "id": "mas-trm",
+  "jurisdiction": [
+    "SG"
+  ],
+  "name": "MAS Technology Risk Management Guidelines",
+  "shortName": "MAS TRM",
+  "tags": [
+    "financial"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://www.mas.gov.sg/-/media/mas/regulations-and-financial-stability/regulatory-and-supervisory-framework/risk-management/trm-guidelines-18-january-2021.pdf",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§11.1.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.50.5"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "System resilience"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 9,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§4.1.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "12.2.17",
+            "16.4.1",
+            "22.30.1",
+            "22.30.2",
+            "22.30.3",
+            "22.30.4",
+            "22.30.5",
+            "22.30.7",
+            "5.1.7"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Technology risk governance"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "§8.1.1",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "16.1.20",
+            "22.30.6"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "IT operations — incident mgmt"
+        }
+      ],
+      "clauseExamples": [
+        "§4.1.1",
+        "§8.2.3",
+        "§11.1.1"
+      ],
+      "clauseGrammar": "^§\\d+(\\.\\d+){0,3}$",
+      "clauseUrlTemplate": null,
+      "clausesReferencedByCatalogue": [
+        "§11.1.1",
+        "§4.1.1",
+        "§8.1.1"
+      ],
+      "commonClauses": [
+        {
+          "clause": "§4.1.1",
+          "priorityWeight": 1.0,
+          "topic": "Technology risk governance"
+        },
+        {
+          "clause": "§8.1.1",
+          "priorityWeight": 1.0,
+          "topic": "IT operations — incident mgmt"
+        },
+        {
+          "clause": "§11.1.1",
+          "priorityWeight": 1.0,
+          "topic": "System resilience"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 100.0,
+        "commonClauseCount": 3,
+        "coveredClauseCount": 3,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 33.33,
+        "stateCounts": {
+          "contributing-only": 2,
+          "covered-full": 0,
+          "covered-partial": 1,
+          "uncovered": 0
+        }
+      },
+      "effectiveFrom": "2021-01-18",
+      "endpoint": "/api/v1/compliance/regulations/mas-trm@2021.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [
+        "12.2.17",
+        "16.1.20",
+        "16.4.1",
+        "22.30.1",
+        "22.30.2",
+        "22.30.3",
+        "22.30.4",
+        "22.30.5",
+        "22.30.6",
+        "22.30.7",
+        "22.50.5",
+        "5.1.7"
+      ],
+      "version": "2021"
+    }
+  ]
+}

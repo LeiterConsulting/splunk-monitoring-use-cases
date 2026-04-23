@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj#Art.12",
+  "clause": "Art.12",
+  "clauseId": "eu-ai-act@Regulation (EU) 2024/1689#Art.12",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "EU AI Act Art.12 Record-keeping (logging) — host-level auditd monitoring records the infrastructure events that high-risk AI systems must log.",
+      "category": 1,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "controlObjective": "Evidence that EU AI Act Art.12 (Record-keeping (logging)) is enforced — Splunk UC-1.1.65: Auditd Rule Violation Detection.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-1.1.65' running on sourcetype=linux_audit, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "1.1.65",
+      "ucTitle": "Auditd Rule Violation Detection"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/eu-ai-act__Regulation%20%28EU%29%202024%2F1689__Art.12.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "eu-ai-act",
+  "regulationName": "EU AI Act",
+  "regulationShortName": "EU AI Act",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/eu-ai-act.json",
+    "regulationVersion": "/api/v1/compliance/regulations/eu-ai-act@Regulation%20%28EU%29%202024%2F1689.json",
+    "story": "/api/v1/compliance/story/eu-ai-act.json"
+  },
+  "tier": 2,
+  "topAssurance": "partial",
+  "topic": "Record-keeping (logging)",
+  "version": "Regulation (EU) 2024/1689"
+}

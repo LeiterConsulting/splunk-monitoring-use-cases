@@ -1,0 +1,261 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 1,
+        "partial": 4
+      },
+      "clause": "AC-2",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "13.1.39",
+        "17.1.8",
+        "4.1.4",
+        "5.2.2",
+        "7.1.21",
+        "9.1.3",
+        "9.4.1",
+        "9.5.15"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Account management",
+      "version": "Rev.5 Baselines"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 2
+      },
+      "clause": "AU-6",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "13.1.35",
+        "13.1.37",
+        "4.1.1"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Audit review, analysis, reporting",
+      "version": "Rev.5 Baselines"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 4
+      },
+      "clause": "SI-4",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "1.1.65",
+        "1.1.76",
+        "1.2.51",
+        "4.1.1"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "System monitoring",
+      "version": "Rev.5 Baselines"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "3 of 3 common clauses are covered by the catalogue, with a priority-weighted coverage of 66.67% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 3,
+      "priorityWeightedCoveragePercent": 66.67,
+      "stateCounts": {
+        "contributing-only": 0,
+        "covered-full": 1,
+        "covered-partial": 2,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "AC-2",
+        "killerUcId": "13.1.39",
+        "killerUcTitle": "Role and Capability Change Detection (_audit)",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Account management",
+        "version": "Rev.5 Baselines",
+        "why": "Clause AC-2 (Account management) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "AU-6",
+        "killerUcId": "13.1.35",
+        "killerUcTitle": "User Search Activity Audit (_audit)",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Audit review, analysis, reporting",
+        "version": "Rev.5 Baselines",
+        "why": "Clause AU-6 (Audit review, analysis, reporting) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "SI-4",
+        "killerUcId": "1.1.65",
+        "killerUcTitle": "Auditd Rule Violation Detection",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "System monitoring",
+        "version": "Rev.5 Baselines",
+        "why": "Clause SI-4 (System monitoring) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "AC-2",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "5.2.2",
+            "ucTitle": "Policy Change Audit"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "9.1.3",
+            "ucTitle": "Privileged Group Membership Changes"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "9.4.1",
+            "ucTitle": "Privileged Session Audit"
+          }
+        ],
+        "topic": "Account management",
+        "version": "Rev.5 Baselines"
+      },
+      {
+        "clause": "AU-6",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "4.1.1",
+            "ucTitle": "Unauthorized API Calls"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "13.1.37",
+            "ucTitle": "Knowledge Object Modification Audit (_audit)"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "13.1.35",
+            "ucTitle": "User Search Activity Audit (_audit)"
+          }
+        ],
+        "topic": "Audit review, analysis, reporting",
+        "version": "Rev.5 Baselines"
+      },
+      {
+        "clause": "SI-4",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "1.1.65",
+            "ucTitle": "Auditd Rule Violation Detection"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "1.1.76",
+            "ucTitle": "Privilege Escalation Detection"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "1.2.51",
+            "ucTitle": "Process Creation with Command Line Auditing"
+          }
+        ],
+        "topic": "System monitoring",
+        "version": "Rev.5 Baselines"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "US"
+  ],
+  "narrative": {
+    "evidencePack": null,
+    "matchedBy": "fuzzy-shortname",
+    "name": "FISMA / FedRAMP",
+    "primer": null,
+    "splunkValue": "We produce the ConMon deliverables — vulnerability metrics, POA&M ageing, inventory, configuration compliance, and incident metrics — in the format expected by the JAB and agency authorising officials, not a home-grown template.",
+    "whatItIs": "The Federal Information Security Modernization Act requires US federal agencies to run a continuous monitoring programme over their systems. FedRAMP extends that to cloud providers that want to sell to the federal government, with a standardised authorisation-to-operate.",
+    "whoItAffects": "US federal agencies, their contractors, and cloud service providers pursuing FedRAMP authorisation (Low, Moderate, High impact levels). State agencies and higher education often adopt FISMA-aligned programmes as well."
+  },
+  "narrativeRef": "non-technical-view.js#cat-22/area/fisma-fedramp",
+  "regulationId": "fedramp",
+  "regulationName": "Federal Risk and Authorization Management Program",
+  "regulationShortName": "FedRAMP",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=fedramp",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#fedramp",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/fedramp.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

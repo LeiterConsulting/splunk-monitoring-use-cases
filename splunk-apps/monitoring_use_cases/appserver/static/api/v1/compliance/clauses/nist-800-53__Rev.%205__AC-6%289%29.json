@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 1,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "AC-6(9)",
+  "clauseId": "nist-800-53@Rev. 5#AC-6(9)",
+  "coverageState": "covered-full",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "AC-6(9) auditing use of privileged functions is directly enforced; high-risk-command correlation provides evidence.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that NIST-800-53 AC-6(9) is enforced — Splunk UC-22.40.5: High-risk privileged-session command without JIT approval.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.40.5' running on PAM session keystroke/command logs, GRC JIT ticketing events, high-risk command catalogue (high_risk_commands.csv)., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.40.5",
+      "ucTitle": "High-risk privileged-session command without JIT approval"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/nist-800-53__Rev.%205__AC-6%289%29.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "nist-800-53",
+  "regulationName": "nist-800-53",
+  "regulationShortName": "nist-800-53",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/nist-800-53.json",
+    "regulationVersion": "/api/v1/compliance/regulations/nist-800-53@Rev.%205.json",
+    "story": "/api/v1/compliance/story/nist-800-53.json"
+  },
+  "tier": null,
+  "topAssurance": "full",
+  "topic": null,
+  "version": "Rev. 5"
+}

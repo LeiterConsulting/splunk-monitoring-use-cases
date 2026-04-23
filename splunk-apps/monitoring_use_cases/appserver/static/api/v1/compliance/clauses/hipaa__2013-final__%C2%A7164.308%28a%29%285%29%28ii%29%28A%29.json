@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "§164.308(a)(5)(ii)(A)",
+  "clauseId": "hipaa@2013-final#§164.308(a)(5)(ii)(A)",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "Security reminders and periodic training for workforce; extends to privileged roles.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that HIPAA §164.308(a)(5)(ii)(A) is enforced — Splunk UC-22.46.3: Privileged-role specialist training — admins lacking annual deep-training.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.46.3' running on LMS specialist-course completions, PAM vault inventory with owner mapping., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.46.3",
+      "ucTitle": "Privileged-role specialist training — admins lacking annual deep-training"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/hipaa__2013-final__%C2%A7164.308%28a%29%285%29%28ii%29%28A%29.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "hipaa",
+  "regulationName": "hipaa",
+  "regulationShortName": "hipaa",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/hipaa.json",
+    "regulationVersion": "/api/v1/compliance/regulations/hipaa@2013-final.json",
+    "story": "/api/v1/compliance/story/hipaa.json"
+  },
+  "tier": null,
+  "topAssurance": "partial",
+  "topic": null,
+  "version": "2013-final"
+}

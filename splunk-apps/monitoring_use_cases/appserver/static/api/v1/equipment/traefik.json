@@ -1,0 +1,27 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 2,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "traefik",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Traefik",
+  "models": [],
+  "regulationIds": [],
+  "regulations": [],
+  "useCaseCount": 2,
+  "useCaseIds": [
+    "3.2.9",
+    "3.2.27"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 3,
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "3.2.9",
+        "3.2.27"
+      ]
+    }
+  ]
+}

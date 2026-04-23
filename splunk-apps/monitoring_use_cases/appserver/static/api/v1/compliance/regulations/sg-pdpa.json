@@ -1,0 +1,153 @@
+{
+  "aliases": [
+    "PDPA",
+    "SG PDPA",
+    "Singapore PDPA"
+  ],
+  "apiVersion": "v1",
+  "id": "sg-pdpa",
+  "jurisdiction": [
+    "SG"
+  ],
+  "name": "Singapore Personal Data Protection Act",
+  "shortName": "SG PDPA",
+  "tags": [
+    "privacy"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://sso.agc.gov.sg/Act/PDPA2012",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 6,
+            "full": 0,
+            "partial": 2
+          },
+          "clause": "§24",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "11.1.5",
+            "11.1.6",
+            "22.29.13",
+            "22.29.14",
+            "22.29.15",
+            "22.29.16",
+            "22.29.17",
+            "22.29.18"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Protection of personal data obligation"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 4,
+            "full": 0,
+            "partial": 2
+          },
+          "clause": "§26A",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "11.1.6",
+            "16.3.6",
+            "22.29.10",
+            "22.29.7",
+            "22.29.8",
+            "22.29.9"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Data breach notification"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "§26B",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "11.1.6"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Criteria for notifiability"
+        }
+      ],
+      "clauseExamples": [
+        "§24",
+        "§26A",
+        "§26B"
+      ],
+      "clauseGrammar": "^§\\d+[A-Z]?(\\(\\d+\\))?$",
+      "clauseUrlTemplate": null,
+      "clausesReferencedByCatalogue": [
+        "§24",
+        "§26A",
+        "§26B"
+      ],
+      "commonClauses": [
+        {
+          "clause": "§24",
+          "priorityWeight": 1.0,
+          "topic": "Protection of personal data obligation"
+        },
+        {
+          "clause": "§26A",
+          "priorityWeight": 1.0,
+          "topic": "Data breach notification"
+        },
+        {
+          "clause": "§26B",
+          "priorityWeight": 1.0,
+          "topic": "Criteria for notifiability"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 100.0,
+        "commonClauseCount": 3,
+        "coveredClauseCount": 3,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 50.0,
+        "stateCounts": {
+          "contributing-only": 1,
+          "covered-full": 0,
+          "covered-partial": 2,
+          "uncovered": 0
+        }
+      },
+      "effectiveFrom": "2021-02-01",
+      "endpoint": "/api/v1/compliance/regulations/sg-pdpa@2020-amended.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [
+        "11.1.5",
+        "11.1.6",
+        "16.3.6",
+        "22.29.10",
+        "22.29.13",
+        "22.29.14",
+        "22.29.15",
+        "22.29.16",
+        "22.29.17",
+        "22.29.18",
+        "22.29.7",
+        "22.29.8",
+        "22.29.9"
+      ],
+      "version": "2020 amended"
+    }
+  ]
+}

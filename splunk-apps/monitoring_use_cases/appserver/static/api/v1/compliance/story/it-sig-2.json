@@ -1,0 +1,95 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§8a",
+      "coverageState": "uncovered",
+      "coveringUcs": [],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": null,
+      "topic": "Security measures for KRITIS operators",
+      "version": "2021"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§8b",
+      "coverageState": "uncovered",
+      "coveringUcs": [],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": null,
+      "topic": "National IT situation centre notification",
+      "version": "2021"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "0 of 2 common clauses are covered by the catalogue, with a priority-weighted coverage of 0.0% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 0,
+      "priorityWeightedCoveragePercent": 0.0,
+      "stateCounts": {
+        "contributing-only": 0,
+        "covered-full": 0,
+        "covered-partial": 0,
+        "uncovered": 2
+      }
+    },
+    "topFiveHighlights": [],
+    "topThreeGaps": [
+      {
+        "clause": "§8a",
+        "mitigationNote": "No UC currently claims §8a (Security measures for KRITIS operators). Candidates are tracked in docs/compliance-gaps.md until a UC is authored.",
+        "obligationText": null,
+        "priorityWeight": 1.0,
+        "topic": "Security measures for KRITIS operators",
+        "version": "2021"
+      },
+      {
+        "clause": "§8b",
+        "mitigationNote": "No UC currently claims §8b (National IT situation centre notification). Candidates are tracked in docs/compliance-gaps.md until a UC is authored.",
+        "obligationText": null,
+        "priorityWeight": 1.0,
+        "topic": "National IT situation centre notification",
+        "version": "2021"
+      }
+    ]
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": []
+  },
+  "jurisdiction": [
+    "DE"
+  ],
+  "narrative": null,
+  "narrativeRef": null,
+  "regulationId": "it-sig-2",
+  "regulationName": "German IT-Sicherheitsgesetz 2.0",
+  "regulationShortName": "IT-SiG 2.0",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=it-sig-2",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#it-sig-2",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/it-sig-2.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

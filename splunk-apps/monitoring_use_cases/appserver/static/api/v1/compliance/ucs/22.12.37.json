@@ -1,0 +1,145 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/22.12.37.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/22.12.37.json",
+    "sourcePath": "content/cat-22-regulatory-compliance/UC-22.12.37.json"
+  },
+  "apiVersion": "v1",
+  "app": "Splunk Add-on for Okta, Splunk Add-on for Workday",
+  "cimModels": [
+    "Authentication",
+    "Change"
+  ],
+  "compliance": [
+    {
+      "assurance": "full",
+      "assurance_rationale": "SOX-ITGC AccessMgmt.Termination — revocation SLA is direct evidence.",
+      "clause": "ITGC.AccessMgmt.Termination",
+      "clauseUrl": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+      "controlObjective": "Evidence that SOX-ITGC ITGC.AccessMgmt.Termination (Timely deprovisioning) is enforced — Splunk UC-22.12.37: SOX-ITGC AccessMgmt.Termination — Deprovisioning SLA after HR termination event.",
+      "evidenceArtifact": "Saved search 'UC-22.12.37' running on sourcetype workday:termination and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "sox-itgc@PCAOB AS 2201#ITGC.AccessMgmt.Termination",
+      "regulation": "SOX-ITGC",
+      "requires_sme_review": true,
+      "version": "PCAOB AS 2201"
+    },
+    {
+      "assurance": "full",
+      "assurance_rationale": "SOC 2 CC6.3 Logical access removal — directly evidenced.",
+      "clause": "CC6.3",
+      "clauseUrl": "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services",
+      "controlObjective": "Evidence that SOC-2 CC6.3 is enforced — Splunk UC-22.12.37: SOX-ITGC AccessMgmt.Termination — Deprovisioning SLA after HR termination event.",
+      "evidenceArtifact": "Saved search 'UC-22.12.37' running on sourcetype workday:termination and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "soc-2@2017 TSC#CC6.3",
+      "regulation": "SOC-2",
+      "requires_sme_review": true,
+      "version": "2017 TSC"
+    },
+    {
+      "assurance": "full",
+      "assurance_rationale": "ISO/IEC 27001:2022 A.5.18 Access rights — directly evidenced.",
+      "clause": "A.5.18",
+      "clauseUrl": "https://www.iso.org/standard/27001",
+      "controlObjective": "Evidence that ISO/IEC 27001 A.5.18 (Access rights review) is enforced — Splunk UC-22.12.37: SOX-ITGC AccessMgmt.Termination — Deprovisioning SLA after HR termination event.",
+      "evidenceArtifact": "Saved search 'UC-22.12.37' running on sourcetype workday:termination and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "iso-27001@2022#A.5.18",
+      "regulation": "ISO/IEC 27001",
+      "requires_sme_review": true,
+      "version": "2022"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "PCI-DSS 8.2.5 Terminate access within 1 business day — contributing.",
+      "clause": "8.2.5",
+      "clauseUrl": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf",
+      "controlObjective": "Evidence that PCI-DSS 8.2.5 is enforced — Splunk UC-22.12.37: SOX-ITGC AccessMgmt.Termination — Deprovisioning SLA after HR termination event.",
+      "evidenceArtifact": "Saved search 'UC-22.12.37' running on sourcetype workday:termination and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "pci-dss@v4.0#8.2.5",
+      "regulation": "PCI-DSS",
+      "requires_sme_review": true,
+      "version": "v4.0"
+    }
+  ],
+  "controlFamily": "access-review-cadence",
+  "controlTest": {
+    "attackTechnique": "T1078",
+    "fixtureRef": "sample-data/uc-22.12.37-fixture.json",
+    "negativeScenario": "A termination with a matching deactivate event within 2h is absent.",
+    "positiveScenario": "A Workday termination not followed by an IAM deactivate event within 24h returns sla_met=0."
+  },
+  "criticality": "critical",
+  "dataSources": "`index=hr` sourcetype=workday:termination; `index=iam` sourcetype=okta:system_log (user.lifecycle.deactivate + group.user_membership.remove).",
+  "description": "Joins HR termination events against IAM deactivation/removal events to measure whether access was revoked within the 24h SLA implied by SOX-ITGC AccessMgmt.Termination.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Splunk Add-on for Okta, Splunk Add-on for Workday.\n• Ensure the following data sources are available: `index=hr` sourcetype=workday:termination; `index=iam` sourcetype=okta:system_log (user.lifecycle.deactivate + group.user_membership.remove)..\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\n(1) Route Workday terminations to Splunk; (2) route Okta lifecycle events; (3) schedule UC hourly; (4) sla_met=0 pages the IAM team; (5) monthly CFO report.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=hr sourcetype=workday:termination earliest=-7d\n| stats latest(_time) AS term_date BY user\n| join user type=outer\n  [search index=iam (eventType=user.lifecycle.deactivate OR eventType=group.user_membership.remove) earliest=-7d\n   | stats max(_time) AS last_access_revoked BY user]\n| eval elapsed_hours=round((last_access_revoked-term_date)/3600,1)\n| eval sla_met=if(elapsed_hours<=24 AND isnotnull(last_access_revoked),1,0)\n| where sla_met=0\n| table user term_date last_access_revoked elapsed_hours sla_met\n```\n\nUnderstanding this SPL\n\n**SOX-ITGC AccessMgmt.Termination — Deprovisioning SLA after HR termination event** — The most common SOX finding — ex-employees retaining access — becomes measurable hour-by-hour.\n\nDocumented **Data sources**: `index=hr` sourcetype=workday:termination; `index=iam` sourcetype=okta:system_log (user.lifecycle.deactivate + group.user_membership.remove). **App/TA** (typical add-on context): Splunk Add-on for Okta, Splunk Add-on for Workday. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: hr; **sourcetype**: workday:termination. That sourcetype matches what this use case lists under Data sources.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=hr, sourcetype=workday:termination, time bounds. Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• `stats` rolls up events into metrics; results are split **by user** so each row reflects one combination of those dimensions (useful for per-host, per-user, or per-entity comparisons for this use case).\n• Joins to a subsearch with `join` — set `max=` to match cardinality and avoid silent truncation.\n• `eval` defines or adjusts **elapsed_hours** — often to normalize units, derive a ratio, or prepare for thresholds.\n• `eval` defines or adjusts **sla_met** — often to normalize units, derive a ratio, or prepare for thresholds.\n• Filters the current rows with `where sla_met=0` — typically the threshold or rule expression for this monitoring goal.\n• Pipeline stage (see **SOX-ITGC AccessMgmt.Termination — Deprovisioning SLA after HR termination event**): table user term_date last_access_revoked elapsed_hours sla_met\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Timechart of SLA adherence %, table of breaches, single value 'open SLA breaches'.",
+  "detectionType": "Correlation",
+  "difficulty": "intermediate",
+  "equipment": [
+    "okta"
+  ],
+  "evidence": "Saved search 'sox_itgc_termination_sla' (hourly) emits per terminated user: user, term_date, last_access_revoked, elapsed_hours, sla_met, to compliance_summary.",
+  "exclusions": "Does NOT deprovision; measures elapsed time between HR termination and removal of all financial-system access.",
+  "grandmaExplanation": "The most common finding — ex-employees retaining access — becomes measurable hour-by-hour — so you can show exactly what is being watched and when something went wrong.",
+  "id": "22.12.37",
+  "implementation": "(1) Route Workday terminations to Splunk; (2) route Okta lifecycle events; (3) schedule UC hourly; (4) sla_met=0 pages the IAM team; (5) monthly CFO report.",
+  "knownFalsePositives": "Contractor terminations with delayed HR events may produce a false breach — backfill term_date from contract_end_date in vendor_register.csv.",
+  "lastReviewed": "2026-04-16",
+  "mitreAttack": [
+    "T1078"
+  ],
+  "monitoringType": [
+    "Compliance",
+    "Security"
+  ],
+  "owner": "CFO",
+  "references": [
+    {
+      "retrieved": "2026-04-16",
+      "title": "SOX-ITGC PCAOB AS 2201",
+      "url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "SOC-2 2017 TSC",
+      "url": "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "ISO/IEC 27001 2022",
+      "url": "https://www.iso.org/standard/27001"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "PCI-DSS v4.0",
+      "url": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "MITRE ATT&CK — T1078",
+      "url": "https://attack.mitre.org/techniques/T1078/"
+    }
+  ],
+  "requiredFields": [
+    "user",
+    "eventType",
+    "_time"
+  ],
+  "reviewer": "N/A",
+  "securityDomain": "identity",
+  "spl": "index=hr sourcetype=workday:termination earliest=-7d\n| stats latest(_time) AS term_date BY user\n| join user type=outer\n  [search index=iam (eventType=user.lifecycle.deactivate OR eventType=group.user_membership.remove) earliest=-7d\n   | stats max(_time) AS last_access_revoked BY user]\n| eval elapsed_hours=round((last_access_revoked-term_date)/3600,1)\n| eval sla_met=if(elapsed_hours<=24 AND isnotnull(last_access_revoked),1,0)\n| where sla_met=0\n| table user term_date last_access_revoked elapsed_hours sla_met",
+  "splunkPillar": "Security",
+  "splunkVersions": [
+    "9.2+",
+    "Cloud"
+  ],
+  "status": "verified",
+  "subcategory": "22.12#1",
+  "title": "SOX-ITGC AccessMgmt.Termination — Deprovisioning SLA after HR termination event",
+  "value": "The most common SOX finding — ex-employees retaining access — becomes measurable hour-by-hour.",
+  "visualization": "Timechart of SLA adherence %, table of breaches, single value 'open SLA breaches'."
+}

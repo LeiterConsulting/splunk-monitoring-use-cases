@@ -1,0 +1,35 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-{section}#p-%C2%A7164.308(a)(4)",
+  "clause": "§164.308(a)(4)",
+  "clauseId": "hipaa-security@2013-final#§164.308(a)(4)",
+  "coverageState": "uncovered",
+  "coveringUcCount": 0,
+  "coveringUcs": [],
+  "endpoint": "/api/v1/compliance/clauses/hipaa-security__2013-final__%C2%A7164.308%28a%29%284%29.json",
+  "gapNote": "HIPAA Security clause §164.308(a)(4) (Information access management) is listed in data/regulations.json as a common clause but no use case currently tags it. Candidate UCs are tracked in docs/compliance-gaps.md and api/v1/compliance/gaps.json.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {},
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "hipaa-security",
+  "regulationName": "HIPAA Security Rule",
+  "regulationShortName": "HIPAA Security",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/hipaa-security.json",
+    "regulationVersion": "/api/v1/compliance/regulations/hipaa-security@2013-final.json",
+    "story": "/api/v1/compliance/story/hipaa-security.json"
+  },
+  "tier": 1,
+  "topAssurance": null,
+  "topic": "Information access management",
+  "version": "2013-final"
+}

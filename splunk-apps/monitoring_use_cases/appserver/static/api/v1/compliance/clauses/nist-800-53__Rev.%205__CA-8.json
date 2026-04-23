@@ -1,0 +1,68 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 2,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "CA-8",
+  "clauseId": "nist-800-53@Rev. 5#CA-8",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 2,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "NIST 800-53 CA-8 Penetration Testing — contributing evidence for the penetration-test subset of the plan.",
+      "category": 22,
+      "clauseUrl": "https://doi.org/10.6028/NIST.SP.800-53r5",
+      "controlObjective": "Evidence that NIST 800-53 CA-8 is enforced — Splunk UC-22.3.45: DORA Art.24 — Digital operational-resilience testing: test-plan execution attestation.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.3.45' running on sourcetype test:plan_execution and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.3.45",
+      "ucTitle": "DORA Art.24 — Digital operational-resilience testing: test-plan execution attestation"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that NIST 800-53 CA-8 is enforced — Splunk UC-22.14.64: Penetration Test Windows and Detected Activities.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.14.64' running on notable OR suricata, snort, pan:threat, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.14.64",
+      "ucTitle": "Penetration Test Windows and Detected Activities"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/nist-800-53__Rev.%205__CA-8.json",
+  "gapNote": "nist-800-53 clause CA-8 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 2
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "nist-800-53",
+  "regulationName": "nist-800-53",
+  "regulationShortName": "nist-800-53",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/nist-800-53.json",
+    "regulationVersion": "/api/v1/compliance/regulations/nist-800-53@Rev.%205.json",
+    "story": "/api/v1/compliance/story/nist-800-53.json"
+  },
+  "tier": null,
+  "topAssurance": "contributing",
+  "topic": null,
+  "version": "Rev. 5"
+}

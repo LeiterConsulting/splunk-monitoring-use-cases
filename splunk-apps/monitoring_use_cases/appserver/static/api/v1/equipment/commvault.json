@@ -1,0 +1,129 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 6,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "commvault",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Commvault",
+  "models": [],
+  "regulationIds": [
+    "apra-cps-234",
+    "asd-e8",
+    "it-grundschutz",
+    "nist-800-53",
+    "nist-csf"
+  ],
+  "regulations": [
+    {
+      "clauseMappings": [
+        {
+          "clause": "23",
+          "useCaseId": "6.3.1",
+          "version": "current"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/apra-cps-234.json",
+      "regulationId": "apra-cps-234",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "6.3.1"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "E8.08",
+          "useCaseId": "6.3.1",
+          "version": "Nov 2023"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/asd-e8.json",
+      "regulationId": "asd-e8",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "6.3.1"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "OPS.1.1.2",
+          "useCaseId": "6.3.1",
+          "version": "2023 Edition"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/it-grundschutz.json",
+      "regulationId": "it-grundschutz",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "6.3.1"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "CP-9",
+          "useCaseId": "22.14.79",
+          "version": "Rev. 5"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/nist-800-53.json",
+      "regulationId": "nist-800-53",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.14.79"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "RC.RP-1",
+          "useCaseId": "22.7.7",
+          "version": "2.0"
+        },
+        {
+          "clause": "RC.RP-01",
+          "useCaseId": "22.7.46",
+          "version": "2.0"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/nist-csf.json",
+      "regulationId": "nist-csf",
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "22.7.7",
+        "22.7.46"
+      ]
+    }
+  ],
+  "useCaseCount": 6,
+  "useCaseIds": [
+    "6.3.1",
+    "6.3.12",
+    "6.3.17",
+    "22.7.7",
+    "22.7.46",
+    "22.14.79"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 6,
+      "useCaseCount": 3,
+      "useCaseIds": [
+        "6.3.1",
+        "6.3.12",
+        "6.3.17"
+      ]
+    },
+    {
+      "category": 22,
+      "useCaseCount": 3,
+      "useCaseIds": [
+        "22.7.7",
+        "22.7.46",
+        "22.14.79"
+      ]
+    }
+  ]
+}

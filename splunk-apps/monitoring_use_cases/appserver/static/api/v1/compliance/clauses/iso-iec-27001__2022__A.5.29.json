@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "A.5.29",
+  "clauseId": "iso-iec-27001@2022#A.5.29",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "ISO/IEC 27001:2022 A.5.29 Information security during disruption — related; DR scope overlaps with the testing programme.",
+      "category": 22,
+      "clauseUrl": "https://www.iso.org/standard/27001",
+      "controlObjective": "Evidence that ISO/IEC 27001 A.5.29 is enforced — Splunk UC-22.3.45: DORA Art.24 — Digital operational-resilience testing: test-plan execution attestation.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.3.45' running on sourcetype test:plan_execution and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.3.45",
+      "ucTitle": "DORA Art.24 — Digital operational-resilience testing: test-plan execution attestation"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/iso-iec-27001__2022__A.5.29.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "iso-iec-27001",
+  "regulationName": "iso-iec-27001",
+  "regulationShortName": "iso-iec-27001",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/iso-iec-27001.json",
+    "regulationVersion": "/api/v1/compliance/regulations/iso-iec-27001@2022.json",
+    "story": "/api/v1/compliance/story/iso-iec-27001.json"
+  },
+  "tier": null,
+  "topAssurance": "partial",
+  "topic": null,
+  "version": "2022"
+}

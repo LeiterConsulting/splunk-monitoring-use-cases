@@ -1,0 +1,68 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 2,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "T3.2",
+  "clauseId": "nesa-ias@v2 (2020)#T3.2",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 2,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'NESA UAE IAS' → 'T3.2'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that NESA IAS T3.2 (Access control management) is enforced — Splunk UC-22.33.2: Critical infrastructure segmentation evidence.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.33.2' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.33.2",
+      "ucTitle": "Critical infrastructure segmentation evidence"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'NESA UAE IAS' → 'T3.2'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that NESA IAS T3.2 (Access control management) is enforced — Splunk UC-22.33.4: Security assessment evidence tracking.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.33.4' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.33.4",
+      "ucTitle": "Security assessment evidence tracking"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/nesa-ias__v2%20%282020%29__T3.2.json",
+  "gapNote": "nesa-ias clause T3.2 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 2
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "nesa-ias",
+  "regulationName": "nesa-ias",
+  "regulationShortName": "nesa-ias",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/nesa-ias.json",
+    "regulationVersion": "/api/v1/compliance/regulations/nesa-ias@v2%20%282020%29.json",
+    "story": "/api/v1/compliance/story/nesa-ias.json"
+  },
+  "tier": null,
+  "topAssurance": "contributing",
+  "topic": null,
+  "version": "v2 (2020)"
+}

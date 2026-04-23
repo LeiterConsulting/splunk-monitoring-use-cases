@@ -1,0 +1,253 @@
+{
+  "aliases": [
+    "EU AI Act",
+    "Regulation (EU) 2024/1689"
+  ],
+  "apiVersion": "v1",
+  "id": "eu-ai-act",
+  "jurisdiction": [
+    "EU"
+  ],
+  "name": "EU AI Act",
+  "shortName": "EU AI Act",
+  "tags": [
+    "ai",
+    "risk-management"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "Art.12",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "1.1.65"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Record-keeping (logging)"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 18,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.13",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.21.10",
+            "22.21.13",
+            "22.21.14",
+            "22.21.16",
+            "22.21.17",
+            "22.21.18",
+            "22.21.19",
+            "22.21.20",
+            "22.21.21",
+            "22.21.22",
+            "22.21.23",
+            "22.21.24",
+            "22.21.25",
+            "22.21.5",
+            "22.21.6",
+            "22.21.7",
+            "22.21.8",
+            "22.21.9"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "contributing",
+          "topic": "Transparency and information"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 3,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.14",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.21.11",
+            "22.21.12",
+            "22.21.15"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Human oversight"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.15",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.21.4"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Accuracy, robustness, cybersecurity"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 3,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.19",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "1.2.51",
+            "22.21.2",
+            "22.21.3"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Automatically generated logs"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.26",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.21.1"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "High-risk AI obligations for deployers"
+        }
+      ],
+      "clauseExamples": [
+        "Art.12",
+        "Art.19",
+        "Art.26"
+      ],
+      "clauseGrammar": "^Art\\.\\d+(\\(\\d+\\))?$",
+      "clauseUrlTemplate": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj#{clause}",
+      "clausesReferencedByCatalogue": [
+        "Art.12",
+        "Art.13",
+        "Art.14",
+        "Art.15",
+        "Art.19",
+        "Art.26"
+      ],
+      "commonClauses": [
+        {
+          "clause": "Art.12",
+          "priorityWeight": 1.0,
+          "topic": "Record-keeping (logging)"
+        },
+        {
+          "clause": "Art.13",
+          "priorityWeight": 0.7,
+          "topic": "Transparency and information"
+        },
+        {
+          "clause": "Art.14",
+          "priorityWeight": 1.0,
+          "topic": "Human oversight"
+        },
+        {
+          "clause": "Art.15",
+          "priorityWeight": 1.0,
+          "topic": "Accuracy, robustness, cybersecurity"
+        },
+        {
+          "clause": "Art.19",
+          "priorityWeight": 1.0,
+          "topic": "Automatically generated logs"
+        },
+        {
+          "clause": "Art.26",
+          "priorityWeight": 1.0,
+          "topic": "High-risk AI obligations for deployers"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 100.0,
+        "commonClauseCount": 6,
+        "coveredClauseCount": 6,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 29.39,
+        "stateCounts": {
+          "contributing-only": 5,
+          "covered-full": 0,
+          "covered-partial": 1,
+          "uncovered": 0
+        }
+      },
+      "effectiveFrom": "2026-08-02",
+      "endpoint": "/api/v1/compliance/regulations/eu-ai-act@Regulation--EU--2024-1689.json",
+      "pendingChanges": [
+        {
+          "date": "2026-08-02",
+          "note": "High-risk AI obligations enter force."
+        }
+      ],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [
+        "1.1.65",
+        "1.2.51",
+        "22.21.1",
+        "22.21.10",
+        "22.21.11",
+        "22.21.12",
+        "22.21.13",
+        "22.21.14",
+        "22.21.15",
+        "22.21.16",
+        "22.21.17",
+        "22.21.18",
+        "22.21.19",
+        "22.21.2",
+        "22.21.20",
+        "22.21.21",
+        "22.21.22",
+        "22.21.23",
+        "22.21.24",
+        "22.21.25",
+        "22.21.3",
+        "22.21.4",
+        "22.21.5",
+        "22.21.6",
+        "22.21.7",
+        "22.21.8",
+        "22.21.9"
+      ],
+      "version": "Regulation (EU) 2024/1689"
+    }
+  ]
+}

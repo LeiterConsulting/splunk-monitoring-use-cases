@@ -1,0 +1,96 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/14.2.11.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/14.2.11.json",
+    "sourcePath": "content/cat-14-iot-operational-technology-ot/UC-14.2.11.json"
+  },
+  "apiVersion": "v1",
+  "app": "Custom (CIP evidence packs), Splunk Enterprise Security",
+  "cimModels": [
+    "N/A"
+  ],
+  "compliance": [
+    {
+      "assurance": "partial",
+      "assurance_rationale": "NERC CIP-002-5.1a R1 BES cyber system identification — automated compliance checks inventory and attribute BES Cyber Systems as the R1 identification process requires.",
+      "clause": "CIP-002-5.1a R1",
+      "clauseUrl": "https://www.nerc.com/pa/Stand/Pages/CIPStandards.aspx",
+      "controlObjective": "Evidence that NERC CIP CIP-002-5.1a R1 (BES cyber system identification) is enforced — Splunk UC-14.2.11: NERC CIP Compliance Checks.",
+      "evidenceArtifact": "Saved search 'UC-14.2.11' running on Firewall, VPN, AD, asset logs tagged nerc_cip, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "nerc-cip@current#CIP-002-5.1a R1",
+      "regulation": "NERC CIP",
+      "requires_sme_review": true,
+      "version": "current"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "NERC CIP-007-6 R4 Security event monitoring — the UC consolidates the security-event monitoring checks the R4 requirement demands on BES Cyber Assets.",
+      "clause": "CIP-007-6 R4",
+      "clauseUrl": "https://www.nerc.com/pa/Stand/Pages/CIPStandards.aspx",
+      "controlObjective": "Evidence that NERC CIP CIP-007-6 R4 (Security event monitoring) is enforced — Splunk UC-14.2.11: NERC CIP Compliance Checks.",
+      "evidenceArtifact": "Saved search 'UC-14.2.11' running on Firewall, VPN, AD, asset logs tagged nerc_cip, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "nerc-cip@current#CIP-007-6 R4",
+      "regulation": "NERC CIP",
+      "requires_sme_review": true,
+      "version": "current"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "TSA SD02C III.A Cybersecurity plan — NERC CIP readiness checks overlap with the pipeline cybersecurity plan expectations published in SD02C.",
+      "clause": "III.A",
+      "clauseUrl": "https://www.tsa.gov/sd02c",
+      "controlObjective": "Evidence that TSA SD III.A (Cybersecurity plan) is enforced — Splunk UC-14.2.11: NERC CIP Compliance Checks.",
+      "evidenceArtifact": "Saved search 'UC-14.2.11' running on Firewall, VPN, AD, asset logs tagged nerc_cip, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "tsa-sd@SD02C#III.A",
+      "regulation": "TSA SD",
+      "requires_sme_review": true,
+      "version": "SD02C"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "TSA SD02C III.D Cybersecurity assessment — compliance check dashboards serve as the recurring cybersecurity assessment evidence.",
+      "clause": "III.D",
+      "clauseUrl": "https://www.tsa.gov/sd02c",
+      "controlObjective": "Evidence that TSA SD III.D (Cybersecurity assessment) is enforced — Splunk UC-14.2.11: NERC CIP Compliance Checks.",
+      "evidenceArtifact": "Saved search 'UC-14.2.11' running on Firewall, VPN, AD, asset logs tagged nerc_cip, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "tsa-sd@SD02C#III.D",
+      "regulation": "TSA SD",
+      "requires_sme_review": true,
+      "version": "SD02C"
+    }
+  ],
+  "criticality": "critical",
+  "dataSources": "Firewall, VPN, AD, asset logs tagged `nerc_cip`",
+  "description": "Evidence of electronic access controls, logging, and change management for bulk electric systems.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Custom (CIP evidence packs), Splunk Enterprise Security.\n• Ensure the following data sources are available: Firewall, VPN, AD, asset logs tagged `nerc_cip`.\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\nTag in-scope assets and controls. Use saved searches per CIP requirement (e.g., access logging, 30-day log retention). Document in Splunk as authoritative evidence store.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=security sourcetype IN (\"vpn:log\",\"firewall:traffic\") nerc_cip=1\n| where action=\"deny\" OR match(user,\"(?i)orphan\")\n| stats count by asset_id, control_id, evidence_type\n```\n\nUnderstanding this SPL\n\n**NERC CIP Compliance Checks** — Evidence of electronic access controls, logging, and change management for bulk electric systems.\n\nDocumented **Data sources**: Firewall, VPN, AD, asset logs tagged `nerc_cip`. **App/TA** (typical add-on context): Custom (CIP evidence packs), Splunk Enterprise Security. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: security.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=security. Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• Filters the current rows with `where action=\"deny\" OR match(user,\"(?i)orphan\")` — typically the threshold or rule expression for this monitoring goal.\n• `stats` rolls up events into metrics; results are split **by asset_id, control_id, evidence_type** so each row reflects one combination of those dimensions (useful for per-host, per-user, or per-entity comparisons for this use case).\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Compliance dashboard (control × status), Table (gaps by site).",
+  "difficulty": "expert",
+  "grandmaExplanation": "Evidence of electronic access controls, logging, and change management for bulk electric systems — so faults, tampering, and safety issues are spotted right away.",
+  "id": "14.2.11",
+  "implementation": "Tag in-scope assets and controls. Use saved searches per CIP requirement (e.g., access logging, 30-day log retention). Document in Splunk as authoritative evidence store.",
+  "industry": "Energy and Utilities",
+  "knownFalsePositives": "Administrative tasks, scheduled jobs or platform updates can match this pattern — correlate with change management, maintenance windows and user role before raising severity.",
+  "monitoringType": [
+    "Compliance"
+  ],
+  "premiumApps": [
+    "Splunk Enterprise Security"
+  ],
+  "references": [
+    {
+      "title": "Splunk Enterprise Security",
+      "url": "https://splunkbase.splunk.com/app/263"
+    }
+  ],
+  "spl": "index=security sourcetype IN (\"vpn:log\",\"firewall:traffic\") nerc_cip=1\n| where action=\"deny\" OR match(user,\"(?i)orphan\")\n| stats count by asset_id, control_id, evidence_type",
+  "splunkPillar": "Observability",
+  "status": "verified",
+  "title": "NERC CIP Compliance Checks",
+  "value": "Evidence of electronic access controls, logging, and change management for bulk electric systems.",
+  "visualization": "Compliance dashboard (control × status), Table (gaps by site)."
+}

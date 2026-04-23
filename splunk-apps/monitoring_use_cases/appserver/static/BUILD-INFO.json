@@ -1,0 +1,43 @@
+{
+  "$schema": "/schemas/v2/build-info.schema.json",
+  "apiVersion": "v1",
+  "build": {
+    "platform": "ubuntu-latest",
+    "python": "3.13.2",
+    "reproducible": true,
+    "timestamp": "2026-04-21T09:24:26+02:00",
+    "tool": "tools/build/build.py",
+    "toolVersion": "7.0.0-dev"
+  },
+  "catalogueVersion": "7.1",
+  "counts": {
+    "categories": 23,
+    "regulations": 66,
+    "useCases": 6447
+  },
+  "git": {
+    "branch": "main",
+    "commitTimestamp": "2026-04-21T09:24:26+02:00",
+    "sha": "b596297ad3e94720fe9e3a2d1e0b9af34feb5baf",
+    "shortSha": "b596297a",
+    "tag": "unknown"
+  },
+  "schemas": {
+    "evidence-pack-extras.schema.json": "1.0.0",
+    "legal-review-signoff.schema.json": "1.0.0",
+    "mapping-ledger.schema.json": "1.0.0",
+    "peer-review-signoff.schema.json": "1.0.0",
+    "per-regulation-phase3.2.schema.json": "1.0.0",
+    "regulations-watch.schema.json": "1.0.0",
+    "sme-review-signoff.schema.json": "1.0.0",
+    "uc.schema.json": "1.6.1",
+    "v2/catalog-index.schema.json": "2.0.0",
+    "v2/search-index.schema.json": "2.0.0"
+  },
+  "stability": {
+    "api": "v1 active",
+    "schemas": "see /schemas/v2/index.json",
+    "urls": "frozen-at-v7.0.0"
+  },
+  "version": "2.0.0"
+}

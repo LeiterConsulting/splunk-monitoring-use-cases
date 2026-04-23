@@ -1,0 +1,185 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/22.41.1.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/22.41.1.json",
+    "sourcePath": "content/cat-22-regulatory-compliance/UC-22.41.1.json"
+  },
+  "apiVersion": "v1",
+  "app": "Splunk Enterprise / Splunk Cloud Platform",
+  "cimModels": [
+    "N/A"
+  ],
+  "compliance": [
+    {
+      "assurance": "partial",
+      "assurance_rationale": "Art.32(1)(a) encryption is a recommended technical measure; gap detection is a leading indicator of Art.32 compliance.",
+      "clause": "Art.32",
+      "controlObjective": "Evidence that GDPR Art.32 (Security of processing) is enforced — Splunk UC-22.41.1: Encryption-at-rest coverage gap — unencrypted storage with regulated data.",
+      "evidenceArtifact": "Saved search 'UC-22.41.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "gdpr@2016/679#Art.32",
+      "regulation": "GDPR",
+      "requires_sme_review": true,
+      "version": "2016/679"
+    },
+    {
+      "assurance": "full",
+      "assurance_rationale": "§164.312(a)(2)(iv) encryption addressable specification — the UC provides evidence of coverage.",
+      "clause": "§164.312(a)(2)(iv)",
+      "controlObjective": "Evidence that HIPAA Security §164.312(a)(2)(iv) (Encryption and decryption) is enforced — Splunk UC-22.41.1: Encryption-at-rest coverage gap — unencrypted storage with regulated data.",
+      "evidenceArtifact": "Saved search 'UC-22.41.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "hipaa-security@2013-final#§164.312(a)(2)(iv)",
+      "regulation": "HIPAA Security",
+      "requires_sme_review": true,
+      "version": "2013-final"
+    },
+    {
+      "assurance": "full",
+      "assurance_rationale": "PCI 3.5 requires rendering stored account data unreadable; the UC detects any CHD-scoped storage without encryption.",
+      "clause": "3.5",
+      "controlObjective": "Evidence that PCI DSS 3.5 (PAN protection) is enforced — Splunk UC-22.41.1: Encryption-at-rest coverage gap — unencrypted storage with regulated data.",
+      "evidenceArtifact": "Saved search 'UC-22.41.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "pci-dss@v4.0#3.5",
+      "regulation": "PCI DSS",
+      "requires_sme_review": true,
+      "version": "v4.0"
+    },
+    {
+      "assurance": "full",
+      "assurance_rationale": "SC-13 cryptographic protection — the UC evidences coverage for regulated data.",
+      "clause": "SC-13",
+      "controlObjective": "Evidence that NIST 800-53 SC-13 (Cryptographic protection) is enforced — Splunk UC-22.41.1: Encryption-at-rest coverage gap — unencrypted storage with regulated data.",
+      "evidenceArtifact": "Saved search 'UC-22.41.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "nist-800-53@Rev. 5#SC-13",
+      "regulation": "NIST 800-53",
+      "requires_sme_review": true,
+      "version": "Rev. 5"
+    },
+    {
+      "assurance": "contributing",
+      "assurance_rationale": "Derived from GDPR@2016/679 Art.32 (parent assurance='partial'). Clause mapped per data/regulations.json derivesFrom graph; inherited assurance degraded one step.",
+      "clause": "Art.23",
+      "controlObjective": "Evidence that APPI Art.23 (Security control action) is enforced — Splunk UC-22.41.1: Encryption-at-rest coverage gap — unencrypted storage with regulated data.",
+      "derivationSource": {
+        "inheritanceMode": "mapped",
+        "parentAssurance": "partial",
+        "parentClause": "Art.32",
+        "parentRegulation": "gdpr",
+        "parentVersion": "2016/679"
+      },
+      "evidenceArtifact": "Saved search 'UC-22.41.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "appi@2022 amendments#Art.23",
+      "provenance": "derived-from-parent",
+      "regulation": "APPI",
+      "requires_sme_review": true,
+      "version": "2022 amendments"
+    },
+    {
+      "assurance": "contributing",
+      "assurance_rationale": "Derived from GDPR@2016/679 Art.32 (parent assurance='partial'). Clause mapped per data/regulations.json derivesFrom graph; inherited assurance degraded one step.",
+      "clause": "Art.46",
+      "controlObjective": "Evidence that LGPD Art.46 (Security measures) is enforced — Splunk UC-22.41.1: Encryption-at-rest coverage gap — unencrypted storage with regulated data.",
+      "derivationSource": {
+        "inheritanceMode": "mapped",
+        "parentAssurance": "partial",
+        "parentClause": "Art.32",
+        "parentRegulation": "gdpr",
+        "parentVersion": "2016/679"
+      },
+      "evidenceArtifact": "Saved search 'UC-22.41.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "lgpd@Lei nº 13.709/2018#Art.46",
+      "provenance": "derived-from-parent",
+      "regulation": "LGPD",
+      "requires_sme_review": true,
+      "version": "Lei nº 13.709/2018"
+    },
+    {
+      "assurance": "contributing",
+      "assurance_rationale": "Derived from GDPR@2016/679 Art.32 (parent assurance='partial'). UK GDPR preserves parent clause numbering; inherited assurance degraded one step.",
+      "clause": "Art.32",
+      "controlObjective": "Evidence that UK GDPR Art.32 (Security of processing) is enforced — Splunk UC-22.41.1: Encryption-at-rest coverage gap — unencrypted storage with regulated data.",
+      "derivationSource": {
+        "inheritanceMode": "identity",
+        "parentAssurance": "partial",
+        "parentClause": "Art.32",
+        "parentRegulation": "gdpr",
+        "parentVersion": "2016/679"
+      },
+      "evidenceArtifact": "Saved search 'UC-22.41.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "uk-gdpr@post-Brexit#Art.32",
+      "provenance": "derived-from-parent",
+      "regulation": "UK GDPR",
+      "requires_sme_review": true,
+      "version": "post-Brexit"
+    }
+  ],
+  "controlFamily": "crypto-drift",
+  "controlTest": {
+    "fixtureRef": "sample-data/uc-22.41.1-fixture.json",
+    "negativeScenario": "Volumes with an encryption key ARN and AES-256 / AES-GCM active do NOT fire.",
+    "positiveScenario": "When cloud-storage or database volumes tagged regulated_data=true are observed without an active encryption configuration (EBS-encryption, SSE-KMS, TDE), the UC fires naming the volume and classification."
+  },
+  "criticality": "critical",
+  "dataSources": "See subcategory preamble.",
+  "description": "Produces a daily inventory of storage volumes that hold regulated data but are not encrypted at rest. Findings feed the remediation backlog and the evidence pack.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Splunk Enterprise / Splunk Cloud Platform.\n• Ensure the following data sources are available: See subcategory preamble..\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\n(1) Ingest cloud-inventory telemetry; (2) tag volumes via data_classification.csv; (3) run daily; (4) on finding, auto-open a CISO review.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\n| rest /services/cloud_storage/inventory splunk_server=* | where regulated_data=\"true\"\n| stats values(encryption_state) as state by volume_id region tenant\n| where mvfind(state, \"enabled\")<0\n| lookup data_classification.csv volume_id OUTPUT classification\n| table tenant region volume_id classification state\n```\n\nUnderstanding this SPL\n\n**Encryption-at-rest coverage gap — unencrypted storage with regulated data** — Unencrypted regulated data is the most common PCI 3.5 / HIPAA finding — preventing it from appearing on the audit spreadsheet is the goal.\n\nDocumented **Data sources**: See subcategory preamble. **App/TA** (typical add-on context): Splunk Enterprise / Splunk Cloud Platform. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\n**Pipeline walkthrough**\n\n• Calls Splunk `rest` to read configuration or REST-exposed entities.\n• Filters the current rows with `where regulated_data=\"true\"` — typically the threshold or rule expression for this monitoring goal.\n• `stats` rolls up events into metrics; results are split **by volume_id region tenant** so each row reflects one combination of those dimensions (useful for per-host, per-user, or per-entity comparisons for this use case).\n• Filters the current rows with `where mvfind(state, \"enabled\")<0` — typically the threshold or rule expression for this monitoring goal.\n• Enriches events using `lookup` (lookup definition + optional OUTPUT fields).\n• Pipeline stage (see **Encryption-at-rest coverage gap — unencrypted storage with regulated data**): table tenant region volume_id classification state\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Stacked bar of encrypted vs unencrypted by tenant, table of findings, single-value '% of regulated volumes encrypted'.",
+  "detectionType": "Correlation",
+  "difficulty": "intermediate",
+  "evidence": "Daily report 'encryption_at_rest_gap' writes unencrypted-volume findings to compliance_summary.",
+  "exclusions": "Does NOT judge algorithm strength (see UC-22.41.2); focuses on coverage only.",
+  "grandmaExplanation": "Unencrypted regulated data is the most common 3.5 / HIPAA finding — preventing it from appearing on the audit spreadsheet is the goal — so you can show exactly what is being watched and when something went wrong.",
+  "id": "22.41.1",
+  "implementation": "(1) Ingest cloud-inventory telemetry; (2) tag volumes via data_classification.csv; (3) run daily; (4) on finding, auto-open a CISO review.",
+  "knownFalsePositives": "Volumes undergoing pre-encryption migration require a time-bounded allowance (migration_end_date).",
+  "lastReviewed": "2026-04-16",
+  "monitoringType": [
+    "Compliance",
+    "Security"
+  ],
+  "owner": "CISO",
+  "references": [
+    {
+      "retrieved": "2026-04-16",
+      "title": "Regulation (EU) 2016/679 — GDPR",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "45 CFR Part 164 — HIPAA",
+      "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "PCI DSS v4.0",
+      "url": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "NIST SP 800-53 Rev. 5",
+      "url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+    }
+  ],
+  "requiredFields": [
+    "_time"
+  ],
+  "reviewer": "N/A",
+  "securityDomain": "audit",
+  "spl": "| rest /services/cloud_storage/inventory splunk_server=* | where regulated_data=\"true\"\n| stats values(encryption_state) as state by volume_id region tenant\n| where mvfind(state, \"enabled\")<0\n| lookup data_classification.csv volume_id OUTPUT classification\n| table tenant region volume_id classification state",
+  "splunkPillar": "Platform",
+  "splunkVersions": [
+    "9.2+",
+    "Cloud"
+  ],
+  "status": "verified",
+  "title": "Encryption-at-rest coverage gap — unencrypted storage with regulated data",
+  "value": "Unencrypted regulated data is the most common PCI 3.5 / HIPAA finding — preventing it from appearing on the audit spreadsheet is the goal.",
+  "visualization": "Stacked bar of encrypted vs unencrypted by tenant, table of findings, single-value '% of regulated volumes encrypted'."
+}

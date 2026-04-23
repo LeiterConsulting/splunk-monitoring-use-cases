@@ -1,0 +1,71 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 12,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "gitlab",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "GitLab",
+  "models": [],
+  "regulationIds": [
+    "soc-2"
+  ],
+  "regulations": [
+    {
+      "clauseMappings": [
+        {
+          "clause": "CC7.2",
+          "useCaseId": "22.8.25",
+          "version": "2017 TSC"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/soc-2.json",
+      "regulationId": "soc-2",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.8.25"
+      ]
+    }
+  ],
+  "useCaseCount": 12,
+  "useCaseIds": [
+    "12.1.2",
+    "12.1.10",
+    "12.2.11",
+    "12.2.12",
+    "12.2.15",
+    "12.2.25",
+    "12.5.6",
+    "12.6.1",
+    "12.6.2",
+    "12.6.3",
+    "12.6.4",
+    "22.8.25"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 12,
+      "useCaseCount": 11,
+      "useCaseIds": [
+        "12.1.2",
+        "12.1.10",
+        "12.2.11",
+        "12.2.12",
+        "12.2.15",
+        "12.2.25",
+        "12.5.6",
+        "12.6.1",
+        "12.6.2",
+        "12.6.3",
+        "12.6.4"
+      ]
+    },
+    {
+      "category": 22,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.8.25"
+      ]
+    }
+  ]
+}

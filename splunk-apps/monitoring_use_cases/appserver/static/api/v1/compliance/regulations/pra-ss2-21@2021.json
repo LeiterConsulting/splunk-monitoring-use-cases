@@ -1,0 +1,109 @@
+{
+  "apiVersion": "v1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "pra-ss2-21",
+  "jurisdiction": [
+    "UK"
+  ],
+  "name": "PRA SS2/21 Outsourcing and third-party risk management",
+  "shortName": "PRA SS2/21",
+  "tags": [
+    "financial"
+  ],
+  "tier": 2,
+  "version": {
+    "authoritativeUrl": "https://www.bankofengland.co.uk/prudential-regulation/publication/2021/march/outsourcing-and-third-party-risk-management-ss",
+    "clauseCoverageMatrix": [
+      {
+        "assuranceBreakdown": {
+          "contributing": 4,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "§3.2",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.27.19",
+          "22.27.20",
+          "22.27.22",
+          "22.27.23"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Proportionality"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 2
+        },
+        "clause": "§9",
+        "coverageState": "covered-partial",
+        "coveringUcs": [
+          "22.27.21",
+          "6.3.13",
+          "6.3.23"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Business continuity & exit plans"
+      }
+    ],
+    "clauseExamples": [
+      "§3.2",
+      "Para.4.15"
+    ],
+    "clauseGrammar": "^(§|Para\\.)\\d+(\\.\\d+)?$",
+    "clauseUrlTemplate": null,
+    "clausesReferencedByCatalogue": [
+      "§3.2",
+      "§9"
+    ],
+    "commonClauses": [
+      {
+        "clause": "§3.2",
+        "priorityWeight": 1.0,
+        "topic": "Proportionality"
+      },
+      {
+        "clause": "§9",
+        "priorityWeight": 1.0,
+        "topic": "Business continuity & exit plans"
+      }
+    ],
+    "coverageSummary": {
+      "clauseCoveragePercent": 100.0,
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "offCommonListClauseCount": 0,
+      "priorityWeightedCoveragePercent": 37.5,
+      "stateCounts": {
+        "contributing-only": 1,
+        "covered-full": 0,
+        "covered-partial": 1,
+        "uncovered": 0
+      }
+    },
+    "effectiveFrom": "2022-03-31",
+    "endpoint": "/api/v1/compliance/regulations/pra-ss2-21@2021.json",
+    "pendingChanges": [],
+    "sunsetOn": null,
+    "useCasesTaggingThisVersion": [
+      "22.27.19",
+      "22.27.20",
+      "22.27.21",
+      "22.27.22",
+      "22.27.23",
+      "6.3.13",
+      "6.3.23"
+    ],
+    "version": "2021"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§314.4(b)",
+      "coverageState": "uncovered",
+      "coveringUcs": [],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": null,
+      "topic": "Risk assessment",
+      "version": "16 CFR 314 (2023 amendments)"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§314.4(c)(1)",
+      "coverageState": "uncovered",
+      "coveringUcs": [],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": null,
+      "topic": "Access controls",
+      "version": "16 CFR 314 (2023 amendments)"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§314.4(d)(2)",
+      "coverageState": "uncovered",
+      "coveringUcs": [],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": null,
+      "topic": "Continuous monitoring",
+      "version": "16 CFR 314 (2023 amendments)"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "0 of 3 common clauses are covered by the catalogue, with a priority-weighted coverage of 0.0% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 0,
+      "priorityWeightedCoveragePercent": 0.0,
+      "stateCounts": {
+        "contributing-only": 0,
+        "covered-full": 0,
+        "covered-partial": 0,
+        "uncovered": 3
+      }
+    },
+    "topFiveHighlights": [],
+    "topThreeGaps": [
+      {
+        "clause": "§314.4(b)",
+        "mitigationNote": "No UC currently claims §314.4(b) (Risk assessment). Candidates are tracked in docs/compliance-gaps.md until a UC is authored.",
+        "obligationText": null,
+        "priorityWeight": 1.0,
+        "topic": "Risk assessment",
+        "version": "16 CFR 314 (2023 amendments)"
+      },
+      {
+        "clause": "§314.4(c)(1)",
+        "mitigationNote": "No UC currently claims §314.4(c)(1) (Access controls). Candidates are tracked in docs/compliance-gaps.md until a UC is authored.",
+        "obligationText": null,
+        "priorityWeight": 1.0,
+        "topic": "Access controls",
+        "version": "16 CFR 314 (2023 amendments)"
+      },
+      {
+        "clause": "§314.4(d)(2)",
+        "mitigationNote": "No UC currently claims §314.4(d)(2) (Continuous monitoring). Candidates are tracked in docs/compliance-gaps.md until a UC is authored.",
+        "obligationText": null,
+        "priorityWeight": 1.0,
+        "topic": "Continuous monitoring",
+        "version": "16 CFR 314 (2023 amendments)"
+      }
+    ]
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": []
+  },
+  "jurisdiction": [
+    "US"
+  ],
+  "narrative": null,
+  "narrativeRef": null,
+  "regulationId": "glba",
+  "regulationName": "Gramm-Leach-Bliley Act — Safeguards Rule",
+  "regulationShortName": "GLBA",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=glba",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#glba",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/glba.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

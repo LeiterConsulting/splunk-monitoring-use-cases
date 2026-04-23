@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-{section}#%C2%A7164.504(e)",
+  "clause": "§164.504(e)",
+  "clauseId": "hipaa-privacy@current#§164.504(e)",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Phase-C authored UC targeting HIPAA Privacy §164.504(e) (Business Associate contracts). Uses continuous, production-grade Splunk telemetry to provide auditor-facing evidence; assurance level set to 'contributing' pending SME review per Phase E of the regulation-coverage plan.",
+      "category": 22,
+      "clauseUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-{section}#%C2%A7164.504(e)",
+      "controlObjective": "Evidence that HIPAA Privacy §164.504(e) (Business Associate contracts) is enforced — Splunk UC-22.50.4: §164.504(e) Business Associate activity — PHI access by BA principals.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.50.4' running on Access logs from PHI systems enriched with principal classification (workforce vs BA)., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": "Phase-C draft: SME review required before uplifting assurance from 'contributing' to 'partial' or 'full'. Confirm that the SPL captures the specific regulator expectation and that the telemetry exists in the deployment.",
+      "ucId": "22.50.4",
+      "ucTitle": "§164.504(e) Business Associate activity — PHI access by BA principals"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/hipaa-privacy__current__%C2%A7164.504%28e%29.json",
+  "gapNote": "HIPAA Privacy clause §164.504(e) has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "hipaa-privacy",
+  "regulationName": "HIPAA Privacy Rule",
+  "regulationShortName": "HIPAA Privacy",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/hipaa-privacy.json",
+    "regulationVersion": "/api/v1/compliance/regulations/hipaa-privacy@current.json",
+    "story": "/api/v1/compliance/story/hipaa-privacy.json"
+  },
+  "tier": 2,
+  "topAssurance": "contributing",
+  "topic": "Business Associate contracts",
+  "version": "current"
+}

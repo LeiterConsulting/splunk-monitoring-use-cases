@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fenre.github.io/splunk-monitoring-use-cases/sitemap.xml
+
+# LLM-readable content: https://fenre.github.io/splunk-monitoring-use-cases/llms.txt

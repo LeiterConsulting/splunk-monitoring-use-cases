@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "http://www.npc.gov.cn/npc/c2/c30834/202108/t20210820_313088.html",
+  "clause": "Art.51",
+  "clauseId": "pipl@2021#Art.51",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Phase-C authored UC targeting PIPL Art.51 (Information security measures). Uses continuous, production-grade Splunk telemetry to provide auditor-facing evidence; assurance level set to 'contributing' pending SME review per Phase E of the regulation-coverage plan.",
+      "category": 22,
+      "clauseUrl": "http://www.npc.gov.cn/npc/c2/c30834/202108/t20210820_313088.html",
+      "controlObjective": "Evidence that PIPL Art.51 (Information security measures) is enforced — Splunk UC-22.50.10: PIPL Art.51 — information-security measures across PRC personal-data systems.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.50.10' running on Endpoint logs, crypto inventory, access control, vulnerability scanner feeds for PRC-resident systems., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": "Phase-C draft: SME review required before uplifting assurance from 'contributing' to 'partial' or 'full'. Confirm that the SPL captures the specific regulator expectation and that the telemetry exists in the deployment.",
+      "ucId": "22.50.10",
+      "ucTitle": "PIPL Art.51 — information-security measures across PRC personal-data systems"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/pipl__2021__Art.51.json",
+  "gapNote": "PIPL clause Art.51 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "pipl",
+  "regulationName": "China Personal Information Protection Law",
+  "regulationShortName": "PIPL",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/pipl.json",
+    "regulationVersion": "/api/v1/compliance/regulations/pipl@2021.json",
+    "story": "/api/v1/compliance/story/pipl.json"
+  },
+  "tier": 2,
+  "topAssurance": "contributing",
+  "topic": "Information security measures",
+  "version": "2021"
+}

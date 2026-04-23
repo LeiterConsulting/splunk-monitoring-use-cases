@@ -1,0 +1,208 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 4,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§3.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.33.16",
+        "22.33.18",
+        "22.33.19",
+        "22.33.20"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Cybersecurity governance and strategy",
+      "version": "2018"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§4.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.50.11"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Cyber risk identification and management",
+      "version": "2018"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§6.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.33.17"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Cyber incident management and response",
+      "version": "2018"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "3 of 3 common clauses are covered by the catalogue, with a priority-weighted coverage of 25.0% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 3,
+      "coveredClauseCount": 3,
+      "priorityWeightedCoveragePercent": 25.0,
+      "stateCounts": {
+        "contributing-only": 3,
+        "covered-full": 0,
+        "covered-partial": 0,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "§3.1",
+        "killerUcId": "22.33.16",
+        "killerUcTitle": "QCB cybersecurity framework compliance for financial institutions",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Cybersecurity governance and strategy",
+        "version": "2018",
+        "why": "Clause §3.1 (Cybersecurity governance and strategy) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "§4.1",
+        "killerUcId": "22.50.11",
+        "killerUcTitle": "QCB §4.1 — cyber-risk register evidence with treatment progress",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Cyber risk identification and management",
+        "version": "2018",
+        "why": "Clause §4.1 (Cyber risk identification and management) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "§6.2",
+        "killerUcId": "22.33.17",
+        "killerUcTitle": "QCB cybersecurity incident reporting evidence",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Cyber incident management and response",
+        "version": "2018",
+        "why": "Clause §6.2 (Cyber incident management and response) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "§3.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.33.18",
+            "ucTitle": "Information security governance metrics"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.33.19",
+            "ucTitle": "Third-party risk management for banks"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.33.16",
+            "ucTitle": "QCB cybersecurity framework compliance for financial institutions"
+          }
+        ],
+        "topic": "Cybersecurity governance and strategy",
+        "version": "2018"
+      },
+      {
+        "clause": "§4.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.50.11",
+            "ucTitle": "QCB §4.1 — cyber-risk register evidence with treatment progress"
+          }
+        ],
+        "topic": "Cyber risk identification and management",
+        "version": "2018"
+      },
+      {
+        "clause": "§6.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "low",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.33.17",
+            "ucTitle": "QCB cybersecurity incident reporting evidence"
+          }
+        ],
+        "topic": "Cyber incident management and response",
+        "version": "2018"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "QA"
+  ],
+  "narrative": null,
+  "narrativeRef": null,
+  "regulationId": "qcb-cyber",
+  "regulationName": "Qatar Central Bank Cybersecurity Framework",
+  "regulationShortName": "QCB Cyber",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=qcb-cyber",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#qcb-cyber",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/qcb-cyber.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 1,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.nist.gov/cyberframework/framework#DE.AE-3",
+  "clause": "DE.AE-3",
+  "clauseId": "nist-csf@1.1#DE.AE-3",
+  "coverageState": "covered-full",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "NIST CSF v1.1 DE.AE-3 Event data are collected and correlated from multiple sources and sensors — UC is the Detect Function coverage-gap analysis, quantifying multi-source event correlation.",
+      "category": 22,
+      "clauseUrl": "https://www.nist.gov/cyberframework/framework",
+      "controlObjective": "Evidence that NIST CSF DE.AE-3 (Event data collection and correlation) is enforced — Splunk UC-22.7.2: NIST CSF Detect Function Coverage Gap Analysis.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.7.2' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.7.2",
+      "ucTitle": "NIST CSF Detect Function Coverage Gap Analysis"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/nist-csf__1.1__DE.AE-3.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "nist-csf",
+  "regulationName": "NIST Cybersecurity Framework",
+  "regulationShortName": "NIST CSF",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/nist-csf.json",
+    "regulationVersion": "/api/v1/compliance/regulations/nist-csf@1.1.json",
+    "story": "/api/v1/compliance/story/nist-csf.json"
+  },
+  "tier": 1,
+  "topAssurance": "full",
+  "topic": "Event data collection and correlation",
+  "version": "1.1"
+}

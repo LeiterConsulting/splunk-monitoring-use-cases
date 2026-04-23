@@ -1,0 +1,173 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 21,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "stream",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Splunk Stream",
+  "models": [],
+  "regulationIds": [
+    "hipaa-security",
+    "iso-27001",
+    "pci-dss",
+    "soc-2"
+  ],
+  "regulations": [
+    {
+      "clauseMappings": [
+        {
+          "clause": "§164.312(e)(1)",
+          "useCaseId": "22.8.31",
+          "version": "2013-final"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/hipaa-security.json",
+      "regulationId": "hipaa-security",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.8.31"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "A.8.24",
+          "useCaseId": "22.8.31",
+          "version": "2022"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/iso-27001.json",
+      "regulationId": "iso-27001",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.8.31"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "4.2.1",
+          "useCaseId": "22.8.31",
+          "version": "v4.0"
+        },
+        {
+          "clause": "2.2.4",
+          "useCaseId": "22.11.6",
+          "version": "v4.0"
+        },
+        {
+          "clause": "3.2.1",
+          "useCaseId": "22.11.19",
+          "version": "v4.0"
+        },
+        {
+          "clause": "4.2.1",
+          "useCaseId": "22.11.22",
+          "version": "v4.0"
+        },
+        {
+          "clause": "4.2.1",
+          "useCaseId": "22.11.23",
+          "version": "v4.0"
+        },
+        {
+          "clause": "3.4.1",
+          "useCaseId": "22.11.25",
+          "version": "v4.0"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/pci-dss.json",
+      "regulationId": "pci-dss",
+      "useCaseCount": 6,
+      "useCaseIds": [
+        "22.8.31",
+        "22.11.6",
+        "22.11.19",
+        "22.11.22",
+        "22.11.23",
+        "22.11.25"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "CC6.6",
+          "useCaseId": "22.8.31",
+          "version": "2017 TSC"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/soc-2.json",
+      "regulationId": "soc-2",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.8.31"
+      ]
+    }
+  ],
+  "useCaseCount": 21,
+  "useCaseIds": [
+    "5.6.12",
+    "5.7.7",
+    "5.7.8",
+    "5.7.9",
+    "5.7.10",
+    "5.10.1",
+    "5.10.2",
+    "5.10.3",
+    "5.10.4",
+    "5.10.5",
+    "5.10.6",
+    "5.12.6",
+    "11.3.32",
+    "11.3.33",
+    "11.3.34",
+    "22.8.31",
+    "22.11.6",
+    "22.11.19",
+    "22.11.22",
+    "22.11.23",
+    "22.11.25"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 5,
+      "useCaseCount": 12,
+      "useCaseIds": [
+        "5.6.12",
+        "5.7.7",
+        "5.7.8",
+        "5.7.9",
+        "5.7.10",
+        "5.10.1",
+        "5.10.2",
+        "5.10.3",
+        "5.10.4",
+        "5.10.5",
+        "5.10.6",
+        "5.12.6"
+      ]
+    },
+    {
+      "category": 11,
+      "useCaseCount": 3,
+      "useCaseIds": [
+        "11.3.32",
+        "11.3.33",
+        "11.3.34"
+      ]
+    },
+    {
+      "category": 22,
+      "useCaseCount": 6,
+      "useCaseIds": [
+        "22.8.31",
+        "22.11.6",
+        "22.11.19",
+        "22.11.22",
+        "22.11.23",
+        "22.11.25"
+      ]
+    }
+  ]
+}

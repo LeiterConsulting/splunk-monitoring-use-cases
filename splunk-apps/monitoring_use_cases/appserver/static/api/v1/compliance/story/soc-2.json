@@ -1,0 +1,1539 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "A1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.8.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 1,
+        "partial": 1
+      },
+      "clause": "A1.2",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.35.3",
+        "22.45.1",
+        "22.8.22",
+        "22.8.27",
+        "22.8.28"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "full",
+      "topic": "Availability commitments",
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "C1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.8.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 1
+      },
+      "clause": "C1.1",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.11.93",
+        "22.8.29",
+        "22.8.38"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "full",
+      "topic": "Confidentiality",
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "CC1.1",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.8.36",
+        "22.8.9"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "full",
+      "topic": "Integrity and ethical values",
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CC1.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.8.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "CC1.3",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.47.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "CC1.4",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.6.54"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "CC1.5",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.47.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 4,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CC2.1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.8.10",
+        "22.8.11",
+        "22.8.4",
+        "22.9.10"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "contributing",
+      "topic": "Internal communication",
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 4,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "CC3.1",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.47.2",
+        "22.8.12",
+        "22.8.19",
+        "22.8.23",
+        "22.9.9"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Risk assessment",
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CC3.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.8.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CC3.3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.8.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "CC4.1",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.47.5",
+        "22.6.50"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "CC5.1",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.47.1",
+        "22.8.15",
+        "22.9.8"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Control activities",
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 1,
+        "partial": 1
+      },
+      "clause": "CC6.1",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.11.96",
+        "22.40.1",
+        "22.8.1",
+        "22.8.16"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Logical access controls",
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "CC6.2",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.12.36"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 3,
+        "partial": 0
+      },
+      "clause": "CC6.3",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.12.37",
+        "22.48.3",
+        "22.48.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 1
+      },
+      "clause": "CC6.6",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.11.91",
+        "22.8.18",
+        "22.8.31"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Encryption in transit",
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "CC6.7",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.8.32"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "System boundaries and data transmission",
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 4
+      },
+      "clause": "CC7.1",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.11.101",
+        "22.11.104",
+        "22.12.40",
+        "22.6.49",
+        "22.8.1",
+        "22.8.33"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "System operations monitoring",
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 8,
+        "full": 0,
+        "partial": 4
+      },
+      "clause": "CC7.2",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.11.99",
+        "22.35.1",
+        "22.35.2",
+        "22.35.5",
+        "22.8.13",
+        "22.8.14",
+        "22.8.17",
+        "22.8.20",
+        "22.8.24",
+        "22.8.25",
+        "22.8.30",
+        "22.9.6"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "System monitoring for anomalies",
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 2,
+        "partial": 0
+      },
+      "clause": "CC7.3",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.6.52",
+        "22.8.34"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Evaluated events and incidents",
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 1
+      },
+      "clause": "CC7.4",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.11.105",
+        "22.8.35"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Incident response",
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 5,
+        "partial": 4
+      },
+      "clause": "CC8.1",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.11.92",
+        "22.11.95",
+        "22.12.38",
+        "22.12.39",
+        "22.42.1",
+        "22.42.3",
+        "22.42.4",
+        "22.42.5",
+        "22.6.55",
+        "22.8.1",
+        "22.8.21",
+        "22.8.26"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Change management",
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "CC9.1",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.8.37"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "full",
+      "topic": "Risk mitigation activities",
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "CC9.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.8.8"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "P1.1",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.8.39"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.4,
+      "topAssurance": "full",
+      "topic": "Privacy notice",
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "P4.2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.8.7"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "P4.3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.8.7"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2017 TSC"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "PI1.3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.8.6"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2017 TSC"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "16 of 16 common clauses are covered by the catalogue, with a priority-weighted coverage of 89.03% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 16,
+      "coveredClauseCount": 16,
+      "priorityWeightedCoveragePercent": 89.03,
+      "stateCounts": {
+        "contributing-only": 1,
+        "covered-full": 13,
+        "covered-partial": 2,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "CC5.1",
+        "killerUcId": "22.47.1",
+        "killerUcTitle": "Control test freshness — evidence older than policy cadence",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Control activities",
+        "version": "2017 TSC",
+        "why": "Clause CC5.1 (Control activities) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "CC6.1",
+        "killerUcId": "22.11.96",
+        "killerUcTitle": "PCI-DSS 8.3 — Strong authentication: password-only logins against privileged accounts",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Logical access controls",
+        "version": "2017 TSC",
+        "why": "Clause CC6.1 (Logical access controls) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "CC6.6",
+        "killerUcId": "22.11.91",
+        "killerUcTitle": "PCI-DSS 1.3 — CDE network boundary: unauthorised flows between CDE and untrusted networks",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Encryption in transit",
+        "version": "2017 TSC",
+        "why": "Clause CC6.6 (Encryption in transit) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "CC6.7",
+        "killerUcId": "22.8.32",
+        "killerUcTitle": "SOC 2 CC6.7 — System boundary & data-transmission control: unapproved egress destinations",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "System boundaries and data transmission",
+        "version": "2017 TSC",
+        "why": "Clause CC6.7 (System boundaries and data transmission) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "CC7.1",
+        "killerUcId": "22.11.101",
+        "killerUcTitle": "PCI-DSS 10.6 — Log review: daily-review evidence for CDE data sources",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "System operations monitoring",
+        "version": "2017 TSC",
+        "why": "Clause CC7.1 (System operations monitoring) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "CC3.1",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.19",
+            "ucTitle": "SOC 2 CC6 — Timeliness of Access Removal After HR Termination Events"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.12",
+            "ucTitle": "SOC 2 CC3 — Management Accountability for Control Deficiency Remediation SLAs"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.23",
+            "ucTitle": "SOC 2 CC7 — Vulnerability Management SLA and Exception Expiry Tracking"
+          }
+        ],
+        "topic": "Risk assessment",
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "CC5.1",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.15",
+            "ucTitle": "SOC 2 CC5 — Change Impact Analysis Completeness for Production Releases"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.9.8",
+            "ucTitle": "Compliance Trending — Auditor Evidence Pack Generation Volume and Deficiency Rate"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.47.1",
+            "ucTitle": "Control test freshness — evidence older than policy cadence"
+          }
+        ],
+        "topic": "Control activities",
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "CC6.1",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.1",
+            "ucTitle": "SOC 2 Trust Services Criteria Continuous Control Monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.11.96",
+            "ucTitle": "PCI-DSS 8.3 — Strong authentication: password-only logins against privileged accounts"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.40.1",
+            "ucTitle": "Privileged session recording — missing recordings for elevated sessions"
+          }
+        ],
+        "topic": "Logical access controls",
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "CC6.6",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.18",
+            "ucTitle": "SOC 2 CC6 — Encryption in Transit Policy Enforcement for Admin and API Paths"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.11.91",
+            "ucTitle": "PCI-DSS 1.3 — CDE network boundary: unauthorised flows between CDE and untrusted networks"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.31",
+            "ucTitle": "SOC 2 CC6.6 — Encryption-in-transit validation: cleartext protocols crossing the trust boundary"
+          }
+        ],
+        "topic": "Encryption in transit",
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "CC6.7",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.32",
+            "ucTitle": "SOC 2 CC6.7 — System boundary & data-transmission control: unapproved egress destinations"
+          }
+        ],
+        "topic": "System boundaries and data transmission",
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "CC7.1",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.1",
+            "ucTitle": "SOC 2 Trust Services Criteria Continuous Control Monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.49",
+            "ucTitle": "ISO/IEC 27001:2022 Clause 9.1 — Monitoring programme coverage: KPI telemetry uptime"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.33",
+            "ucTitle": "SOC 2 CC7.1 — System-operations monitoring: uptime attestation and alert-noise governance"
+          }
+        ],
+        "topic": "System operations monitoring",
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "CC7.2",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.14",
+            "ucTitle": "SOC 2 CC4 — Fraud Risk Scenario Testing Evidence from Anomaly Correlation"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.20",
+            "ucTitle": "SOC 2 CC7 — Unauthorized Production Configuration Change Detection"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.11.99",
+            "ucTitle": "PCI-DSS 10.3 — Audit log integrity: tampering/deletion detection on CDE log source"
+          }
+        ],
+        "topic": "System monitoring for anomalies",
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "CC7.3",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.52",
+            "ucTitle": "ISO/IEC 27001:2022 Annex A.5.25 — Event classification decisions: SIEM-to-incident triage traceability"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.34",
+            "ucTitle": "SOC 2 CC7.3 — Evaluated events: threshold breaches without documented rationale"
+          }
+        ],
+        "topic": "Evaluated events and incidents",
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "CC7.4",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.35",
+            "ucTitle": "SOC 2 CC7.4 — Incident response: post-incident review completion SLA"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.11.105",
+            "ucTitle": "PCI-DSS 12.10 — Incident response: IR readiness — playbook exercise evidence"
+          }
+        ],
+        "topic": "Incident response",
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "CC8.1",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.1",
+            "ucTitle": "SOC 2 Trust Services Criteria Continuous Control Monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.26",
+            "ucTitle": "SOC 2 CC9 — Change Authorization Dual-Control on Privileged Cloud Roles"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.12.39",
+            "ucTitle": "SOX-ITGC ChangeMgmt.Approval — Segregation of duties in financial-system change approval"
+          }
+        ],
+        "topic": "Change management",
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "A1.2",
+        "coverageState": "covered-full",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.45.1",
+            "ucTitle": "Backup restore test evidence — RPO/RTO SLA compliance per tier"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.22",
+            "ucTitle": "SOC 2 CC7 — Operational Anomaly Detection on Critical Batch and API SLOs"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.28",
+            "ucTitle": "SOC 2 A1 — Disaster Recovery Test Execution and Evidence Timestamps"
+          }
+        ],
+        "topic": "Availability commitments",
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "C1.1",
+        "coverageState": "covered-full",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.11.93",
+            "ucTitle": "PCI-DSS 3.3 — Sensitive authentication data: cleartext PAN/CVV detection in logs"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.29",
+            "ucTitle": "SOC 2 C1 — Confidential Information Disposal and Secure Destruction Evidence"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.38",
+            "ucTitle": "SOC 2 C1.1 — Confidentiality: sensitive-data exposure at the egress boundary"
+          }
+        ],
+        "topic": "Confidentiality",
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "CC1.1",
+        "coverageState": "covered-full",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.9",
+            "ucTitle": "SOC 2 CC1 — Board and Committee ICT Oversight Evidence Trail"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.36",
+            "ucTitle": "SOC 2 CC1.1 — Integrity and ethical values: code-of-conduct acknowledgement trail"
+          }
+        ],
+        "topic": "Integrity and ethical values",
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "CC2.1",
+        "coverageState": "contributing-only",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.11",
+            "ucTitle": "SOC 2 CC2 — Organizational Structure and Segregation-of-Duties Validation"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.9.10",
+            "ucTitle": "Compliance Trending — Weighted Compliance Posture Composite and Driver Attribution"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.4",
+            "ucTitle": "SOC 2 Control Environment and Board-Level Attestation Workflow"
+          }
+        ],
+        "topic": "Internal communication",
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "CC9.1",
+        "coverageState": "covered-full",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.37",
+            "ucTitle": "SOC 2 CC9.1 — Risk-mitigation activity: vendor-risk action closure SLA"
+          }
+        ],
+        "topic": "Risk mitigation activities",
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "P1.1",
+        "coverageState": "covered-full",
+        "priorityWeight": 0.4,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.39",
+            "ucTitle": "SOC 2 P1.1 — Privacy notice: consent-record freshness for privacy-notice version changes"
+          }
+        ],
+        "topic": "Privacy notice",
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "A1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.2",
+            "ucTitle": "SOC 2 System Availability and Incident Response Evidence Collection"
+          }
+        ],
+        "topic": null,
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "C1",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.3",
+            "ucTitle": "SOC 2 Confidentiality Classification and DLP Event Audit"
+          }
+        ],
+        "topic": null,
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "CC1.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.4",
+            "ucTitle": "SOC 2 Control Environment and Board-Level Attestation Workflow"
+          }
+        ],
+        "topic": null,
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "CC1.3",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.47.3",
+            "ucTitle": "Control owner attestation freshness"
+          }
+        ],
+        "topic": null,
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "CC1.4",
+        "coverageState": "covered-partial",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.54",
+            "ucTitle": "ISO/IEC 27001:2022 Clause 7.5 — Documented information control: policy register approval trail"
+          }
+        ],
+        "topic": null,
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "CC1.5",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.47.4",
+            "ucTitle": "Evidence-pack drift — auditor-facing vs pre-production evidence"
+          }
+        ],
+        "topic": null,
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "CC3.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.5",
+            "ucTitle": "SOC 2 Risk Assessment — Change-Induced Emergency Pattern Monitoring"
+          }
+        ],
+        "topic": null,
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "CC3.3",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.5",
+            "ucTitle": "SOC 2 Risk Assessment — Change-Induced Emergency Pattern Monitoring"
+          }
+        ],
+        "topic": null,
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "CC4.1",
+        "coverageState": "covered-partial",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.47.5",
+            "ucTitle": "Continuous control monitoring anomaly — failure-rate trending up"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.6.50",
+            "ucTitle": "ISO/IEC 27001:2022 Clause 9.2 — Internal audit coverage: control sample rotation"
+          }
+        ],
+        "topic": null,
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "CC6.2",
+        "coverageState": "covered-partial",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.12.36",
+            "ucTitle": "SOX-ITGC AccessMgmt.Provisioning — Financial-system user provisioning SLA & workflow adherence"
+          }
+        ],
+        "topic": null,
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "CC6.3",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.12.37",
+            "ucTitle": "SOX-ITGC AccessMgmt.Termination — Deprovisioning SLA after HR termination event"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.48.4",
+            "ucTitle": "Financial SoD — same identity posts AND approves a journal entry"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.48.3",
+            "ucTitle": "Developer-to-production SoD — same developer submits AND approves merge"
+          }
+        ],
+        "topic": null,
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "CC9.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.8",
+            "ucTitle": "SOC 2 Fraud Risk and Anomalous Privileged Activity Correlation"
+          }
+        ],
+        "topic": null,
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "P4.2",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.7",
+            "ucTitle": "SOC 2 Privacy — Consent Log Integrity and Downstream Propagation Checks"
+          }
+        ],
+        "topic": null,
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "P4.3",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.7",
+            "ucTitle": "SOC 2 Privacy — Consent Log Integrity and Downstream Propagation Checks"
+          }
+        ],
+        "topic": null,
+        "version": "2017 TSC"
+      },
+      {
+        "clause": "PI1.3",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.8.6",
+            "ucTitle": "SOC 2 Processing Integrity — Financial Batch Job Reconciliation Exceptions"
+          }
+        ],
+        "topic": null,
+        "version": "2017 TSC"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "GLOBAL",
+    "US"
+  ],
+  "narrative": {
+    "evidencePack": "docs/evidence-packs/soc-2.md",
+    "matchedBy": "manual-map",
+    "name": "SOC 2",
+    "primer": "docs/regulatory-primer.md#46-soc-2--aicpa-trust-services-criteria-us--global--t1",
+    "splunkValue": "We collect Type 2 evidence continuously — access reviews, change management, backup tests, incident response, vulnerability SLAs — so the auditor field-work is a query instead of an interview, and the Type 2 reporting window is fully evidenced rather than sampled.",
+    "whatItIs": "A US attestation report issued by an independent CPA that proves a service provider has designed (Type 1) and operated (Type 2) controls around security, availability, processing integrity, confidentiality, and privacy. It is the dominant vendor-assurance report in North America.",
+    "whoItAffects": "Technology and service providers whose customers require SOC 2 — especially SaaS platforms, managed services, hosting providers, fintech, healthtech, and any B2B vendor handling customer data."
+  },
+  "narrativeRef": "non-technical-view.js#cat-22/area/soc-2",
+  "regulationId": "soc-2",
+  "regulationName": "SOC 2 Trust Services Criteria",
+  "regulationShortName": "SOC 2",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=soc-2",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#soc-2",
+    "evidencePack": "docs/evidence-packs/soc-2.md",
+    "primerAnchor": "docs/regulatory-primer.md#46-soc-2-aicpa-trust-services-criteria-us-global-t1",
+    "regulation": "/api/v1/compliance/regulations/soc-2.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 1
+}

@@ -1,0 +1,98 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 2,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#/control?version=5.1&number=CM-6",
+  "clause": "CM-6",
+  "clauseId": "nist-800-53@Rev. 5#CM-6",
+  "coverageState": "covered-full",
+  "coveringUcCount": 4,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "CM-6 configuration settings — validates against established settings.",
+      "category": 22,
+      "clauseUrl": "https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#/control?version=5.1&number=CM-6",
+      "controlObjective": "Evidence that NIST 800-53 CM-6 (Configuration settings) is enforced — Splunk UC-22.42.2: Configuration baseline drift — regulated hosts deviating from CIS benchmark.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.42.2' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.42.2",
+      "ucTitle": "Configuration baseline drift — regulated hosts deviating from CIS benchmark"
+    },
+    {
+      "assurance": "full",
+      "assuranceRationale": "CM-6 configuration settings require that the applied state match the approved baseline.",
+      "category": 22,
+      "clauseUrl": "https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#/control?version=5.1&number=CM-6",
+      "controlObjective": "Evidence that NIST-800-53 CM-6 (Configuration settings) is enforced — Splunk UC-22.42.5: Infrastructure-as-code drift — applied state diverges from merged plan.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.42.5' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.42.5",
+      "ucTitle": "Infrastructure-as-code drift — applied state diverges from merged plan"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "NIST 800-53 CM-6 Configuration Settings — contributing.",
+      "category": 22,
+      "clauseUrl": "https://doi.org/10.6028/NIST.SP.800-53r5",
+      "controlObjective": "Evidence that NIST 800-53 CM-6 (Configuration settings) is enforced — Splunk UC-22.11.92: PCI-DSS 2.2 — Secure configuration baseline: drift from approved hardening template.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.11.92' running on index=configmgmt sourcetype=chef:compliance OR sourcetype=ansible:callback; baseline lookup pci_baselines.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.11.92",
+      "ucTitle": "PCI-DSS 2.2 — Secure configuration baseline: drift from approved hardening template"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#/control?version=5.1&number=CM-6",
+      "controlObjective": "Evidence that NIST 800-53 CM-6 (Configuration settings) is enforced — Splunk UC-22.14.56: Configuration Settings Compliance — CIS Benchmark Control Checks.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.14.56' running on tenable:sc compliance exports or custom cis:assessment sourcetype, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.14.56",
+      "ucTitle": "Configuration Settings Compliance — CIS Benchmark Control Checks"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/nist-800-53__Rev.%205__CM-6.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 4
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "nist-800-53",
+  "regulationName": "NIST SP 800-53 Rev. 5",
+  "regulationShortName": "NIST 800-53",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/nist-800-53.json",
+    "regulationVersion": "/api/v1/compliance/regulations/nist-800-53@Rev.%205.json",
+    "story": "/api/v1/compliance/story/nist-800-53.json"
+  },
+  "tier": 1,
+  "topAssurance": "full",
+  "topic": "Configuration settings",
+  "version": "Rev. 5"
+}

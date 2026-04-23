@@ -1,0 +1,384 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.14",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.29.27",
+        "22.29.29",
+        "22.29.30"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2021"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 6,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.15",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.29.11",
+        "22.29.12",
+        "22.29.26",
+        "22.29.7",
+        "22.29.8",
+        "22.29.9"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2021"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.29",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.29.25"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2021"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 6,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.38",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.29.1",
+        "22.29.2",
+        "22.29.3",
+        "22.29.4",
+        "22.29.5",
+        "22.29.6"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Cross-border transfer conditions",
+      "version": "2021"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.51",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.50.10"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Information security measures",
+      "version": "2021"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.6",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.29.28"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2021"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "2 of 2 common clauses are covered by the catalogue, with a priority-weighted coverage of 25.0% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoveragePercent": 25.0,
+      "stateCounts": {
+        "contributing-only": 2,
+        "covered-full": 0,
+        "covered-partial": 0,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "Art.38",
+        "killerUcId": "22.29.1",
+        "killerUcTitle": "China PIPL Art.38 localization boundary monitoring",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Cross-border transfer conditions",
+        "version": "2021",
+        "why": "Clause Art.38 (Cross-border transfer conditions) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "Art.51",
+        "killerUcId": "22.50.10",
+        "killerUcTitle": "PIPL Art.51 — information-security measures across PRC personal-data systems",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Information security measures",
+        "version": "2021",
+        "why": "Clause Art.51 (Information security measures) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "Art.14",
+        "killerUcId": "22.29.27",
+        "killerUcTitle": "Opt-in and opt-out preference tracking",
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null,
+        "version": "2021",
+        "why": "Clause Art.14 (topic not recorded) carries a regulator-assigned priority weight of None, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "Art.15",
+        "killerUcId": "22.29.11",
+        "killerUcTitle": "Breach register maintenance and linkage",
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null,
+        "version": "2021",
+        "why": "Clause Art.15 (topic not recorded) carries a regulator-assigned priority weight of None, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "Art.29",
+        "killerUcId": "22.29.25",
+        "killerUcTitle": "Separate consent for sensitive personal information",
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null,
+        "version": "2021",
+        "why": "Clause Art.29 (topic not recorded) carries a regulator-assigned priority weight of None, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "Art.38",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.29.1",
+            "ucTitle": "China PIPL Art.38 localization boundary monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.29.4",
+            "ucTitle": "Transfer mechanism validation before export"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.29.5",
+            "ucTitle": "Data residency monitoring for regulated datasets"
+          }
+        ],
+        "topic": "Cross-border transfer conditions",
+        "version": "2021"
+      },
+      {
+        "clause": "Art.51",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.50.10",
+            "ucTitle": "PIPL Art.51 — information-security measures across PRC personal-data systems"
+          }
+        ],
+        "topic": "Information security measures",
+        "version": "2021"
+      },
+      {
+        "clause": "Art.14",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.29.29",
+            "ucTitle": "Consent record retention compliance"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.29.30",
+            "ucTitle": "Minor consent and guardian verification monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.29.27",
+            "ucTitle": "Opt-in and opt-out preference tracking"
+          }
+        ],
+        "topic": null,
+        "version": "2021"
+      },
+      {
+        "clause": "Art.15",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.29.9",
+            "ucTitle": "Affected individual notification evidence"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.29.11",
+            "ucTitle": "Breach register maintenance and linkage"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.29.26",
+            "ucTitle": "Consent withdrawal processing audit"
+          }
+        ],
+        "topic": null,
+        "version": "2021"
+      },
+      {
+        "clause": "Art.29",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.29.25",
+            "ucTitle": "Separate consent for sensitive personal information"
+          }
+        ],
+        "topic": null,
+        "version": "2021"
+      },
+      {
+        "clause": "Art.6",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "low",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.29.28",
+            "ucTitle": "Purpose limitation enforcement in APIs"
+          }
+        ],
+        "topic": null,
+        "version": "2021"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "CN"
+  ],
+  "narrative": null,
+  "narrativeRef": null,
+  "regulationId": "pipl",
+  "regulationName": "China Personal Information Protection Law",
+  "regulationShortName": "PIPL",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=pipl",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#pipl",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/pipl.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

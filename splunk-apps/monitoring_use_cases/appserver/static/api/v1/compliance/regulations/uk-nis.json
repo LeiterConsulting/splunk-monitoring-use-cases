@@ -1,0 +1,130 @@
+{
+  "aliases": [
+    "NIS Regulations (UK)",
+    "UK NIS"
+  ],
+  "apiVersion": "v1",
+  "id": "uk-nis",
+  "jurisdiction": [
+    "UK"
+  ],
+  "name": "UK Network and Information Systems Regulations 2018",
+  "shortName": "UK NIS",
+  "tags": [
+    "critical-infrastructure"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://www.legislation.gov.uk/uksi/2018/506/contents",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 9,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Reg.10",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.27.1",
+            "22.27.10",
+            "22.27.2",
+            "22.27.3",
+            "22.27.5",
+            "22.27.6",
+            "22.27.7",
+            "22.27.8",
+            "22.27.9"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "OES security duties"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 2
+          },
+          "clause": "Reg.11",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "16.1.20",
+            "16.3.6",
+            "22.27.4"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Incident reporting"
+        }
+      ],
+      "clauseExamples": [
+        "Reg.8",
+        "Reg.11(1)",
+        "Schedule 2"
+      ],
+      "clauseGrammar": "^(Reg\\.|Schedule )\\d+(\\(\\d+\\))?$",
+      "clauseUrlTemplate": null,
+      "clausesReferencedByCatalogue": [
+        "Reg.10",
+        "Reg.11"
+      ],
+      "commonClauses": [
+        {
+          "clause": "Reg.10",
+          "priorityWeight": 1.0,
+          "topic": "OES security duties"
+        },
+        {
+          "clause": "Reg.11",
+          "priorityWeight": 1.0,
+          "topic": "Incident reporting"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 100.0,
+        "commonClauseCount": 2,
+        "coveredClauseCount": 2,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 37.5,
+        "stateCounts": {
+          "contributing-only": 1,
+          "covered-full": 0,
+          "covered-partial": 1,
+          "uncovered": 0
+        }
+      },
+      "effectiveFrom": "2018-05-10",
+      "endpoint": "/api/v1/compliance/regulations/uk-nis@2018.json",
+      "pendingChanges": [
+        {
+          "note": "Cyber Security and Resilience Bill to supersede NIS 2018 by 2026-2027.",
+          "status": "replacement-proposed"
+        }
+      ],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [
+        "16.1.20",
+        "16.3.6",
+        "22.27.1",
+        "22.27.10",
+        "22.27.2",
+        "22.27.3",
+        "22.27.4",
+        "22.27.5",
+        "22.27.6",
+        "22.27.7",
+        "22.27.8",
+        "22.27.9"
+      ],
+      "version": "2018"
+    }
+  ]
+}

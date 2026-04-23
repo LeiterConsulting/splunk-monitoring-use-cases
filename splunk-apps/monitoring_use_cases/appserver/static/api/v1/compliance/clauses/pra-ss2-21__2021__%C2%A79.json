@@ -1,0 +1,83 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 2,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.bankofengland.co.uk/prudential-regulation/publication/2021/march/outsourcing-and-third-party-risk-management-ss",
+  "clause": "§9",
+  "clauseId": "pra-ss2-21@2021#§9",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 3,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "PRA SS2/21 §9 Business continuity & exit plans — RPO/RTO compliance evidences BCP readiness for outsourced services.",
+      "category": 6,
+      "clauseUrl": "https://www.bankofengland.co.uk/prudential-regulation/publication/2021/march/outsourcing-and-third-party-risk-management-ss",
+      "controlObjective": "Evidence that PRA SS2/21 §9 (Business continuity & exit plans) is enforced — Splunk UC-6.3.13: Backup RPO and RTO Compliance.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-6.3.13' running on Last successful backup time, last restore test duration, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "6.3.13",
+      "ucTitle": "Backup RPO and RTO Compliance"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "PRA SS2/21 §9 Business continuity & exit plans — immutable/offsite backup readiness is a documented PRA expectation for severe-but-plausible disruptions.",
+      "category": 6,
+      "clauseUrl": "https://www.bankofengland.co.uk/prudential-regulation/publication/2021/march/outsourcing-and-third-party-risk-management-ss",
+      "controlObjective": "Evidence that PRA SS2/21 §9 (Business continuity & exit plans) is enforced — Splunk UC-6.3.23: Immutable Backup and Ransomware Recovery Readiness.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-6.3.23' running on Backup copy retention lock status, object lock (S3), backup integrity checksum, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "6.3.23",
+      "ucTitle": "Immutable Backup and Ransomware Recovery Readiness"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'PR A outsourcing' → '§9'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.bankofengland.co.uk/prudential-regulation/publication/2021/march/outsourcing-and-third-party-risk-management-ss",
+      "controlObjective": "Evidence that PRA SS2/21 §9 (Business continuity & exit plans) is enforced — Splunk UC-22.27.21: Exit strategy test evidence.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.27.21' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.27.21",
+      "ucTitle": "Exit strategy test evidence"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/pra-ss2-21__2021__%C2%A79.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 3
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "pra-ss2-21",
+  "regulationName": "PRA SS2/21 Outsourcing and third-party risk management",
+  "regulationShortName": "PRA SS2/21",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/pra-ss2-21.json",
+    "regulationVersion": "/api/v1/compliance/regulations/pra-ss2-21@2021.json",
+    "story": "/api/v1/compliance/story/pra-ss2-21.json"
+  },
+  "tier": 2,
+  "topAssurance": "partial",
+  "topic": "Business continuity & exit plans",
+  "version": "2021"
+}

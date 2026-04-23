@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 1,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "A.8.7",
+  "clauseId": "iso-iec-27001@2022#A.8.7",
+  "coverageState": "covered-full",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "ISO/IEC 27001:2022 A.8.7 Protection against malware — directly evidenced.",
+      "category": 22,
+      "clauseUrl": "https://www.iso.org/standard/27001",
+      "controlObjective": "Evidence that ISO/IEC 27001 A.8.7 is enforced — Splunk UC-22.11.94: PCI-DSS 5.2 — Anti-malware: EDR coverage + detection-queue attestation.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.11.94' running on index=edr sourcetype IN (crowdstrike:hosts,microsoft:defender:host); index=cmdb CDE host list., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.11.94",
+      "ucTitle": "PCI-DSS 5.2 — Anti-malware: EDR coverage + detection-queue attestation"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/iso-iec-27001__2022__A.8.7.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "iso-iec-27001",
+  "regulationName": "iso-iec-27001",
+  "regulationShortName": "iso-iec-27001",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/iso-iec-27001.json",
+    "regulationVersion": "/api/v1/compliance/regulations/iso-iec-27001@2022.json",
+    "story": "/api/v1/compliance/story/iso-iec-27001.json"
+  },
+  "tier": null,
+  "topAssurance": "full",
+  "topic": null,
+  "version": "2022"
+}

@@ -1,0 +1,54 @@
+{
+  "apiVersion": "v1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "rbi-cyber",
+  "jurisdiction": [
+    "IN"
+  ],
+  "name": "RBI Cyber Security Framework for Banks",
+  "shortName": "RBI Cyber",
+  "tags": [
+    "financial"
+  ],
+  "tier": 2,
+  "version": {
+    "authoritativeUrl": "https://rbi.org.in/Scripts/NotificationUser.aspx?Id=10435",
+    "clauseExamples": [
+      "Annex-A",
+      "Annex-B-2",
+      "§4"
+    ],
+    "clauseGrammar": "^Annex[- ]?[A-Z](\\-\\d+)?$|^§\\d+$",
+    "clauseUrlTemplate": null,
+    "clausesReferencedByCatalogue": [
+      "Annex-A",
+      "Annex-B"
+    ],
+    "commonClauses": [
+      {
+        "clause": "Annex-A",
+        "priorityWeight": 1.0,
+        "topic": "Baseline cyber-security controls"
+      },
+      {
+        "clause": "Annex-B",
+        "priorityWeight": 1.0,
+        "topic": "Cyber-crisis management plan"
+      }
+    ],
+    "effectiveFrom": "2016-06-02",
+    "endpoint": "/api/v1/compliance/regulations/rbi-cyber@2016--as-amended-.json",
+    "pendingChanges": [],
+    "sunsetOn": null,
+    "useCasesTaggingThisVersion": [
+      "1.1.76",
+      "22.30.13",
+      "22.30.14",
+      "22.30.15",
+      "22.30.16",
+      "22.30.17",
+      "22.30.18"
+    ],
+    "version": "2016 (as amended)"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 3,
+    "unknown": 0
+  },
+  "authoritativeUrl": "http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+  "clause": "Art.48",
+  "clauseId": "lgpd@Lei nº 13.709/2018#Art.48",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 4,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "Derived from GDPR@2016/679 Art.33 (parent assurance='full'). Clause mapped per data/regulations.json derivesFrom graph; inherited assurance degraded one step. Divergence recorded — SME review should confirm scope fit.",
+      "category": 22,
+      "clauseUrl": "http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+      "controlObjective": "Evidence that LGPD Art.48 (Breach notification) is enforced — Splunk UC-22.39.1: Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA).",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.39.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "derived-from-parent",
+      "smeCaveat": null,
+      "ucId": "22.39.1",
+      "ucTitle": "Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA)"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "Derived from GDPR@2016/679 Art.33 (parent assurance='full'). Clause mapped per data/regulations.json derivesFrom graph; inherited assurance degraded one step. Divergence recorded — SME review should confirm scope fit.",
+      "category": 22,
+      "clauseUrl": "http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+      "controlObjective": "Evidence that LGPD Art.48 (Breach notification) is enforced — Splunk UC-22.39.2: Regulator-portal submission evidence — one-way API acknowledgement audit.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.39.2' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "derived-from-parent",
+      "smeCaveat": null,
+      "ucId": "22.39.2",
+      "ucTitle": "Regulator-portal submission evidence — one-way API acknowledgement audit"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "Derived from GDPR@2016/679 Art.34 (parent assurance='full'). Clause mapped per data/regulations.json derivesFrom graph; inherited assurance degraded one step.",
+      "category": 22,
+      "clauseUrl": "http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+      "controlObjective": "Evidence that LGPD Art.48 (Breach notification) is enforced — Splunk UC-22.39.3: Data-subject breach communication timeline tracker (Art.34 / §164.404).",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.39.3' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "derived-from-parent",
+      "smeCaveat": null,
+      "ucId": "22.39.3",
+      "ucTitle": "Data-subject breach communication timeline tracker (Art.34 / §164.404)"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'Lei Geral de Proteção de Dados (LGPD)' → 'Art.48'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "http://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm",
+      "controlObjective": "Evidence that LGPD Art.48 (Breach notification) is enforced — Splunk UC-22.32.3: ANPD personal data incident notification evidence.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.32.3' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.32.3",
+      "ucTitle": "ANPD personal data incident notification evidence"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/lgpd__Lei%20n%C2%BA%2013.709%2F2018__Art.48.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 4
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "lgpd",
+  "regulationName": "Lei Geral de Proteção de Dados Pessoais",
+  "regulationShortName": "LGPD",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/lgpd.json",
+    "regulationVersion": "/api/v1/compliance/regulations/lgpd@Lei%20n%C2%BA%2013.709%2F2018.json",
+    "story": "/api/v1/compliance/story/lgpd.json"
+  },
+  "tier": 2,
+  "topAssurance": "partial",
+  "topic": "Breach notification",
+  "version": "Lei nº 13.709/2018"
+}

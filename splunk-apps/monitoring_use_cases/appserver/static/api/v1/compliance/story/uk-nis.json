@@ -1,0 +1,194 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 9,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Reg.10",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.27.1",
+        "22.27.10",
+        "22.27.2",
+        "22.27.3",
+        "22.27.5",
+        "22.27.6",
+        "22.27.7",
+        "22.27.8",
+        "22.27.9"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "OES security duties",
+      "version": "2018"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 2
+      },
+      "clause": "Reg.11",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "16.1.20",
+        "16.3.6",
+        "22.27.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Incident reporting",
+      "version": "2018"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "2 of 2 common clauses are covered by the catalogue, with a priority-weighted coverage of 37.5% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoveragePercent": 37.5,
+      "stateCounts": {
+        "contributing-only": 1,
+        "covered-full": 0,
+        "covered-partial": 1,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "Reg.11",
+        "killerUcId": "16.1.20",
+        "killerUcTitle": "Major Incident Post-Mortem Compliance",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Incident reporting",
+        "version": "2018",
+        "why": "Clause Reg.11 (Incident reporting) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "Reg.10",
+        "killerUcId": "22.27.1",
+        "killerUcTitle": "OES security measures monitoring",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "OES security duties",
+        "version": "2018",
+        "why": "Clause Reg.10 (OES security duties) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "Reg.10",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.27.7",
+            "ucTitle": "Supply chain security for OES dependencies"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.27.8",
+            "ucTitle": "Capacity and resilience headroom tracking"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.27.1",
+            "ucTitle": "OES security measures monitoring"
+          }
+        ],
+        "topic": "OES security duties",
+        "version": "2018"
+      },
+      {
+        "clause": "Reg.11",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.27.4",
+            "ucTitle": "Network and information systems incident reporting"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "16.1.20",
+            "ucTitle": "Major Incident Post-Mortem Compliance"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "16.3.6",
+            "ucTitle": "Major Incident and Post-Mortem Tracking"
+          }
+        ],
+        "topic": "Incident reporting",
+        "version": "2018"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "UK"
+  ],
+  "narrative": {
+    "evidencePack": null,
+    "matchedBy": "fuzzy-shortname",
+    "name": "UK NIS & FCA/PRA",
+    "primer": null,
+    "splunkValue": "We evidence NIS security measures, track operational resilience impact tolerances and severe-but-plausible scenario testing, monitor material-outsourcing registers, and generate SM&CR personal-accountability artefacts.",
+    "whatItIs": "The UK's post-Brexit regulatory stack: the UK NIS Regulations for operators of essential services, FCA and PRA operational-resilience rules for financial firms, the Senior Managers and Certification Regime, and the government-backed Cyber Essentials scheme.",
+    "whoItAffects": "UK operators of essential services (energy, transport, health, water, digital infrastructure, digital services), FCA-authorised firms, PRA-supervised banks and insurers, and public-sector and supply-chain entities required to hold Cyber Essentials."
+  },
+  "narrativeRef": "non-technical-view.js#cat-22/area/uk-nis-fca-pra",
+  "regulationId": "uk-nis",
+  "regulationName": "UK Network and Information Systems Regulations 2018",
+  "regulationShortName": "UK NIS",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=uk-nis",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#uk-nis",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/uk-nis.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

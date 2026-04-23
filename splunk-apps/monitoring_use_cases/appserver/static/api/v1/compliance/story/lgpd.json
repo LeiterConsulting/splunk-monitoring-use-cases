@@ -1,0 +1,235 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 10,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.46",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.32.1",
+        "22.32.2",
+        "22.32.4",
+        "22.32.5",
+        "22.32.6",
+        "22.32.7",
+        "22.32.8",
+        "22.35.2",
+        "22.35.3",
+        "22.41.1"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Security measures",
+      "version": "Lei nº 13.709/2018"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 3
+      },
+      "clause": "Art.48",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.32.3",
+        "22.39.1",
+        "22.39.2",
+        "22.39.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Breach notification",
+      "version": "Lei nº 13.709/2018"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "Art.6",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.37.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "Lei nº 13.709/2018"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "2 of 2 common clauses are covered by the catalogue, with a priority-weighted coverage of 37.5% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoveragePercent": 37.5,
+      "stateCounts": {
+        "contributing-only": 1,
+        "covered-full": 0,
+        "covered-partial": 1,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "Art.48",
+        "killerUcId": "22.32.3",
+        "killerUcTitle": "ANPD personal data incident notification evidence",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Breach notification",
+        "version": "Lei nº 13.709/2018",
+        "why": "Clause Art.48 (Breach notification) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "Art.46",
+        "killerUcId": "22.32.1",
+        "killerUcTitle": "LGPD consent management audit trail",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Security measures",
+        "version": "Lei nº 13.709/2018",
+        "why": "Clause Art.46 (Security measures) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "Art.6",
+        "killerUcId": "22.37.4",
+        "killerUcTitle": "Purpose-limitation enforcement — processing not matching declared purpose",
+        "priorityWeight": null,
+        "topAssurance": "partial",
+        "topic": null,
+        "version": "Lei nº 13.709/2018",
+        "why": "Clause Art.6 (topic not recorded) carries a regulator-assigned priority weight of None, and the catalogue covers it at assurance=partial."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "Art.46",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.32.4",
+            "ucTitle": "DPO statutory compliance and coverage"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.32.8",
+            "ucTitle": "Processing activities register synchronization"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.35.2",
+            "ucTitle": "Log tamper detection via write-once-read-many chain-of-custody"
+          }
+        ],
+        "topic": "Security measures",
+        "version": "Lei nº 13.709/2018"
+      },
+      {
+        "clause": "Art.48",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.32.3",
+            "ucTitle": "ANPD personal data incident notification evidence"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.39.1",
+            "ucTitle": "Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA)"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.39.2",
+            "ucTitle": "Regulator-portal submission evidence — one-way API acknowledgement audit"
+          }
+        ],
+        "topic": "Breach notification",
+        "version": "Lei nº 13.709/2018"
+      },
+      {
+        "clause": "Art.6",
+        "coverageState": "covered-partial",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.37.4",
+            "ucTitle": "Purpose-limitation enforcement — processing not matching declared purpose"
+          }
+        ],
+        "topic": null,
+        "version": "Lei nº 13.709/2018"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "BR"
+  ],
+  "narrative": null,
+  "narrativeRef": null,
+  "regulationId": "lgpd",
+  "regulationName": "Lei Geral de Proteção de Dados Pessoais",
+  "regulationShortName": "LGPD",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=lgpd",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#lgpd",
+    "evidencePack": null,
+    "primerAnchor": "docs/regulatory-primer.md#54-lgpd-gdpr-mapped-mode",
+    "regulation": "/api/v1/compliance/regulations/lgpd.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

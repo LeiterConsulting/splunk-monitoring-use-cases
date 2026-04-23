@@ -1,0 +1,231 @@
+{
+  "apiVersion": "v1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "pci-dss",
+  "jurisdiction": [
+    "GLOBAL"
+  ],
+  "name": "Payment Card Industry Data Security Standard",
+  "shortName": "PCI DSS",
+  "tags": [
+    "cardholder-data",
+    "payments"
+  ],
+  "tier": 1,
+  "version": {
+    "authoritativeUrl": "https://www.pcisecuritystandards.org/document_library/",
+    "clauseCoverageMatrix": [
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "10.1",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.67"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Audit trail linking access to user"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "10.2",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.61"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Audit events required to be logged"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "10.5",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.11.65"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Log integrity"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "10.6",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.63"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Log review"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "11.4",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.77"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 0.7,
+        "topAssurance": "full",
+        "topic": "Intrusion detection"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "3.4",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.18"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "PAN rendering unreadable"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 1,
+          "partial": 0
+        },
+        "clause": "8.2.3",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "22.11.48"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Strong password parameters"
+      }
+    ],
+    "clauseExamples": [
+      "10.2.1",
+      "8.2.3",
+      "11.3.1"
+    ],
+    "clauseGrammar": "^\\d+(\\.\\d+){1,3}(\\.[a-z])?$",
+    "clauseUrlTemplate": "https://listings.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf#clause={clause}",
+    "clausesReferencedByCatalogue": [
+      "10.1",
+      "10.2",
+      "10.5",
+      "10.6",
+      "11.4",
+      "3.4",
+      "8.2.3"
+    ],
+    "commonClauses": [
+      {
+        "clause": "3.4",
+        "priorityWeight": 1.0,
+        "topic": "PAN rendering unreadable"
+      },
+      {
+        "clause": "8.2.3",
+        "priorityWeight": 1.0,
+        "topic": "Strong password parameters"
+      },
+      {
+        "clause": "10.1",
+        "priorityWeight": 1.0,
+        "topic": "Audit trail linking access to user"
+      },
+      {
+        "clause": "10.2",
+        "priorityWeight": 1.0,
+        "topic": "Audit events required to be logged"
+      },
+      {
+        "clause": "10.5",
+        "priorityWeight": 1.0,
+        "topic": "Log integrity"
+      },
+      {
+        "clause": "10.6",
+        "priorityWeight": 1.0,
+        "topic": "Log review"
+      },
+      {
+        "clause": "11.4",
+        "priorityWeight": 0.7,
+        "topic": "Intrusion detection"
+      }
+    ],
+    "coverageSummary": {
+      "clauseCoveragePercent": 100.0,
+      "commonClauseCount": 7,
+      "coveredClauseCount": 7,
+      "offCommonListClauseCount": 0,
+      "priorityWeightedCoveragePercent": 100.0,
+      "stateCounts": {
+        "contributing-only": 1,
+        "covered-full": 6,
+        "covered-partial": 0,
+        "uncovered": 0
+      }
+    },
+    "effectiveFrom": "2018-05-01",
+    "endpoint": "/api/v1/compliance/regulations/pci-dss@v3.2.1.json",
+    "pendingChanges": [
+      {
+        "date": "2024-03-31",
+        "note": "v3.2.1 retired; v4.0.x is the sole valid version from 1 April 2024."
+      }
+    ],
+    "sunsetOn": "2024-03-31",
+    "useCasesTaggingThisVersion": [
+      "22.11.18",
+      "22.11.48",
+      "22.11.61",
+      "22.11.63",
+      "22.11.65",
+      "22.11.67",
+      "22.11.77"
+    ],
+    "version": "v3.2.1"
+  }
+}

@@ -1,0 +1,401 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "Art.12",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "1.1.65"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Record-keeping (logging)",
+      "version": "Regulation (EU) 2024/1689"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 18,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.13",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.21.10",
+        "22.21.13",
+        "22.21.14",
+        "22.21.16",
+        "22.21.17",
+        "22.21.18",
+        "22.21.19",
+        "22.21.20",
+        "22.21.21",
+        "22.21.22",
+        "22.21.23",
+        "22.21.24",
+        "22.21.25",
+        "22.21.5",
+        "22.21.6",
+        "22.21.7",
+        "22.21.8",
+        "22.21.9"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "contributing",
+      "topic": "Transparency and information",
+      "version": "Regulation (EU) 2024/1689"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.14",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.21.11",
+        "22.21.12",
+        "22.21.15"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Human oversight",
+      "version": "Regulation (EU) 2024/1689"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.15",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.21.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Accuracy, robustness, cybersecurity",
+      "version": "Regulation (EU) 2024/1689"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.19",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "1.2.51",
+        "22.21.2",
+        "22.21.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Automatically generated logs",
+      "version": "Regulation (EU) 2024/1689"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.26",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.21.1"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "High-risk AI obligations for deployers",
+      "version": "Regulation (EU) 2024/1689"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "6 of 6 common clauses are covered by the catalogue, with a priority-weighted coverage of 29.39% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 6,
+      "coveredClauseCount": 6,
+      "priorityWeightedCoveragePercent": 29.39,
+      "stateCounts": {
+        "contributing-only": 5,
+        "covered-full": 0,
+        "covered-partial": 1,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "Art.12",
+        "killerUcId": "1.1.65",
+        "killerUcTitle": "Auditd Rule Violation Detection",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Record-keeping (logging)",
+        "version": "Regulation (EU) 2024/1689",
+        "why": "Clause Art.12 (Record-keeping (logging)) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "Art.14",
+        "killerUcId": "22.21.11",
+        "killerUcTitle": "Human Override Action Logging Coverage (Art. 14)",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Human oversight",
+        "version": "Regulation (EU) 2024/1689",
+        "why": "Clause Art.14 (Human oversight) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "Art.15",
+        "killerUcId": "22.21.4",
+        "killerUcTitle": "Model Performance Degradation Detection (Art. 12)",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Accuracy, robustness, cybersecurity",
+        "version": "Regulation (EU) 2024/1689",
+        "why": "Clause Art.15 (Accuracy, robustness, cybersecurity) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "Art.19",
+        "killerUcId": "1.2.51",
+        "killerUcTitle": "Process Creation with Command Line Auditing",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Automatically generated logs",
+        "version": "Regulation (EU) 2024/1689",
+        "why": "Clause Art.19 (Automatically generated logs) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "Art.26",
+        "killerUcId": "22.21.1",
+        "killerUcTitle": "Automatic Recording Events for High-Risk AI (Art. 12)",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "High-risk AI obligations for deployers",
+        "version": "Regulation (EU) 2024/1689",
+        "why": "Clause Art.26 (High-risk AI obligations for deployers) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "Art.12",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "1.1.65",
+            "ucTitle": "Auditd Rule Violation Detection"
+          }
+        ],
+        "topic": "Record-keeping (logging)",
+        "version": "Regulation (EU) 2024/1689"
+      },
+      {
+        "clause": "Art.14",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.21.11",
+            "ucTitle": "Human Override Action Logging Coverage (Art. 14)"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.21.12",
+            "ucTitle": "Escalation to Human Review Queue Latency (Art. 14)"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.21.15",
+            "ucTitle": "Operator Session Segregation for High-Risk AI Consoles (Art. 14)"
+          }
+        ],
+        "topic": "Human oversight",
+        "version": "Regulation (EU) 2024/1689"
+      },
+      {
+        "clause": "Art.15",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.21.4",
+            "ucTitle": "Model Performance Degradation Detection (Art. 12)"
+          }
+        ],
+        "topic": "Accuracy, robustness, cybersecurity",
+        "version": "Regulation (EU) 2024/1689"
+      },
+      {
+        "clause": "Art.19",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.21.2",
+            "ucTitle": "Model Input/Output Logging Integrity (Art. 12)"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "1.2.51",
+            "ucTitle": "Process Creation with Command Line Auditing"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.21.3",
+            "ucTitle": "Automated Decision Audit Trail Reconstruction (Art. 12)"
+          }
+        ],
+        "topic": "Automatically generated logs",
+        "version": "Regulation (EU) 2024/1689"
+      },
+      {
+        "clause": "Art.26",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.21.1",
+            "ucTitle": "Automatic Recording Events for High-Risk AI (Art. 12)"
+          }
+        ],
+        "topic": "High-risk AI obligations for deployers",
+        "version": "Regulation (EU) 2024/1689"
+      },
+      {
+        "clause": "Art.13",
+        "coverageState": "contributing-only",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.21.5",
+            "ucTitle": "Bias Drift Monitoring Across Protected Attributes (Art. 12)"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.21.8",
+            "ucTitle": "Training Data Lineage Event Completeness (Art. 13)"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.21.13",
+            "ucTitle": "Autonomous Decision Threshold Breach Monitoring (Art. 14)"
+          }
+        ],
+        "topic": "Transparency and information",
+        "version": "Regulation (EU) 2024/1689"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "EU"
+  ],
+  "narrative": {
+    "evidencePack": null,
+    "matchedBy": "manual-map",
+    "name": "EU AI Act",
+    "primer": null,
+    "splunkValue": "We capture the Article 12 automatic logs, track model version and training-data lineage, evidence human-override events under Article 14, and maintain the post-market monitoring artefacts national market-surveillance authorities will request.",
+    "whatItIs": "The EU's horizontal regulation on artificial intelligence. It bans unacceptable AI uses, imposes strict obligations on high-risk AI systems (healthcare, employment, credit, law enforcement, biometric, safety-critical), and adds general-purpose AI model transparency duties.",
+    "whoItAffects": "Providers, deployers, importers, and distributors of AI systems placed on the EU market — including non-EU vendors whose AI is used in the EU. Obligations apply whether you built the model or merely integrate an upstream one."
+  },
+  "narrativeRef": "non-technical-view.js#cat-22/area/eu-ai-act",
+  "regulationId": "eu-ai-act",
+  "regulationName": "EU AI Act",
+  "regulationShortName": "EU AI Act",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=eu-ai-act",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#eu-ai-act",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/eu-ai-act.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

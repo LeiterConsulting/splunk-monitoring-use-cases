@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "unknown",
+  "clauseId": "cjis@unknown#unknown",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-generated from legacy markdown 'Regulations' line during the per-UC migration. Requires SME review to fill in version, clause, mode, and assurance for CJIS.",
+      "category": 10,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that CJIS unknown is enforced — Splunk UC-10.12.44: CJIS Audit Log Compliance.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-10.12.44' running on sourcetype=\"cjis:query\", archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "10.12.44",
+      "ucTitle": "CJIS Audit Log Compliance"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/cjis__unknown__unknown.json",
+  "gapNote": "cjis clause unknown has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "cjis",
+  "regulationName": "cjis",
+  "regulationShortName": "cjis",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/cjis.json",
+    "regulationVersion": "/api/v1/compliance/regulations/cjis@unknown.json",
+    "story": "/api/v1/compliance/story/cjis.json"
+  },
+  "tier": null,
+  "topAssurance": "contributing",
+  "topic": null,
+  "version": "unknown"
+}

@@ -1,0 +1,98 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 4,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "2.2.4",
+  "clauseId": "pci-dss@v4.0#2.2.4",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 4,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that PCI DSS 2.2.4 is enforced — Splunk UC-22.11.6: Wireless Client Pools Reaching CDE Hosts.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.11.6' running on index=netfw sourcetype=\"pan:traffic\"; optional index=stream for decrypted metadata tagging, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.11.6",
+      "ucTitle": "Wireless Client Pools Reaching CDE Hosts"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that PCI DSS 2.2.4 is enforced — Splunk UC-22.11.12: Removal of Vendor Default SNMP and Community Strings.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.11.12' running on index=netops sourcetype IN (\"snmp:trap\",\"syslog:cisco\") or index=linux sourcetype=\"linux:auditd\" for snmpd edits, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.11.12",
+      "ucTitle": "Removal of Vendor Default SNMP and Community Strings"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that PCI DSS 2.2.4 is enforced — Splunk UC-22.11.26: Wireless Link Encryption Downgrade for Store WLAN Carrying Payment Terminals.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.11.26' running on index=wireless sourcetype=\"wlan:controller\" — SSID, security mode, AP name, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.11.26",
+      "ucTitle": "Wireless Link Encryption Downgrade for Store WLAN Carrying Payment Terminals"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that PCI DSS 2.2.4 is enforced — Splunk UC-22.11.89: Technology Acceptable Use — USB Mass Storage on CDE Workstations.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.11.89' running on index=windows Microsoft-Windows-Kernel-PnP/Configuration or WinEventLog:Security EventCode 6416, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.11.89",
+      "ucTitle": "Technology Acceptable Use — USB Mass Storage on CDE Workstations"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/pci-dss__v4.0__2.2.4.json",
+  "gapNote": "pci-dss clause 2.2.4 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 4
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "pci-dss",
+  "regulationName": "pci-dss",
+  "regulationShortName": "pci-dss",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/pci-dss.json",
+    "regulationVersion": "/api/v1/compliance/regulations/pci-dss@v4.0.json",
+    "story": "/api/v1/compliance/story/pci-dss.json"
+  },
+  "tier": null,
+  "topAssurance": "contributing",
+  "topic": null,
+  "version": "v4.0"
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/14.4.19.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/14.4.19.json",
+    "sourcePath": "content/cat-14-iot-operational-technology-ot/UC-14.4.19.json"
+  },
+  "apiVersion": "v1",
+  "app": "Zigbee2MQTT, Home Assistant, vendor hub",
+  "cimModels": [
+    "N/A"
+  ],
+  "criticality": "high",
+  "dataSources": "`sourcetype=\"zigbee:gateway\"` OR `sourcetype=\"ble:gateway\"`",
+  "description": "Mesh coordinators and gateways aggregate low-power sensors; their health affects entire buildings.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Zigbee2MQTT, Home Assistant, vendor hub.\n• Ensure the following data sources are available: `sourcetype=\"zigbee:gateway\"` OR `sourcetype=\"ble:gateway\"`.\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\nPoll hub API for mesh depth, neighbor loss, and MQTT uplink. Alert on coordinator down or offline child count spike.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=iot sourcetype IN (\"zigbee:gateway\",\"ble:gateway\")\n| where coordinator_status!=\"OK\" OR offline_devices > 5 OR mqtt_connected=0\n| table _time, gateway_id, coordinator_status, offline_devices, mqtt_connected\n```\n\nUnderstanding this SPL\n\n**BLE/Zigbee Gateway Health** — Mesh coordinators and gateways aggregate low-power sensors; their health affects entire buildings.\n\nDocumented **Data sources**: `sourcetype=\"zigbee:gateway\"` OR `sourcetype=\"ble:gateway\"`. **App/TA** (typical add-on context): Zigbee2MQTT, Home Assistant, vendor hub. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: iot.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=iot. Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• Filters the current rows with `where coordinator_status!=\"OK\" OR offline_devices > 5 OR mqtt_connected=0` — typically the threshold or rule expression for this monitoring goal.\n• Pipeline stage (see **BLE/Zigbee Gateway Health**): table _time, gateway_id, coordinator_status, offline_devices, mqtt_connected\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Status grid (gateway × health), Line chart (offline device count), Table (gateways degraded).",
+  "difficulty": "intermediate",
+  "equipment": [
+    "mqtt"
+  ],
+  "grandmaExplanation": "Mesh coordinators and gateways aggregate low-power sensors; their health affects entire buildings — so faults, tampering, and safety issues are spotted right away.",
+  "id": "14.4.19",
+  "implementation": "Poll hub API for mesh depth, neighbor loss, and MQTT uplink. Alert on coordinator down or offline child count spike.",
+  "knownFalsePositives": "Administrative tasks, scheduled jobs or platform updates can match this pattern — correlate with change management, maintenance windows and user role before raising severity.",
+  "monitoringType": [
+    "Availability"
+  ],
+  "references": [
+    {
+      "title": "Splunk Lantern — use case library",
+      "url": "https://lantern.splunk.com/"
+    }
+  ],
+  "spl": "index=iot sourcetype IN (\"zigbee:gateway\",\"ble:gateway\")\n| where coordinator_status!=\"OK\" OR offline_devices > 5 OR mqtt_connected=0\n| table _time, gateway_id, coordinator_status, offline_devices, mqtt_connected",
+  "splunkPillar": "Observability",
+  "title": "BLE/Zigbee Gateway Health",
+  "value": "Mesh coordinators and gateways aggregate low-power sensors; their health affects entire buildings.",
+  "visualization": "Status grid (gateway × health), Line chart (offline device count), Table (gateways degraded)."
+}

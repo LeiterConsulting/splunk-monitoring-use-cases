@@ -6,6 +6,8 @@ Browse them in the **interactive dashboard** or use the **machine-readable catal
 
 **Live dashboard:** [fenre.github.io/splunk-monitoring-use-cases](https://fenre.github.io/splunk-monitoring-use-cases/)
 
+**Installable Splunk app:** the same catalog also ships as `monitoring_use_cases-<ver>.spl` and opens inside Splunk chrome at `/en-US/app/monitoring_use_cases/catalog`. Deployment guidance lives in [docs/enterprise-deployment.md](docs/enterprise-deployment.md).
+
 **Feedback:** In the dashboard, open any use case (technical or plain-language view) and click **Report issue on GitHub** to open a new issue with the UC id, source markdown link, and current page URL pre-filled. Forks can set `window.SITE_CUSTOM.siteRepoUrl` in `index.html` to point at their repository.
 
 **Want to replicate this product** for another vendor, query language, or content domain? Start at **[docs/DESIGN.md](docs/DESIGN.md)** — the full product design document — and the minimum-viable fork under **[templates/replication-starter/](templates/replication-starter/)**. See also the [replication guide](docs/replication-guide.md) and [architecture decision records](docs/adr/).
@@ -245,24 +247,27 @@ and `data/crosswalks/`.
 
 ---
 
-## Splunk Content Packs
+## Splunk Packages
 
-Every release ships five self-contained Splunk apps built from the same `catalog.json`:
+Every release ships six self-contained Splunk packages built from the same `catalog.json`:
 
 | Pack | File | Contents | Cloud-safe? |
 |------|------|----------|-------------|
+| Monitoring Use Cases catalog app | `monitoring_use_cases-<ver>.spl` | Hosts the compiled catalog inside Splunk chrome, including overview, scorecard, regulatory primer, clause navigator, compliance story, API docs, the data sizing tool, and same-window Search deep links. | Yes |
 | Technology Add-on | `TA-splunk-use-cases-<ver>.spl` | ~115 Quick-Start saved searches, per-category index macros, eventtype aliases | Yes |
 | ITSI content pack | `DA-ITSI-monitoring-use-cases-<ver>.spl` | 6 KPI base searches, 3 threshold templates, 4 KPI templates, 3 service templates | Yes |
 | ES content pack | `DA-ESS-monitoring-use-cases-<ver>.spl` | 650 correlation searches, MITRE ATT&CK governance, analytic stories, CIM eventtypes/tags | Yes |
 | UC Recommender | `splunk-uc-recommender-<ver>.spl` | Scans local sourcetypes / indexes / CIM acceleration / apps and recommends matching UCs. **Also bundles every tier-1 compliance UC** (GDPR, HIPAA, PCI-DSS, NIS2, ISO 27001, NIST CSF, NIST 800-53, DORA, CMMC, SOC 2, SOX ITGC) as **disabled** saved searches with a filterable Compliance view. | Yes |
 | UC Recommender TA (optional) | `splunk-uc-recommender-ta-<ver>.spl` | One modular input that enriches the recommender's inventory with sampled field names. | **Enterprise only** |
 
-Every pack is **disabled by default** and passes AppInspect cloud vetting (except the recommender TA, which is Enterprise-only by design because modular inputs need individual vetting for Splunk Cloud). See [docs/enterprise-deployment.md](docs/enterprise-deployment.md) for prerequisites, SHC install, macro tuning and upgrade / rollback procedures. Operator + developer docs for the recommender live at [docs/recommender-app.md](docs/recommender-app.md).
+Every package is **static-only or disabled by default** and passes AppInspect-relevant static checks (except the recommender TA, which is Enterprise-only by design because modular inputs need individual vetting for Splunk Cloud). See [docs/enterprise-deployment.md](docs/enterprise-deployment.md) for prerequisites, `monitoring_use_cases` install steps, SHC handling, macro tuning, and upgrade / rollback procedures. Operator + developer docs for the recommender live at [docs/recommender-app.md](docs/recommender-app.md).
 
 Build the packs locally:
 
 ```bash
-python3 build.py                             # regenerate catalog.json + api/
+python3 tools/build/build.py --out dist      # regenerate compiled site in dist/
+python3 scripts/generate_monitoring_use_cases_app.py
+scripts/package_splunk_apps.sh dist monitoring_use_cases
 scripts/package_ta.sh dist/
 scripts/package_itsi.sh dist/
 scripts/package_es.sh dist/
@@ -331,7 +336,7 @@ If you use this catalog in research or production, please cite it — metadata i
 | [GitHub Pages Setup](docs/github-pages-setup.md) | Step-by-step hosting instructions |
 | [Splunk Apps Comparison](docs/splunk-apps-use-cases-comparison.md) | How this repo relates to IT Essentials, ITSI content packs, and ESCU |
 | [Splunk UC Recommender app](docs/recommender-app.md) | Operator + developer guide for `splunk-uc-recommender` — scans your environment and previews matching UCs from this catalogue |
-| [Enterprise Deployment](docs/enterprise-deployment.md) | Install the TA / ITSI / ES content packs in production Splunk environments |
+| [Enterprise Deployment](docs/enterprise-deployment.md) | Install `monitoring_use_cases` plus the TA / ITSI / ES packages in production Splunk environments |
 | [Product Design](docs/DESIGN.md) | Full product design document describing architecture and replication targets |
 | [Replication Guide](docs/replication-guide.md) | Step-by-step guide to porting the platform to another stack |
 | [Architecture Decisions](docs/adr/) | ADRs capturing static-site, catalog.json and transcript-log choices |

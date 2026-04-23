@@ -1,0 +1,83 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 3,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-{section}#p-%C2%A7164.312(d)",
+  "clause": "§164.312(d)",
+  "clauseId": "hipaa-security@2013-final#§164.312(d)",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 3,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-{section}#p-%C2%A7164.312(d)",
+      "controlObjective": "Evidence that HIPAA Security §164.312(d) (Person or entity authentication) is enforced — Splunk UC-22.10.19: Entity Authentication — Smart Card / Certificate Logon Failures.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.10.19' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.10.19",
+      "ucTitle": "Entity Authentication — Smart Card / Certificate Logon Failures"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-{section}#p-%C2%A7164.312(d)",
+      "controlObjective": "Evidence that HIPAA Security §164.312(d) (Person or entity authentication) is enforced — Splunk UC-22.10.23: FHIR / SMART on FHIR App Access to ePHI Scopes.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.10.23' running on index=interop sourcetype=epic:fhir_audit or Azure API Management / Apigee logs (client_id, scope, patient, status_code), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.10.23",
+      "ucTitle": "FHIR / SMART on FHIR App Access to ePHI Scopes"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-{section}#p-%C2%A7164.312(d)",
+      "controlObjective": "Evidence that HIPAA Security §164.312(d) (Person or entity authentication) is enforced — Splunk UC-22.10.42: Patient Portal — Suspicious MyChart Password Reset & MFA Changes.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.10.42' running on index=mychart sourcetype=epic:mychart_audit (action, user_mrn, src_ip), optional Okta/Azure AD B2C logs, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.10.42",
+      "ucTitle": "Patient Portal — Suspicious MyChart Password Reset & MFA Changes"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/hipaa-security__2013-final__%C2%A7164.312%28d%29.json",
+  "gapNote": "HIPAA Security clause §164.312(d) has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 3
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "hipaa-security",
+  "regulationName": "HIPAA Security Rule",
+  "regulationShortName": "HIPAA Security",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/hipaa-security.json",
+    "regulationVersion": "/api/v1/compliance/regulations/hipaa-security@2013-final.json",
+    "story": "/api/v1/compliance/story/hipaa-security.json"
+  },
+  "tier": 1,
+  "topAssurance": "contributing",
+  "topic": "Person or entity authentication",
+  "version": "2013-final"
+}

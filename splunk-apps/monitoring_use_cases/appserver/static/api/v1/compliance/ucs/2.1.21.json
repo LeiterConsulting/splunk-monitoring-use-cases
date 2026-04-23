@@ -1,0 +1,42 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/2.1.21.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/2.1.21.json",
+    "sourcePath": "content/cat-02-virtualization/UC-2.1.21.json"
+  },
+  "apiVersion": "v1",
+  "app": "`Splunk_TA_vmware`",
+  "cimModels": [
+    "N/A"
+  ],
+  "criticality": "critical",
+  "dataSources": "`sourcetype=vmware:events`, ESXi syslog",
+  "description": "Unexpected ESXi reboots indicate hardware failure (memory ECC errors, CPU machine checks), kernel panics (PSODs), or firmware bugs. Each reboot triggers HA failover of all VMs on that host, causing widespread service disruption. Early detection enables root cause analysis before the issue recurs.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: `Splunk_TA_vmware`.\n• Ensure the following data sources are available: `sourcetype=vmware:events`, ESXi syslog.\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\nCollect vCenter events via Splunk_TA_vmware. Also forward ESXi syslog directly to Splunk for boot-time messages. Alert immediately on HostConnectionLostEvent (ungraceful). Correlate with IPMI/iLO/iDRAC logs if available. Differentiate planned reboots (HostShutdownEvent with a user) from unplanned (HostConnectionLostEvent).\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=vmware sourcetype=\"vmware:events\" (event_type=\"HostConnectionLostEvent\" OR event_type=\"HostDisconnectedEvent\" OR event_type=\"HostShutdownEvent\")\n| table _time, host, event_type, message, user\n| sort -_time\n```\n\nUnderstanding this SPL\n\n**ESXi Host Unexpected Reboot Detection** — Unexpected ESXi reboots indicate hardware failure (memory ECC errors, CPU machine checks), kernel panics (PSODs), or firmware bugs. Each reboot triggers HA failover of all VMs on that host, causing widespread service disruption. Early detection enables root cause analysis before the issue recurs.\n\nDocumented **Data sources**: `sourcetype=vmware:events`, ESXi syslog. **App/TA** (typical add-on context): `Splunk_TA_vmware`. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: vmware; **sourcetype**: vmware:events. That sourcetype matches what this use case lists under Data sources.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=vmware, sourcetype=\"vmware:events\". Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• Pipeline stage (see **ESXi Host Unexpected Reboot Detection**): table _time, host, event_type, message, user\n• Orders rows with `sort` — combine with `head`/`tail` for top-N patterns.\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Timeline (host events), Status grid (host connectivity), Alert panel (critical).",
+  "difficulty": "beginner",
+  "equipment": [
+    "vmware"
+  ],
+  "equipmentModels": [
+    "vmware_ta_vmware"
+  ],
+  "grandmaExplanation": "Unexpected ESXi reboots indicate hardware failure (memory ECC errors, CPU machine checks), kernel panics (PSODs), or firmware bugs — so you catch performance or capacity problems before they hurt real work.",
+  "id": "2.1.21",
+  "implementation": "Collect vCenter events via Splunk_TA_vmware. Also forward ESXi syslog directly to Splunk for boot-time messages. Alert immediately on HostConnectionLostEvent (ungraceful). Correlate with IPMI/iLO/iDRAC logs if available. Differentiate planned reboots (HostShutdownEvent with a user) from unplanned (HostConnectionLostEvent).",
+  "monitoringType": [
+    "Availability"
+  ],
+  "references": [
+    {
+      "title": "Splunk Lantern — use case library",
+      "url": "https://lantern.splunk.com/"
+    }
+  ],
+  "spl": "index=vmware sourcetype=\"vmware:events\" (event_type=\"HostConnectionLostEvent\" OR event_type=\"HostDisconnectedEvent\" OR event_type=\"HostShutdownEvent\")\n| table _time, host, event_type, message, user\n| sort -_time",
+  "splunkPillar": "Observability",
+  "title": "ESXi Host Unexpected Reboot Detection",
+  "value": "Unexpected ESXi reboots indicate hardware failure (memory ECC errors, CPU machine checks), kernel panics (PSODs), or firmware bugs. Each reboot triggers HA failover of all VMs on that host, causing widespread service disruption. Early detection enables root cause analysis before the issue recurs.",
+  "visualization": "Timeline (host events), Status grid (host connectivity), Alert panel (critical)."
+}

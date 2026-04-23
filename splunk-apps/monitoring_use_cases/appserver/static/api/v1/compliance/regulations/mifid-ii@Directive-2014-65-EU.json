@@ -1,0 +1,236 @@
+{
+  "apiVersion": "v1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "mifid-ii",
+  "jurisdiction": [
+    "EU"
+  ],
+  "name": "Markets in Financial Instruments Directive II",
+  "shortName": "MiFID II",
+  "tags": [
+    "financial-services"
+  ],
+  "tier": 2,
+  "version": {
+    "authoritativeUrl": "https://eur-lex.europa.eu/eli/dir/2014/65/oj",
+    "clauseCoverageMatrix": [
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "Art.16(7)",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.5.2"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Record keeping of communications"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 10,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "Art.17",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.5.10",
+          "22.5.11",
+          "22.5.15",
+          "22.5.16",
+          "22.5.17",
+          "22.5.18",
+          "22.5.19",
+          "22.5.20",
+          "22.5.8",
+          "22.5.9"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Algorithmic trading controls"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "Art.16",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.5.5"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 5,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "Art.25",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.5.12",
+          "22.5.13",
+          "22.5.14",
+          "22.5.6",
+          "22.5.7"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 4,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "Art.26",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.5.1",
+          "22.5.24",
+          "22.5.25",
+          "22.5.4"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 4,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "Art.27",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.5.21",
+          "22.5.22",
+          "22.5.23",
+          "22.5.3"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "Art.9",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.5.5"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      }
+    ],
+    "clauseExamples": [
+      "Art.16",
+      "Art.17"
+    ],
+    "clauseGrammar": "^Art\\.\\d+(\\(\\d+\\))?$",
+    "clauseUrlTemplate": "https://eur-lex.europa.eu/eli/dir/2014/65/oj#{clause}",
+    "clausesReferencedByCatalogue": [
+      "Art.16",
+      "Art.16(7)",
+      "Art.17",
+      "Art.25",
+      "Art.26",
+      "Art.27",
+      "Art.9"
+    ],
+    "commonClauses": [
+      {
+        "clause": "Art.16(7)",
+        "priorityWeight": 1.0,
+        "topic": "Record keeping of communications"
+      },
+      {
+        "clause": "Art.17",
+        "priorityWeight": 1.0,
+        "topic": "Algorithmic trading controls"
+      }
+    ],
+    "coverageSummary": {
+      "clauseCoveragePercent": 100.0,
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "offCommonListClauseCount": 5,
+      "priorityWeightedCoveragePercent": 25.0,
+      "stateCounts": {
+        "contributing-only": 2,
+        "covered-full": 0,
+        "covered-partial": 0,
+        "uncovered": 0
+      }
+    },
+    "effectiveFrom": "2018-01-03",
+    "endpoint": "/api/v1/compliance/regulations/mifid-ii@Directive-2014-65-EU.json",
+    "pendingChanges": [],
+    "sunsetOn": null,
+    "useCasesTaggingThisVersion": [
+      "22.5.1",
+      "22.5.10",
+      "22.5.11",
+      "22.5.12",
+      "22.5.13",
+      "22.5.14",
+      "22.5.15",
+      "22.5.16",
+      "22.5.17",
+      "22.5.18",
+      "22.5.19",
+      "22.5.2",
+      "22.5.20",
+      "22.5.21",
+      "22.5.22",
+      "22.5.23",
+      "22.5.24",
+      "22.5.25",
+      "22.5.3",
+      "22.5.4",
+      "22.5.5",
+      "22.5.6",
+      "22.5.7",
+      "22.5.8",
+      "22.5.9"
+    ],
+    "version": "Directive 2014/65/EU"
+  }
+}

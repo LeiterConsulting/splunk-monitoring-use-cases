@@ -1,0 +1,46 @@
+{
+  "apiVersion": "v1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "bsi-kritisv",
+  "jurisdiction": [
+    "DE"
+  ],
+  "name": "BSI KRITIS-Verordnung",
+  "shortName": "BSI-KritisV",
+  "tags": [
+    "critical-infrastructure"
+  ],
+  "tier": 2,
+  "version": {
+    "authoritativeUrl": "https://www.gesetze-im-internet.de/bsi-kritisv/",
+    "clauseExamples": [
+      "§2",
+      "§8",
+      "§8a"
+    ],
+    "clauseGrammar": "^§\\d+[a-z]?$",
+    "clauseUrlTemplate": null,
+    "clausesReferencedByCatalogue": [
+      "§8a"
+    ],
+    "commonClauses": [
+      {
+        "clause": "§8a",
+        "priorityWeight": 1.0,
+        "topic": "Security in IT systems"
+      }
+    ],
+    "effectiveFrom": "2021-01-01",
+    "endpoint": "/api/v1/compliance/regulations/bsi-kritisv@2021--as-amended-.json",
+    "pendingChanges": [],
+    "sunsetOn": null,
+    "useCasesTaggingThisVersion": [
+      "22.28.10",
+      "22.28.6",
+      "22.28.7",
+      "22.28.8",
+      "22.28.9"
+    ],
+    "version": "2021 (as amended)"
+  }
+}

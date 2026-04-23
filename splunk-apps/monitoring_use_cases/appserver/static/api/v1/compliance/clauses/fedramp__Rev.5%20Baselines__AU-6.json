@@ -1,0 +1,84 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 2,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.fedramp.gov/baselines/#AU-6",
+  "clause": "AU-6",
+  "clauseId": "fedramp@Rev.5 Baselines#AU-6",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 3,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "FedRAMP Rev.5 Baselines AU-6 Audit review, analysis and reporting — the UC implements the audit-review automation expected for cloud control-plane logs.",
+      "category": 4,
+      "clauseUrl": "https://www.fedramp.gov/baselines/",
+      "controlObjective": "Detects violations of FedRAMP AU-6 (Audit review, analysis, reporting) — Splunk UC-4.1.1: Unauthorized API Calls.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-4.1.1' running on sourcetype=aws:cloudtrail, CloudTrail logs, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "detects-violation-of",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "4.1.1",
+      "ucTitle": "Unauthorized API Calls"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "FedRAMP Rev.5 Baselines AU-6 Audit review, analysis and reporting — Splunk _audit search activity provides the audit-review evidence demanded by FedRAMP AU-6.",
+      "category": 13,
+      "clauseUrl": "https://www.fedramp.gov/baselines/",
+      "controlObjective": "Evidence that FedRAMP AU-6 (Audit review, analysis, reporting) is enforced — Splunk UC-13.1.35: User Search Activity Audit (_audit).",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-13.1.35' running on index=_audit action=search, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "13.1.35",
+      "ucTitle": "User Search Activity Audit (_audit)"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "FedRAMP Rev.5 Baselines AU-6 Audit review, analysis and reporting — audit-log modification evidence is cited in AU-6 when reviewing the integrity of the audit pipeline.",
+      "category": 13,
+      "clauseUrl": "https://www.fedramp.gov/baselines/",
+      "controlObjective": "Evidence that FedRAMP AU-6 (Audit review, analysis, reporting) is enforced — Splunk UC-13.1.37: Knowledge Object Modification Audit (_audit).",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-13.1.37' running on index=_audit (knowledge object CRUD), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "13.1.37",
+      "ucTitle": "Knowledge Object Modification Audit (_audit)"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/fedramp__Rev.5%20Baselines__AU-6.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "detects-violation-of": 1,
+    "satisfies": 2
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "fedramp",
+  "regulationName": "Federal Risk and Authorization Management Program",
+  "regulationShortName": "FedRAMP",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/fedramp.json",
+    "regulationVersion": "/api/v1/compliance/regulations/fedramp@Rev.5%20Baselines.json",
+    "story": "/api/v1/compliance/story/fedramp.json"
+  },
+  "tier": 2,
+  "topAssurance": "partial",
+  "topic": "Audit review, analysis, reporting",
+  "version": "Rev.5 Baselines"
+}

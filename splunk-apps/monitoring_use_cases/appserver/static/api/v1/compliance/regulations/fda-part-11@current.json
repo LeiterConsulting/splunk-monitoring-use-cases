@@ -1,0 +1,181 @@
+{
+  "apiVersion": "v1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "fda-part-11",
+  "jurisdiction": [
+    "US"
+  ],
+  "name": "FDA 21 CFR Part 11",
+  "shortName": "FDA Part 11",
+  "tags": [
+    "gxp",
+    "lifesciences"
+  ],
+  "tier": 2,
+  "version": {
+    "authoritativeUrl": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-11",
+    "clauseCoverageMatrix": [
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 0,
+          "partial": 1
+        },
+        "clause": "§11.10(d)",
+        "coverageState": "covered-partial",
+        "coveringUcs": [
+          "7.1.21"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "System access limited to authorized individuals"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 20,
+          "full": 2,
+          "partial": 3
+        },
+        "clause": "§11.10(e)",
+        "coverageState": "covered-full",
+        "coveringUcs": [
+          "1.1.65",
+          "1.2.33",
+          "1.2.51",
+          "22.17.1",
+          "22.17.11",
+          "22.17.12",
+          "22.17.13",
+          "22.17.14",
+          "22.17.15",
+          "22.17.16",
+          "22.17.17",
+          "22.17.18",
+          "22.17.19",
+          "22.17.2",
+          "22.17.20",
+          "22.17.21",
+          "22.17.22",
+          "22.17.23",
+          "22.17.24",
+          "22.17.25",
+          "22.17.3",
+          "22.17.4",
+          "22.17.5",
+          "7.1.13",
+          "7.1.40"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Audit trails"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 5,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "§11.200",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.17.10",
+          "22.17.6",
+          "22.17.7",
+          "22.17.8",
+          "22.17.9"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Electronic signatures"
+      }
+    ],
+    "clauseExamples": [
+      "§11.10(e)",
+      "§11.200"
+    ],
+    "clauseGrammar": "^§11\\.\\d+(\\([a-z]\\))?(\\(\\d+\\))?$",
+    "clauseUrlTemplate": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-11/section-11.{section}#{clause}",
+    "clausesReferencedByCatalogue": [
+      "§11.10(d)",
+      "§11.10(e)",
+      "§11.200"
+    ],
+    "commonClauses": [
+      {
+        "clause": "§11.10(e)",
+        "priorityWeight": 1.0,
+        "topic": "Audit trails"
+      },
+      {
+        "clause": "§11.10(d)",
+        "priorityWeight": 1.0,
+        "topic": "System access limited to authorized individuals"
+      },
+      {
+        "clause": "§11.200",
+        "priorityWeight": 1.0,
+        "topic": "Electronic signatures"
+      }
+    ],
+    "coverageSummary": {
+      "clauseCoveragePercent": 100.0,
+      "commonClauseCount": 3,
+      "coveredClauseCount": 3,
+      "offCommonListClauseCount": 0,
+      "priorityWeightedCoveragePercent": 58.33,
+      "stateCounts": {
+        "contributing-only": 1,
+        "covered-full": 1,
+        "covered-partial": 1,
+        "uncovered": 0
+      }
+    },
+    "effectiveFrom": "1997-08-20",
+    "endpoint": "/api/v1/compliance/regulations/fda-part-11@current.json",
+    "pendingChanges": [],
+    "sunsetOn": null,
+    "useCasesTaggingThisVersion": [
+      "1.1.65",
+      "1.2.33",
+      "1.2.51",
+      "22.17.1",
+      "22.17.10",
+      "22.17.11",
+      "22.17.12",
+      "22.17.13",
+      "22.17.14",
+      "22.17.15",
+      "22.17.16",
+      "22.17.17",
+      "22.17.18",
+      "22.17.19",
+      "22.17.2",
+      "22.17.20",
+      "22.17.21",
+      "22.17.22",
+      "22.17.23",
+      "22.17.24",
+      "22.17.25",
+      "22.17.3",
+      "22.17.4",
+      "22.17.5",
+      "22.17.6",
+      "22.17.7",
+      "22.17.8",
+      "22.17.9",
+      "7.1.13",
+      "7.1.21",
+      "7.1.40"
+    ],
+    "version": "current"
+  }
+}

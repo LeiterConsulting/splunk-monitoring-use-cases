@@ -1,0 +1,84 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 2,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201#ITGC.ChangeMgmt.Authorization",
+  "clause": "ITGC.ChangeMgmt.Authorization",
+  "clauseId": "sox-itgc@PCAOB AS 2201#ITGC.ChangeMgmt.Authorization",
+  "coverageState": "covered-full",
+  "coveringUcCount": 3,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "SOX ITGC change-authorization control — unauthorised change detection is the canonical program-change ITGC tested by SOX auditors to confirm changes were authorised before promotion to production.",
+      "category": 16,
+      "clauseUrl": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+      "controlObjective": "Detects violations of SOX-ITGC ITGC.ChangeMgmt.Authorization (Change authorised) — Splunk UC-16.4.1: Unauthorized Change Detection.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-16.4.1' running on sourcetype=snow:change_request, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "detects-violation-of",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "16.4.1",
+      "ucTitle": "Unauthorized Change Detection"
+    },
+    {
+      "assurance": "full",
+      "assuranceRationale": "SOX ITGC change authorisation — the UC is a textbook control test.",
+      "category": 22,
+      "clauseUrl": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201#ITGC.ChangeMgmt.Authorization",
+      "controlObjective": "Evidence that SOX ITGC ITGC.ChangeMgmt.Authorization (Change authorised) is enforced — Splunk UC-22.42.1: Unauthorized production change — no approved CR matches the observed change.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.42.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.42.1",
+      "ucTitle": "Unauthorized production change — no approved CR matches the observed change"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "SOX ITGC change-authorization control — financial-relevant schema change detection is a standard ITGC program-change authorization control tested by SOX auditors.",
+      "category": 7,
+      "clauseUrl": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+      "controlObjective": "Evidence that SOX-ITGC ITGC.ChangeMgmt.Authorization (Change authorised) is enforced — Splunk UC-7.1.13: Schema Change Detection.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-7.1.13' running on SQL Server DDL triggers, audit logs, PostgreSQL log_statement='ddl', archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "7.1.13",
+      "ucTitle": "Schema Change Detection"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/sox-itgc__PCAOB%20AS%202201__ITGC.ChangeMgmt.Authorization.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "detects-violation-of": 1,
+    "satisfies": 2
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "sox-itgc",
+  "regulationName": "SOX — PCAOB AS 2201 ITGCs",
+  "regulationShortName": "SOX ITGC",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/sox-itgc.json",
+    "regulationVersion": "/api/v1/compliance/regulations/sox-itgc@PCAOB%20AS%202201.json",
+    "story": "/api/v1/compliance/story/sox-itgc.json"
+  },
+  "tier": 1,
+  "topAssurance": "full",
+  "topic": "Change authorised",
+  "version": "PCAOB AS 2201"
+}

@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://rbi.org.in/Scripts/NotificationUser.aspx?Id=10435",
+  "clause": "Annex-B",
+  "clauseId": "rbi-cyber@2016 (as amended)#Annex-B",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'RBI cyber security framework' → 'Annex-B'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://rbi.org.in/Scripts/NotificationUser.aspx?Id=10435",
+      "controlObjective": "Evidence that RBI Cyber Annex-B (Cyber-crisis management plan) is enforced — Splunk UC-22.30.17: CERT-In incident reporting tracking.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.30.17' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.30.17",
+      "ucTitle": "CERT-In incident reporting tracking"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/rbi-cyber__2016%20%28as%20amended%29__Annex-B.json",
+  "gapNote": "RBI Cyber clause Annex-B has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "rbi-cyber",
+  "regulationName": "RBI Cyber Security Framework for Banks",
+  "regulationShortName": "RBI Cyber",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/rbi-cyber.json",
+    "regulationVersion": "/api/v1/compliance/regulations/rbi-cyber@2016%20%28as%20amended%29.json",
+    "story": "/api/v1/compliance/story/rbi-cyber.json"
+  },
+  "tier": 2,
+  "topAssurance": "contributing",
+  "topic": "Cyber-crisis management plan",
+  "version": "2016 (as amended)"
+}

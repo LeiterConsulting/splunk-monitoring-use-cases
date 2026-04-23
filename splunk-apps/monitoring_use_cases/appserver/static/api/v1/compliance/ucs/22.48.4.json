@@ -1,0 +1,109 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/22.48.4.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/22.48.4.json",
+    "sourcePath": "content/cat-22-regulatory-compliance/UC-22.48.4.json"
+  },
+  "apiVersion": "v1",
+  "app": "Splunk Enterprise / Splunk Cloud Platform",
+  "cimModels": [
+    "Change"
+  ],
+  "compliance": [
+    {
+      "assurance": "full",
+      "assurance_rationale": "Top-priority SOX ITGC finding if journal SoD is not enforced.",
+      "clause": "ITGC.Financial.SoD",
+      "controlObjective": "Detects violations of SOX-ITGC ITGC.Financial.SoD — Splunk UC-22.48.4: Financial SoD — same identity posts AND approves a journal entry.",
+      "evidenceArtifact": "Saved search 'UC-22.48.4' running on ERP financial-journal audit events (SAP, Oracle E-Business, Workday Financials)., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "detects-violation-of",
+      "obligationRef": "sox-itgc@PCAOB AS 2201#ITGC.Financial.SoD",
+      "regulation": "SOX-ITGC",
+      "requires_sme_review": true,
+      "version": "PCAOB AS 2201"
+    },
+    {
+      "assurance": "full",
+      "assurance_rationale": "SoD in financial system access.",
+      "clause": "CC6.3",
+      "controlObjective": "Detects violations of SOC-2 CC6.3 — Splunk UC-22.48.4: Financial SoD — same identity posts AND approves a journal entry.",
+      "evidenceArtifact": "Saved search 'UC-22.48.4' running on ERP financial-journal audit events (SAP, Oracle E-Business, Workday Financials)., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "detects-violation-of",
+      "obligationRef": "soc-2@2017 TSC#CC6.3",
+      "regulation": "SOC-2",
+      "requires_sme_review": true,
+      "version": "2017 TSC"
+    }
+  ],
+  "controlFamily": "access-review-cadence",
+  "controlTest": {
+    "attackTechnique": "T1078",
+    "fixtureRef": "sample-data/uc-22.48.4-fixture.json",
+    "negativeScenario": "Poster and approver are different users; no alert.",
+    "positiveScenario": "A manual journal entry is posted and approved by the same user on the ERP; the UC fires within the hour."
+  },
+  "criticality": "critical",
+  "dataSources": "ERP financial-journal audit events (SAP, Oracle E-Business, Workday Financials).",
+  "description": "Direct SOX ITGC control: manual journal entries must be posted and approved by distinct identities.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Splunk Enterprise / Splunk Cloud Platform.\n• Ensure the following data sources are available: ERP financial-journal audit events (SAP, Oracle E-Business, Workday Financials)..\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\n(1) Ensure ERP emits both events; (2) run hourly; (3) on fire, escalate to CFO + controller.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=erp sourcetype=sap:gl OR sourcetype=oracle:gl OR sourcetype=workday:gl action=post_and_approve earliest=-1h\n| where poster=approver\n| table _time entry_id poster approver amount\n```\n\nUnderstanding this SPL\n\n**Financial SoD — same identity posts AND approves a journal entry** — Provides continuous evidence of a universally-audited SOX control.\n\nDocumented **Data sources**: ERP financial-journal audit events (SAP, Oracle E-Business, Workday Financials). **App/TA** (typical add-on context): Splunk Enterprise / Splunk Cloud Platform. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: erp; **sourcetype**: sap:gl, oracle:gl, workday:gl. If that sourcetype is not mentioned in Data sources, double-check parsing or update the documentation to match the feed you actually ingest.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=erp, sourcetype=sap:gl, time bounds. Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• Filters the current rows with `where poster=approver` — typically the threshold or rule expression for this monitoring goal.\n• Pipeline stage (see **Financial SoD — same identity posts AND approves a journal entry**): table _time entry_id poster approver amount\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Table of violations, bar chart by business unit, single-value 'SoD-compliant journals (30d)'.",
+  "detectionType": "Correlation",
+  "difficulty": "intermediate",
+  "equipment": [
+    "oracle"
+  ],
+  "equipmentModels": [
+    "oracle_oracle_db"
+  ],
+  "evidence": "Saved search 'fin_journal_sod' (hourly) emits GL entries where poster == approver.",
+  "exclusions": "Does NOT cover system-generated automated postings.",
+  "grandmaExplanation": "We give you continuous evidence of a universally-audited control — so you can show exactly what is being watched and when something went wrong.",
+  "id": "22.48.4",
+  "implementation": "(1) Ensure ERP emits both events; (2) run hourly; (3) on fire, escalate to CFO + controller.",
+  "knownFalsePositives": "System-generated entries (automated accruals) post under a service account that must not be counted; filter by account type.",
+  "lastReviewed": "2026-04-16",
+  "mitreAttack": [
+    "T1078"
+  ],
+  "monitoringType": [
+    "Compliance",
+    "Security"
+  ],
+  "owner": "CFO",
+  "references": [
+    {
+      "retrieved": "2026-04-16",
+      "title": "PCAOB AS 2201",
+      "url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "AICPA Trust Services Criteria",
+      "url": "https://www.aicpa-cima.com/resources/download/2017-trust-services-criteria-with-revised-points-of-focus-2022"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "MITRE ATT&CK — T1078 Valid Accounts",
+      "url": "https://attack.mitre.org/techniques/T1078/"
+    }
+  ],
+  "requiredFields": [
+    "entry_id",
+    "poster",
+    "approver"
+  ],
+  "reviewer": "N/A",
+  "securityDomain": "identity",
+  "spl": "index=erp sourcetype=sap:gl OR sourcetype=oracle:gl OR sourcetype=workday:gl action=post_and_approve earliest=-1h\n| where poster=approver\n| table _time entry_id poster approver amount",
+  "splunkPillar": "Security",
+  "splunkVersions": [
+    "9.2+",
+    "Cloud"
+  ],
+  "status": "draft",
+  "subcategory": "22.48#1",
+  "title": "Financial SoD — same identity posts AND approves a journal entry",
+  "value": "Provides continuous evidence of a universally-audited SOX control.",
+  "visualization": "Table of violations, bar chart by business unit, single-value 'SoD-compliant journals (30d)'."
+}

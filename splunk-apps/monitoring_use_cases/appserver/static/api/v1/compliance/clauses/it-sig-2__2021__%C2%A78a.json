@@ -1,0 +1,35 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.bgbl.de/xaver/bgbl/start.xav?startbk=Bundesanzeiger_BGBl&start=//*[@attr_id=%27bgbl121s1122.pdf%27]",
+  "clause": "§8a",
+  "clauseId": "it-sig-2@2021#§8a",
+  "coverageState": "uncovered",
+  "coveringUcCount": 0,
+  "coveringUcs": [],
+  "endpoint": "/api/v1/compliance/clauses/it-sig-2__2021__%C2%A78a.json",
+  "gapNote": "IT-SiG 2.0 clause §8a (Security measures for KRITIS operators) is listed in data/regulations.json as a common clause but no use case currently tags it. Candidate UCs are tracked in docs/compliance-gaps.md and api/v1/compliance/gaps.json.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {},
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "it-sig-2",
+  "regulationName": "German IT-Sicherheitsgesetz 2.0",
+  "regulationShortName": "IT-SiG 2.0",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/it-sig-2.json",
+    "regulationVersion": "/api/v1/compliance/regulations/it-sig-2@2021.json",
+    "story": "/api/v1/compliance/story/it-sig-2.json"
+  },
+  "tier": 2,
+  "topAssurance": null,
+  "topic": "Security measures for KRITIS operators",
+  "version": "2021"
+}

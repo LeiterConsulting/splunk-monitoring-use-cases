@@ -1,0 +1,209 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 10,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.18",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.25.13",
+        "22.25.14",
+        "22.25.15",
+        "22.25.16",
+        "22.25.17",
+        "22.25.24",
+        "22.25.25",
+        "22.25.26",
+        "22.25.33",
+        "22.25.7"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Customer due diligence",
+      "version": "6AMLD / AMLR 2024"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 25,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.9",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.25.1",
+        "22.25.10",
+        "22.25.11",
+        "22.25.12",
+        "22.25.18",
+        "22.25.19",
+        "22.25.2",
+        "22.25.20",
+        "22.25.21",
+        "22.25.22",
+        "22.25.23",
+        "22.25.27",
+        "22.25.28",
+        "22.25.29",
+        "22.25.3",
+        "22.25.30",
+        "22.25.31",
+        "22.25.32",
+        "22.25.34",
+        "22.25.35",
+        "22.25.4",
+        "22.25.5",
+        "22.25.6",
+        "22.25.8",
+        "22.25.9"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Internal policies and controls",
+      "version": "6AMLD / AMLR 2024"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "2 of 2 common clauses are covered by the catalogue, with a priority-weighted coverage of 25.0% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoveragePercent": 25.0,
+      "stateCounts": {
+        "contributing-only": 2,
+        "covered-full": 0,
+        "covered-partial": 0,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "Art.18",
+        "killerUcId": "22.25.13",
+        "killerUcTitle": "Customer Due Diligence (CDD) Completion Before Account Use",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Customer due diligence",
+        "version": "6AMLD / AMLR 2024",
+        "why": "Clause Art.18 (Customer due diligence) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "Art.9",
+        "killerUcId": "22.25.1",
+        "killerUcTitle": "Structuring and Smurfing Pattern Detection (Just Below Thresholds)",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Internal policies and controls",
+        "version": "6AMLD / AMLR 2024",
+        "why": "Clause Art.9 (Internal policies and controls) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "Art.18",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.25.7",
+            "ucTitle": "Cross-Border Transaction Threshold and Corridor Risk Scoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.25.13",
+            "ucTitle": "Customer Due Diligence (CDD) Completion Before Account Use"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.25.14",
+            "ucTitle": "Enhanced Due Diligence (EDD) Trigger and Approval Tracking"
+          }
+        ],
+        "topic": "Customer due diligence",
+        "version": "6AMLD / AMLR 2024"
+      },
+      {
+        "clause": "Art.9",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.25.8",
+            "ucTitle": "Suspicious Transaction Report (STR) Generation Workflow Audits"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.25.9",
+            "ucTitle": "SAR Filing Timeline Compliance vs Regulatory Cutoffs"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.25.18",
+            "ucTitle": "Real-Time Sanctions Screening Hit Rate and Latency"
+          }
+        ],
+        "topic": "Internal policies and controls",
+        "version": "6AMLD / AMLR 2024"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "EU"
+  ],
+  "narrative": null,
+  "narrativeRef": null,
+  "regulationId": "eu-aml",
+  "regulationName": "EU Anti-Money-Laundering Framework",
+  "regulationShortName": "EU AML",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=eu-aml",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#eu-aml",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/eu-aml.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

@@ -1,0 +1,489 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 14,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "AC.L2-3.1.1",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.20.1",
+        "22.20.10",
+        "22.20.11",
+        "22.20.12",
+        "22.20.13",
+        "22.20.14",
+        "22.20.15",
+        "22.20.16",
+        "22.20.17",
+        "22.20.18",
+        "22.20.19",
+        "22.20.20",
+        "22.32.17",
+        "22.32.18",
+        "22.32.20"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Authorized access to systems",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "AC.L2-3.1.5",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.20.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Least privilege",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "AU.L2-3.3.1",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.20.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Create audit records",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "AU.L2-3.3.2",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.20.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Ensure unique user traceability",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "AU.L2-3.3.5",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.20.5",
+        "22.32.19"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Audit reporting and correlation",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "CM.L2-3.4.1",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.20.6"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Baseline configurations",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "IR.L2-3.6.1",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.20.7"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Incident handling capability",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "SC.L2-3.13.8",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.20.8"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Cryptographic mechanisms for CUI in transit",
+      "version": "2.0"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "SI.L2-3.14.6",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.20.9",
+        "22.32.21"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Monitor for attacks",
+      "version": "2.0"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "9 of 9 common clauses are covered by the catalogue, with a priority-weighted coverage of 50.0% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 9,
+      "coveredClauseCount": 9,
+      "priorityWeightedCoveragePercent": 50.0,
+      "stateCounts": {
+        "contributing-only": 0,
+        "covered-full": 0,
+        "covered-partial": 9,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "AC.L2-3.1.1",
+        "killerUcId": "22.20.1",
+        "killerUcTitle": "CMMC Level 2 practice evidence — CUI control area 1",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Authorized access to systems",
+        "version": "2.0",
+        "why": "Clause AC.L2-3.1.1 (Authorized access to systems) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "AC.L2-3.1.5",
+        "killerUcId": "22.20.2",
+        "killerUcTitle": "CMMC Level 2 practice evidence — CUI control area 2",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Least privilege",
+        "version": "2.0",
+        "why": "Clause AC.L2-3.1.5 (Least privilege) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "AU.L2-3.3.1",
+        "killerUcId": "22.20.3",
+        "killerUcTitle": "CMMC Level 2 practice evidence — CUI control area 3",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Create audit records",
+        "version": "2.0",
+        "why": "Clause AU.L2-3.3.1 (Create audit records) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "AU.L2-3.3.2",
+        "killerUcId": "22.20.4",
+        "killerUcTitle": "CMMC Level 2 practice evidence — CUI control area 4",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Ensure unique user traceability",
+        "version": "2.0",
+        "why": "Clause AU.L2-3.3.2 (Ensure unique user traceability) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "AU.L2-3.3.5",
+        "killerUcId": "22.20.5",
+        "killerUcTitle": "CMMC Level 2 practice evidence — CUI control area 5",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Audit reporting and correlation",
+        "version": "2.0",
+        "why": "Clause AU.L2-3.3.5 (Audit reporting and correlation) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "AC.L2-3.1.1",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.20.12",
+            "ucTitle": "CMMC Level 3 enhanced practice — threat scenario 2"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.20.16",
+            "ucTitle": "CMMC assessment readiness — artifact 1"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.20.20",
+            "ucTitle": "CMMC assessment readiness — artifact 5"
+          }
+        ],
+        "topic": "Authorized access to systems",
+        "version": "2.0"
+      },
+      {
+        "clause": "AC.L2-3.1.5",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.20.2",
+            "ucTitle": "CMMC Level 2 practice evidence — CUI control area 2"
+          }
+        ],
+        "topic": "Least privilege",
+        "version": "2.0"
+      },
+      {
+        "clause": "AU.L2-3.3.1",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "low",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.20.3",
+            "ucTitle": "CMMC Level 2 practice evidence — CUI control area 3"
+          }
+        ],
+        "topic": "Create audit records",
+        "version": "2.0"
+      },
+      {
+        "clause": "AU.L2-3.3.2",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.20.4",
+            "ucTitle": "CMMC Level 2 practice evidence — CUI control area 4"
+          }
+        ],
+        "topic": "Ensure unique user traceability",
+        "version": "2.0"
+      },
+      {
+        "clause": "AU.L2-3.3.5",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.20.5",
+            "ucTitle": "CMMC Level 2 practice evidence — CUI control area 5"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "low",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.32.19",
+            "ucTitle": "CMMC assessment readiness scoring"
+          }
+        ],
+        "topic": "Audit reporting and correlation",
+        "version": "2.0"
+      },
+      {
+        "clause": "CM.L2-3.4.1",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.20.6",
+            "ucTitle": "CMMC Level 2 practice evidence — CUI control area 6"
+          }
+        ],
+        "topic": "Baseline configurations",
+        "version": "2.0"
+      },
+      {
+        "clause": "IR.L2-3.6.1",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "low",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.20.7",
+            "ucTitle": "CMMC Level 2 practice evidence — CUI control area 7"
+          }
+        ],
+        "topic": "Incident handling capability",
+        "version": "2.0"
+      },
+      {
+        "clause": "SC.L2-3.13.8",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.20.8",
+            "ucTitle": "CMMC Level 2 practice evidence — CUI control area 8"
+          }
+        ],
+        "topic": "Cryptographic mechanisms for CUI in transit",
+        "version": "2.0"
+      },
+      {
+        "clause": "SI.L2-3.14.6",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.20.9",
+            "ucTitle": "CMMC Level 2 practice evidence — CUI control area 9"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.32.21",
+            "ucTitle": "Continuous monitoring for CMMC practice families"
+          }
+        ],
+        "topic": "Monitor for attacks",
+        "version": "2.0"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "US"
+  ],
+  "narrative": {
+    "evidencePack": "docs/evidence-packs/cmmc.md",
+    "matchedBy": "fuzzy-shortname",
+    "name": "CMMC defence",
+    "primer": "docs/regulatory-primer.md#412-cmmc-20--cybersecurity-maturity-model-certification-us--t1",
+    "splunkValue": "We evidence every CMMC practice continuously, map catalogue coverage to 800-171 controls, prove the self-assessment scoring is data-backed rather than attested, and pre-build the evidence package a C3PAO expects during Level 2 or Level 3 assessment.",
+    "whatItIs": "The US Department of Defense cybersecurity maturity framework. It standardises how defence contractors protect Controlled Unclassified Information, with three maturity levels and third-party certification for Level 2 and Level 3.",
+    "whoItAffects": "Every contractor and subcontractor in the DoD supply chain that handles Federal Contract Information (Level 1) or Controlled Unclassified Information (Levels 2 and 3) — roughly 300,000 organisations."
+  },
+  "narrativeRef": "non-technical-view.js#cat-22/area/cmmc-defence",
+  "regulationId": "cmmc",
+  "regulationName": "Cybersecurity Maturity Model Certification",
+  "regulationShortName": "CMMC",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=cmmc",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#cmmc",
+    "evidencePack": "docs/evidence-packs/cmmc.md",
+    "primerAnchor": "docs/regulatory-primer.md#412-cmmc-20-cybersecurity-maturity-model-certification-us-t1",
+    "regulation": "/api/v1/compliance/regulations/cmmc.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 1
+}

@@ -1,0 +1,68 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 2,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312#p-164.312(b)",
+  "clause": "§164.312(b)",
+  "clauseId": "hipaa-security@2013-final#§164.312(b)",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 2,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312#p-164.312(b)",
+      "controlObjective": "Evidence that HIPAA Security §164.312(b) (Audit controls) is enforced — Splunk UC-22.10.17: Audit Controls — High-Volume ePHI Read Baseline & Anomaly.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.10.17' running on index=epic sourcetype=epic:audit (USER_ID, PAT_ID, AccessType), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.10.17",
+      "ucTitle": "Audit Controls — High-Volume ePHI Read Baseline & Anomaly"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312#p-164.312(b)",
+      "controlObjective": "Evidence that HIPAA Security §164.312(b) (Audit controls) is enforced — Splunk UC-22.10.36: Bulk ePHI Export — Clarity SQL / Caboodle Extract Volume Spike.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.10.36' running on index=mssql sourcetype=mssql:audit (statement, rows, session_server_principal_name), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.10.36",
+      "ucTitle": "Bulk ePHI Export — Clarity SQL / Caboodle Extract Volume Spike"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/hipaa-security__2013-final__%C2%A7164.312%28b%29.json",
+  "gapNote": "HIPAA Security clause §164.312(b) has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 2
+  },
+  "obligationSource": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-164.312#p-164.312(b)",
+  "obligationText": "A covered entity or business associate must implement hardware, software, and/or procedural mechanisms that record and examine activity in information systems that contain or use electronic protected health information.",
+  "priorityWeight": 1.0,
+  "regulationId": "hipaa-security",
+  "regulationName": "HIPAA Security Rule",
+  "regulationShortName": "HIPAA Security",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/hipaa-security.json",
+    "regulationVersion": "/api/v1/compliance/regulations/hipaa-security@2013-final.json",
+    "story": "/api/v1/compliance/story/hipaa-security.json"
+  },
+  "tier": 1,
+  "topAssurance": "contributing",
+  "topic": "Audit controls",
+  "version": "2013-final"
+}

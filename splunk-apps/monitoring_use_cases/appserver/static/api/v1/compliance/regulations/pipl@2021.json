@@ -1,0 +1,203 @@
+{
+  "apiVersion": "v1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "pipl",
+  "jurisdiction": [
+    "CN"
+  ],
+  "name": "China Personal Information Protection Law",
+  "shortName": "PIPL",
+  "tags": [
+    "privacy"
+  ],
+  "tier": 2,
+  "version": {
+    "authoritativeUrl": "http://www.npc.gov.cn/npc/c2/c30834/202108/t20210820_313088.html",
+    "clauseCoverageMatrix": [
+      {
+        "assuranceBreakdown": {
+          "contributing": 6,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "Art.38",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.29.1",
+          "22.29.2",
+          "22.29.3",
+          "22.29.4",
+          "22.29.5",
+          "22.29.6"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Cross-border transfer conditions"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "Art.51",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.50.10"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Information security measures"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 3,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "Art.14",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.29.27",
+          "22.29.29",
+          "22.29.30"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 6,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "Art.15",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.29.11",
+          "22.29.12",
+          "22.29.26",
+          "22.29.7",
+          "22.29.8",
+          "22.29.9"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "Art.29",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.29.25"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "Art.6",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.29.28"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": false,
+        "priorityWeight": null,
+        "topAssurance": "contributing",
+        "topic": null
+      }
+    ],
+    "clauseExamples": [
+      "Art.38",
+      "Art.51"
+    ],
+    "clauseGrammar": "^Art\\.\\d+$",
+    "clauseUrlTemplate": null,
+    "clausesReferencedByCatalogue": [
+      "Art.14",
+      "Art.15",
+      "Art.29",
+      "Art.38",
+      "Art.51",
+      "Art.6"
+    ],
+    "commonClauses": [
+      {
+        "clause": "Art.38",
+        "priorityWeight": 1.0,
+        "topic": "Cross-border transfer conditions"
+      },
+      {
+        "clause": "Art.51",
+        "priorityWeight": 1.0,
+        "topic": "Information security measures"
+      }
+    ],
+    "coverageSummary": {
+      "clauseCoveragePercent": 100.0,
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "offCommonListClauseCount": 4,
+      "priorityWeightedCoveragePercent": 25.0,
+      "stateCounts": {
+        "contributing-only": 2,
+        "covered-full": 0,
+        "covered-partial": 0,
+        "uncovered": 0
+      }
+    },
+    "effectiveFrom": "2021-11-01",
+    "endpoint": "/api/v1/compliance/regulations/pipl@2021.json",
+    "pendingChanges": [],
+    "sunsetOn": null,
+    "useCasesTaggingThisVersion": [
+      "22.29.1",
+      "22.29.11",
+      "22.29.12",
+      "22.29.2",
+      "22.29.25",
+      "22.29.26",
+      "22.29.27",
+      "22.29.28",
+      "22.29.29",
+      "22.29.3",
+      "22.29.30",
+      "22.29.4",
+      "22.29.5",
+      "22.29.6",
+      "22.29.7",
+      "22.29.8",
+      "22.29.9",
+      "22.50.10"
+    ],
+    "version": "2021"
+  }
+}

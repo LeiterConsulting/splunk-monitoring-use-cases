@@ -1,0 +1,127 @@
+{
+  "apiVersion": "v1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "appi",
+  "jurisdiction": [
+    "JP"
+  ],
+  "name": "Japan Act on the Protection of Personal Information",
+  "shortName": "APPI",
+  "tags": [
+    "privacy"
+  ],
+  "tier": 2,
+  "version": {
+    "authoritativeUrl": "https://www.ppc.go.jp/en/legal/",
+    "clauseCoverageMatrix": [
+      {
+        "assuranceBreakdown": {
+          "contributing": 9,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "Art.23",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.29.19",
+          "22.29.20",
+          "22.29.21",
+          "22.29.22",
+          "22.29.23",
+          "22.29.24",
+          "22.35.2",
+          "22.35.3",
+          "22.41.1"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Security control action"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 4,
+          "full": 0,
+          "partial": 3
+        },
+        "clause": "Art.26",
+        "coverageState": "covered-partial",
+        "coveringUcs": [
+          "22.29.10",
+          "22.29.11",
+          "22.29.7",
+          "22.29.8",
+          "22.39.1",
+          "22.39.2",
+          "22.39.3"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Leakage reporting"
+      }
+    ],
+    "clauseExamples": [
+      "Art.23",
+      "Art.26"
+    ],
+    "clauseGrammar": "^Art\\.\\d+$",
+    "clauseUrlTemplate": null,
+    "clausesReferencedByCatalogue": [
+      "Art.23",
+      "Art.26"
+    ],
+    "commonClauses": [
+      {
+        "clause": "Art.23",
+        "priorityWeight": 1.0,
+        "topic": "Security control action"
+      },
+      {
+        "clause": "Art.26",
+        "priorityWeight": 1.0,
+        "topic": "Leakage reporting"
+      }
+    ],
+    "coverageSummary": {
+      "clauseCoveragePercent": 100.0,
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "offCommonListClauseCount": 0,
+      "priorityWeightedCoveragePercent": 37.5,
+      "stateCounts": {
+        "contributing-only": 1,
+        "covered-full": 0,
+        "covered-partial": 1,
+        "uncovered": 0
+      }
+    },
+    "effectiveFrom": "2022-04-01",
+    "endpoint": "/api/v1/compliance/regulations/appi@2022-amendments.json",
+    "pendingChanges": [],
+    "sunsetOn": null,
+    "useCasesTaggingThisVersion": [
+      "22.29.10",
+      "22.29.11",
+      "22.29.19",
+      "22.29.20",
+      "22.29.21",
+      "22.29.22",
+      "22.29.23",
+      "22.29.24",
+      "22.29.7",
+      "22.29.8",
+      "22.35.2",
+      "22.35.3",
+      "22.39.1",
+      "22.39.2",
+      "22.39.3",
+      "22.41.1"
+    ],
+    "version": "2022 amendments"
+  }
+}

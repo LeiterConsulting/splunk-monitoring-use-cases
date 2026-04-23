@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "10.6.2",
+  "clauseId": "pci-dss@v4.0#10.6.2",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "PCI-DSS 10.6.2 Review logs for anomalies (applied to DLP) — contributing.",
+      "category": 22,
+      "clauseUrl": "https://listings.pcisecuritystandards.org/documents/PCI-DSS-v4_0.pdf",
+      "controlObjective": "Evidence that PCI-DSS 10.6.2 is enforced — Splunk UC-22.8.38: SOC 2 C1.1 — Confidentiality: sensitive-data exposure at the egress boundary.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.8.38' running on index=dlp sourcetype=symantec:dlp OR sourcetype=microsoft:purview:dlp; approved-destination lookup approved_egress.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.8.38",
+      "ucTitle": "SOC 2 C1.1 — Confidentiality: sensitive-data exposure at the egress boundary"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/pci-dss__v4.0__10.6.2.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "pci-dss",
+  "regulationName": "pci-dss",
+  "regulationShortName": "pci-dss",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/pci-dss.json",
+    "regulationVersion": "/api/v1/compliance/regulations/pci-dss@v4.0.json",
+    "story": "/api/v1/compliance/story/pci-dss.json"
+  },
+  "tier": null,
+  "topAssurance": "partial",
+  "topic": null,
+  "version": "v4.0"
+}

@@ -1,0 +1,57 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/10.12.39.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/10.12.39.json",
+    "sourcePath": "content/cat-10-security-infrastructure/UC-10.12.39.json"
+  },
+  "apiVersion": "v1",
+  "app": "SCAP scanners, cloud TAs (AWS/Azure/GCP)",
+  "cimModels": [
+    "N/A"
+  ],
+  "compliance": [
+    {
+      "assurance": "contributing",
+      "assurance_rationale": "Auto-generated from legacy markdown 'Regulations' line during the per-UC migration. Requires SME review to fill in version, clause, mode, and assurance for FedRAMP.",
+      "clause": "unknown",
+      "controlObjective": "Evidence that FedRAMP unknown is enforced — Splunk UC-10.12.39: FedRAMP Continuous Monitoring.",
+      "evidenceArtifact": "Saved search 'UC-10.12.39' running on sourcetype=\"aws:cloudtrail\", sourcetype=\"tenable:scan\", archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "fedramp@unknown#unknown",
+      "provenance": "maintainer",
+      "regulation": "FedRAMP",
+      "requires_sme_review": true,
+      "version": "unknown"
+    }
+  ],
+  "criticality": "critical",
+  "dataSources": "`sourcetype=\"aws:cloudtrail\"`, `sourcetype=\"tenable:scan\"`",
+  "description": "Automates ConMon evidence: vulnerability scanning, logging, and boundary defenses for FedRAMP Moderate/High.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: SCAP scanners, cloud TAs (AWS/Azure/GCP).\n• Ensure the following data sources are available: `sourcetype=\"aws:cloudtrail\"`, `sourcetype=\"tenable:scan\"`.\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\nMap controls to saved searches; export to POA&M workflow; 3PAO evidence packs from scheduled PDFs.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=govcloud (sourcetype=\"aws:cloudtrail\" OR sourcetype=\"tenable:scan\")\n| search (eventName=\"DeleteTrail\" OR severity=\"CRITICAL\") AND tag=fedramp_boundary\n| stats latest(_time) as last_event by resource_id, control_id\n| where last_event < relative_time(now(),\"-30d@d\")\n```\n\nUnderstanding this SPL\n\n**FedRAMP Continuous Monitoring** — Automates ConMon evidence: vulnerability scanning, logging, and boundary defenses for FedRAMP Moderate/High.\n\nDocumented **Data sources**: `sourcetype=\"aws:cloudtrail\"`, `sourcetype=\"tenable:scan\"`. **App/TA** (typical add-on context): SCAP scanners, cloud TAs (AWS/Azure/GCP). The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: govcloud; **sourcetype**: aws:cloudtrail, tenable:scan. Those sourcetypes align with what this use case lists under Data sources.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=govcloud, sourcetype=\"aws:cloudtrail\". Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• Applies an explicit `search` filter to narrow the current result set.\n• `stats` rolls up events into metrics; results are split **by resource_id, control_id** so each row reflects one combination of those dimensions (useful for per-host, per-user, or per-entity comparisons for this use case).\n• Filters the current rows with `where last_event < relative_time(now(),\"-30d@d\")` — typically the threshold or rule expression for this monitoring goal.\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Gantt (control testing), Table (stale evidence), Scorecard (ConMon % green).",
+  "difficulty": "intermediate",
+  "equipment": [
+    "aws",
+    "azure",
+    "gcp"
+  ],
+  "grandmaExplanation": "Automates ConMon evidence: vulnerability scanning, logging, and boundary defenses for FedRAMP Moderate/High — so we know when protection is off, out of date, or bypassed.",
+  "id": "10.12.39",
+  "implementation": "Map controls to saved searches; export to POA&M workflow; 3PAO evidence packs from scheduled PDFs.",
+  "knownFalsePositives": "Administrative tasks, scheduled jobs or platform updates can match this pattern — correlate with change management, maintenance windows and user role before raising severity.",
+  "monitoringType": [
+    "Compliance"
+  ],
+  "references": [
+    {
+      "title": "Splunk Lantern — use case library",
+      "url": "https://lantern.splunk.com/"
+    }
+  ],
+  "spl": "index=govcloud (sourcetype=\"aws:cloudtrail\" OR sourcetype=\"tenable:scan\")\n| search (eventName=\"DeleteTrail\" OR severity=\"CRITICAL\") AND tag=fedramp_boundary\n| stats latest(_time) as last_event by resource_id, control_id\n| where last_event < relative_time(now(),\"-30d@d\")",
+  "splunkPillar": "Security",
+  "title": "FedRAMP Continuous Monitoring",
+  "value": "Automates ConMon evidence: vulnerability scanning, logging, and boundary defenses for FedRAMP Moderate/High.",
+  "visualization": "Gantt (control testing), Table (stale evidence), Scorecard (ConMon % green)."
+}

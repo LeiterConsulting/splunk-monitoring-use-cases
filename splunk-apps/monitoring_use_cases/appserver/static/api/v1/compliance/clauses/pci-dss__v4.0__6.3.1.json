@@ -1,0 +1,83 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 3,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "6.3.1",
+  "clauseId": "pci-dss@v4.0#6.3.1",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 3,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that PCI DSS 6.3.1 is enforced — Splunk UC-22.11.36: Pull-Request and Code Review Evidence for Payment Microservices.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.11.36' running on index=devsecops sourcetype=\"github:pull_request\" — repo, merged, review_count, labels, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.11.36",
+      "ucTitle": "Pull-Request and Code Review Evidence for Payment Microservices"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that PCI DSS 6.3.1 is enforced — Splunk UC-22.11.79: Quarterly Internal Scan Remediation Aging Buckets.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.11.79' running on index=vm qualys:host with FIRST_FOUND_DATETIME, STATUS, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.11.79",
+      "ucTitle": "Quarterly Internal Scan Remediation Aging Buckets"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that PCI DSS 6.3.1 is enforced — Splunk UC-22.11.80: External Network Scan Job Failures and Timeout Trending.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.11.80' running on index=vm qualys:scan_summary or vendor API log qualys:scan_target, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.11.80",
+      "ucTitle": "External Network Scan Job Failures and Timeout Trending"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/pci-dss__v4.0__6.3.1.json",
+  "gapNote": "pci-dss clause 6.3.1 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 3
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "pci-dss",
+  "regulationName": "pci-dss",
+  "regulationShortName": "pci-dss",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/pci-dss.json",
+    "regulationVersion": "/api/v1/compliance/regulations/pci-dss@v4.0.json",
+    "story": "/api/v1/compliance/story/pci-dss.json"
+  },
+  "tier": null,
+  "topAssurance": "contributing",
+  "topic": null,
+  "version": "v4.0"
+}

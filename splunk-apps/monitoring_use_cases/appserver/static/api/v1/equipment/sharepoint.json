@@ -1,0 +1,27 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 2,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "sharepoint",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Microsoft SharePoint",
+  "models": [],
+  "regulationIds": [],
+  "regulations": [],
+  "useCaseCount": 2,
+  "useCaseIds": [
+    "11.3.22",
+    "11.3.23"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 11,
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "11.3.22",
+        "11.3.23"
+      ]
+    }
+  ]
+}

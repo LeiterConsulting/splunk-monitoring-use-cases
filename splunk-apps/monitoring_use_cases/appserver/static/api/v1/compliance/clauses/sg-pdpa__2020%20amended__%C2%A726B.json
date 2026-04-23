@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://sso.agc.gov.sg/Act/PDPA2012",
+  "clause": "§26B",
+  "clauseId": "sg-pdpa@2020 amended#§26B",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "Singapore PDPA 2020 amended §26B Criteria for notifiability — DLP events supply the severity data required for the notifiability assessment.",
+      "category": 11,
+      "clauseUrl": "https://sso.agc.gov.sg/Act/PDPA2012",
+      "controlObjective": "Detects violations of SG PDPA §26B (Criteria for notifiability) — Splunk UC-11.1.6: DLP Policy Events.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-11.1.6' running on O365 DLP logs, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "detects-violation-of",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "11.1.6",
+      "ucTitle": "DLP Policy Events"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/sg-pdpa__2020%20amended__%C2%A726B.json",
+  "gapNote": "SG PDPA clause §26B has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "detects-violation-of": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "sg-pdpa",
+  "regulationName": "Singapore Personal Data Protection Act",
+  "regulationShortName": "SG PDPA",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/sg-pdpa.json",
+    "regulationVersion": "/api/v1/compliance/regulations/sg-pdpa@2020%20amended.json",
+    "story": "/api/v1/compliance/story/sg-pdpa.json"
+  },
+  "tier": 2,
+  "topAssurance": "partial",
+  "topic": "Criteria for notifiability",
+  "version": "2020 amended"
+}

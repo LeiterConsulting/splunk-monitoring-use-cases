@@ -1,0 +1,93 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/7.1.40.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/7.1.40.json",
+    "sourcePath": "content/cat-07-database-data-platforms/UC-7.1.40.json"
+  },
+  "apiVersion": "v1",
+  "app": "OS audit, database audit, syslog",
+  "cimModels": [
+    "Databases"
+  ],
+  "cimSpl": "| tstats summariesonly=t count from datamodel=Databases.Query by Query.host, Query.action | sort - count",
+  "compliance": [
+    {
+      "assurance": "full",
+      "assurance_rationale": "FDA 21 CFR Part 11 §11.10(e) Audit trails — detecting audit-log tampering is the integrity signal Part 11 explicitly requires on the secure time-stamped audit trail.",
+      "clause": "§11.10(e)",
+      "clauseUrl": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-11",
+      "controlObjective": "Detects violations of FDA Part 11 §11.10(e) (Audit trails) — Splunk UC-7.1.40: Database Audit Log Tampering Detection.",
+      "evidenceArtifact": "Saved search 'UC-7.1.40' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "detects-violation-of",
+      "obligationRef": "fda-part-11@current#§11.10(e)",
+      "regulation": "FDA Part 11",
+      "requires_sme_review": true,
+      "version": "current"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "HITRUST CSF v11 09.aa Audit logging — tampering detection evidences the audit-log-integrity sub-requirement.",
+      "clause": "09.aa",
+      "clauseUrl": "https://hitrustalliance.net/csf-overview/",
+      "controlObjective": "Detects violations of HITRUST 09.aa (Audit logging) — Splunk UC-7.1.40: Database Audit Log Tampering Detection.",
+      "evidenceArtifact": "Saved search 'UC-7.1.40' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "detects-violation-of",
+      "obligationRef": "hitrust@v11#09.aa",
+      "regulation": "HITRUST",
+      "requires_sme_review": true,
+      "version": "v11"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "SWIFT CSP CSCF v2025 6.4 Logging and monitoring — SWIFT CSP names audit-log integrity as an essential monitoring control.",
+      "clause": "6.4",
+      "clauseUrl": "https://www.swift.com/myswift/customer-security-programme-csp/security-controls",
+      "controlObjective": "Detects violations of SWIFT CSP 6.4 (Logging and monitoring) — Splunk UC-7.1.40: Database Audit Log Tampering Detection.",
+      "evidenceArtifact": "Saved search 'UC-7.1.40' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "detects-violation-of",
+      "obligationRef": "swift-csp@CSCF v2025#6.4",
+      "regulation": "SWIFT CSP",
+      "requires_sme_review": true,
+      "version": "CSCF v2025"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "SOX ITGC audit-trail continuity control — financial-system audit-log tamper detection is a required ITGC control tested during financial audits.",
+      "clause": "ITGC.Logging.Continuity",
+      "clauseUrl": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+      "controlObjective": "Detects violations of SOX-ITGC ITGC.Logging.Continuity (Audit trail completeness) — Splunk UC-7.1.40: Database Audit Log Tampering Detection.",
+      "evidenceArtifact": "Saved search 'UC-7.1.40' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "detects-violation-of",
+      "obligationRef": "sox-itgc@PCAOB AS 2201#ITGC.Logging.Continuity",
+      "regulation": "SOX-ITGC",
+      "requires_sme_review": true,
+      "version": "PCAOB AS 2201"
+    }
+  ],
+  "criticality": "critical",
+  "dataSources": "Oracle `V$OPTION` where parameter='Unified Auditing', `ALTER SYSTEM AUDIT`, `DROP AUDIT POLICY`, SQL Server audit shutdown events",
+  "description": "Detects unexpected audit trail disable, audit file deletion, or Unified Audit policy changes that may indicate cover-up activity.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: OS audit, database audit, syslog.\n• Ensure the following data sources are available: Oracle `V$OPTION` where parameter='Unified Auditing', `ALTER SYSTEM AUDIT`, `DROP AUDIT POLICY`, SQL Server audit shutdown events.\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\nForward database and OS audit to tamper-evident storage. Alert on any audit disable or policy drop outside CAB. Correlate with DBA group membership.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=db_audit sourcetype=oracle_audit OR sourcetype=mssql:audit\n| search action IN (\"AUDIT DISABLED\",\"AUDIT_POLICY_DROP\",\"AUDIT_TRAIL_OFF\") OR statement=\"*AUDIT*FALSE*\"\n| table _time, db_user, action, object_name, statement\n| sort -_time\n```\n\nUnderstanding this SPL\n\n**Database Audit Log Tampering Detection** — Detects unexpected audit trail disable, audit file deletion, or Unified Audit policy changes that may indicate cover-up activity.\n\nDocumented **Data sources**: Oracle `V$OPTION` where parameter='Unified Auditing', `ALTER SYSTEM AUDIT`, `DROP AUDIT POLICY`, SQL Server audit shutdown events. **App/TA** (typical add-on context): OS audit, database audit, syslog. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: db_audit; **sourcetype**: oracle_audit, mssql:audit. If that sourcetype is not mentioned in Data sources, double-check parsing or update the documentation to match the feed you actually ingest.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=db_audit, sourcetype=oracle_audit. Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• Applies an explicit `search` filter to narrow the current result set.\n• Pipeline stage (see **Database Audit Log Tampering Detection**): table _time, db_user, action, object_name, statement\n• Orders rows with `sort` — combine with `head`/`tail` for top-N patterns.\n\nOptional CIM / accelerated variant (same use case, normalized fields via Common Information Model):\n\n```spl\n| tstats summariesonly=t count from datamodel=Databases.Query by Query.host, Query.action | sort - count\n```\n\nUnderstanding this CIM / accelerated SPL\n\n**Database Audit Log Tampering Detection** — Detects unexpected audit trail disable, audit file deletion, or Unified Audit policy changes that may indicate cover-up activity.\n\nDocumented **Data sources**: Oracle `V$OPTION` where parameter='Unified Auditing', `ALTER SYSTEM AUDIT`, `DROP AUDIT POLICY`, SQL Server audit shutdown events. **App/TA** (typical add-on context): OS audit, database audit, syslog. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThis **CIM or accelerated** block uses normalized field names and/or `tstats` over data models. Enable **acceleration** on the referenced models (and correct CIM knowledge objects) or the search may return nothing.\n\n**Pipeline walkthrough**\n\n• Uses `tstats` against accelerated summaries for data model `Databases.Query` — enable acceleration for that model.\n• Orders rows with `sort` — combine with `head`/`tail` for top-N patterns.\n\nEnable Data Model Acceleration (and metric indexes for `mstats`) for the models or datasets referenced above; otherwise `tstats`/`mstats` may return no results from summaries.\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Timeline (audit config changes), Table (privileged actions), Single value (critical audit events 24h).",
+  "difficulty": "advanced",
+  "grandmaExplanation": "We catch unexpected audit trail disable, audit file deletion, or Unified Audit policy changes that may indicate cover-up activity — so slow queries, failed backups, and odd changes surface early.",
+  "id": "7.1.40",
+  "implementation": "Forward database and OS audit to tamper-evident storage. Alert on any audit disable or policy drop outside CAB. Correlate with DBA group membership.",
+  "monitoringType": [
+    "Security"
+  ],
+  "references": [
+    {
+      "title": "CIM: Databases",
+      "url": "https://docs.splunk.com/Documentation/CIM/latest/User/Databases"
+    }
+  ],
+  "spl": "index=db_audit sourcetype=oracle_audit OR sourcetype=mssql:audit\n| search action IN (\"AUDIT DISABLED\",\"AUDIT_POLICY_DROP\",\"AUDIT_TRAIL_OFF\") OR statement=\"*AUDIT*FALSE*\"\n| table _time, db_user, action, object_name, statement\n| sort -_time",
+  "splunkPillar": "Security",
+  "status": "verified",
+  "subcategory": "7.4",
+  "title": "Database Audit Log Tampering Detection",
+  "value": "Detects unexpected audit trail disable, audit file deletion, or Unified Audit policy changes that may indicate cover-up activity.",
+  "visualization": "Timeline (audit config changes), Table (privileged actions), Single value (critical audit events 24h)."
+}

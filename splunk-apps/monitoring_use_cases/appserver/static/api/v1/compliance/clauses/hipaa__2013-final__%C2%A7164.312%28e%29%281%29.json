@@ -1,0 +1,68 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 1,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "§164.312(e)(1)",
+  "clauseId": "hipaa@2013-final#§164.312(e)(1)",
+  "coverageState": "covered-full",
+  "coveringUcCount": 2,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "Transmission security is required for ePHI.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that HIPAA §164.312(e)(1) (Transmission security) is enforced — Splunk UC-22.41.4: TLS downgrade / legacy-cipher handshake spike.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.41.4' running on F5/NGINX/HAProxy TLS handshake logs, cloud-provider LB telemetry, TLS scanner longitudinal results., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.41.4",
+      "ucTitle": "TLS downgrade / legacy-cipher handshake spike"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "HIPAA transmission security applies to backup ingress.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that HIPAA §164.312(e)(1) (Transmission security) is enforced — Splunk UC-22.45.4: Backup repository TLS posture — aged or weak-cipher endpoints.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.45.4' running on TLS scanner output for backup endpoint inventory., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.45.4",
+      "ucTitle": "Backup repository TLS posture — aged or weak-cipher endpoints"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/hipaa__2013-final__%C2%A7164.312%28e%29%281%29.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 2
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "hipaa",
+  "regulationName": "hipaa",
+  "regulationShortName": "hipaa",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/hipaa.json",
+    "regulationVersion": "/api/v1/compliance/regulations/hipaa@2013-final.json",
+    "story": "/api/v1/compliance/story/hipaa.json"
+  },
+  "tier": null,
+  "topAssurance": "full",
+  "topic": null,
+  "version": "2013-final"
+}

@@ -1,0 +1,152 @@
+{
+  "apiVersion": "v1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "nzism",
+  "jurisdiction": [
+    "NZ"
+  ],
+  "name": "New Zealand Information Security Manual",
+  "shortName": "NZISM",
+  "tags": [
+    "baseline",
+    "government"
+  ],
+  "tier": 2,
+  "version": {
+    "authoritativeUrl": "https://www.nzism.gcsb.govt.nz/",
+    "clauseCoverageMatrix": [
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "§12.4",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.50.22"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 0.7,
+        "topAssurance": "contributing",
+        "topic": "Information security documentation and policy"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "§16.1.32",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.50.9"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "User identification, authentication and access management"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 2,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "§16.6.9",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.31.18",
+          "22.31.20"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Event logging requirements"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "§17.2.17",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.31.19"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Information security incident management and response"
+      }
+    ],
+    "clauseExamples": [
+      "§12.4",
+      "§16.6.1"
+    ],
+    "clauseGrammar": "^§\\d+(\\.\\d+){0,2}$",
+    "clauseUrlTemplate": null,
+    "clausesReferencedByCatalogue": [
+      "§12.4",
+      "§16.1.32",
+      "§16.6.9",
+      "§17.2.17"
+    ],
+    "commonClauses": [
+      {
+        "clause": "§16.6.9",
+        "priorityWeight": 1.0,
+        "topic": "Event logging requirements"
+      },
+      {
+        "clause": "§16.1.32",
+        "priorityWeight": 1.0,
+        "topic": "User identification, authentication and access management"
+      },
+      {
+        "clause": "§17.2.17",
+        "priorityWeight": 1.0,
+        "topic": "Information security incident management and response"
+      },
+      {
+        "clause": "§12.4",
+        "priorityWeight": 0.7,
+        "topic": "Information security documentation and policy"
+      }
+    ],
+    "coverageSummary": {
+      "clauseCoveragePercent": 100.0,
+      "commonClauseCount": 4,
+      "coveredClauseCount": 4,
+      "offCommonListClauseCount": 0,
+      "priorityWeightedCoveragePercent": 25.0,
+      "stateCounts": {
+        "contributing-only": 4,
+        "covered-full": 0,
+        "covered-partial": 0,
+        "uncovered": 0
+      }
+    },
+    "effectiveFrom": "2024-10-01",
+    "endpoint": "/api/v1/compliance/regulations/nzism@3.7.json",
+    "pendingChanges": [],
+    "sunsetOn": null,
+    "useCasesTaggingThisVersion": [
+      "22.31.18",
+      "22.31.19",
+      "22.31.20",
+      "22.50.22",
+      "22.50.9"
+    ],
+    "version": "3.7"
+  }
+}

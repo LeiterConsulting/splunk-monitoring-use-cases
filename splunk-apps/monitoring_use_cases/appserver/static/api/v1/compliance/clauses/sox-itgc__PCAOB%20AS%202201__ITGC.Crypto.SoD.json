@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "ITGC.Crypto.SoD",
+  "clauseId": "sox-itgc@PCAOB AS 2201#ITGC.Crypto.SoD",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "Common SoD ITGC deficiency around encryption-key management.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Detects violations of SOX-ITGC ITGC.Crypto.SoD — Splunk UC-22.41.5: Key custodian SoD — same identity creates AND approves a key.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.41.5' running on KMS audit logs (aws:kms, azure:keyvault, gcp:kms), HSM audit logs., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "detects-violation-of",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.41.5",
+      "ucTitle": "Key custodian SoD — same identity creates AND approves a key"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/sox-itgc__PCAOB%20AS%202201__ITGC.Crypto.SoD.json",
+  "gapNote": "sox-itgc clause ITGC.Crypto.SoD has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "detects-violation-of": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "sox-itgc",
+  "regulationName": "sox-itgc",
+  "regulationShortName": "sox-itgc",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/sox-itgc.json",
+    "regulationVersion": "/api/v1/compliance/regulations/sox-itgc@PCAOB%20AS%202201.json",
+    "story": "/api/v1/compliance/story/sox-itgc.json"
+  },
+  "tier": null,
+  "topAssurance": "partial",
+  "topic": null,
+  "version": "PCAOB AS 2201"
+}

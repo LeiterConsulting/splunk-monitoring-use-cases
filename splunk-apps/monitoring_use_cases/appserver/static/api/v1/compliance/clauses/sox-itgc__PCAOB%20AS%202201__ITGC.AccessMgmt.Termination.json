@@ -1,0 +1,68 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 1,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201#ITGC.AccessMgmt.Termination",
+  "clause": "ITGC.AccessMgmt.Termination",
+  "clauseId": "sox-itgc@PCAOB AS 2201#ITGC.AccessMgmt.Termination",
+  "coverageState": "covered-full",
+  "coveringUcCount": 2,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "SOX-ITGC AccessMgmt.Termination — revocation SLA is direct evidence.",
+      "category": 22,
+      "clauseUrl": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201",
+      "controlObjective": "Evidence that SOX-ITGC ITGC.AccessMgmt.Termination (Timely deprovisioning) is enforced — Splunk UC-22.12.37: SOX-ITGC AccessMgmt.Termination — Deprovisioning SLA after HR termination event.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.12.37' running on sourcetype workday:termination and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.12.37",
+      "ucTitle": "SOX-ITGC AccessMgmt.Termination — Deprovisioning SLA after HR termination event"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'SOX §404' → 'ITGC.AccessMgmt.Termination'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201#ITGC.AccessMgmt.Termination",
+      "controlObjective": "Evidence that SOX ITGC ITGC.AccessMgmt.Termination (Timely deprovisioning) is enforced — Splunk UC-22.12.5: Terminated-user authentication after HR termination date.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.12.5' running on WinEventLog:Security, Active Directory replication/audit, snow:*, SAP/Oracle audit, mssql:audit, PAM, backup jobs, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.12.5",
+      "ucTitle": "Terminated-user authentication after HR termination date"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/sox-itgc__PCAOB%20AS%202201__ITGC.AccessMgmt.Termination.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 2
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "sox-itgc",
+  "regulationName": "SOX — PCAOB AS 2201 ITGCs",
+  "regulationShortName": "SOX ITGC",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/sox-itgc.json",
+    "regulationVersion": "/api/v1/compliance/regulations/sox-itgc@PCAOB%20AS%202201.json",
+    "story": "/api/v1/compliance/story/sox-itgc.json"
+  },
+  "tier": 1,
+  "topAssurance": "full",
+  "topic": "Timely deprovisioning",
+  "version": "PCAOB AS 2201"
+}

@@ -1,0 +1,101 @@
+{
+  "apiVersion": "v1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "swiss-nfadp",
+  "jurisdiction": [
+    "CH"
+  ],
+  "name": "Swiss Federal Act on Data Protection (nFADP)",
+  "shortName": "Swiss nFADP",
+  "tags": [
+    "privacy"
+  ],
+  "tier": 2,
+  "version": {
+    "authoritativeUrl": "https://www.fedlex.admin.ch/eli/cc/2022/491/en",
+    "clauseCoverageMatrix": [
+      {
+        "assuranceBreakdown": {
+          "contributing": 0,
+          "full": 0,
+          "partial": 2
+        },
+        "clause": "Art.24",
+        "coverageState": "covered-partial",
+        "coveringUcs": [
+          "22.39.1",
+          "22.39.2"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Data breach notification"
+      },
+      {
+        "assuranceBreakdown": {
+          "contributing": 1,
+          "full": 0,
+          "partial": 0
+        },
+        "clause": "Art.7",
+        "coverageState": "contributing-only",
+        "coveringUcs": [
+          "22.50.14"
+        ],
+        "obligationSource": null,
+        "obligationText": null,
+        "onCommonList": true,
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Privacy by design"
+      }
+    ],
+    "clauseExamples": [
+      "Art.7",
+      "Art.24"
+    ],
+    "clauseGrammar": "^Art\\.\\d+(\\([a-z]\\))?$",
+    "clauseUrlTemplate": "https://www.fedlex.admin.ch/eli/cc/2022/491/en#{clause}",
+    "clausesReferencedByCatalogue": [
+      "Art.24",
+      "Art.7"
+    ],
+    "commonClauses": [
+      {
+        "clause": "Art.7",
+        "priorityWeight": 1.0,
+        "topic": "Privacy by design"
+      },
+      {
+        "clause": "Art.24",
+        "priorityWeight": 1.0,
+        "topic": "Data breach notification"
+      }
+    ],
+    "coverageSummary": {
+      "clauseCoveragePercent": 100.0,
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "offCommonListClauseCount": 0,
+      "priorityWeightedCoveragePercent": 37.5,
+      "stateCounts": {
+        "contributing-only": 1,
+        "covered-full": 0,
+        "covered-partial": 1,
+        "uncovered": 0
+      }
+    },
+    "effectiveFrom": "2023-09-01",
+    "endpoint": "/api/v1/compliance/regulations/swiss-nfadp@2020-revision.json",
+    "pendingChanges": [],
+    "sunsetOn": null,
+    "useCasesTaggingThisVersion": [
+      "22.39.1",
+      "22.39.2",
+      "22.50.14"
+    ],
+    "version": "2020 revision"
+  }
+}

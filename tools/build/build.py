@@ -335,13 +335,12 @@ LEGACY_TOP_DIRS = (
     "embed",
 )
 
-# Companion static apps that live under ``tools/`` but must ship as
-# public-facing site content. The parent ``tools/`` directory is
-# otherwise excluded from the dist mirror (it holds build scripts,
-# audits, and other non-public infrastructure), so these subtrees are
-# copied explicitly below. Paths are repo-relative and POSIX-separated.
+# Public-facing subtrees that live under otherwise skipped roots and
+# must still ship in the compiled site output. Paths are repo-relative
+# and POSIX-separated.
 LEGACY_COMPANION_TOOLS = (
     "tools/data-sizing",
+    "vendor/swagger-ui",
 )
 
 
@@ -383,6 +382,9 @@ def _mirror_legacy_root_into_dist(out: Path, opts: BuildOptions, *, preserve_roo
         "__pycache__",
         "legacy",
     }
+    excluded_rel_roots = {
+        Path("splunk-apps") / "monitoring_use_cases",
+    }
     skip_extensions = {".pyc", ".pyo", ".pyd", ".swp", ".swo"}
 
     for fname in LEGACY_TOP_LEVEL:
@@ -411,6 +413,9 @@ def _mirror_legacy_root_into_dist(out: Path, opts: BuildOptions, *, preserve_roo
         if not src.exists() or not src.is_dir():
             continue
         for path in src.rglob("*"):
+            rel = path.relative_to(PROJECT_ROOT)
+            if any(rel == excluded_root or excluded_root in rel.parents for excluded_root in excluded_rel_roots):
+                continue
             if path.is_dir():
                 if path.name in skip_dirs:
                     continue
@@ -419,17 +424,15 @@ def _mirror_legacy_root_into_dist(out: Path, opts: BuildOptions, *, preserve_roo
                 continue
             if path.suffix in skip_extensions:
                 continue
-            rel = path.relative_to(PROJECT_ROOT)
             dst = out / rel
             dst.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(path, dst)
 
-    # Companion static apps under tools/ (e.g. the Data Sizing
-    # Assessment). The skip_dirs set above excludes 'tools' from the
-    # top-dir scan, so these subtrees are copied explicitly here. We
-    # check skip_dirs only against path components *below* the tool
-    # root so the outer 'tools/' segment doesn't cause every file to
-    # be rejected.
+    # Public-facing subtrees under otherwise skipped roots (for example
+    # the data sizing tool under tools/ and vendored Swagger UI assets
+    # under vendor/) are copied explicitly here. We check skip_dirs only
+    # against path components *below* the subtree root so the skipped
+    # outer segment doesn't cause every file to be rejected.
     for tool_rel in LEGACY_COMPANION_TOOLS:
         src = PROJECT_ROOT / Path(tool_rel)
         if not src.exists() or not src.is_dir():

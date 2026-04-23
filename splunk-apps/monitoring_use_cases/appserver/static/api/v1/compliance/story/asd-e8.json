@@ -1,0 +1,450 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "E8.01",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "1.2.91",
+        "12.3.10",
+        "22.31.6"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Application control",
+      "version": "Nov 2023"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "E8.02",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.31.8"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Nov 2023"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "E8.03",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.31.13",
+        "22.31.7"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Configure MS Office macro settings",
+      "version": "Nov 2023"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 3
+      },
+      "clause": "E8.05",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "1.1.76",
+        "22.31.9",
+        "9.1.3",
+        "9.4.1"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Restrict administrative privileges",
+      "version": "Nov 2023"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 4
+      },
+      "clause": "E8.06",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "1.2.9",
+        "1.3.4",
+        "12.3.2",
+        "22.31.10",
+        "3.1.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Patch operating systems",
+      "version": "Nov 2023"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "E8.07",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.31.11"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "Nov 2023"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 3
+      },
+      "clause": "E8.08",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.31.12",
+        "5.1.24",
+        "6.3.1",
+        "6.3.13",
+        "6.3.23"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Regular backups",
+      "version": "Nov 2023"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "5 of 5 common clauses are covered by the catalogue, with a priority-weighted coverage of 55.0% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 5,
+      "coveredClauseCount": 5,
+      "priorityWeightedCoveragePercent": 55.0,
+      "stateCounts": {
+        "contributing-only": 1,
+        "covered-full": 1,
+        "covered-partial": 3,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "E8.08",
+        "killerUcId": "22.31.12",
+        "killerUcTitle": "Daily backup verification and restore test evidence",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Regular backups",
+        "version": "Nov 2023",
+        "why": "Clause E8.08 (Regular backups) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "E8.01",
+        "killerUcId": "1.2.91",
+        "killerUcTitle": "USB / Removable Device Auditing",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Application control",
+        "version": "Nov 2023",
+        "why": "Clause E8.01 (Application control) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "E8.05",
+        "killerUcId": "1.1.76",
+        "killerUcTitle": "Privilege Escalation Detection",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Restrict administrative privileges",
+        "version": "Nov 2023",
+        "why": "Clause E8.05 (Restrict administrative privileges) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "E8.06",
+        "killerUcId": "1.2.9",
+        "killerUcTitle": "Windows Update Compliance",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Patch operating systems",
+        "version": "Nov 2023",
+        "why": "Clause E8.06 (Patch operating systems) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "E8.03",
+        "killerUcId": "22.31.13",
+        "killerUcTitle": "Office macro execution policy violation detection",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Configure MS Office macro settings",
+        "version": "Nov 2023",
+        "why": "Clause E8.03 (Configure MS Office macro settings) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "E8.01",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "12.3.10",
+            "ucTitle": "Artifact Signing Verification"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "1.2.91",
+            "ucTitle": "USB / Removable Device Auditing"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.31.6",
+            "ucTitle": "Application control allowlist drift monitoring"
+          }
+        ],
+        "topic": "Application control",
+        "version": "Nov 2023"
+      },
+      {
+        "clause": "E8.03",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.31.7",
+            "ucTitle": "Microsoft Office macro security baseline compliance"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.31.13",
+            "ucTitle": "Office macro execution policy violation detection"
+          }
+        ],
+        "topic": "Configure MS Office macro settings",
+        "version": "Nov 2023"
+      },
+      {
+        "clause": "E8.05",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "1.1.76",
+            "ucTitle": "Privilege Escalation Detection"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "9.1.3",
+            "ucTitle": "Privileged Group Membership Changes"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "9.4.1",
+            "ucTitle": "Privileged Session Audit"
+          }
+        ],
+        "topic": "Restrict administrative privileges",
+        "version": "Nov 2023"
+      },
+      {
+        "clause": "E8.06",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "12.3.2",
+            "ucTitle": "Dependency Vulnerability Alerts"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "1.2.9",
+            "ucTitle": "Windows Update Compliance"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "1.3.4",
+            "ucTitle": "Software Update Compliance"
+          }
+        ],
+        "topic": "Patch operating systems",
+        "version": "Nov 2023"
+      },
+      {
+        "clause": "E8.08",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "6.3.1",
+            "ucTitle": "Backup Job Success Rate"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "6.3.13",
+            "ucTitle": "Backup RPO and RTO Compliance"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "6.3.23",
+            "ucTitle": "Immutable Backup and Ransomware Recovery Readiness"
+          }
+        ],
+        "topic": "Regular backups",
+        "version": "Nov 2023"
+      },
+      {
+        "clause": "E8.02",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.31.8",
+            "ucTitle": "User application hardening compliance"
+          }
+        ],
+        "topic": null,
+        "version": "Nov 2023"
+      },
+      {
+        "clause": "E8.07",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "low",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.31.11",
+            "ucTitle": "Multi-factor authentication coverage and failures"
+          }
+        ],
+        "topic": null,
+        "version": "Nov 2023"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "AU"
+  ],
+  "narrative": null,
+  "narrativeRef": null,
+  "regulationId": "asd-e8",
+  "regulationName": "ASD Essential Eight Maturity Model",
+  "regulationShortName": "ASD E8",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=asd-e8",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#asd-e8",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/asd-e8.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

@@ -1,0 +1,128 @@
+{
+  "aliases": [
+    "Grundschutz",
+    "IT-Grundschutz"
+  ],
+  "apiVersion": "v1",
+  "id": "it-grundschutz",
+  "jurisdiction": [
+    "DE"
+  ],
+  "name": "BSI IT-Grundschutz Compendium",
+  "shortName": "IT-Grundschutz",
+  "tags": [
+    "baseline"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://www.bsi.bund.de/EN/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/it-grundschutz_node.html",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 7,
+            "full": 0,
+            "partial": 4
+          },
+          "clause": "OPS.1.1.2",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "1.2.91",
+            "12.2.17",
+            "13.1.36",
+            "16.4.1",
+            "22.28.11",
+            "22.28.12",
+            "22.28.13",
+            "22.28.14",
+            "22.28.15",
+            "5.1.7",
+            "6.3.1"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Ordered ICT operation"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 1,
+            "partial": 1
+          },
+          "clause": "ORP.4",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "9.1.3",
+            "9.5.15"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "full",
+          "topic": "Identity & access"
+        }
+      ],
+      "clauseExamples": [
+        "ORP.1",
+        "CON.1",
+        "OPS.1.1.2",
+        "OPS.1.1.2.A1"
+      ],
+      "clauseGrammar": "^[A-Z]{2,4}(\\.\\d+)*(\\.[AMS]\\d+)?$",
+      "clauseUrlTemplate": null,
+      "clausesReferencedByCatalogue": [
+        "OPS.1.1.2",
+        "ORP.4"
+      ],
+      "commonClauses": [
+        {
+          "clause": "OPS.1.1.2",
+          "priorityWeight": 1.0,
+          "topic": "Ordered ICT operation"
+        },
+        {
+          "clause": "ORP.4",
+          "priorityWeight": 1.0,
+          "topic": "Identity & access"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 100.0,
+        "commonClauseCount": 2,
+        "coveredClauseCount": 2,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 75.0,
+        "stateCounts": {
+          "contributing-only": 0,
+          "covered-full": 1,
+          "covered-partial": 1,
+          "uncovered": 0
+        }
+      },
+      "effectiveFrom": "2023-02-01",
+      "endpoint": "/api/v1/compliance/regulations/it-grundschutz@2023-Edition.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [
+        "1.2.91",
+        "12.2.17",
+        "13.1.36",
+        "16.4.1",
+        "22.28.11",
+        "22.28.12",
+        "22.28.13",
+        "22.28.14",
+        "22.28.15",
+        "5.1.7",
+        "6.3.1",
+        "9.1.3",
+        "9.5.15"
+      ],
+      "version": "2023 Edition"
+    }
+  ]
+}

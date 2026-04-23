@@ -1,0 +1,121 @@
+{
+  "aliases": [
+    "CJIS",
+    "CJIS Security Policy"
+  ],
+  "apiVersion": "v1",
+  "id": "cjis",
+  "jurisdiction": [
+    "US"
+  ],
+  "name": "FBI CJIS Security Policy",
+  "shortName": "CJIS",
+  "tags": [
+    "government",
+    "law-enforcement"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://le.fbi.gov/cjis-division/cjis-security-policy-resource-center",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "5.13.3",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.50.2"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Incident response"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 6,
+            "full": 0,
+            "partial": 3
+          },
+          "clause": "5.5.1",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "1.1.108",
+            "22.32.22",
+            "22.32.23",
+            "22.32.24",
+            "22.32.25",
+            "4.1.4",
+            "5.1.14",
+            "7.1.21",
+            "9.1.1"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Access control - identification"
+        }
+      ],
+      "clauseExamples": [
+        "5.5.1",
+        "5.13.3.1"
+      ],
+      "clauseGrammar": "^\\d+(\\.\\d+){1,3}$",
+      "clauseUrlTemplate": null,
+      "clausesReferencedByCatalogue": [
+        "5.13.3",
+        "5.5.1"
+      ],
+      "commonClauses": [
+        {
+          "clause": "5.5.1",
+          "priorityWeight": 1.0,
+          "topic": "Access control - identification"
+        },
+        {
+          "clause": "5.13.3",
+          "priorityWeight": 1.0,
+          "topic": "Incident response"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 100.0,
+        "commonClauseCount": 2,
+        "coveredClauseCount": 2,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 37.5,
+        "stateCounts": {
+          "contributing-only": 1,
+          "covered-full": 0,
+          "covered-partial": 1,
+          "uncovered": 0
+        }
+      },
+      "effectiveFrom": "2023-12-14",
+      "endpoint": "/api/v1/compliance/regulations/cjis@v5.9.4.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [
+        "1.1.108",
+        "22.32.22",
+        "22.32.23",
+        "22.32.24",
+        "22.32.25",
+        "22.50.2",
+        "4.1.4",
+        "5.1.14",
+        "7.1.21",
+        "9.1.1"
+      ],
+      "version": "v5.9.4"
+    }
+  ]
+}

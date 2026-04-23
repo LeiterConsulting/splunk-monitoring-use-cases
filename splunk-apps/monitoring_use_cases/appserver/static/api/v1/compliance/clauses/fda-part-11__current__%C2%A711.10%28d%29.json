@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-11/section-11.{section}#%C2%A711.10(d)",
+  "clause": "§11.10(d)",
+  "clauseId": "fda-part-11@current#§11.10(d)",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "FDA 21 CFR Part 11 §11.10(d) System access limited to authorized individuals — database user/privilege audit is the primary evidence of continuous enforcement of the authorised-user control.",
+      "category": 7,
+      "clauseUrl": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-11",
+      "controlObjective": "Evidence that FDA Part 11 §11.10(d) (System access limited to authorized individuals) is enforced — Splunk UC-7.1.21: Database User and Privilege Change Audit.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-7.1.21' running on Oracle audit trail, PostgreSQL pg_audit or log_statement, SQL Server audit, MySQL general log, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "7.1.21",
+      "ucTitle": "Database User and Privilege Change Audit"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/fda-part-11__current__%C2%A711.10%28d%29.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "fda-part-11",
+  "regulationName": "FDA 21 CFR Part 11",
+  "regulationShortName": "FDA Part 11",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/fda-part-11.json",
+    "regulationVersion": "/api/v1/compliance/regulations/fda-part-11@current.json",
+    "story": "/api/v1/compliance/story/fda-part-11.json"
+  },
+  "tier": 2,
+  "topAssurance": "partial",
+  "topic": "System access limited to authorized individuals",
+  "version": "current"
+}

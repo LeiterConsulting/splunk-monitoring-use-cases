@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "CC1.4",
+  "clauseId": "soc-2@2017 TSC#CC1.4",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "SOC 2 CC1.4 — contributes to commitment-and-accountability evidence.",
+      "category": 22,
+      "clauseUrl": "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services",
+      "controlObjective": "Evidence that SOC-2 CC1.4 is enforced — Splunk UC-22.6.54: ISO/IEC 27001:2022 Clause 7.5 — Documented information control: policy register approval trail.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.6.54' running on index=grc sourcetype=policyhub:policy (change of state); policy cadence lookup iso_27001_policy_cadence.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.6.54",
+      "ucTitle": "ISO/IEC 27001:2022 Clause 7.5 — Documented information control: policy register approval trail"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/soc-2__2017%20TSC__CC1.4.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "soc-2",
+  "regulationName": "soc-2",
+  "regulationShortName": "soc-2",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/soc-2.json",
+    "regulationVersion": "/api/v1/compliance/regulations/soc-2@2017%20TSC.json",
+    "story": "/api/v1/compliance/story/soc-2.json"
+  },
+  "tier": null,
+  "topAssurance": "partial",
+  "topic": null,
+  "version": "2017 TSC"
+}

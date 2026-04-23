@@ -1,0 +1,43 @@
+{
+  "apiVersion": "v1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "ferpa",
+  "jurisdiction": [
+    "US"
+  ],
+  "name": "Family Educational Rights and Privacy Act",
+  "shortName": "FERPA",
+  "tags": [
+    "education",
+    "privacy"
+  ],
+  "tier": 2,
+  "version": {
+    "authoritativeUrl": "https://www.ecfr.gov/current/title-34/subtitle-A/part-99",
+    "clauseExamples": [
+      "§99.31",
+      "§99.33"
+    ],
+    "clauseGrammar": "^§99\\.\\d+$",
+    "clauseUrlTemplate": null,
+    "clausesReferencedByCatalogue": [],
+    "commonClauses": [
+      {
+        "clause": "§99.31",
+        "priorityWeight": 1.0,
+        "topic": "Conditions for disclosure without consent"
+      },
+      {
+        "clause": "§99.33",
+        "priorityWeight": 0.7,
+        "topic": "Redisclosure and record-keeping"
+      }
+    ],
+    "effectiveFrom": "1974-08-21",
+    "endpoint": "/api/v1/compliance/regulations/ferpa@20-USC--1232g.json",
+    "pendingChanges": [],
+    "sunsetOn": null,
+    "useCasesTaggingThisVersion": [],
+    "version": "20 USC §1232g"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 2,
+    "full": 1,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "CA-2",
+  "clauseId": "nist-800-53@Rev. 5#CA-2",
+  "coverageState": "covered-full",
+  "coveringUcCount": 3,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "CA-2 control assessments and owner attestations.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that NIST-800-53 CA-2 is enforced — Splunk UC-22.47.3: Control owner attestation freshness.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.47.3' running on GRC owner attestation ledger, control_inventory.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.47.3",
+      "ucTitle": "Control owner attestation freshness"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "NIST 800-53 CA-2 Control Assessments — contributing.",
+      "category": 22,
+      "clauseUrl": "https://doi.org/10.6028/NIST.SP.800-53r5",
+      "controlObjective": "Evidence that NIST 800-53 CA-2 is enforced — Splunk UC-22.6.50: ISO/IEC 27001:2022 Clause 9.2 — Internal audit coverage: control sample rotation.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.6.50' running on sourcetype archer:audit_test and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.6.50",
+      "ucTitle": "ISO/IEC 27001:2022 Clause 9.2 — Internal audit coverage: control sample rotation"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that NIST 800-53 CA-2 is enforced — Splunk UC-22.14.60: Control Assessment Findings Ingest and Aging.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.14.60' running on index=grc sourcetype=assessment:finding, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.14.60",
+      "ucTitle": "Control Assessment Findings Ingest and Aging"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/nist-800-53__Rev.%205__CA-2.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 3
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "nist-800-53",
+  "regulationName": "nist-800-53",
+  "regulationShortName": "nist-800-53",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/nist-800-53.json",
+    "regulationVersion": "/api/v1/compliance/regulations/nist-800-53@Rev.%205.json",
+    "story": "/api/v1/compliance/story/nist-800-53.json"
+  },
+  "tier": null,
+  "topAssurance": "full",
+  "topic": null,
+  "version": "Rev. 5"
+}

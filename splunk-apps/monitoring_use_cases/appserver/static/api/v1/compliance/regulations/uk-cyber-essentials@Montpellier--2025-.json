@@ -1,0 +1,58 @@
+{
+  "apiVersion": "v1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "uk-cyber-essentials",
+  "jurisdiction": [
+    "UK"
+  ],
+  "name": "UK NCSC Cyber Essentials",
+  "shortName": "Cyber Essentials",
+  "tags": [
+    "baseline",
+    "supply-chain"
+  ],
+  "tier": 2,
+  "version": {
+    "authoritativeUrl": "https://www.ncsc.gov.uk/cyberessentials/overview",
+    "clauseExamples": [
+      "CE.BF.1",
+      "CE.SAU.1"
+    ],
+    "clauseGrammar": "^CE\\.[A-Z]{2,3}\\.\\d+$",
+    "clauseUrlTemplate": null,
+    "clausesReferencedByCatalogue": [
+      "CE.BF.1",
+      "CE.SAU.1"
+    ],
+    "commonClauses": [
+      {
+        "clause": "CE.BF.1",
+        "priorityWeight": 1.0,
+        "topic": "Boundary firewalls"
+      },
+      {
+        "clause": "CE.SAU.1",
+        "priorityWeight": 1.0,
+        "topic": "Secure authentication & access"
+      }
+    ],
+    "effectiveFrom": "2025-04-28",
+    "endpoint": "/api/v1/compliance/regulations/uk-cyber-essentials@Montpellier--2025-.json",
+    "pendingChanges": [],
+    "sunsetOn": null,
+    "useCasesTaggingThisVersion": [
+      "1.1.108",
+      "17.1.8",
+      "17.2.2",
+      "17.3.3",
+      "22.27.28",
+      "22.27.29",
+      "22.27.30",
+      "4.1.5",
+      "5.2.2",
+      "9.1.1",
+      "9.3.1"
+    ],
+    "version": "Montpellier (2025)"
+  }
+}

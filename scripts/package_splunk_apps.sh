@@ -27,7 +27,7 @@
 #
 # The script:
 #   1) collects the list of app ids to package (default vs --all vs explicit),
-#   2) strips development detritus (local/, .DS_Store, __pycache__),
+#   2) strips development detritus (local/, .DS_Store, ._*, __pycache__),
 #   3) tars with the fixed prefix matching the app name,
 #   4) emits SHA-256 per file and a combined SHA256SUMS.txt.
 #
@@ -40,6 +40,8 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
 OUT_DIR="${1:-${REPO_ROOT}/dist}"
 shift || true
+
+. "${SCRIPT_DIR}/package_archive_lib.sh"
 
 # Default release scope: only the unified recommender + its companion TA.
 DEFAULT_APPS=(splunk-uc-recommender splunk-uc-recommender-ta)
@@ -152,12 +154,8 @@ PY
     trap 'rm -rf "${TMP_STAGE}"' EXIT
     cp -R "${APP_DIR}" "${TMP_STAGE}/${APP_ID}"
 
-    # Strip runtime overrides and local dev artefacts.
-    rm -rf "${TMP_STAGE}/${APP_ID}/local"
-    find "${TMP_STAGE}/${APP_ID}" -name ".DS_Store" -delete
-    find "${TMP_STAGE}/${APP_ID}" -name "__pycache__" -type d -prune -exec rm -rf {} +
-
-    tar -C "${TMP_STAGE}" -czf "${OUT_FILE}" "${APP_ID}"
+    strip_splunk_packaging_detritus "${TMP_STAGE}/${APP_ID}"
+    create_clean_spl_archive "${TMP_STAGE}" "${OUT_FILE}" "${APP_ID}"
     rm -rf "${TMP_STAGE}"
     trap - EXIT
 

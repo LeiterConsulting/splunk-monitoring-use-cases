@@ -1,0 +1,5 @@
+Contact: https://github.com/fenre/splunk-monitoring-use-cases/security/advisories/new
+Expires: 2099-12-31T23:59:59Z
+Preferred-Languages: en
+Canonical: https://fenre.github.io/splunk-monitoring-use-cases/.well-known/security.txt
+Acknowledgments: https://github.com/fenre/splunk-monitoring-use-cases/security/advisories

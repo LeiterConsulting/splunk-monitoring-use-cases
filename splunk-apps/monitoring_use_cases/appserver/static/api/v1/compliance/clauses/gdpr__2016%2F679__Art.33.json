@@ -1,0 +1,113 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 3,
+    "full": 2,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e3002-1-1",
+  "clause": "Art.33",
+  "clauseId": "gdpr@2016/679#Art.33",
+  "coverageState": "covered-full",
+  "coveringUcCount": 5,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "Art.33(1) requires notification to the supervisory authority without undue delay and where feasible within 72 hours; the UC measures elapsed time from classification to submission evidence.",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e3002-1-1",
+      "controlObjective": "Evidence that GDPR Art.33 (Breach notification to supervisory authority) is enforced — Splunk UC-22.39.1: Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA).",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.39.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.39.1",
+      "ucTitle": "Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA)"
+    },
+    {
+      "assurance": "full",
+      "assuranceRationale": "Art.33 requires the notification to reach the authority; a submitted-without-ack outcome is not a completed notification.",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e3002-1-1",
+      "controlObjective": "Evidence that GDPR Art.33 (Breach notification to supervisory authority) is enforced — Splunk UC-22.39.2: Regulator-portal submission evidence — one-way API acknowledgement audit.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.39.2' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.39.2",
+      "ucTitle": "Regulator-portal submission evidence — one-way API acknowledgement audit"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e3002-1-1",
+      "controlObjective": "Evidence that GDPR Art.33 (Breach notification to supervisory authority) is enforced — Splunk UC-22.1.3: GDPR Breach Notification Timeline Monitoring.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.1.3' running on notable macro (rule_name, urgency, status, owner, status_description, _time), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.1.3",
+      "ucTitle": "GDPR Breach Notification Timeline Monitoring"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e3002-1-1",
+      "controlObjective": "Evidence that GDPR Art.33 (Breach notification to supervisory authority) is enforced — Splunk UC-22.1.29: GDPR Processor Personal Data Breach Notification SLA.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.1.29' running on index itsm and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.1.29",
+      "ucTitle": "GDPR Processor Personal Data Breach Notification SLA"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Art.33 requires breach notification to the supervisory authority 'without undue delay and, where feasible, not later than 72 hours'. Trending regulatory incident response times evidences that the organisation measures and is meeting that obligation over time.",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e3002-1-1",
+      "controlObjective": "Evidence that GDPR Art.33 (Breach notification to supervisory authority) is enforced — Splunk UC-22.9.4: Regulatory Incident Response Time Trending.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.9.4' running on notable — filter with tag/category/rule_name for compliance/regulatory work; fields closed_time, _time, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.9.4",
+      "ucTitle": "Regulatory Incident Response Time Trending"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/gdpr__2016%2F679__Art.33.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 5
+  },
+  "obligationSource": "https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e3002-1-1",
+  "obligationText": "In the case of a personal data breach, the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority competent in accordance with Article 55, unless the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons. Where the notification to the supervisory authority is not made within 72 hours, it shall be accompanied by reasons for the delay.",
+  "priorityWeight": 1.0,
+  "regulationId": "gdpr",
+  "regulationName": "General Data Protection Regulation",
+  "regulationShortName": "GDPR",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/gdpr.json",
+    "regulationVersion": "/api/v1/compliance/regulations/gdpr@2016%2F679.json",
+    "story": "/api/v1/compliance/story/gdpr.json"
+  },
+  "tier": 1,
+  "topAssurance": "full",
+  "topic": "Breach notification to supervisory authority",
+  "version": "2016/679"
+}

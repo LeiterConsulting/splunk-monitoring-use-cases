@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "ITGC.Change.Rollback",
+  "clauseId": "sox-itgc@PCAOB AS 2201#ITGC.Change.Rollback",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "SOX ITGC rollback evidence is satisfied in a risk-based manner.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that SOX-ITGC ITGC.Change.Rollback is enforced — Splunk UC-22.42.3: Change rollback execution evidence — declared rollback vs actual.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.42.3' running on ITSM CR records (ServiceNow), CI/CD pipeline audit (rollback_test events)., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.42.3",
+      "ucTitle": "Change rollback execution evidence — declared rollback vs actual"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/sox-itgc__PCAOB%20AS%202201__ITGC.Change.Rollback.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "sox-itgc",
+  "regulationName": "sox-itgc",
+  "regulationShortName": "sox-itgc",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/sox-itgc.json",
+    "regulationVersion": "/api/v1/compliance/regulations/sox-itgc@PCAOB%20AS%202201.json",
+    "story": "/api/v1/compliance/story/sox-itgc.json"
+  },
+  "tier": null,
+  "topAssurance": "partial",
+  "topic": null,
+  "version": "PCAOB AS 2201"
+}

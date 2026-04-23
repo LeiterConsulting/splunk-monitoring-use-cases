@@ -1,0 +1,68 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://dodcio.defense.gov/CMMC/#AU.L2-3.3.5",
+  "clause": "AU.L2-3.3.5",
+  "clauseId": "cmmc@2.0#AU.L2-3.3.5",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 2,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "CMMC AU.L2-3.3.5 Audit reporting and correlation — UC area 5 is the CMMC audit-correlation practice anchor, surfacing cross-source CUI-marked events for review.",
+      "category": 22,
+      "clauseUrl": "https://dodcio.defense.gov/CMMC/",
+      "controlObjective": "Evidence that CMMC AU.L2-3.3.5 (Audit reporting and correlation) is enforced — Splunk UC-22.20.5: CMMC Level 2 practice evidence — CUI control area 5.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.20.5' running on WinEventLog:Security, CrowdStrike FDR, Defender for Office 365, NetFlow, encryption posture exports, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.20.5",
+      "ucTitle": "CMMC Level 2 practice evidence — CUI control area 5"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'CM MC' → 'AU.L2-3.3.5'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://dodcio.defense.gov/CMMC/#AU.L2-3.3.5",
+      "controlObjective": "Evidence that CMMC AU.L2-3.3.5 (Audit reporting and correlation) is enforced — Splunk UC-22.32.19: CMMC assessment readiness scoring.",
+      "criticality": "low",
+      "evidenceArtifact": "Saved search 'UC-22.32.19' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.32.19",
+      "ucTitle": "CMMC assessment readiness scoring"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/cmmc__2.0__AU.L2-3.3.5.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 2
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "cmmc",
+  "regulationName": "Cybersecurity Maturity Model Certification",
+  "regulationShortName": "CMMC",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/cmmc.json",
+    "regulationVersion": "/api/v1/compliance/regulations/cmmc@2.0.json",
+    "story": "/api/v1/compliance/story/cmmc.json"
+  },
+  "tier": 1,
+  "topAssurance": "partial",
+  "topic": "Audit reporting and correlation",
+  "version": "2.0"
+}

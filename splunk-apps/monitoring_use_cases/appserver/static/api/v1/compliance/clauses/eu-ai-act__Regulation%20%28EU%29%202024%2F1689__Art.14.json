@@ -1,0 +1,83 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 3,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj#Art.14",
+  "clause": "Art.14",
+  "clauseId": "eu-ai-act@Regulation (EU) 2024/1689#Art.14",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 3,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'EU AI Act' → 'Art.14'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj#Art.14",
+      "controlObjective": "Evidence that EU AI Act Art.14 (Human oversight) is enforced — Splunk UC-22.21.11: Human Override Action Logging Coverage (Art. 14).",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.21.11' running on index=ai_hil sourcetype=ai:human:override — decision_id, operator_id, reason_code, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.21.11",
+      "ucTitle": "Human Override Action Logging Coverage (Art. 14)"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'EU AI Act' → 'Art.14'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj#Art.14",
+      "controlObjective": "Evidence that EU AI Act Art.14 (Human oversight) is enforced — Splunk UC-22.21.12: Escalation to Human Review Queue Latency (Art. 14).",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.21.12' running on index=ai_hil — event=low_confidence | event=human_assigned — decision_id, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.21.12",
+      "ucTitle": "Escalation to Human Review Queue Latency (Art. 14)"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'EU AI Act' → 'Art.14'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj#Art.14",
+      "controlObjective": "Evidence that EU AI Act Art.14 (Human oversight) is enforced — Splunk UC-22.21.15: Operator Session Segregation for High-Risk AI Consoles (Art. 14).",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.21.15' running on index=ai_console sourcetype=ai:admin:session — operator_id, session_id, action, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.21.15",
+      "ucTitle": "Operator Session Segregation for High-Risk AI Consoles (Art. 14)"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/eu-ai-act__Regulation%20%28EU%29%202024%2F1689__Art.14.json",
+  "gapNote": "EU AI Act clause Art.14 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 3
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "eu-ai-act",
+  "regulationName": "EU AI Act",
+  "regulationShortName": "EU AI Act",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/eu-ai-act.json",
+    "regulationVersion": "/api/v1/compliance/regulations/eu-ai-act@Regulation%20%28EU%29%202024%2F1689.json",
+    "story": "/api/v1/compliance/story/eu-ai-act.json"
+  },
+  "tier": 2,
+  "topAssurance": "contributing",
+  "topic": "Human oversight",
+  "version": "Regulation (EU) 2024/1689"
+}

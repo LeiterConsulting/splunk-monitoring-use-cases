@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 1,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "7.2.5.1",
+  "clauseId": "pci-dss@v4.0#7.2.5.1",
+  "coverageState": "covered-full",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "PCI 7.2.5.1 requires tight controls on privileged account lifecycle; unvaulted admins fail this control.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that PCI-DSS 7.2.5.1 is enforced — Splunk UC-22.40.4: Standing-privilege credential vaulting drift — admin accounts outside PAM.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.40.4' running on IdP privileged-group membership (Azure AD, Okta, LDAP), PAM vault inventory (CyberArk, BeyondTrust, Delinea)., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.40.4",
+      "ucTitle": "Standing-privilege credential vaulting drift — admin accounts outside PAM"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/pci-dss__v4.0__7.2.5.1.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "pci-dss",
+  "regulationName": "pci-dss",
+  "regulationShortName": "pci-dss",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/pci-dss.json",
+    "regulationVersion": "/api/v1/compliance/regulations/pci-dss@v4.0.json",
+    "story": "/api/v1/compliance/story/pci-dss.json"
+  },
+  "tier": null,
+  "topAssurance": "full",
+  "topic": null,
+  "version": "v4.0"
+}

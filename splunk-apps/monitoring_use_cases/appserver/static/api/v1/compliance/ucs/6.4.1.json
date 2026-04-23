@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/6.4.1.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/6.4.1.json",
+    "sourcePath": "content/cat-06-storage-backup/UC-6.4.1.json"
+  },
+  "apiVersion": "v1",
+  "app": "`Splunk_TA_windows` (Security Event Log)",
+  "cimModels": [
+    "N/A"
+  ],
+  "criticality": "high",
+  "dataSources": "Windows Security Event Log (Event ID 4663 — object access), NFS access logs",
+  "description": "Provides full audit trail of file access for compliance (SOX, HIPAA, PCI-DSS). Enables investigation of data breaches and unauthorized access.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: `Splunk_TA_windows` (Security Event Log).\n• Ensure the following data sources are available: Windows Security Event Log (Event ID 4663 — object access), NFS access logs.\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\nEnable \"Audit Object Access\" via GPO on file servers. Configure SACLs on sensitive folders. Forward Security logs via Universal Forwarder. Filter high-volume events to focus on sensitive paths.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=wineventlog sourcetype=\"WinEventLog:Security\" EventCode=4663\n| stats count by Account_Name, ObjectName, AccessMask\n| sort -count\n| head 50\n```\n\nUnderstanding this SPL\n\n**File Access Audit** — Provides full audit trail of file access for compliance (SOX, HIPAA, PCI-DSS). Enables investigation of data breaches and unauthorized access.\n\nDocumented **Data sources**: Windows Security Event Log (Event ID 4663 — object access), NFS access logs. **App/TA** (typical add-on context): `Splunk_TA_windows` (Security Event Log). The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: wineventlog; **sourcetype**: WinEventLog:Security. If that sourcetype is not mentioned in Data sources, double-check parsing or update the documentation to match the feed you actually ingest.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=wineventlog, sourcetype=\"WinEventLog:Security\". Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• `stats` rolls up events into metrics; results are split **by Account_Name, ObjectName, AccessMask** so each row reflects one combination of those dimensions (useful for per-host, per-user, or per-entity comparisons for this use case).\n• Orders rows with `sort` — combine with `head`/`tail` for top-N patterns.\n• Limits the number of rows with `head`.\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Table (user, file, access type, count), Bar chart (top accessed files), Timeline (access events for specific files).",
+  "difficulty": "beginner",
+  "equipment": [
+    "windows"
+  ],
+  "grandmaExplanation": "We give you full audit trail of file access for compliance (, HIPAA, ) — so you know that your data is safe, backed up, and actually restorable.",
+  "id": "6.4.1",
+  "implementation": "Enable \"Audit Object Access\" via GPO on file servers. Configure SACLs on sensitive folders. Forward Security logs via Universal Forwarder. Filter high-volume events to focus on sensitive paths.",
+  "monitoringType": [
+    "Compliance"
+  ],
+  "references": [
+    {
+      "title": "Splunk_TA_windows",
+      "url": "https://splunkbase.splunk.com/app/742"
+    }
+  ],
+  "spl": "index=wineventlog sourcetype=\"WinEventLog:Security\" EventCode=4663\n| stats count by Account_Name, ObjectName, AccessMask\n| sort -count\n| head 50",
+  "splunkPillar": "Security",
+  "title": "File Access Audit",
+  "value": "Provides full audit trail of file access for compliance (SOX, HIPAA, PCI-DSS). Enables investigation of data breaches and unauthorized access.",
+  "visualization": "Table (user, file, access type, count), Bar chart (top accessed files), Timeline (access events for specific files)."
+}

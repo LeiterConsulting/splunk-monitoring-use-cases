@@ -1,0 +1,68 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 2,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://csrc.nist.gov/pubs/cswp/29/final#ID.AM-01",
+  "clause": "ID.AM-01",
+  "clauseId": "nist-csf@2.0#ID.AM-01",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 2,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'Id entify/Protect/Detect/Respond/Recover' → 'ID.AM-01'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://csrc.nist.gov/pubs/cswp/29/final#ID.AM-01",
+      "controlObjective": "Evidence that NIST CSF ID.AM-01 (Asset inventory) is enforced — Splunk UC-22.7.1: NIST CSF Maturity Posture Dashboard.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.7.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.7.1",
+      "ucTitle": "NIST CSF Maturity Posture Dashboard"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://csrc.nist.gov/pubs/cswp/29/final#ID.AM-01",
+      "controlObjective": "Evidence that NIST CSF ID.AM-01 (Asset inventory) is enforced — Splunk UC-22.7.16: Hardware Asset Coverage — Agents Missing on In-Scope Servers.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.7.16' running on _internal metrics; cmdb_servers.csv, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.7.16",
+      "ucTitle": "Hardware Asset Coverage — Agents Missing on In-Scope Servers"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/nist-csf__2.0__ID.AM-01.json",
+  "gapNote": "NIST CSF clause ID.AM-01 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 2
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "nist-csf",
+  "regulationName": "NIST Cybersecurity Framework",
+  "regulationShortName": "NIST CSF",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/nist-csf.json",
+    "regulationVersion": "/api/v1/compliance/regulations/nist-csf@2.0.json",
+    "story": "/api/v1/compliance/story/nist-csf.json"
+  },
+  "tier": 1,
+  "topAssurance": "contributing",
+  "topic": "Asset inventory",
+  "version": "2.0"
+}

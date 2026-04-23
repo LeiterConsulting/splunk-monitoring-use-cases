@@ -1,0 +1,255 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§5-2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.50.21"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "contributing",
+      "topic": "Internal control and annual security review",
+      "version": "2018"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 4,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§5-3",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.26.1",
+        "22.26.2",
+        "22.26.3",
+        "22.26.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Risk assessment and documentation of security level",
+      "version": "2018"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§6-1",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.50.8"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "General preventive security measures",
+      "version": "2018"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "§6-2",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.26.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Protection of classified / security-graded information",
+      "version": "2018"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "4 of 4 common clauses are covered by the catalogue, with a priority-weighted coverage of 25.0% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 4,
+      "coveredClauseCount": 4,
+      "priorityWeightedCoveragePercent": 25.0,
+      "stateCounts": {
+        "contributing-only": 4,
+        "covered-full": 0,
+        "covered-partial": 0,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "§5-3",
+        "killerUcId": "22.26.1",
+        "killerUcTitle": "Classified information system monitoring",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Risk assessment and documentation of security level",
+        "version": "2018",
+        "why": "Clause §5-3 (Risk assessment and documentation of security level) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "§6-1",
+        "killerUcId": "22.50.8",
+        "killerUcTitle": "Sikkerhetsloven §6-1 — preventive control effectiveness across classified systems",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "General preventive security measures",
+        "version": "2018",
+        "why": "Clause §6-1 (General preventive security measures) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "§6-2",
+        "killerUcId": "22.26.5",
+        "killerUcTitle": "Information system accreditation evidence",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Protection of classified / security-graded information",
+        "version": "2018",
+        "why": "Clause §6-2 (Protection of classified / security-graded information) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      },
+      {
+        "clause": "§5-2",
+        "killerUcId": "22.50.21",
+        "killerUcTitle": "Sikkerhetsloven §5-2 — annual internal security review activity",
+        "priorityWeight": 0.7,
+        "topAssurance": "contributing",
+        "topic": "Internal control and annual security review",
+        "version": "2018",
+        "why": "Clause §5-2 (Internal control and annual security review) carries a regulator-assigned priority weight of 0.7, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "§5-3",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.26.4",
+            "ucTitle": "Protective security measures"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.26.1",
+            "ucTitle": "Classified information system monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.26.2",
+            "ucTitle": "Security clearance tracking"
+          }
+        ],
+        "topic": "Risk assessment and documentation of security level",
+        "version": "2018"
+      },
+      {
+        "clause": "§6-1",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.50.8",
+            "ucTitle": "Sikkerhetsloven §6-1 — preventive control effectiveness across classified systems"
+          }
+        ],
+        "topic": "General preventive security measures",
+        "version": "2018"
+      },
+      {
+        "clause": "§6-2",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.26.5",
+            "ucTitle": "Information system accreditation evidence"
+          }
+        ],
+        "topic": "Protection of classified / security-graded information",
+        "version": "2018"
+      },
+      {
+        "clause": "§5-2",
+        "coverageState": "contributing-only",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.50.21",
+            "ucTitle": "Sikkerhetsloven §5-2 — annual internal security review activity"
+          }
+        ],
+        "topic": "Internal control and annual security review",
+        "version": "2018"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "NO"
+  ],
+  "narrative": null,
+  "narrativeRef": null,
+  "regulationId": "no-sikkerhetsloven",
+  "regulationName": "Norwegian Sikkerhetsloven (National Security Act)",
+  "regulationShortName": "NO Sikkerhetsloven",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=no-sikkerhetsloven",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#no-sikkerhetsloven",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/no-sikkerhetsloven.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

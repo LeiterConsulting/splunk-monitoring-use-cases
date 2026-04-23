@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.swift.com/myswift/customer-security-programme-csp/security-controls",
+  "clause": "6.1",
+  "clauseId": "swift-csp@CSCF v2025#6.1",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Phase-C authored UC targeting SWIFT CSP 6.1 (Malware protection). Uses continuous, production-grade Splunk telemetry to provide auditor-facing evidence; assurance level set to 'contributing' pending SME review per Phase E of the regulation-coverage plan.",
+      "category": 22,
+      "clauseUrl": "https://www.swift.com/myswift/customer-security-programme-csp/security-controls",
+      "controlObjective": "Evidence that SWIFT CSP 6.1 (Malware protection) is enforced — Splunk UC-22.50.13: SWIFT CSCF 6.1 — malware protection across the SWIFT secure zone.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.50.13' running on Endpoint detection and response (EDR), antivirus logs from the SWIFT secure zone, CSP attestation evidence., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": "Phase-C draft: SME review required before uplifting assurance from 'contributing' to 'partial' or 'full'. Confirm that the SPL captures the specific regulator expectation and that the telemetry exists in the deployment.",
+      "ucId": "22.50.13",
+      "ucTitle": "SWIFT CSCF 6.1 — malware protection across the SWIFT secure zone"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/swift-csp__CSCF%20v2025__6.1.json",
+  "gapNote": "SWIFT CSP clause 6.1 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "swift-csp",
+  "regulationName": "SWIFT Customer Security Programme",
+  "regulationShortName": "SWIFT CSP",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/swift-csp.json",
+    "regulationVersion": "/api/v1/compliance/regulations/swift-csp@CSCF%20v2025.json",
+    "story": "/api/v1/compliance/story/swift-csp.json"
+  },
+  "tier": 2,
+  "topAssurance": "contributing",
+  "topic": "Malware protection",
+  "version": "CSCF v2025"
+}

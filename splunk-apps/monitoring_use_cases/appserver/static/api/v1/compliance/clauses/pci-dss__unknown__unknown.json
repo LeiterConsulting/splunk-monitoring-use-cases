@@ -1,0 +1,83 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 3,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "unknown",
+  "clauseId": "pci-dss@unknown#unknown",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 3,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-generated from legacy markdown 'Regulations' line during the per-UC migration. Requires SME review to fill in version, clause, mode, and assurance for PCI DSS.",
+      "category": 1,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that PCI DSS unknown is enforced — Splunk UC-1.4.8: PCIe Link Width and Speed Degradation.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-1.4.8' running on lspci -vv, /sys/bus/pci/devices/*/current_link_width_speed, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "1.4.8",
+      "ucTitle": "PCIe Link Width and Speed Degradation"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-generated from legacy markdown 'Regulations' line during the per-UC migration. Requires SME review to fill in version, clause, mode, and assurance for PCI DSS.",
+      "category": 10,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that PCI DSS unknown is enforced — Splunk UC-10.12.7: PCI DSS Log Review Compliance.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-10.12.7' running on sourcetype=\"linux:audit\", firewall, IDS in tag=pci, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "10.12.7",
+      "ucTitle": "PCI DSS Log Review Compliance"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-generated from legacy markdown 'Regulations' line during the per-UC migration. Requires SME review to fill in version, clause, mode, and assurance for PCI DSS.",
+      "category": 10,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that PCI DSS unknown is enforced — Splunk UC-10.12.15: PCI Scope Validation.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-10.12.15' running on sourcetype=\"pan:traffic\", sourcetype=\"flow:netflow\", archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "10.12.15",
+      "ucTitle": "PCI Scope Validation"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/pci-dss__unknown__unknown.json",
+  "gapNote": "pci-dss clause unknown has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 3
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "pci-dss",
+  "regulationName": "pci-dss",
+  "regulationShortName": "pci-dss",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/pci-dss.json",
+    "regulationVersion": "/api/v1/compliance/regulations/pci-dss@unknown.json",
+    "story": "/api/v1/compliance/story/pci-dss.json"
+  },
+  "tier": null,
+  "topAssurance": "contributing",
+  "topic": null,
+  "version": "unknown"
+}

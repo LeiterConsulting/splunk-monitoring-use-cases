@@ -1,0 +1,35 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.isaca.org/resources/cobit",
+  "clause": "DSS05.03",
+  "clauseId": "cobit@2019#DSS05.03",
+  "coverageState": "uncovered",
+  "coveringUcCount": 0,
+  "coveringUcs": [],
+  "endpoint": "/api/v1/compliance/clauses/cobit__2019__DSS05.03.json",
+  "gapNote": "COBIT clause DSS05.03 (Manage security services — manage endpoint security) is listed in data/regulations.json as a common clause but no use case currently tags it. Candidate UCs are tracked in docs/compliance-gaps.md and api/v1/compliance/gaps.json.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {},
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "cobit",
+  "regulationName": "COBIT — Control Objectives for Information and Related Technologies",
+  "regulationShortName": "COBIT",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/cobit.json",
+    "regulationVersion": "/api/v1/compliance/regulations/cobit@2019.json",
+    "story": "/api/v1/compliance/story/cobit.json"
+  },
+  "tier": 2,
+  "topAssurance": null,
+  "topic": "Manage security services — manage endpoint security",
+  "version": "2019"
+}

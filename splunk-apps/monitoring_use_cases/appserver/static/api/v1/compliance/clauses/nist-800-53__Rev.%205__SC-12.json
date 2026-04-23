@@ -1,0 +1,68 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 1,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "SC-12",
+  "clauseId": "nist-800-53@Rev. 5#SC-12",
+  "coverageState": "covered-full",
+  "coveringUcCount": 2,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "SC-12 key establishment and management requires separation of duties.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that NIST-800-53 SC-12 is enforced — Splunk UC-22.41.5: Key custodian SoD — same identity creates AND approves a key.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.41.5' running on KMS audit logs (aws:kms, azure:keyvault, gcp:kms), HSM audit logs., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.41.5",
+      "ucTitle": "Key custodian SoD — same identity creates AND approves a key"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that NIST 800-53 SC-12 is enforced — Splunk UC-22.14.70: Cryptographic Key Management Events from Cloud KMS.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.14.70' running on aws:cloudtrail KMS events, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.14.70",
+      "ucTitle": "Cryptographic Key Management Events from Cloud KMS"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/nist-800-53__Rev.%205__SC-12.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 2
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "nist-800-53",
+  "regulationName": "nist-800-53",
+  "regulationShortName": "nist-800-53",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/nist-800-53.json",
+    "regulationVersion": "/api/v1/compliance/regulations/nist-800-53@Rev.%205.json",
+    "story": "/api/v1/compliance/story/nist-800-53.json"
+  },
+  "tier": null,
+  "topAssurance": "full",
+  "topic": null,
+  "version": "Rev. 5"
+}

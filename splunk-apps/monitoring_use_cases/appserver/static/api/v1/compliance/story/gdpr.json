@@ -1,0 +1,2780 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "Art.12",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.1.19",
+        "22.1.50",
+        "22.36.1"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.12(2)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.36.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "Art.12(6)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.36.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.13",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.50"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.14",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.50"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "Art.15",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.1.2",
+        "22.36.1"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Right of access",
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.16",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "contributing",
+      "topic": "Right to rectification",
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 2,
+        "partial": 0
+      },
+      "clause": "Art.17",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.1.11",
+        "22.1.2",
+        "22.36.2",
+        "22.49.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Right to erasure",
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "Art.17(2)",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.36.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "Art.18",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.1.16",
+        "22.1.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "partial",
+      "topic": "Right to restrict processing",
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.19",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "Art.20",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.1.2",
+        "22.36.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "full",
+      "topic": "Right to data portability",
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "Art.21",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.1.2",
+        "22.1.46"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "partial",
+      "topic": "Right to object",
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.22",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.18",
+        "22.1.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "contributing",
+      "topic": "Automated decision making",
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.25",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.9"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Data protection by design and by default",
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.25(1)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.46",
+        "22.1.48",
+        "22.1.50"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.25(2)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.45",
+        "22.1.47",
+        "22.1.49"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "Art.28",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.1.15",
+        "22.44.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Processor obligations",
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.28(2)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.28"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.28(3)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.27",
+        "22.1.30"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.28(3)(f)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.29"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.28(3)(h)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.31"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.28(4)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.28"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.30",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.43",
+        "22.1.8"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Records of processing",
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 0,
+        "partial": 3
+      },
+      "clause": "Art.32",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.1.10",
+        "22.1.41",
+        "22.1.7",
+        "22.35.2",
+        "22.35.3",
+        "22.41.1"
+      ],
+      "obligationSource": "https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e2930-1-1",
+      "obligationText": "Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate pseudonymisation and encryption of personal data; the ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services; the ability to restore availability and access to personal data in a timely manner in the event of a physical or technical incident; and a process for regularly testing, assessing and evaluating the effectiveness of technical and organisational measures for ensuring the security of the processing.",
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Security of processing",
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.32(1)(a)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.21",
+        "22.1.23"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 2
+      },
+      "clause": "Art.32(1)(b)",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.1.22",
+        "22.35.1",
+        "22.35.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.32(1)(b)(c)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.26"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.32(1)(c)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.25"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.32(1)(d)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.24"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "Art.32(4)",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.46.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 2,
+        "partial": 0
+      },
+      "clause": "Art.33",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.1.29",
+        "22.1.3",
+        "22.39.1",
+        "22.39.2",
+        "22.9.4"
+      ],
+      "obligationSource": "https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e3002-1-1",
+      "obligationText": "In the case of a personal data breach, the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority competent in accordance with Article 55, unless the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons. Where the notification to the supervisory authority is not made within 72 hours, it shall be accompanied by reasons for the delay.",
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Breach notification to supervisory authority",
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.33(1)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.39.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "Art.33(3)",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.1.12",
+        "22.39.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "Art.34",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.1.13",
+        "22.39.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Breach communication to data subjects",
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.35",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.14"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "contributing",
+      "topic": "DPIA",
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.35(7)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.32"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.35(7)(b)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.33"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.35(7)(d)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.35"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.36",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.34"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 4,
+        "full": 3,
+        "partial": 0
+      },
+      "clause": "Art.44",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.1.36",
+        "22.1.38",
+        "22.1.44",
+        "22.1.6",
+        "22.38.1",
+        "22.38.3",
+        "22.38.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "International transfers — general principle",
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 5,
+        "full": 0,
+        "partial": 2
+      },
+      "clause": "Art.45",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.1.36",
+        "22.1.38",
+        "22.1.39",
+        "22.1.44",
+        "22.1.6",
+        "22.38.2",
+        "22.38.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "partial",
+      "topic": "Transfers via adequacy decision",
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 4,
+        "full": 2,
+        "partial": 1
+      },
+      "clause": "Art.46",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.1.36",
+        "22.1.38",
+        "22.1.44",
+        "22.1.6",
+        "22.38.1",
+        "22.38.2",
+        "22.38.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "full",
+      "topic": "Transfers subject to safeguards",
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.46(2)(c)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.37"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 4,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.47",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.38",
+        "22.1.40",
+        "22.1.44",
+        "22.1.6"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.48",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.38",
+        "22.1.44",
+        "22.1.6"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 3,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.49",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.38",
+        "22.1.44",
+        "22.1.6"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 2,
+        "partial": 0
+      },
+      "clause": "Art.5",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.1.1",
+        "22.49.1",
+        "22.49.2"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "full",
+      "topic": "Principles of processing",
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "Art.5(1)(b)",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.1.48",
+        "22.37.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.5(1)(c)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.47"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 1,
+        "partial": 0
+      },
+      "clause": "Art.5(1)(e)",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.1.4",
+        "22.1.49",
+        "22.49.4"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "full",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.5(1)(f)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.10"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 4,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.5(2)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.17",
+        "22.1.41",
+        "22.1.42",
+        "22.1.43"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "Art.6",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.1.1",
+        "22.37.1"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Lawful basis",
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.6(1)(f)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.20"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 1,
+        "partial": 2
+      },
+      "clause": "Art.7",
+      "coverageState": "covered-full",
+      "coveringUcs": [
+        "22.1.46",
+        "22.1.5",
+        "22.37.1",
+        "22.37.2",
+        "22.8.39"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 0.7,
+      "topAssurance": "full",
+      "topic": "Conditions for consent",
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 0,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "Art.7(1)",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "22.37.5"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "partial",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.7(3)",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.16"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Art.72",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.1.3"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": false,
+      "priorityWeight": null,
+      "topAssurance": "contributing",
+      "topic": null,
+      "version": "2016/679"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "20 of 20 common clauses are covered by the catalogue, with a priority-weighted coverage of 70.38% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 20,
+      "coveredClauseCount": 20,
+      "priorityWeightedCoveragePercent": 70.38,
+      "stateCounts": {
+        "contributing-only": 5,
+        "covered-full": 10,
+        "covered-partial": 5,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "Art.15",
+        "killerUcId": "22.1.2",
+        "killerUcTitle": "GDPR Data Subject Access Request Fulfillment Tracking",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Right of access",
+        "version": "2016/679",
+        "why": "Clause Art.15 (Right of access) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "Art.17",
+        "killerUcId": "22.1.11",
+        "killerUcTitle": "GDPR Right to Erasure Verification",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Right to erasure",
+        "version": "2016/679",
+        "why": "Clause Art.17 (Right to erasure) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "Art.28",
+        "killerUcId": "22.1.15",
+        "killerUcTitle": "GDPR Third-Party Processor Compliance Monitoring",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Processor obligations",
+        "version": "2016/679",
+        "why": "Clause Art.28 (Processor obligations) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "Art.33",
+        "killerUcId": "22.1.29",
+        "killerUcTitle": "GDPR Processor Personal Data Breach Notification SLA",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Breach notification to supervisory authority",
+        "version": "2016/679",
+        "why": "Clause Art.33 (Breach notification to supervisory authority) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      },
+      {
+        "clause": "Art.34",
+        "killerUcId": "22.1.13",
+        "killerUcTitle": "GDPR High-Risk Breach Communication to Data Subjects",
+        "priorityWeight": 1.0,
+        "topAssurance": "full",
+        "topic": "Breach communication to data subjects",
+        "version": "2016/679",
+        "why": "Clause Art.34 (Breach communication to data subjects) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=full."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "Art.15",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.2",
+            "ucTitle": "GDPR Data Subject Access Request Fulfillment Tracking"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.36.1",
+            "ucTitle": "DSAR fulfillment SLA tracker with verification evidence trail"
+          }
+        ],
+        "topic": "Right of access",
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.17",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.2",
+            "ucTitle": "GDPR Data Subject Access Request Fulfillment Tracking"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.11",
+            "ucTitle": "GDPR Right to Erasure Verification"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.36.2",
+            "ucTitle": "Right-to-erasure propagation completeness across downstream systems"
+          }
+        ],
+        "topic": "Right to erasure",
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.25",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.9",
+            "ucTitle": "GDPR Data Protection by Design — Data Minimisation Validation"
+          }
+        ],
+        "topic": "Data protection by design and by default",
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.28",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.15",
+            "ucTitle": "GDPR Third-Party Processor Compliance Monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.44.2",
+            "ucTitle": "Subprocessor inventory change — notification SLA to data controllers"
+          }
+        ],
+        "topic": "Processor obligations",
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.30",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.8",
+            "ucTitle": "GDPR Records of Processing Activities Completeness"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.43",
+            "ucTitle": "GDPR Personal Data in Non-Approved Systems (ROPA Drift Detection)"
+          }
+        ],
+        "topic": "Records of processing",
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.32",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.7",
+            "ucTitle": "GDPR Security of Processing — Encryption and Pseudonymisation Coverage"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.10",
+            "ucTitle": "GDPR Privileged Access to Personal Data Stores"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.35.2",
+            "ucTitle": "Log tamper detection via write-once-read-many chain-of-custody"
+          }
+        ],
+        "topic": "Security of processing",
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.33",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.3",
+            "ucTitle": "GDPR Breach Notification Timeline Monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.29",
+            "ucTitle": "GDPR Processor Personal Data Breach Notification SLA"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.39.1",
+            "ucTitle": "Multi-regulator breach-notification SLA tracker (24h NIS2 / 72h GDPR / 72h HIPAA)"
+          }
+        ],
+        "topic": "Breach notification to supervisory authority",
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.34",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.13",
+            "ucTitle": "GDPR High-Risk Breach Communication to Data Subjects"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.39.3",
+            "ucTitle": "Data-subject breach communication timeline tracker (Art.34 / §164.404)"
+          }
+        ],
+        "topic": "Breach communication to data subjects",
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.44",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.6",
+            "ucTitle": "GDPR Cross-Border Data Transfer Monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.38",
+            "ucTitle": "GDPR Data Localization Enforcement for Restricted Processing"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.38.1",
+            "ucTitle": "Cross-border personal-data flow anomaly — egress to unsanctioned jurisdictions"
+          }
+        ],
+        "topic": "International transfers — general principle",
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.5",
+        "coverageState": "covered-full",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.1",
+            "ucTitle": "GDPR PII Detection in Application Log Data"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.49.1",
+            "ucTitle": "Retention execution evidence — records past retention still present"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.49.2",
+            "ucTitle": "Disposal workflow completion — failed disposals requiring manual review"
+          }
+        ],
+        "topic": "Principles of processing",
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.6",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.1",
+            "ucTitle": "GDPR PII Detection in Application Log Data"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.37.1",
+            "ucTitle": "Consent capture evidence freshness — stale-consent alerting"
+          }
+        ],
+        "topic": "Lawful basis",
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.16",
+        "coverageState": "contributing-only",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.2",
+            "ucTitle": "GDPR Data Subject Access Request Fulfillment Tracking"
+          }
+        ],
+        "topic": "Right to rectification",
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.18",
+        "coverageState": "covered-partial",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.2",
+            "ucTitle": "GDPR Data Subject Access Request Fulfillment Tracking"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.16",
+            "ucTitle": "GDPR Consent Withdrawal Processing Enforcement"
+          }
+        ],
+        "topic": "Right to restrict processing",
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.20",
+        "coverageState": "covered-full",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.2",
+            "ucTitle": "GDPR Data Subject Access Request Fulfillment Tracking"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.36.3",
+            "ucTitle": "Portability export integrity — signed manifest verification"
+          }
+        ],
+        "topic": "Right to data portability",
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.21",
+        "coverageState": "covered-partial",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.2",
+            "ucTitle": "GDPR Data Subject Access Request Fulfillment Tracking"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.46",
+            "ucTitle": "GDPR Consent Mechanism Audit (Lawful Basis Alignment)"
+          }
+        ],
+        "topic": "Right to object",
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.22",
+        "coverageState": "contributing-only",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.2",
+            "ucTitle": "GDPR Data Subject Access Request Fulfillment Tracking"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.18",
+            "ucTitle": "GDPR Automated Decision-Making and Profiling Transparency"
+          }
+        ],
+        "topic": "Automated decision making",
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.35",
+        "coverageState": "contributing-only",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.14",
+            "ucTitle": "GDPR Data Protection Impact Assessment Coverage"
+          }
+        ],
+        "topic": "DPIA",
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.45",
+        "coverageState": "covered-partial",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.6",
+            "ucTitle": "GDPR Cross-Border Data Transfer Monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.38",
+            "ucTitle": "GDPR Data Localization Enforcement for Restricted Processing"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.38.5",
+            "ucTitle": "Bulk regulated-data export targeting non-adequate jurisdiction"
+          }
+        ],
+        "topic": "Transfers via adequacy decision",
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.46",
+        "coverageState": "covered-full",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.6",
+            "ucTitle": "GDPR Cross-Border Data Transfer Monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.38",
+            "ucTitle": "GDPR Data Localization Enforcement for Restricted Processing"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.38.1",
+            "ucTitle": "Cross-border personal-data flow anomaly — egress to unsanctioned jurisdictions"
+          }
+        ],
+        "topic": "Transfers subject to safeguards",
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.7",
+        "coverageState": "covered-full",
+        "priorityWeight": 0.7,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.37.2",
+            "ucTitle": "Consent withdrawal propagation SLA — downstream stop-processing evidence"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.5",
+            "ucTitle": "GDPR Consent Management Audit Trail"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.46",
+            "ucTitle": "GDPR Consent Mechanism Audit (Lawful Basis Alignment)"
+          }
+        ],
+        "topic": "Conditions for consent",
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.12",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.19",
+            "ucTitle": "GDPR Data Subject Rights Response SLA Dashboard"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.50",
+            "ucTitle": "GDPR Transparency Notice Completeness and Version Alignment"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.36.1",
+            "ucTitle": "DSAR fulfillment SLA tracker with verification evidence trail"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.12(2)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "medium",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.36.5",
+            "ucTitle": "DSAR request-type mix anomaly — zero-deletion skew indicating broken workflow"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.12(6)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.36.4",
+            "ucTitle": "DSAR identity-verification friction — failed-verification anomaly"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.13",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.50",
+            "ucTitle": "GDPR Transparency Notice Completeness and Version Alignment"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.14",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.50",
+            "ucTitle": "GDPR Transparency Notice Completeness and Version Alignment"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.17(2)",
+        "coverageState": "covered-partial",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.36.2",
+            "ucTitle": "Right-to-erasure propagation completeness across downstream systems"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.19",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.2",
+            "ucTitle": "GDPR Data Subject Access Request Fulfillment Tracking"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.25(1)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.46",
+            "ucTitle": "GDPR Consent Mechanism Audit (Lawful Basis Alignment)"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.48",
+            "ucTitle": "GDPR Purpose Limitation Enforcement Across Systems"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.50",
+            "ucTitle": "GDPR Transparency Notice Completeness and Version Alignment"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.25(2)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.45",
+            "ucTitle": "GDPR Privacy Settings Default Validation (Privacy by Design / Default)"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.47",
+            "ucTitle": "GDPR Data Minimisation Compliance in Logs and APIs"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.49",
+            "ucTitle": "GDPR Storage Limitation Automation Evidence"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.28(2)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.28",
+            "ucTitle": "GDPR Sub-Processor Change Monitoring"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.28(3)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.27",
+            "ucTitle": "GDPR Processor Compliance Attestation Tracking"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.30",
+            "ucTitle": "GDPR Data Processing Agreement Obligation Control Matrix"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.28(3)(f)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.29",
+            "ucTitle": "GDPR Processor Personal Data Breach Notification SLA"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.28(3)(h)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.31",
+            "ucTitle": "GDPR Processor Audit Evidence — Right to Audit and Inspection Logs"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.28(4)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.28",
+            "ucTitle": "GDPR Sub-Processor Change Monitoring"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.32(1)(a)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.21",
+            "ucTitle": "GDPR Encryption at Rest Audit Evidence"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.23",
+            "ucTitle": "GDPR Pseudonymisation Validation in Pipelines and Logs"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.32(1)(b)",
+        "coverageState": "covered-partial",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.35.1",
+            "ucTitle": "Audit-log continuity: detect indexing gap indicating lost evidence"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.35.4",
+            "ucTitle": "Log signing chain integrity — cryptographic signature drift on evidence archive"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.22",
+            "ucTitle": "GDPR Access Control Review and Privileged Access Evidence"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.32(1)(b)(c)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.26",
+            "ucTitle": "GDPR Resilience and Availability Monitoring for Personal-Data Services"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.32(1)(c)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.25",
+            "ucTitle": "GDPR Security Incident Tracking Linked to Personal Data Impact"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.32(1)(d)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.24",
+            "ucTitle": "GDPR Security Testing Evidence Aggregation (Pen Test / Red Team)"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.32(4)",
+        "coverageState": "covered-partial",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.46.5",
+            "ucTitle": "Developer data-handling training — prod-access engineers lacking training"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.33(1)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.39.5",
+            "ucTitle": "Regulator-portal authentication failure during submission window"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.33(3)",
+        "coverageState": "covered-partial",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.12",
+            "ucTitle": "GDPR Breach Scope and Affected Data Subject Quantification"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.39.4",
+            "ucTitle": "Cross-regulator consistency — divergent material facts across submissions"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.35(7)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.32",
+            "ucTitle": "GDPR DPIA Completion Tracking Against High-Risk Processing"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.35(7)(b)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.33",
+            "ucTitle": "GDPR DPIA Residual Risk Scoring and Escalation"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.35(7)(d)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.35",
+            "ucTitle": "GDPR DPIA Remediation Monitoring and Mitigation Closure"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.36",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.34",
+            "ucTitle": "GDPR DPIA Supervisory Authority Consultation Tracking"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.46(2)(c)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.37",
+            "ucTitle": "GDPR Standard Contractual Clauses (SCCs) Compliance Tracking"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.47",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.6",
+            "ucTitle": "GDPR Cross-Border Data Transfer Monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.38",
+            "ucTitle": "GDPR Data Localization Enforcement for Restricted Processing"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.40",
+            "ucTitle": "GDPR Binding Corporate Rules (BCR) Evidence and Intra-Group Transfer Monitoring"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.48",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.6",
+            "ucTitle": "GDPR Cross-Border Data Transfer Monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.38",
+            "ucTitle": "GDPR Data Localization Enforcement for Restricted Processing"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.44",
+            "ucTitle": "GDPR Cross-Border Personal Data Flow Anomaly Detection"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.49",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.6",
+            "ucTitle": "GDPR Cross-Border Data Transfer Monitoring"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.38",
+            "ucTitle": "GDPR Data Localization Enforcement for Restricted Processing"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.44",
+            "ucTitle": "GDPR Cross-Border Personal Data Flow Anomaly Detection"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.5(1)(b)",
+        "coverageState": "covered-partial",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.48",
+            "ucTitle": "GDPR Purpose Limitation Enforcement Across Systems"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.37.4",
+            "ucTitle": "Purpose-limitation enforcement — processing not matching declared purpose"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.5(1)(c)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.47",
+            "ucTitle": "GDPR Data Minimisation Compliance in Logs and APIs"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.5(1)(e)",
+        "coverageState": "covered-full",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.4",
+            "ucTitle": "GDPR Data Retention Policy Enforcement"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.49",
+            "ucTitle": "GDPR Storage Limitation Automation Evidence"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.49.4",
+            "ucTitle": "Retention policy drift — system config vs policy catalogue"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.5(1)(f)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.10",
+            "ucTitle": "GDPR Privileged Access to Personal Data Stores"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.5(2)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.17",
+            "ucTitle": "GDPR Audit Log Integrity and Tamper Protection"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.41",
+            "ucTitle": "GDPR Unauthorized Cloud Service Detection (Shadow SaaS)"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.42",
+            "ucTitle": "GDPR Shadow IT Personal Data Processing Indicators"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.6(1)(f)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.20",
+            "ucTitle": "GDPR Legitimate Interest Balancing Test Evidence"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.7(1)",
+        "coverageState": "covered-partial",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.37.5",
+            "ucTitle": "IAB TCF consent string mutation without user interaction"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.7(3)",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.16",
+            "ucTitle": "GDPR Consent Withdrawal Processing Enforcement"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      },
+      {
+        "clause": "Art.72",
+        "coverageState": "contributing-only",
+        "priorityWeight": null,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.1.3",
+            "ucTitle": "GDPR Breach Notification Timeline Monitoring"
+          }
+        ],
+        "topic": null,
+        "version": "2016/679"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "EEA",
+    "EU"
+  ],
+  "narrative": {
+    "evidencePack": "docs/evidence-packs/gdpr.md",
+    "matchedBy": "manual-map",
+    "name": "GDPR compliance",
+    "primer": "docs/regulatory-primer.md#41-gdpr--general-data-protection-regulation-eueea--t1",
+    "splunkValue": "We watch where personal data lives, detect breaches that trigger the 72-hour notification clock, capture evidence that access / deletion / portability requests were handled on time, and flag cross-border transfers that lack a current legal agreement — so an EU DPA can be answered with live data, not PowerPoint.",
+    "whatItIs": "The EU privacy law that protects personal data about anyone in Europe. It sets rules for how companies collect, store, share, and delete that data — and gives people the right to see, correct, or remove what is held about them.",
+    "whoItAffects": "Any organisation that holds or processes personal data about people in the EU or EEA, no matter where the organisation itself is based. Small businesses are covered too, not just large enterprises."
+  },
+  "narrativeRef": "non-technical-view.js#cat-22/area/gdpr-compliance",
+  "regulationId": "gdpr",
+  "regulationName": "General Data Protection Regulation",
+  "regulationShortName": "GDPR",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=gdpr",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#gdpr",
+    "evidencePack": "docs/evidence-packs/gdpr.md",
+    "primerAnchor": "docs/regulatory-primer.md#41-gdpr-general-data-protection-regulation-eueea-t1",
+    "regulation": "/api/v1/compliance/regulations/gdpr.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 1
+}

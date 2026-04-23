@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "§1798.100(b)",
+  "clauseId": "ccpa@CPRA (as amended)#§1798.100(b)",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "CPRA §1798.100(b) requires use limitation to disclosed purposes; a mismatch is direct evidence of a deficiency.",
+      "category": 22,
+      "clauseUrl": null,
+      "controlObjective": "Evidence that CCPA §1798.100(b) is enforced — Splunk UC-22.37.4: Purpose-limitation enforcement — processing not matching declared purpose.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.37.4' running on Application audit logs carrying the purpose-bearing access token, system-purpose catalogue in purpose_catalogue.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.37.4",
+      "ucTitle": "Purpose-limitation enforcement — processing not matching declared purpose"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/ccpa__CPRA%20%28as%20amended%29__%C2%A71798.100%28b%29.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "ccpa",
+  "regulationName": "ccpa",
+  "regulationShortName": "ccpa",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/ccpa.json",
+    "regulationVersion": "/api/v1/compliance/regulations/ccpa@CPRA%20%28as%20amended%29.json",
+    "story": "/api/v1/compliance/story/ccpa.json"
+  },
+  "tier": null,
+  "topAssurance": "partial",
+  "topic": null,
+  "version": "CPRA (as amended)"
+}

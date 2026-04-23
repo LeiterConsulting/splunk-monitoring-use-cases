@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 1,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://listings.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf#clause=10.6",
+  "clause": "10.6",
+  "clauseId": "pci-dss@v3.2.1#10.6",
+  "coverageState": "covered-full",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "PCI-DSS v3.2.1 10.6 Log review — UC is the daily log-review workflow SLA tracker, producing the review-evidence artefact required by the v3.2.1 control.",
+      "category": 22,
+      "clauseUrl": "https://listings.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf",
+      "controlObjective": "Evidence that PCI-DSS 10.6 (Log review) is enforced — Splunk UC-22.11.63: Daily Log Review Workflow — PCI Queue Ticket Closure SLA.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.11.63' running on notable filtered by rule_name like PCI* or tag=\"pci\"; fields status, closed_time, _time, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.11.63",
+      "ucTitle": "Daily Log Review Workflow — PCI Queue Ticket Closure SLA"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/pci-dss__v3.2.1__10.6.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "pci-dss",
+  "regulationName": "Payment Card Industry Data Security Standard",
+  "regulationShortName": "PCI DSS",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/pci-dss.json",
+    "regulationVersion": "/api/v1/compliance/regulations/pci-dss@v3.2.1.json",
+    "story": "/api/v1/compliance/story/pci-dss.json"
+  },
+  "tier": 1,
+  "topAssurance": "full",
+  "topic": "Log review",
+  "version": "v3.2.1"
+}

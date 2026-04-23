@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#/control?version=5.1&number=PT-3",
+  "clause": "PT-3",
+  "clauseId": "nist-800-53@Rev. 5#PT-3",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "NIST 800-53 Rev. 5 PT-3 Personally Identifiable Information Processing Purposes — UC enforces purpose-limitation across systems, providing the evidence that processing stays within declared purposes.",
+      "category": 22,
+      "clauseUrl": "https://doi.org/10.6028/NIST.SP.800-53r5",
+      "controlObjective": "Evidence that NIST 800-53 PT-3 (Personally identifiable information processing purposes) is enforced — Splunk UC-22.1.48: GDPR Purpose Limitation Enforcement Across Systems.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.1.48' running on gdpr_integration_purpose_map.csv, CIM Network_Traffic, DLP policy labels, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.1.48",
+      "ucTitle": "GDPR Purpose Limitation Enforcement Across Systems"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/nist-800-53__Rev.%205__PT-3.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 0.7,
+  "regulationId": "nist-800-53",
+  "regulationName": "NIST SP 800-53 Rev. 5",
+  "regulationShortName": "NIST 800-53",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/nist-800-53.json",
+    "regulationVersion": "/api/v1/compliance/regulations/nist-800-53@Rev.%205.json",
+    "story": "/api/v1/compliance/story/nist-800-53.json"
+  },
+  "tier": 1,
+  "topAssurance": "partial",
+  "topic": "Personally identifiable information processing purposes",
+  "version": "Rev. 5"
+}

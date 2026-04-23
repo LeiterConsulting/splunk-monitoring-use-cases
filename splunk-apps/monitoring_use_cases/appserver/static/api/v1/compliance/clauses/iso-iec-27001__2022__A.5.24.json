@@ -1,0 +1,83 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 2,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "A.5.24",
+  "clauseId": "iso-iec-27001@2022#A.5.24",
+  "coverageState": "covered-full",
+  "coveringUcCount": 3,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "ISO/IEC 27001:2022 A.5.24 Information security incident management planning and preparation — directly evidenced.",
+      "category": 22,
+      "clauseUrl": "https://www.iso.org/standard/27001",
+      "controlObjective": "Evidence that ISO/IEC 27001 A.5.24 (Incident management planning) is enforced — Splunk UC-22.3.44: DORA Art.17 — ICT incident classification timeliness: major-incident clock evidence.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.3.44' running on sourcetype servicenow:sir_incident and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.3.44",
+      "ucTitle": "DORA Art.17 — ICT incident classification timeliness: major-incident clock evidence"
+    },
+    {
+      "assurance": "full",
+      "assuranceRationale": "A.5.24 Information security incident-management planning and preparation — runbook recency is a direct prerequisite.",
+      "category": 22,
+      "clauseUrl": "https://www.iso.org/standard/27001",
+      "controlObjective": "Evidence that ISO/IEC 27001 A.5.24 (Incident management planning) is enforced — Splunk UC-22.6.51: ISO/IEC 27001:2022 Annex A.5.24 — Incident-management planning: runbook currency attestation.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.6.51' running on index=soar sourcetype=phantom:playbook OR sourcetype=runbook:metadata; runbook register lookup ir_runbook_register.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.6.51",
+      "ucTitle": "ISO/IEC 27001:2022 Annex A.5.24 — Incident-management planning: runbook currency attestation"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "ISO/IEC 27001:2022 A.5.24 Incident management planning — contributing.",
+      "category": 22,
+      "clauseUrl": "https://www.iso.org/standard/27001",
+      "controlObjective": "Evidence that ISO/IEC 27001 A.5.24 (Incident management planning) is enforced — Splunk UC-22.11.105: PCI-DSS 12.10 — Incident response: IR readiness — playbook exercise evidence.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.11.105' running on index=testing sourcetype=ir:drill; playbook register ir_playbook_register.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.11.105",
+      "ucTitle": "PCI-DSS 12.10 — Incident response: IR readiness — playbook exercise evidence"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/iso-iec-27001__2022__A.5.24.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 3
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "iso-iec-27001",
+  "regulationName": "iso-iec-27001",
+  "regulationShortName": "iso-iec-27001",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/iso-iec-27001.json",
+    "regulationVersion": "/api/v1/compliance/regulations/iso-iec-27001@2022.json",
+    "story": "/api/v1/compliance/story/iso-iec-27001.json"
+  },
+  "tier": null,
+  "topAssurance": "full",
+  "topic": null,
+  "version": "2022"
+}

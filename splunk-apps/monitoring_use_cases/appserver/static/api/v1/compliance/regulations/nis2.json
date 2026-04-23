@@ -1,0 +1,627 @@
+{
+  "aliases": [
+    "Directive (EU) 2022/2555",
+    "EU NIS2",
+    "NIS2"
+  ],
+  "apiVersion": "v1",
+  "id": "nis2",
+  "jurisdiction": [
+    "EU"
+  ],
+  "name": "EU NIS2 Directive",
+  "shortName": "NIS2",
+  "tags": [
+    "critical-infrastructure",
+    "supply-chain"
+  ],
+  "tier": 1,
+  "versions": [
+    {
+      "authoritativeUrl": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 3,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.20",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.2.20",
+            "22.2.41",
+            "22.2.42"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Governance"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 5,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.21(2)(a)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.2.18",
+            "22.2.26",
+            "22.2.36",
+            "22.2.37",
+            "22.2.6"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Risk analysis and information-system security policies"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "Art.21(2)(b)",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.2.23",
+            "22.46.4"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Incident handling"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 4,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "Art.21(2)(c)",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.2.17",
+            "22.2.24",
+            "22.2.4",
+            "22.2.40",
+            "22.45.5"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Business continuity and crisis management"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 3,
+            "full": 1,
+            "partial": 4
+          },
+          "clause": "Art.21(2)(d)",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.2.16",
+            "22.2.2",
+            "22.2.25",
+            "22.3.42",
+            "22.43.5",
+            "22.44.1",
+            "22.44.4",
+            "22.44.5"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "full",
+          "topic": "Supply-chain security"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 4,
+            "full": 1,
+            "partial": 1
+          },
+          "clause": "Art.21(2)(e)",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.2.15",
+            "22.2.27",
+            "22.2.3",
+            "22.2.38",
+            "22.43.1",
+            "22.43.3"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "full",
+          "topic": "Security in acquisition, development and maintenance"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 3,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.21(2)(f)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.2.39",
+            "22.2.43",
+            "22.2.9"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "contributing",
+          "topic": "Policies and procedures effectiveness"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 2,
+            "full": 1,
+            "partial": 1
+          },
+          "clause": "Art.21(2)(g)",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.2.10",
+            "22.2.28",
+            "22.46.1",
+            "22.46.2"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "full",
+          "topic": "Cyber-hygiene and training"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 2,
+            "full": 1,
+            "partial": 0
+          },
+          "clause": "Art.21(2)(h)",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.2.11",
+            "22.2.29",
+            "22.41.2"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "full",
+          "topic": "Cryptography and encryption"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 4,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.21(2)(i)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.2.13",
+            "22.2.14",
+            "22.2.30",
+            "22.2.5"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Human resources and access control"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.21(2)(j)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.2.12"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "MFA and secure communications"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 4,
+            "full": 3,
+            "partial": 0
+          },
+          "clause": "Art.23",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.2.1",
+            "22.2.33",
+            "22.2.45",
+            "22.3.44",
+            "22.39.1",
+            "22.39.2",
+            "22.9.4"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "full",
+          "topic": "Reporting obligations"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.14",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.2.44"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.2(1)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.2.31"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 3,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.21(2)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.2.21",
+            "22.2.22",
+            "22.2.32"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.23(1)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.39.5"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.23(2)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.2.7"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 2,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.23(3)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.2.19",
+            "22.2.34"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "Art.23(4)",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.2.8",
+            "22.39.4"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "partial",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.32",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.2.35"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.33",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.2.35"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        }
+      ],
+      "clauseExamples": [
+        "Art.21(2)(a)",
+        "Art.21(2)(h)",
+        "Art.23"
+      ],
+      "clauseGrammar": "^Art\\.\\d+(\\(\\d+\\)(\\([a-z]\\))?)?$",
+      "clauseUrlTemplate": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj#{clause}",
+      "clausesReferencedByCatalogue": [
+        "Art.14",
+        "Art.2(1)",
+        "Art.20",
+        "Art.21(2)",
+        "Art.21(2)(a)",
+        "Art.21(2)(b)",
+        "Art.21(2)(c)",
+        "Art.21(2)(d)",
+        "Art.21(2)(e)",
+        "Art.21(2)(f)",
+        "Art.21(2)(g)",
+        "Art.21(2)(h)",
+        "Art.21(2)(i)",
+        "Art.21(2)(j)",
+        "Art.23",
+        "Art.23(1)",
+        "Art.23(2)",
+        "Art.23(3)",
+        "Art.23(4)",
+        "Art.32",
+        "Art.33"
+      ],
+      "commonClauses": [
+        {
+          "clause": "Art.20",
+          "priorityWeight": 1.0,
+          "topic": "Governance"
+        },
+        {
+          "clause": "Art.21(2)(a)",
+          "priorityWeight": 1.0,
+          "topic": "Risk analysis and information-system security policies"
+        },
+        {
+          "clause": "Art.21(2)(b)",
+          "priorityWeight": 1.0,
+          "topic": "Incident handling"
+        },
+        {
+          "clause": "Art.21(2)(c)",
+          "priorityWeight": 1.0,
+          "topic": "Business continuity and crisis management"
+        },
+        {
+          "clause": "Art.21(2)(d)",
+          "priorityWeight": 1.0,
+          "topic": "Supply-chain security"
+        },
+        {
+          "clause": "Art.21(2)(e)",
+          "priorityWeight": 1.0,
+          "topic": "Security in acquisition, development and maintenance"
+        },
+        {
+          "clause": "Art.21(2)(f)",
+          "priorityWeight": 0.7,
+          "topic": "Policies and procedures effectiveness"
+        },
+        {
+          "clause": "Art.21(2)(g)",
+          "priorityWeight": 0.7,
+          "topic": "Cyber-hygiene and training"
+        },
+        {
+          "clause": "Art.21(2)(h)",
+          "priorityWeight": 1.0,
+          "topic": "Cryptography and encryption"
+        },
+        {
+          "clause": "Art.21(2)(i)",
+          "priorityWeight": 1.0,
+          "topic": "Human resources and access control"
+        },
+        {
+          "clause": "Art.21(2)(j)",
+          "priorityWeight": 1.0,
+          "topic": "MFA and secure communications"
+        },
+        {
+          "clause": "Art.23",
+          "priorityWeight": 1.0,
+          "topic": "Reporting obligations"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 100.0,
+        "commonClauseCount": 12,
+        "coveredClauseCount": 12,
+        "offCommonListClauseCount": 9,
+        "priorityWeightedCoveragePercent": 60.31,
+        "stateCounts": {
+          "contributing-only": 5,
+          "covered-full": 5,
+          "covered-partial": 2,
+          "uncovered": 0
+        }
+      },
+      "effectiveFrom": "2024-10-17",
+      "endpoint": "/api/v1/compliance/regulations/nis2@Directive--EU--2022-2555.json",
+      "pendingChanges": [
+        {
+          "date": "2024-10-17",
+          "note": "Member-state transposition deadline; some national laws still in draft."
+        }
+      ],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [
+        "22.2.1",
+        "22.2.10",
+        "22.2.11",
+        "22.2.12",
+        "22.2.13",
+        "22.2.14",
+        "22.2.15",
+        "22.2.16",
+        "22.2.17",
+        "22.2.18",
+        "22.2.19",
+        "22.2.2",
+        "22.2.20",
+        "22.2.21",
+        "22.2.22",
+        "22.2.23",
+        "22.2.24",
+        "22.2.25",
+        "22.2.26",
+        "22.2.27",
+        "22.2.28",
+        "22.2.29",
+        "22.2.3",
+        "22.2.30",
+        "22.2.31",
+        "22.2.32",
+        "22.2.33",
+        "22.2.34",
+        "22.2.35",
+        "22.2.36",
+        "22.2.37",
+        "22.2.38",
+        "22.2.39",
+        "22.2.4",
+        "22.2.40",
+        "22.2.41",
+        "22.2.42",
+        "22.2.43",
+        "22.2.44",
+        "22.2.45",
+        "22.2.5",
+        "22.2.6",
+        "22.2.7",
+        "22.2.8",
+        "22.2.9",
+        "22.3.42",
+        "22.3.44",
+        "22.39.1",
+        "22.39.2",
+        "22.39.4",
+        "22.39.5",
+        "22.41.2",
+        "22.43.1",
+        "22.43.3",
+        "22.43.5",
+        "22.44.1",
+        "22.44.4",
+        "22.44.5",
+        "22.45.5",
+        "22.46.1",
+        "22.46.2",
+        "22.46.4",
+        "22.9.4"
+      ],
+      "version": "Directive (EU) 2022/2555"
+    }
+  ]
+}

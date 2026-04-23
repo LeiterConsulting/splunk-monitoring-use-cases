@@ -1,0 +1,138 @@
+{
+  "aliases": [
+    "FCA SM&CR",
+    "SM&CR"
+  ],
+  "apiVersion": "v1",
+  "id": "fca-smcr",
+  "jurisdiction": [
+    "UK"
+  ],
+  "name": "FCA Senior Managers and Certification Regime",
+  "shortName": "FCA SM&CR",
+  "tags": [
+    "financial",
+    "governance"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://www.fca.org.uk/firms/senior-managers-certification-regime",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "COCON 2",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Individual Conduct Rules (including acting with integrity/due care)"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "SMR 1",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Senior Management Functions, Statements of Responsibilities"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "SYSC 3.2",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Internal controls, systems and audit arrangements"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "SYSC 4.1",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": null,
+          "topic": "General organisational requirements"
+        }
+      ],
+      "clauseExamples": [
+        "SMR 1",
+        "SYSC 3.2",
+        "COCON 2"
+      ],
+      "clauseGrammar": "^(SMR|SYSC|COCON)\\s?\\d+(\\.\\d+)?$",
+      "clauseUrlTemplate": null,
+      "clausesReferencedByCatalogue": [],
+      "commonClauses": [
+        {
+          "clause": "SMR 1",
+          "priorityWeight": 1.0,
+          "topic": "Senior Management Functions, Statements of Responsibilities"
+        },
+        {
+          "clause": "SYSC 3.2",
+          "priorityWeight": 1.0,
+          "topic": "Internal controls, systems and audit arrangements"
+        },
+        {
+          "clause": "COCON 2",
+          "priorityWeight": 1.0,
+          "topic": "Individual Conduct Rules (including acting with integrity/due care)"
+        },
+        {
+          "clause": "SYSC 4.1",
+          "priorityWeight": 0.7,
+          "topic": "General organisational requirements"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 0.0,
+        "commonClauseCount": 4,
+        "coveredClauseCount": 0,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 0.0,
+        "stateCounts": {
+          "contributing-only": 0,
+          "covered-full": 0,
+          "covered-partial": 0,
+          "uncovered": 4
+        }
+      },
+      "effectiveFrom": "2016-03-07",
+      "endpoint": "/api/v1/compliance/regulations/fca-smcr@current.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [],
+      "version": "current"
+    }
+  ]
+}

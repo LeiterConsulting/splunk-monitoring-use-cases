@@ -1,0 +1,119 @@
+{
+  "aliases": [
+    "SAMA CSF"
+  ],
+  "apiVersion": "v1",
+  "id": "sama-csf",
+  "jurisdiction": [
+    "SA"
+  ],
+  "name": "SAMA Cyber Security Framework",
+  "shortName": "SAMA CSF",
+  "tags": [
+    "financial"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://www.sama.gov.sa/en-US/Laws/BankingRules/SAMA%20Cyber%20Security%20Framework.pdf",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 4,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "3.1.1",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.33.10",
+            "22.33.6",
+            "22.33.8",
+            "22.33.9"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Cyber security governance"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 3,
+            "full": 0,
+            "partial": 3
+          },
+          "clause": "3.3.5",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "1.1.76",
+            "12.1.4",
+            "17.2.2",
+            "22.33.7",
+            "4.1.1",
+            "9.4.1"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Security monitoring"
+        }
+      ],
+      "clauseExamples": [
+        "3.1.1",
+        "4.2.1.1"
+      ],
+      "clauseGrammar": "^\\d+(\\.\\d+){0,3}$",
+      "clauseUrlTemplate": null,
+      "clausesReferencedByCatalogue": [
+        "3.1.1",
+        "3.3.5"
+      ],
+      "commonClauses": [
+        {
+          "clause": "3.1.1",
+          "priorityWeight": 1.0,
+          "topic": "Cyber security governance"
+        },
+        {
+          "clause": "3.3.5",
+          "priorityWeight": 1.0,
+          "topic": "Security monitoring"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 100.0,
+        "commonClauseCount": 2,
+        "coveredClauseCount": 2,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 37.5,
+        "stateCounts": {
+          "contributing-only": 1,
+          "covered-full": 0,
+          "covered-partial": 1,
+          "uncovered": 0
+        }
+      },
+      "effectiveFrom": "2017-05-01",
+      "endpoint": "/api/v1/compliance/regulations/sama-csf@v1.0--2017-.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [
+        "1.1.76",
+        "12.1.4",
+        "17.2.2",
+        "22.33.10",
+        "22.33.6",
+        "22.33.7",
+        "22.33.8",
+        "22.33.9",
+        "4.1.1",
+        "9.4.1"
+      ],
+      "version": "v1.0 (2017)"
+    }
+  ]
+}

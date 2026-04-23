@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/16.2.12.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/16.2.12.json",
+    "sourcePath": "content/cat-16-service-management-itsm/UC-16.2.12.json"
+  },
+  "apiVersion": "v1",
+  "app": "SCCM, Flexera, ServiceNow SAM",
+  "cimModels": [
+    "N/A"
+  ],
+  "criticality": "medium",
+  "dataSources": "`sourcetype=sam:install`, `sourcetype=snow:alm_license`",
+  "description": "Measures install counts vs license entitlements for major publishers — SAM compliance for audits.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: SCCM, Flexera, ServiceNow SAM.\n• Ensure the following data sources are available: `sourcetype=sam:install`, `sourcetype=snow:alm_license`.\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\nNormalize product SKUs. Join installs to entitlement table. Alert when `over_deployed>0` or compliance below policy. Refresh entitlements monthly.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=sam sourcetype=\"sam:install\" product_name=\"Microsoft*Visio*\"\n| stats dc(host) as deployed by product_name\n| join max=1 product_name [ search index=itsm sourcetype=\"snow:alm_license\" | stats sum(entitlement) as entitled by product_name ]\n| eval compliance_pct=if(entitled>0, round(min(deployed,entitled)/entitled*100, 1), null())\n| eval over_deployed=if(deployed>entitled, deployed-entitled, 0)\n| table product_name, deployed, entitled, compliance_pct, over_deployed\n```\n\nUnderstanding this SPL\n\n**Software Asset Management Compliance** — Measures install counts vs license entitlements for major publishers — SAM compliance for audits.\n\nDocumented **Data sources**: `sourcetype=sam:install`, `sourcetype=snow:alm_license`. **App/TA** (typical add-on context): SCCM, Flexera, ServiceNow SAM. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: sam; **sourcetype**: sam:install. That sourcetype matches what this use case lists under Data sources.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=sam, sourcetype=\"sam:install\". Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• `stats` rolls up events into metrics; results are split **by product_name** so each row reflects one combination of those dimensions (useful for per-host, per-user, or per-entity comparisons for this use case).\n• Joins to a subsearch with `join` — set `max=` to match cardinality and avoid silent truncation.\n• `eval` defines or adjusts **compliance_pct** — often to normalize units, derive a ratio, or prepare for thresholds.\n• `eval` defines or adjusts **over_deployed** — often to normalize units, derive a ratio, or prepare for thresholds.\n• Pipeline stage (see **Software Asset Management Compliance**): table product_name, deployed, entitled, compliance_pct, over_deployed\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Table (SKU compliance), Single value (non-compliant SKUs), Bar chart (overage).",
+  "difficulty": "intermediate",
+  "equipment": [
+    "servicenow"
+  ],
+  "grandmaExplanation": "Measures install counts vs license entitlements for major publishers — SAM compliance for audits — so tickets, changes, and incidents are on track and nothing is silently missed.",
+  "id": "16.2.12",
+  "implementation": "Normalize product SKUs. Join installs to entitlement table. Alert when `over_deployed>0` or compliance below policy. Refresh entitlements monthly.",
+  "monitoringType": [
+    "Compliance"
+  ],
+  "references": [
+    {
+      "title": "Splunk Lantern — use case library",
+      "url": "https://lantern.splunk.com/"
+    }
+  ],
+  "spl": "index=sam sourcetype=\"sam:install\" product_name=\"Microsoft*Visio*\"\n| stats dc(host) as deployed by product_name\n| join max=1 product_name [ search index=itsm sourcetype=\"snow:alm_license\" | stats sum(entitlement) as entitled by product_name ]\n| eval compliance_pct=if(entitled>0, round(min(deployed,entitled)/entitled*100, 1), null())\n| eval over_deployed=if(deployed>entitled, deployed-entitled, 0)\n| table product_name, deployed, entitled, compliance_pct, over_deployed",
+  "splunkPillar": "Observability",
+  "title": "Software Asset Management Compliance",
+  "value": "Measures install counts vs license entitlements for major publishers — SAM compliance for audits.",
+  "visualization": "Table (SKU compliance), Single value (non-compliant SKUs), Bar chart (overage)."
+}

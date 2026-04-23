@@ -1,0 +1,68 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 0,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.fca.org.uk/publication/policy/ps21-3.pdf",
+  "clause": "§2.1",
+  "clauseId": "fca-ss1-21@2021#§2.1",
+  "coverageState": "covered-partial",
+  "coveringUcCount": 2,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "FCA SS1/21 §2.1 Set impact tolerances — RPO/RTO tracking is one of the measurable impact-tolerance indicators FCA supervisors evaluate.",
+      "category": 6,
+      "clauseUrl": "https://www.fca.org.uk/publication/policy/ps21-3.pdf",
+      "controlObjective": "Evidence that FCA SS1/21 §2.1 (Set impact tolerances) is enforced — Splunk UC-6.3.13: Backup RPO and RTO Compliance.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-6.3.13' running on Last successful backup time, last restore test duration, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "6.3.13",
+      "ucTitle": "Backup RPO and RTO Compliance"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'FCA operational resilience' → '§2.1'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.fca.org.uk/publication/policy/ps21-3.pdf",
+      "controlObjective": "Evidence that FCA SS1/21 §2.1 (Set impact tolerances) is enforced — Splunk UC-22.27.12: Impact tolerance testing evidence.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.27.12' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.27.12",
+      "ucTitle": "Impact tolerance testing evidence"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/fca-ss1-21__2021__%C2%A72.1.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 2
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "fca-ss1-21",
+  "regulationName": "FCA SS1/21 Operational Resilience",
+  "regulationShortName": "FCA SS1/21",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/fca-ss1-21.json",
+    "regulationVersion": "/api/v1/compliance/regulations/fca-ss1-21@2021.json",
+    "story": "/api/v1/compliance/story/fca-ss1-21.json"
+  },
+  "tier": 2,
+  "topAssurance": "partial",
+  "topic": "Set impact tolerances",
+  "version": "2021"
+}

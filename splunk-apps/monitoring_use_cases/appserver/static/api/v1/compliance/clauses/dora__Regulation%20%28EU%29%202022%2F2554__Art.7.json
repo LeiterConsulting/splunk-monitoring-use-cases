@@ -1,0 +1,83 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 1,
+    "partial": 1,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj#Art.7",
+  "clause": "Art.7",
+  "clauseId": "dora@Regulation (EU) 2022/2554#Art.7",
+  "coverageState": "covered-full",
+  "coveringUcCount": 3,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "Art.7 requires ICT systems, protocols and tools to be 'reliable' and 'technologically up to date' with an up-to-date inventory; an unmanaged host attached to payments is the direct failure mode this UC detects.",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj",
+      "controlObjective": "Evidence that DORA Art.7 (ICT systems, protocols and tools) is enforced — Splunk UC-22.3.42: DORA Art.7 — ICT systems inventory completeness: unmanaged endpoints attached to financial services.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.3.42' running on sourcetype WinEventLog:Security and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.3.42",
+      "ucTitle": "DORA Art.7 — ICT systems inventory completeness: unmanaged endpoints attached to financial services"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "DORA Art.7 — contributing.",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj",
+      "controlObjective": "Evidence that DORA Art.7 (ICT systems, protocols and tools) is enforced — Splunk UC-22.8.32: SOC 2 CC6.7 — System boundary & data-transmission control: unapproved egress destinations.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.8.32' running on sourcetype pan:traffic and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.8.32",
+      "ucTitle": "SOC 2 CC6.7 — System boundary & data-transmission control: unapproved egress destinations"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'Art.5-16' → 'Art.7'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj#Art.7",
+      "controlObjective": "Evidence that DORA Art.7 (ICT systems, protocols and tools) is enforced — Splunk UC-22.3.1: DORA ICT Risk Management Dashboard.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.3.1' running on index=risk sourcetype=\"stash\" (risk_object, risk_object_type, risk_score, source, _time), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.3.1",
+      "ucTitle": "DORA ICT Risk Management Dashboard"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/dora__Regulation%20%28EU%29%202022%2F2554__Art.7.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 3
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "dora",
+  "regulationName": "EU Digital Operational Resilience Act",
+  "regulationShortName": "DORA",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/dora.json",
+    "regulationVersion": "/api/v1/compliance/regulations/dora@Regulation%20%28EU%29%202022%2F2554.json",
+    "story": "/api/v1/compliance/story/dora.json"
+  },
+  "tier": 1,
+  "topAssurance": "full",
+  "topic": "ICT systems, protocols and tools",
+  "version": "Regulation (EU) 2022/2554"
+}

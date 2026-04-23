@@ -11,6 +11,8 @@ __pycache__/
 .venv-feasibility/
 venv/
 env/
+.env
+
 
 # IDE / editor
 .idea/

@@ -1,0 +1,98 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 4,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards#SR%201.1",
+  "clause": "SR 1.1",
+  "clauseId": "iec-62443@2013-ongoing#SR 1.1",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 4,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards#SR%201.1",
+      "controlObjective": "Evidence that IEC 62443 SR 1.1 (Human user identification and authentication) is enforced — Splunk UC-22.15.11: HMI and Jump Host Human User Identification Gaps.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.15.11' running on index=pam CyberArk PSM; WinEventLog:Security 4624 on jump hosts, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.15.11",
+      "ucTitle": "HMI and Jump Host Human User Identification Gaps"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'IEC 62443-3-2 / Engineering workstation access control' → 'SR 1.1'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards#SR%201.1",
+      "controlObjective": "Evidence that IEC 62443 SR 1.1 (Human user identification and authentication) is enforced — Splunk UC-22.15.51: Engineering Workstation Access Control — RDP Skips Jump Tier.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.15.51' running on WinEventLog:Security 4624 type=10; pan:traffic rdp, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.15.51",
+      "ucTitle": "Engineering Workstation Access Control — RDP Skips Jump Tier"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'IEC 62443-3-2 / Wireless zone security monitoring' → 'SR 1.1'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards#SR%201.1",
+      "controlObjective": "Evidence that IEC 62443 SR 1.1 (Human user identification and authentication) is enforced — Splunk UC-22.15.53: Wireless Zone Security Monitoring — Unknown Clients on OT SSID.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.15.53' running on meraki:airmarshal or cisco:wlc, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.15.53",
+      "ucTitle": "Wireless Zone Security Monitoring — Unknown Clients on OT SSID"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'IEC 62443-3-2 / Zone trust level verification' → 'SR 1.1'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards#SR%201.1",
+      "controlObjective": "Evidence that IEC 62443 SR 1.1 (Human user identification and authentication) is enforced — Splunk UC-22.15.55: Zone Trust Level Verification — SL-T vs Observed Purdue Layer.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.15.55' running on ot_assets with sl_t; ot_topology observed layer, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.15.55",
+      "ucTitle": "Zone Trust Level Verification — SL-T vs Observed Purdue Layer"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/iec-62443__2013-ongoing__SR%201.1.json",
+  "gapNote": "IEC 62443 clause SR 1.1 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 4
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "iec-62443",
+  "regulationName": "IEC 62443 Industrial Automation and Control Systems Security",
+  "regulationShortName": "IEC 62443",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/iec-62443.json",
+    "regulationVersion": "/api/v1/compliance/regulations/iec-62443@2013-ongoing.json",
+    "story": "/api/v1/compliance/story/iec-62443.json"
+  },
+  "tier": 2,
+  "topAssurance": "contributing",
+  "topic": "Human user identification and authentication",
+  "version": "2013-ongoing"
+}

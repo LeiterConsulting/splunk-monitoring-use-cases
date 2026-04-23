@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "catalogs": [
+    {
+      "endpoint": "/api/v1/oscal/catalogs/nist-csf-v2.normalised.json",
+      "id": "nist-csf-v2.normalised",
+      "source": "data/crosswalks/oscal/nist-csf-v2.normalised.normalised.json"
+    },
+    {
+      "endpoint": "/api/v1/oscal/catalogs/nist-sp-800-171-r3.normalised.json",
+      "id": "nist-sp-800-171-r3.normalised",
+      "source": "data/crosswalks/oscal/nist-sp-800-171-r3.normalised.normalised.json"
+    },
+    {
+      "endpoint": "/api/v1/oscal/catalogs/nist-sp-800-218-ssdf.normalised.json",
+      "id": "nist-sp-800-218-ssdf.normalised",
+      "source": "data/crosswalks/oscal/nist-sp-800-218-ssdf.normalised.normalised.json"
+    },
+    {
+      "endpoint": "/api/v1/oscal/catalogs/nist-sp-800-53-r5-high.normalised.json",
+      "id": "nist-sp-800-53-r5-high.normalised",
+      "source": "data/crosswalks/oscal/nist-sp-800-53-r5-high.normalised.normalised.json"
+    },
+    {
+      "endpoint": "/api/v1/oscal/catalogs/nist-sp-800-53-r5-low.normalised.json",
+      "id": "nist-sp-800-53-r5-low.normalised",
+      "source": "data/crosswalks/oscal/nist-sp-800-53-r5-low.normalised.normalised.json"
+    },
+    {
+      "endpoint": "/api/v1/oscal/catalogs/nist-sp-800-53-r5-moderate.normalised.json",
+      "id": "nist-sp-800-53-r5-moderate.normalised",
+      "source": "data/crosswalks/oscal/nist-sp-800-53-r5-moderate.normalised.normalised.json"
+    },
+    {
+      "endpoint": "/api/v1/oscal/catalogs/nist-sp-800-53-r5.normalised.json",
+      "id": "nist-sp-800-53-r5.normalised",
+      "source": "data/crosswalks/oscal/nist-sp-800-53-r5.normalised.normalised.json"
+    }
+  ],
+  "componentDefinitions": [
+    {
+      "endpoint": "/api/v1/oscal/component-definitions/22.35.1.json",
+      "source": "data/crosswalks/oscal/component-definition-uc-22.35.1.json",
+      "ucId": "22.35.1"
+    }
+  ],
+  "endpoints": {
+    "catalogs": "/api/v1/oscal/catalogs/",
+    "componentDefinitions": "/api/v1/oscal/component-definitions/index.json"
+  },
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "oscalVersion": "1.1.1"
+}

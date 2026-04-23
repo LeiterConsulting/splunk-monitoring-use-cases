@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 1,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "§164.308(a)(4)",
+  "clauseId": "hipaa-security-rule@2013-final#§164.308(a)(4)",
+  "coverageState": "covered-full",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "HIPAA Security Rule §164.308(a)(4) Information access management — UC detects role-based access violations (e.g. coders accessing medication admin), the direct information-access-management evidence.",
+      "category": 22,
+      "clauseUrl": "https://www.hhs.gov/hipaa/for-professionals/security/laws-regulations/index.html",
+      "controlObjective": "Evidence that HIPAA Security Rule §164.308(a)(4) (Information access management) is enforced — Splunk UC-22.10.21: Access Control — Role-Based Violations (Coder Accessing Medication Admin).",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.10.21' running on index=epic sourcetype=epic:audit (Activity, USER_ID), lookup epic_user_roles.csv (USER_ID, hr_role, allowed_activities), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.10.21",
+      "ucTitle": "Access Control — Role-Based Violations (Coder Accessing Medication Admin)"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/hipaa-security-rule__2013-final__%C2%A7164.308%28a%29%284%29.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "hipaa-security-rule",
+  "regulationName": "hipaa-security-rule",
+  "regulationShortName": "hipaa-security-rule",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/hipaa-security-rule.json",
+    "regulationVersion": "/api/v1/compliance/regulations/hipaa-security-rule@2013-final.json",
+    "story": "/api/v1/compliance/story/hipaa-security-rule.json"
+  },
+  "tier": null,
+  "topAssurance": "full",
+  "topic": null,
+  "version": "2013-final"
+}

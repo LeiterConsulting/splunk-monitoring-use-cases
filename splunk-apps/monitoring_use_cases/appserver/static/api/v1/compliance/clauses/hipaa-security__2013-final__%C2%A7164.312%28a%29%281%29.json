@@ -1,0 +1,83 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 3,
+    "full": 0,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-{section}#p-%C2%A7164.312(a)(1)",
+  "clause": "§164.312(a)(1)",
+  "clauseId": "hipaa-security@2013-final#§164.312(a)(1)",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 3,
+  "coveringUcs": [
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-{section}#p-%C2%A7164.312(a)(1)",
+      "controlObjective": "Evidence that HIPAA Security §164.312(a)(1) (Access control) is enforced — Splunk UC-22.10.21: Access Control — Role-Based Violations (Coder Accessing Medication Admin).",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.10.21' running on index=epic sourcetype=epic:audit (Activity, USER_ID), lookup epic_user_roles.csv (USER_ID, hr_role, allowed_activities), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.10.21",
+      "ucTitle": "Access Control — Role-Based Violations (Coder Accessing Medication Admin)"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-{section}#p-%C2%A7164.312(a)(1)",
+      "controlObjective": "Evidence that HIPAA Security §164.312(a)(1) (Access control) is enforced — Splunk UC-22.10.24: Medical Device Integration — Unapproved HL7 Feeds to EMPI.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.10.24' running on index=hl7 sourcetype=hl7:receive (MSH-4, MSH-3, sending_ip), lookup approved_hl7_senders.csv, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.10.24",
+      "ucTitle": "Medical Device Integration — Unapproved HL7 Feeds to EMPI"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-C/section-{section}#p-%C2%A7164.312(a)(1)",
+      "controlObjective": "Evidence that HIPAA Security §164.312(a)(1) (Access control) is enforced — Splunk UC-22.10.25: Endpoint Controls — ePHI Clipboard/Print from VDI.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.10.25' running on sourcetype citrix:session and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.10.25",
+      "ucTitle": "Endpoint Controls — ePHI Clipboard/Print from VDI"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/hipaa-security__2013-final__%C2%A7164.312%28a%29%281%29.json",
+  "gapNote": "HIPAA Security clause §164.312(a)(1) has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 3
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "hipaa-security",
+  "regulationName": "HIPAA Security Rule",
+  "regulationShortName": "HIPAA Security",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/hipaa-security.json",
+    "regulationVersion": "/api/v1/compliance/regulations/hipaa-security@2013-final.json",
+    "story": "/api/v1/compliance/story/hipaa-security.json"
+  },
+  "tier": 1,
+  "topAssurance": "contributing",
+  "topic": "Access control",
+  "version": "2013-final"
+}

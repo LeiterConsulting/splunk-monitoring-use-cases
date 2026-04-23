@@ -1,0 +1,65 @@
+{
+  "apiVersion": "v1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "nesa-uae-ias",
+  "jurisdiction": [
+    "AE"
+  ],
+  "name": "UAE NESA Information Assurance Standards",
+  "shortName": "NESA IAS",
+  "tags": [
+    "baseline",
+    "government"
+  ],
+  "tier": 2,
+  "version": {
+    "authoritativeUrl": "https://www.nesa.gov.ae/",
+    "clauseExamples": [
+      "T1.1",
+      "T2.3.1"
+    ],
+    "clauseGrammar": "^T\\d+(\\.\\d+){0,2}$",
+    "clauseUrlTemplate": null,
+    "clausesReferencedByCatalogue": [
+      "T3.2",
+      "T3.5",
+      "T4.3",
+      "T6.3"
+    ],
+    "commonClauses": [
+      {
+        "clause": "T3.2",
+        "priorityWeight": 1.0,
+        "topic": "Access control management"
+      },
+      {
+        "clause": "T4.3",
+        "priorityWeight": 1.0,
+        "topic": "Audit trails, logging and information-system monitoring"
+      },
+      {
+        "clause": "T6.3",
+        "priorityWeight": 1.0,
+        "topic": "Information security incident management"
+      },
+      {
+        "clause": "T3.5",
+        "priorityWeight": 0.7,
+        "topic": "Cryptographic controls and key management"
+      }
+    ],
+    "effectiveFrom": "2020-01-01",
+    "endpoint": "/api/v1/compliance/regulations/nesa-uae-ias@v2--2020-.json",
+    "pendingChanges": [],
+    "sunsetOn": null,
+    "useCasesTaggingThisVersion": [
+      "22.33.1",
+      "22.33.2",
+      "22.33.3",
+      "22.33.4",
+      "22.33.5",
+      "22.50.17"
+    ],
+    "version": "v2 (2020)"
+  }
+}

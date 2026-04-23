@@ -1,0 +1,110 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 7,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "oracle",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Oracle Database",
+  "models": [
+    {
+      "id": "oracle_oracle_db",
+      "label": "Oracle Database",
+      "modelId": "oracle_db",
+      "useCaseCount": 7,
+      "useCaseIds": [
+        "7.1.16",
+        "7.6.1",
+        "7.6.3",
+        "7.6.5",
+        "10.12.8",
+        "20.3.11",
+        "22.1.10"
+      ]
+    }
+  ],
+  "regulationIds": [
+    "gdpr",
+    "sox-itgc"
+  ],
+  "regulations": [
+    {
+      "clauseMappings": [
+        {
+          "clause": "Art.32",
+          "useCaseId": "22.1.10",
+          "version": "2016/679"
+        },
+        {
+          "clause": "Art.5(1)(f)",
+          "useCaseId": "22.1.10",
+          "version": "2016/679"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/gdpr.json",
+      "regulationId": "gdpr",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.1.10"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "unknown",
+          "useCaseId": "10.12.8",
+          "version": "unknown"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/sox-itgc.json",
+      "regulationId": "sox-itgc",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "10.12.8"
+      ]
+    }
+  ],
+  "useCaseCount": 7,
+  "useCaseIds": [
+    "7.1.16",
+    "7.6.1",
+    "7.6.3",
+    "7.6.5",
+    "10.12.8",
+    "20.3.11",
+    "22.1.10"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 7,
+      "useCaseCount": 4,
+      "useCaseIds": [
+        "7.1.16",
+        "7.6.1",
+        "7.6.3",
+        "7.6.5"
+      ]
+    },
+    {
+      "category": 10,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "10.12.8"
+      ]
+    },
+    {
+      "category": 20,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "20.3.11"
+      ]
+    },
+    {
+      "category": 22,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.1.10"
+      ]
+    }
+  ]
+}

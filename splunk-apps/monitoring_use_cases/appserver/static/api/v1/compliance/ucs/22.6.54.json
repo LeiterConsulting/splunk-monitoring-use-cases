@@ -1,0 +1,118 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/22.6.54.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/22.6.54.json",
+    "sourcePath": "content/cat-22-regulatory-compliance/UC-22.6.54.json"
+  },
+  "apiVersion": "v1",
+  "app": "Splunk Enterprise Security",
+  "cimModels": [
+    "Change"
+  ],
+  "compliance": [
+    {
+      "assurance": "full",
+      "assurance_rationale": "Clause 7.5 Documented information — approval trail + cadence adherence directly evidenced.",
+      "clause": "7.5",
+      "clauseUrl": "https://www.iso.org/standard/27001",
+      "controlObjective": "Evidence that ISO/IEC 27001 7.5 (Documented information) is enforced — Splunk UC-22.6.54: ISO/IEC 27001:2022 Clause 7.5 — Documented information control: policy register approval trail.",
+      "evidenceArtifact": "Saved search 'UC-22.6.54' running on index=grc sourcetype=policyhub:policy (change of state); policy cadence lookup iso_27001_policy_cadence.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "iso-27001@2022#7.5",
+      "regulation": "ISO/IEC 27001",
+      "requires_sme_review": true,
+      "version": "2022"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "SOC 2 CC1.4 — contributes to commitment-and-accountability evidence.",
+      "clause": "CC1.4",
+      "clauseUrl": "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services",
+      "controlObjective": "Evidence that SOC-2 CC1.4 is enforced — Splunk UC-22.6.54: ISO/IEC 27001:2022 Clause 7.5 — Documented information control: policy register approval trail.",
+      "evidenceArtifact": "Saved search 'UC-22.6.54' running on index=grc sourcetype=policyhub:policy (change of state); policy cadence lookup iso_27001_policy_cadence.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "soc-2@2017 TSC#CC1.4",
+      "regulation": "SOC-2",
+      "requires_sme_review": true,
+      "version": "2017 TSC"
+    },
+    {
+      "assurance": "contributing",
+      "assurance_rationale": "NIST 800-53 PL-2 System Security Plan — contributes.",
+      "clause": "PL-2",
+      "clauseUrl": "https://doi.org/10.6028/NIST.SP.800-53r5",
+      "controlObjective": "Evidence that NIST 800-53 PL-2 is enforced — Splunk UC-22.6.54: ISO/IEC 27001:2022 Clause 7.5 — Documented information control: policy register approval trail.",
+      "evidenceArtifact": "Saved search 'UC-22.6.54' running on index=grc sourcetype=policyhub:policy (change of state); policy cadence lookup iso_27001_policy_cadence.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "nist-800-53@Rev. 5#PL-2",
+      "regulation": "NIST 800-53",
+      "requires_sme_review": true,
+      "version": "Rev. 5"
+    }
+  ],
+  "controlFamily": "policy-to-control-traceability",
+  "controlTest": {
+    "fixtureRef": "sample-data/uc-22.6.54-fixture.json",
+    "negativeScenario": "A policy with a recent approval and 200 days remaining is absent.",
+    "positiveScenario": "Setting a policy's approval to now()-cadence_days+29d returns days_to_next_review=1 (near-expiry)."
+  },
+  "criticality": "medium",
+  "dataSources": "`index=grc` sourcetype=policyhub:policy (change of state); policy cadence lookup `iso_27001_policy_cadence.csv`.",
+  "description": "For every policy in the register, produce the last approval record and the time to the next review. Policies within 30 days of expiry or with no approval record are surfaced for action.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Splunk Enterprise Security.\n• Ensure the following data sources are available: `index=grc` sourcetype=policyhub:policy (change of state); policy cadence lookup `iso_27001_policy_cadence.csv`..\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\n(1) Route policyhub approval events into index=grc; (2) maintain iso_27001_policy_cadence.csv; (3) schedule UC weekly; (4) days_to_next_review<=30 opens a review task to policy owner; (5) quarterly CISO review.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=grc sourcetype=policyhub:policy action=approved earliest=-400d\n| stats latest(_time) AS approved_at latest(version) AS version latest(approved_by) AS approved_by BY policy_id\n| lookup iso_27001_policy_cadence.csv policy_id OUTPUT cadence_days owner\n| eval days_to_next_review=cadence_days-round((now()-approved_at)/86400,0)\n| where days_to_next_review<=30 OR isnull(approved_at)\n| table policy_id version approved_by approved_at days_to_next_review owner\n```\n\nUnderstanding this SPL\n\n**ISO/IEC 27001:2022 Clause 7.5 — Documented information control: policy register approval trail** — Prevents the common deficiency of policies that 'used to be' approved but whose approval trail has expired — a direct Clause 7.5 non-conformance.\n\nDocumented **Data sources**: `index=grc` sourcetype=policyhub:policy (change of state); policy cadence lookup `iso_27001_policy_cadence.csv`. **App/TA** (typical add-on context): Splunk Enterprise Security. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: grc; **sourcetype**: policyhub:policy. That sourcetype matches what this use case lists under Data sources.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=grc, sourcetype=policyhub:policy, time bounds. Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• `stats` rolls up events into metrics; results are split **by policy_id** so each row reflects one combination of those dimensions (useful for per-host, per-user, or per-entity comparisons for this use case).\n• Enriches events using `lookup` (lookup definition + optional OUTPUT fields).\n• `eval` defines or adjusts **days_to_next_review** — often to normalize units, derive a ratio, or prepare for thresholds.\n• Filters the current rows with `where days_to_next_review<=30 OR isnull(approved_at)` — typically the threshold or rule expression for this monitoring goal.\n• Pipeline stage (see **ISO/IEC 27001:2022 Clause 7.5 — Documented information control: policy register approval trail**): table policy_id version approved_by approved_at days_to_next_review owner\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Table of near-expiry policies, bar chart by owner, single value 'policies expired'.",
+  "detectionType": "Baseline",
+  "difficulty": "intermediate",
+  "evidence": "Saved search 'iso_27001_7_5_policy_trail' (weekly) emits per policy: policy_id, version, approved_by, approved_at, days_to_next_review, to compliance_summary.",
+  "exclusions": "Does NOT edit policies; detects policy register entries missing an approval record or past their review cadence.",
+  "grandmaExplanation": "We help you prevent the common deficiency of policies that 'used to be' approved but whose approval trail has expired — a direct non-conformance — so you can show exactly what is being watched and when something went wrong.",
+  "id": "22.6.54",
+  "implementation": "(1) Route policyhub approval events into index=grc; (2) maintain iso_27001_policy_cadence.csv; (3) schedule UC weekly; (4) days_to_next_review<=30 opens a review task to policy owner; (5) quarterly CISO review.",
+  "knownFalsePositives": "Newly-issued policies within 30 days of issue appear as near-expiry until the first cadence period completes — exclude if age<30d.",
+  "lastReviewed": "2026-04-16",
+  "monitoringType": [
+    "Compliance"
+  ],
+  "owner": "CISO",
+  "premiumApps": [
+    "Splunk Enterprise Security"
+  ],
+  "references": [
+    {
+      "retrieved": "2026-04-16",
+      "title": "ISO/IEC 27001 2022",
+      "url": "https://www.iso.org/standard/27001"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "SOC-2 2017 TSC",
+      "url": "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "NIST 800-53 Rev. 5",
+      "url": "https://doi.org/10.6028/NIST.SP.800-53r5"
+    }
+  ],
+  "requiredFields": [
+    "policy_id",
+    "approved_at",
+    "approved_by",
+    "version",
+    "_time"
+  ],
+  "reviewer": "N/A",
+  "securityDomain": "audit",
+  "spl": "index=grc sourcetype=policyhub:policy action=approved earliest=-400d\n| stats latest(_time) AS approved_at latest(version) AS version latest(approved_by) AS approved_by BY policy_id\n| lookup iso_27001_policy_cadence.csv policy_id OUTPUT cadence_days owner\n| eval days_to_next_review=cadence_days-round((now()-approved_at)/86400,0)\n| where days_to_next_review<=30 OR isnull(approved_at)\n| table policy_id version approved_by approved_at days_to_next_review owner",
+  "splunkPillar": "Security",
+  "splunkVersions": [
+    "9.2+",
+    "Cloud"
+  ],
+  "status": "verified",
+  "subcategory": "22.6#1",
+  "title": "ISO/IEC 27001:2022 Clause 7.5 — Documented information control: policy register approval trail",
+  "value": "Prevents the common deficiency of policies that 'used to be' approved but whose approval trail has expired — a direct Clause 7.5 non-conformance.",
+  "visualization": "Table of near-expiry policies, bar chart by owner, single value 'policies expired'."
+}

@@ -1,0 +1,118 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/22.8.39.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/22.8.39.json",
+    "sourcePath": "content/cat-22-regulatory-compliance/UC-22.8.39.json"
+  },
+  "apiVersion": "v1",
+  "app": "Splunk Enterprise Security",
+  "cimModels": [
+    "N/A"
+  ],
+  "compliance": [
+    {
+      "assurance": "full",
+      "assurance_rationale": "P1.1 Privacy notice — consent-version adherence is the direct control.",
+      "clause": "P1.1",
+      "clauseUrl": "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services",
+      "controlObjective": "Evidence that SOC-2 P1.1 (Privacy notice) is enforced — Splunk UC-22.8.39: SOC 2 P1.1 — Privacy notice: consent-record freshness for privacy-notice version changes.",
+      "evidenceArtifact": "Saved search 'UC-22.8.39' running on index=consent sourcetype=onetrust:consent; privacy-notice version lookup privacy_notice_versions.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "soc-2@2017 TSC#P1.1",
+      "regulation": "SOC-2",
+      "requires_sme_review": true,
+      "version": "2017 TSC"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "GDPR Art.7 conditions for consent — contributing when the privacy notice changes materially.",
+      "clause": "Art.7",
+      "clauseUrl": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "controlObjective": "Evidence that GDPR Art.7 (Conditions for consent) is enforced — Splunk UC-22.8.39: SOC 2 P1.1 — Privacy notice: consent-record freshness for privacy-notice version changes.",
+      "evidenceArtifact": "Saved search 'UC-22.8.39' running on index=consent sourcetype=onetrust:consent; privacy-notice version lookup privacy_notice_versions.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "gdpr@2016/679#Art.7",
+      "regulation": "GDPR",
+      "requires_sme_review": true,
+      "version": "2016/679"
+    },
+    {
+      "assurance": "contributing",
+      "assurance_rationale": "Derived from GDPR@2016/679 Art.7 (parent assurance='partial'). UK GDPR preserves parent clause numbering; inherited assurance degraded one step.",
+      "clause": "Art.7",
+      "controlObjective": "Evidence that UK GDPR Art.7 is enforced — Splunk UC-22.8.39: SOC 2 P1.1 — Privacy notice: consent-record freshness for privacy-notice version changes.",
+      "derivationSource": {
+        "inheritanceMode": "identity",
+        "parentAssurance": "partial",
+        "parentClause": "Art.7",
+        "parentRegulation": "gdpr",
+        "parentVersion": "2016/679"
+      },
+      "evidenceArtifact": "Saved search 'UC-22.8.39' running on index=consent sourcetype=onetrust:consent; privacy-notice version lookup privacy_notice_versions.csv., archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "uk-gdpr@post-Brexit#Art.7",
+      "provenance": "derived-from-parent",
+      "regulation": "UK GDPR",
+      "requires_sme_review": true,
+      "version": "post-Brexit"
+    }
+  ],
+  "controlFamily": "data-subject-request-lifecycle",
+  "controlTest": {
+    "fixtureRef": "sample-data/uc-22.8.39-fixture.json",
+    "negativeScenario": "A subject whose consent matches the current notice is absent.",
+    "positiveScenario": "Bumping the privacy notice to v4 when a subject's consent is at v3 returns needs_refresh=1."
+  },
+  "criticality": "medium",
+  "dataSources": "`index=consent` sourcetype=onetrust:consent; privacy-notice version lookup `privacy_notice_versions.csv`.",
+  "description": "When the privacy notice changes version, subjects whose consent was against the old version must be re-prompted. This UC measures the backlog.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Splunk Enterprise Security.\n• Ensure the following data sources are available: `index=consent` sourcetype=onetrust:consent; privacy-notice version lookup `privacy_notice_versions.csv`..\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\n(1) Push consent changes to index=consent; (2) maintain privacy_notice_versions.csv; (3) schedule UC daily; (4) batch subjects needing refresh by cohort; (5) DPO owns the refresh campaign.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=consent sourcetype=onetrust:consent earliest=-14d\n| stats latest(consent_version) AS consent_version latest(_time) AS consent_time BY subject_id\n| lookup privacy_notice_versions.csv AS latest OUTPUT current_version\n| eval days_stale=round((now()-consent_time)/86400,0)\n| eval needs_refresh=if(consent_version!=current_version,1,0)\n| where needs_refresh=1\n| table subject_id consent_version current_version days_stale needs_refresh\n```\n\nUnderstanding this SPL\n\n**SOC 2 P1.1 — Privacy notice: consent-record freshness for privacy-notice version changes** — Prevents P1.1 findings: 'consent records reference a superseded notice'. Satisfies the '<v-current>' regulator question asked at every annual audit.\n\nDocumented **Data sources**: `index=consent` sourcetype=onetrust:consent; privacy-notice version lookup `privacy_notice_versions.csv`. **App/TA** (typical add-on context): Splunk Enterprise Security. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: consent; **sourcetype**: onetrust:consent. That sourcetype matches what this use case lists under Data sources.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=consent, sourcetype=onetrust:consent, time bounds. Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• `stats` rolls up events into metrics; results are split **by subject_id** so each row reflects one combination of those dimensions (useful for per-host, per-user, or per-entity comparisons for this use case).\n• Enriches events using `lookup` (lookup definition + optional OUTPUT fields).\n• `eval` defines or adjusts **days_stale** — often to normalize units, derive a ratio, or prepare for thresholds.\n• `eval` defines or adjusts **needs_refresh** — often to normalize units, derive a ratio, or prepare for thresholds.\n• Filters the current rows with `where needs_refresh=1` — typically the threshold or rule expression for this monitoring goal.\n• Pipeline stage (see **SOC 2 P1.1 — Privacy notice: consent-record freshness for privacy-notice version changes**): table subject_id consent_version current_version days_stale needs_refresh\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Timechart of stale consent backlog, table of cohorts, single value 'subjects needing refresh'.",
+  "detectionType": "Baseline",
+  "difficulty": "intermediate",
+  "evidence": "Saved search 'soc2_p1_1_consent_freshness' (daily) emits per subject: subject_id, consent_version, current_version, days_stale, needs_refresh, to compliance_summary.",
+  "exclusions": "Does NOT rewrite consent records; measures each data subject's consent version vs the current notice version.",
+  "grandmaExplanation": "We help you prevent P1.1 findings: 'consent records reference a superseded notice' — so you can show exactly what is being watched and when something went wrong.",
+  "id": "22.8.39",
+  "implementation": "(1) Push consent changes to index=consent; (2) maintain privacy_notice_versions.csv; (3) schedule UC daily; (4) batch subjects needing refresh by cohort; (5) DPO owns the refresh campaign.",
+  "knownFalsePositives": "Deceased/closed subject accounts legitimately have stale consent — exclude by account_state.",
+  "lastReviewed": "2026-04-16",
+  "monitoringType": [
+    "Compliance"
+  ],
+  "owner": "DPO",
+  "premiumApps": [
+    "Splunk Enterprise Security"
+  ],
+  "references": [
+    {
+      "retrieved": "2026-04-16",
+      "title": "SOC-2 2017 TSC",
+      "url": "https://www.aicpa-cima.com/resources/landing/system-and-organization-controls-soc-suite-of-services"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "GDPR 2016/679",
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+    }
+  ],
+  "requiredFields": [
+    "subject_id",
+    "consent_version",
+    "_time"
+  ],
+  "reviewer": "N/A",
+  "securityDomain": "audit",
+  "spl": "index=consent sourcetype=onetrust:consent earliest=-14d\n| stats latest(consent_version) AS consent_version latest(_time) AS consent_time BY subject_id\n| lookup privacy_notice_versions.csv AS latest OUTPUT current_version\n| eval days_stale=round((now()-consent_time)/86400,0)\n| eval needs_refresh=if(consent_version!=current_version,1,0)\n| where needs_refresh=1\n| table subject_id consent_version current_version days_stale needs_refresh",
+  "splunkPillar": "Security",
+  "splunkVersions": [
+    "9.2+",
+    "Cloud"
+  ],
+  "status": "community",
+  "subcategory": "22.8#1",
+  "title": "SOC 2 P1.1 — Privacy notice: consent-record freshness for privacy-notice version changes",
+  "value": "Prevents P1.1 findings: 'consent records reference a superseded notice'. Satisfies the '<v-current>' regulator question asked at every annual audit.",
+  "visualization": "Timechart of stale consent backlog, table of cohorts, single value 'subjects needing refresh'."
+}

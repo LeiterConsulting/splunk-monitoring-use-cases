@@ -1,0 +1,117 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 19,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "jenkins",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Jenkins",
+  "models": [],
+  "regulationIds": [
+    "iso-27001",
+    "nist-csf",
+    "soc-2"
+  ],
+  "regulations": [
+    {
+      "clauseMappings": [
+        {
+          "clause": "A.5.8",
+          "useCaseId": "22.6.12",
+          "version": "2022"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/iso-27001.json",
+      "regulationId": "iso-27001",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.6.12"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "GV.SC-01",
+          "useCaseId": "22.7.15",
+          "version": "2.0"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/nist-csf.json",
+      "regulationId": "nist-csf",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.7.15"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "CC7.2",
+          "useCaseId": "22.8.25",
+          "version": "2017 TSC"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/soc-2.json",
+      "regulationId": "soc-2",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.8.25"
+      ]
+    }
+  ],
+  "useCaseCount": 19,
+  "useCaseIds": [
+    "12.2.1",
+    "12.2.2",
+    "12.2.6",
+    "12.2.9",
+    "12.2.10",
+    "12.2.14",
+    "12.2.15",
+    "12.2.16",
+    "12.2.18",
+    "12.2.25",
+    "12.2.27",
+    "12.4.6",
+    "12.6.1",
+    "12.6.2",
+    "12.6.3",
+    "12.6.4",
+    "22.6.12",
+    "22.7.15",
+    "22.8.25"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 12,
+      "useCaseCount": 16,
+      "useCaseIds": [
+        "12.2.1",
+        "12.2.2",
+        "12.2.6",
+        "12.2.9",
+        "12.2.10",
+        "12.2.14",
+        "12.2.15",
+        "12.2.16",
+        "12.2.18",
+        "12.2.25",
+        "12.2.27",
+        "12.4.6",
+        "12.6.1",
+        "12.6.2",
+        "12.6.3",
+        "12.6.4"
+      ]
+    },
+    {
+      "category": 22,
+      "useCaseCount": 3,
+      "useCaseIds": [
+        "22.6.12",
+        "22.7.15",
+        "22.8.25"
+      ]
+    }
+  ]
+}

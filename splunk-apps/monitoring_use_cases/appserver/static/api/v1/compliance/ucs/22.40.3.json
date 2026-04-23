@@ -1,0 +1,108 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/22.40.3.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/22.40.3.json",
+    "sourcePath": "content/cat-22-regulatory-compliance/UC-22.40.3.json"
+  },
+  "apiVersion": "v1",
+  "app": "Splunk Enterprise / Splunk Cloud Platform",
+  "cimModels": [
+    "Authentication",
+    "Change"
+  ],
+  "compliance": [
+    {
+      "assurance": "full",
+      "assurance_rationale": "AC-2(j) requires review of accounts at least annually; the UC measures compliance continuously.",
+      "clause": "AC-2",
+      "controlObjective": "Evidence that NIST 800-53 AC-2 (Account management) is enforced — Splunk UC-22.40.3: Periodic access review SLA — stale certifications by control owner.",
+      "evidenceArtifact": "Saved search 'UC-22.40.3' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "nist-800-53@Rev. 5#AC-2",
+      "regulation": "NIST 800-53",
+      "requires_sme_review": true,
+      "version": "Rev. 5"
+    },
+    {
+      "assurance": "full",
+      "assurance_rationale": "A.5.18 access rights — periodic review is a core requirement.",
+      "clause": "A.5.18",
+      "controlObjective": "Evidence that ISO 27001 A.5.18 (Access rights review) is enforced — Splunk UC-22.40.3: Periodic access review SLA — stale certifications by control owner.",
+      "evidenceArtifact": "Saved search 'UC-22.40.3' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "iso-27001@2022#A.5.18",
+      "regulation": "ISO 27001",
+      "requires_sme_review": true,
+      "version": "2022"
+    },
+    {
+      "assurance": "full",
+      "assurance_rationale": "SOX ITGC periodic access review is a cornerstone audit test.",
+      "clause": "ITGC.AccessMgmt.Review",
+      "controlObjective": "Evidence that SOX ITGC ITGC.AccessMgmt.Review (Periodic access review) is enforced — Splunk UC-22.40.3: Periodic access review SLA — stale certifications by control owner.",
+      "evidenceArtifact": "Saved search 'UC-22.40.3' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "sox-itgc@PCAOB AS 2201#ITGC.AccessMgmt.Review",
+      "regulation": "SOX ITGC",
+      "requires_sme_review": true,
+      "version": "PCAOB AS 2201"
+    }
+  ],
+  "controlFamily": "privileged-session-recording",
+  "controlTest": {
+    "fixtureRef": "sample-data/uc-22.40.3-fixture.json",
+    "negativeScenario": "Applications with reviews certified within the 90-day window do NOT fire.",
+    "positiveScenario": "When a control owner has not completed an access review for a scoped application in 90+ days, the UC fires with the owner, app_id, and last_review_at."
+  },
+  "criticality": "high",
+  "dataSources": "See subcategory preamble.",
+  "description": "Tracks the age of the most recent access review per application and control owner. Applications falling outside the 90-day cadence drive follow-up tickets.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Splunk Enterprise / Splunk Cloud Platform.\n• Ensure the following data sources are available: See subcategory preamble..\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\n(1) Ingest review-completion events from the GRC tool; (2) refresh app_inventory.csv weekly; (3) run daily.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=grc sourcetype=iam:access_review earliest=-365d\n| stats max(_time) as last_review by app_id reviewer\n| eval days_since=round((now()-last_review)/86400,0)\n| where days_since>90\n| lookup app_inventory.csv app_id OUTPUT owner criticality\n| table owner app_id criticality last_review days_since\n```\n\nUnderstanding this SPL\n\n**Periodic access review SLA — stale certifications by control owner** — Access review is the #1 ITGC deficiency in typical public-company audits; turning it into a green/red KPI changes the operating rhythm.\n\nDocumented **Data sources**: See subcategory preamble. **App/TA** (typical add-on context): Splunk Enterprise / Splunk Cloud Platform. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: grc; **sourcetype**: iam:access_review. If that sourcetype is not mentioned in Data sources, double-check parsing or update the documentation to match the feed you actually ingest.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=grc, sourcetype=iam:access_review, time bounds. Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• `stats` rolls up events into metrics; results are split **by app_id reviewer** so each row reflects one combination of those dimensions (useful for per-host, per-user, or per-entity comparisons for this use case).\n• `eval` defines or adjusts **days_since** — often to normalize units, derive a ratio, or prepare for thresholds.\n• Filters the current rows with `where days_since>90` — typically the threshold or rule expression for this monitoring goal.\n• Enriches events using `lookup` (lookup definition + optional OUTPUT fields).\n• Pipeline stage (see **Periodic access review SLA — stale certifications by control owner**): table owner app_id criticality last_review days_since\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Heatmap of owner × application age, table of overdue, single-value '% of apps reviewed within 90 days'.",
+  "detectionType": "Correlation",
+  "difficulty": "intermediate",
+  "evidence": "Daily report 'access_review_freshness' writes review-age per control owner to compliance_summary.",
+  "exclusions": "Does NOT judge the quality of the certification (rubber-stamp vs diligent); follows up with sampling review.",
+  "grandmaExplanation": "Access review is the #1 ITGC deficiency in typical public-company audits; turning it into a green/red key numbers changes the operating rhythm — so you can show exactly what is being watched and when something went wrong.",
+  "id": "22.40.3",
+  "implementation": "(1) Ingest review-completion events from the GRC tool; (2) refresh app_inventory.csv weekly; (3) run daily.",
+  "knownFalsePositives": "New applications added in-cycle need a baseline review; track onboarding date.",
+  "lastReviewed": "2026-04-16",
+  "monitoringType": [
+    "Compliance"
+  ],
+  "owner": "CISO",
+  "references": [
+    {
+      "retrieved": "2026-04-16",
+      "title": "NIST SP 800-53 Rev. 5",
+      "url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "ISO/IEC 27001:2022",
+      "url": "https://www.iso.org/standard/82875.html"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "PCAOB AS 2201",
+      "url": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2201"
+    }
+  ],
+  "requiredFields": [
+    "_time"
+  ],
+  "reviewer": "N/A",
+  "securityDomain": "identity",
+  "spl": "index=grc sourcetype=iam:access_review earliest=-365d\n| stats max(_time) as last_review by app_id reviewer\n| eval days_since=round((now()-last_review)/86400,0)\n| where days_since>90\n| lookup app_inventory.csv app_id OUTPUT owner criticality\n| table owner app_id criticality last_review days_since",
+  "splunkPillar": "Security",
+  "splunkVersions": [
+    "9.2+",
+    "Cloud"
+  ],
+  "status": "verified",
+  "title": "Periodic access review SLA — stale certifications by control owner",
+  "value": "Access review is the #1 ITGC deficiency in typical public-company audits; turning it into a green/red KPI changes the operating rhythm.",
+  "visualization": "Heatmap of owner × application age, table of overdue, single-value '% of apps reviewed within 90 days'."
+}

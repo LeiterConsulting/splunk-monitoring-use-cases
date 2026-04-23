@@ -1,0 +1,313 @@
+{
+  "aliases": [
+    "CMMC",
+    "CMMC 2.0"
+  ],
+  "apiVersion": "v1",
+  "id": "cmmc",
+  "jurisdiction": [
+    "US"
+  ],
+  "name": "Cybersecurity Maturity Model Certification",
+  "shortName": "CMMC",
+  "tags": [
+    "defense",
+    "federal"
+  ],
+  "tier": 1,
+  "versions": [
+    {
+      "authoritativeUrl": "https://dodcio.defense.gov/CMMC/",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 14,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "AC.L2-3.1.1",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.20.1",
+            "22.20.10",
+            "22.20.11",
+            "22.20.12",
+            "22.20.13",
+            "22.20.14",
+            "22.20.15",
+            "22.20.16",
+            "22.20.17",
+            "22.20.18",
+            "22.20.19",
+            "22.20.20",
+            "22.32.17",
+            "22.32.18",
+            "22.32.20"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Authorized access to systems"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "AC.L2-3.1.5",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.20.2"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Least privilege"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "AU.L2-3.3.1",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.20.3"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Create audit records"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "AU.L2-3.3.2",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.20.4"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Ensure unique user traceability"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "AU.L2-3.3.5",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.20.5",
+            "22.32.19"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Audit reporting and correlation"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "CM.L2-3.4.1",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.20.6"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Baseline configurations"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "IR.L2-3.6.1",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.20.7"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Incident handling capability"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "SC.L2-3.13.8",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.20.8"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Cryptographic mechanisms for CUI in transit"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "SI.L2-3.14.6",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.20.9",
+            "22.32.21"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Monitor for attacks"
+        }
+      ],
+      "clauseExamples": [
+        "AC.L2-3.1.1",
+        "AU.L2-3.3.1",
+        "SC.L2-3.13.8"
+      ],
+      "clauseGrammar": "^[A-Z]{2}\\.L[1-3]-\\d+\\.\\d+\\.\\d+$",
+      "clauseUrlTemplate": "https://dodcio.defense.gov/CMMC/#{clause}",
+      "clausesReferencedByCatalogue": [
+        "AC.L2-3.1.1",
+        "AC.L2-3.1.5",
+        "AU.L2-3.3.1",
+        "AU.L2-3.3.2",
+        "AU.L2-3.3.5",
+        "CM.L2-3.4.1",
+        "IR.L2-3.6.1",
+        "SC.L2-3.13.8",
+        "SI.L2-3.14.6"
+      ],
+      "commonClauses": [
+        {
+          "clause": "AC.L2-3.1.1",
+          "priorityWeight": 1.0,
+          "topic": "Authorized access to systems"
+        },
+        {
+          "clause": "AC.L2-3.1.5",
+          "priorityWeight": 1.0,
+          "topic": "Least privilege"
+        },
+        {
+          "clause": "AU.L2-3.3.1",
+          "priorityWeight": 1.0,
+          "topic": "Create audit records"
+        },
+        {
+          "clause": "AU.L2-3.3.2",
+          "priorityWeight": 1.0,
+          "topic": "Ensure unique user traceability"
+        },
+        {
+          "clause": "AU.L2-3.3.5",
+          "priorityWeight": 1.0,
+          "topic": "Audit reporting and correlation"
+        },
+        {
+          "clause": "CM.L2-3.4.1",
+          "priorityWeight": 1.0,
+          "topic": "Baseline configurations"
+        },
+        {
+          "clause": "IR.L2-3.6.1",
+          "priorityWeight": 1.0,
+          "topic": "Incident handling capability"
+        },
+        {
+          "clause": "SC.L2-3.13.8",
+          "priorityWeight": 1.0,
+          "topic": "Cryptographic mechanisms for CUI in transit"
+        },
+        {
+          "clause": "SI.L2-3.14.6",
+          "priorityWeight": 1.0,
+          "topic": "Monitor for attacks"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 100.0,
+        "commonClauseCount": 9,
+        "coveredClauseCount": 9,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 50.0,
+        "stateCounts": {
+          "contributing-only": 0,
+          "covered-full": 0,
+          "covered-partial": 9,
+          "uncovered": 0
+        }
+      },
+      "effectiveFrom": "2024-12-16",
+      "endpoint": "/api/v1/compliance/regulations/cmmc@2.0.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [
+        "22.20.1",
+        "22.20.10",
+        "22.20.11",
+        "22.20.12",
+        "22.20.13",
+        "22.20.14",
+        "22.20.15",
+        "22.20.16",
+        "22.20.17",
+        "22.20.18",
+        "22.20.19",
+        "22.20.2",
+        "22.20.20",
+        "22.20.3",
+        "22.20.4",
+        "22.20.5",
+        "22.20.6",
+        "22.20.7",
+        "22.20.8",
+        "22.20.9",
+        "22.32.17",
+        "22.32.18",
+        "22.32.19",
+        "22.32.20",
+        "22.32.21"
+      ],
+      "version": "2.0"
+    }
+  ]
+}

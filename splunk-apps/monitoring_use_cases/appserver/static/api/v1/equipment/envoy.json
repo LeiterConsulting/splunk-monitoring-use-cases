@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 9,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "envoy",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Envoy Proxy",
+  "models": [],
+  "regulationIds": [],
+  "regulations": [],
+  "useCaseCount": 9,
+  "useCaseIds": [
+    "3.5.7",
+    "3.5.8",
+    "3.5.10",
+    "3.5.12",
+    "8.4.5",
+    "8.4.6",
+    "8.4.13",
+    "8.6.10",
+    "13.4.5"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 3,
+      "useCaseCount": 4,
+      "useCaseIds": [
+        "3.5.7",
+        "3.5.8",
+        "3.5.10",
+        "3.5.12"
+      ]
+    },
+    {
+      "category": 8,
+      "useCaseCount": 4,
+      "useCaseIds": [
+        "8.4.5",
+        "8.4.6",
+        "8.4.13",
+        "8.6.10"
+      ]
+    },
+    {
+      "category": 13,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "13.4.5"
+      ]
+    }
+  ]
+}

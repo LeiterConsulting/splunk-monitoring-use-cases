@@ -1,0 +1,110 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/22.44.1.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/22.44.1.json",
+    "sourcePath": "content/cat-22-regulatory-compliance/UC-22.44.1.json"
+  },
+  "apiVersion": "v1",
+  "app": "Splunk Enterprise / Splunk Cloud Platform",
+  "cimModels": [
+    "N/A"
+  ],
+  "compliance": [
+    {
+      "assurance": "full",
+      "assurance_rationale": "DORA Art.28 ICT third-party risk — requires currency of supplier risk information.",
+      "clause": "Art.28",
+      "controlObjective": "Evidence that DORA Art.28 (ICT third-party risk) is enforced — Splunk UC-22.44.1: Supplier attestation currency — stale SOC 2 / ISO 27001 reports for critical vendors.",
+      "evidenceArtifact": "Saved search 'UC-22.44.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "dora@Regulation (EU) 2022/2554#Art.28",
+      "regulation": "DORA",
+      "requires_sme_review": true,
+      "version": "Regulation (EU) 2022/2554"
+    },
+    {
+      "assurance": "full",
+      "assurance_rationale": "Art.21(2)(d) supply-chain security — continuous tracking of attestation currency.",
+      "clause": "Art.21(2)(d)",
+      "controlObjective": "Evidence that NIS2 Art.21(2)(d) (Supply-chain security) is enforced — Splunk UC-22.44.1: Supplier attestation currency — stale SOC 2 / ISO 27001 reports for critical vendors.",
+      "evidenceArtifact": "Saved search 'UC-22.44.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "nis2@Directive (EU) 2022/2555#Art.21(2)(d)",
+      "regulation": "NIS2",
+      "requires_sme_review": true,
+      "version": "Directive (EU) 2022/2555"
+    },
+    {
+      "assurance": "partial",
+      "assurance_rationale": "SR-3 supply chain controls — attestations are one of the control artefacts.",
+      "clause": "SR-3",
+      "controlObjective": "Evidence that NIST 800-53 SR-3 (Supply chain controls and processes) is enforced — Splunk UC-22.44.1: Supplier attestation currency — stale SOC 2 / ISO 27001 reports for critical vendors.",
+      "evidenceArtifact": "Saved search 'UC-22.44.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "mode": "satisfies",
+      "obligationRef": "nist-800-53@Rev. 5#SR-3",
+      "regulation": "NIST 800-53",
+      "requires_sme_review": true,
+      "version": "Rev. 5"
+    }
+  ],
+  "controlFamily": "third-party-activity",
+  "controlTest": {
+    "fixtureRef": "sample-data/uc-22.44.1-fixture.json",
+    "negativeScenario": "Suppliers with a current attestation ≥30 days from expiry do NOT fire.",
+    "positiveScenario": "When a critical supplier's SOC 2 or ISO 27001 attestation is within 30 days of expiry or already expired, the UC fires."
+  },
+  "criticality": "high",
+  "dataSources": "See subcategory preamble.",
+  "description": "Tracks supplier attestation lifecycles against the TPRM policy and surfaces expiring evidence before the risk committee sees it as an overdue item.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Splunk Enterprise / Splunk Cloud Platform.\n• Ensure the following data sources are available: See subcategory preamble..\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\n(1) Push attestation metadata from OneTrust/ServiceNow VRM into vrm_attestations.csv nightly; (2) run daily; (3) on finding, email supplier contact and assigned procurement lead.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\n| inputlookup vrm_attestations.csv\n| where criticality IN (\"critical\",\"high\")\n| eval days_to_expiry=round((strptime(expires,\"%Y-%m-%d\")-now())/86400,0)\n| where days_to_expiry<=30\n| table vendor attestation_type expires days_to_expiry\n```\n\nUnderstanding this SPL\n\n**Supplier attestation currency — stale SOC 2 / ISO 27001 reports for critical vendors** — Makes vendor-risk currency a live signal rather than an annual gap report.\n\nDocumented **Data sources**: See subcategory preamble. **App/TA** (typical add-on context): Splunk Enterprise / Splunk Cloud Platform. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\n**Pipeline walkthrough**\n\n• Loads rows via `inputlookup` (KV store or CSV lookup) for enrichment or reporting.\n• Filters the current rows with `where criticality IN (\"critical\",\"high\")` — typically the threshold or rule expression for this monitoring goal.\n• `eval` defines or adjusts **days_to_expiry** — often to normalize units, derive a ratio, or prepare for thresholds.\n• Filters the current rows with `where days_to_expiry<=30` — typically the threshold or rule expression for this monitoring goal.\n• Pipeline stage (see **Supplier attestation currency — stale SOC 2 / ISO 27001 reports for critical vendors**): table vendor attestation_type expires days_to_expiry\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Table of expiring attestations, Sankey of attestation types per vendor, single-value 'critical vendors with current attestation'.",
+  "detectionType": "Correlation",
+  "difficulty": "beginner",
+  "equipment": [
+    "servicenow"
+  ],
+  "evidence": "Daily 'supplier_attestation_currency' writes expiring/expired attestations to compliance_summary.",
+  "exclusions": "Does NOT evaluate findings in the supplier's report; focuses on currency only.",
+  "grandmaExplanation": "Makes vendor-risk currency a live signal rather than an annual gap report — so you can show exactly what is being watched and when something went wrong.",
+  "id": "22.44.1",
+  "implementation": "(1) Push attestation metadata from OneTrust/ServiceNow VRM into vrm_attestations.csv nightly; (2) run daily; (3) on finding, email supplier contact and assigned procurement lead.",
+  "knownFalsePositives": "Re-certification in progress produces a brief 'expired' window; tolerate with an in-progress flag.",
+  "lastReviewed": "2026-04-16",
+  "monitoringType": [
+    "Compliance"
+  ],
+  "owner": "Procurement",
+  "references": [
+    {
+      "retrieved": "2026-04-16",
+      "title": "Regulation (EU) 2022/2554 — DORA",
+      "url": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "Directive (EU) 2022/2555 — NIS2",
+      "url": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj"
+    },
+    {
+      "retrieved": "2026-04-16",
+      "title": "NIST SP 800-53 Rev. 5",
+      "url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final"
+    }
+  ],
+  "requiredFields": [
+    "_time"
+  ],
+  "reviewer": "N/A",
+  "securityDomain": "audit",
+  "spl": "| inputlookup vrm_attestations.csv\n| where criticality IN (\"critical\",\"high\")\n| eval days_to_expiry=round((strptime(expires,\"%Y-%m-%d\")-now())/86400,0)\n| where days_to_expiry<=30\n| table vendor attestation_type expires days_to_expiry",
+  "splunkPillar": "Platform",
+  "splunkVersions": [
+    "9.2+",
+    "Cloud"
+  ],
+  "status": "verified",
+  "title": "Supplier attestation currency — stale SOC 2 / ISO 27001 reports for critical vendors",
+  "value": "Makes vendor-risk currency a live signal rather than an annual gap report.",
+  "visualization": "Table of expiring attestations, Sankey of attestation types per vendor, single-value 'critical vendors with current attestation'."
+}

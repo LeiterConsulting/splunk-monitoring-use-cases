@@ -1,0 +1,1435 @@
+{
+  "aliases": [
+    "GDPR",
+    "Regulation (EU) 2016/679"
+  ],
+  "apiVersion": "v1",
+  "id": "gdpr",
+  "jurisdiction": [
+    "EEA",
+    "EU"
+  ],
+  "name": "General Data Protection Regulation",
+  "shortName": "GDPR",
+  "tags": [
+    "data-protection",
+    "privacy"
+  ],
+  "tier": 1,
+  "versions": [
+    {
+      "authoritativeUrl": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 1,
+            "partial": 0
+          },
+          "clause": "Art.15",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.1.2",
+            "22.36.1"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "full",
+          "topic": "Right of access"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.16",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.2"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "contributing",
+          "topic": "Right to rectification"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 2,
+            "full": 2,
+            "partial": 0
+          },
+          "clause": "Art.17",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.1.11",
+            "22.1.2",
+            "22.36.2",
+            "22.49.5"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "full",
+          "topic": "Right to erasure"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "Art.18",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.1.16",
+            "22.1.2"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "partial",
+          "topic": "Right to restrict processing"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 1,
+            "partial": 0
+          },
+          "clause": "Art.20",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.1.2",
+            "22.36.3"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "full",
+          "topic": "Right to data portability"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "Art.21",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.1.2",
+            "22.1.46"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "partial",
+          "topic": "Right to object"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 2,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.22",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.18",
+            "22.1.2"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "contributing",
+          "topic": "Automated decision making"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.25",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.9"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Data protection by design and by default"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 1,
+            "partial": 0
+          },
+          "clause": "Art.28",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.1.15",
+            "22.44.2"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "full",
+          "topic": "Processor obligations"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 2,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.30",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.43",
+            "22.1.8"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "contributing",
+          "topic": "Records of processing"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 3,
+            "full": 0,
+            "partial": 3
+          },
+          "clause": "Art.32",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.1.10",
+            "22.1.41",
+            "22.1.7",
+            "22.35.2",
+            "22.35.3",
+            "22.41.1"
+          ],
+          "obligationSource": "https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e2930-1-1",
+          "obligationText": "Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate pseudonymisation and encryption of personal data; the ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services; the ability to restore availability and access to personal data in a timely manner in the event of a physical or technical incident; and a process for regularly testing, assessing and evaluating the effectiveness of technical and organisational measures for ensuring the security of the processing.",
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Security of processing"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 3,
+            "full": 2,
+            "partial": 0
+          },
+          "clause": "Art.33",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.1.29",
+            "22.1.3",
+            "22.39.1",
+            "22.39.2",
+            "22.9.4"
+          ],
+          "obligationSource": "https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e3002-1-1",
+          "obligationText": "In the case of a personal data breach, the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority competent in accordance with Article 55, unless the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons. Where the notification to the supervisory authority is not made within 72 hours, it shall be accompanied by reasons for the delay.",
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "full",
+          "topic": "Breach notification to supervisory authority"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 1,
+            "partial": 0
+          },
+          "clause": "Art.34",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.1.13",
+            "22.39.3"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "full",
+          "topic": "Breach communication to data subjects"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.35",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.14"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "contributing",
+          "topic": "DPIA"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 4,
+            "full": 3,
+            "partial": 0
+          },
+          "clause": "Art.44",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.1.36",
+            "22.1.38",
+            "22.1.44",
+            "22.1.6",
+            "22.38.1",
+            "22.38.3",
+            "22.38.5"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "full",
+          "topic": "International transfers — general principle"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 5,
+            "full": 0,
+            "partial": 2
+          },
+          "clause": "Art.45",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.1.36",
+            "22.1.38",
+            "22.1.39",
+            "22.1.44",
+            "22.1.6",
+            "22.38.2",
+            "22.38.5"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "partial",
+          "topic": "Transfers via adequacy decision"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 4,
+            "full": 2,
+            "partial": 1
+          },
+          "clause": "Art.46",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.1.36",
+            "22.1.38",
+            "22.1.44",
+            "22.1.6",
+            "22.38.1",
+            "22.38.2",
+            "22.38.4"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "full",
+          "topic": "Transfers subject to safeguards"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 2,
+            "partial": 0
+          },
+          "clause": "Art.5",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.1.1",
+            "22.49.1",
+            "22.49.2"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "full",
+          "topic": "Principles of processing"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "Art.6",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.1.1",
+            "22.37.1"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": "partial",
+          "topic": "Lawful basis"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 2,
+            "full": 1,
+            "partial": 2
+          },
+          "clause": "Art.7",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.1.46",
+            "22.1.5",
+            "22.37.1",
+            "22.37.2",
+            "22.8.39"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": "full",
+          "topic": "Conditions for consent"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 2,
+            "full": 1,
+            "partial": 0
+          },
+          "clause": "Art.12",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.1.19",
+            "22.1.50",
+            "22.36.1"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "full",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.12(2)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.36.5"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "Art.12(6)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.36.4"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "partial",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.13",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.50"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.14",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.50"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "Art.17(2)",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.36.2"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "partial",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.19",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.2"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 3,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.25(1)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.46",
+            "22.1.48",
+            "22.1.50"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 3,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.25(2)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.45",
+            "22.1.47",
+            "22.1.49"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.28(2)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.28"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 2,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.28(3)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.27",
+            "22.1.30"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.28(3)(f)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.29"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.28(3)(h)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.31"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.28(4)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.28"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 2,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.32(1)(a)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.21",
+            "22.1.23"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 2
+          },
+          "clause": "Art.32(1)(b)",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.1.22",
+            "22.35.1",
+            "22.35.4"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "partial",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.32(1)(b)(c)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.26"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.32(1)(c)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.25"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.32(1)(d)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.24"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "Art.32(4)",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.46.5"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "partial",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.33(1)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.39.5"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "Art.33(3)",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.1.12",
+            "22.39.4"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "partial",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.35(7)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.32"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.35(7)(b)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.33"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.35(7)(d)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.35"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.36",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.34"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.46(2)(c)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.37"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 4,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.47",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.38",
+            "22.1.40",
+            "22.1.44",
+            "22.1.6"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 3,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.48",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.38",
+            "22.1.44",
+            "22.1.6"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 3,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.49",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.38",
+            "22.1.44",
+            "22.1.6"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "Art.5(1)(b)",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.1.48",
+            "22.37.4"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "partial",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.5(1)(c)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.47"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 2,
+            "full": 1,
+            "partial": 0
+          },
+          "clause": "Art.5(1)(e)",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.1.4",
+            "22.1.49",
+            "22.49.4"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "full",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.5(1)(f)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.10"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 4,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.5(2)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.17",
+            "22.1.41",
+            "22.1.42",
+            "22.1.43"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.6(1)(f)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.20"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "Art.7(1)",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.37.5"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "partial",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.7(3)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.16"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "Art.72",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.1.3"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        }
+      ],
+      "clauseExamples": [
+        "Art.5",
+        "Art.32(1)(b)",
+        "Art.32(1)(b)(c)",
+        "Art.15",
+        "Art.33"
+      ],
+      "clauseGrammar": "^Art\\.\\d+(\\(\\d+\\))?(\\([a-z]\\))?(\\([a-z]\\))?$",
+      "clauseUrlTemplate": "https://eur-lex.europa.eu/eli/reg/2016/679/oj#{clause}",
+      "clausesReferencedByCatalogue": [
+        "Art.12",
+        "Art.12(2)",
+        "Art.12(6)",
+        "Art.13",
+        "Art.14",
+        "Art.15",
+        "Art.16",
+        "Art.17",
+        "Art.17(2)",
+        "Art.18",
+        "Art.19",
+        "Art.20",
+        "Art.21",
+        "Art.22",
+        "Art.25",
+        "Art.25(1)",
+        "Art.25(2)",
+        "Art.28",
+        "Art.28(2)",
+        "Art.28(3)",
+        "Art.28(3)(f)",
+        "Art.28(3)(h)",
+        "Art.28(4)",
+        "Art.30",
+        "Art.32",
+        "Art.32(1)(a)",
+        "Art.32(1)(b)",
+        "Art.32(1)(b)(c)",
+        "Art.32(1)(c)",
+        "Art.32(1)(d)",
+        "Art.32(4)",
+        "Art.33",
+        "Art.33(1)",
+        "Art.33(3)",
+        "Art.34",
+        "Art.35",
+        "Art.35(7)",
+        "Art.35(7)(b)",
+        "Art.35(7)(d)",
+        "Art.36",
+        "Art.44",
+        "Art.45",
+        "Art.46",
+        "Art.46(2)(c)",
+        "Art.47",
+        "Art.48",
+        "Art.49",
+        "Art.5",
+        "Art.5(1)(b)",
+        "Art.5(1)(c)",
+        "Art.5(1)(e)",
+        "Art.5(1)(f)",
+        "Art.5(2)",
+        "Art.6",
+        "Art.6(1)(f)",
+        "Art.7",
+        "Art.7(1)",
+        "Art.7(3)",
+        "Art.72"
+      ],
+      "commonClauses": [
+        {
+          "clause": "Art.5",
+          "priorityWeight": 1.0,
+          "topic": "Principles of processing"
+        },
+        {
+          "clause": "Art.6",
+          "priorityWeight": 1.0,
+          "topic": "Lawful basis"
+        },
+        {
+          "clause": "Art.7",
+          "priorityWeight": 0.7,
+          "topic": "Conditions for consent"
+        },
+        {
+          "clause": "Art.15",
+          "priorityWeight": 1.0,
+          "topic": "Right of access"
+        },
+        {
+          "clause": "Art.16",
+          "priorityWeight": 0.7,
+          "topic": "Right to rectification"
+        },
+        {
+          "clause": "Art.17",
+          "priorityWeight": 1.0,
+          "topic": "Right to erasure"
+        },
+        {
+          "clause": "Art.18",
+          "priorityWeight": 0.7,
+          "topic": "Right to restrict processing"
+        },
+        {
+          "clause": "Art.20",
+          "priorityWeight": 0.7,
+          "topic": "Right to data portability"
+        },
+        {
+          "clause": "Art.21",
+          "priorityWeight": 0.7,
+          "topic": "Right to object"
+        },
+        {
+          "clause": "Art.22",
+          "priorityWeight": 0.7,
+          "topic": "Automated decision making"
+        },
+        {
+          "clause": "Art.25",
+          "priorityWeight": 1.0,
+          "topic": "Data protection by design and by default"
+        },
+        {
+          "clause": "Art.28",
+          "priorityWeight": 1.0,
+          "topic": "Processor obligations"
+        },
+        {
+          "clause": "Art.30",
+          "priorityWeight": 1.0,
+          "topic": "Records of processing"
+        },
+        {
+          "clause": "Art.32",
+          "obligationSource": "https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e2930-1-1",
+          "obligationText": "Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate pseudonymisation and encryption of personal data; the ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services; the ability to restore availability and access to personal data in a timely manner in the event of a physical or technical incident; and a process for regularly testing, assessing and evaluating the effectiveness of technical and organisational measures for ensuring the security of the processing.",
+          "priorityWeight": 1.0,
+          "topic": "Security of processing"
+        },
+        {
+          "clause": "Art.33",
+          "obligationSource": "https://eur-lex.europa.eu/eli/reg/2016/679/oj#d1e3002-1-1",
+          "obligationText": "In the case of a personal data breach, the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority competent in accordance with Article 55, unless the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons. Where the notification to the supervisory authority is not made within 72 hours, it shall be accompanied by reasons for the delay.",
+          "priorityWeight": 1.0,
+          "topic": "Breach notification to supervisory authority"
+        },
+        {
+          "clause": "Art.34",
+          "priorityWeight": 1.0,
+          "topic": "Breach communication to data subjects"
+        },
+        {
+          "clause": "Art.35",
+          "priorityWeight": 0.7,
+          "topic": "DPIA"
+        },
+        {
+          "clause": "Art.44",
+          "priorityWeight": 1.0,
+          "topic": "International transfers — general principle"
+        },
+        {
+          "clause": "Art.45",
+          "priorityWeight": 0.7,
+          "topic": "Transfers via adequacy decision"
+        },
+        {
+          "clause": "Art.46",
+          "priorityWeight": 0.7,
+          "topic": "Transfers subject to safeguards"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 100.0,
+        "commonClauseCount": 20,
+        "coveredClauseCount": 20,
+        "offCommonListClauseCount": 39,
+        "priorityWeightedCoveragePercent": 70.38,
+        "stateCounts": {
+          "contributing-only": 5,
+          "covered-full": 10,
+          "covered-partial": 5,
+          "uncovered": 0
+        }
+      },
+      "effectiveFrom": "2018-05-25",
+      "endpoint": "/api/v1/compliance/regulations/gdpr@2016-679.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [
+        "22.1.1",
+        "22.1.10",
+        "22.1.11",
+        "22.1.12",
+        "22.1.13",
+        "22.1.14",
+        "22.1.15",
+        "22.1.16",
+        "22.1.17",
+        "22.1.18",
+        "22.1.19",
+        "22.1.2",
+        "22.1.20",
+        "22.1.21",
+        "22.1.22",
+        "22.1.23",
+        "22.1.24",
+        "22.1.25",
+        "22.1.26",
+        "22.1.27",
+        "22.1.28",
+        "22.1.29",
+        "22.1.3",
+        "22.1.30",
+        "22.1.31",
+        "22.1.32",
+        "22.1.33",
+        "22.1.34",
+        "22.1.35",
+        "22.1.36",
+        "22.1.37",
+        "22.1.38",
+        "22.1.39",
+        "22.1.4",
+        "22.1.40",
+        "22.1.41",
+        "22.1.42",
+        "22.1.43",
+        "22.1.44",
+        "22.1.45",
+        "22.1.46",
+        "22.1.47",
+        "22.1.48",
+        "22.1.49",
+        "22.1.5",
+        "22.1.50",
+        "22.1.6",
+        "22.1.7",
+        "22.1.8",
+        "22.1.9",
+        "22.35.1",
+        "22.35.2",
+        "22.35.3",
+        "22.35.4",
+        "22.36.1",
+        "22.36.2",
+        "22.36.3",
+        "22.36.4",
+        "22.36.5",
+        "22.37.1",
+        "22.37.2",
+        "22.37.4",
+        "22.37.5",
+        "22.38.1",
+        "22.38.2",
+        "22.38.3",
+        "22.38.4",
+        "22.38.5",
+        "22.39.1",
+        "22.39.2",
+        "22.39.3",
+        "22.39.4",
+        "22.39.5",
+        "22.41.1",
+        "22.44.2",
+        "22.46.5",
+        "22.49.1",
+        "22.49.2",
+        "22.49.4",
+        "22.49.5",
+        "22.8.39",
+        "22.9.4"
+      ],
+      "version": "2016/679"
+    }
+  ]
+}

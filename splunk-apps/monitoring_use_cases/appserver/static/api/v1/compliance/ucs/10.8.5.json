@@ -1,0 +1,37 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/10.8.5.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/10.8.5.json",
+    "sourcePath": "content/cat-10-security-infrastructure/UC-10.8.5.json"
+  },
+  "apiVersion": "v1",
+  "app": "Custom API input (crt.sh, CT log APIs)",
+  "cimModels": [
+    "N/A"
+  ],
+  "criticality": "high",
+  "dataSources": "Certificate Transparency log API",
+  "description": "Certificate Transparency logs reveal all publicly-issued certificates for your domains. Detects unauthorized issuance by rogue or compromised CAs.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Custom API input (crt.sh, CT log APIs).\n• Ensure the following data sources are available: Certificate Transparency log API.\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\nPoll CT log aggregators (crt.sh) for your domains daily. Maintain whitelist of approved issuers. Alert on certificates from unexpected CAs. Track issuance patterns for certificate lifecycle management.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=certificates sourcetype=\"ct_log\"\n| search NOT issuer IN (\"DigiCert*\",\"Let's Encrypt*\",\"Sectigo*\")\n| table _time, cn, issuer, serial, not_before, not_after\n| sort -_time\n```\n\nUnderstanding this SPL\n\n**CT Log Monitoring** — Certificate Transparency logs reveal all publicly-issued certificates for your domains. Detects unauthorized issuance by rogue or compromised CAs.\n\nDocumented **Data sources**: Certificate Transparency log API. **App/TA** (typical add-on context): Custom API input (crt.sh, CT log APIs). The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: certificates; **sourcetype**: ct_log. If that sourcetype is not mentioned in Data sources, double-check parsing or update the documentation to match the feed you actually ingest.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=certificates, sourcetype=\"ct_log\". Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• Applies an explicit `search` filter to narrow the current result set.\n• Pipeline stage (see **CT Log Monitoring**): table _time, cn, issuer, serial, not_before, not_after\n• Orders rows with `sort` — combine with `head`/`tail` for top-N patterns.\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Table (CT log entries), Timeline (issuance events), Bar chart (certs by issuer), Single value (unauthorized issuances).",
+  "difficulty": "beginner",
+  "grandmaExplanation": "Certificate Transparency logs reveal all publicly-issued certificates for your domains — so we know when protection is off, out of date, or bypassed.",
+  "id": "10.8.5",
+  "implementation": "Poll CT log aggregators (crt.sh) for your domains daily. Maintain whitelist of approved issuers. Alert on certificates from unexpected CAs. Track issuance patterns for certificate lifecycle management.",
+  "knownFalsePositives": "Administrative tasks, scheduled jobs or platform updates can match this pattern — correlate with change management, maintenance windows and user role before raising severity.",
+  "monitoringType": [
+    "Security"
+  ],
+  "references": [
+    {
+      "title": "Splunk Lantern — use case library",
+      "url": "https://lantern.splunk.com/"
+    }
+  ],
+  "spl": "index=certificates sourcetype=\"ct_log\"\n| search NOT issuer IN (\"DigiCert*\",\"Let's Encrypt*\",\"Sectigo*\")\n| table _time, cn, issuer, serial, not_before, not_after\n| sort -_time",
+  "splunkPillar": "Security",
+  "title": "CT Log Monitoring",
+  "value": "Certificate Transparency logs reveal all publicly-issued certificates for your domains. Detects unauthorized issuance by rogue or compromised CAs.",
+  "visualization": "Table (CT log entries), Timeline (issuance events), Bar chart (certs by issuer), Single value (unauthorized issuances)."
+}

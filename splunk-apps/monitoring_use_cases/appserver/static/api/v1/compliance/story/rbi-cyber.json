@@ -1,0 +1,163 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 5,
+        "full": 0,
+        "partial": 1
+      },
+      "clause": "Annex-A",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "1.1.76",
+        "22.30.13",
+        "22.30.14",
+        "22.30.15",
+        "22.30.16",
+        "22.30.18"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Baseline cyber-security controls",
+      "version": "2016 (as amended)"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 1,
+        "full": 0,
+        "partial": 0
+      },
+      "clause": "Annex-B",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "22.30.17"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "contributing",
+      "topic": "Cyber-crisis management plan",
+      "version": "2016 (as amended)"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "2 of 2 common clauses are covered by the catalogue, with a priority-weighted coverage of 37.5% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoveragePercent": 37.5,
+      "stateCounts": {
+        "contributing-only": 2,
+        "covered-full": 0,
+        "covered-partial": 0,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "Annex-A",
+        "killerUcId": "1.1.76",
+        "killerUcTitle": "Privilege Escalation Detection",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Baseline cyber-security controls",
+        "version": "2016 (as amended)",
+        "why": "Clause Annex-A (Baseline cyber-security controls) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "Annex-B",
+        "killerUcId": "22.30.17",
+        "killerUcTitle": "CERT-In incident reporting tracking",
+        "priorityWeight": 1.0,
+        "topAssurance": "contributing",
+        "topic": "Cyber-crisis management plan",
+        "version": "2016 (as amended)",
+        "why": "Clause Annex-B (Cyber-crisis management plan) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=contributing."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "Annex-A",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "1.1.76",
+            "ucTitle": "Privilege Escalation Detection"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.30.14",
+            "ucTitle": "IT governance for banks evidence"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.30.16",
+            "ucTitle": "Outsourcing and vendor management evidence"
+          }
+        ],
+        "topic": "Baseline cyber-security controls",
+        "version": "2016 (as amended)"
+      },
+      {
+        "clause": "Annex-B",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "22.30.17",
+            "ucTitle": "CERT-In incident reporting tracking"
+          }
+        ],
+        "topic": "Cyber-crisis management plan",
+        "version": "2016 (as amended)"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "IN"
+  ],
+  "narrative": null,
+  "narrativeRef": null,
+  "regulationId": "rbi-cyber",
+  "regulationName": "RBI Cyber Security Framework for Banks",
+  "regulationShortName": "RBI Cyber",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=rbi-cyber",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#rbi-cyber",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/rbi-cyber.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

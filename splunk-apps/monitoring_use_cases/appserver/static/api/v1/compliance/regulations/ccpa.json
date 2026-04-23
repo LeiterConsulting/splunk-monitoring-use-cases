@@ -1,0 +1,200 @@
+{
+  "aliases": [
+    "CCPA",
+    "CPRA"
+  ],
+  "apiVersion": "v1",
+  "id": "ccpa",
+  "jurisdiction": [
+    "US-CA"
+  ],
+  "name": "California Consumer Privacy Act / CPRA",
+  "shortName": "CCPA/CPRA",
+  "tags": [
+    "consumer-rights",
+    "privacy"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://cppa.ca.gov/regulations/",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§1798.100",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Consumer right to know"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§1798.105",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Consumer right to delete"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§1798.150",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 0.7,
+          "topAssurance": null,
+          "topic": "Private right of action for data breaches"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "§1798.100(b)",
+          "coverageState": "covered-partial",
+          "coveringUcs": [
+            "22.37.4"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "partial",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 1,
+            "partial": 0
+          },
+          "clause": "§1798.100(c)",
+          "coverageState": "covered-full",
+          "coveringUcs": [
+            "22.49.4"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "full",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 1
+          },
+          "clause": "§1798.130(a)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.36.4",
+            "22.36.5"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "partial",
+          "topic": null
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 1,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "§1798.135(b)",
+          "coverageState": "contributing-only",
+          "coveringUcs": [
+            "22.37.5"
+          ],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": false,
+          "priorityWeight": null,
+          "topAssurance": "contributing",
+          "topic": null
+        }
+      ],
+      "clauseExamples": [
+        "§1798.100",
+        "§1798.105"
+      ],
+      "clauseGrammar": "^§\\d+\\.\\d+(\\.\\d+)?(\\([a-z]\\))?$",
+      "clauseUrlTemplate": null,
+      "clausesReferencedByCatalogue": [
+        "§1798.100(b)",
+        "§1798.100(c)",
+        "§1798.130(a)",
+        "§1798.135(b)"
+      ],
+      "commonClauses": [
+        {
+          "clause": "§1798.100",
+          "priorityWeight": 1.0,
+          "topic": "Consumer right to know"
+        },
+        {
+          "clause": "§1798.105",
+          "priorityWeight": 1.0,
+          "topic": "Consumer right to delete"
+        },
+        {
+          "clause": "§1798.150",
+          "priorityWeight": 0.7,
+          "topic": "Private right of action for data breaches"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 0.0,
+        "commonClauseCount": 3,
+        "coveredClauseCount": 0,
+        "offCommonListClauseCount": 4,
+        "priorityWeightedCoveragePercent": 0.0,
+        "stateCounts": {
+          "contributing-only": 0,
+          "covered-full": 0,
+          "covered-partial": 0,
+          "uncovered": 3
+        }
+      },
+      "effectiveFrom": "2023-01-01",
+      "endpoint": "/api/v1/compliance/regulations/ccpa@CPRA--as-amended-.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [
+        "22.36.4",
+        "22.36.5",
+        "22.37.4",
+        "22.37.5",
+        "22.49.4"
+      ],
+      "version": "CPRA (as amended)"
+    }
+  ]
+}

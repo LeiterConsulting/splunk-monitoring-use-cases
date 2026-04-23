@@ -1,0 +1,95 @@
+{
+  "aliases": [
+    "Cyber Essentials",
+    "Cyber Essentials Plus"
+  ],
+  "apiVersion": "v1",
+  "id": "uk-cyber-essentials",
+  "jurisdiction": [
+    "UK"
+  ],
+  "name": "UK NCSC Cyber Essentials",
+  "shortName": "Cyber Essentials",
+  "tags": [
+    "baseline",
+    "supply-chain"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://www.ncsc.gov.uk/cyberessentials/overview",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CE.BF.1",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Boundary firewalls"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "CE.SAU.1",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Secure authentication & access"
+        }
+      ],
+      "clauseExamples": [
+        "CE.BF.1",
+        "CE.SAU.1"
+      ],
+      "clauseGrammar": "^CE\\.[A-Z]{2,3}\\.\\d+$",
+      "clauseUrlTemplate": null,
+      "clausesReferencedByCatalogue": [],
+      "commonClauses": [
+        {
+          "clause": "CE.BF.1",
+          "priorityWeight": 1.0,
+          "topic": "Boundary firewalls"
+        },
+        {
+          "clause": "CE.SAU.1",
+          "priorityWeight": 1.0,
+          "topic": "Secure authentication & access"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 0.0,
+        "commonClauseCount": 2,
+        "coveredClauseCount": 0,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 0.0,
+        "stateCounts": {
+          "contributing-only": 0,
+          "covered-full": 0,
+          "covered-partial": 0,
+          "uncovered": 2
+        }
+      },
+      "effectiveFrom": "2025-04-28",
+      "endpoint": "/api/v1/compliance/regulations/uk-cyber-essentials@Montpellier--2025-.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [],
+      "version": "Montpellier (2025)"
+    }
+  ]
+}

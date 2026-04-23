@@ -1,0 +1,85 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 3,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "suricata",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Suricata / Snort (IDS/IPS)",
+  "models": [],
+  "regulationIds": [
+    "iso-27001",
+    "pci-dss",
+    "soc-2"
+  ],
+  "regulations": [
+    {
+      "clauseMappings": [
+        {
+          "clause": "A.8.16",
+          "useCaseId": "22.11.104",
+          "version": "2022"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/iso-27001.json",
+      "regulationId": "iso-27001",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.11.104"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "11.4",
+          "useCaseId": "22.11.104",
+          "version": "v4.0"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/pci-dss.json",
+      "regulationId": "pci-dss",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.11.104"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "CC7.1",
+          "useCaseId": "22.11.104",
+          "version": "2017 TSC"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/soc-2.json",
+      "regulationId": "soc-2",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.11.104"
+      ]
+    }
+  ],
+  "useCaseCount": 3,
+  "useCaseIds": [
+    "10.2.1",
+    "10.13.20",
+    "22.11.104"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 10,
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "10.2.1",
+        "10.13.20"
+      ]
+    },
+    {
+      "category": 22,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.11.104"
+      ]
+    }
+  ]
+}

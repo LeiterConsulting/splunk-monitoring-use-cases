@@ -1,0 +1,96 @@
+{
+  "aliases": [
+    "BCBS",
+    "Basel Framework"
+  ],
+  "apiVersion": "v1",
+  "id": "basel-iii",
+  "jurisdiction": [
+    "Global"
+  ],
+  "name": "Basel III — BCBS Operational Risk and Resilience",
+  "shortName": "Basel III",
+  "tags": [
+    "banking",
+    "financial-services",
+    "operational-risk"
+  ],
+  "tier": 2,
+  "versions": [
+    {
+      "authoritativeUrl": "https://www.bis.org/bcbs/publ/d516.htm",
+      "clauseCoverageMatrix": [
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "OPR25.1",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Operational risk management"
+        },
+        {
+          "assuranceBreakdown": {
+            "contributing": 0,
+            "full": 0,
+            "partial": 0
+          },
+          "clause": "OPR25.8",
+          "coverageState": "uncovered",
+          "coveringUcs": [],
+          "obligationSource": null,
+          "obligationText": null,
+          "onCommonList": true,
+          "priorityWeight": 1.0,
+          "topAssurance": null,
+          "topic": "Business continuity and resilience"
+        }
+      ],
+      "clauseExamples": [
+        "OPR25.1",
+        "OPR25.8"
+      ],
+      "clauseGrammar": "^OPR\\d+\\.\\d+$",
+      "clauseUrlTemplate": null,
+      "clausesReferencedByCatalogue": [],
+      "commonClauses": [
+        {
+          "clause": "OPR25.1",
+          "priorityWeight": 1.0,
+          "topic": "Operational risk management"
+        },
+        {
+          "clause": "OPR25.8",
+          "priorityWeight": 1.0,
+          "topic": "Business continuity and resilience"
+        }
+      ],
+      "coverageSummary": {
+        "clauseCoveragePercent": 0.0,
+        "commonClauseCount": 2,
+        "coveredClauseCount": 0,
+        "offCommonListClauseCount": 0,
+        "priorityWeightedCoveragePercent": 0.0,
+        "stateCounts": {
+          "contributing-only": 0,
+          "covered-full": 0,
+          "covered-partial": 0,
+          "uncovered": 2
+        }
+      },
+      "effectiveFrom": "2022-01-01",
+      "endpoint": "/api/v1/compliance/regulations/basel-iii@BCBS-2021.json",
+      "pendingChanges": [],
+      "sunsetOn": null,
+      "useCasesTaggingThisVersion": [],
+      "version": "BCBS 2021"
+    }
+  ]
+}

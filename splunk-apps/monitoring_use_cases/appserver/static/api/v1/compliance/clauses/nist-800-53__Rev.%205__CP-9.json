@@ -1,0 +1,98 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 1,
+    "full": 3,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#/control?version=5.1&number=CP-9",
+  "clause": "CP-9",
+  "clauseId": "nist-800-53@Rev. 5#CP-9",
+  "coverageState": "covered-full",
+  "coveringUcCount": 4,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "CP-9 system backup — the UC evidences successful test restoration.",
+      "category": 22,
+      "clauseUrl": "https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#/control?version=5.1&number=CP-9",
+      "controlObjective": "Evidence that NIST 800-53 CP-9 (System backup) is enforced — Splunk UC-22.45.1: Backup restore test evidence — RPO/RTO SLA compliance per tier.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.45.1' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.45.1",
+      "ucTitle": "Backup restore test evidence — RPO/RTO SLA compliance per tier"
+    },
+    {
+      "assurance": "full",
+      "assuranceRationale": "CP-9(8) cryptographic protection of backups — the UC continuously validates immutability.",
+      "category": 22,
+      "clauseUrl": "https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#/control?version=5.1&number=CP-9",
+      "controlObjective": "Evidence that NIST 800-53 CP-9 (System backup) is enforced — Splunk UC-22.45.2: Backup encryption and air-gap integrity — tamper detection on immutable storage.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.45.2' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.45.2",
+      "ucTitle": "Backup encryption and air-gap integrity — tamper detection on immutable storage"
+    },
+    {
+      "assurance": "full",
+      "assuranceRationale": "CP-9 requires backup of system-level and user-level information — uncovered workloads fail the control.",
+      "category": 22,
+      "clauseUrl": "https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#/control?version=5.1&number=CP-9",
+      "controlObjective": "Evidence that NIST 800-53 CP-9 (System backup) is enforced — Splunk UC-22.45.3: Backup completeness — unprotected workloads with regulated data.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-22.45.3' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.45.3",
+      "ucTitle": "Backup completeness — unprotected workloads with regulated data"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run. Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://csrc.nist.gov/Projects/risk-management/sp800-53-controls/release-search#/control?version=5.1&number=CP-9",
+      "controlObjective": "Evidence that NIST 800-53 CP-9 (System backup) is enforced — Splunk UC-22.14.79: System Backup Success and RPO Violations.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.14.79' running on index=backup sourcetype=veeam:job, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.14.79",
+      "ucTitle": "System Backup Success and RPO Violations"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/nist-800-53__Rev.%205__CP-9.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 4
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "nist-800-53",
+  "regulationName": "NIST SP 800-53 Rev. 5",
+  "regulationShortName": "NIST 800-53",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/nist-800-53.json",
+    "regulationVersion": "/api/v1/compliance/regulations/nist-800-53@Rev.%205.json",
+    "story": "/api/v1/compliance/story/nist-800-53.json"
+  },
+  "tier": 1,
+  "topAssurance": "full",
+  "topic": "System backup",
+  "version": "Rev. 5"
+}

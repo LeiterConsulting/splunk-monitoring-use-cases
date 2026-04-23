@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/17.3.60.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/17.3.60.json",
+    "sourcePath": "content/cat-17-network-security-zero-trust/UC-17.3.60.json"
+  },
+  "apiVersion": "v1",
+  "app": "Forcepoint Insights SIEM App (Splunkbase 8053)",
+  "cimModels": [
+    "Network_Traffic",
+    "Network_Sessions"
+  ],
+  "cimSpl": "| tstats `summariesonly` count\n  from datamodel=Network_Sessions.All_Sessions\n  by All_Sessions.dest span=1h",
+  "criticality": "high",
+  "dataSources": "Forcepoint ONE ZTNA access/connector logs",
+  "description": "Forcepoint ONE ZTNA provides agentless and agent-based private application access. Connector health and access decision monitoring ensures application reachability.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: Forcepoint Insights SIEM App (Splunkbase 8053).\n• Ensure the following data sources are available: Forcepoint ONE ZTNA access/connector logs.\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\nMap connector names to datacenter/region. Alert when connectors show >10% error rate. Report on ZTNA adoption metrics.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=zt sourcetype=\"forcepoint:one\" earliest=-24h\n| where match(lower(event_type),\"(?i)ztna|private|connector\")\n| eval ok=if(match(lower(status),\"(?i)success|allow|connected\"),1,0)\n| stats count sum(ok) as successes by connector_name, app_name\n| eval error_pct=round(100*(count-successes)/count,1)\n| where error_pct > 5\n| sort -error_pct\n```\n\nUnderstanding this SPL\n\n**Forcepoint ONE ZTNA Private Access Health (Forcepoint)** — Forcepoint ONE ZTNA provides agentless and agent-based private application access. Connector health and access decision monitoring ensures application reachability.\n\nDocumented **Data sources**: Forcepoint ONE ZTNA access/connector logs. **App/TA** (typical add-on context): Forcepoint Insights SIEM App (Splunkbase 8053). The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: zt; **sourcetype**: forcepoint:one. If that sourcetype is not mentioned in Data sources, double-check parsing or update the documentation to match the feed you actually ingest.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=zt, sourcetype=\"forcepoint:one\", time bounds. Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• Filters the current rows with `where match(lower(event_type),\"(?i)ztna|private|connector\")` — typically the threshold or rule expression for this monitoring goal.\n• `eval` defines or adjusts **ok** — often to normalize units, derive a ratio, or prepare for thresholds.\n• `stats` rolls up events into metrics; results are split **by connector_name, app_name** so each row reflects one combination of those dimensions (useful for per-host, per-user, or per-entity comparisons for this use case).\n• `eval` defines or adjusts **error_pct** — often to normalize units, derive a ratio, or prepare for thresholds.\n• Filters the current rows with `where error_pct > 5` — typically the threshold or rule expression for this monitoring goal.\n• Orders rows with `sort` — combine with `head`/`tail` for top-N patterns.\n\nOptional CIM / accelerated variant (same use case, normalized fields via Common Information Model):\n\n```spl\n| tstats `summariesonly` count\n  from datamodel=Network_Sessions.All_Sessions\n  by All_Sessions.dest span=1h\n```\n\nUnderstanding this CIM / accelerated SPL\n\n**Forcepoint ONE ZTNA Private Access Health (Forcepoint)** — Forcepoint ONE ZTNA provides agentless and agent-based private application access. Connector health and access decision monitoring ensures application reachability.\n\nDocumented **Data sources**: Forcepoint ONE ZTNA access/connector logs. **App/TA** (typical add-on context): Forcepoint Insights SIEM App (Splunkbase 8053). The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThis **CIM or accelerated** block uses normalized field names and/or `tstats` over data models. Enable **acceleration** on the referenced models (and correct CIM knowledge objects) or the search may return nothing.\n\n**Pipeline walkthrough**\n\n• Uses `tstats` against accelerated summaries for data model `Network_Sessions.All_Sessions` — enable acceleration for that model.\n\nEnable Data Model Acceleration (and metric indexes for `mstats`) for the models or datasets referenced above; otherwise `tstats`/`mstats` may return no results from summaries.\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Table (unhealthy connectors), Single value (connectors in error), Line chart (error rate trend), Bar chart (access by app).",
+  "difficulty": "intermediate",
+  "equipment": [
+    "forcepoint"
+  ],
+  "grandmaExplanation": "Forcepoint ONE ZTNA provides agentless and agent-based private application access — so unsafe traffic and policy bypasses are caught quickly.",
+  "hardware": "Forcepoint ONE (cloud), Forcepoint ONE Connector (on-prem), Smart Edge Agent",
+  "id": "17.3.60",
+  "implementation": "Map connector names to datacenter/region. Alert when connectors show >10% error rate. Report on ZTNA adoption metrics.",
+  "knownFalsePositives": "Administrative tasks, scheduled jobs or platform updates can match this pattern — correlate with change management, maintenance windows and user role before raising severity.",
+  "mitreAttack": [
+    "T1133"
+  ],
+  "monitoringType": [
+    "Security",
+    "Availability"
+  ],
+  "references": [
+    {
+      "title": "Forcepoint Insights SIEM App",
+      "url": "https://splunkbase.splunk.com/app/8053"
+    },
+    {
+      "title": "CIM: Network_Traffic",
+      "url": "https://docs.splunk.com/Documentation/CIM/latest/User/Network_Traffic"
+    }
+  ],
+  "spl": "index=zt sourcetype=\"forcepoint:one\" earliest=-24h\n| where match(lower(event_type),\"(?i)ztna|private|connector\")\n| eval ok=if(match(lower(status),\"(?i)success|allow|connected\"),1,0)\n| stats count sum(ok) as successes by connector_name, app_name\n| eval error_pct=round(100*(count-successes)/count,1)\n| where error_pct > 5\n| sort -error_pct",
+  "splunkPillar": "Security",
+  "title": "Forcepoint ONE ZTNA Private Access Health (Forcepoint)",
+  "value": "Forcepoint ONE ZTNA provides agentless and agent-based private application access. Connector health and access decision monitoring ensures application reachability.",
+  "visualization": "Table (unhealthy connectors), Single value (connectors in error), Line chart (error rate trend), Bar chart (access by app)."
+}

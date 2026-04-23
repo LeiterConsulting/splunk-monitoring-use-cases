@@ -1,0 +1,93 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 20,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "modbus",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Modbus (TCP/RTU)",
+  "models": [],
+  "regulationIds": [
+    "iec-62443"
+  ],
+  "regulations": [
+    {
+      "clauseMappings": [
+        {
+          "clause": "CR 4.1",
+          "useCaseId": "22.15.40",
+          "version": "2013-ongoing"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/iec-62443.json",
+      "regulationId": "iec-62443",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.15.40"
+      ]
+    }
+  ],
+  "useCaseCount": 20,
+  "useCaseIds": [
+    "14.1.1",
+    "14.1.8",
+    "14.1.27",
+    "14.1.31",
+    "14.1.32",
+    "14.1.33",
+    "14.1.39",
+    "14.1.40",
+    "14.1.41",
+    "14.1.50",
+    "14.2.1",
+    "14.2.7",
+    "14.3.13",
+    "14.3.21",
+    "14.3.32",
+    "14.3.36",
+    "14.8.2",
+    "15.1.8",
+    "15.1.12",
+    "22.15.40"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 14,
+      "useCaseCount": 17,
+      "useCaseIds": [
+        "14.1.1",
+        "14.1.8",
+        "14.1.27",
+        "14.1.31",
+        "14.1.32",
+        "14.1.33",
+        "14.1.39",
+        "14.1.40",
+        "14.1.41",
+        "14.1.50",
+        "14.2.1",
+        "14.2.7",
+        "14.3.13",
+        "14.3.21",
+        "14.3.32",
+        "14.3.36",
+        "14.8.2"
+      ]
+    },
+    {
+      "category": 15,
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "15.1.8",
+        "15.1.12"
+      ]
+    },
+    {
+      "category": 22,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.15.40"
+      ]
+    }
+  ]
+}

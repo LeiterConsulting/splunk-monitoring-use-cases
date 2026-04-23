@@ -1,0 +1,39 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 5,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "argocd",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "ArgoCD",
+  "models": [],
+  "regulationIds": [],
+  "regulations": [],
+  "useCaseCount": 5,
+  "useCaseIds": [
+    "3.6.3",
+    "12.4.11",
+    "12.5.1",
+    "12.5.2",
+    "12.5.10"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 3,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "3.6.3"
+      ]
+    },
+    {
+      "category": 12,
+      "useCaseCount": 4,
+      "useCaseIds": [
+        "12.4.11",
+        "12.5.1",
+        "12.5.2",
+        "12.5.10"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 4,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "snowflake",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Snowflake",
+  "models": [],
+  "regulationIds": [],
+  "regulations": [],
+  "useCaseCount": 4,
+  "useCaseIds": [
+    "7.4.1",
+    "7.4.4",
+    "7.4.9",
+    "7.4.13"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 7,
+      "useCaseCount": 4,
+      "useCaseIds": [
+        "7.4.1",
+        "7.4.4",
+        "7.4.9",
+        "7.4.13"
+      ]
+    }
+  ]
+}

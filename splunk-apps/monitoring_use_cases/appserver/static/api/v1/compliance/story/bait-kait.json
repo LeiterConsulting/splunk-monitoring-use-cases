@@ -1,0 +1,187 @@
+{
+  "apiVersion": "v1",
+  "auditor": [
+    {
+      "assuranceBreakdown": {
+        "contributing": 7,
+        "full": 0,
+        "partial": 2
+      },
+      "clause": "§5",
+      "coverageState": "covered-partial",
+      "coveringUcs": [
+        "13.1.39",
+        "22.28.16",
+        "22.28.18",
+        "22.28.19",
+        "22.28.20",
+        "4.1.4",
+        "9.1.3",
+        "9.4.1",
+        "9.5.15"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "Identity & access management",
+      "version": "Aug 2021"
+    },
+    {
+      "assuranceBreakdown": {
+        "contributing": 2,
+        "full": 0,
+        "partial": 2
+      },
+      "clause": "§9",
+      "coverageState": "contributing-only",
+      "coveringUcs": [
+        "12.2.17",
+        "16.4.1",
+        "22.28.17",
+        "5.1.24"
+      ],
+      "obligationSource": null,
+      "obligationText": null,
+      "onCommonList": true,
+      "priorityWeight": 1.0,
+      "topAssurance": "partial",
+      "topic": "ICT operations management",
+      "version": "Aug 2021"
+    }
+  ],
+  "buyer": {
+    "coverageHeadline": "2 of 2 common clauses are covered by the catalogue, with a priority-weighted coverage of 50.0% when each clause is weighted by regulator priority language.",
+    "summary": {
+      "commonClauseCount": 2,
+      "coveredClauseCount": 2,
+      "priorityWeightedCoveragePercent": 50.0,
+      "stateCounts": {
+        "contributing-only": 1,
+        "covered-full": 0,
+        "covered-partial": 1,
+        "uncovered": 0
+      }
+    },
+    "topFiveHighlights": [
+      {
+        "clause": "§5",
+        "killerUcId": "13.1.39",
+        "killerUcTitle": "Role and Capability Change Detection (_audit)",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "Identity & access management",
+        "version": "Aug 2021",
+        "why": "Clause §5 (Identity & access management) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      },
+      {
+        "clause": "§9",
+        "killerUcId": "12.2.17",
+        "killerUcTitle": "Deploy Approval Bypass Detection",
+        "priorityWeight": 1.0,
+        "topAssurance": "partial",
+        "topic": "ICT operations management",
+        "version": "Aug 2021",
+        "why": "Clause §9 (ICT operations management) carries a regulator-assigned priority weight of 1.0, and the catalogue covers it at assurance=partial."
+      }
+    ],
+    "topThreeGaps": []
+  },
+  "catalogueVersion": "7.1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "implementer": {
+    "quickStartPlaybook": [
+      {
+        "clause": "§5",
+        "coverageState": "covered-partial",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "9.1.3",
+            "ucTitle": "Privileged Group Membership Changes"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "9.4.1",
+            "ucTitle": "Privileged Session Audit"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "13.1.39",
+            "ucTitle": "Role and Capability Change Detection (_audit)"
+          }
+        ],
+        "topic": "Identity & access management",
+        "version": "Aug 2021"
+      },
+      {
+        "clause": "§9",
+        "coverageState": "contributing-only",
+        "priorityWeight": 1.0,
+        "quickStartUcs": [
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "12.2.17",
+            "ucTitle": "Deploy Approval Bypass Detection"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "critical",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "16.4.1",
+            "ucTitle": "Unauthorized Change Detection"
+          },
+          {
+            "assurance": null,
+            "controlObjective": null,
+            "criticality": "high",
+            "evidenceArtifact": null,
+            "mode": null,
+            "ucId": "5.1.24",
+            "ucTitle": "Network Device Configuration Backup Freshness"
+          }
+        ],
+        "topic": "ICT operations management",
+        "version": "Aug 2021"
+      }
+    ]
+  },
+  "jurisdiction": [
+    "DE"
+  ],
+  "narrative": null,
+  "narrativeRef": null,
+  "regulationId": "bait-kait",
+  "regulationName": "BaFin Banking/Insurance Supervisory Requirements for IT (BAIT/KAIT)",
+  "regulationShortName": "BAIT/KAIT",
+  "relatedEndpoints": {
+    "buyerStoryPage": "compliance-story.html?reg=bait-kait",
+    "clauseIndex": "/api/v1/compliance/clauses/index.json",
+    "clauseNavigatorDeepLink": "clause-navigator.html#bait-kait",
+    "evidencePack": null,
+    "primerAnchor": null,
+    "regulation": "/api/v1/compliance/regulations/bait-kait.json",
+    "storyIndex": "/api/v1/compliance/story/index.json"
+  },
+  "tier": 2
+}

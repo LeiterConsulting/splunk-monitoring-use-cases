@@ -19,6 +19,8 @@ REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
 OUT_DIR="${1:-${REPO_ROOT}/dist}"
 APP_DIR="${REPO_ROOT}/ta/TA-splunk-use-cases"
 
+. "${SCRIPT_DIR}/package_archive_lib.sh"
+
 if [ ! -d "${APP_DIR}" ]; then
     echo "error: ${APP_DIR} not found" >&2
     exit 1
@@ -41,14 +43,8 @@ trap 'rm -rf "${TMP_STAGE}"' EXIT
 
 cp -R "${APP_DIR}" "${TMP_STAGE}/TA-splunk-use-cases"
 
-# Strip any local/ overrides — the package ships pristine defaults.
-rm -rf "${TMP_STAGE}/TA-splunk-use-cases/local"
-
-# Remove development detritus.
-find "${TMP_STAGE}/TA-splunk-use-cases" -name ".DS_Store" -delete
-find "${TMP_STAGE}/TA-splunk-use-cases" -name "__pycache__" -type d -prune -exec rm -rf {} +
-
-tar -C "${TMP_STAGE}" -czf "${OUT_FILE}" TA-splunk-use-cases
+strip_splunk_packaging_detritus "${TMP_STAGE}/TA-splunk-use-cases"
+create_clean_spl_archive "${TMP_STAGE}" "${OUT_FILE}" "TA-splunk-use-cases"
 
 # 4. Checksum.
 if command -v shasum >/dev/null 2>&1; then

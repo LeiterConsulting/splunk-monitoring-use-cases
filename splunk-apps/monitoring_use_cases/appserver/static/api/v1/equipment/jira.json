@@ -1,0 +1,77 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 4,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "jira",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "Atlassian Jira",
+  "models": [],
+  "regulationIds": [
+    "iso-27001",
+    "nis2"
+  ],
+  "regulations": [
+    {
+      "clauseMappings": [
+        {
+          "clause": "A.5.1",
+          "useCaseId": "22.6.9",
+          "version": "2022"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/iso-27001.json",
+      "regulationId": "iso-27001",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.6.9"
+      ]
+    },
+    {
+      "clauseMappings": [
+        {
+          "clause": "Art.21(2)(e)",
+          "useCaseId": "22.2.15",
+          "version": "Directive (EU) 2022/2555"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/nis2.json",
+      "regulationId": "nis2",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.2.15"
+      ]
+    }
+  ],
+  "useCaseCount": 4,
+  "useCaseIds": [
+    "8.2.23",
+    "16.1.11",
+    "22.2.15",
+    "22.6.9"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 8,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "8.2.23"
+      ]
+    },
+    {
+      "category": 16,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "16.1.11"
+      ]
+    },
+    {
+      "category": 22,
+      "useCaseCount": 2,
+      "useCaseIds": [
+        "22.2.15",
+        "22.6.9"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "../../schemas/uc.schema.json",
+  "_meta": {
+    "generatedAt": "2026-04-21T07:24:26Z",
+    "oscalEndpoint": "/api/v1/oscal/component-definitions/16.2.9.json",
+    "sidecarEndpoint": "/api/v1/compliance/ucs/16.2.9.json",
+    "sourcePath": "content/cat-16-service-management-itsm/UC-16.2.9.json"
+  },
+  "apiVersion": "v1",
+  "app": "`Splunk_TA_snow` + discovery/network",
+  "cimModels": [
+    "N/A"
+  ],
+  "criticality": "high",
+  "dataSources": "`snow:cmdb_ci`, validation job results (`cmdb:validation`)",
+  "description": "Scores accuracy by sampling validation (discovery match, pingable, owner confirmed) — complements completeness-focused quality scores.",
+  "detailedImplementation": "Prerequisites\n• Install and configure the required add-on or app: `Splunk_TA_snow` + discovery/network.\n• Ensure the following data sources are available: `snow:cmdb_ci`, validation job results (`cmdb:validation`).\n• For app installation, inputs.conf, and Splunk directory layout, see the Implementation guide: docs/implementation-guide.md\n\nStep 1 — Configure data collection\nIngest periodic validation (e.g., “IP matches DNS,” “server responds to agent,” “owner replied”). Aggregate pass rate per class and region. Trend monthly for governance scorecards.\n\nStep 2 — Create the search and alert\nRun the following SPL in Search (then save as report or alert; adjust time range and threshold as needed):\n\n```spl\nindex=cmdb sourcetype=\"cmdb:validation\" earliest=-7d\n| eval ok=if(match(lower(to_string(check_passed)),\"(?i)true|1|pass|ok\"),1,0)\n| stats avg(ok) as accuracy_ratio by ci_class\n| eval accuracy_pct=round(accuracy_ratio*100,1)\n| sort accuracy_pct\n```\n\nUnderstanding this SPL\n\n**CMDB Accuracy Scoring** — Scores accuracy by sampling validation (discovery match, pingable, owner confirmed) — complements completeness-focused quality scores.\n\nDocumented **Data sources**: `snow:cmdb_ci`, validation job results (`cmdb:validation`). **App/TA** (typical add-on context): `Splunk_TA_snow` + discovery/network. The SPL below should target the same indexes and sourcetypes you configured for that feed—rename `index=` / `sourcetype=` if your deployment differs.\n\nThe first pipeline stage scopes events using **index**: cmdb; **sourcetype**: cmdb:validation. That sourcetype matches what this use case lists under Data sources.\n\n**Pipeline walkthrough**\n\n• Scopes the data: index=cmdb, sourcetype=\"cmdb:validation\", time bounds. Cross-check against **Data sources** above so indexes and sourcetypes match your ingestion.\n• `eval` defines or adjusts **ok** — often to normalize units, derive a ratio, or prepare for thresholds.\n• `stats` rolls up events into metrics; results are split **by ci_class** so each row reflects one combination of those dimensions (useful for per-host, per-user, or per-entity comparisons for this use case).\n• `eval` defines or adjusts **accuracy_pct** — often to normalize units, derive a ratio, or prepare for thresholds.\n• Orders rows with `sort` — combine with `head`/`tail` for top-N patterns.\n\n\nStep 3 — Validate\nConfirm that events are present in the index and that the search returns expected results. Compare with known good/bad scenarios if applicable. Verify field extractions and index permissions.\n\nStep 4 — Operationalize\nAdd the search to a dashboard or set up alert actions (email, webhook, PagerDuty, etc.) as required. Document the use case in your runbook and assign an owner. Consider visualizations: Bar chart (accuracy % by class), Gauge (fleet accuracy), Line chart (trend).",
+  "difficulty": "intermediate",
+  "equipment": [
+    "servicenow"
+  ],
+  "grandmaExplanation": "Scores accuracy by sampling validation (discovery match, pingable, owner confirmed) — complements completeness-focused quality scores — so tickets, changes, and incidents are on track and nothing is silently missed.",
+  "id": "16.2.9",
+  "implementation": "Ingest periodic validation (e.g., “IP matches DNS,” “server responds to agent,” “owner replied”). Aggregate pass rate per class and region. Trend monthly for governance scorecards.",
+  "monitoringType": [
+    "Compliance"
+  ],
+  "references": [
+    {
+      "title": "Splunk_TA_snow",
+      "url": "https://splunkbase.splunk.com/app/1928"
+    }
+  ],
+  "spl": "index=cmdb sourcetype=\"cmdb:validation\" earliest=-7d\n| eval ok=if(match(lower(to_string(check_passed)),\"(?i)true|1|pass|ok\"),1,0)\n| stats avg(ok) as accuracy_ratio by ci_class\n| eval accuracy_pct=round(accuracy_ratio*100,1)\n| sort accuracy_pct",
+  "splunkPillar": "Observability",
+  "title": "CMDB Accuracy Scoring",
+  "value": "Scores accuracy by sampling validation (discovery match, pingable, owner confirmed) — complements completeness-focused quality scores.",
+  "visualization": "Bar chart (accuracy % by class), Gauge (fleet accuracy), Line chart (trend)."
+}

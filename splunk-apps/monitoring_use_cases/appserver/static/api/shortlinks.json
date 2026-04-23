@@ -1,0 +1,5 @@
+{
+  "$schema": "/schemas/v2/shortlinks.schema.json",
+  "shortlinks": {},
+  "version": "2.0.0"
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EU AI Act mappings · Splunk UCs</title>
+<meta name="description" content="27 Splunk monitoring use cases mapped to EU AI Act. Jurisdiction: EU. Topics: ai, risk-management.">
+<meta name="theme-color" content="#a3360e" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1a1817" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://example.invalid/static/app/monitoring_use_cases/regulation/eu-ai-act/">
+<link rel="alternate" type="application/json" href="https://example.invalid/static/app/monitoring_use_cases/regulation/eu-ai-act/index.json" title="JSON twin">
+<meta property="og:type" content="website">
+<meta property="og:title" content="EU AI Act — Splunk Use Cases">
+<meta property="og:description" content="27 Splunk monitoring use cases mapped to EU AI Act. Jurisdiction: EU. Topics: ai, risk-management.">
+<meta property="og:url" content="https://example.invalid/static/app/monitoring_use_cases/regulation/eu-ai-act/">
+<meta property="og:site_name" content="Splunk Monitoring Use Cases">
+<meta property="og:image" content="https://example.invalid/static/app/monitoring_use_cases/og-image-1200.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="EU AI Act — Splunk Use Cases">
+<meta name="twitter:description" content="27 Splunk monitoring use cases mapped to EU AI Act. Jurisdiction: EU. Topics: ai, risk-management.">
+<style>:root {
+  color-scheme: light dark;
+  --bg: light-dark(#fafaf9, #1a1817);
+  --bg-soft: light-dark(#f3f1ef, #221f1d);
+  --bg-card: light-dark(#ffffff, #2a2624);
+  --fg: light-dark(#1a1817, #f0ece8);
+  --fg-soft: light-dark(#5a544e, #b8b2ab);
+  --fg-muted: light-dark(#7a746e, #918a82);
+  --accent: light-dark(#a3360e, #ff7748);
+  --accent-soft: light-dark(#fde9d8, #2e2018);
+  --accent-fg: light-dark(#ffffff, #1a1817);
+  --border: light-dark(#e6e2dd, #3a3531);
+  --code-bg: light-dark(#f5f1ec, #1f1c1a);
+  --crit-bg: light-dark(#fde2dc, #4a1e16);
+  --high-bg: light-dark(#fde9d8, #4a3018);
+  --med-bg:  light-dark(#fdf3d8, #4a4018);
+  --low-bg:  light-dark(#dff5e6, #1a3a25);
+  --max-w: 64rem;
+  --radius: 8px;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui,
+               "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px; line-height: 1.55;
+  color: var(--fg); background: var(--bg);
+  text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover, a:focus-visible { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.muted { color: var(--fg-muted); font-size: 0.875rem; }
+.prov { color: var(--fg-muted); font-size: 0.85rem; font-style: italic; }
+.lede { font-size: 1.125rem; color: var(--fg-soft); max-width: 42rem;
+  margin: 0.75rem 0 1rem; }
+header.site, footer.site {
+  background: var(--bg-soft); border-bottom: 1px solid var(--border);
+  padding: 0.75rem 1rem;
+}
+footer.site { border-top: 1px solid var(--border); border-bottom: none; }
+header.site nav, footer.site nav {
+  max-width: var(--max-w); margin: 0 auto;
+  display: flex; flex-wrap: wrap; gap: 0.75rem 1.25rem; align-items: center;
+}
+header.site .brand { font-weight: 700; color: var(--fg); text-decoration: none; }
+header.site nav a, footer.site nav a {
+  color: var(--fg-soft); text-decoration: none; font-size: 0.9rem;
+}
+header.site nav a:hover, footer.site nav a:hover { color: var(--accent); }
+main { max-width: var(--max-w); margin: 0 auto; padding: 1.25rem 1rem 3rem; }
+nav.breadcrumb { font-size: 0.875rem; color: var(--fg-muted); margin-bottom: 1rem; }
+nav.breadcrumb ol { list-style: none; padding: 0; margin: 0;
+  display: flex; flex-wrap: wrap; gap: 0.25rem 0.5rem; }
+nav.breadcrumb li { display: inline; }
+nav.breadcrumb li::after { content: "›"; margin-left: 0.5rem; color: var(--fg-muted); }
+nav.breadcrumb li:last-child::after { content: ""; }
+nav.breadcrumb a { color: var(--fg-soft); text-decoration: none; }
+nav.breadcrumb a:hover { color: var(--accent); text-decoration: underline; }
+article { background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1.5rem; }
+article > header h1 { font-size: 1.875rem; line-height: 1.2; margin: 0 0 0.5rem; }
+.uc-id { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  color: var(--fg-muted); font-size: 0.875rem; }
+article h2, .section-h { font-size: 1.375rem; margin: 2rem 0 0.75rem;
+  padding-top: 0.5rem; border-top: 1px solid var(--border); }
+article h2:first-of-type, .section-h:first-of-type { border-top: none; padding-top: 0; }
+article h3 { font-size: 1.0625rem; margin: 1.25rem 0 0.5rem; }
+article p { margin: 0.5rem 0 1rem; }
+article ul, article ol { margin: 0.5rem 0 1rem; padding-left: 1.5rem; }
+article li { margin: 0.25rem 0; }
+article code { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  background: var(--code-bg); padding: 1px 4px; border-radius: 3px; font-size: 0.875em; }
+article pre { background: var(--code-bg); border: 1px solid var(--border);
+  border-radius: 6px; padding: 0.875rem 1rem; overflow-x: auto; line-height: 1.4;
+  font-size: 0.875rem; margin: 0.75rem 0 1.25rem; }
+article pre code { background: transparent; padding: 0; border-radius: 0; font-size: inherit; }
+details { border: 1px solid var(--border); border-radius: 6px;
+  padding: 0.5rem 0.875rem; margin: 0.75rem 0 1.25rem; background: var(--bg-soft); }
+details summary { cursor: pointer; font-weight: 600; color: var(--fg-soft); }
+details[open] summary { margin-bottom: 0.5rem; }
+.badges { display: flex; flex-wrap: wrap; gap: 0.375rem; margin: 0.75rem 0 0; }
+.badge { display: inline-flex; align-items: center; gap: 0.25rem;
+  padding: 0.125rem 0.5rem; border-radius: 999px; font-size: 0.75rem;
+  font-weight: 600; line-height: 1.4; border: 1px solid var(--border);
+  background: var(--bg-soft); color: var(--fg-soft); text-decoration: none; }
+a.badge:hover { border-color: var(--accent); color: var(--accent); }
+.badge-crit { background: var(--crit-bg); color: light-dark(#7a1f12, #ffb3a0); border-color: transparent; }
+.badge-high { background: var(--high-bg); color: light-dark(#7a4a18, #ffc890); border-color: transparent; }
+.badge-med  { background: var(--med-bg);  color: light-dark(#6a5018, #ffe690); border-color: transparent; }
+.badge-low  { background: var(--low-bg);  color: light-dark(#1a5a30, #90e6b0); border-color: transparent; }
+.badge-wave-crawl { background: light-dark(#e4f0fa, #183040); color: light-dark(#174a6a, #a8d8f0); border-color: transparent; }
+.badge-wave-walk  { background: light-dark(#efe4fa, #2a1e40); color: light-dark(#4a2a7a, #c8b0f0); border-color: transparent; }
+.badge-wave-run   { background: light-dark(#fae4e4, #401a1e); color: light-dark(#7a1a1a, #f0a8a8); border-color: transparent; }
+.uc-ordering ul.uc-chip-list { list-style: none; padding: 0; margin: 0.5rem 0 1.25rem;
+  display: flex; flex-wrap: wrap; gap: 0.375rem 0.5rem; }
+.uc-ordering ul.uc-chip-list li { margin: 0; }
+a.uc-chip { display: inline-flex; align-items: center; gap: 0.375rem;
+  padding: 0.25rem 0.625rem; border-radius: 999px; font-size: 0.8125rem;
+  border: 1px solid var(--border); background: var(--bg-soft); color: var(--fg);
+  text-decoration: none; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+a.uc-chip:hover, a.uc-chip:focus-visible { border-color: var(--accent); color: var(--accent); }
+a.uc-chip .chip-id { font-weight: 600; letter-spacing: 0.01em; }
+a.uc-chip .chip-wave { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  font-size: 0.6875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;
+  padding: 0.0625rem 0.375rem; border-radius: 4px; line-height: 1.2; }
+a.uc-chip .chip-wave-crawl { background: light-dark(#cce2f2, #1a3040); color: light-dark(#0f3a5a, #bce0f8); }
+a.uc-chip .chip-wave-walk  { background: light-dark(#e0ccf2, #2a1a40); color: light-dark(#3f1a6a, #dcbcf8); }
+a.uc-chip .chip-wave-run   { background: light-dark(#f2cccc, #401a1a); color: light-dark(#6a0f0f, #f8bcbc); }
+dl.facts { display: grid; grid-template-columns: max-content 1fr;
+  gap: 0.375rem 1rem; margin: 0.75rem 0 1.25rem; font-size: 0.9rem; }
+dl.facts dt { color: var(--fg-muted); font-weight: 600; }
+dl.facts dd { margin: 0; color: var(--fg); }
+ul.uc-list { list-style: none; padding: 0; margin: 0.5rem 0 1.5rem; }
+ul.uc-list .uc-row { display: grid;
+  grid-template-columns: minmax(12rem, max-content) 1fr max-content;
+  gap: 0.25rem 0.875rem; padding: 0.625rem 0.75rem;
+  border-bottom: 1px solid var(--border); align-items: baseline; }
+ul.uc-list .uc-row:hover { background: var(--bg-soft); }
+ul.uc-list .uc-link { display: inline-flex; gap: 0.5rem; align-items: baseline;
+  text-decoration: none; color: var(--fg); }
+ul.uc-list .uc-link:hover .uc-title { color: var(--accent); text-decoration: underline; }
+ul.uc-list .uc-id { font-size: 0.8rem; min-width: 6rem; }
+ul.uc-list .uc-title { font-weight: 600; }
+ul.uc-list .uc-value { color: var(--fg-soft); font-size: 0.875rem; }
+ul.link-list { list-style: none; padding: 0; margin: 0.75rem 0 1rem;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 0.375rem 1rem; }
+ul.link-list a { color: var(--accent); text-decoration: none; }
+ul.link-list a:hover { text-decoration: underline; }
+.hero { padding: 1rem 0 1.5rem; border-bottom: 1px solid var(--border); margin-bottom: 1.5rem; }
+.hero .kicker { color: var(--accent); font-weight: 700; letter-spacing: 0.06em;
+  text-transform: uppercase; font-size: 0.8rem; margin: 0 0 0.5rem; }
+.hero h1 { font-size: 2.125rem; line-height: 1.15; margin: 0 0 0.75rem; max-width: 40rem; }
+.hero .lede { font-size: 1.0625rem; max-width: 38rem; }
+.hero-cta { display: flex; flex-wrap: wrap; gap: 0.625rem; margin-top: 1rem; }
+.cta { display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.5rem 0.875rem; border-radius: 6px; font-weight: 600;
+  text-decoration: none; font-size: 0.9rem;
+  border: 1px solid var(--accent); color: var(--accent); background: transparent; }
+.cta:hover, .cta:focus-visible { filter: brightness(1.05); }
+.cta.primary { background: var(--accent); color: var(--accent-fg); }
+.domain { margin: 1.5rem 0 1.25rem; }
+.domain h3 { font-size: 1.125rem; margin: 0 0 0.25rem; }
+.domain .muted { margin: 0 0 0.875rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 0.875rem; }
+.card { background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 0.875rem 1rem; text-decoration: none;
+  color: var(--fg); display: block; transition: border-color 0.12s; }
+.card:hover, .card:focus-visible { border-color: var(--accent); }
+.card-head { display: flex; justify-content: space-between; gap: 0.5rem;
+  font-size: 0.75rem; color: var(--fg-muted); margin-bottom: 0.25rem; }
+.card-head .cat-id { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+.card-title { font-weight: 600; font-size: 1rem; margin-bottom: 0.25rem; color: var(--fg); }
+.card-blurb { margin: 0; color: var(--fg-soft); font-size: 0.85rem; line-height: 1.4; }
+@media (prefers-reduced-motion: reduce) { .card { transition: none; } }
+@media (max-width: 40rem) {
+  article { padding: 1rem; }
+  article > header h1 { font-size: 1.5rem; }
+  .hero h1 { font-size: 1.625rem; }
+  dl.facts { grid-template-columns: 1fr; gap: 0.125rem 0; }
+  dl.facts dt { margin-top: 0.5rem; }
+  ul.uc-list .uc-row { grid-template-columns: 1fr; gap: 0.125rem; padding: 0.625rem 0.5rem; }
+  ul.uc-list .uc-id { min-width: 0; }
+}
+@media print {
+  header.site, footer.site, .hero-cta, nav.breadcrumb, details { display: none; }
+  details[open] { display: block; }
+  article { border: none; padding: 0; }
+  body { background: white; color: black; }
+  a { color: black; text-decoration: underline; }
+}</style>
+<link rel="prefetch" href="/static/app/monitoring_use_cases/assets/styles.e56aa17f48.css" as="style">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","dateModified":"2026-04-21","description":"27 Splunk monitoring use cases mapped to EU AI Act. Jurisdiction: EU. Topics: ai, risk-management.","inLanguage":"en","isAccessibleForFree":true,"mainEntity":{"@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-1.1.65/"},{"@type":"ListItem","position":2,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-1.2.51/"},{"@type":"ListItem","position":3,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.1/"},{"@type":"ListItem","position":4,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.2/"},{"@type":"ListItem","position":5,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.3/"},{"@type":"ListItem","position":6,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.4/"},{"@type":"ListItem","position":7,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.5/"},{"@type":"ListItem","position":8,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.6/"},{"@type":"ListItem","position":9,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.7/"},{"@type":"ListItem","position":10,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.8/"},{"@type":"ListItem","position":11,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.9/"},{"@type":"ListItem","position":12,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.10/"},{"@type":"ListItem","position":13,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.11/"},{"@type":"ListItem","position":14,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.12/"},{"@type":"ListItem","position":15,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.13/"},{"@type":"ListItem","position":16,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.14/"},{"@type":"ListItem","position":17,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.15/"},{"@type":"ListItem","position":18,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.16/"},{"@type":"ListItem","position":19,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.17/"},{"@type":"ListItem","position":20,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.18/"},{"@type":"ListItem","position":21,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.19/"},{"@type":"ListItem","position":22,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.20/"},{"@type":"ListItem","position":23,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.21/"},{"@type":"ListItem","position":24,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.22/"},{"@type":"ListItem","position":25,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.23/"},{"@type":"ListItem","position":26,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.24/"},{"@type":"ListItem","position":27,"url":"https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.25/"}],"numberOfItems":27},"name":"EU AI Act — Splunk Use Cases","publisher":{"@type":"Organization","name":"Splunk Monitoring Use Cases","url":"https://example.invalid/static/app/monitoring_use_cases"},"url":"https://example.invalid/static/app/monitoring_use_cases/regulation/eu-ai-act/"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://example.invalid/static/app/monitoring_use_cases/","name":"Home","position":1},{"@type":"ListItem","item":"https://example.invalid/static/app/monitoring_use_cases/regulation/","name":"Regulations","position":2},{"@type":"ListItem","item":"https://example.invalid/static/app/monitoring_use_cases/regulation/eu-ai-act/","name":"EU AI Act","position":3}]}</script>
+<script>
+window.i18n_register = window.i18n_register || function () {};
+</script>
+</head>
+<body>
+<header class="site">
+<nav>
+<a class="brand" href="https://example.invalid/static/app/monitoring_use_cases/">Splunk UCs</a>
+<a href="https://example.invalid/static/app/monitoring_use_cases/browse/">Browse</a>
+<a href="https://example.invalid/static/app/monitoring_use_cases/regulation/">Regulations</a>
+<a href="https://example.invalid/static/app/monitoring_use_cases/api/">API</a>
+<a href="https://github.com/fenre/splunk-monitoring-use-cases" rel="noopener noreferrer">GitHub</a>
+</nav>
+</header>
+<main id="main">
+<nav aria-label="Breadcrumb" class="breadcrumb"><ol><li><a href="https://example.invalid/static/app/monitoring_use_cases/">Home</a></li><li><a href="https://example.invalid/static/app/monitoring_use_cases/regulation/">Regulations</a></li><li aria-current="page">EU AI Act</li></ol></nav>
+<article>
+<header>
+<div class="uc-id">Regulation</div>
+<h1>EU AI Act</h1>
+<p class="lede">27 Splunk monitoring use cases mapped to EU AI Act. Jurisdiction: EU. Topics: ai, risk-management.</p>
+<p class="muted">27 use cases · 2 categories ·
+<a href="https://example.invalid/static/app/monitoring_use_cases/regulation/eu-ai-act/index.json" rel="alternate">JSON twin →</a></p>
+<dl class="facts">
+<dt>Name</dt><dd>EU AI Act</dd>
+<dt>Jurisdiction</dt><dd>EU</dd>
+<dt>Topics</dt><dd>ai, risk-management</dd>
+<dt>Also known as</dt><dd>EU AI Act, Regulation (EU) 2024/1689</dd>
+<dt>Authoritative source</dt><dd><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" rel="noopener noreferrer" target="_blank">EU AI Act Regulation (EU) 2024/1689</a></dd>
+</dl>
+</header>
+<section id="server-compute"><h2>Server &amp; Compute <span class="muted">(2)</span> <a class="muted" href="https://example.invalid/static/app/monitoring_use_cases/category/server-compute/">→</a></h2><ul class="uc-list"><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-1.1.65/"><span class="uc-id">UC-1.1.65</span><span class="uc-title">Auditd Rule Violation Detection</span></a><span class="uc-value">Auditd violations provide forensic evidence of security incidents and unauthorized system access.</span><span class="badge badge-crit">Critical</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-1.2.51/"><span class="uc-id">UC-1.2.51</span><span class="uc-title">Process Creation with Command Line Auditing</span></a><span class="uc-value">Full command-line visibility on process creation is the foundation of threat detection. Reveals encoded PowerShell, LOLBin abuse, and suspi…</span><span class="badge badge-high">High</span></li></ul></section>
+<section id="regulatory-and-compliance-frameworks"><h2>Regulatory and Compliance Frameworks <span class="muted">(25)</span> <a class="muted" href="https://example.invalid/static/app/monitoring_use_cases/category/regulatory-compliance/">→</a></h2><ul class="uc-list"><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.1/"><span class="uc-id">UC-22.21.1</span><span class="uc-title">Automatic Recording Events for High-Risk AI (Art. 12)</span></a><span class="uc-value">Demonstrates automatic recording of operation events for high-risk AI systems under Art. 12(1), including retention-ready correlation of mo…</span><span class="badge badge-crit">Critical</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.2/"><span class="uc-id">UC-22.21.2</span><span class="uc-title">Model Input/Output Logging Integrity (Art. 12)</span></a><span class="uc-value">Verifies that each inference event carries paired input feature hash and output label/probability for Art. 12 traceability and post-inciden…</span><span class="badge badge-crit">Critical</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.3/"><span class="uc-id">UC-22.21.3</span><span class="uc-title">Automated Decision Audit Trail Reconstruction (Art. 12)</span></a><span class="uc-value">Chains decision_id across orchestrator, model gateway, and business rules engine to evidence end-to-end decision audit trail required for h…</span><span class="badge badge-high">High</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.4/"><span class="uc-id">UC-22.21.4</span><span class="uc-title">Model Performance Degradation Detection (Art. 12)</span></a><span class="uc-value">Detects sudden drops in accuracy/auroc vs baseline to support operational logging and risk management for high-risk AI performance stabilit…</span><span class="badge badge-high">High</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.5/"><span class="uc-id">UC-22.21.5</span><span class="uc-title">Bias Drift Monitoring Across Protected Attributes (Art. 12)</span></a><span class="uc-value">Tracks disparate impact ratio across demographic buckets over sliding windows to evidence ongoing bias monitoring aligned with Art. 12 and…</span><span class="badge badge-crit">Critical</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.6/"><span class="uc-id">UC-22.21.6</span><span class="uc-title">Transparency — Explainability Payload Presence (Art. 13)</span></a><span class="uc-value">Confirms user-facing responses include required explanation fields (summary, confidence, limitations) for transparency obligations under Ar…</span><span class="badge badge-high">High</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.7/"><span class="uc-id">UC-22.21.7</span><span class="uc-title">Model Version Tracking and Immutable Version IDs (Art. 13)</span></a><span class="uc-value">Detects production traffic served from non-semver or missing model_version to support traceability and change control evidence.</span><span class="badge badge-high">High</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.8/"><span class="uc-id">UC-22.21.8</span><span class="uc-title">Training Data Lineage Event Completeness (Art. 13)</span></a><span class="uc-value">Validates dataset_id, snapshot_hash, and license_tag on each training run completion for dataset lineage traceability.</span><span class="badge badge-crit">Critical</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.9/"><span class="uc-id">UC-22.21.9</span><span class="uc-title">Feature Importance Audit Snapshot Correlation (Art. 13)</span></a><span class="uc-value">Correlates SHAP export job completion with model_version to retain feature importance audit snapshots for transparency reviews.</span><span class="badge badge-med">Medium</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.10/"><span class="uc-id">UC-22.21.10</span><span class="uc-title">Algorithm Change Documentation Linkage (Art. 13)</span></a><span class="uc-value">Ensures each production model_version has linked change_ticket and approver for algorithm change documentation.</span><span class="badge badge-high">High</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.11/"><span class="uc-id">UC-22.21.11</span><span class="uc-title">Human Override Action Logging Coverage (Art. 14)</span></a><span class="uc-value">Measures fraction of automated decisions overridden by human operators with mandatory reason codes for Art. 14 human oversight.</span><span class="badge badge-crit">Critical</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.12/"><span class="uc-id">UC-22.21.12</span><span class="uc-title">Escalation to Human Review Queue Latency (Art. 14)</span></a><span class="uc-value">Tracks SLA from model_low_confidence event to human_assigned for timely human review per oversight procedures.</span><span class="badge badge-high">High</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.13/"><span class="uc-id">UC-22.21.13</span><span class="uc-title">Autonomous Decision Threshold Breach Monitoring (Art. 14)</span></a><span class="uc-value">Alerts when decisions are auto-approved above configured risk_score without human gate, evidencing threshold enforcement.</span><span class="badge badge-crit">Critical</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.14/"><span class="uc-id">UC-22.21.14</span><span class="uc-title">Human-in-the-Loop Intervention Effectiveness (Art. 14)</span></a><span class="uc-value">Compares downstream outcomes after override vs baseline auto path to evidence intervention effectiveness for governance reviews.</span><span class="badge badge-med">Medium</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.15/"><span class="uc-id">UC-22.21.15</span><span class="uc-title">Operator Session Segregation for High-Risk AI Consoles (Art. 14)</span></a><span class="uc-value">Detects concurrent high-risk console sessions per operator_id to support segregation of duties and oversight controls.</span><span class="badge badge-high">High</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.16/"><span class="uc-id">UC-22.21.16</span><span class="uc-title">Quality Management System Control Evidence Freshness (Art. 17)</span></a><span class="uc-value">Monitors last_review date for each QMS control_id to ensure Art. 17 quality management system remains current.</span><span class="badge badge-high">High</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.17/"><span class="uc-id">UC-22.21.17</span><span class="uc-title">Technical Documentation Completeness Checklist (Art. 11/Annex IV)</span></a><span class="uc-value">Scores required documentation sections present per model_id for Annex IV technical documentation completeness.</span><span class="badge badge-crit">Critical</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.18/"><span class="uc-id">UC-22.21.18</span><span class="uc-title">EU Database Registration Event Audit (Art. 49)</span></a><span class="uc-value">Tracks registration_id, status, and error codes from EU database API client logs for conformity registration evidence.</span><span class="badge badge-high">High</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.19/"><span class="uc-id">UC-22.21.19</span><span class="uc-title">CE Marking Evidence — Test Report Coverage (Art. 48)</span></a><span class="uc-value">Joins product_sku to test_report_id coverage from test lab feeds for CE marking evidentiary chain.</span><span class="badge badge-high">High</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.20/"><span class="uc-id">UC-22.21.20</span><span class="uc-title">Risk Management System — Hazard Log Update SLA (Art. 9/Annex IV)</span></a><span class="uc-value">Measures time from new_hazard to hazard_reviewed in risk register stream for RMS operational effectiveness.</span><span class="badge badge-crit">Critical</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.21/"><span class="uc-id">UC-22.21.21</span><span class="uc-title">Post-Market Surveillance Signal Detection (Art. 72)</span></a><span class="uc-value">Uses z-score on daily serious_complaint signals per model_id for early post-market surveillance escalation.</span><span class="badge badge-high">High</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.22/"><span class="uc-id">UC-22.21.22</span><span class="uc-title">Serious Incident Report Pack Timeliness (Art. 73)</span></a><span class="uc-value">Tracks time from serious_incident_detected to regulator_packet_submitted for serious incident reporting workflows.</span><span class="badge badge-crit">Critical</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.23/"><span class="uc-id">UC-22.21.23</span><span class="uc-title">Model Withdrawal / Recall Execution Audit (Art. 12/72)</span></a><span class="uc-value">Verifies recall_command acknowledged by each edge node within SLA for model withdrawal evidence.</span><span class="badge badge-crit">Critical</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.24/"><span class="uc-id">UC-22.21.24</span><span class="uc-title">User Feedback Collection Pipeline Health (Art. 72)</span></a><span class="uc-value">Monitors volume and error rate of in-app feedback submissions for post-market user feedback collection integrity.</span><span class="badge badge-med">Medium</span></li><li class="uc-row"><a class="uc-link" href="https://example.invalid/static/app/monitoring_use_cases/uc/UC-22.21.25/"><span class="uc-id">UC-22.21.25</span><span class="uc-title">Regulatory Authority Notification Delivery Confirmation (Art. 73)</span></a><span class="uc-value">Confirms secure notification channel message_id acknowledged by authority mailbox/API within policy window.</span><span class="badge badge-crit">Critical</span></li></ul></section>
+</article>
+</main>
+<footer class="site">
+<nav>
+<span>&copy; Splunk Monitoring Use Cases · CC-BY-4.0</span>
+<a href="https://example.invalid/static/app/monitoring_use_cases/api/">API</a>
+<a href="https://example.invalid/static/app/monitoring_use_cases/sitemap.xml">Sitemap</a>
+<a href="https://github.com/fenre/splunk-monitoring-use-cases" rel="noopener noreferrer">Source</a>
+</nav>
+</footer>
+</body>
+</html>

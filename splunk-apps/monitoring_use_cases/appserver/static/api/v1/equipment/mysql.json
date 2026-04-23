@@ -1,0 +1,59 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 6,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "mysql",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "MySQL / MariaDB",
+  "models": [],
+  "regulationIds": [
+    "nist-csf"
+  ],
+  "regulations": [
+    {
+      "clauseMappings": [
+        {
+          "clause": "DE.CM-04",
+          "useCaseId": "22.7.34",
+          "version": "2.0"
+        }
+      ],
+      "regulationEndpoint": "/api/v1/compliance/regulations/nist-csf.json",
+      "regulationId": "nist-csf",
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.7.34"
+      ]
+    }
+  ],
+  "useCaseCount": 6,
+  "useCaseIds": [
+    "7.1.1",
+    "7.6.1",
+    "7.6.3",
+    "7.6.4",
+    "7.6.5",
+    "22.7.34"
+  ],
+  "useCasesByCategory": [
+    {
+      "category": 7,
+      "useCaseCount": 5,
+      "useCaseIds": [
+        "7.1.1",
+        "7.6.1",
+        "7.6.3",
+        "7.6.4",
+        "7.6.5"
+      ]
+    },
+    {
+      "category": 22,
+      "useCaseCount": 1,
+      "useCaseIds": [
+        "22.7.34"
+      ]
+    }
+  ]
+}

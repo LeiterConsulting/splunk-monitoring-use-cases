@@ -1,0 +1,56 @@
+{
+  "apiVersion": "v1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "eidas",
+  "jurisdiction": [
+    "EU"
+  ],
+  "name": "EU eIDAS Regulation",
+  "shortName": "eIDAS",
+  "tags": [
+    "identity",
+    "trust-services"
+  ],
+  "tier": 2,
+  "version": {
+    "authoritativeUrl": "https://eur-lex.europa.eu/eli/reg/2024/1183/oj",
+    "clauseExamples": [
+      "Art.19",
+      "Art.24"
+    ],
+    "clauseGrammar": "^Art\\.\\d+(\\(\\d+\\))?$",
+    "clauseUrlTemplate": "https://eur-lex.europa.eu/eli/reg/2024/1183/oj#{clause}",
+    "clausesReferencedByCatalogue": [
+      "Art.24"
+    ],
+    "commonClauses": [
+      {
+        "clause": "Art.24",
+        "priorityWeight": 1.0,
+        "topic": "Requirements for qualified trust service providers"
+      }
+    ],
+    "effectiveFrom": "2024-05-20",
+    "endpoint": "/api/v1/compliance/regulations/eidas@Regulation--EU--2024-1183.json",
+    "pendingChanges": [],
+    "sunsetOn": null,
+    "useCasesTaggingThisVersion": [
+      "22.24.1",
+      "22.24.10",
+      "22.24.11",
+      "22.24.12",
+      "22.24.13",
+      "22.24.14",
+      "22.24.15",
+      "22.24.2",
+      "22.24.3",
+      "22.24.4",
+      "22.24.5",
+      "22.24.6",
+      "22.24.7",
+      "22.24.8",
+      "22.24.9"
+    ],
+    "version": "Regulation (EU) 2024/1183"
+  }
+}

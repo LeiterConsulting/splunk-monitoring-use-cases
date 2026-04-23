@@ -12,6 +12,8 @@ REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
 OUT_DIR="${1:-${REPO_ROOT}/dist}"
 APP_DIR="${REPO_ROOT}/ta/DA-ITSI-monitoring-use-cases"
 
+. "${SCRIPT_DIR}/package_archive_lib.sh"
+
 if [ ! -d "${APP_DIR}" ]; then
     echo "error: ${APP_DIR} not found" >&2
     exit 1
@@ -26,11 +28,8 @@ TMP_STAGE="$(mktemp -d)"
 trap 'rm -rf "${TMP_STAGE}"' EXIT
 
 cp -R "${APP_DIR}" "${TMP_STAGE}/DA-ITSI-monitoring-use-cases"
-rm -rf "${TMP_STAGE}/DA-ITSI-monitoring-use-cases/local"
-find "${TMP_STAGE}/DA-ITSI-monitoring-use-cases" -name ".DS_Store" -delete
-find "${TMP_STAGE}/DA-ITSI-monitoring-use-cases" -name "__pycache__" -type d -prune -exec rm -rf {} +
-
-tar -C "${TMP_STAGE}" -czf "${OUT_FILE}" DA-ITSI-monitoring-use-cases
+strip_splunk_packaging_detritus "${TMP_STAGE}/DA-ITSI-monitoring-use-cases"
+create_clean_spl_archive "${TMP_STAGE}" "${OUT_FILE}" "DA-ITSI-monitoring-use-cases"
 
 if command -v shasum >/dev/null 2>&1; then
     shasum -a 256 "${OUT_FILE}" | awk '{print $1}' > "${OUT_FILE}.sha256"

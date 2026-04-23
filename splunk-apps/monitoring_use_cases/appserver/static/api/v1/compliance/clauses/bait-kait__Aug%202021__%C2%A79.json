@@ -1,0 +1,99 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 2,
+    "full": 0,
+    "partial": 2,
+    "unknown": 0
+  },
+  "authoritativeUrl": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/EN/Rundschreiben/2021/rs_1021_BAIT_en.html",
+  "clause": "§9",
+  "clauseId": "bait-kait@Aug 2021#§9",
+  "coverageState": "contributing-only",
+  "coveringUcCount": 4,
+  "coveringUcs": [
+    {
+      "assurance": "partial",
+      "assuranceRationale": "BAIT/KAIT §9 ICT operations management — deploy-approval bypass detection evidences the change-control portion of the ICT operations requirement.",
+      "category": 12,
+      "clauseUrl": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/EN/Rundschreiben/2021/rs_1021_BAIT_en.html",
+      "controlObjective": "Detects violations of BAIT/KAIT §9 (ICT operations management) — Splunk UC-12.2.17: Deploy Approval Bypass Detection.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-12.2.17' running on Deployment events with approval_id, change_ticket, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "detects-violation-of",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "12.2.17",
+      "ucTitle": "Deploy Approval Bypass Detection"
+    },
+    {
+      "assurance": "partial",
+      "assuranceRationale": "BAIT/KAIT §9 ICT operations management — unauthorised change detection supplies the change-management control evidence BaFin examiners expect.",
+      "category": 16,
+      "clauseUrl": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/EN/Rundschreiben/2021/rs_1021_BAIT_en.html",
+      "controlObjective": "Detects violations of BAIT/KAIT §9 (ICT operations management) — Splunk UC-16.4.1: Unauthorized Change Detection.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-16.4.1' running on sourcetype=snow:change_request, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "detects-violation-of",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "16.4.1",
+      "ucTitle": "Unauthorized Change Detection"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "BAIT/KAIT §9 ICT operations management — BaFin expects evidence of continuous network-config backups in the ICT operations dossier.",
+      "category": 5,
+      "clauseUrl": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/EN/Rundschreiben/2021/rs_1021_BAIT_en.html",
+      "controlObjective": "Evidence that BAIT/KAIT §9 (ICT operations management) is enforced — Splunk UC-5.1.24: Network Device Configuration Backup Freshness.",
+      "criticality": "high",
+      "evidenceArtifact": "Saved search 'UC-5.1.24' running on Backup system logs (timestamps of last successful backup per device), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "5.1.24",
+      "ucTitle": "Network Device Configuration Backup Freshness"
+    },
+    {
+      "assurance": "contributing",
+      "assuranceRationale": "Auto-migrated from cat-22 markdown on Phase 1.3 run, then normalised in Phase A (clause 'BAIT/KAIT' → '§9'). Requires SME review to confirm clause accuracy, mode (satisfies vs detects-violation-of), and assurance level (contributing/partial/full).",
+      "category": 22,
+      "clauseUrl": "https://www.bafin.de/SharedDocs/Veroeffentlichungen/EN/Rundschreiben/2021/rs_1021_BAIT_en.html",
+      "controlObjective": "Evidence that BAIT/KAIT §9 (ICT operations management) is enforced — Splunk UC-22.28.17: IT operations governance evidence.",
+      "criticality": "medium",
+      "evidenceArtifact": "Saved search 'UC-22.28.17' running on catalogue-defined data sources (see UC detailedImplementation), archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": "maintainer",
+      "smeCaveat": null,
+      "ucId": "22.28.17",
+      "ucTitle": "IT operations governance evidence"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/bait-kait__Aug%202021__%C2%A79.json",
+  "gapNote": "BAIT/KAIT clause §9 has only contributing or detection-mode coverage. A primary (assurance=full or partial, mode=satisfies) UC is still needed to close the clause.",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "detects-violation-of": 2,
+    "satisfies": 2
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": 1.0,
+  "regulationId": "bait-kait",
+  "regulationName": "BaFin Banking/Insurance Supervisory Requirements for IT (BAIT/KAIT)",
+  "regulationShortName": "BAIT/KAIT",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/bait-kait.json",
+    "regulationVersion": "/api/v1/compliance/regulations/bait-kait@Aug%202021.json",
+    "story": "/api/v1/compliance/story/bait-kait.json"
+  },
+  "tier": 2,
+  "topAssurance": "partial",
+  "topic": "ICT operations management",
+  "version": "Aug 2021"
+}

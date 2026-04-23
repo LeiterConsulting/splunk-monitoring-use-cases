@@ -1,0 +1,15 @@
+{
+  "apiVersion": "v1",
+  "catalogueVersion": "7.1",
+  "complianceUseCaseCount": 0,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "apc",
+  "indexEndpoint": "/api/v1/equipment/index.json",
+  "label": "APC / Schneider Electric",
+  "models": [],
+  "regulationIds": [],
+  "regulations": [],
+  "useCaseCount": 0,
+  "useCaseIds": [],
+  "useCasesByCategory": []
+}

@@ -1,0 +1,225 @@
+{
+  "apiVersion": "v1",
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "id": "dora",
+  "jurisdiction": [
+    "EU"
+  ],
+  "name": "EU Digital Operational Resilience Act",
+  "shortName": "DORA",
+  "tags": [
+    "financial-services",
+    "operational-resilience"
+  ],
+  "tier": 1,
+  "version": {
+    "authoritativeUrl": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj",
+    "clauseExamples": [
+      "Art.5",
+      "Art.9",
+      "Art.9(4)(c)",
+      "Art.10",
+      "Art.28",
+      "Art.28(3)"
+    ],
+    "clauseGrammar": "^Art\\.\\d+(\\(\\d+\\))?(\\([a-z]\\))?$",
+    "clauseUrlTemplate": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj#{clause}",
+    "clausesReferencedByCatalogue": [
+      "Art.10",
+      "Art.11",
+      "Art.12",
+      "Art.13",
+      "Art.14",
+      "Art.15",
+      "Art.16",
+      "Art.17",
+      "Art.18",
+      "Art.19",
+      "Art.20",
+      "Art.21",
+      "Art.22",
+      "Art.23",
+      "Art.24",
+      "Art.25",
+      "Art.26",
+      "Art.27",
+      "Art.28",
+      "Art.28(3)",
+      "Art.28(8)",
+      "Art.29",
+      "Art.30",
+      "Art.31",
+      "Art.32",
+      "Art.33",
+      "Art.34",
+      "Art.35",
+      "Art.36",
+      "Art.37",
+      "Art.38",
+      "Art.39",
+      "Art.40",
+      "Art.41",
+      "Art.42",
+      "Art.43",
+      "Art.44",
+      "Art.5",
+      "Art.6",
+      "Art.7",
+      "Art.8",
+      "Art.9",
+      "Art.9(4)(c)",
+      "Art.9(4)(e)"
+    ],
+    "commonClauses": [
+      {
+        "clause": "Art.5",
+        "priorityWeight": 1.0,
+        "topic": "ICT risk-management governance"
+      },
+      {
+        "clause": "Art.6",
+        "priorityWeight": 1.0,
+        "topic": "ICT risk-management framework"
+      },
+      {
+        "clause": "Art.7",
+        "priorityWeight": 1.0,
+        "topic": "ICT systems, protocols and tools"
+      },
+      {
+        "clause": "Art.8",
+        "priorityWeight": 1.0,
+        "topic": "Identification"
+      },
+      {
+        "clause": "Art.9",
+        "priorityWeight": 1.0,
+        "topic": "Protection and prevention"
+      },
+      {
+        "clause": "Art.10",
+        "priorityWeight": 1.0,
+        "topic": "Detection"
+      },
+      {
+        "clause": "Art.11",
+        "priorityWeight": 1.0,
+        "topic": "Response and recovery"
+      },
+      {
+        "clause": "Art.12",
+        "priorityWeight": 1.0,
+        "topic": "Backup policies and recovery methods"
+      },
+      {
+        "clause": "Art.17",
+        "priorityWeight": 1.0,
+        "topic": "ICT-related incident management process"
+      },
+      {
+        "clause": "Art.18",
+        "priorityWeight": 1.0,
+        "topic": "Classification of ICT-related incidents"
+      },
+      {
+        "clause": "Art.19",
+        "priorityWeight": 1.0,
+        "topic": "Reporting of major ICT-related incidents"
+      },
+      {
+        "clause": "Art.24",
+        "priorityWeight": 0.7,
+        "topic": "Digital operational-resilience testing"
+      },
+      {
+        "clause": "Art.26",
+        "priorityWeight": 0.7,
+        "topic": "Threat-led penetration testing"
+      },
+      {
+        "clause": "Art.28",
+        "priorityWeight": 1.0,
+        "topic": "ICT third-party risk"
+      }
+    ],
+    "effectiveFrom": "2025-01-17",
+    "endpoint": "/api/v1/compliance/regulations/dora@Regulation--EU--2022-2554.json",
+    "pendingChanges": [],
+    "sunsetOn": null,
+    "useCasesTaggingThisVersion": [
+      "22.11.103",
+      "22.11.105",
+      "22.11.106",
+      "22.11.97",
+      "22.3.1",
+      "22.3.10",
+      "22.3.11",
+      "22.3.12",
+      "22.3.13",
+      "22.3.14",
+      "22.3.15",
+      "22.3.16",
+      "22.3.17",
+      "22.3.18",
+      "22.3.19",
+      "22.3.2",
+      "22.3.20",
+      "22.3.21",
+      "22.3.22",
+      "22.3.23",
+      "22.3.24",
+      "22.3.25",
+      "22.3.26",
+      "22.3.27",
+      "22.3.28",
+      "22.3.29",
+      "22.3.3",
+      "22.3.30",
+      "22.3.31",
+      "22.3.32",
+      "22.3.33",
+      "22.3.34",
+      "22.3.35",
+      "22.3.36",
+      "22.3.37",
+      "22.3.38",
+      "22.3.39",
+      "22.3.4",
+      "22.3.40",
+      "22.3.41",
+      "22.3.42",
+      "22.3.43",
+      "22.3.44",
+      "22.3.45",
+      "22.3.5",
+      "22.3.6",
+      "22.3.7",
+      "22.3.8",
+      "22.3.9",
+      "22.35.3",
+      "22.38.3",
+      "22.38.5",
+      "22.39.1",
+      "22.39.4",
+      "22.41.3",
+      "22.44.1",
+      "22.44.2",
+      "22.44.3",
+      "22.44.4",
+      "22.45.1",
+      "22.45.3",
+      "22.45.4",
+      "22.45.5",
+      "22.46.4",
+      "22.6.46",
+      "22.6.51",
+      "22.6.52",
+      "22.8.32",
+      "22.8.33",
+      "22.8.34",
+      "22.8.35",
+      "22.8.37"
+    ],
+    "version": "Regulation (EU) 2022/2554"
+  }
+}

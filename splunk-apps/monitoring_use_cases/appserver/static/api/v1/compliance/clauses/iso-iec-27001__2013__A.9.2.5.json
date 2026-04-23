@@ -1,0 +1,53 @@
+{
+  "apiVersion": "v1",
+  "assuranceBreakdown": {
+    "contributing": 0,
+    "full": 1,
+    "partial": 0,
+    "unknown": 0
+  },
+  "authoritativeUrl": null,
+  "clause": "A.9.2.5",
+  "clauseId": "iso-iec-27001@2013#A.9.2.5",
+  "coverageState": "covered-full",
+  "coveringUcCount": 1,
+  "coveringUcs": [
+    {
+      "assurance": "full",
+      "assuranceRationale": "ISO/IEC 27001:2013 Annex A.9.2.5 Review of user access rights — UC directly authors the recertification and review evidence for user access rights, matching the 2013 control verbatim.",
+      "category": 22,
+      "clauseUrl": "https://www.iso.org/standard/54534.html",
+      "controlObjective": "Evidence that ISO/IEC 27001 A.9.2.5 (Review of user access rights (2013)) is enforced — Splunk UC-22.6.3: ISO 27001 Access Rights Review and Recertification.",
+      "criticality": "critical",
+      "evidenceArtifact": "Saved search 'UC-22.6.3' running on sourcetype WinEventLog:Security and supporting catalogue-defined data sources, archived to the restricted audit_evidence index (default 7-year retention). Auto-drafted — SME review required.",
+      "legalCaveat": null,
+      "mode": "satisfies",
+      "provenance": null,
+      "smeCaveat": null,
+      "ucId": "22.6.3",
+      "ucTitle": "ISO 27001 Access Rights Review and Recertification"
+    }
+  ],
+  "endpoint": "/api/v1/compliance/clauses/iso-iec-27001__2013__A.9.2.5.json",
+  "gapNote": null,
+  "generatedAt": "2026-04-21T07:24:26Z",
+  "modeBreakdown": {
+    "satisfies": 1
+  },
+  "obligationSource": null,
+  "obligationText": null,
+  "priorityWeight": null,
+  "regulationId": "iso-iec-27001",
+  "regulationName": "iso-iec-27001",
+  "regulationShortName": "iso-iec-27001",
+  "relatedEndpoints": {
+    "index": "/api/v1/compliance/clauses/index.json",
+    "regulation": "/api/v1/compliance/regulations/iso-iec-27001.json",
+    "regulationVersion": "/api/v1/compliance/regulations/iso-iec-27001@2013.json",
+    "story": "/api/v1/compliance/story/iso-iec-27001.json"
+  },
+  "tier": null,
+  "topAssurance": "full",
+  "topic": null,
+  "version": "2013"
+}
